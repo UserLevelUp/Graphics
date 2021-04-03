@@ -7,5 +7,5 @@ Currently when you hit the graph button it will work slowly.  But if you make an
 
 Also need to show variables of what is being graphed like starting point x and y offsets.
 
-
+Also looking to deploy a windows form app.  How do you deploy a open source windows form using Github?   So going to have to research that.
 
