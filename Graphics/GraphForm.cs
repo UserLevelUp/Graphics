@@ -14,9 +14,9 @@ using System.Threading;
 
 namespace Graphics
 {
-    public partial class Form1 : Form
+    public partial class GraphForm : Form
     {
-        public Form1()
+        public GraphForm()
         {
             InitializeComponent();
         }
@@ -67,16 +67,19 @@ namespace Graphics
                 {
                     break;
                 }
-                var ox = 1960;
-                var oy = 1960;
+                var ox = this.panel4.Width / 2;
+                var oy = this.panel4.Height /2;
 
-                var cos = Complex.Sqrt(ox + 2.718281828 * i * 0.0001 * Math.Cos(i * 0.0001));
-                var sin = Complex.Sqrt(oy + 2.718281828 * i * 0.0001 * Math.Sin(i * 0.0001));
+                var cos = Complex.Sqrt(Math.E * i * 0.0001 * Math.Cos(i * 0.001));
+                
+                var sin = Complex.Sqrt(Math.E * i * 0.0001 * Math.Sin(i * 0.001));
+
+
                 cos = new Complex(cos.Real, cos.Imaginary);
                 sin = new Complex(sin.Real, sin.Imaginary);
                 var pt = new Point(
-                        cos.Imaginary == 0 ? (int)(cos.Real * 42) : (int)(cos.Imaginary * 42) * -1,
-                        sin.Imaginary == 0 ? (int)(sin.Real * 42) : (int)(sin.Imaginary * 42) * -1);
+                        ox + (cos.Imaginary == 0 ? (int)(cos.Real * 42) : (int)(cos.Imaginary * 42) * -1),
+                        oy + (sin.Imaginary == 0 ? (int)(sin.Real * 42) : (int)(sin.Imaginary * 42) * -1));
                 //e.Graphics.DrawLine(new Pen(myBrush3),
                 //    pt,
                 //    new Point(pt.X + 1, pt.Y + 1)
