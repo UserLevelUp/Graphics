@@ -9,8 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Numerics;
-using System.Collections.Immutable;
 using System.Buffers;
+using System.Threading;
 
 namespace Graphics
 {
@@ -28,44 +28,47 @@ namespace Graphics
 
         private ReadOnlySequence<Point> spts = new ReadOnlySequence<Point>();
         private List<Point> pts = new List<Point>();
+        private static Queue<Point> qpts = new System.Collections.Generic.Queue<Point>();
         private int maxX = 0;
         private int maxY = 0;
         private int minX = 0;
         private int minY = 0;
+        private bool dequeing_flag = false;
+        private delegate void SafeCallDelegate();
+
 
         private System.Drawing.SolidBrush myBrush3 = new System.Drawing.SolidBrush(System.Drawing.Color.Green);
 
         private Boolean runIt = false;
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
-            if (this.runIt == true)
-            {
-                pts.ForEach(pt =>
+                if (this.runIt == true)
                 {
-                    e.Graphics.DrawLine(new Pen(myBrush3),
-                    plotPoint,
-                    new Point(pt.X + 1, pt.Y + 1)
-                    );
-                });
-                pts.Clear();
-            }
-
+                    while (qpts.Count > 0)
+                    {
+                        var pt = qpts.Dequeue();
+                            e.Graphics.DrawLine(new Pen(myBrush3),
+                                pt,
+                                new Point(pt.X + 1, pt.Y + 1)
+                            );
+                    }
+                    this.dequeing_flag = false;
+                }
         }
 
         private static Point plotPoint;
 
-        private void performFormula()
+        private async Task performFormula()
         {
-
-            // Draw a Point
-            for (int i = 0; i < 1000000000; i++)
+            for (int i = 0; i < 1_500_000_000; i++)
             {
+
                 if (this.runIt == false)
                 {
                     break;
                 }
-                var ox = 1650;
-                var oy = 1650;
+                var ox = 1960;
+                var oy = 1960;
 
                 var cos = Complex.Sqrt(ox + 2.718281828 * i * 0.0001 * Math.Cos(i * 0.0001));
                 var sin = Complex.Sqrt(oy + 2.718281828 * i * 0.0001 * Math.Sin(i * 0.0001));
@@ -80,26 +83,32 @@ namespace Graphics
                 //    );
                 if (plotPoint.X == pt.X && plotPoint.Y == pt.Y)
                     continue;
-                plotPoint.X = pt.X;
-                plotPoint.Y = pt.Y;
-                pts.Add(pt);
-                //this.minX = Math.Min(pt.X, this.minX);
-                //this.maxX = Math.Max(pt.X, this.maxX);
-                //this.minY = Math.Min(pt.Y, this.minY);
-                //this.maxY = Math.Max(pt.Y, this.maxY);
+                plotPoint.X = pt.X + 0;
+                plotPoint.Y = pt.Y + 0;
+                //pts.Add(pt);
+                qpts.Enqueue(new Point(pt.X, pt.Y));
 
-                this.panel4.Invalidate(new Rectangle(pt, new Size(2,2)));
-                if (i%10000 == 0)
+                if (i%1 == 0)
                 {
-                    this.panel4.Update();
+                    this.dequeing_flag = true;
+                    this.panel4.Invoke(new Action(() =>
+                        {
+                                panel4.Invalidate(new Rectangle(new Point(pt.X, pt.Y), new Size(2, 2)));
+                                panel4.Update();
+                        }));
                 }
             }
+
         }
 
         private void btnGraph_Click(object sender, EventArgs e)
         {
             this.runIt = true;
-            this.performFormula();
+            _ = Task.Run(async () =>
+              {
+                  await performFormula();
+              });
+            
         }
     }
 }
