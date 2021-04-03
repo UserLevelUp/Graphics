@@ -6,4 +6,12 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="lib\models\" />
+    <Folder Include="lib\abstracts\" />
+    <Folder Include="lib\formulas\" />
+    <Folder Include="lib\vm\" />
+    <Folder Include="lib\services\" />
+  </ItemGroup>
+
 </Project>
