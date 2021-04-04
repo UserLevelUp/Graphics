@@ -24,7 +24,9 @@ namespace Graphics
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            this.txtZoom.Text = Math.E.ToString();
+            this.toolStripStatusLabel2.Text = "Opaque";
+            this.toolStripStatusLabel1.Text = "Not Graphing";
         }
 
         
@@ -73,6 +75,7 @@ namespace Graphics
             {
                 this.panel4.Invalidate();
                 this.currentPaintCommand = PaintCommand.opaque;
+                this.toolStripStatusLabel2.Text = "Opaque";
             }
         }
 
@@ -80,8 +83,13 @@ namespace Graphics
 
         private async Task performFormula()
         {
+            // load parameters from form
+            // zoom
+            var zoom = Convert.ToDouble(this.txtZoom.Text);
+
             // this is the current graphing state...  when it uses threads each thread should show its own graphing state
             this.currentGraphingState = GraphingState.graphing;
+            this.toolStripStatusLabel1.Text = "Graphing";
 
             // iterates over some plot or formula ... may need to change this to x, y, z etc...
             // needs to use smarter iteration and plots by placing in a thread or threads
@@ -90,26 +98,26 @@ namespace Graphics
                 if (this.breakOut == true)
                 {
                     this.currentGraphingState = GraphingState.stopped;
+                    this.toolStripStatusLabel1.Text = "Stopped";
                     break;
                 }
 
                 while (this.runIt == false)
                 {
                     this.currentGraphingState = GraphingState.paused;
+                    this.toolStripStatusLabel1.Text = "Paused";
                     System.Threading.Thread.Sleep(100);
                 }
+
+                this.currentGraphingState = GraphingState.graphing;
 
                 // the current offset uses the center of screen plus some number
                 var ox = this.panel4.Width / 2;
                 var oy = this.panel4.Height /2;
 
-
-                // zoom
-                var zoom = Math.E;
-
                 // Equations - not very extensible... move equations into a text string then figure out a way to generate these equations dynamically during a plot
-                var cos = Complex.Sqrt(zoom * x * 0.00001 * Math.Cos(x * 0.0001));
-                var sin = Complex.Sqrt(zoom * x * 0.00001 * Math.Sin(x * 0.0001));
+                var cos = Complex.Sqrt(zoom * x * 0.0001 * Math.Cos(x * 0.0001));
+                var sin = Complex.Sqrt(zoom * x * 0.0001 * Math.Sin(x * 0.0001));
 
 //                cos = new Complex(cos.Real, cos.Imaginary);
 //                sin = new Complex(sin.Real, sin.Imaginary);
@@ -131,6 +139,12 @@ namespace Graphics
                 // uses a Queue property to save a point 
                 // currently its global on this form ... should be more functional
                 qpts.Enqueue(new Point(pt.X, pt.Y));
+
+
+                if (x % 2000 == 0)
+                {
+                    System.Threading.Thread.Sleep(100);
+                }
 
                 // after every single iteration that wasn't already plotted it will cause plot to invalidated and updated
                 if (x%1 == 0)
@@ -197,18 +211,22 @@ namespace Graphics
             {
                 this.runIt = false;
                 this.btnPause.Text = "Continue";
+                this.toolStripStatusLabel1.Text = "Paused";
             }
             else
             {
                 this.runIt = true;
                 this.btnPause.Text = "Pause";
+                this.toolStripStatusLabel1.Text = "Graphing";
             }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             this.currentPaintCommand = PaintCommand.clear;
-            this.panel4.Paint += panel4_Paint;
+            this.toolStripStatusLabel2.Text = "Clear";
+            this.panel4.Invalidate();
+            this.panel4.Update();
         }
 
     }
