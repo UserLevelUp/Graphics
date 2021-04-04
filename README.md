@@ -13,5 +13,12 @@ Added a project and an issues tracking within this Github repository.
 # Current Project
 This current project needs help using dot net core 5+ stack, windows forms, mathematical formulas and libraries, plotting techniques, and many other skills to make this modern and open sourced.
 
+# Running the file
+The easiest and safest way to run the file is to install visual studio and load the code using github.   You can just copy the files to a zip file and then unzip and load the solution into visual studio and run.  You will need to use dot net 5.0 in order to install which be included in the latest version of visual studio.
+
+# Download from website self contained version... large 133 MB because it installs all the new dot net core stuff.  You'll have to accept the security risks in order to install.
+[setup.exe|www.userlevelup.com/casaweb/setup.exe]
+
+
 # Other Info
 However will be open to porting project to other languages, or extending functionality to other programming environments.   This project is open source so you can feel free to create your own version of this project or use it to create a completely new project using the MIT license as a base.
