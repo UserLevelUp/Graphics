@@ -102,6 +102,7 @@ namespace Graphics
                     break;
                 }
 
+                // while pause is pressed loop here waiting for it to be unpressed
                 while (this.runIt == false)
                 {
                     this.currentGraphingState = GraphingState.paused;
@@ -116,11 +117,8 @@ namespace Graphics
                 var oy = this.panel4.Height /2;
 
                 // Equations - not very extensible... move equations into a text string then figure out a way to generate these equations dynamically during a plot
-                var cos = Complex.Sqrt(zoom * x * 0.0001 * Math.Cos(x * 0.0001));
-                var sin = Complex.Sqrt(zoom * x * 0.0001 * Math.Sin(x * 0.0001));
-
-//                cos = new Complex(cos.Real, cos.Imaginary);
-//                sin = new Complex(sin.Real, sin.Imaginary);
+                var cos = Complex.Sqrt(200 + zoom * x * 0.0001 * Math.Cos(x * 0.0001));
+                var sin = Complex.Sqrt(3.141433434133413 + zoom * x * 0.0001 * Math.Sin(x * 0.0001));
 
                 // convert the plot during each iteration to a single point to be rendered
                 var pt = new Point(
@@ -196,6 +194,7 @@ namespace Graphics
         private void txtZoom_KeyPress(object sender, KeyPressEventArgs e)
         {
             // used code from: https://stackoverflow.com/questions/19761487/how-to-make-a-textbox-accept-only-numbers-and-just-one-decimal-point-in-windows
+            // this code prevents anything but numbers and decimal and more numbers
             if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == '.'))
             { e.Handled = true; }
             TextBox txtDecimal = sender as TextBox;
