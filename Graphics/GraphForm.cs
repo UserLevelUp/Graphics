@@ -43,6 +43,7 @@ namespace Graphics
 
         // flags
         private Boolean runIt = false;
+        private Boolean breakOut = true; // when set to true it should break out of the next iteration and stop the current plot.  This is not very functional but works
 
         /// <summary>
         /// panel4_Paint ... change name to GraphicPaint or Layer Paint etc...
@@ -73,10 +74,14 @@ namespace Graphics
             // needs to use smarter iteration and plots by placing in a thread or threads
             for (int x = 0; x < 1_500_000_000; x++)
             {
-
-                if (this.runIt == false)
+                if (this.breakOut == true)
                 {
                     break;
+                }
+
+                while (this.runIt == false)
+                {
+                    System.Threading.Thread.Sleep(100);
                 }
 
                 // the current offset uses the center of screen plus some number
@@ -135,12 +140,42 @@ namespace Graphics
         /// <param name="e"></param>
         private void btnGraph_Click(object sender, EventArgs e)
         {
+            this.breakOut = !this.breakOut;
+            // TODO: Check to see if it broke out.  Create a nother parameter to check...
+            System.Threading.Thread.Sleep(1000);
+
             this.runIt = true;
             _ = Task.Run(async () =>
               {
                   await performFormula();
               });
             
+        }
+
+        private void txtZoom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // used code from: https://stackoverflow.com/questions/19761487/how-to-make-a-textbox-accept-only-numbers-and-just-one-decimal-point-in-windows
+            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == '.'))
+            { e.Handled = true; }
+            TextBox txtDecimal = sender as TextBox;
+            if (e.KeyChar == '.' && txtDecimal.Text.Contains("."))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btnPause_Click(object sender, EventArgs e)
+        {
+            if (this.runIt == true)
+            {
+                this.runIt = false;
+                this.btnPause.Text = "Continue";
+            }
+            else
+            {
+                this.runIt = true;
+                this.btnPause.Text = "Pause";
+            }
         }
     }
 }
