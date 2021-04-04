@@ -36,8 +36,11 @@ namespace Graphics
             this.panel5 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtZoom = new System.Windows.Forms.TextBox();
+            this.lblZoom = new System.Windows.Forms.Label();
             this.btnGraph = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.btnPause = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -50,7 +53,7 @@ namespace Graphics
             // 
             this.panel2.Location = new System.Drawing.Point(12, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(388, 78);
+            this.panel2.Size = new System.Drawing.Size(416, 78);
             this.panel2.TabIndex = 1;
             // 
             // panel3
@@ -58,9 +61,9 @@ namespace Graphics
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel3.Location = new System.Drawing.Point(406, 12);
+            this.panel3.Location = new System.Drawing.Point(434, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(3029, 78);
+            this.panel3.Size = new System.Drawing.Size(3001, 78);
             this.panel3.TabIndex = 3;
             // 
             // panel4
@@ -70,9 +73,9 @@ namespace Graphics
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel4.BackColor = System.Drawing.SystemColors.Window;
-            this.panel4.Location = new System.Drawing.Point(406, 96);
+            this.panel4.Location = new System.Drawing.Point(434, 96);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(3029, 1505);
+            this.panel4.Size = new System.Drawing.Size(3001, 1505);
             this.panel4.TabIndex = 2;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -109,23 +112,44 @@ namespace Graphics
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.splitContainer1.Panel2.Controls.Add(this.panel5);
-            this.splitContainer1.Size = new System.Drawing.Size(388, 1505);
-            this.splitContainer1.SplitterDistance = 750;
+            this.splitContainer1.Size = new System.Drawing.Size(416, 1505);
+            this.splitContainer1.SplitterDistance = 749;
             this.splitContainer1.TabIndex = 4;
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnPause);
+            this.panel1.Controls.Add(this.txtZoom);
+            this.panel1.Controls.Add(this.lblZoom);
             this.panel1.Controls.Add(this.btnGraph);
             this.panel1.Location = new System.Drawing.Point(31, 41);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(324, 703);
             this.panel1.TabIndex = 0;
             // 
+            // txtZoom
+            // 
+            this.txtZoom.Location = new System.Drawing.Point(114, 122);
+            this.txtZoom.Name = "txtZoom";
+            this.txtZoom.Size = new System.Drawing.Size(196, 39);
+            this.txtZoom.TabIndex = 2;
+            this.txtZoom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtZoom_KeyPress);
+            // 
+            // lblZoom
+            // 
+            this.lblZoom.AutoSize = true;
+            this.lblZoom.Location = new System.Drawing.Point(37, 122);
+            this.lblZoom.Name = "lblZoom";
+            this.lblZoom.Size = new System.Drawing.Size(82, 32);
+            this.lblZoom.TabIndex = 1;
+            this.lblZoom.Tag = "Multiplies By";
+            this.lblZoom.Text = "Zoom:";
+            // 
             // btnGraph
             // 
-            this.btnGraph.Location = new System.Drawing.Point(37, 13);
+            this.btnGraph.Location = new System.Drawing.Point(13, 13);
             this.btnGraph.Name = "btnGraph";
-            this.btnGraph.Size = new System.Drawing.Size(150, 46);
+            this.btnGraph.Size = new System.Drawing.Size(139, 46);
             this.btnGraph.TabIndex = 0;
             this.btnGraph.Text = "Graph";
             this.btnGraph.UseVisualStyleBackColor = true;
@@ -139,6 +163,16 @@ namespace Graphics
             this.statusStrip1.Size = new System.Drawing.Size(3447, 22);
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
+            // 
+            // btnPause
+            // 
+            this.btnPause.Location = new System.Drawing.Point(169, 13);
+            this.btnPause.Name = "btnPause";
+            this.btnPause.Size = new System.Drawing.Size(141, 46);
+            this.btnPause.TabIndex = 3;
+            this.btnPause.Text = "Pause";
+            this.btnPause.UseVisualStyleBackColor = true;
+            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
             // 
             // GraphForm
             // 
@@ -159,6 +193,7 @@ namespace Graphics
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,6 +209,9 @@ namespace Graphics
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnGraph;
         private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.TextBox txtZoom;
+        private System.Windows.Forms.Label lblZoom;
+        private System.Windows.Forms.Button btnPause;
     }
 }
 
