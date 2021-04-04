@@ -34,7 +34,7 @@ namespace Graphics
         private ReadOnlySequence<Point> spts = new ReadOnlySequence<Point>();
         private List<Point> pts = new List<Point>();
         private static Queue<Point> qpts = new System.Collections.Generic.Queue<Point>();
-        private int maxX = 0;
+        private int maxX = 1;
         private int maxY = 0;
         private int minX = 0;
         private int minY = 0;
