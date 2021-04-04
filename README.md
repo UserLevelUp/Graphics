@@ -17,8 +17,8 @@ This current project needs help using dot net core 5+ stack, windows forms, math
 The easiest and safest way to run the file is to install visual studio and load the code using github.   You can just copy the files to a zip file and then unzip and load the solution into visual studio and run.  You will need to use dot net 5.0 in order to install which be included in the latest version of visual studio.
 
 # Download from website self contained version... 
-The file below is large 133 MB because it installs all the new dot net core stuff.  You'll have to accept the security risks in order to install.  It should be possible to install because when publishing the folder the security required the folder www.userlevelup.com/casaweb/Graphics/setup to be trusted.
-[setup.exe|www.userlevelup.com/casaweb/Graphics/setup.exe]
+The file below is large 133 MB because it installs all the new dot net core stuff.  You'll have to accept the security risks in order to install.  It should be possible to install because when publishing the folder the security required the folder www.userlevelup.com/casaweb/Graphics/ to be trusted for installing the files.
+Click here to install 133 MB of graphing fun on a x86 + machine: www.userlevelup.com/casaweb/Graphics/setup.exe
 
 
 # Other Info
