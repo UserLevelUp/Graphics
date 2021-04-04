@@ -16,7 +16,8 @@ This current project needs help using dot net core 5+ stack, windows forms, math
 # Running the file
 The easiest and safest way to run the file is to install visual studio and load the code using github.   You can just copy the files to a zip file and then unzip and load the solution into visual studio and run.  You will need to use dot net 5.0 in order to install which be included in the latest version of visual studio.
 
-# Download from website self contained version... large 133 MB because it installs all the new dot net core stuff.  You'll have to accept the security risks in order to install.
+# Download from website self contained version... 
+The file below is large 133 MB because it installs all the new dot net core stuff.  You'll have to accept the security risks in order to install.
 [setup.exe|www.userlevelup.com/casaweb/setup.exe]
 
 
