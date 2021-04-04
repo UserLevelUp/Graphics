@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Numerics;
 using System.Buffers;
 using System.Threading;
+using Graphics.lib.enums;
 
 namespace Graphics
 {
@@ -36,7 +37,8 @@ namespace Graphics
         private int minX = 0;
         private int minY = 0;
         private bool dequeing_flag = false;
-
+        private GraphingState currentGraphingState = GraphingState.stopped;
+        private PaintCommand currentPaintCommand = PaintCommand.opaque;
 
         // Green paint brush... TODO: build based on user selection
         private System.Drawing.SolidBrush myBrush3 = new System.Drawing.SolidBrush(System.Drawing.Color.Green);
@@ -52,41 +54,54 @@ namespace Graphics
         /// <param name="e"></param>
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
+            if (this.currentPaintCommand == PaintCommand.opaque)
+            {
                 if (this.runIt == true)
                 {
                     while (qpts.Count > 0)
                     {
                         var pt = qpts.Dequeue();
-                            e.Graphics.DrawLine(new Pen(myBrush3),
-                                pt,
-                                new Point(pt.X + 1, pt.Y + 1)
-                            );
+                        e.Graphics.DrawLine(new Pen(myBrush3),
+                            pt,
+                            new Point(pt.X + 1, pt.Y + 1)
+                        );
                     }
                     this.dequeing_flag = false;
                 }
+            } 
+            else if (this.currentPaintCommand == PaintCommand.clear)
+            {
+                this.panel4.Invalidate();
+                this.currentPaintCommand = PaintCommand.opaque;
+            }
         }
 
         private static Point plotPoint;
 
         private async Task performFormula()
         {
+            // this is the current graphing state...  when it uses threads each thread should show its own graphing state
+            this.currentGraphingState = GraphingState.graphing;
+
             // iterates over some plot or formula ... may need to change this to x, y, z etc...
             // needs to use smarter iteration and plots by placing in a thread or threads
             for (int x = 0; x < 1_500_000_000; x++)
             {
                 if (this.breakOut == true)
                 {
+                    this.currentGraphingState = GraphingState.stopped;
                     break;
                 }
 
                 while (this.runIt == false)
                 {
+                    this.currentGraphingState = GraphingState.paused;
                     System.Threading.Thread.Sleep(100);
                 }
 
                 // the current offset uses the center of screen plus some number
-                var ox = this.panel4.Width / 2 + 1300;
-                var oy = this.panel4.Height /2 + 1300;
+                var ox = this.panel4.Width / 2;
+                var oy = this.panel4.Height /2;
 
 
                 // zoom
@@ -140,7 +155,19 @@ namespace Graphics
         /// <param name="e"></param>
         private void btnGraph_Click(object sender, EventArgs e)
         {
-            this.breakOut = !this.breakOut;
+            if (this.currentGraphingState == GraphingState.stopped)
+            {
+                this.breakOut = false;
+            }
+            else if (this.currentGraphingState == GraphingState.graphing)
+            {
+                this.breakOut = true;
+            }
+            else
+            {
+                return; // do not try and start another graph
+            }
+
             // TODO: Check to see if it broke out.  Create a nother parameter to check...
             System.Threading.Thread.Sleep(1000);
 
@@ -177,5 +204,12 @@ namespace Graphics
                 this.btnPause.Text = "Pause";
             }
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            this.currentPaintCommand = PaintCommand.clear;
+            this.panel4.Paint += panel4_Paint;
+        }
+
     }
 }
