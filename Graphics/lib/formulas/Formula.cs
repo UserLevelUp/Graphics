@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -65,7 +66,23 @@ namespace Graphics.lib.formulas
 		/// </summary>
 		public Dictionary<string, Func<double, double, double, double, Point>> formulas = new Dictionary<string, Func<double, double, double, double, Point>>();
 
-	}
+		// find the positive integral component between a positive point and the x axis where y = 0
+		private static double PositiveIntegral(double pt_x, double pt_y)
+		{
+			return pt_y > 0?pt_y:0;
+        }
 
+		// find the negative integral component between negative y point and the x axis where y = 0
+		private static double NegativeIntegral(double pt_x, double pt_y)
+        {
+			return pt_y<0?pt_y:0;
+        }
+
+		// simple derivative
+		private static Tuple<double,double> Derivative(double pt1_x, double pt1_y, double pt2_x, double pt2_y) 
+        {
+			return new Tuple<double, double>(pt1_x, (pt2_x - pt1_x)/(pt2_y - pt1_y));
+        }
+	}
 
 }
