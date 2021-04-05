@@ -12,6 +12,8 @@ using System.Numerics;
 using System.Buffers;
 using System.Threading;
 using Graphics.lib.enums;
+using Graphics.lib.formulas;
+using System.Runtime.CompilerServices;
 
 namespace Graphics
 {
@@ -41,6 +43,8 @@ namespace Graphics
         private bool dequeing_flag = false;
         private GraphingState currentGraphingState = GraphingState.stopped;
         private PaintCommand currentPaintCommand = PaintCommand.opaque;
+        Formula f = new Formula();
+        
 
         // Green paint brush... TODO: build based on user selection
         private System.Drawing.SolidBrush myBrush3 = new System.Drawing.SolidBrush(System.Drawing.Color.Green);
@@ -91,6 +95,24 @@ namespace Graphics
             this.currentGraphingState = GraphingState.graphing;
             this.toolStripStatusLabel1.Text = "Graphing";
 
+            // create some arbitrary function now
+            this.f["test"] = new Func<double, double, double, double, Point>((x, y, z, t) => {
+
+                // notice it doesn't care about y, z, or t... just returns a point for x which is fine as its a simple algorithm
+
+                // Equations - not very extensible... move equations into a text string then figure out a way to generate these equations dynamically during a plot
+                var cos = Complex.Sqrt(200 + zoom * x * 0.0001 * Math.Cos(x * 0.0001));
+                var sin = Complex.Sqrt(3.141433434133413 + zoom * x * 0.0001 * Math.Sin(x * 0.0001));
+
+                // convert the plot during each iteration to a single point to be rendered
+                return new Point(
+                        (cos.Imaginary == 0 ? (int)(cos.Real * 42) : (int)(cos.Imaginary * 42) * -1),
+                        (sin.Imaginary == 0 ? (int)(sin.Real * 42) : (int)(sin.Imaginary * 42) * -1));
+
+            });
+
+
+
             // iterates over some plot or formula ... may need to change this to x, y, z etc...
             // needs to use smarter iteration and plots by placing in a thread or threads
             for (int x = 0; x < 1_500_000_000; x++)
@@ -116,14 +138,18 @@ namespace Graphics
                 var ox = this.panel4.Width / 2;
                 var oy = this.panel4.Height /2;
 
-                // Equations - not very extensible... move equations into a text string then figure out a way to generate these equations dynamically during a plot
-                var cos = Complex.Sqrt(200 + zoom * x * 0.0001 * Math.Cos(x * 0.0001));
-                var sin = Complex.Sqrt(3.141433434133413 + zoom * x * 0.0001 * Math.Sin(x * 0.0001));
+                //// Equations - not very extensible... move equations into a text string then figure out a way to generate these equations dynamically during a plot
+                //var cos = Complex.Sqrt(200 + zoom * x * 0.0001 * Math.Cos(x * 0.0001));
+                //var sin = Complex.Sqrt(3.141433434133413 + zoom * x * 0.0001 * Math.Sin(x * 0.0001));
 
-                // convert the plot during each iteration to a single point to be rendered
-                var pt = new Point(
-                        ox + (cos.Imaginary == 0 ? (int)(cos.Real * 42) : (int)(cos.Imaginary * 42) * -1),
-                        oy + (sin.Imaginary == 0 ? (int)(sin.Real * 42) : (int)(sin.Imaginary * 42) * -1));
+                //// convert the plot during each iteration to a single point to be rendered
+                //var pt = new Point(
+                //        ox + (cos.Imaginary == 0 ? (int)(cos.Real * 42) : (int)(cos.Imaginary * 42) * -1),
+                //        oy + (sin.Imaginary == 0 ? (int)(sin.Real * 42) : (int)(sin.Imaginary * 42) * -1));
+                var pt = f["test"](x, 0, 0, 0);
+
+                // add offset
+                pt = new Point(pt.X + ox, pt.Y + oy);
 
                 // check that the plot has not already been plotted, otherwise skip or continue to next iteration
                 if (plotPoint.X == pt.X && plotPoint.Y == pt.Y)
