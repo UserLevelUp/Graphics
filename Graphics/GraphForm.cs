@@ -44,9 +44,12 @@ namespace Graphics
         private GraphingState currentGraphingState = GraphingState.stopped;
         private PaintCommand currentPaintCommand = PaintCommand.opaque;
         Formula f = new Formula();
-        
+
 
         // Green paint brush... TODO: build based on user selection
+        private System.Drawing.SolidBrush myBrush1 = new System.Drawing.SolidBrush(System.Drawing.Color.DeepSkyBlue);
+        private System.Drawing.SolidBrush myBrush2 = new System.Drawing.SolidBrush(System.Drawing.Color.DeepPink);
+        private System.Drawing.SolidBrush myBrush4 = new System.Drawing.SolidBrush(System.Drawing.Color.Gold);
         private System.Drawing.SolidBrush myBrush3 = new System.Drawing.SolidBrush(System.Drawing.Color.Green);
 
         // flags
@@ -67,10 +70,24 @@ namespace Graphics
                     while (qpts.Count > 0)
                     {
                         var pt = qpts.Dequeue();
-                        e.Graphics.DrawLine(new Pen(myBrush3),
-                            pt,
-                            new Point(pt.X + 1, pt.Y + 1)
-                        );
+
+                        //e.Graphics.DrawLine(new Pen(myBrush1), pt, new Point(pt.X - 1, pt.Y));
+                        //e.Graphics.DrawLine(new Pen(myBrush2), pt, new Point(pt.X, pt.Y - 1));
+                        //e.Graphics.DrawLine(new Pen(myBrush3), pt, new Point(pt.X, pt.Y));
+                        //e.Graphics.DrawLine(new Pen(myBrush4), pt, new Point(pt.X - 1, pt.Y - 1));
+
+                        //e.Graphics.DrawLine(new Pen(myBrush3), pt.X, pt.Y, pt.X + 1, pt.Y + 1);
+
+                        e.Graphics.FillRectangle(myBrush3, pt.X, pt.Y, 1, 1);
+                        e.Graphics.FillRectangle(myBrush4, pt.X + 1, pt.Y + 1, 1, 1);
+                        e.Graphics.FillRectangle(myBrush1, pt.X + 1, pt.Y,  1,  1);
+                        e.Graphics.FillRectangle(myBrush2, pt.X, pt.Y + 1,  1,  1);
+
+                        //e.Graphics.DrawLine(new Pen(myBrush4),
+                        //    pt,
+                        //    new Point(pt.X + 1, pt.Y + 1)
+                        //);
+
                     }
                     this.dequeing_flag = false;
                 }
@@ -96,22 +113,23 @@ namespace Graphics
             this.toolStripStatusLabel1.Text = "Graphing";
 
             // create some arbitrary function now
-            this.f["test"] = new Func<double, double, double, double, Point>((x, y, z, t) => {
+            if (!f.formulas.ContainsKey("test"))
+            {
+                f["test"] = new Func<double, double, double, double, Point>((x, y, z, t) => {
 
-                // notice it doesn't care about y, z, or t... just returns a point for x which is fine as its a simple algorithm
+                    // notice it doesn't care about y, z, or t... just returns a point for x which is fine as its a simple algorithm
 
-                // Equations - not very extensible... move equations into a text string then figure out a way to generate these equations dynamically during a plot
-                var cos = Complex.Sqrt(200 + zoom * x * 0.0001 * Math.Cos(x * 0.0001));
-                var sin = Complex.Sqrt(3.141433434133413 + zoom * x * 0.0001 * Math.Sin(x * 0.0001));
+                    // Equations - not very extensible... move equations into a text string then figure out a way to generate these equations dynamically during a plot
+                    var cos = Complex.Sqrt(zoom * x * 1.00 * Math.Cos(x * 1.00));
+                    var sin = Complex.Sqrt(zoom * x * 1.00 * Math.Sin(x * 1.00));
 
-                // convert the plot during each iteration to a single point to be rendered
-                return new Point(
-                        (cos.Imaginary == 0 ? (int)(cos.Real * 42) : (int)(cos.Imaginary * 42) * -1),
-                        (sin.Imaginary == 0 ? (int)(sin.Real * 42) : (int)(sin.Imaginary * 42) * -1));
+                    // convert the plot during each iteration to a single point to be rendered
+                    return new Point(
+                            (cos.Imaginary == 0 ? (int)(cos.Real * 42) : (int)(cos.Imaginary * 42) * -1),
+                            (sin.Imaginary == 0 ? (int)(sin.Real * 42) : (int)(sin.Imaginary * 42) * -1));
 
-            });
-
-
+                });
+            }
 
             // iterates over some plot or formula ... may need to change this to x, y, z etc...
             // needs to use smarter iteration and plots by placing in a thread or threads
@@ -178,8 +196,19 @@ namespace Graphics
                     // move back to the windows form thread to perform windows form operations using the drawing area and the invoke command
                     this.panel4.Invoke(new Action(() =>
                         {
-                                panel4.Invalidate(new Rectangle(new Point(pt.X, pt.Y), new Size(2, 2)));
-                                panel4.Update();
+                            //panel4.Invalidate(new Rectangle(new Point(pt.X - 1, pt.Y - 1), new Size(2, 2)));
+
+                            //panel4.Invalidate(new Rectangle(new Point(pt.X - 1, pt.Y + 1), new Size(2, 2)));
+
+                            //panel4.Invalidate(new Rectangle(new Point(pt.X + 1, pt.Y - 1), new Size(2, 2)));
+
+                            panel4.Invalidate(new Rectangle(new Point(pt.X+1, pt.Y+1), new Size(1, 1)));
+                            panel4.Invalidate(new Rectangle(new Point(pt.X+1, pt.Y), new Size(1, 1)));
+                            panel4.Invalidate(new Rectangle(new Point(pt.X, pt.Y+1), new Size(1, 1)));
+                            panel4.Invalidate(new Rectangle(new Point(pt.X, pt.Y), new Size(1, 1)));
+
+
+                            panel4.Update();
                         }));
                 }
             }
@@ -196,10 +225,12 @@ namespace Graphics
             if (this.currentGraphingState == GraphingState.stopped)
             {
                 this.breakOut = false;
+                btnGraph.Text = "Stop Graphing";
             }
             else if (this.currentGraphingState == GraphingState.graphing)
             {
                 this.breakOut = true;
+                btnGraph.Text = "Graphing";
             }
             else
             {
