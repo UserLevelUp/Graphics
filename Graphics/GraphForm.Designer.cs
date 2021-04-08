@@ -45,6 +45,11 @@ namespace Graphics
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CheckQuad1 = new System.Windows.Forms.CheckBox();
+            this.CheckQuad2 = new System.Windows.Forms.CheckBox();
+            this.CheckQuad3 = new System.Windows.Forms.CheckBox();
+            this.CheckQuad4 = new System.Windows.Forms.CheckBox();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -52,6 +57,7 @@ namespace Graphics
             this.splitContainer1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -82,7 +88,8 @@ namespace Graphics
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1374, 943);
             this.panel4.TabIndex = 2;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
+            this.panel4.Resize += new System.EventHandler(this.Panel4_Resize);
             // 
             // comboBox1
             // 
@@ -96,6 +103,7 @@ namespace Graphics
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel5.Controls.Add(this.groupBox1);
             this.panel5.Controls.Add(this.comboBox1);
             this.panel5.Location = new System.Drawing.Point(3, 3);
             this.panel5.Name = "panel5";
@@ -146,7 +154,7 @@ namespace Graphics
             this.btnClear.TabIndex = 4;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // btnPause
             // 
@@ -156,7 +164,7 @@ namespace Graphics
             this.btnPause.TabIndex = 3;
             this.btnPause.Text = "Pause";
             this.btnPause.UseVisualStyleBackColor = true;
-            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
+            this.btnPause.Click += new System.EventHandler(this.BtnPause_Click);
             // 
             // txtZoom
             // 
@@ -164,7 +172,7 @@ namespace Graphics
             this.txtZoom.Name = "txtZoom";
             this.txtZoom.Size = new System.Drawing.Size(196, 39);
             this.txtZoom.TabIndex = 2;
-            this.txtZoom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtZoom_KeyPress);
+            this.txtZoom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtZoom_KeyPress);
             // 
             // lblZoom
             // 
@@ -184,7 +192,7 @@ namespace Graphics
             this.btnGraph.TabIndex = 0;
             this.btnGraph.Text = "Graph";
             this.btnGraph.UseVisualStyleBackColor = true;
-            this.btnGraph.Click += new System.EventHandler(this.btnGraph_Click);
+            this.btnGraph.Click += new System.EventHandler(this.BtnGraph_Click);
             // 
             // statusStrip1
             // 
@@ -210,6 +218,67 @@ namespace Graphics
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(172, 32);
             this.toolStripStatusLabel1.Text = "StatusMessage";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.CheckQuad4);
+            this.groupBox1.Controls.Add(this.CheckQuad3);
+            this.groupBox1.Controls.Add(this.CheckQuad2);
+            this.groupBox1.Controls.Add(this.CheckQuad1);
+            this.groupBox1.Location = new System.Drawing.Point(31, 146);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(347, 210);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Quadrants";
+            // 
+            // CheckQuad1
+            // 
+            this.CheckQuad1.AutoSize = true;
+            this.CheckQuad1.Checked = true;
+            this.CheckQuad1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CheckQuad1.Location = new System.Drawing.Point(7, 39);
+            this.CheckQuad1.Name = "CheckQuad1";
+            this.CheckQuad1.Size = new System.Drawing.Size(184, 36);
+            this.CheckQuad1.TabIndex = 0;
+            this.CheckQuad1.Text = "1st Quadrant";
+            this.CheckQuad1.UseVisualStyleBackColor = true;
+            // 
+            // CheckQuad2
+            // 
+            this.CheckQuad2.AutoSize = true;
+            this.CheckQuad2.Checked = true;
+            this.CheckQuad2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CheckQuad2.Location = new System.Drawing.Point(7, 81);
+            this.CheckQuad2.Name = "CheckQuad2";
+            this.CheckQuad2.Size = new System.Drawing.Size(194, 36);
+            this.CheckQuad2.TabIndex = 1;
+            this.CheckQuad2.Text = "2nd Quadrant";
+            this.CheckQuad2.UseVisualStyleBackColor = true;
+            // 
+            // CheckQuad3
+            // 
+            this.CheckQuad3.AutoSize = true;
+            this.CheckQuad3.Checked = true;
+            this.CheckQuad3.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CheckQuad3.Location = new System.Drawing.Point(7, 123);
+            this.CheckQuad3.Name = "CheckQuad3";
+            this.CheckQuad3.Size = new System.Drawing.Size(188, 36);
+            this.CheckQuad3.TabIndex = 2;
+            this.CheckQuad3.Text = "3rd Quadrant";
+            this.CheckQuad3.UseVisualStyleBackColor = true;
+            // 
+            // CheckQuad4
+            // 
+            this.CheckQuad4.AutoSize = true;
+            this.CheckQuad4.Checked = true;
+            this.CheckQuad4.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CheckQuad4.Location = new System.Drawing.Point(7, 158);
+            this.CheckQuad4.Name = "CheckQuad4";
+            this.CheckQuad4.Size = new System.Drawing.Size(188, 36);
+            this.CheckQuad4.TabIndex = 3;
+            this.CheckQuad4.Text = "4th Quadrant";
+            this.CheckQuad4.UseVisualStyleBackColor = true;
+            // 
             // GraphForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -233,6 +302,8 @@ namespace Graphics
             this.panel1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,6 +325,11 @@ namespace Graphics
         private System.Windows.Forms.Button btnClear;
 		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
 		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-	}
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckBox CheckQuad4;
+        private System.Windows.Forms.CheckBox CheckQuad3;
+        private System.Windows.Forms.CheckBox CheckQuad2;
+        private System.Windows.Forms.CheckBox CheckQuad1;
+    }
 }
 

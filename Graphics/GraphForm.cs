@@ -33,70 +33,54 @@ namespace Graphics
 
         
         // private variables ... make this more extensible and functional and testable
-        private ReadOnlySequence<Point> spts = new ReadOnlySequence<Point>();
+
         private List<Point> pts = new List<Point>();
         private static Queue<Point> qpts = new System.Collections.Generic.Queue<Point>();
-        private int maxX = 1;
-        private int maxY = 0;
-        private int minX = 0;
-        private int minY = 0;
         private bool dequeing_flag = false;
         private GraphingState currentGraphingState = GraphingState.stopped;
         private PaintCommand currentPaintCommand = PaintCommand.opaque;
         Formula f = new Formula();
-
+        private Rectangle rect = new Rectangle();
 
         // Green paint brush... TODO: build based on user selection
-        private System.Drawing.SolidBrush myBrush1 = new System.Drawing.SolidBrush(System.Drawing.Color.DeepSkyBlue);
-        private System.Drawing.SolidBrush myBrush2 = new System.Drawing.SolidBrush(System.Drawing.Color.DeepPink);
-        private System.Drawing.SolidBrush myBrush4 = new System.Drawing.SolidBrush(System.Drawing.Color.Gold);
-        private System.Drawing.SolidBrush myBrush3 = new System.Drawing.SolidBrush(System.Drawing.Color.Green);
+        private readonly System.Drawing.SolidBrush myBrush1 = new System.Drawing.SolidBrush(System.Drawing.Color.DeepSkyBlue);
+        private readonly System.Drawing.SolidBrush myBrush2 = new System.Drawing.SolidBrush(System.Drawing.Color.DeepPink);
+        private readonly System.Drawing.SolidBrush myBrush4 = new System.Drawing.SolidBrush(System.Drawing.Color.Gold);
+        private readonly System.Drawing.SolidBrush myBrush3 = new System.Drawing.SolidBrush(System.Drawing.Color.Green);
 
         // flags
-        private Boolean runIt = false;
-        private Boolean breakOut = true; // when set to true it should break out of the next iteration and stop the current plot.  This is not very functional but works
+        private bool runIt = false;
+        private bool breakOut = true; // when set to true it should break out of the next iteration and stop the current plot.  This is not very functional but works
 
         /// <summary>
         /// panel4_Paint ... change name to GraphicPaint or Layer Paint etc...
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void panel4_Paint(object sender, PaintEventArgs e)
+        private void Panel4_Paint(object sender, PaintEventArgs e)
         {
-            if (this.currentPaintCommand == PaintCommand.opaque)
+
+            if (currentPaintCommand == PaintCommand.opaque)
             {
-                if (this.runIt == true)
+                if (runIt == true)
                 {
                     while (qpts.Count > 0)
                     {
                         var pt = qpts.Dequeue();
-
-                        //e.Graphics.DrawLine(new Pen(myBrush1), pt, new Point(pt.X - 1, pt.Y));
-                        //e.Graphics.DrawLine(new Pen(myBrush2), pt, new Point(pt.X, pt.Y - 1));
-                        //e.Graphics.DrawLine(new Pen(myBrush3), pt, new Point(pt.X, pt.Y));
-                        //e.Graphics.DrawLine(new Pen(myBrush4), pt, new Point(pt.X - 1, pt.Y - 1));
-
-                        //e.Graphics.DrawLine(new Pen(myBrush3), pt.X, pt.Y, pt.X + 1, pt.Y + 1);
-
                         e.Graphics.FillRectangle(myBrush3, pt.X, pt.Y, 1, 1);
                         e.Graphics.FillRectangle(myBrush4, pt.X + 1, pt.Y + 1, 1, 1);
                         e.Graphics.FillRectangle(myBrush1, pt.X + 1, pt.Y,  1,  1);
                         e.Graphics.FillRectangle(myBrush2, pt.X, pt.Y + 1,  1,  1);
 
-                        //e.Graphics.DrawLine(new Pen(myBrush4),
-                        //    pt,
-                        //    new Point(pt.X + 1, pt.Y + 1)
-                        //);
-
                     }
-                    this.dequeing_flag = false;
+                    dequeing_flag = false;
                 }
             } 
-            else if (this.currentPaintCommand == PaintCommand.clear)
+            else if (currentPaintCommand == PaintCommand.clear)
             {
-                this.panel4.Invalidate();
-                this.currentPaintCommand = PaintCommand.opaque;
-                this.toolStripStatusLabel2.Text = "Opaque";
+               panel4.Invalidate();
+               currentPaintCommand = PaintCommand.opaque;
+               toolStripStatusLabel2.Text = "Opaque";
             }
         }
 
@@ -119,9 +103,36 @@ namespace Graphics
 
                     // notice it doesn't care about y, z, or t... just returns a point for x which is fine as its a simple algorithm
 
+                    // var rigor
+                    var rigor = 0.005;
+
                     // Equations - not very extensible... move equations into a text string then figure out a way to generate these equations dynamically during a plot
-                    var cos = Complex.Sqrt(zoom * x * 1.00 * Math.Cos(x * 1.00));
-                    var sin = Complex.Sqrt(zoom * x * 1.00 * Math.Sin(x * 1.00));
+                    //var cosInit = Math.Cos(x * rigor);
+                    //var sinInit = Math.Cos(x * rigor);
+
+                    //if (cosInit >= 0 && sinInit >= 0)
+                    //{
+                    //    // 1st quad
+                    //}
+                    //else if (cosInit < 0 && sinInit > 0)
+                    //{
+                    //    // 2nd quad
+                    //    //return new Point(0, 0);
+                    //}
+                    //else if (cosInit < 0 && sinInit < 0)
+                    //{
+                    //    // 3rd quad
+                    //    //return new Point(0, 0);
+
+                    //}
+                    //else
+                    //{
+                    //    // 4th quad
+                    //    //return new Point(0, 0);
+                    //}
+
+                    Complex cos = Complex.Sqrt(520 + zoom * x * rigor * Math.Cos(x * rigor));
+                    Complex sin = Complex.Sqrt(520 + zoom * x * rigor * Math.Sin(x * rigor));
 
                     // convert the plot during each iteration to a single point to be rendered
                     return new Point(
@@ -133,28 +144,28 @@ namespace Graphics
 
             // iterates over some plot or formula ... may need to change this to x, y, z etc...
             // needs to use smarter iteration and plots by placing in a thread or threads
-            for (int x = 0; x < 1_500_000_000; x++)
+            for (var x = 0; x < 1_500_000_000; x++)
             {
-                if (this.breakOut == true)
+                if (breakOut == true)
                 {
-                    this.currentGraphingState = GraphingState.stopped;
-                    this.toolStripStatusLabel1.Text = "Stopped";
+                    currentGraphingState = GraphingState.stopped;
+                    toolStripStatusLabel1.Text = "Stopped";
                     break;
                 }
 
                 // while pause is pressed loop here waiting for it to be unpressed
-                while (this.runIt == false)
+                while (runIt == false)
                 {
-                    this.currentGraphingState = GraphingState.paused;
-                    this.toolStripStatusLabel1.Text = "Paused";
+                    currentGraphingState = GraphingState.paused;
+                    toolStripStatusLabel1.Text = "Paused";
                     System.Threading.Thread.Sleep(100);
                 }
 
-                this.currentGraphingState = GraphingState.graphing;
+                currentGraphingState = GraphingState.graphing;
 
                 // the current offset uses the center of screen plus some number
-                var ox = this.panel4.Width / 2;
-                var oy = this.panel4.Height /2;
+                var ox = panel4.Width / 2;
+                var oy = panel4.Height /2;
 
                 //// Equations - not very extensible... move equations into a text string then figure out a way to generate these equations dynamically during a plot
                 //var cos = Complex.Sqrt(200 + zoom * x * 0.0001 * Math.Cos(x * 0.0001));
@@ -169,9 +180,16 @@ namespace Graphics
                 // add offset
                 pt = new Point(pt.X + ox, pt.Y + oy);
 
+                if (!rect.Contains(pt))
+                {
+                    continue;
+                }
+
                 // check that the plot has not already been plotted, otherwise skip or continue to next iteration
                 if (plotPoint.X == pt.X && plotPoint.Y == pt.Y)
+                {
                     continue;
+                }
 
                 // save the current point after testing if it was already plotted last
                 // TODO: perhaps store points in a key value pair where the key is a plotted point... if it was already plotted for a given color then move on
@@ -191,10 +209,10 @@ namespace Graphics
                 // after every single iteration that wasn't already plotted it will cause plot to invalidated and updated
                 if (x%1 == 0)
                 {
-                    this.dequeing_flag = true;
+                    dequeing_flag = true;
 
                     // move back to the windows form thread to perform windows form operations using the drawing area and the invoke command
-                    this.panel4.Invoke(new Action(() =>
+                    panel4.Invoke(new Action(() =>
                         {
                             //panel4.Invalidate(new Rectangle(new Point(pt.X - 1, pt.Y - 1), new Size(2, 2)));
 
@@ -220,16 +238,18 @@ namespace Graphics
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnGraph_Click(object sender, EventArgs e)
+        private void BtnGraph_Click(object sender, EventArgs e)
         {
-            if (this.currentGraphingState == GraphingState.stopped)
+            rect = panel4.ClientRectangle;
+
+            if (currentGraphingState == GraphingState.stopped)
             {
-                this.breakOut = false;
+                breakOut = false;
                 btnGraph.Text = "Stop Graphing";
             }
-            else if (this.currentGraphingState == GraphingState.graphing)
+            else if (currentGraphingState == GraphingState.graphing)
             {
-                this.breakOut = true;
+                breakOut = true;
                 btnGraph.Text = "Graphing";
             }
             else
@@ -240,7 +260,7 @@ namespace Graphics
             // TODO: Check to see if it broke out.  Create a nother parameter to check...
             System.Threading.Thread.Sleep(1000);
 
-            this.runIt = true;
+            runIt = true;
             _ = Task.Run(async () =>
               {
                   await performFormula();
@@ -248,7 +268,7 @@ namespace Graphics
             
         }
 
-        private void txtZoom_KeyPress(object sender, KeyPressEventArgs e)
+        private void TxtZoom_KeyPress(object sender, KeyPressEventArgs e)
         {
             // used code from: https://stackoverflow.com/questions/19761487/how-to-make-a-textbox-accept-only-numbers-and-just-one-decimal-point-in-windows
             // this code prevents anything but numbers and decimal and more numbers
@@ -261,29 +281,33 @@ namespace Graphics
             }
         }
 
-        private void btnPause_Click(object sender, EventArgs e)
+        private void BtnPause_Click(object sender, EventArgs e)
         {
-            if (this.runIt == true)
+            if (runIt == true)
             {
-                this.runIt = false;
-                this.btnPause.Text = "Continue";
-                this.toolStripStatusLabel1.Text = "Paused";
+                runIt = false;
+                btnPause.Text = "Continue";
+                toolStripStatusLabel1.Text = "Paused";
             }
             else
             {
-                this.runIt = true;
-                this.btnPause.Text = "Pause";
-                this.toolStripStatusLabel1.Text = "Graphing";
+                runIt = true;
+                btnPause.Text = "Pause";
+                toolStripStatusLabel1.Text = "Graphing";
             }
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        private void BtnClear_Click(object sender, EventArgs e)
         {
-            this.currentPaintCommand = PaintCommand.clear;
-            this.toolStripStatusLabel2.Text = "Clear";
-            this.panel4.Invalidate();
-            this.panel4.Update();
+            currentPaintCommand = PaintCommand.clear;
+            toolStripStatusLabel2.Text = "Clear";
+            panel4.Invalidate();
+            panel4.Update();
         }
 
+        private void Panel4_Resize(object sender, EventArgs e)
+        {
+            rect = panel4.ClientRectangle;
+        }
     }
 }
