@@ -1,0 +1,79 @@
+{
+  "schema": "graph-riemann-conclusion-acceptance-v1",
+  "traceId": "graph.riemann.conclusion.acceptance",
+  "status": "accepted",
+  "acceptedAtUtc": "2026-11-15T11:28:51.663922+00:00",
+  "scope": "The 252-second derived presentation with formal ending, public-language replacement and future prime-distribution bridge; not a mathematical proof or a new research result.",
+  "sourceCheckpoint": "d8bc2b4ec09837fc2f41dfb6944db23134c0b070",
+  "evidence": [
+    {
+      "path": "evidence/delivery-manifest.json",
+      "sha256": "f3db63799e36d760324c723c8599b45944b07e4e609d6febfcd7a7e7f9ca04d2"
+    },
+    {
+      "path": "evidence/media-qa.json",
+      "sha256": "2afe91268267cd8a808df34112d8c7e2bedbf37cf95c316bd122e77284b38cd1"
+    },
+    {
+      "path": "review/render-review.json",
+      "sha256": "f39d0391d6efb5943de4b17de9b1365c1b592091fb99f01e5fd2477cda04d030"
+    },
+    {
+      "path": "review/final-content-review.json",
+      "sha256": "7b9730f7da8ec8775475dfb96315c30471808c0c0bb6b282cb172be25c2858bf"
+    },
+    {
+      "path": "review/prime-connection-review.json",
+      "sha256": "46b2b8691561dab2e7e0051ce39400b9381823b9b6f714ebf645cf6fab8d7fa5"
+    },
+    {
+      "path": "review/public-language-review.json",
+      "sha256": "93e8d257b9b0c362a258a09f37eb006026da8147874067e448b2962a2d3e3dc8"
+    },
+    {
+      "path": "workers/evidence/cli-review-summary.json",
+      "sha256": "88c38d696e53f33f3c914350e5faed8b7fad423586e01857b6af9a868d5d8b5d"
+    },
+    {
+      "path": "evidence/repository-card.json",
+      "sha256": "70410bf2e35f91c07298096a8655b4dff33f7a836aa43672b9ed6e667efa5c0e"
+    }
+  ],
+  "deliverables": {
+    "combinedVideo": {
+      "file": "presentation-with-conclusion.mp4",
+      "sha256": "98e9ece7d8cac4e4974b72d6c6ed9b63752f4b8744e60677879124e19d7a56dd",
+      "seconds": 252,
+      "frames": 6048
+    },
+    "endingVideo": {
+      "file": "formal-conclusion.mp4",
+      "sha256": "40593183af2ca7e14c00271fa2a3e5743829c9606ed6fd73eb356253d8438e81",
+      "seconds": 114
+    },
+    "editableAfterEffectsProject": {
+      "file": "presentation-with-conclusion.aep",
+      "sha256": "a9d0a1a424b739b91b61cda36df5893f28bfc2bceee1f48da22349a59436973e"
+    }
+  },
+  "checks": [
+    "Independent mathematical reviews pass, with review scope separated between initial scenes and supplements.",
+    "Actual bounded Codex CLI review through recur-watch accepted the initial formulation; prior protocol failure retained.",
+    "Complete combined export decodes without errors at 1920x1080, 24 fps and 6,048 frames.",
+    "Sampled original-prefix visuals match within re-encoding tolerance; original source and archived copy retain exact hash.",
+    "Public narration replacement is restricted to 14\u201328seconds in derived prefix audio; outside segments match within PCM quantization.",
+    "All equation characters have font coverage, and seven corrected native stills visibly pass including exact last frame.",
+    "Native render omitted logical glyphs on first attempt; failed report and stills preserved.",
+    "Final source card includes actual git remote and branch output, separately verified public visibility and pushed source checkpoint.",
+    "Source/evidence and media seal verified 114 source/evidence files and 68 media/artifact files."
+  ],
+  "limits": [
+    "Finite numerical observations remain uncertified.",
+    "No RH proof, new RH verification height, novel continuation theorem, speed gain, or next-prime prediction established.",
+    "Prime reconstruction with a rigorous omitted-tail bound is proposed future work.",
+    "Phase rotation is recorded as deferred; no new moving-frame renderer implemented.",
+    "No independent speech transcription or full-motion visual inspection claimed."
+  ],
+  "globalRiemannHypothesisStatus": "open",
+  "publication": "Warp acceptance records completion of the presentation deliverable only."
+}

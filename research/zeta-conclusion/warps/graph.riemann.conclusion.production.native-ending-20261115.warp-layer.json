@@ -1,0 +1,17 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.conclusion",
+  "slice_id": "production",
+  "contract_hash": "contract:graph.riemann.conclusion.production:v1",
+  "attempt_id": "native-ending-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:f3db63799e36d760324c723c8599b45944b07e4e609d6febfcd7a7e7f9ca04d2",
+  "evidence": {
+    "review": [
+      "evidence/delivery-manifest.json",
+      "evidence/media-qa.json",
+      "review/render-review.json"
+    ]
+  },
+  "reason": null
+}

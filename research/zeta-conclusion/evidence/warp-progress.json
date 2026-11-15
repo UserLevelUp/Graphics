@@ -1,0 +1,190 @@
+{
+  "blocked": [],
+  "bubble_uuid": "01a1ded6-5994-7a57-9d3e-79a958101beb",
+  "completed_slices": [
+    "acceptance",
+    "formulation",
+    "production",
+    "review"
+  ],
+  "conflicts": [],
+  "contract_status": "declared-gates-satisfied",
+  "counts": {
+    "blocked": 0,
+    "conflicting": 0,
+    "covered": 4,
+    "pending": 0,
+    "required": 4,
+    "stale_contract": 0
+  },
+  "covered": [
+    "acceptance",
+    "formulation",
+    "production",
+    "review"
+  ],
+  "current_slice": null,
+  "evidence_status": "declared",
+  "gate_evidence": [
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "formulation/conclusion.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "formulation",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "review/final-content-review.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "workers/codex/review.md",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "review",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/delivery-manifest.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/media-qa.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "review/render-review.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "production",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/acceptance.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/delivery-manifest.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "verification",
+      "satisfied": true,
+      "slice_id": "acceptance",
+      "status": "declared"
+    }
+  ],
+  "goal": "Append a reviewed formal conclusion with formulas, bounded conjectures and further-work applications to the accepted video",
+  "layers": [
+    "acceptance@integrated-delivery-20261115",
+    "formulation@formalization-20261115",
+    "production@native-ending-20261115",
+    "review@independent-and-cli-20261115"
+  ],
+  "manifest": "graph.riemann.conclusion.warp-map.json",
+  "pending": [],
+  "ready_slices": [],
+  "root": "\\\\?\\C:\\src\\graph\\research\\zeta-conclusion\\warps",
+  "schema": "warp-progress-v1",
+  "slices": [
+    {
+      "contract_hash": "contract:graph.riemann.conclusion.formulation:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "formulation",
+      "slice_uuid": "01a1ded6-5994-7170-8c82-1210cc653e9c",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.conclusion.review:v1",
+      "depends_on": [
+        "formulation"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "review",
+      "slice_uuid": "01a1ded6-5994-7e54-a193-782dbce3c21c",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.conclusion.production:v1",
+      "depends_on": [
+        "review"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "production",
+      "slice_uuid": "01a1ded6-5994-7e53-ad7b-7fbc3bd5c35b",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.conclusion.acceptance:v1",
+      "depends_on": [
+        "production"
+      ],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "acceptance",
+      "slice_uuid": "01a1ded6-5994-7ec6-a5bc-b3c8e128bf0f",
+      "state": "complete"
+    }
+  ],
+  "stale_contract": [],
+  "state": "complete",
+  "warnings": [],
+  "warp_id": "graph.riemann.conclusion"
+}

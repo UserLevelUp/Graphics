@@ -1,0 +1,22 @@
+{
+  "traceId": "graph.riemann.conclusion.repository.verify",
+  "checkedDate": "2026-11-15",
+  "url": "https://github.com/UserLevelUp/Graphics",
+  "remote": "https://github.com/UserLevelUp/Graphics.git",
+  "branch": "graph/riemann-continuation",
+  "visibility": "public",
+  "commands": {
+    "git remote -v": "origin\thttps://github.com/UserLevelUp/Graphics.git (fetch)\norigin\thttps://github.com/UserLevelUp/Graphics.git (push)",
+    "git branch --show-current": "graph/riemann-continuation"
+  },
+  "publicVisibilityEvidence": {
+    "connector": "GitHub get_repo, repository_full_name=UserLevelUp/Graphics",
+    "repositoryId": "353944436",
+    "returnedVisibility": "public",
+    "webPage": "https://github.com/UserLevelUp/Graphics",
+    "webPageObservation": "Public label visible without signing in"
+  },
+  "limit": "Remote configuration identifies an origin; the separate GitHub metadata and public page establish public visibility. Source commit is resolved at build time.",
+  "sourceCheckpoint": "d8bc2b4ec09837fc2f41dfb6944db23134c0b070",
+  "sourceCheckpointPushed": true
+}

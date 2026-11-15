@@ -1,0 +1,131 @@
+{
+  "schema": "graph-riemann-conclusion-render-review-v1",
+  "traceId": "graph.riemann.conclusion.review.render",
+  "status": "passed",
+  "reviewedAtUtc": "2026-11-15T11:27:19.537489+00:00",
+  "reviewer": "local_quadrant_math independent corrected-render still inspection",
+  "scope": "Seven decoded still frames from the corrected native ending MP4, plus a decoded-frame equality check confirming the near-final still is the exact last frame. This is not a full-video, motion, audio, source-prefix, or mathematical-proof review.",
+  "input": {
+    "video": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/riemann-conclusion/formal-conclusion.mp4",
+    "sha256": "40593183af2ca7e14c00271fa2a3e5743829c9606ed6fd73eb356253d8438e81",
+    "decodedFrameCount": 2736,
+    "decodedDurationSeconds": 114.0
+  },
+  "stills": [
+    {
+      "requestedSeconds": 10,
+      "path": "evidence/final-render-stills/ending-10.png",
+      "sha256": "b0b09452c9f9bbf9ac8ce65c6cfa21cb7a5ee10d11ecb46af94fae3d4881e208"
+    },
+    {
+      "requestedSeconds": 29.5,
+      "path": "evidence/final-render-stills/ending-29-5.png",
+      "sha256": "03ed613847ae9affa93896df19f55cb6faf71ddbb1d1afea4986cd8ffaf470a6"
+    },
+    {
+      "requestedSeconds": 48.5,
+      "path": "evidence/final-render-stills/ending-48-5.png",
+      "sha256": "2435d77151f67a10f5b7aeb0a3c5b3c6f74251b52a48ad22362aaad5d256509c"
+    },
+    {
+      "requestedSeconds": 68,
+      "path": "evidence/final-render-stills/ending-68.png",
+      "sha256": "d3267d75e841585846fe3d67562115c7f1a7180f84cde4565e214b5062b9ad8e"
+    },
+    {
+      "requestedSeconds": 90,
+      "path": "evidence/final-render-stills/ending-90.png",
+      "sha256": "56e5199daed4516213e56fe5d62694d518ba32009f6ee69e739807b0a114855c"
+    },
+    {
+      "requestedSeconds": 108,
+      "path": "evidence/final-render-stills/ending-108.png",
+      "sha256": "80679c4f7c82c655e0f1df831aca1e25a23bd5f407fc96843f69644a5dd25b38"
+    },
+    {
+      "requestedSeconds": 113.95,
+      "path": "evidence/final-render-stills/ending-113-95.png",
+      "sha256": "82427f2257a552d45d35d15e20cb6b5b0de879a47619940c1bb752f7d58760f1"
+    }
+  ],
+  "checks": [
+    {
+      "id": "formal-object",
+      "status": "passed",
+      "seconds": 10,
+      "observation": "All four formula lines are legible, including theta, modulo convention, nonzero Q guard and undefined zero phase. Three bullets including resolution and draw-order limitations fit cleanly."
+    },
+    {
+      "id": "numerical-findings",
+      "status": "passed",
+      "seconds": 29.5,
+      "observation": "Exit targets 0.854448 and 0.917225, target-one endpoint 1.407788 + 23.327988i, original window and non-certified limitation are visible."
+    },
+    {
+      "id": "bounded-conjecture",
+      "status": "passed",
+      "seconds": 48.5,
+      "observation": "Existence symbol, membership symbol, seed relation, regularity guard and reciprocal derivative now render correctly. The fixed endpoint center/radius and all three bullets are legible without overlap."
+    },
+    {
+      "id": "global-obligation",
+      "status": "passed",
+      "seconds": 68,
+      "observation": "The guarded complex-target lift, reciprocal derivative and Speiser equivalence symbol render correctly. The strict open strip and all-heights condition remain visible."
+    },
+    {
+      "id": "prime-connection",
+      "status": "passed",
+      "seconds": 90,
+      "observation": "Weighted prime-power definition, oscillatory identity, RH implication symbol and square-root/log-squared bound, and proposed total error inequality render. The schematic bridge and future-work labels remain visible."
+    },
+    {
+      "id": "repository-final-card",
+      "status": "passed",
+      "seconds": [
+        108,
+        113.95
+      ],
+      "observation": "The public GitHub URL, branch graph/riemann-continuation, fetch/push remote and source checkpoint d8bc2b4ec098 are readable through the last decoded frame."
+    },
+    {
+      "id": "last-frame-verification",
+      "status": "passed",
+      "observation": "The still requested at 113.95 seconds is pixel-identical to independently decoded frame 2735, the final frame of 2736.",
+      "exactLastFrame": "evidence/final-render-stills/ending-113-95.png",
+      "pixelIdentical": true
+    },
+    {
+      "id": "layout",
+      "status": "passed",
+      "observation": "Four equation lines and three bullets fit within the relevant panels. Headers, source credits, presenter and speech bubbles do not overlap or clip."
+    },
+    {
+      "id": "prior-failure-preservation",
+      "status": "passed",
+      "observation": "The preserved failed review and all seven first-render still hashes remain intact."
+    }
+  ],
+  "resolvedFindings": [
+    {
+      "id": "missing-logical-glyphs",
+      "characters": [
+        "∃",
+        "∈",
+        "⇔",
+        "⇒"
+      ],
+      "resolution": "All four symbols are now visibly rendered in the corresponding formulas after the equation-font change.",
+      "priorReview": "C:/src/graph/research/zeta-conclusion/review/render-review-first.json",
+      "priorReviewSha256": "967919a522d42943e0ed35d45bf7206060051290399fb03e3914cc059863911b"
+    }
+  ],
+  "blockingFindings": [],
+  "openBlockerCount": 0,
+  "limitations": [
+    "Reviewed stills only; did not listen to audio or inspect every transition frame.",
+    "Did not validate the authorized prefix audio replacement or the assembled 252-second export in this review.",
+    "Readability was assessed at native1920x1080; this is not a guarantee for reduced mobile playback."
+  ],
+  "evidencePathBase": "C:/src/graph/research/zeta-conclusion"
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.conclusion",
+  "slice_id": "acceptance",
+  "contract_hash": "contract:graph.riemann.conclusion.acceptance:v1",
+  "attempt_id": "integrated-delivery-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:7b71218e18c95ada5f8896ffbc82f0191028cd3f2896201a3f85338282012266",
+  "evidence": {
+    "verification": [
+      "evidence/acceptance.json",
+      "evidence/delivery-manifest.json"
+    ]
+  },
+  "reason": null
+}

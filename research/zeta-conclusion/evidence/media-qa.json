@@ -1,0 +1,145 @@
+{
+  "traceId": "graph.riemann.conclusion.media.verify",
+  "status": "passed",
+  "videoSeconds": 252,
+  "frames": 6048,
+  "frameSize": [
+    1920,
+    1080
+  ],
+  "framesPerSecond": 24,
+  "fullDecodePassed": true,
+  "originalFileUnchanged": true,
+  "originalCopiedExactly": true,
+  "authorizedPrefixAudioReplacement": [
+    14,
+    28
+  ],
+  "publicAudienceTranscriptChecked": true,
+  "prefixReencodingComparisons": [
+    {
+      "time": 7,
+      "rgbRmse": 0.44543581562737117,
+      "tolerance": 3
+    },
+    {
+      "time": 35.5,
+      "rgbRmse": 0.4806304801364703,
+      "tolerance": 3
+    },
+    {
+      "time": 84,
+      "rgbRmse": 0.5205696863570808,
+      "tolerance": 3
+    },
+    {
+      "time": 115.5,
+      "rgbRmse": 0.4435349490500231,
+      "tolerance": 3
+    },
+    {
+      "time": 130.5,
+      "rgbRmse": 0.4041197312698875,
+      "tolerance": 3
+    }
+  ],
+  "endingAudio": [
+    {
+      "id": "formal_object",
+      "rms": 0.08198479059424875,
+      "peak": 0.644549548625946
+    },
+    {
+      "id": "finite_findings",
+      "rms": 0.09253491089365032,
+      "peak": 0.601003885269165
+    },
+    {
+      "id": "bounded_certificate",
+      "rms": 0.09011629485528969,
+      "peak": 0.7623909711837769
+    },
+    {
+      "id": "global_obligation",
+      "rms": 0.0923514904418452,
+      "peak": 0.6673780679702759
+    },
+    {
+      "id": "prime_connection",
+      "rms": 0.08571073152758106,
+      "peak": 0.667676568031311
+    },
+    {
+      "id": "repository",
+      "rms": 0.07631667923759419,
+      "peak": 0.7409078478813171
+    }
+  ],
+  "previewFrames": [
+    {
+      "id": "formal_object",
+      "time": 148.0,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-conclusion\\preview\\formal_object.png"
+    },
+    {
+      "id": "finite_findings",
+      "time": 167.5,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-conclusion\\preview\\finite_findings.png"
+    },
+    {
+      "id": "bounded_certificate",
+      "time": 186.5,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-conclusion\\preview\\bounded_certificate.png"
+    },
+    {
+      "id": "global_obligation",
+      "time": 206.0,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-conclusion\\preview\\global_obligation.png"
+    },
+    {
+      "id": "prime_connection",
+      "time": 228.0,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-conclusion\\preview\\prime_connection.png"
+    },
+    {
+      "id": "repository",
+      "time": 246.0,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-conclusion\\preview\\repository.png"
+    }
+  ],
+  "lastFrame": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-conclusion\\preview\\last-frame.png",
+  "videoSha256": "98e9ece7d8cac4e4974b72d6c6ed9b63752f4b8744e60677879124e19d7a56dd",
+  "aepSha256": "a9d0a1a424b739b91b61cda36df5893f28bfc2bceee1f48da22349a59436973e",
+  "limitations": [
+    "Combined video is re-encoded; original source file is unchanged. Derived prefix replaces narration only at14\u201328seconds. Visual prefix comparisons sample five timestamps, not every frame.",
+    "Narration source prompts, duration, decoding and signal presence are checked; no independent speech transcription."
+  ],
+  "prefixAudioEditCheck": {
+    "outsideReplacementComparisons": [
+      {
+        "start": 0.1,
+        "end": 13.9,
+        "maxAbsoluteSampleDifference": 2.6930123567581177e-05
+      },
+      {
+        "start": 28.1,
+        "end": 137.9,
+        "maxAbsoluteSampleDifference": 2.7037225663661957e-05
+      }
+    ],
+    "replacementRmsDifference": 0.10594645142555237,
+    "edgeGuardSeconds": 0.1
+  },
+  "renderReview": {
+    "path": "review/render-review.json",
+    "sha256": "f39d0391d6efb5943de4b17de9b1365c1b592091fb99f01e5fd2477cda04d030",
+    "status": "passed",
+    "scope": "Seven decoded still frames from the corrected native ending MP4, plus a decoded-frame equality check confirming the near-final still is the exact last frame. This is not a full-video, motion, audio, source-prefix, or mathematical-proof review."
+  },
+  "coordinatorVisualCheck": {
+    "scope": "Combined-export contact sheet, full-size bounded-certificate card and exact final frame",
+    "status": "passed",
+    "observations": "Existence and membership symbols are visible; final GitHub URL, branch, remote commands and source checkpoint remain legible through the final frame."
+  },
+  "correctedRenderIncident": "First native render omitted four logical glyphs. Failed review and stills preserved; CambriaMath equation font corrected, all84formula characters covered, corrected rendered stills passed."
+}

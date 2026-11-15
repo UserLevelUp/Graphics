@@ -165,3 +165,17 @@
 - lane.separator.src: _
 - evidence.docs.tree_cmd: recur tree "**" -d docs/ --sep .
 - evidence.src.tree_cmd: recur tree "**" -d src/ --sep _
+
+### graph-riemann-conclusion-accepted-20261115
+- date: unix:1794742161
+- lane.state.docs.current: none
+- lane.state.src.current: none
+- lane.state.tests.passed: none
+- lane.state.tests.failed: none
+- lane.git.branch: graph/riemann-continuation
+- lane.git.head: d8bc2b4 Fix native equation glyphs and verify public narration edit
+- lane.git.worktree: dirty=10
+- lane.separator.docs: .
+- lane.separator.src: _
+- evidence.docs.tree_cmd: recur tree "**" -d docs/ --sep .
+- evidence.src.tree_cmd: recur tree "**" -d src/ --sep _
