@@ -1,0 +1,9 @@
+{
+  "run_id": "20261115T045132Z-1770e4f7",
+  "after_turn": 1,
+  "action": "steer",
+  "token": "24ce89b47854422792e4d06724483a58",
+  "instruction": "Continue to a COMPLETE checklist, with concise test IDs, inputs, expected outcomes, and evidence. Add domain rejection for sigma<=1, exact axes plus near-axis uncertainty and the origin, and synthetic phase-wrap cases. Compare L_N and principal Log(P_N) modulo 2*pi*i within numerical tolerance, not exact floating-point equality. Only B_N is required to decrease; neither actual complex error nor the product bound is asserted monotone. Keep analytic truncation bounds separate from empirical double-precision tolerances. Label every test PLANNED: you have not run the implementation. Use the proposed artifact names graph.primes.phase.values.json, graph.primes.phase.methods.json, and graph.primes.phase.render.png. Keep the result under 350 words, check the clock, and acknowledge this instruction's token.\n",
+  "state": "queued",
+  "queued_at": "2026-11-15T04:52:37.079960+00:00"
+}

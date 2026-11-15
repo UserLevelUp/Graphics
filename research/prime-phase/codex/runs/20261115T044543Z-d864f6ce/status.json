@@ -1,0 +1,10 @@
+{
+  "trace_id": "graph.primes.phase.codex.progress",
+  "run_id": "20261115T044543Z-d864f6ce",
+  "provider": "codex",
+  "turn": 1,
+  "state": "worker_failed",
+  "at": "2026-11-15T04:45:46.127644+00:00",
+  "exit_code": 1,
+  "message": "Read retained stdout/stderr for this turn."
+}

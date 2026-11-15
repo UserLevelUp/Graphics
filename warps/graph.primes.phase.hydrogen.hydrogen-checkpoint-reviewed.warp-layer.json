@@ -1,0 +1,16 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.primes.phase",
+  "slice_id": "hydrogen",
+  "contract_hash": "contract:graph.primes.phase.hydrogen:v1",
+  "attempt_id": "hydrogen-checkpoint-reviewed",
+  "result_state": "accepted",
+  "result_hash": "sha256:06c6fc6899a993c8d0eab90226cefe55e294d8517394db92b8fa2c2f51ced98a",
+  "evidence": {
+    "review": [
+      "research/prime-phase/hydrogen/runs/20261115T045132Z-1770e4f7/review.md",
+      "warps/graph.primes.phase.reviews.complete.md"
+    ]
+  },
+  "reason": null
+}

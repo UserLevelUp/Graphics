@@ -1,0 +1,18 @@
+STATUS: COMPLETE
+ACK: 6e18bca8e9b846138a7f78c685951de4
+CLOCK: 2026-11-14T20:47:23.7677911-08:00
+
+VERDICT
+ACCEPT
+
+REASONING
+1. **Analytic Logarithm ($\sigma > 1$):** For $\sigma > 1$, $|p^{-s}| \le 2^{-\sigma} < 1/2$, keeping $1 - p^{-s}$ in $|w - 1| < 1/2$ away from $(-\infty, 0]$. The principal branch $\operatorname{Log}(1 - p^{-s}) = -\sum_{m=1}^\infty m^{-1} p^{-ms}$ is analytic. Absolute convergence ($\sum_{p,m} m^{-1} p^{-m\sigma} < \infty$) establishes $L(s) = \lim_{N\to\infty} L_N(s)$ as the unique analytic branch of $\log\zeta(s)$ on $\sigma > 1$ with $\lim_{\sigma\to+\infty} L(\sigma+it) = 0$ (DLMF 25.2.11) and $\zeta(s) \neq 0$. Specify $\log\zeta(s) := L(s)$ explicitly, since $\operatorname{Log}(P_N(s)) \equiv L_N(s) \pmod{2\pi i}$.
+2. **Bounds vs. Actual Error:** For integer $N \ge 2$ and $\sigma > 1$, $|L(s) - L_N(s)| \le \sum_{p > N} p^{-\sigma}(1 - p^{-\sigma})^{-1} \le (1 - (N+1)^{-\sigma})^{-1}\int_N^\infty x^{-\sigma}\,dx = B_N$, and $|\zeta(s) - P_N(s)| \le |P_N(s)|(\exp(B_N) - 1)$ via $|\exp(w) - 1| \le \exp(|w|) - 1$. While $B_N$ is provably strictly decreasing in $N$, $|P_N(s)|(\exp(B_N) - 1)$ depends on $|P_N(s)|$ (do not assert product-bound monotonicity without derivation), and empirical complex error $|\zeta(s) - P_N(s)|$ can fluctuate non-monotonically via phase cancellation.
+3. **Domain Scope and RH:** The ordinary Euler product and the bounds $B_N$ used in this experiment are justified by absolute convergence for $\sigma > 1$; they do not extend directly to $\sigma \le 1$ or probe critical-strip zeros. Test ordinates $t_1 \approx 14.134725141734694$ and $t_2 \approx 23.298320492762855$ (a $\zeta'$-critical-point control ordinate) are valid evaluations at $\sigma = 2$.
+4. **Axis/Origin Acceptance Criteria:** Implementation must specify deterministic tie-breaking on all four half-axes ($\operatorname{Re} z = 0$ or $\operatorname{Im} z = 0$, e.g., half-open angle intervals $[k\pi/2, (k+1)\pi/2)$) and an explicit fallback color for $z = 0$ where argument is undefined (even though $P_N(s) \neq 0$ analytically for $\sigma > 1$).
+
+TESTS
+- Verify $|L(s) - L_N(s)| \le B_N$ and $|\zeta(s) - P_N(s)| \le |P_N(s)|(\exp(B_N) - 1)$ (plus documented evaluator/FP tolerances) across $N \in \{32, 128, 512, 2048\}$ at all three $s$ points, checking $s = 2$ against $\pi^2/6$ and $\log(\pi^2/6)$.
+- Check $B_{N_2} < B_{N_1}$ for $N_2 > N_1$ without requiring monotonic actual error or $|P_N|(\exp(B_N) - 1)$.
+- Compare direct, log-sum, reversed, and grouped evaluations modulo $2\pi$ in phase and directly in $\mathbb{C}$.
+- Unit-test synthetic display inputs on $+x, +i y, -x, -i y$, near-axis perturbations, and $z = 0$.

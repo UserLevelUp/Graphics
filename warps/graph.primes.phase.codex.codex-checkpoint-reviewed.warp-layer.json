@@ -1,0 +1,16 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.primes.phase",
+  "slice_id": "codex",
+  "contract_hash": "contract:graph.primes.phase.codex:v1",
+  "attempt_id": "codex-checkpoint-reviewed",
+  "result_state": "accepted",
+  "result_hash": "sha256:cd82a6808dee53be6aa072fca438b04ea193fc60cd40ef5d944e55c73f90bda3",
+  "evidence": {
+    "review": [
+      "research/prime-phase/codex/runs/20261115T045132Z-cdfc1176/review.md",
+      "warps/graph.primes.phase.reviews.complete.md"
+    ]
+  },
+  "reason": null
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.primes.phase",
+  "slice_id": "copilot",
+  "contract_hash": "contract:graph.primes.phase.copilot:v1",
+  "attempt_id": "copilot-checkpoint-attempt-4",
+  "result_state": "accepted",
+  "result_hash": "sha256:7ffd57c73a3147acebb2105798a9fc12fbaf81758de48d3f16d8e85b4711f964",
+  "evidence": {
+    "review": [
+      "research/prime-phase/copilot/runs/20261115T044439Z-a922b45f/review.md"
+    ]
+  },
+  "reason": null
+}

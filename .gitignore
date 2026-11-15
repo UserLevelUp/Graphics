@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+# Recur runtime state; durable review evidence is archived under research.
+.recur/dispatch/
+.recur/watch/
+research/prime-phase/*/stderr.txt
+research/prime-phase/*/runs/**/stderr.txt

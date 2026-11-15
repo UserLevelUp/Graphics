@@ -1,0 +1,46 @@
+[
+  {
+    "provider": "carbon",
+    "run_id": "20261115T044439Z-dfde4283",
+    "status": "complete",
+    "turn_seconds": [
+      62.75,
+      60.46
+    ],
+    "all_turns_within_180_seconds": true,
+    "review": "research/prime-phase/carbon/runs/20261115T044439Z-dfde4283/review.md"
+  },
+  {
+    "provider": "copilot",
+    "run_id": "20261115T044439Z-a922b45f",
+    "status": "complete",
+    "turn_seconds": [
+      16.03,
+      29.85
+    ],
+    "all_turns_within_180_seconds": true,
+    "review": "research/prime-phase/copilot/runs/20261115T044439Z-a922b45f/review.md"
+  },
+  {
+    "provider": "codex",
+    "run_id": "20261115T045132Z-cdfc1176",
+    "status": "complete",
+    "turn_seconds": [
+      36.62,
+      52.93
+    ],
+    "all_turns_within_180_seconds": true,
+    "review": "research/prime-phase/codex/runs/20261115T045132Z-cdfc1176/review.md"
+  },
+  {
+    "provider": "hydrogen",
+    "run_id": "20261115T045132Z-1770e4f7",
+    "status": "complete",
+    "turn_seconds": [
+      14.31,
+      20.06
+    ],
+    "all_turns_within_180_seconds": true,
+    "review": "research/prime-phase/hydrogen/runs/20261115T045132Z-1770e4f7/review.md"
+  }
+]

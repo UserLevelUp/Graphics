@@ -1,0 +1,15 @@
+STATUS: COMPLETE
+ACK: 620d78e185ad419dbd043ff0dbad984a
+CLOCK: 2026-11-14T20:46:06.4022291-08:00
+
+### VERDICT
+ACCEPT — the stated mathematical design is valid for \(\sigma>1\); this does not establish that a renderer or implementation is finished.
+
+### REASONING
+The Euler-product logarithm gives the stated tail bound, and \(\zeta(s)=P_N(s)e^E\), \(|E|\le B_N\), gives the product-error bound. Compare phase circularly, not by subtracting principal arguments. The preliminary double-precision checks at all 12 cases—independent Euler–Maclaurin evaluations at two settings, agreement within \(10^{-12}\), and observed errors within the truncation bound plus empirical allowance—are useful numerical evidence, not certified floating-point or reference-error bounds.
+
+Renderer acceptance should require retaining the complex/log representation through display, explicit deterministic colors for each exact axis (and a defined origin color), and uncertainty-aware behavior near quadrant boundaries. Given a complex-value uncertainty \(\epsilon<r=|\hat z|\), angular uncertainty is at most \(\arcsin(\epsilon/r)\); if \(\epsilon\ge r\), phase is indeterminate. If the uncertainty interval crosses an axis, avoid claiming a reliable quadrant (for example, use a neutral/ambiguous treatment). Do not label the empirical \(10^{-12}\) allowance a guaranteed bound; report it as observed, and distinguish it from analytic truncation and any certified arithmetic/reference bounds.
+
+### TESTS
+The preliminary checks support the design. Before implementation acceptance, test all four \(N\) values with direct, log-accumulated, reversed-order, and grouped products; check decreasing \(B_N\), complex-product errors against the analytic bound plus separately reported numerical allowance, and circular phase differences. Actual error need not decrease monotonically. Also test exact axes, values just either side of axes, uncertainty intervals crossing axes, and near-zero magnitude; verify phase is marked indeterminate when its uncertainty permits it.
+

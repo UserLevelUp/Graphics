@@ -1,0 +1,67 @@
+You are carbon in Warp graph.primes.phase. Review the analytic derivation, domains, and relation to RH.
+Coordinator turn 2, acknowledgement token 6e18bca8e9b846138a7f78c685951de4.
+Absolute UTC progress deadline: 2026-11-15T04:49:41.135961+00:00. Budget 180 seconds.
+Check actual time by executing only Get-Date -Format o in PowerShell at the start, after each short reasoning step (no step over 30 seconds), and immediately before returning. Do not estimate elapsed time from tokens. Aim to return 30 seconds before the deadline. At the deadline return findings so far, uncertainties, blockers, and your proposed next step, even if unfinished. No file edits or other commands. If the clock is unavailable, state that explicitly.
+Response format: an exact line STATUS: CHECKPOINT or STATUS: COMPLETE, an exact line ACK: 6e18bca8e9b846138a7f78c685951de4, and CLOCK: <last observed ISO timestamp with offset>. A checkpoint uses FINDINGS, UNCERTAINTY, NEXT sections. A complete review uses VERDICT (ACCEPT or REVISE), REASONING, TESTS. Keep response under 350 words. Coordinator acceptance is separate.
+
+CURRENT COORDINATOR INSTRUCTION
+Continue to a COMPLETE review. The ordinate 23.298320492762855 is intentional, taken from an earlier numerical zeta-derivative critical-point experiment near 2.4631618694543183 + 23.298320492762855i. Here it is simply a control at sigma=2, not a claim about a zeta zero. Keep the analytic logarithm definition precise. Replace broad statements about all convergence at sigma<=1 with the exact scope: the ordinary Euler product and the bounds used in this experiment are justified by absolute convergence for sigma>1. Give proposed axis/origin handling as implementation acceptance criteria. Distinguish proven decrease of B_N from empirical behavior of actual complex error, and avoid asserting monotonicity of the product bound without a derivation. Check the actual clock and acknowledge this instruction's token.
+
+
+PRIOR TURN RESPONSES (explicit transcript replay, not a native session resume)
+STATUS: CHECKPOINT
+ACK: initial
+CLOCK: 2026-11-14T20:45:27.3639071-08:00
+
+FINDINGS
+1. **Domain and Analytic Branch ($\sigma > 1$):** For $\sigma > 1$, $|p^{-s}| = p^{-\sigma} \le 2^{-\sigma} < 1/2$, keeping $1 - p^{-s}$ strictly inside the disk $|w - 1| < 1/2$ away from the negative real axis. The principal branch $\operatorname{Log}(1 - p^{-s}) = -\sum_{m=1}^\infty m^{-1} p^{-ms}$ is analytic. Absolute convergence ($\sum_{p,m} m^{-1} p^{-m\sigma} < \infty$) validates $L(s) = \lim_{N\to\infty} L_N(s)$ as the unique analytic branch of $\log\zeta(s)$ on $\sigma > 1$ satisfying $\lim_{\sigma\to+\infty} L(\sigma+it) = 0$ (DLMF 25.2.11), and $\zeta(s) \neq 0$ there. Because $\operatorname{Log}(P_N(s)) \equiv L_N(s) \pmod{2\pi i}$, comparing $P_N$ directly in $\mathbb{C}$ or comparing phases modulo $2\pi$ is required.
+2. **Truncation Bound $B_N$:** The remainder satisfies
+   $$|\log\zeta(s) - L_N(s)| = \left|\sum_{p > N} \sum_{m=1}^\infty \frac{p^{-ms}}{m}\right| \le \sum_{p > N} \sum_{m=1}^\infty p^{-m\sigma} = \sum_{p > N} \frac{p^{-\sigma}}{1 - p^{-\sigma}}.$$
+   Since integer $p > N \implies p \ge N+1$, $(1 - p^{-\sigma})^{-1} \le (1 - (N+1)^{-\sigma})^{-1}$, and comparing remaining integers $n \ge N+1$ against $\int_N^\infty x^{-\sigma}\,dx = N^{1-\sigma}/(\sigma-1)$ rigorously yields $B_N$ (strictly decreasing in $N$ for $\sigma > 1$). Furthermore, $|\zeta(s) - P_N(s)| = |P_N(s)|\,|\exp(\log\zeta(s) - L_N(s)) - 1| \le |P_N(s)|(\exp(B_N) - 1)$ holds via $|\exp(w) - 1| \le \exp(|w|) - 1$.
+3. **Relation to RH and Test Points:** On $\sigma > 1$, the Euler product neither converges into $0 < \sigma \le 1$ nor directly probes nontrivial zeros (where $\log\zeta(s)$ has logarithmic branch singularities). Note the test imaginary parts: $t_1 \approx 14.134725141734694$ matches the first nontrivial zero $\gamma_1$, whereas $t_2 \approx 23.298320492762855$ is **not** a Riemann zero ordinate ($\gamma_2 \approx 21.022040$, $\gamma_3 \approx 25.010858$)—at $\sigma=2$ any $t \in \mathbb{R}$ is mathematically valid, though if intended to align with $\gamma_2$ it should be flagged.
+4. **Axis/Origin Coloring Specification:** Requiring explicit axis boundary rules is necessary, and $z=0$ (if ever reached in general plots, though $P_N(s) \neq 0$ for $\sigma > 1$) also needs a defined convention if quadrant angle is undefined.
+
+UNCERTAINTY
+- Whether $t_2 = 23.298320492762855$ is an intentional off-zero control ordinate or a transcription typo for $\gamma_2$, and whether the spec should clarify that $\log\zeta(s)$ refers specifically to the Dirichlet-series branch $L(s)$ rather than principal $\operatorname{Log}(\zeta(s))$.
+
+NEXT
+Await coordinator steering to finalize the `VERDICT` (`ACCEPT` vs `REVISE`), sharpen concrete wording fixes (explicitly defining $\log\zeta(s)$ as the Euler/Dirichlet branch vs $\operatorname{Log}\zeta(s)$, clarifying $t_2$'s status, and boundary coloring completeness), and produce the `TESTS` list.
+
+
+REVIEW SCOPE
+# Prime-factor phase experiment
+
+defines: graph.primes.phase
+consumer: graph.riemann
+consumer: graph.zeta.origins
+
+The user proposes compounding color from prime contributions. For s=sigma+it with sigma>1, form
+L_N(s) = -sum over primes p<=N of Log(1-p^(-s)), and P_N(s)=exp(L_N(s)).
+Keep the full complex value until display. Angle controls the quadrant color, while log magnitude records accumulated scale. State explicitly how points on the axes are colored.
+
+The convergent Euler product supplies the analytic logarithm in this domain. A principal logarithm of the final product can differ from L_N by a multiple of 2*pi*i. Compare circular phase and complex products accordingly.
+
+For integer N>=2 an elementary truncation bound is
+B_N = N^(1-sigma) / ((sigma-1)*(1-(N+1)^(-sigma))).
+The proposed bounds are |log(zeta)-L_N| <= B_N and
+|zeta-P_N| <= |P_N|*(exp(B_N)-1).
+Floating-point error and reference-evaluator error require their own accounting.
+
+Use N=32,128,512,2048 and s=2, 2+14.134725141734694i, 2+23.298320492762855i.
+The real reference is pi^2/6. The complex reference must be independently checked.
+Compare direct multiplication, log accumulation, reversed prime order, and grouped multiplication.
+The bound should decrease with N. Actual complex error can fluctuate through cancellation.
+Color changes near axes can be valid while numerical values converge.
+
+The finite-prime product experiment uses sigma>1. Analytic continuation into the critical strip and the global RH proof remain open research.
+
+Slices:
+carbon reviews the derivation and mathematical limitations.
+copilot reviews acceptance cases and numerical failure modes.
+codex independently audits the mathematical inference and finite-experiment limitations.
+render implements the visual experiment after all three reviews are accepted.
+acceptance verifies rendering and numerical comparisons and records a snapshot.
+
+Reviewers return a concise report with VERDICT, REASONING and TESTS sections. Use ACCEPT or REVISE as the verdict. Identify concrete corrections. This assignment is a textual review. All needed mathematical scope is included here. Return the review as the final response.
+
+Source https://dlmf.nist.gov/25.2.E11

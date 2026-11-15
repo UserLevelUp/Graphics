@@ -1,0 +1,17 @@
+STATUS: CHECKPOINT
+ACK: initial
+CLOCK: 2026-11-14T20:51:39.1194975-08:00
+
+FINDINGS
+Provisional implementation test checklist items identified from the scope:
+1. **Core grid evaluation**: Input `N in {32, 128, 512, 2048}` and `s in {2, 2+14.134725141734694i, 2+23.298320492762855i}`; expected outcome: full complex `L_N(s)` and `P_N(s)` retained until display; evidence: complex output table per `(N, s)`.
+2. **Axis & quadrant coloring**: Input complex `P_N(s)` and axis-boundary test points; expected outcome: quadrant color determined by angle, scale by log magnitude, explicit rule for points on axes; evidence: color-mapping log and rendered swatch/snapshot.
+3. **Branch-cut / phase comparison**: Input `L_N(s)` vs principal `Log(P_N(s))`; expected outcome: difference is an integer multiple of `2*pi*i`; evidence: recorded phase-delta table.
+4. **Truncation & error accounting**: Input `B_N` and reference values (`pi^2/6` for `s=2`, independent complex reference for complex `s`); expected outcome: `B_N` decreases with `N`, `|log(zeta)-L_N| <= B_N`, `|zeta-P_N| <= |P_N|*(exp(B_N)-1)` within separate floating-point and reference-evaluator error budgets; evidence: bound-vs-actual error table.
+5. **Evaluation order & grouping**: Input direct multiplication, log accumulation, reversed prime order, grouped multiplication; expected outcome: consistent convergence within floating-point tolerance despite cancellation fluctuations; evidence: method-comparison diff log.
+
+UNCERTAINTY
+- Whether the coordinator requires specific numeric tolerances or artifact naming conventions in the final checklist, or if the concise 5-item structure above is sufficient.
+
+NEXT
+Wait for coordinator steering, then return the finalized numbered implementation test checklist (with input, expected outcome, and evidence to retain) under `STATUS: COMPLETE`.

@@ -16,11 +16,11 @@ default_tick = 0
 baseline = "host-current"
 
 [warp.dispatch]
-enabled = false
+enabled = true
 default_host = "codex"
-max_parallel = 2
-timeout_seconds = 900
-max_attempts = 3
+max_parallel = 3
+timeout_seconds = 1800
+max_attempts = 4
 failure_threshold = 2
 easy_success_threshold = 3
 easy_seconds = 30
@@ -66,3 +66,67 @@ max_parallel = 1
 [watch]
 [watch.dispatch]
 poll_seconds = 2
+
+[warp.dispatch.hosts.carbon_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/prime-phase/run-review.py", "carbon", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.primes.phase.carbon"]
+workspace = "research/prime-phase/carbon"
+host = "carbon_review"
+context = ["research/prime-phase/graph.primes.phase.contract.current.md"]
+inputs = ["research/prime-phase/graph.primes.phase.contract.current.md", "research/prime-phase/run-review.py", "research/prime-phase/verify-review.py", "research/prime-phase/steer-review.py", "research/prime-phase/test_review_protocol.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "carbon"]}]
+
+[warp.dispatch.hosts.copilot_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/prime-phase/run-review.py", "copilot", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.primes.phase.copilot"]
+workspace = "research/prime-phase/copilot"
+host = "copilot_review"
+context = ["research/prime-phase/graph.primes.phase.contract.current.md"]
+inputs = ["research/prime-phase/graph.primes.phase.contract.current.md", "research/prime-phase/run-review.py", "research/prime-phase/verify-review.py", "research/prime-phase/steer-review.py", "research/prime-phase/test_review_protocol.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "copilot"]}]
+
+[warp.dispatch.hosts.codex_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/prime-phase/run-review.py", "codex", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.primes.phase.codex"]
+workspace = "research/prime-phase/codex"
+host = "codex_review"
+context = ["research/prime-phase/graph.primes.phase.contract.current.md"]
+inputs = ["research/prime-phase/graph.primes.phase.contract.current.md", "research/prime-phase/run-review.py", "research/prime-phase/verify-review.py", "research/prime-phase/steer-review.py", "research/prime-phase/test_review_protocol.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "codex"]}]
+
+[warp.dispatch.hosts.hydrogen_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/prime-phase/run-review.py", "hydrogen", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.primes.phase.hydrogen"]
+workspace = "research/prime-phase/hydrogen"
+host = "hydrogen_review"
+context = ["research/prime-phase/graph.primes.phase.contract.current.md"]
+inputs = ["research/prime-phase/graph.primes.phase.contract.current.md", "research/prime-phase/run-review.py", "research/prime-phase/verify-review.py", "research/prime-phase/steer-review.py", "research/prime-phase/test_review_protocol.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "hydrogen"]}]

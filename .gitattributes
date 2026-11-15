@@ -61,3 +61,8 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+# Preserve exact accepted evidence bytes, including provider-produced trailing blank lines.
+/research/prime-phase/*/runs/** -text whitespace=cr-at-eol,-blank-at-eof
+/research/prime-phase/*/review.md -text whitespace=cr-at-eol,-blank-at-eof
+/research/prime-phase/*/response.txt -text whitespace=cr-at-eol,-blank-at-eof
+/research/prime-phase/evidence/** -text whitespace=cr-at-eol,-blank-at-eof

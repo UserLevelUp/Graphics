@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.primes.phase",
+  "slice_id": "carbon",
+  "contract_hash": "contract:graph.primes.phase.carbon:v1",
+  "attempt_id": "carbon-checkpoint-attempt-4",
+  "result_state": "accepted",
+  "result_hash": "sha256:d34ba86e63e1799916be79f4874802399e5244b47bec86cb0f57f551cfac8b56",
+  "evidence": {
+    "review": [
+      "research/prime-phase/carbon/runs/20261115T044439Z-dfde4283/review.md"
+    ]
+  },
+  "reason": null
+}

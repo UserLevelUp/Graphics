@@ -1,0 +1,88 @@
+{
+  "bubble_uuid": "01a1dd76-a38c-7cb9-8fd9-a56cb643d859",
+  "current_slice": "render",
+  "goal": "Test compounding prime-factor phase and magnitude with explicit convergence bounds and independent helper reviews",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "The Euler product experiment is evaluated for Re(s)>1.",
+    "Mathematical truncation bounds and numerical error are recorded separately.",
+    "Helper responses require coordinator review before gate acceptance."
+  ],
+  "required_slices": [
+    {
+      "slice_id": "carbon",
+      "slice_uuid": "01a1dd76-d3eb-779f-9250-4c466a99fb06",
+      "contract_hash": "contract:graph.primes.phase.carbon:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "copilot",
+      "slice_uuid": "01a1dd76-d3eb-779f-9250-4c4742ba8013",
+      "contract_hash": "contract:graph.primes.phase.copilot:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "codex",
+      "slice_uuid": "01a1dd84-bf91-70f9-b186-894013c57577",
+      "contract_hash": "contract:graph.primes.phase.codex:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "hydrogen",
+      "slice_uuid": "01a1dd8b-38e1-70f0-9ce8-497ab54270f6",
+      "contract_hash": "contract:graph.primes.phase.hydrogen:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "render",
+      "slice_uuid": "01a1dd76-d3eb-779f-9250-4c486f7e6a97",
+      "contract_hash": "contract:graph.primes.phase.render:v1",
+      "depends_on": [
+        "carbon",
+        "copilot",
+        "codex",
+        "hydrogen"
+      ],
+      "evidence_gates": [
+        "render"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "acceptance",
+      "slice_uuid": "01a1dd76-d3eb-779f-9250-4c49a003a330",
+      "contract_hash": "contract:graph.primes.phase.acceptance:v1",
+      "depends_on": [
+        "render"
+      ],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.primes.phase"
+}

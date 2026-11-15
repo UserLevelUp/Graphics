@@ -1,0 +1,9 @@
+{
+  "trace_id": "graph.primes.phase.hydrogen.progress",
+  "run_id": "20261115T045132Z-1770e4f7",
+  "provider": "hydrogen",
+  "turn": 2,
+  "state": "complete",
+  "at": "2026-11-15T04:52:57.915995+00:00",
+  "report": "research/prime-phase/hydrogen/runs/20261115T045132Z-1770e4f7/review.md"
+}

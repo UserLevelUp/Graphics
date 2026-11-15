@@ -1,0 +1,16 @@
+STATUS: COMPLETE
+ACK: 24ce89b47854422792e4d06724483a58
+CLOCK: 2026-11-14T20:52:52.4755182-08:00
+
+VERDICT
+ACCEPT
+
+REASONING
+The scope is ready for implementation testing. All tests below are `PLANNED` (no implementation or math validation has been run). Analytic truncation bounds (`B_N`) are kept separate from empirical double-precision and reference-evaluator tolerances. Only `B_N` is required to decrease monotonically with `N`; actual complex error and the product bound may fluctuate.
+
+TESTS
+1. **T1 [PLANNED] Domain rejection**: Input `sigma <= 1` (e.g., `s = 1`, `0.5 + 14.134725i`, `0`). Expected: explicit domain rejection before evaluation. Evidence: rejection log in `graph.primes.phase.values.json`.
+2. **T2 [PLANNED] Core grid & bounds**: Input `N in {32, 128, 512, 2048}`, `s in {2, 2+14.134725141734694i, 2+23.298320492762855i}`, reference `pi^2/6` (`s=2`) and independent complex reference. Expected: `L_N(s)` and `P_N(s)` retained in full complex form; `B_N` decreases with `N`; `|log(zeta)-L_N| <= B_N` and `|zeta-P_N| <= |P_N|*(exp(B_N)-1)` hold within separate double-precision/reference-evaluator tolerances (actual error/product bound not asserted monotone). Evidence: `graph.primes.phase.values.json`.
+3. **T3 [PLANNED] Phase-wrap & branch cut**: Input grid `(N, s)` plus synthetic phase-wrap cases crossing `(-inf, 0]`. Expected: `L_N - Log(P_N)` equals `2*pi*i*k` (integer `k`) within numerical tolerance, not exact equality. Evidence: phase-delta records in `graph.primes.phase.values.json`.
+4. **T4 [PLANNED] Axes, near-axis, origin**: Input exact axes (`+/-Re`, `+/-Im`), near-axis perturbations, and `0+0i`. Expected: explicit axis/origin color rule applied; near-axis color flips flagged as valid boundary uncertainty while values converge. Evidence: `graph.primes.phase.render.png`.
+5. **T5 [PLANNED] Evaluation order & grouping**: Input direct multiplication, log accumulation, reversed prime order, and grouped multiplication on the `(N, s)` grid. Expected: consistent convergence within empirical double-precision tolerance. Evidence: `graph.primes.phase.methods.json`.

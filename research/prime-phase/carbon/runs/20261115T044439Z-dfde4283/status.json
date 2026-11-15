@@ -1,0 +1,9 @@
+{
+  "trace_id": "graph.primes.phase.carbon.progress",
+  "run_id": "20261115T044439Z-dfde4283",
+  "provider": "carbon",
+  "turn": 2,
+  "state": "complete",
+  "at": "2026-11-15T04:47:41.613700+00:00",
+  "report": "research/prime-phase/carbon/runs/20261115T044439Z-dfde4283/review.md"
+}

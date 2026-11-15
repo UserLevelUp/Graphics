@@ -1,0 +1,63 @@
+You are copilot in Warp graph.primes.phase. Review numerical tests, error accounting, and rendering failure cases.
+Coordinator turn 2, acknowledgement token 620d78e185ad419dbd043ff0dbad984a.
+Absolute UTC progress deadline: 2026-11-15T04:48:43.442593+00:00. Budget 180 seconds.
+Check actual time by executing only Get-Date -Format o in PowerShell at the start, after each short reasoning step (no step over 30 seconds), and immediately before returning. Do not estimate elapsed time from tokens. Aim to return 30 seconds before the deadline. At the deadline return findings so far, uncertainties, blockers, and your proposed next step, even if unfinished. No file edits or other commands. If the clock is unavailable, state that explicitly.
+Response format: an exact line STATUS: CHECKPOINT or STATUS: COMPLETE, an exact line ACK: 620d78e185ad419dbd043ff0dbad984a, and CLOCK: <last observed ISO timestamp with offset>. A checkpoint uses FINDINGS, UNCERTAINTY, NEXT sections. A complete review uses VERDICT (ACCEPT or REVISE), REASONING, TESTS. Keep response under 350 words. Coordinator acceptance is separate.
+
+CURRENT COORDINATOR INSTRUCTION
+Continue to a COMPLETE review. Specify concrete acceptance criteria for the renderer, including numerical uncertainty near an axis. The coordinator has preliminary double-precision spot checks at all 12 stated cases using an independent Euler-Maclaurin evaluator at two settings. They agree within 1e-12 and observed product errors fit the analytic truncation bound plus that empirical allowance. This is numerical evidence, not a certified floating-point or reference error bound. Recommend how to label those limits and what tests remain. Distinguish a valid mathematical design from a finished implementation. Check the actual clock and acknowledge this instruction's token.
+
+
+PRIOR TURN RESPONSES (explicit transcript replay, not a native session resume)
+STATUS: CHECKPOINT
+ACK: initial
+CLOCK: 2026-11-14T20:44:51.8439629-08:00
+
+### FINDINGS
+The stated truncation and product-error bounds appear valid for \(\sigma>1\), assuming the analytic logarithm of \(\zeta\) in that domain. Tests should keep truncation, floating-point, and reference-evaluator errors distinct; compare phase circularly, since principal-log phases can differ by \(2\pi\). Phase shifts near axes may be valid even as values converge.
+
+### UNCERTAINTY
+The complex reference’s independent verification and the rendering’s handling of overflow/underflow and exact axis colors are not yet established.
+
+### NEXT
+Await coordinator steering; then complete the review, focusing on reference verification, numerical stability across the four cutoffs and multiplication methods, and explicit rendering behavior on axes and extreme magnitudes.
+
+
+
+REVIEW SCOPE
+# Prime-factor phase experiment
+
+defines: graph.primes.phase
+consumer: graph.riemann
+consumer: graph.zeta.origins
+
+The user proposes compounding color from prime contributions. For s=sigma+it with sigma>1, form
+L_N(s) = -sum over primes p<=N of Log(1-p^(-s)), and P_N(s)=exp(L_N(s)).
+Keep the full complex value until display. Angle controls the quadrant color, while log magnitude records accumulated scale. State explicitly how points on the axes are colored.
+
+The convergent Euler product supplies the analytic logarithm in this domain. A principal logarithm of the final product can differ from L_N by a multiple of 2*pi*i. Compare circular phase and complex products accordingly.
+
+For integer N>=2 an elementary truncation bound is
+B_N = N^(1-sigma) / ((sigma-1)*(1-(N+1)^(-sigma))).
+The proposed bounds are |log(zeta)-L_N| <= B_N and
+|zeta-P_N| <= |P_N|*(exp(B_N)-1).
+Floating-point error and reference-evaluator error require their own accounting.
+
+Use N=32,128,512,2048 and s=2, 2+14.134725141734694i, 2+23.298320492762855i.
+The real reference is pi^2/6. The complex reference must be independently checked.
+Compare direct multiplication, log accumulation, reversed prime order, and grouped multiplication.
+The bound should decrease with N. Actual complex error can fluctuate through cancellation.
+Color changes near axes can be valid while numerical values converge.
+
+The finite-prime product experiment uses sigma>1. Analytic continuation into the critical strip and the global RH proof remain open research.
+
+Slices:
+carbon reviews the derivation and mathematical limitations.
+copilot reviews acceptance cases and numerical failure modes.
+codex independently audits the mathematical inference and finite-experiment limitations.
+render implements the visual experiment after all three reviews are accepted.
+acceptance verifies rendering and numerical comparisons and records a snapshot.
+
+Reviewers return a concise report with VERDICT, REASONING and TESTS sections. Use ACCEPT or REVISE as the verdict. Identify concrete corrections. This assignment is a textual review. All needed mathematical scope is included here. Return the review as the final response.
+
+Source https://dlmf.nist.gov/25.2.E11

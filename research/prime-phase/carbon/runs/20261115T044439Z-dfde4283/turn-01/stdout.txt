@@ -1,0 +1,17 @@
+STATUS: CHECKPOINT
+ACK: initial
+CLOCK: 2026-11-14T20:45:27.3639071-08:00
+
+FINDINGS
+1. **Domain and Analytic Branch ($\sigma > 1$):** For $\sigma > 1$, $|p^{-s}| = p^{-\sigma} \le 2^{-\sigma} < 1/2$, keeping $1 - p^{-s}$ strictly inside the disk $|w - 1| < 1/2$ away from the negative real axis. The principal branch $\operatorname{Log}(1 - p^{-s}) = -\sum_{m=1}^\infty m^{-1} p^{-ms}$ is analytic. Absolute convergence ($\sum_{p,m} m^{-1} p^{-m\sigma} < \infty$) validates $L(s) = \lim_{N\to\infty} L_N(s)$ as the unique analytic branch of $\log\zeta(s)$ on $\sigma > 1$ satisfying $\lim_{\sigma\to+\infty} L(\sigma+it) = 0$ (DLMF 25.2.11), and $\zeta(s) \neq 0$ there. Because $\operatorname{Log}(P_N(s)) \equiv L_N(s) \pmod{2\pi i}$, comparing $P_N$ directly in $\mathbb{C}$ or comparing phases modulo $2\pi$ is required.
+2. **Truncation Bound $B_N$:** The remainder satisfies
+   $$|\log\zeta(s) - L_N(s)| = \left|\sum_{p > N} \sum_{m=1}^\infty \frac{p^{-ms}}{m}\right| \le \sum_{p > N} \sum_{m=1}^\infty p^{-m\sigma} = \sum_{p > N} \frac{p^{-\sigma}}{1 - p^{-\sigma}}.$$
+   Since integer $p > N \implies p \ge N+1$, $(1 - p^{-\sigma})^{-1} \le (1 - (N+1)^{-\sigma})^{-1}$, and comparing remaining integers $n \ge N+1$ against $\int_N^\infty x^{-\sigma}\,dx = N^{1-\sigma}/(\sigma-1)$ rigorously yields $B_N$ (strictly decreasing in $N$ for $\sigma > 1$). Furthermore, $|\zeta(s) - P_N(s)| = |P_N(s)|\,|\exp(\log\zeta(s) - L_N(s)) - 1| \le |P_N(s)|(\exp(B_N) - 1)$ holds via $|\exp(w) - 1| \le \exp(|w|) - 1$.
+3. **Relation to RH and Test Points:** On $\sigma > 1$, the Euler product neither converges into $0 < \sigma \le 1$ nor directly probes nontrivial zeros (where $\log\zeta(s)$ has logarithmic branch singularities). Note the test imaginary parts: $t_1 \approx 14.134725141734694$ matches the first nontrivial zero $\gamma_1$, whereas $t_2 \approx 23.298320492762855$ is **not** a Riemann zero ordinate ($\gamma_2 \approx 21.022040$, $\gamma_3 \approx 25.010858$)—at $\sigma=2$ any $t \in \mathbb{R}$ is mathematically valid, though if intended to align with $\gamma_2$ it should be flagged.
+4. **Axis/Origin Coloring Specification:** Requiring explicit axis boundary rules is necessary, and $z=0$ (if ever reached in general plots, though $P_N(s) \neq 0$ for $\sigma > 1$) also needs a defined convention if quadrant angle is undefined.
+
+UNCERTAINTY
+- Whether $t_2 = 23.298320492762855$ is an intentional off-zero control ordinate or a transcription typo for $\gamma_2$, and whether the spec should clarify that $\log\zeta(s)$ refers specifically to the Dirichlet-series branch $L(s)$ rather than principal $\operatorname{Log}(\zeta(s))$.
+
+NEXT
+Await coordinator steering to finalize the `VERDICT` (`ACCEPT` vs `REVISE`), sharpen concrete wording fixes (explicitly defining $\log\zeta(s)$ as the Euler/Dirichlet branch vs $\operatorname{Log}\zeta(s)$, clarifying $t_2$'s status, and boundary coloring completeness), and produce the `TESTS` list.

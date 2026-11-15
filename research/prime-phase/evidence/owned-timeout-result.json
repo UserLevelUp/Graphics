@@ -1,0 +1,23 @@
+{
+  "result": "pass",
+  "test": "actual Windows owned process-tree timeout with partial output retention",
+  "events": [
+    {
+      "state": "running",
+      "pid": 11388,
+      "started_at": "2026-11-15T04:53:53.906341+00:00"
+    },
+    {
+      "state": "checkpoint_overdue",
+      "pid": 11388,
+      "elapsed_seconds": 0.507,
+      "message": "Runner status only. Model progress has not returned.",
+      "stdout_bytes": 30
+    },
+    {
+      "state": "response_timeout",
+      "elapsed_seconds": 1.014,
+      "message": "Owned worker stopped after checkpoint grace period; partial output retained."
+    }
+  ]
+}
