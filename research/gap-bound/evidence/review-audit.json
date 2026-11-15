@@ -1,0 +1,100 @@
+{
+  "schema": "graph-watch-review-audit-v1",
+  "traceId": "graph.riemann.gap.review.audit",
+  "runnerUsedSha256": "b99c5bf5021ae6b7c1fc49da0b2941790abab0382b1fd471fe5ea814917ea3bc",
+  "reviews": [
+    {
+      "provider": "carbon",
+      "runId": "20261115T072203Z-fe1b6967",
+      "attempt": 2,
+      "report": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/review.md",
+      "reportSha256": "2b4371f82b290198fd6afb155d95f56af23def208943789593bd7f5829c2c5a8",
+      "turns": [
+        {
+          "turn": 1,
+          "state": "CHECKPOINT",
+          "elapsedSeconds": 56.456842,
+          "before180SecondDeadline": true,
+          "reportedClockWithinObservedRun": true,
+          "acknowledgedToken": "initial"
+        },
+        {
+          "turn": 2,
+          "state": "COMPLETE",
+          "elapsedSeconds": 131.332559,
+          "before180SecondDeadline": true,
+          "reportedClockWithinObservedRun": true,
+          "acknowledgedToken": "0a819139fbe249599fe0f5a23cc80b7a"
+        }
+      ],
+      "configuredProtocolChecksPassed": true
+    },
+    {
+      "provider": "codex",
+      "runId": "20261115T072501Z-7f5a0c47",
+      "attempt": 2,
+      "report": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/review.md",
+      "reportSha256": "6f4070f81ff7de1041222ac1ca6eaa406d2cf6ca18cc31ba6f855eaef7869eaa",
+      "turns": [
+        {
+          "turn": 1,
+          "state": "CHECKPOINT",
+          "elapsedSeconds": 61.868276,
+          "before180SecondDeadline": true,
+          "reportedClockWithinObservedRun": true,
+          "acknowledgedToken": "initial"
+        },
+        {
+          "turn": 2,
+          "state": "COMPLETE",
+          "elapsedSeconds": 69.132897,
+          "before180SecondDeadline": true,
+          "reportedClockWithinObservedRun": true,
+          "acknowledgedToken": "aad8027d184a41379004926ce013a049"
+        }
+      ],
+      "configuredProtocolChecksPassed": true
+    },
+    {
+      "provider": "hydrogen",
+      "runId": "20261115T072157Z-5cd91085",
+      "attempt": 1,
+      "report": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/review.md",
+      "reportSha256": "d3954a04ec277b04ced92965ee8235befd068f7db8a55da28de4a203e276a53a",
+      "turns": [
+        {
+          "turn": 1,
+          "state": "CHECKPOINT",
+          "elapsedSeconds": 16.807376,
+          "before180SecondDeadline": true,
+          "reportedClockWithinObservedRun": true,
+          "acknowledgedToken": "initial"
+        },
+        {
+          "turn": 2,
+          "state": "COMPLETE",
+          "elapsedSeconds": 15.287953,
+          "before180SecondDeadline": true,
+          "reportedClockWithinObservedRun": true,
+          "acknowledgedToken": "01f721ebc4a142c68f9c8b576d2df35b"
+        }
+      ],
+      "configuredProtocolChecksPassed": true
+    }
+  ],
+  "retainedFailures": [
+    {
+      "provider": "carbon",
+      "attempt": 1,
+      "state": "host_failed",
+      "stderr": "research/gap-bound/evidence/carbon-attempt-1.stderr.txt"
+    },
+    {
+      "provider": "codex",
+      "attempt": 1,
+      "state": "host_failed",
+      "stderr": "research/gap-bound/evidence/codex-attempt-1.stderr.txt"
+    }
+  ],
+  "limits": "Clock execution is provider-reported; wall-clock response deadlines and ACKs are independently checked. Reviews do not establish mathematical truth."
+}

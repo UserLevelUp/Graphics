@@ -1,0 +1,33 @@
+STATUS: COMPLETE
+ACK: aad8027d184a41379004926ce013a049
+CLOCK: 2026-11-14T23:28:40.3690291-08:00
+
+VERDICT
+
+ACCEPT the supplied finite-polynomial mathematical argument, including the optional dynamic bound. Implementation acceptance remains unverified.
+
+REASONING
+
+Endpoint dynamics give D' >= (8n-12)/D and (D^2)' >= B. Backward integration correctly yields D(t)^2 <= d+Bt wherever the simple-real-root branch exists.
+
+For every adjacent squared gap y, on that branch with d+Bt positive,
+y'+A*y/(d+Bt) <= 8.
+Integrating backward reverses the endpoint comparison and gives exactly the supplied lower bound.
+
+Packing establishes
+0 < eta <= (5n-8)/(2(n-1)^2) < 1
+for n >= 3. Consequently 0 < T_dyn < d/B, so the denominator stays positive throughout the claimed interval. Each gap's lower bound increases with its initial squared gap; multiple minimum gaps require no differentiation of the minimum function.
+
+The improvement over the constant bound is strict. With W=L-C,
+W'=A*W/(d-Bu)+A*B*u*C/[d*(d-Bu)].
+The forcing is positive while u>0 and C>0. The constant bound's zero occurs before d/B: eta<1 implies x<A/(A+B), hence -log(1-x)<log(1+A/B)<A/B. Thus L remains positive at C's first zero.
+
+There is no bootstrap circularity: apply estimates on the maximal simple-real-root interval containing zero. A boundary strictly inside the guarantee has uniformly positive gaps; bounded monic coefficients bound roots, bounded velocities give distinct limits, and the implicit function theorem extends the branch.
+
+The endpoint t=-T_dyn is excluded. Degree two requires the exact duration m^2/8; repeated initial roots violate the hypotheses. Degree remains fixed during each flow.
+
+No conclusion transfers automatically to varying-degree limits or the infinite Riemann deformation. Such a transfer needs convergence of evolved functions, justified infinite interactions, and uniform control of tail collisions.
+
+TESTS
+
+Symbolic quartic substitution gives T_dyn=(9/10)*(1-3^(-5/6)), consistent with the supplied value and below 2/3. No implementation, Sturm, enclosure, or saved-evidence tests were executed or verified.

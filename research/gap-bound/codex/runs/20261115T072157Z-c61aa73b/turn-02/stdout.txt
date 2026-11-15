@@ -1,0 +1,28 @@
+STATUS: COMPLETE
+ACK: e3d8050db0da4072ac517b8a28a417bf
+CLOCK: 2026-11-14T23:24:38.9399022-08:00
+
+VERDICT
+
+ACCEPT the supplied finite-polynomial analytic argument, including the optional dynamic bound for n≥3. No counterexample found. Implementation acceptance remains unverified.
+
+REASONING
+
+- Endpoint dynamics give D′≥(8n−12)/D, hence (D²)′≥B. Backward integration correctly yields D(t)²≤d+Bt.
+- On d+Bt>0, the gap inequality is y′+Ay/(d+Bt)≤8. Its integrating factor and backward lower bound have the stated signs, exponent, and zero.
+- Packing gives
+  η≤(5n−8)/(2(n−1)²)<1 for n≥3.
+  Thus 0<T_dyn<d/B, keeping the denominator strictly positive throughout the claimed interval.
+- The comparison is strict: W=L−C satisfies
+  W′=AW/(d−Bu)+[A/(d−Bu)−A/d]C.
+  While C>0, the forcing is positive for u>0. Comparing until the earlier zero proves T_dyn>T_constant. Domain safety also follows from −log(1−q)<log(1+A/B)<A/B, where q=Am²/(8d), giving T_constant<d/B.
+- No bootstrap circularity remains when estimates are restricted initially to the maximal interval of simple real roots. An earlier boundary would have bounded roots and uniformly positive gaps, allowing real continuation by the implicit function theorem.
+- Multiple minimum gaps, endpoint gaps, and simultaneous collisions are covered uniformly. Fixed monicity preserves degree; varying-degree limits require separate justification.
+- Degree two must remain separate: A=0 and η=1, so the strict packing statement fails; the exact duration is m²/8. Repeated initial roots violate the premises.
+- No transfer to the infinite Riemann deformation is established: convergence and uniform control replacing finite-diameter and finite-sum estimates are missing.
+
+TESTS
+
+Analytically, the quartic flow is z⁴−(10+12t)z²+9+20t+12t². Its first backward collision occurs at t=−2/3, yielding (z²−1)². The dynamic expression reduces correctly to 0.9(1−3^(−5/6)).
+
+No implementation, Sturm, Fraction, numerical-enclosure, artifact, or Git checks were executed.

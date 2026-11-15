@@ -1,0 +1,23 @@
+STATUS: CHECKPOINT
+ACK: initial
+CLOCK: 2026-11-14T23:22:17.8858891-08:00
+
+FINDINGS
+
+No counterexample to the stated finite-polynomial theorem found provisionally.
+
+- Backward integration has the correct inequality direction. Its lower bound increases with the initial squared gap, so multiple minimum gaps and simultaneous collisions cause no exception.
+- Endpoint gaps have exactly n−2 external roots; all denominators are positive and at most D0².
+- Packing gives 0<x≤(n−2)/(2(n−1)²)<1.
+- Degree two requires the separate formula g(t)²=m²+8t. Repeated initial roots violate the distinctness premise.
+- The first-collision argument should explicitly use the maximal interval of simple real roots containing zero. At a finite boundary, bounded roots and continuous coefficients give limiting roots; if all remain distinct, local continuation preserves their reality, contradicting maximality. Thus a boundary requires collision.
+- Fixed monicity preserves degree and root count with multiplicity. This does not justify varying-degree limits.
+- The infinite Riemann deformation is explicitly outside scope. Transferring the proof would require additional convergence and uniform-control premises; the finite diameter and finite external sum cannot simply be reused.
+
+UNCERTAINTY
+
+Implementation acceptance remains unverified: supplied text is not evidence of completed Fraction computations, independent Sturm checks, logarithm enclosures, or saved artifacts. The optional dynamic bound has not been certified.
+
+NEXT
+
+Await coordinator steering. Proposed next step: independently check the quartic collision and optional dynamic integrating factor, then sharpen the continuation argument and identify which uniform hypotheses an infinite-limit transfer would require.

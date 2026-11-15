@@ -1,0 +1,16 @@
+STATUS: CHECKPOINT
+ACK: initial
+CLOCK: 2026-11-14T23:22:42.8981288-08:00
+
+FINDINGS
+- **ODE & Derivative Signs**: Under $P_t = -P_{zz}$ with simple real roots $r_1 < \dots < r_n$, $0 = P_t(t,r_i) + P_z(t,r_i) r_i'$ and $P_{zz}(r_i)/P_z(r_i) = 2\sum_{j\neq i}(r_i-r_j)^{-1}$ give $r_i' = 2\sum_{j\neq i}(r_i-r_j)^{-1}$. Wait: $P_t = -P_{zz} \implies P_t(r_i) = -P_{zz}(r_i)$, so $r_i' = -P_t/P_z = P_{zz}/P_z = +2\sum_{j\neq i}(r_i-r_j)^{-1}$. Verified!
+- **Diameter & External Sum**: $D' = r_n' - r_1' = \frac{4}{D} + 2\sum_{1<j<n}(\frac{1}{r_n-r_j} + \frac{1}{r_j-r_1}) > 0$ while roots remain real and ordered, so $D(t) \le D_0$ for $t \le 0$. For adjacent $a < b$, any external $r \notin \{a,b\}$ lies on the same side of $a$ and $b$, so $(b-r)(a-r) > 0$ and $\le D(t)^2 \le D_0^2$, giving $S \ge \kappa$ and $(g^2)' = 8 - 4g^2 S \le 8 - 4\kappa g^2$.
+- **Backward Integration & Uniformity**: Multiplying by $e^{4\kappa s} > 0$ and integrating from $t < 0$ to $0$ yields $g(t)^2 \ge \frac{2}{\kappa} + (g(0)^2 - \frac{2}{\kappa})e^{-4\kappa t}$. Since $g(0) \ge m$ and $e^{-4\kappa t} > 0$, this uniformly exceeds $\frac{2}{\kappa} + (m^2 - \frac{2}{\kappa})e^{-4\kappa t} > 0$ on $(-T, 0]$.
+- **Domain, Bootstrap & Controls**: $D_0 \ge (n-1)m$ implies $x = \frac{(n-2)m^2}{2D_0^2} \le \frac{n-2}{2(n-1)^2} \le \frac{1}{8} < 1$. Real coefficients and monic constant leading term prevent non-real root entry or escape to $\infty$ without an adjacent real-root collision, closing the bootstrap. Quartic control ($T = \frac{9}{2}\ln\frac{9}{8}$, exact $\frac{2}{3}$) and $n=2$ ($m^2/8$) check out. Optional $T_{\text{dynamic}}$ also checks algebraically via Maclaurin $2\sum_{j=1}^{n-1}(r_n-r_j)(r_j-r_1) \ge (n-\frac{3}{2})D^2 \implies (D^2)' \ge 16n-24$.
+- **RH Boundary**: Strictly finite-degree polynomial ODE; does not pass to $n\to\infty$ ($\kappa \to 0$ or $m\to 0$ issues, entire order-1 $\Xi$ convergence not addressed).
+
+UNCERTAINTY
+- Need to verify whether the human proof explicitly states why complex-conjugate branching requires a prior real multiple root (real-analyticity / discriminant continuity) rather than assuming real-rootedness up to collision.
+
+NEXT
+- Await coordinator steering to finalize the human-proof checklist and deliver the formal `COMPLETE` verdict with `TESTS` specifications.

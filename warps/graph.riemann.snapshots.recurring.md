@@ -67,3 +67,17 @@
 - lane.separator.src: _
 - evidence.docs.tree_cmd: recur tree "**" -d docs/ --sep .
 - evidence.src.tree_cmd: recur tree "**" -d src/ --sep _
+
+### graph-interaction-gap-bound-2026-11-14
+- date: unix:1794728052
+- lane.state.docs.current: none
+- lane.state.src.current: none
+- lane.state.tests.passed: none
+- lane.state.tests.failed: none
+- lane.git.branch: graph/riemann-local-origins
+- lane.git.head: 73518fc Prove exact quartic collision control and audit local forecasts
+- lane.git.worktree: dirty=11
+- lane.separator.docs: .
+- lane.separator.src: _
+- evidence.docs.tree_cmd: recur tree "**" -d docs/ --sep .
+- evidence.src.tree_cmd: recur tree "**" -d src/ --sep _

@@ -1,0 +1,31 @@
+You are hydrogen in Warp graph.riemann.gap. Do routine evidence checklist work: map every supplied proof obligation and acceptance condition to required artifacts, exact checks, reviewer decisions, and unresolved limitations. Do not claim to validate the mathematics or run tests.
+Coordinator turn 1, acknowledgement token initial.
+Absolute UTC progress deadline: 2026-11-15T07:24:57.146297+00:00. Budget 180 seconds.
+Check actual time by executing only Get-Date -Format o in PowerShell at the start, after each short reasoning step (no step over 30 seconds), and immediately before returning. Do not estimate elapsed time from tokens. Aim to return 30 seconds before the deadline. At the deadline return findings so far, uncertainties, blockers, and your proposed next step, even if unfinished. No file edits or other commands. If the clock is unavailable, state that explicitly.
+Response format: an exact line STATUS: CHECKPOINT or STATUS: COMPLETE, an exact line ACK: initial, and CLOCK: <last observed ISO timestamp with offset>. A checkpoint uses FINDINGS, UNCERTAINTY, NEXT sections. A complete review uses VERDICT (ACCEPT or REVISE), REASONING, TESTS. Keep response under 350 words. Coordinator acceptance is separate.
+
+CURRENT COORDINATOR INSTRUCTION
+First return a CHECKPOINT with your provisional findings and proposed next step. Wait for coordinator steering before a final verdict.
+
+PRIOR TURN RESPONSES (explicit transcript replay, not a native session resume)
+
+
+REVIEW SCOPE
+# Interaction-aware collision guarantee: fixed review scope
+
+defines: graph.riemann.gap
+consumer: graph.riemann.collision
+
+Baseline is local commit 73518fc. We are testing a stronger safe interval for a finite polynomial under P_t=-P_zz. This is an elementary research control, not a claimed new theorem, a result about the infinite Riemann deformation, or a prime-generation algorithm.
+
+Let P(0,z) be monic of degree n>=3 with distinct real roots r_1<...<r_n. Let m=min(r_(i+1)-r_i)>0 and D0=r_n-r_1. Define kappa=(n-2)/D0^2 and x=kappa*m^2/2. Proposed theorem: the flow has distinct real roots for -T<t<=0, where T=-log(1-x)/(4*kappa). This strictly improves the previous guarantee m^2/8. Treat n=2 separately: the exact collision duration is m^2/8.
+
+Candidate proof: before the first backward collision the root velocities obey r_i'=2*sum_(j!=i)1/(r_i-r_j). The diameter has positive derivative, so D(t)<=D0 for t<=0 in that interval. For adjacent roots a<b and g=b-a, the external sum S=sum_(r outside {a,b})1/((b-r)(a-r)) has n-2 positive terms, each at least 1/D0^2. Hence S>=kappa and (g^2)'=8-4*g^2*S<=8-4*kappa*g^2. Integrating backward gives g(t)^2>=2/kappa+(g(0)^2-2/kappa)*exp(-4*kappa*t). The smallest initial gap controls this lower bound. Packing D0>=(n-1)*m gives 0<x<1. A first collision at t>-T would contradict strict positivity of the colliding gap. Polynomial coefficients are entire in t and roots cannot escape to infinity on compact time intervals. Finally -log(1-x)>x proves T>m^2/8.
+
+Quartic control roots -3,-1,1,3: m=2,D0=6,kappa=1/18,T=(9/2)*log(9/8)=0.53002366045..., versus the old safe duration 1/2 and the exact first collision duration 2/3. No exactness of the new bound is claimed. Translation preserves T and scaling roots by a nonzero real factor scales it by its square.
+
+Optional stronger candidate for adversarial review: endpoint dynamics imply (D^2)'>=B=16*n-24, so D(t)^2<=D0^2+B*t. Put A=4*(n-2). A time-dependent integrating-factor argument suggests T_dynamic=D0^2/B * [1-(1-(A+B)*m^2/(8*D0^2))^(B/(A+B))]. This is outside required acceptance unless independently proved and certified. Do not reject the main theorem merely because this optional extension is unfinished.
+
+Review the sign of backward integration, uniformity across all adjacent gaps, domain of the logarithm, first-collision bootstrap, n=2 and repeated-root cases, and whether any step secretly assumes the conclusion. Identify errors rather than endorsing by consensus. A review is advice; the coordinator must inspect the proof and exact checks.
+
+Implementation acceptance: full human proof; exact Fraction polynomial heat flow; independent Sturm real-root counts for rational times strictly inside certified T, including beyond the old guarantee; rational log enclosures from sum x^k/k with a proved remainder; uneven, clustered, translated and scaled root sets of degrees 3-8; rejection of deliberate invalid cases; saved evidence; reviewed Watch checkpoints and ACKs; local Git restore point. Numerical samples do not establish the general theorem. The parent graph.riemann remains open.

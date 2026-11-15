@@ -1,0 +1,16 @@
+{
+  "output": "C:\\src\\graph\\research\\gap-bound\\evidence\\gap-bounds.png",
+  "pixels": [
+    1800,
+    1320
+  ],
+  "durations": {
+    "gap_only": 0.5,
+    "constant_tail": 0.5300236604537255,
+    "evolving_tail": 0.5397189134471992,
+    "actual_collision": 0.6666666666666666
+  },
+  "improvement_percent": 7.943782689439849,
+  "max_sampled_bound_minus_exact_for_plot_only": 0.0,
+  "proof_status": "See separate proof and exact-checker evidence"
+}

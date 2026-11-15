@@ -5,6 +5,7 @@ consumer: graph.zeta.overwrite
 consumer: graph.zeta.contours
 consumer: graph.zeta.origins
 consumer: graph.riemann.collision
+consumer: graph.riemann.gap
 
 The proof remains open. This parent tracks the attempt to derive a global statement from the user's local-origin quadrant geometry. The completed children record finite experiments.
 
@@ -31,3 +32,5 @@ The completed graph.primes.phase experiment now includes local prime-contributio
 The completed graph.riemann.collision child now proves an exact quartic heat-flow threshold and supplies rational counterexamples to unrestricted frozen local forecasts. It also derives a conservative finite-polynomial safe interval from adjacent-root dynamics. See warps/graph.riemann.collision.results.complete.md and graph.riemann.collision.next.current.md. These distinguish a valid bound from an exact prediction and identify the missing interaction control. They do not supply a global theorem for the Riemann deformation.
 
 For context, the de Bruijn-Newman deformation H_t has all zeros real exactly when t >= Lambda. RH is equivalent to Lambda <= 0; Rodgers and Tao proved Lambda >= 0. Thus an argument on this route still needs the complementary bound. Our quartic threshold is a different parameter for a different function. [Rodgers and Tao](https://arxiv.org/abs/1801.05914)
+
+The graph.riemann.gap child proves stronger finite-polynomial safe intervals by retaining exterior-root interactions and diameter contraction. Its exact checker validates 100 rational-time samples across 25 configurations. The guarantee improves in the quartic control, but these global-diameter bounds degenerate for growing dense root sets. See graph.riemann.gap.results.complete.md and graph.riemann.gap.next.current.md. No infinite-system transfer or all-heights exclusion has been established.

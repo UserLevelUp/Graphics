@@ -1,0 +1,25 @@
+STATUS: CHECKPOINT
+ACK: initial
+CLOCK: 2026-11-14T23:25:43.5542403-08:00
+
+FINDINGS
+
+No counterexample to the finite-polynomial theorem found provisionally.
+
+- Backward integration has the correct sign: integrating \((e^{4\kappa t}g^2)'\le8e^{4\kappa t}\) from \(t\) to \(0\) gives the stated lower bound.
+- Multiple minimum gaps cause no difficulty. The bound increases with each initial squared gap; no differentiability of the minimum-gap function is needed.
+- Packing gives \(0<x\le(n-2)/(2(n-1)^2)<1\).
+- At \(t=-T\), the minimum-gap lower bound is zero. The theorem correctly excludes that endpoint. Endpoint roots themselves satisfy the same external-sum estimate.
+- Degree two requires the separate formula \(g(t)^2=m^2+8t\). Repeated initial roots violate the hypotheses and cannot support distinctness at \(t=0\).
+- The first-collision bootstrap works provided the proof explicitly constructs the maximal interval of simple real roots containing zero. Bounded polynomial coefficients bound roots on compact time intervals; a finite boundary without a repeated root would permit continuation.
+- The quartic check is consistent: at \(t=-2/3\), its heat evolution equals \((z^2-1)^2\).
+
+UNCERTAINTY
+
+Implementation acceptance remains unverified: no repository, saved evidence, Sturm checks, or log-enclosure code was inspected under the command restriction.
+
+Degree is fixed along each polynomial flow. Passing to varying-degree approximations or the infinite Riemann deformation needs additional premises: justified convergence of evolved functions and zeros, control of infinite interaction sums, and uniform bounds preventing collisions in uncontrolled tails. Local convergence alone does not supply a global collision-free interval. The stated scope appropriately disclaims this transfer.
+
+NEXT
+
+Await coordinator steering before a final verdict. Proposed next audit: formalize the maximal-interval continuation argument and inspect exact implementation certificates when authorized. The optional dynamic bound remains outside this provisional review.

@@ -1,0 +1,59 @@
+You are codex in Warp graph.riemann.gap. Adversarially audit edge cases: degree two, multiple minimum gaps, endpoints, first collision, varying root count, and any unjustified transfer from finite polynomials to the infinite Riemann deformation. Seek a precise counterexample or missing premise.
+Coordinator turn 2, acknowledgement token aad8027d184a41379004926ce013a049.
+Absolute UTC progress deadline: 2026-11-15T07:30:48.056981+00:00. Budget 180 seconds.
+Check actual time by executing only Get-Date -Format o in PowerShell at the start, after each short reasoning step (no step over 30 seconds), and immediately before returning. Do not estimate elapsed time from tokens. Aim to return 30 seconds before the deadline. At the deadline return findings so far, uncertainties, blockers, and your proposed next step, even if unfinished. No file edits or other commands. If the clock is unavailable, state that explicitly.
+Response format: an exact line STATUS: CHECKPOINT or STATUS: COMPLETE, an exact line ACK: aad8027d184a41379004926ce013a049, and CLOCK: <last observed ISO timestamp with offset>. A checkpoint uses FINDINGS, UNCERTAINTY, NEXT sections. A complete review uses VERDICT (ACCEPT or REVISE), REASONING, TESTS. Keep response under 350 words. Coordinator acceptance is separate.
+
+CURRENT COORDINATOR INSTRUCTION
+Your prior attempt completed its review but the runner failed while printing a Unicode character to a Windows cp1252 stream. Preserve the math audit and return ASCII ONLY in the final response (spell out inequalities; use LaTeX ASCII commands if needed). This is an execution/output issue, not a mathematical counterexample. Do not alter files.
+
+Independently audit the optional dynamic bound and finalize the analytic review. Set d=D0^2, A=4(n-2), B=16n-24. Endpoint dynamics: D'=4/D+2 sum_interior(1/(b-r)+1/(r-a)) >= (8n-12)/D, since each inner contribution is >=8/D. Hence D(t)^2<=d+Bt backward and y'+A/(d+Bt)*y<=8. Integrating gives y(t)>=(1+Bt/d)^(-A/B)*[m^2-8d/(A+B)*(1-(1+Bt/d)^(1+A/B))]. Its zero yields T_dyn=d/B*[1-(1-eta)^(B/(A+B))], eta=(A+B)m^2/(8d)<1 by packing. Denominator stays positive until then. Compare with the constant bound via elapsed-time lower solutions C'=-8+(A/d)C and L'=-8+A/(d-Bu)*L. Before C's first zero the equation for L-C has positive forcing, so L's first zero occurs later. Check for sign/domain mistakes and bootstrap circularity. The proof's continuation section explicitly bounds roots using monic coefficients; gaps bounded away from zero bound velocities, give distinct limits, and permit real continuation by the implicit function theorem. For quartic Tdyn=.9*(1-3^(-5/6))=.5397189134471992 while true duration2/3. Return COMPLETE with verdict on the supplied mathematical argument, clearly leaving unexecuted implementation tests unverified. Check actual time and ACK as required; no commands except the clock.
+
+
+PRIOR TURN RESPONSES (explicit transcript replay, not a native session resume)
+STATUS: CHECKPOINT
+ACK: initial
+CLOCK: 2026-11-14T23:25:43.5542403-08:00
+
+FINDINGS
+
+No counterexample to the finite-polynomial theorem found provisionally.
+
+- Backward integration has the correct sign: integrating \((e^{4\kappa t}g^2)'\le8e^{4\kappa t}\) from \(t\) to \(0\) gives the stated lower bound.
+- Multiple minimum gaps cause no difficulty. The bound increases with each initial squared gap; no differentiability of the minimum-gap function is needed.
+- Packing gives \(0<x\le(n-2)/(2(n-1)^2)<1\).
+- At \(t=-T\), the minimum-gap lower bound is zero. The theorem correctly excludes that endpoint. Endpoint roots themselves satisfy the same external-sum estimate.
+- Degree two requires the separate formula \(g(t)^2=m^2+8t\). Repeated initial roots violate the hypotheses and cannot support distinctness at \(t=0\).
+- The first-collision bootstrap works provided the proof explicitly constructs the maximal interval of simple real roots containing zero. Bounded polynomial coefficients bound roots on compact time intervals; a finite boundary without a repeated root would permit continuation.
+- The quartic check is consistent: at \(t=-2/3\), its heat evolution equals \((z^2-1)^2\).
+
+UNCERTAINTY
+
+Implementation acceptance remains unverified: no repository, saved evidence, Sturm checks, or log-enclosure code was inspected under the command restriction.
+
+Degree is fixed along each polynomial flow. Passing to varying-degree approximations or the infinite Riemann deformation needs additional premises: justified convergence of evolved functions and zeros, control of infinite interaction sums, and uniform bounds preventing collisions in uncontrolled tails. Local convergence alone does not supply a global collision-free interval. The stated scope appropriately disclaims this transfer.
+
+NEXT
+
+Await coordinator steering before a final verdict. Proposed next audit: formalize the maximal-interval continuation argument and inspect exact implementation certificates when authorized. The optional dynamic bound remains outside this provisional review.
+
+
+REVIEW SCOPE
+# Interaction-aware collision guarantee: fixed review scope
+
+defines: graph.riemann.gap
+consumer: graph.riemann.collision
+
+Baseline is local commit 73518fc. We are testing a stronger safe interval for a finite polynomial under P_t=-P_zz. This is an elementary research control, not a claimed new theorem, a result about the infinite Riemann deformation, or a prime-generation algorithm.
+
+Let P(0,z) be monic of degree n>=3 with distinct real roots r_1<...<r_n. Let m=min(r_(i+1)-r_i)>0 and D0=r_n-r_1. Define kappa=(n-2)/D0^2 and x=kappa*m^2/2. Proposed theorem: the flow has distinct real roots for -T<t<=0, where T=-log(1-x)/(4*kappa). This strictly improves the previous guarantee m^2/8. Treat n=2 separately: the exact collision duration is m^2/8.
+
+Candidate proof: before the first backward collision the root velocities obey r_i'=2*sum_(j!=i)1/(r_i-r_j). The diameter has positive derivative, so D(t)<=D0 for t<=0 in that interval. For adjacent roots a<b and g=b-a, the external sum S=sum_(r outside {a,b})1/((b-r)(a-r)) has n-2 positive terms, each at least 1/D0^2. Hence S>=kappa and (g^2)'=8-4*g^2*S<=8-4*kappa*g^2. Integrating backward gives g(t)^2>=2/kappa+(g(0)^2-2/kappa)*exp(-4*kappa*t). The smallest initial gap controls this lower bound. Packing D0>=(n-1)*m gives 0<x<1. A first collision at t>-T would contradict strict positivity of the colliding gap. Polynomial coefficients are entire in t and roots cannot escape to infinity on compact time intervals. Finally -log(1-x)>x proves T>m^2/8.
+
+Quartic control roots -3,-1,1,3: m=2,D0=6,kappa=1/18,T=(9/2)*log(9/8)=0.53002366045..., versus the old safe duration 1/2 and the exact first collision duration 2/3. No exactness of the new bound is claimed. Translation preserves T and scaling roots by a nonzero real factor scales it by its square.
+
+Optional stronger candidate for adversarial review: endpoint dynamics imply (D^2)'>=B=16*n-24, so D(t)^2<=D0^2+B*t. Put A=4*(n-2). A time-dependent integrating-factor argument suggests T_dynamic=D0^2/B * [1-(1-(A+B)*m^2/(8*D0^2))^(B/(A+B))]. This is outside required acceptance unless independently proved and certified. Do not reject the main theorem merely because this optional extension is unfinished.
+
+Review the sign of backward integration, uniformity across all adjacent gaps, domain of the logarithm, first-collision bootstrap, n=2 and repeated-root cases, and whether any step secretly assumes the conclusion. Identify errors rather than endorsing by consensus. A review is advice; the coordinator must inspect the proof and exact checks.
+
+Implementation acceptance: full human proof; exact Fraction polynomial heat flow; independent Sturm real-root counts for rational times strictly inside certified T, including beyond the old guarantee; rational log enclosures from sum x^k/k with a proved remainder; uneven, clustered, translated and scaled root sets of degrees 3-8; rejection of deliberate invalid cases; saved evidence; reviewed Watch checkpoints and ACKs; local Git restore point. Numerical samples do not establish the general theorem. The parent graph.riemann remains open.

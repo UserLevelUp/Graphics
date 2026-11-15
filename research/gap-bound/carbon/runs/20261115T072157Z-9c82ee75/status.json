@@ -1,0 +1,10 @@
+{
+  "trace_id": "graph.riemann.gap.carbon.progress",
+  "run_id": "20261115T072157Z-9c82ee75",
+  "provider": "carbon",
+  "turn": 1,
+  "state": "running",
+  "at": "2026-11-15T07:21:57.123366+00:00",
+  "pid": 10032,
+  "started_at": "2026-11-15T07:21:57.123357+00:00"
+}

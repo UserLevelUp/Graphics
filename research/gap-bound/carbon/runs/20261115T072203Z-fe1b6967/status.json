@@ -1,0 +1,9 @@
+{
+  "trace_id": "graph.riemann.gap.carbon.progress",
+  "run_id": "20261115T072203Z-fe1b6967",
+  "provider": "carbon",
+  "turn": 2,
+  "state": "complete",
+  "at": "2026-11-15T07:25:53.056120+00:00",
+  "report": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/review.md"
+}

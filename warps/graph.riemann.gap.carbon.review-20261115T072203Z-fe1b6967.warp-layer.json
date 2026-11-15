@@ -1,0 +1,17 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.gap",
+  "slice_id": "carbon",
+  "contract_hash": "contract:graph.riemann.gap.carbon:v1",
+  "attempt_id": "review-20261115T072203Z-fe1b6967",
+  "result_state": "accepted",
+  "result_hash": "sha256:2b4371f82b290198fd6afb155d95f56af23def208943789593bd7f5829c2c5a8",
+  "evidence": {
+    "review": [
+      "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/review.md",
+      "research/gap-bound/evidence/review-audit.json",
+      "warps/graph.riemann.gap.carbon.review.complete.md"
+    ]
+  },
+  "reason": null
+}

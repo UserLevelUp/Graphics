@@ -1,0 +1,18 @@
+publish: graph.riemann.gap.hydrogen.response
+
+STATUS: COMPLETE
+ACK: 01f721ebc4a142c68f9c8b576d2df35b
+CLOCK: 2026-11-14T23:22:58.0016821-08:00
+VERDICT: ACCEPT
+
+REASONING
+The supplied acceptance checklist is adequate as a plan for `graph.riemann.gap` (consumer `graph.riemann.collision`). No file, mathematical, or test validation was performed by me.
+
+1. **`interaction-bound-proof.md`**: Full human proof covering backward integration sign, uniformity across all adjacent gaps `g = b - a`, logarithm domain `0 < x < 1`, first-collision bootstrap (entire coefficients, no root escape on compact intervals), `n = 2` (`m^2/8`) and repeated-root rejections, and non-circularity. Optional `T_dynamic` is excluded from required acceptance unless independently proved with an exact enclosure.
+2. **`verify_bound.py`**: Exact `Fraction` heat flow (`P_t = -P_zz`), rational log enclosures (`sum x^k/k` with proved remainder), independent Sturm real-root counts, quartic control (`-3,-1,1,3`, `T = (9/2)*log(9/8)`), uneven/clustered/translated/scaled root sets (degrees 3–8), and deliberate invalid-case rejections.
+3. **`evidence/certificates.json` & `evidence/manifest.json`**: Saved rational certificates and manifest verifying that logged prediction inputs contain roots and parameters with no known collision answer, rational samples lie beyond `m^2/8` yet below the certified bound, and all failures remain in the record.
+4. **`runs/<run_id>/events.jsonl` & `review.md` (per provider)**: Reviewed Watch checkpoints, ACKs, and provider review records preserving any failures.
+5. **Git checkpoint**: Local Git restore point anchored to baseline `73518fc`.
+
+TESTS
+None run. No files were read or executed, and no mathematical or test validation was performed.

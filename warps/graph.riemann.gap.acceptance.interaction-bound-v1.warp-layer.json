@@ -1,0 +1,18 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.gap",
+  "slice_id": "acceptance",
+  "contract_hash": "contract:graph.riemann.gap.acceptance:v1",
+  "attempt_id": "interaction-bound-v1",
+  "result_state": "accepted",
+  "result_hash": "sha256:6a57064eb2f4b0fe8c6bfcfecf916ec099d2f3f9b87dc62e0d18b57a0f616bb9",
+  "evidence": {
+    "verification": [
+      "research/gap-bound/evidence/certificates.json",
+      "research/gap-bound/evidence/manifest.json",
+      "research/gap-bound/interaction-bound-proof.md",
+      "warps/graph.riemann.gap.results.complete.md"
+    ]
+  },
+  "reason": null
+}

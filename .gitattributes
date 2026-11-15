@@ -74,3 +74,14 @@
 /research/collision-proof/*.md text eol=lf
 /research/collision-proof/evidence/*.json text eol=lf
 /warps/graph.riemann.collision* text eol=lf
+# Keep mathematical source and accepted Watch evidence byte-stable.
+/.recur/config.toml text eol=lf
+/research/gap-bound/*.py text eol=lf
+/research/gap-bound/*.md text eol=lf
+/research/gap-bound/*.txt text eol=lf
+/research/gap-bound/*/runs/** -text whitespace=cr-at-eol,-blank-at-eof
+/research/gap-bound/*/review.md -text whitespace=cr-at-eol,-blank-at-eof
+/research/gap-bound/*/latest-run.json -text whitespace=cr-at-eol,-blank-at-eof
+/research/gap-bound/events/** -text whitespace=cr-at-eol,-blank-at-eof
+/research/gap-bound/evidence/** -text whitespace=cr-at-eol,-blank-at-eof
+/warps/graph.riemann.gap* text eol=lf

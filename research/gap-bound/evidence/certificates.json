@@ -1,0 +1,5805 @@
+{
+  "status": "passed",
+  "traceId": "graph.riemann.gap.verify",
+  "arithmetic": "Fraction exact rational arithmetic; Decimal values are display-only",
+  "timeConvention": "backward duration u>0 corresponds to tau=-u",
+  "cases": [
+    {
+      "name": "degree_3_uniform",
+      "degree": 3,
+      "rootsSorted": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "initialCoefficientsAscending": [
+        "0",
+        "-1",
+        "0",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 3,
+        "variationAtMinusInfinity": 3,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "-1"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "-6"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "2",
+        "minimum_gap": "1",
+        "kappa": "1/4",
+        "x": "1/8",
+        "log_lower": "1527709716487427797441364853610598490473173/11440828156291307038181490770220867492249600",
+        "log_upper": "1527709716487427797441364853611223614078773/11440828156291307038181490770220867492249600",
+        "log_remainder": "1/18301705540795061984108652527616",
+        "lower": "1527709716487427797441364853610598490473173/11440828156291307038181490770220867492249600",
+        "upper": "1527709716487427797441364853611223614078773/11440828156291307038181490770220867492249600",
+        "baseline": "1/8",
+        "eta": "7/8",
+        "power_exponent": "6/7",
+        "root_lower": "25423335835899350427237/151115727451828646838272",
+        "root_upper": "203386686687194803417897/1208925819614629174706176",
+        "dynamic_lower": "335179710975811457096093/2417851639229258349412352",
+        "dynamic_upper": "125692391615929296411035/906694364710971881029632"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.125",
+        "constantLower": "0.133531392624522623146344",
+        "constantUpper": "0.133531392624522623146344",
+        "dynamicLower": "0.138627079320159247251191",
+        "dynamicUpper": "0.138627079320159247251191"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/32",
+          "tau": "-1/32",
+          "strictSamplingInterval": [
+            "0",
+            "1/16"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "3/32",
+          "tau": "-3/32",
+          "strictSamplingInterval": [
+            "1/16",
+            "1/8"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "17/128",
+          "tau": "-17/128",
+          "strictSamplingInterval": [
+            "1/8",
+            "1527709716487427797441364853610598490473173/11440828156291307038181490770220867492249600"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "35/256",
+          "tau": "-35/256",
+          "strictSamplingInterval": [
+            "1527709716487427797441364853611223614078773/11440828156291307038181490770220867492249600",
+            "335179710975811457096093/2417851639229258349412352"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_3_clustered",
+      "degree": 3,
+      "rootsSorted": [
+        "0",
+        "1/20",
+        "1"
+      ],
+      "initialCoefficientsAscending": [
+        "0",
+        "1/20",
+        "-21/20",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 3,
+        "variationAtMinusInfinity": 3,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "21/10"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "1/20"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "-6"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "-21/20"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "1",
+        "minimum_gap": "1/20",
+        "kappa": "1",
+        "x": "1/800",
+        "log_lower": "5723992319122793940273054222508530215648192803679188419400093762295145892582085254881656953248204332317/4576331262516522815272596308088346996899840000000000000000000000000000000000000000000000000000000000000000",
+        "log_upper": "269027638998771315192833548457900920135465061772921855711804406827871856951358006979437876802675899772403/215087569338276572317812026480152308854292480000000000000000000000000000000000000000000000000000000000000000",
+        "log_remainder": "1/20890089610136077893289733385093120000000000000000000000000000000000000000000000000000000000000000",
+        "lower": "5723992319122793940273054222508530215648192803679188419400093762295145892582085254881656953248204332317/18305325050066091261090385232353387987599360000000000000000000000000000000000000000000000000000000000000000",
+        "upper": "269027638998771315192833548457900920135465061772921855711804406827871856951358006979437876802675899772403/860350277353106289271248105920609235417169920000000000000000000000000000000000000000000000000000000000000000",
+        "baseline": "1/3200",
+        "eta": "7/800",
+        "power_exponent": "6/7",
+        "root_lower": "1199853190149239753947539/1208925819614629174706176",
+        "root_upper": "299963297537309938486885/302231454903657293676544",
+        "dynamic_lower": "756052455449118396553/2417851639229258349412352",
+        "dynamic_upper": "9072629465389420758637/29014219670751100192948224"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.0003125",
+        "constantLower": "0.000312695475413157304298497",
+        "constantUpper": "0.000312695475413157304298497",
+        "dynamicLower": "0.000312695966610311210819507",
+        "dynamicUpper": "0.000312695966610311210819542"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/8192",
+          "tau": "-1/8192",
+          "strictSamplingInterval": [
+            "0",
+            "1/6400"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1/4096",
+          "tau": "-1/4096",
+          "strictSamplingInterval": [
+            "1/6400",
+            "1/3200"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "1311/4194304",
+          "tau": "-1311/4194304",
+          "strictSamplingInterval": [
+            "1/3200",
+            "5723992319122793940273054222508530215648192803679188419400093762295145892582085254881656953248204332317/18305325050066091261090385232353387987599360000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "671509/2147483648",
+          "tau": "-671509/2147483648",
+          "strictSamplingInterval": [
+            "269027638998771315192833548457900920135465061772921855711804406827871856951358006979437876802675899772403/860350277353106289271248105920609235417169920000000000000000000000000000000000000000000000000000000000000000",
+            "756052455449118396553/2417851639229258349412352"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_3_uneven",
+      "degree": 3,
+      "rootsSorted": [
+        "-9",
+        "-4",
+        "-1"
+      ],
+      "initialCoefficientsAscending": [
+        "36",
+        "49",
+        "14",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 3,
+        "variationAtMinusInfinity": 3,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "36"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "-28"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "49"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "-6"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "14"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "8",
+        "minimum_gap": "3",
+        "kappa": "1/64",
+        "x": "9/128",
+        "log_lower": "10512378906633520425983006253496870782764910591489648015704669899950961359316431/144189336465130461006973309493246979435633273470888880976558139597206730886348800",
+        "log_upper": "1501768415233360060854715179070981540400999767440346461210169451547706006601433/20598476637875780143853329927606711347947610495841268710936877085315247269478400",
+        "log_remainder": "10301051460877537453973547267843/35290570187300187491219122748908696551791022049105609377764625816223744",
+        "lower": "10512378906633520425983006253496870782764910591489648015704669899950961359316431/9011833529070653812935831843327936214727079591930555061034883724825420680396800",
+        "upper": "1501768415233360060854715179070981540400999767440346461210169451547706006601433/1287404789867236258990833120475419459246725655990079294433554817832202954342400",
+        "baseline": "9/8",
+        "eta": "63/128",
+        "power_exponent": "6/7",
+        "root_lower": "676309383943488770090675/1208925819614629174706176",
+        "root_upper": "169077345985872192522669/302231454903657293676544",
+        "dynamic_lower": "133154108917785101153875/113336795588871485128704",
+        "dynamic_upper": "532616435671140404615501/453347182355485940514816"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "1.125",
+        "constantLower": "1.16650833292940448905180",
+        "constantUpper": "1.16650833292940448905180",
+        "dynamicLower": "1.17485330537137114572076",
+        "dynamicUpper": "1.17485330537137114572076"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/2",
+          "tau": "-1/2",
+          "strictSamplingInterval": [
+            "0",
+            "9/16"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1",
+          "tau": "-1",
+          "strictSamplingInterval": [
+            "9/16",
+            "9/8"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "37/32",
+          "tau": "-37/32",
+          "strictSamplingInterval": [
+            "9/8",
+            "10512378906633520425983006253496870782764910591489648015704669899950961359316431/9011833529070653812935831843327936214727079591930555061034883724825420680396800"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "75/64",
+          "tau": "-75/64",
+          "strictSamplingInterval": [
+            "1501768415233360060854715179070981540400999767440346461210169451547706006601433/1287404789867236258990833120475419459246725655990079294433554817832202954342400",
+            "133154108917785101153875/113336795588871485128704"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_3_translated_scaled",
+      "degree": 3,
+      "rootsSorted": [
+        "5/6",
+        "7/3",
+        "23/6"
+      ],
+      "initialCoefficientsAscending": [
+        "-805/108",
+        "169/12",
+        "-7",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 3,
+        "variationAtMinusInfinity": 3,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "-805/108"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "14"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "169/12"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "-6"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "-7"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "3",
+        "minimum_gap": "3/2",
+        "kappa": "1/9",
+        "x": "1/8",
+        "log_lower": "1527709716487427797441364853610598490473173/11440828156291307038181490770220867492249600",
+        "log_upper": "1527709716487427797441364853611223614078773/11440828156291307038181490770220867492249600",
+        "log_remainder": "1/18301705540795061984108652527616",
+        "lower": "1527709716487427797441364853610598490473173/5084812513907247572525107008987052218777600",
+        "upper": "1527709716487427797441364853611223614078773/5084812513907247572525107008987052218777600",
+        "baseline": "9/32",
+        "eta": "7/8",
+        "power_exponent": "6/7",
+        "root_lower": "25423335835899350427237/151115727451828646838272",
+        "root_upper": "203386686687194803417897/1208925819614629174706176",
+        "dynamic_lower": "3016617398782303113864837/9671406556917033397649408",
+        "dynamic_upper": "377077174847787889233105/1208925819614629174706176"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.28125",
+        "constantLower": "0.300445633405175902079273",
+        "constantUpper": "0.300445633405175902079273",
+        "dynamicLower": "0.311910928470358306315179",
+        "dynamicUpper": "0.311910928470358306315180"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/8",
+          "tau": "-1/8",
+          "strictSamplingInterval": [
+            "0",
+            "9/64"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1/4",
+          "tau": "-1/4",
+          "strictSamplingInterval": [
+            "9/64",
+            "9/32"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "19/64",
+          "tau": "-19/64",
+          "strictSamplingInterval": [
+            "9/32",
+            "1527709716487427797441364853610598490473173/5084812513907247572525107008987052218777600"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "39/128",
+          "tau": "-39/128",
+          "strictSamplingInterval": [
+            "1527709716487427797441364853611223614078773/5084812513907247572525107008987052218777600",
+            "3016617398782303113864837/9671406556917033397649408"
+          ],
+          "sturm": {
+            "distinctRealRoots": 3,
+            "variationAtMinusInfinity": 3,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_4_uniform",
+      "degree": 4,
+      "rootsSorted": [
+        "-3/2",
+        "-1/2",
+        "1/2",
+        "3/2"
+      ],
+      "initialCoefficientsAscending": [
+        "9/16",
+        "0",
+        "-5/2",
+        "0",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 4,
+        "variationAtMinusInfinity": 4,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "9/16"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "5"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "12"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "-5/2"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "-12"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "3",
+        "minimum_gap": "1",
+        "kappa": "2/9",
+        "x": "1/9",
+        "log_lower": "2163003189998190907117063689539507392837693/18364301598648457170456595165273906381240800",
+        "log_upper": "6489009569994572721351191068618582954419179/55092904795945371511369785495821719143722400",
+        "log_remainder": "1/906492528557223295949672159570184",
+        "lower": "2163003189998190907117063689539507392837693/16323823643243073040405862369132361227769600",
+        "upper": "6489009569994572721351191068618582954419179/48971470929729219121217587107397083683308800",
+        "baseline": "1/8",
+        "eta": "2/3",
+        "power_exponent": "5/6",
+        "root_lower": "483947897613882091708781/1208925819614629174706176",
+        "root_upper": "241973948806941045854391/604462909807314587353088",
+        "dynamic_lower": "3262400649003361873488273/24178516392292583494123520",
+        "dynamic_upper": "1304960259601344749395311/9671406556917033397649408"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.125",
+        "constantLower": "0.132505915113431386356143",
+        "constantUpper": "0.132505915113431386356143",
+        "dynamicLower": "0.134929728361799795499340",
+        "dynamicUpper": "0.134929728361799795499340"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/32",
+          "tau": "-1/32",
+          "strictSamplingInterval": [
+            "0",
+            "1/16"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "3/32",
+          "tau": "-3/32",
+          "strictSamplingInterval": [
+            "1/16",
+            "1/8"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "33/256",
+          "tau": "-33/256",
+          "strictSamplingInterval": [
+            "1/8",
+            "2163003189998190907117063689539507392837693/16323823643243073040405862369132361227769600"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "17/128",
+          "tau": "-17/128",
+          "strictSamplingInterval": [
+            "6489009569994572721351191068618582954419179/48971470929729219121217587107397083683308800",
+            "3262400649003361873488273/24178516392292583494123520"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_4_clustered",
+      "degree": 4,
+      "rootsSorted": [
+        "0",
+        "1/20",
+        "1",
+        "3"
+      ],
+      "initialCoefficientsAscending": [
+        "0",
+        "-3/20",
+        "16/5",
+        "-81/20",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 4,
+        "variationAtMinusInfinity": 4,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "-32/5"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "12"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "-3/20"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "243/10"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "16/5"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "-12"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "-81/20"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "3",
+        "minimum_gap": "1/20",
+        "kappa": "2/9",
+        "x": "1/3600",
+        "log_lower": "37645403401754614774857000586281870873242849335286648588021004560026196409275992233908840961159153469091290072095167256871/135504628673073308798298777507992461006835397256488208690053120000000000000000000000000000000000000000000000000000000000000000",
+        "log_upper": "36950674593522234156739185030007759983491185843008176800442071475872985693722989831773977805239580000525332628037412756429649/133003952343924774099566536432163145590072889470754835384227594240000000000000000000000000000000000000000000000000000000000000000",
+        "log_remainder": "1/75227358261013472733277763338120073369975730819374776320000000000000000000000000000000000000000000000000000000000000000",
+        "lower": "37645403401754614774857000586281870873242849335286648588021004560026196409275992233908840961159153469091290072095167256871/120448558820509607820710024451548854228298130894656185502269440000000000000000000000000000000000000000000000000000000000000000",
+        "upper": "36950674593522234156739185030007759983491185843008176800442071475872985693722989831773977805239580000525332628037412756429649/118225735416822021421836921273033907191175901751782075897091194880000000000000000000000000000000000000000000000000000000000000000",
+        "baseline": "1/3200",
+        "eta": "1/600",
+        "power_exponent": "5/6",
+        "root_lower": "301811630655426385750305/302231454903657293676544",
+        "root_upper": "1207246522621705543001221/1208925819614629174706176",
+        "dynamic_lower": "3022734587262537068919/9671406556917033397649408",
+        "dynamic_upper": "3778418234078171336151/12089258196146291747061760"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.0003125",
+        "constantLower": "0.000312543410817004080185418",
+        "constantUpper": "0.000312543410817004080185418",
+        "dynamicLower": "0.000312543430934631087236037",
+        "dynamicUpper": "0.000312543430934631087236223"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/8192",
+          "tau": "-1/8192",
+          "strictSamplingInterval": [
+            "0",
+            "1/6400"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1/4096",
+          "tau": "-1/4096",
+          "strictSamplingInterval": [
+            "1/6400",
+            "1/3200"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "5243/16777216",
+          "tau": "-5243/16777216",
+          "strictSamplingInterval": [
+            "1/3200",
+            "37645403401754614774857000586281870873242849335286648588021004560026196409275992233908840961159153469091290072095167256871/120448558820509607820710024451548854228298130894656185502269440000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "5369455/17179869184",
+          "tau": "-5369455/17179869184",
+          "strictSamplingInterval": [
+            "36950674593522234156739185030007759983491185843008176800442071475872985693722989831773977805239580000525332628037412756429649/118225735416822021421836921273033907191175901751782075897091194880000000000000000000000000000000000000000000000000000000000000000",
+            "3022734587262537068919/9671406556917033397649408"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_4_uneven",
+      "degree": 4,
+      "rootsSorted": [
+        "-9",
+        "-4",
+        "-1",
+        "2"
+      ],
+      "initialCoefficientsAscending": [
+        "-72",
+        "-62",
+        "21",
+        "12",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 4,
+        "variationAtMinusInfinity": 4,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "-72"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "-42"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "12"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "-62"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "-72"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "21"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "-12"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "12"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "11",
+        "minimum_gap": "3",
+        "kappa": "2/121",
+        "x": "9/121",
+        "log_lower": "167527456434423441659232512459744695785928146599822260602007235966471470813143/2167470920355707736233043978163969327807467945975090255661730529929142655760800",
+        "log_upper": "1842802020778657858251557637057191653689927879477870655186503122819353158769023/23842180123912785098563483759803662605882147405725992812279035829220569213368800",
+        "log_remainder": "10301051460877537453973547267843/5492152123335911751711238948311644776651878887909560913513167705928912",
+        "lower": "167527456434423441659232512459744695785928146599822260602007235966471470813143/143303862502856709833589684506708715888097054279344810291684663135811084678400",
+        "upper": "1842802020778657858251557637057191653689927879477870655186503122819353158769023/1576342487531423808169486529573795874769067597072792913208531294493921931462400",
+        "baseline": "9/8",
+        "eta": "54/121",
+        "power_exponent": "5/6",
+        "root_lower": "738710343508262648730121/1208925819614629174706176",
+        "root_upper": "369355171754131324365061/604462909807314587353088",
+        "dynamic_lower": "28448036304435174821551267/24178516392292583494123520",
+        "dynamic_upper": "11379214521774069928620531/9671406556917033397649408"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "1.125",
+        "constantLower": "1.16903657381240399841279",
+        "constantUpper": "1.16903657381240399841279",
+        "dynamicLower": "1.17658320481167287976585",
+        "dynamicUpper": "1.17658320481167287976585"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/2",
+          "tau": "-1/2",
+          "strictSamplingInterval": [
+            "0",
+            "9/16"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1",
+          "tau": "-1",
+          "strictSamplingInterval": [
+            "9/16",
+            "9/8"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "37/32",
+          "tau": "-37/32",
+          "strictSamplingInterval": [
+            "9/8",
+            "167527456434423441659232512459744695785928146599822260602007235966471470813143/143303862502856709833589684506708715888097054279344810291684663135811084678400"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "75/64",
+          "tau": "-75/64",
+          "strictSamplingInterval": [
+            "1842802020778657858251557637057191653689927879477870655186503122819353158769023/1576342487531423808169486529573795874769067597072792913208531294493921931462400",
+            "28448036304435174821551267/24178516392292583494123520"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_4_translated_scaled",
+      "degree": 4,
+      "rootsSorted": [
+        "1/12",
+        "19/12",
+        "37/12",
+        "55/12"
+      ],
+      "initialCoefficientsAscending": [
+        "38665/20736",
+        "-2653/108",
+        "649/24",
+        "-28/3",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 4,
+        "variationAtMinusInfinity": 4,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "38665/20736"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "-649/12"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "12"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "-2653/108"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "56"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "649/24"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "-12"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "-28/3"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "9/2",
+        "minimum_gap": "3/2",
+        "kappa": "8/81",
+        "x": "1/9",
+        "log_lower": "2163003189998190907117063689539507392837693/18364301598648457170456595165273906381240800",
+        "log_upper": "6489009569994572721351191068618582954419179/55092904795945371511369785495821719143722400",
+        "log_remainder": "1/906492528557223295949672159570184",
+        "lower": "2163003189998190907117063689539507392837693/7255032730330254684624827719614382767897600",
+        "upper": "6489009569994572721351191068618582954419179/21765098190990764053874483158843148303692800",
+        "baseline": "9/32",
+        "eta": "2/3",
+        "power_exponent": "5/6",
+        "root_lower": "483947897613882091708781/1208925819614629174706176",
+        "root_upper": "241973948806941045854391/604462909807314587353088",
+        "dynamic_lower": "29361605841030256861394457/96714065569170333976494080",
+        "dynamic_upper": "11744642336412102744557799/38685626227668133590597632"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.28125",
+        "constantLower": "0.298138309005220619301323",
+        "constantUpper": "0.298138309005220619301323",
+        "dynamicLower": "0.303591888814049539873515",
+        "dynamicUpper": "0.303591888814049539873515"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/8",
+          "tau": "-1/8",
+          "strictSamplingInterval": [
+            "0",
+            "9/64"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1/4",
+          "tau": "-1/4",
+          "strictSamplingInterval": [
+            "9/64",
+            "9/32"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "19/64",
+          "tau": "-19/64",
+          "strictSamplingInterval": [
+            "9/32",
+            "2163003189998190907117063689539507392837693/7255032730330254684624827719614382767897600"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "77/256",
+          "tau": "-77/256",
+          "strictSamplingInterval": [
+            "6489009569994572721351191068618582954419179/21765098190990764053874483158843148303692800",
+            "29361605841030256861394457/96714065569170333976494080"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_5_uniform",
+      "degree": 5,
+      "rootsSorted": [
+        "-2",
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "initialCoefficientsAscending": [
+        "0",
+        "4",
+        "0",
+        "-5",
+        "0",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 5,
+        "variationAtMinusInfinity": 5,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "4"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "30"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 2,
+          "coefficient": "60"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "-5"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 1,
+          "coefficient": "-20"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "4",
+        "minimum_gap": "1",
+        "kappa": "3/16",
+        "x": "3/32",
+        "log_lower": "109922679686573485499870727985485303951767001716359598859129/1116645656033841501982393635129999168205677161072319424102400",
+        "log_upper": "109922679686573485499870727985485308389953445029216955632729/1116645656033841501982393635129999168205677161072319424102400",
+        "log_remainder": "1853020188851841/466219022308558030906975461636494283270242481209344",
+        "lower": "36640893228857828499956909328495101317255667238786532953043/279161414008460375495598408782499792051419290268079856025600",
+        "upper": "36640893228857828499956909328495102796651148343072318544243/279161414008460375495598408782499792051419290268079856025600",
+        "baseline": "1/8",
+        "eta": "17/32",
+        "power_exponent": "14/17",
+        "root_lower": "647754024001946108711573/1208925819614629174706176",
+        "root_upper": "323877012000973054355787/604462909807314587353088",
+        "dynamic_lower": "280585897806341532997301/2115620184325601055735808",
+        "dynamic_upper": "80167399373240437999229/604462909807314587353088"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.125",
+        "constantLower": "0.131253430417670026537185",
+        "constantUpper": "0.131253430417670026537185",
+        "dynamicLower": "0.132625837040680464806442",
+        "dynamicUpper": "0.132625837040680464806442"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/32",
+          "tau": "-1/32",
+          "strictSamplingInterval": [
+            "0",
+            "1/16"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "3/32",
+          "tau": "-3/32",
+          "strictSamplingInterval": [
+            "1/16",
+            "1/8"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "33/256",
+          "tau": "-33/256",
+          "strictSamplingInterval": [
+            "1/8",
+            "36640893228857828499956909328495101317255667238786532953043/279161414008460375495598408782499792051419290268079856025600"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "135/1024",
+          "tau": "-135/1024",
+          "strictSamplingInterval": [
+            "36640893228857828499956909328495102796651148343072318544243/279161414008460375495598408782499792051419290268079856025600",
+            "280585897806341532997301/2115620184325601055735808"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_5_clustered",
+      "degree": 5,
+      "rootsSorted": [
+        "0",
+        "1/20",
+        "1",
+        "3",
+        "6"
+      ],
+      "initialCoefficientsAscending": [
+        "0",
+        "9/10",
+        "-387/20",
+        "55/2",
+        "-201/20",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 5,
+        "variationAtMinusInfinity": 5,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "387/10"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "-603/5"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "9/10"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "-165"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 2,
+          "coefficient": "60"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "-387/20"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "603/5"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "55/2"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 1,
+          "coefficient": "-20"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "-201/20"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "6",
+        "minimum_gap": "1/20",
+        "kappa": "1/12",
+        "x": "1/9600",
+        "log_lower": "46426035407514728301441775172885487892000143084956391814557555985865925821699532845687190929946144849067919966797578893931332834616067/445666726491412863585538062690506168540237167995298308180892504879571927040000000000000000000000000000000000000000000000000000000000000000",
+        "log_upper": "46101053159662125203331682746675289476756142083361697071855653093964864340947636115767380593436521835124444527029995841673813504825341507/442547059405972973540439296251672625360455507819331220023626257345414923550720000000000000000000000000000000000000000000000000000000000000000",
+        "log_remainder": "1/8578658679391732005001403770046002025016072037626923896908131566878720000000000000000000000000000000000000000000000000000000000000000",
+        "lower": "46426035407514728301441775172885487892000143084956391814557555985865925821699532845687190929946144849067919966797578893931332834616067/148555575497137621195179354230168722846745722665099436060297501626523975680000000000000000000000000000000000000000000000000000000000000000",
+        "upper": "46101053159662125203331682746675289476756142083361697071855653093964864340947636115767380593436521835124444527029995841673813504825341507/147515686468657657846813098750557541786818502606443740007875419115138307850240000000000000000000000000000000000000000000000000000000000000000",
+        "baseline": "1/3200",
+        "eta": "17/28800",
+        "power_exponent": "14/17",
+        "root_lower": "1208338116726187043482863/1208925819614629174706176",
+        "root_upper": "75521132295386690217679/75557863725914323419136",
+        "dynamic_lower": "330582874748698813113/1057810092162800527867904",
+        "dynamic_upper": "5289325995979181009817/16924961474604808445886464"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.0003125",
+        "constantLower": "0.000312516277172035648499645",
+        "constantUpper": "0.000312516277172035648499645",
+        "dynamicLower": "0.000312516279810479438867502",
+        "dynamicUpper": "0.000312516279810479438868033"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/8192",
+          "tau": "-1/8192",
+          "strictSamplingInterval": [
+            "0",
+            "1/6400"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1/4096",
+          "tau": "-1/4096",
+          "strictSamplingInterval": [
+            "1/6400",
+            "1/3200"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "5243/16777216",
+          "tau": "-5243/16777216",
+          "strictSamplingInterval": [
+            "1/3200",
+            "46426035407514728301441775172885487892000143084956391814557555985865925821699532845687190929946144849067919966797578893931332834616067/148555575497137621195179354230168722846745722665099436060297501626523975680000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "171807641/549755813888",
+          "tau": "-171807641/549755813888",
+          "strictSamplingInterval": [
+            "46101053159662125203331682746675289476756142083361697071855653093964864340947636115767380593436521835124444527029995841673813504825341507/147515686468657657846813098750557541786818502606443740007875419115138307850240000000000000000000000000000000000000000000000000000000000000000",
+            "330582874748698813113/1057810092162800527867904"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_5_uneven",
+      "degree": 5,
+      "rootsSorted": [
+        "-9",
+        "-4",
+        "-1",
+        "2",
+        "6"
+      ],
+      "initialCoefficientsAscending": [
+        "432",
+        "300",
+        "-188",
+        "-51",
+        "6",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 5,
+        "variationAtMinusInfinity": 5,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "432"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "376"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "72"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "300"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "306"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 2,
+          "coefficient": "60"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "-188"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "-72"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "-51"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 1,
+          "coefficient": "-20"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "6"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "15",
+        "minimum_gap": "3",
+        "kappa": "1/75",
+        "x": "3/50",
+        "log_lower": "4402853653789718835829036558527684838578891297202944399652463073/71156766489148139953613281250000000000000000000000000000000000000",
+        "log_upper": "206934121728116785283964718250801187413213039264812629698199621807/3344368024989962577819824218750000000000000000000000000000000000000",
+        "log_remainder": "1853020188851841/1203734427690505981445312500000000000000000000000000000000",
+        "lower": "13208560961369156507487109675583054515736673891608833198957389219/11385082638263702392578125000000000000000000000000000000000000000",
+        "upper": "620802365184350355851894154752403562239639117794437889094598865421/535098883998394012451171875000000000000000000000000000000000000000",
+        "baseline": "9/8",
+        "eta": "17/50",
+        "power_exponent": "14/17",
+        "root_lower": "26831119787865396163299/37778931862957161709568",
+        "root_upper": "858595833211692677225569/1208925819614629174706176",
+        "dynamic_lower": "11260606705808673133305225/9671406556917033397649408",
+        "dynamic_upper": "2463257716895647247910525/2115620184325601055735808"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "1.125",
+        "constantLower": "1.16016381971414009620875",
+        "constantUpper": "1.16016381971414009620875",
+        "dynamicLower": "1.16431944407869366768377",
+        "dynamicUpper": "1.16431944407869366768377"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/2",
+          "tau": "-1/2",
+          "strictSamplingInterval": [
+            "0",
+            "9/16"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1",
+          "tau": "-1",
+          "strictSamplingInterval": [
+            "9/16",
+            "9/8"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "37/32",
+          "tau": "-37/32",
+          "strictSamplingInterval": [
+            "9/8",
+            "13208560961369156507487109675583054515736673891608833198957389219/11385082638263702392578125000000000000000000000000000000000000000"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "149/128",
+          "tau": "-149/128",
+          "strictSamplingInterval": [
+            "620802365184350355851894154752403562239639117794437889094598865421/535098883998394012451171875000000000000000000000000000000000000000",
+            "11260606705808673133305225/9671406556917033397649408"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_5_translated_scaled",
+      "degree": 5,
+      "rootsSorted": [
+        "-2/3",
+        "5/6",
+        "7/3",
+        "23/6",
+        "16/3"
+      ],
+      "initialCoefficientsAscending": [
+        "6440/243",
+        "-2477/162",
+        "-5215/108",
+        "1555/36",
+        "-35/3",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 5,
+        "variationAtMinusInfinity": 5,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "6440/243"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "5215/54"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "-140"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "-2477/162"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "-1555/6"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 2,
+          "coefficient": "60"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "-5215/108"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "140"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "1555/36"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 1,
+          "coefficient": "-20"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "-35/3"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "6",
+        "minimum_gap": "3/2",
+        "kappa": "1/12",
+        "x": "3/32",
+        "log_lower": "109922679686573485499870727985485303951767001716359598859129/1116645656033841501982393635129999168205677161072319424102400",
+        "log_upper": "109922679686573485499870727985485308389953445029216955632729/1116645656033841501982393635129999168205677161072319424102400",
+        "log_remainder": "1853020188851841/466219022308558030906975461636494283270242481209344",
+        "lower": "329768039059720456499612183956455911855301005149078796577387/1116645656033841501982393635129999168205677161072319424102400",
+        "upper": "329768039059720456499612183956455925169860335087650866898187/1116645656033841501982393635129999168205677161072319424102400",
+        "baseline": "9/32",
+        "eta": "17/32",
+        "power_exponent": "14/17",
+        "root_lower": "647754024001946108711573/1208925819614629174706176",
+        "root_upper": "323877012000973054355787/604462909807314587353088",
+        "dynamic_lower": "2525273080257073796975709/8462480737302404222943232",
+        "dynamic_upper": "721506594359163941993061/2417851639229258349412352"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.28125",
+        "constantLower": "0.295320218439757559708666",
+        "constantUpper": "0.295320218439757559708666",
+        "dynamicLower": "0.298408133341531045814494",
+        "dynamicUpper": "0.298408133341531045814495"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/8",
+          "tau": "-1/8",
+          "strictSamplingInterval": [
+            "0",
+            "9/64"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1/4",
+          "tau": "-1/4",
+          "strictSamplingInterval": [
+            "9/64",
+            "9/32"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "37/128",
+          "tau": "-37/128",
+          "strictSamplingInterval": [
+            "9/32",
+            "329768039059720456499612183956455911855301005149078796577387/1116645656033841501982393635129999168205677161072319424102400"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "19/64",
+          "tau": "-19/64",
+          "strictSamplingInterval": [
+            "329768039059720456499612183956455925169860335087650866898187/1116645656033841501982393635129999168205677161072319424102400",
+            "2525273080257073796975709/8462480737302404222943232"
+          ],
+          "sturm": {
+            "distinctRealRoots": 5,
+            "variationAtMinusInfinity": 5,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_6_uniform",
+      "degree": 6,
+      "rootsSorted": [
+        "-5/2",
+        "-3/2",
+        "-1/2",
+        "1/2",
+        "3/2",
+        "5/2"
+      ],
+      "initialCoefficientsAscending": [
+        "-225/64",
+        "0",
+        "259/16",
+        "0",
+        "-35/4",
+        "0",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 6,
+        "variationAtMinusInfinity": 6,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "-225/64"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "-259/8"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "-105"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 3,
+          "coefficient": "-120"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "259/16"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "105"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 2,
+          "coefficient": "180"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "-35/4"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 1,
+          "coefficient": "-30"
+        },
+        {
+          "zPower": 6,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "5",
+        "minimum_gap": "1",
+        "kappa": "4/25",
+        "x": "2/25",
+        "log_lower": "627617562662458553146079250501063912719009071195714352/7527050277012815870936179862837889231741428375244140625",
+        "log_upper": "627617562662458553146079250501063912876151195728048944/7527050277012815870936179862837889231741428375244140625",
+        "log_remainder": "8589934592/411454724458248932705828337930142879486083984375",
+        "lower": "39226097666403659571629953156316494544938066949732147/301082011080512634837447194513515569269657135009765625",
+        "upper": "39226097666403659571629953156316494554759449733003059/301082011080512634837447194513515569269657135009765625",
+        "baseline": "1/8",
+        "eta": "11/25",
+        "power_exponent": "9/11",
+        "root_lower": "47016651162429265144209/75557863725914323419136",
+        "root_upper": "752266418598868242307345/1208925819614629174706176",
+        "dynamic_lower": "3805495008464674436656925/29014219670751100192948224",
+        "dynamic_upper": "713530314087126456873175/5440166188265831286177792"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.125",
+        "constantLower": "0.130283763967267278741822",
+        "constantUpper": "0.130283763967267278741822",
+        "dynamicLower": "0.131159653840387443215025",
+        "dynamicUpper": "0.131159653840387443215025"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/32",
+          "tau": "-1/32",
+          "strictSamplingInterval": [
+            "0",
+            "1/16"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "3/32",
+          "tau": "-3/32",
+          "strictSamplingInterval": [
+            "1/16",
+            "1/8"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "33/256",
+          "tau": "-33/256",
+          "strictSamplingInterval": [
+            "1/8",
+            "39226097666403659571629953156316494544938066949732147/301082011080512634837447194513515569269657135009765625"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "67/512",
+          "tau": "-67/512",
+          "strictSamplingInterval": [
+            "39226097666403659571629953156316494554759449733003059/301082011080512634837447194513515569269657135009765625",
+            "3805495008464674436656925/29014219670751100192948224"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_6_clustered",
+      "degree": 6,
+      "rootsSorted": [
+        "0",
+        "1/20",
+        "1",
+        "3",
+        "6",
+        "10"
+      ],
+      "initialCoefficientsAscending": [
+        "0",
+        "-9",
+        "972/5",
+        "-5887/20",
+        "128",
+        "-401/20",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 6,
+        "variationAtMinusInfinity": 6,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "-1944/5"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "1536"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 3,
+          "coefficient": "-120"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "-9"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "17661/10"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 2,
+          "coefficient": "-1203"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "972/5"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "-1536"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 2,
+          "coefficient": "180"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "-5887/20"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 1,
+          "coefficient": "401"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "128"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 1,
+          "coefficient": "-30"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 0,
+          "coefficient": "-401/20"
+        },
+        {
+          "zPower": 6,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "10",
+        "minimum_gap": "1/20",
+        "kappa": "1/25",
+        "x": "1/20000",
+        "log_lower": "9541908351300086200595670695360650978918758802664780455846465454723374315737507005084472360696259939867094057345292821756186943939510994901917009/190833396032067128524800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "log_upper": "27261232159664346275101831176645379846770893899213277762353351804144680420062057513526337534509214648200287721835501591757426098835182912436700351961/545211012463615786195353600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "log_remainder": "1/283453668143923200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "lower": "9541908351300086200595670695360650978918758802664780455846465454723374315737507005084472360696259939867094057345292821756186943939510994901917009/30533343365130740563968000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "upper": "27261232159664346275101831176645379846770893899213277762353351804144680420062057513526337534509214648200287721835501591757426098835182912436700351961/87233761994178525791256576000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "baseline": "1/3200",
+        "eta": "11/40000",
+        "power_exponent": "9/11",
+        "root_lower": "302163451126067837028883/302231454903657293676544",
+        "root_upper": "1208653804504271348115533/1208925819614629174706176",
+        "dynamic_lower": "6800377758945664766075/21760664753063325144711168",
+        "dynamic_upper": "566698146578805397175/1813388729421943762059264"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.0003125",
+        "constantLower": "0.000312507812760426432682308",
+        "constantUpper": "0.000312507812760426432682308",
+        "dynamicLower": "0.000312507813346481142012540",
+        "dynamicUpper": "0.000312507813346481142013689"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/8192",
+          "tau": "-1/8192",
+          "strictSamplingInterval": [
+            "0",
+            "1/6400"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1/4096",
+          "tau": "-1/4096",
+          "strictSamplingInterval": [
+            "1/6400",
+            "1/3200"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "5243/16777216",
+          "tau": "-5243/16777216",
+          "strictSamplingInterval": [
+            "1/3200",
+            "9541908351300086200595670695360650978918758802664780455846465454723374315737507005084472360696259939867094057345292821756186943939510994901917009/30533343365130740563968000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "171802987/549755813888",
+          "tau": "-171802987/549755813888",
+          "strictSamplingInterval": [
+            "27261232159664346275101831176645379846770893899213277762353351804144680420062057513526337534509214648200287721835501591757426098835182912436700351961/87233761994178525791256576000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "6800377758945664766075/21760664753063325144711168"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_6_uneven",
+      "degree": 6,
+      "rootsSorted": [
+        "-9",
+        "-4",
+        "-1",
+        "2",
+        "6",
+        "13"
+      ],
+      "initialCoefficientsAscending": [
+        "-5616",
+        "-3468",
+        "2744",
+        "475",
+        "-129",
+        "-7",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 6,
+        "variationAtMinusInfinity": 6,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "-5616"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "-5488"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "-1548"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 3,
+          "coefficient": "-120"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "-3468"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "-2850"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 2,
+          "coefficient": "-420"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "2744"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "1548"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 2,
+          "coefficient": "180"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "475"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 1,
+          "coefficient": "140"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "-129"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 1,
+          "coefficient": "-30"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 0,
+          "coefficient": "-7"
+        },
+        {
+          "zPower": 6,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "22",
+        "minimum_gap": "3",
+        "kappa": "1/121",
+        "x": "9/242",
+        "log_lower": "352812542002482482752009451908625738101518801222774952348223286741211667739604266562509/9309216717958785414055118120743986388480178212531307478715411464810416903811221998796800",
+        "log_upper": "904258545152362603293400225241807766754192687538980648759036772236940939461680436940048967/23859522448128367016223267743466837113674696758717741067947599584309098524468161982916198400",
+        "log_remainder": "10301051460877537453973547267843/49072741114032454993343299046813464772174529452876682549261901469843117905543168",
+        "lower": "352812542002482482752009451908625738101518801222774952348223286741211667739604266562509/307742701420125137654714648619635913668766221901861404255054924456542707564007338803200",
+        "upper": "904258545152362603293400225241807766754192687538980648759036772236940939461680436940048967/788744543739780727809033644412126846733047826734470779105705771382118959486550809352601600",
+        "baseline": "9/8",
+        "eta": "9/44",
+        "power_exponent": "9/11",
+        "root_lower": "501250661116364370039923/604462909807314587353088",
+        "root_upper": "1002501322232728740079847/1208925819614629174706176",
+        "dynamic_lower": "24977364183209952589785809/21760664753063325144711168",
+        "dynamic_upper": "1387631343511664032765885/1208925819614629174706176"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "1.125",
+        "constantLower": "1.14645299587732142522656",
+        "constantUpper": "1.14645299587732142522656",
+        "dynamicLower": "1.14782174472375901924261",
+        "dynamicUpper": "1.14782174472375901924262"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/2",
+          "tau": "-1/2",
+          "strictSamplingInterval": [
+            "0",
+            "9/16"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1",
+          "tau": "-1",
+          "strictSamplingInterval": [
+            "9/16",
+            "9/8"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "73/64",
+          "tau": "-73/64",
+          "strictSamplingInterval": [
+            "9/8",
+            "352812542002482482752009451908625738101518801222774952348223286741211667739604266562509/307742701420125137654714648619635913668766221901861404255054924456542707564007338803200"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "587/512",
+          "tau": "-587/512",
+          "strictSamplingInterval": [
+            "904258545152362603293400225241807766754192687538980648759036772236940939461680436940048967/788744543739780727809033644412126846733047826734470779105705771382118959486550809352601600",
+            "24977364183209952589785809/21760664753063325144711168"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_6_translated_scaled",
+      "degree": 6,
+      "rootsSorted": [
+        "-17/12",
+        "1/12",
+        "19/12",
+        "37/12",
+        "55/12",
+        "73/12"
+      ],
+      "initialCoefficientsAscending": [
+        "-47983265/2985984",
+        "2104697/10368",
+        "-805567/6912",
+        "-7595/108",
+        "2975/48",
+        "-14",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 6,
+        "variationAtMinusInfinity": 6,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "-47983265/2985984"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "805567/3456"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "2975/4"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 3,
+          "coefficient": "-120"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "2104697/10368"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "7595/18"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 2,
+          "coefficient": "-840"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "-805567/6912"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "-2975/4"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 2,
+          "coefficient": "180"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "-7595/108"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 1,
+          "coefficient": "280"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "2975/48"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 1,
+          "coefficient": "-30"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 0,
+          "coefficient": "-14"
+        },
+        {
+          "zPower": 6,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "15/2",
+        "minimum_gap": "3/2",
+        "kappa": "16/225",
+        "x": "2/25",
+        "log_lower": "627617562662458553146079250501063912719009071195714352/7527050277012815870936179862837889231741428375244140625",
+        "log_upper": "627617562662458553146079250501063912876151195728048944/7527050277012815870936179862837889231741428375244140625",
+        "log_remainder": "8589934592/411454724458248932705828337930142879486083984375",
+        "lower": "39226097666403659571629953156316494544938066949732147/133814227146894504372198753117118030786514282226562500",
+        "upper": "39226097666403659571629953156316494554759449733003059/133814227146894504372198753117118030786514282226562500",
+        "baseline": "9/32",
+        "eta": "11/25",
+        "power_exponent": "9/11",
+        "root_lower": "47016651162429265144209/75557863725914323419136",
+        "root_upper": "752266418598868242307345/1208925819614629174706176",
+        "dynamic_lower": "11416485025394023309970775/38685626227668133590597632",
+        "dynamic_upper": "713530314087126456873175/2417851639229258349412352"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.28125",
+        "constantLower": "0.293138468926351377169099",
+        "constantUpper": "0.293138468926351377169099",
+        "dynamicLower": "0.295109221140871747233806",
+        "dynamicUpper": "0.295109221140871747233807"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/8",
+          "tau": "-1/8",
+          "strictSamplingInterval": [
+            "0",
+            "9/64"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1/4",
+          "tau": "-1/4",
+          "strictSamplingInterval": [
+            "9/64",
+            "9/32"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "37/128",
+          "tau": "-37/128",
+          "strictSamplingInterval": [
+            "9/32",
+            "39226097666403659571629953156316494544938066949732147/133814227146894504372198753117118030786514282226562500"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "151/512",
+          "tau": "-151/512",
+          "strictSamplingInterval": [
+            "39226097666403659571629953156316494554759449733003059/133814227146894504372198753117118030786514282226562500",
+            "11416485025394023309970775/38685626227668133590597632"
+          ],
+          "sturm": {
+            "distinctRealRoots": 6,
+            "variationAtMinusInfinity": 6,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_7_uniform",
+      "degree": 7,
+      "rootsSorted": [
+        "-3",
+        "-2",
+        "-1",
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "initialCoefficientsAscending": [
+        "0",
+        "-36",
+        "0",
+        "49",
+        "0",
+        "-14",
+        "0",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 7,
+        "variationAtMinusInfinity": 7,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "-36"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "-294"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 2,
+          "coefficient": "-840"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 3,
+          "coefficient": "-840"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "49"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 1,
+          "coefficient": "280"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 2,
+          "coefficient": "420"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 0,
+          "coefficient": "-14"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 1,
+          "coefficient": "-42"
+        },
+        {
+          "zPower": 7,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "6",
+        "minimum_gap": "1",
+        "kappa": "5/36",
+        "x": "5/72",
+        "log_lower": "598395848584378193032490073302909629349875743026319098095780768992865/8314113551535339101417175854765828551984475195311214001905730727182336",
+        "log_upper": "120277565565460016799530504733884835499648464195968084807950176755065865/1671136823858603159384852346807931538948879514257554014383051876163649536",
+        "log_remainder": "116415321826934814453125/601490300477921531334333246352430809986833571443601958319947776",
+        "lower": "119679169716875638606498014660581925869975148605263819619156153798573/923790394615037677935241761640647616887163910590134889100636747464704",
+        "upper": "24055513113092003359906100946776967099929692839193616961590035351013173/185681869317622573264983594089770170994319946028617112709227986240405504",
+        "baseline": "1/8",
+        "eta": "3/8",
+        "power_exponent": "22/27",
+        "root_lower": "824289309290140276557423/1208925819614629174706176",
+        "root_upper": "51518081830633767284839/75557863725914323419136",
+        "dynamic_lower": "216358037057525005208673/1662273001970115115220992",
+        "dynamic_upper": "3461728592920400083338777/26596368031521841843535872"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.125",
+        "constantLower": "0.129552299325160652469807",
+        "constantUpper": "0.129552299325160652469807",
+        "dynamicLower": "0.130157944453828505590893",
+        "dynamicUpper": "0.130157944453828505590894"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/32",
+          "tau": "-1/32",
+          "strictSamplingInterval": [
+            "0",
+            "1/16"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "3/32",
+          "tau": "-3/32",
+          "strictSamplingInterval": [
+            "1/16",
+            "1/8"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "33/256",
+          "tau": "-33/256",
+          "strictSamplingInterval": [
+            "1/8",
+            "119679169716875638606498014660581925869975148605263819619156153798573/923790394615037677935241761640647616887163910590134889100636747464704"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "133/1024",
+          "tau": "-133/1024",
+          "strictSamplingInterval": [
+            "24055513113092003359906100946776967099929692839193616961590035351013173/185681869317622573264983594089770170994319946028617112709227986240405504",
+            "216358037057525005208673/1662273001970115115220992"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_7_clustered",
+      "degree": 7,
+      "rootsSorted": [
+        "0",
+        "1/20",
+        "1",
+        "3",
+        "6",
+        "10",
+        "15"
+      ],
+      "initialCoefficientsAscending": [
+        "0",
+        "135",
+        "-2925",
+        "92193/20",
+        "-44287/20",
+        "1715/4",
+        "-701/20",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 7,
+        "variationAtMinusInfinity": 7,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "5850"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "-132861/5"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 3,
+          "coefficient": "4206"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "135"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "-276579/10"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 2,
+          "coefficient": "25725"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 3,
+          "coefficient": "-840"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "-2925"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "132861/5"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 2,
+          "coefficient": "-6309"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "92193/20"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 1,
+          "coefficient": "-8575"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 2,
+          "coefficient": "420"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "-44287/20"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 1,
+          "coefficient": "2103/2"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 0,
+          "coefficient": "1715/4"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 1,
+          "coefficient": "-42"
+        },
+        {
+          "zPower": 6,
+          "tauPower": 0,
+          "coefficient": "-701/20"
+        },
+        {
+          "zPower": 7,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "15",
+        "minimum_gap": "1/20",
+        "kappa": "1/45",
+        "x": "1/36000",
+        "log_lower": "53772424887562547185822728477201083053920819893037370564721729826936912683780233989564675236764552415398965220376850311236667286792026405947490870825953/1935780409615332982832839678685606585811934246521260124143616000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "log_upper": "5807260570582092408427297207352285366574286785988356908878252656119705759110213930171016231544861367205842046905038703062626356971678475763111171579368773277/209058476897227116146998186779009454447931462821556529627138097152000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "log_remainder": "1/75246170326152375796756493537343276500298870068537720832000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "lower": "53772424887562547185822728477201083053920819893037370564721729826936912683780233989564675236764552415398965220376850311236667286792026405947490870825953/172069369743585154029585749216498363183283044135223122146099200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "upper": "5807260570582092408427297207352285366574286785988356908878252656119705759110213930171016231544861367205842046905038703062626356971678475763111171579368773277/18582975724197965879733172158134173728705018917471691522412275302400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "baseline": "1/3200",
+        "eta": "3/20000",
+        "power_exponent": "22/27",
+        "root_lower": "1208778059962143540881597/1208925819614629174706176",
+        "root_upper": "604389029981071770440799/604462909807314587353088",
+        "dynamic_lower": "16622960904633805265025/53192736063043683687071744",
+        "dynamic_upper": "33245921809267610530275/106385472126087367374143488"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.0003125",
+        "constantLower": "0.000312504340358154966708165",
+        "constantUpper": "0.000312504340358154966708165",
+        "dynamicLower": "0.000312504340535000502126822",
+        "dynamicUpper": "0.000312504340535000502128937"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/8192",
+          "tau": "-1/8192",
+          "strictSamplingInterval": [
+            "0",
+            "1/6400"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1/4096",
+          "tau": "-1/4096",
+          "strictSamplingInterval": [
+            "1/6400",
+            "1/3200"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "83887/268435456",
+          "tau": "-83887/268435456",
+          "strictSamplingInterval": [
+            "1/3200",
+            "53772424887562547185822728477201083053920819893037370564721729826936912683780233989564675236764552415398965220376850311236667286792026405947490870825953/172069369743585154029585749216498363183283044135223122146099200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "85900539/274877906944",
+          "tau": "-85900539/274877906944",
+          "strictSamplingInterval": [
+            "5807260570582092408427297207352285366574286785988356908878252656119705759110213930171016231544861367205842046905038703062626356971678475763111171579368773277/18582975724197965879733172158134173728705018917471691522412275302400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "16622960904633805265025/53192736063043683687071744"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_7_uneven",
+      "degree": 7,
+      "rootsSorted": [
+        "-9",
+        "-4",
+        "-1",
+        "2",
+        "6",
+        "13",
+        "23"
+      ],
+      "initialCoefficientsAscending": [
+        "129168",
+        "74148",
+        "-66580",
+        "-8181",
+        "3442",
+        "32",
+        "-30",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 7,
+        "variationAtMinusInfinity": 7,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "129168"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "133160"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "41304"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 3,
+          "coefficient": "3600"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "74148"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "49086"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 2,
+          "coefficient": "1920"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 3,
+          "coefficient": "-840"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "-66580"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "-41304"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 2,
+          "coefficient": "-5400"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "-8181"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 1,
+          "coefficient": "-640"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 2,
+          "coefficient": "420"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "3442"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 1,
+          "coefficient": "900"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 0,
+          "coefficient": "32"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 1,
+          "coefficient": "-42"
+        },
+        {
+          "zPower": 6,
+          "tauPower": 0,
+          "coefficient": "-30"
+        },
+        {
+          "zPower": 7,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "32",
+        "minimum_gap": "3",
+        "kappa": "5/1024",
+        "x": "45/2048",
+        "log_lower": "6229205669194243534469279480908255385050235690230792503943272917853121998327493827109383576132932348344847924692065/280371935412081004240710841644758534862038166459726386728495539889895070927735326692926110701690053218315057040982016",
+        "log_upper": "12477098955396069799541966800259235536255622087532277388730146169888718130483286997401626998155278289038075119720706195/561584986630398251494143815814451345328662447418831952617176566399459827068253859365930999735485176596285059253086978048",
+        "log_remainder": "1199200220973875542866711885184398852288722991943359375/202130620024436982461284867144763526266282865625378951997241179592848286915430343104826875122701597007432122368",
+        "lower": "1245841133838848706893855896181651077010047138046158500788654583570624399665498765421876715226586469668969584938413/1095202872703441422815276725174838026804836587733306198158185702694902620811466119894242619928476770384043191566336",
+        "upper": "2495419791079213959908393360051847107251124417506455477746029233977743626096657399480325399631055657807615023944141239/2193691354024993169898999280525200567690087685229812314910845962497889949485366638148167967716738971079238512707371008",
+        "baseline": "9/8",
+        "eta": "243/2048",
+        "power_exponent": "22/27",
+        "root_lower": "1090698769044267670215419/1208925819614629174706176",
+        "root_upper": "272674692261066917553855/302231454903657293676544",
+        "dynamic_lower": "29556762642590376122689/25973015655783048675328",
+        "dynamic_upper": "118227050570361504490757/103892062623132194701312"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "1.125",
+        "constantLower": "1.13754370527130369353455",
+        "constantUpper": "1.13754370527130369353455",
+        "dynamicLower": "1.13797962602041494376420",
+        "dynamicUpper": "1.13797962602041494376421"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/2",
+          "tau": "-1/2",
+          "strictSamplingInterval": [
+            "0",
+            "9/16"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1",
+          "tau": "-1",
+          "strictSamplingInterval": [
+            "9/16",
+            "9/8"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "145/128",
+          "tau": "-145/128",
+          "strictSamplingInterval": [
+            "9/8",
+            "1245841133838848706893855896181651077010047138046158500788654583570624399665498765421876715226586469668969584938413/1095202872703441422815276725174838026804836587733306198158185702694902620811466119894242619928476770384043191566336"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "1165/1024",
+          "tau": "-1165/1024",
+          "strictSamplingInterval": [
+            "2495419791079213959908393360051847107251124417506455477746029233977743626096657399480325399631055657807615023944141239/2193691354024993169898999280525200567690087685229812314910845962497889949485366638148167967716738971079238512707371008",
+            "29556762642590376122689/25973015655783048675328"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_7_translated_scaled",
+      "degree": 7,
+      "rootsSorted": [
+        "-13/6",
+        "-2/3",
+        "5/6",
+        "7/3",
+        "23/6",
+        "16/3",
+        "41/6"
+      ],
+      "initialCoefficientsAscending": [
+        "-858130/2187",
+        "598961/5832",
+        "1053353/1296",
+        "-556591/1296",
+        "-4165/54",
+        "497/6",
+        "-49/3",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 7,
+        "variationAtMinusInfinity": 7,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "-858130/2187"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "-1053353/648"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "-8330/9"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 3,
+          "coefficient": "1960"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "598961/5832"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "556591/216"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 2,
+          "coefficient": "4970"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 3,
+          "coefficient": "-840"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "1053353/1296"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "8330/9"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 2,
+          "coefficient": "-2940"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "-556591/1296"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 1,
+          "coefficient": "-4970/3"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 2,
+          "coefficient": "420"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "-4165/54"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 1,
+          "coefficient": "490"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 0,
+          "coefficient": "497/6"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 1,
+          "coefficient": "-42"
+        },
+        {
+          "zPower": 6,
+          "tauPower": 0,
+          "coefficient": "-49/3"
+        },
+        {
+          "zPower": 7,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "9",
+        "minimum_gap": "3/2",
+        "kappa": "5/81",
+        "x": "5/72",
+        "log_lower": "598395848584378193032490073302909629349875743026319098095780768992865/8314113551535339101417175854765828551984475195311214001905730727182336",
+        "log_upper": "120277565565460016799530504733884835499648464195968084807950176755065865/1671136823858603159384852346807931538948879514257554014383051876163649536",
+        "log_remainder": "116415321826934814453125/601490300477921531334333246352430809986833571443601958319947776",
+        "lower": "119679169716875638606498014660581925869975148605263819619156153798573/410573508717794523526774116284732274172072849151171061822505221095424",
+        "upper": "24055513113092003359906100946776967099929692839193616961590035351013173/82525275252276699228881597373231187108586642679385383426323549440180224",
+        "baseline": "9/32",
+        "eta": "3/8",
+        "power_exponent": "22/27",
+        "root_lower": "824289309290140276557423/1208925819614629174706176",
+        "root_upper": "51518081830633767284839/75557863725914323419136",
+        "dynamic_lower": "1947222333517725046878057/6649092007880460460883968",
+        "dynamic_upper": "31155557336283600750048993/106385472126087367374143488"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.28125",
+        "constantLower": "0.291492673481611468057065",
+        "constantUpper": "0.291492673481611468057065",
+        "dynamicLower": "0.292855375021114137579510",
+        "dynamicUpper": "0.292855375021114137579511"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/8",
+          "tau": "-1/8",
+          "strictSamplingInterval": [
+            "0",
+            "9/64"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1/4",
+          "tau": "-1/4",
+          "strictSamplingInterval": [
+            "9/64",
+            "9/32"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "37/128",
+          "tau": "-37/128",
+          "strictSamplingInterval": [
+            "9/32",
+            "119679169716875638606498014660581925869975148605263819619156153798573/410573508717794523526774116284732274172072849151171061822505221095424"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "299/1024",
+          "tau": "-299/1024",
+          "strictSamplingInterval": [
+            "24055513113092003359906100946776967099929692839193616961590035351013173/82525275252276699228881597373231187108586642679385383426323549440180224",
+            "1947222333517725046878057/6649092007880460460883968"
+          ],
+          "sturm": {
+            "distinctRealRoots": 7,
+            "variationAtMinusInfinity": 7,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_8_uniform",
+      "degree": 8,
+      "rootsSorted": [
+        "-7/2",
+        "-5/2",
+        "-3/2",
+        "-1/2",
+        "1/2",
+        "3/2",
+        "5/2",
+        "7/2"
+      ],
+      "initialCoefficientsAscending": [
+        "11025/256",
+        "0",
+        "-3229/16",
+        "0",
+        "987/8",
+        "0",
+        "-21",
+        "0",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 8,
+        "variationAtMinusInfinity": 8,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "11025/256"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "3229/8"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "2961/2"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 3,
+          "coefficient": "2520"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 4,
+          "coefficient": "1680"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "-3229/16"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "-2961/2"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 2,
+          "coefficient": "-3780"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 3,
+          "coefficient": "-3360"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "987/8"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 1,
+          "coefficient": "630"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 2,
+          "coefficient": "840"
+        },
+        {
+          "zPower": 6,
+          "tauPower": 0,
+          "coefficient": "-21"
+        },
+        {
+          "zPower": 6,
+          "tauPower": 1,
+          "coefficient": "-56"
+        },
+        {
+          "zPower": 8,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "7",
+        "minimum_gap": "1",
+        "kappa": "6/49",
+        "x": "3/49",
+        "log_lower": "58879309305074777865257849317219163411226531128575527555100172187/931945757110289573226453648742235757562379848916896328565476122400",
+        "log_upper": "2559969969785859907185123883357354930923014309377438885064229069/40519380743925633618541462988792859024451297778995492546325048800",
+        "log_remainder": "1853020188851841/617198806743732864270118374456863741302341338830406630906",
+        "lower": "19626436435024925955085949772406387803742177042858509185033390729/152154409324128909914523044692609919602021199823166747520894060800",
+        "upper": "853323323261953302395041294452451643641004769792479628354743023/6615409101049083039761871508374344330522660861876815109604089600",
+        "baseline": "1/8",
+        "eta": "16/49",
+        "power_exponent": "13/16",
+        "root_lower": "109601860717303416247811/151115727451828646838272",
+        "root_upper": "876814885738427329982489/1208925819614629174706176",
+        "dynamic_lower": "16273435759933890391460663/125728285239921434169442304",
+        "dynamic_upper": "2034179469991736298932589/15716035654990179271180288"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.125",
+        "constantLower": "0.128990257477293703722888",
+        "constantUpper": "0.128990257477293703722888",
+        "dynamicLower": "0.129433370771581354558027",
+        "dynamicUpper": "0.129433370771581354558028"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/32",
+          "tau": "-1/32",
+          "strictSamplingInterval": [
+            "0",
+            "1/16"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "3/32",
+          "tau": "-3/32",
+          "strictSamplingInterval": [
+            "1/16",
+            "1/8"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "33/256",
+          "tau": "-33/256",
+          "strictSamplingInterval": [
+            "1/8",
+            "19626436435024925955085949772406387803742177042858509185033390729/152154409324128909914523044692609919602021199823166747520894060800"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "265/2048",
+          "tau": "-265/2048",
+          "strictSamplingInterval": [
+            "853323323261953302395041294452451643641004769792479628354743023/6615409101049083039761871508374344330522660861876815109604089600",
+            "16273435759933890391460663/125728285239921434169442304"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_8_clustered",
+      "degree": 8,
+      "rootsSorted": [
+        "0",
+        "1/20",
+        "1",
+        "3",
+        "6",
+        "10",
+        "15",
+        "21"
+      ],
+      "initialCoefficientsAscending": [
+        "0",
+        "-2835",
+        "61560",
+        "-1994553/20",
+        "51111",
+        "-112181/10",
+        "5824/5",
+        "-1121/20",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 8,
+        "variationAtMinusInfinity": 8,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "-123120"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "613332"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 3,
+          "coefficient": "-139776"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 4,
+          "coefficient": "1680"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "-2835"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "5983659/10"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 2,
+          "coefficient": "-673086"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 3,
+          "coefficient": "47082"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "61560"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "-613332"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 2,
+          "coefficient": "209664"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 3,
+          "coefficient": "-3360"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "-1994553/20"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 1,
+          "coefficient": "224362"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 2,
+          "coefficient": "-23541"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "51111"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 1,
+          "coefficient": "-34944"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 2,
+          "coefficient": "840"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 0,
+          "coefficient": "-112181/10"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 1,
+          "coefficient": "23541/10"
+        },
+        {
+          "zPower": 6,
+          "tauPower": 0,
+          "coefficient": "5824/5"
+        },
+        {
+          "zPower": 6,
+          "tauPower": 1,
+          "coefficient": "-56"
+        },
+        {
+          "zPower": 7,
+          "tauPower": 0,
+          "coefficient": "-1121/20"
+        },
+        {
+          "zPower": 8,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "21",
+        "minimum_gap": "1/20",
+        "kappa": "2/147",
+        "x": "1/58800",
+        "log_lower": "19700814513722173140770081180290315003385665769859973532390175263082309427101766473750696305881327655071527989324597071664091802271813370289863914276163763523/1158398042971686026677644159813895753756696690200805879542486506713028355213634834413714793467740160000000000000000000000000000000000000000000000000000000000000000",
+        "log_upper": "2940523873503657840818201546888952127090341087143529789471025169592402422779782562105555179919541084468321196158600034319510678315288591836094797980945927393396929/172901333495910884655878489649662266309970791282682084774631993505479899270831921749756656358201428541440000000000000000000000000000000000000000000000000000000000000000",
+        "log_remainder": "1/809018242064508814028450091575396635376497394104877325025779799161576734684714601854155641323520000000000000000000000000000000000000000000000000000000000000000",
+        "lower": "19700814513722173140770081180290315003385665769859973532390175263082309427101766473750696305881327655071527989324597071664091802271813370289863914276163763523/63042070365806042268171110738171197483357643004125490043128517372137597562646793709589920732938240000000000000000000000000000000000000000000000000000000000000000",
+        "upper": "2940523873503657840818201546888952127090341087143529789471025169592402422779782562105555179919541084468321196158600034319510678315288591836094797980945927393396929/9409596380729844062904951817668694765168478437152766518347319374447885674603097782299681978677628764160000000000000000000000000000000000000000000000000000000000000000",
+        "baseline": "1/3200",
+        "eta": "1/11025",
+        "power_exponent": "13/16",
+        "root_lower": "604418362842179815556057/604462909807314587353088",
+        "root_upper": "1208836725684359631112115/1208925819614629174706176",
+        "dynamic_lower": "39290423248868724980901/125728285239921434169442304",
+        "dynamic_upper": "19645211624434362490671/62864142619960717084721152"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.0003125",
+        "constantLower": "0.000312502657343053818820054",
+        "constantUpper": "0.000312502657343053818820054",
+        "dynamicLower": "0.000312502657408336073571123",
+        "dynamicUpper": "0.000312502657408336073574631"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/8192",
+          "tau": "-1/8192",
+          "strictSamplingInterval": [
+            "0",
+            "1/6400"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1/4096",
+          "tau": "-1/4096",
+          "strictSamplingInterval": [
+            "1/6400",
+            "1/3200"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "167773/536870912",
+          "tau": "-167773/536870912",
+          "strictSamplingInterval": [
+            "1/3200",
+            "19700814513722173140770081180290315003385665769859973532390175263082309427101766473750696305881327655071527989324597071664091802271813370289863914276163763523/63042070365806042268171110738171197483357643004125490043128517372137597562646793709589920732938240000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "687200611/2199023255552",
+          "tau": "-687200611/2199023255552",
+          "strictSamplingInterval": [
+            "2940523873503657840818201546888952127090341087143529789471025169592402422779782562105555179919541084468321196158600034319510678315288591836094797980945927393396929/9409596380729844062904951817668694765168478437152766518347319374447885674603097782299681978677628764160000000000000000000000000000000000000000000000000000000000000000",
+            "39290423248868724980901/125728285239921434169442304"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_8_uneven",
+      "degree": 8,
+      "rootsSorted": [
+        "-9",
+        "-4",
+        "-1",
+        "2",
+        "6",
+        "13",
+        "23",
+        "38"
+      ],
+      "initialCoefficientsAscending": [
+        "-4908384",
+        "-2688456",
+        "2604188",
+        "244298",
+        "-138977",
+        "2226",
+        "1172",
+        "-68",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 8,
+        "variationAtMinusInfinity": 8,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "-4908384"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "-5208376"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "-1667724"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 3,
+          "coefficient": "-140640"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 4,
+          "coefficient": "1680"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "-2688456"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "-1465788"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 2,
+          "coefficient": "133560"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 3,
+          "coefficient": "57120"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "2604188"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "1667724"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 2,
+          "coefficient": "210960"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 3,
+          "coefficient": "-3360"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "244298"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 1,
+          "coefficient": "-44520"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 2,
+          "coefficient": "-28560"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "-138977"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 1,
+          "coefficient": "-35160"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 2,
+          "coefficient": "840"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 0,
+          "coefficient": "2226"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 1,
+          "coefficient": "2856"
+        },
+        {
+          "zPower": 6,
+          "tauPower": 0,
+          "coefficient": "1172"
+        },
+        {
+          "zPower": 6,
+          "tauPower": 1,
+          "coefficient": "-56"
+        },
+        {
+          "zPower": 7,
+          "tauPower": 0,
+          "coefficient": "-68"
+        },
+        {
+          "zPower": 8,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "47",
+        "minimum_gap": "3",
+        "kappa": "6/2209",
+        "x": "27/2209",
+        "log_lower": "6796930336205221795106264383209298229608923021370394829528978400440013662788252911161778918130631728455000046762197821/552684165873537618324085746747074437736067023898652223121819982388057044523551096964659816973981900263151434404705720800",
+        "log_upper": "7415450996799896978460934442081344368503335016315100759016115448801181931017327890169935154762880761480307286233762314311/602978424968029541591577549701058211570049123073429575425905600785370235575194246788443860318614253187098214935533941392800",
+        "log_remainder": "57264168970223481226273458862846808078011946889/2480334986597713355982271195217351977785030189263725248786976130271837426275715561846818192968966089948176909762",
+        "lower": "2265643445401740598368754794403099409869641007123464943176326133480004554262750970387259639376877242818333348920732607/2001572352642961044179577172465638525074031775096975004515418677729495860655685276467758504206362699006433442841849600",
+        "upper": "2471816998933298992820311480693781456167778338771700253005371816267060643672442630056645051587626920493435762077920771437/2183715436733470499199918695160011630855768666630799729926321777402879983975352636626324528089141704616018886140457913600",
+        "baseline": "9/8",
+        "eta": "144/2209",
+        "power_exponent": "13/16",
+        "root_lower": "1144493101985088634961441/1208925819614629174706176",
+        "root_upper": "572246550992544317480721/604462909807314587353088",
+        "dynamic_lower": "71165936621827526148058703/62864142619960717084721152",
+        "dynamic_upper": "142331873243655052296119615/125728285239921434169442304"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "1.125",
+        "constantLower": "1.13193182470275874914652",
+        "constantUpper": "1.13193182470275874914652",
+        "dynamicLower": "1.13205928937986996341563",
+        "dynamicUpper": "1.13205928937986996341564"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/2",
+          "tau": "-1/2",
+          "strictSamplingInterval": [
+            "0",
+            "9/16"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1",
+          "tau": "-1",
+          "strictSamplingInterval": [
+            "9/16",
+            "9/8"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "289/256",
+          "tau": "-289/256",
+          "strictSamplingInterval": [
+            "9/8",
+            "2265643445401740598368754794403099409869641007123464943176326133480004554262750970387259639376877242818333348920732607/2001572352642961044179577172465638525074031775096975004515418677729495860655685276467758504206362699006433442841849600"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "9273/8192",
+          "tau": "-9273/8192",
+          "strictSamplingInterval": [
+            "2471816998933298992820311480693781456167778338771700253005371816267060643672442630056645051587626920493435762077920771437/2183715436733470499199918695160011630855768666630799729926321777402879983975352636626324528089141704616018886140457913600",
+            "71165936621827526148058703/62864142619960717084721152"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "degree_8_translated_scaled",
+      "degree": 8,
+      "rootsSorted": [
+        "-35/12",
+        "-17/12",
+        "1/12",
+        "19/12",
+        "37/12",
+        "55/12",
+        "73/12",
+        "91/12"
+      ],
+      "initialCoefficientsAscending": [
+        "152826699025/429981696",
+        "-4943624245/1119744",
+        "1205124163/746496",
+        "17902787/7776",
+        "-12018853/10368",
+        "-2695/54",
+        "3787/36",
+        "-56/3",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 8,
+        "variationAtMinusInfinity": 8,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "152826699025/429981696"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "-1205124163/373248"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "-12018853/864"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 3,
+          "coefficient": "-37870/3"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 4,
+          "coefficient": "1680"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 0,
+          "coefficient": "-4943624245/1119744"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 1,
+          "coefficient": "-17902787/1296"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 2,
+          "coefficient": "-26950/9"
+        },
+        {
+          "zPower": 1,
+          "tauPower": 3,
+          "coefficient": "15680"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "1205124163/746496"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "12018853/864"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 2,
+          "coefficient": "18935"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 3,
+          "coefficient": "-3360"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 0,
+          "coefficient": "17902787/7776"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 1,
+          "coefficient": "26950/27"
+        },
+        {
+          "zPower": 3,
+          "tauPower": 2,
+          "coefficient": "-7840"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "-12018853/10368"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 1,
+          "coefficient": "-18935/6"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 2,
+          "coefficient": "840"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 0,
+          "coefficient": "-2695/54"
+        },
+        {
+          "zPower": 5,
+          "tauPower": 1,
+          "coefficient": "784"
+        },
+        {
+          "zPower": 6,
+          "tauPower": 0,
+          "coefficient": "3787/36"
+        },
+        {
+          "zPower": 6,
+          "tauPower": 1,
+          "coefficient": "-56"
+        },
+        {
+          "zPower": 7,
+          "tauPower": 0,
+          "coefficient": "-56/3"
+        },
+        {
+          "zPower": 8,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "21/2",
+        "minimum_gap": "3/2",
+        "kappa": "8/147",
+        "x": "3/49",
+        "log_lower": "58879309305074777865257849317219163411226531128575527555100172187/931945757110289573226453648742235757562379848916896328565476122400",
+        "log_upper": "2559969969785859907185123883357354930923014309377438885064229069/40519380743925633618541462988792859024451297778995492546325048800",
+        "log_remainder": "1853020188851841/617198806743732864270118374456863741302341338830406630906",
+        "lower": "176637927915224333595773547951657490233679593385726582665300516561/608617637296515639658092178770439678408084799292666990083576243200",
+        "upper": "7679909909357579721555371650072064792769042928132316655192687207/26461636404196332159047486033497377322090643447507260438416358400",
+        "baseline": "9/32",
+        "eta": "16/49",
+        "power_exponent": "13/16",
+        "root_lower": "109601860717303416247811/151115727451828646838272",
+        "root_upper": "876814885738427329982489/1208925819614629174706176",
+        "dynamic_lower": "146460921839405013523145967/502913140959685736677769216",
+        "dynamic_upper": "18307615229925626690393301/62864142619960717084721152"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.28125",
+        "constantLower": "0.290228079323910833376497",
+        "constantUpper": "0.290228079323910833376497",
+        "dynamicLower": "0.291225084236058047755561",
+        "dynamicUpper": "0.291225084236058047755562"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/8",
+          "tau": "-1/8",
+          "strictSamplingInterval": [
+            "0",
+            "9/64"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "1/4",
+          "tau": "-1/4",
+          "strictSamplingInterval": [
+            "9/64",
+            "9/32"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "37/128",
+          "tau": "-37/128",
+          "strictSamplingInterval": [
+            "9/32",
+            "176637927915224333595773547951657490233679593385726582665300516561/608617637296515639658092178770439678408084799292666990083576243200"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "149/512",
+          "tau": "-149/512",
+          "strictSamplingInterval": [
+            "7679909909357579721555371650072064792769042928132316655192687207/26461636404196332159047486033497377322090643447507260438416358400",
+            "146460921839405013523145967/502913140959685736677769216"
+          ],
+          "sturm": {
+            "distinctRealRoots": 8,
+            "variationAtMinusInfinity": 8,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "quartic_reference",
+      "degree": 4,
+      "rootsSorted": [
+        "-3",
+        "-1",
+        "1",
+        "3"
+      ],
+      "initialCoefficientsAscending": [
+        "9",
+        "0",
+        "-10",
+        "0",
+        "1"
+      ],
+      "initialSturm": {
+        "distinctRealRoots": 4,
+        "variationAtMinusInfinity": 4,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "heatEquationCheckedCoefficientwise": true,
+      "heatFamilyTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "9"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 1,
+          "coefficient": "20"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 2,
+          "coefficient": "12"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "-10"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 1,
+          "coefficient": "-12"
+        },
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "exactBounds": {
+        "diameter": "6",
+        "minimum_gap": "2",
+        "kappa": "1/18",
+        "x": "1/9",
+        "log_lower": "2163003189998190907117063689539507392837693/18364301598648457170456595165273906381240800",
+        "log_upper": "6489009569994572721351191068618582954419179/55092904795945371511369785495821719143722400",
+        "log_remainder": "1/906492528557223295949672159570184",
+        "lower": "2163003189998190907117063689539507392837693/4080955910810768260101465592283090306942400",
+        "upper": "6489009569994572721351191068618582954419179/12242867732432304780304396776849270920827200",
+        "baseline": "1/2",
+        "eta": "2/3",
+        "power_exponent": "5/6",
+        "root_lower": "483947897613882091708781/1208925819614629174706176",
+        "root_upper": "241973948806941045854391/604462909807314587353088",
+        "dynamic_lower": "3262400649003361873488273/6044629098073145873530880",
+        "dynamic_upper": "1304960259601344749395311/2417851639229258349412352"
+      },
+      "logEnclosure": {
+        "seriesTerms": 32,
+        "formula": "L_N=sum(x^k/k); R<=x^(N+1)/((N+1)*(1-x))"
+      },
+      "dynamicEnclosure": {
+        "bisectionSteps": 80,
+        "strictImprovementProvedByEnclosures": true,
+        "formula": "Tdyn=D^2/B*(1-(1-eta)^(B/(A+B)))"
+      },
+      "decimalDisplayOnly": {
+        "oldBaseline": "0.5",
+        "constantLower": "0.530023660453725545424573",
+        "constantUpper": "0.530023660453725545424573",
+        "dynamicLower": "0.539718913447199181997360",
+        "dynamicUpper": "0.539718913447199181997361"
+      },
+      "samples": [
+        {
+          "name": "early_constant_bound",
+          "backwardDuration": "1/8",
+          "tau": "-1/8",
+          "strictSamplingInterval": [
+            "0",
+            "1/4"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "middle_constant_bound",
+          "backwardDuration": "3/8",
+          "tau": "-3/8",
+          "strictSamplingInterval": [
+            "1/4",
+            "1/2"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_old_baseline",
+          "backwardDuration": "33/64",
+          "tau": "-33/64",
+          "strictSamplingInterval": [
+            "1/2",
+            "2163003189998190907117063689539507392837693/4080955910810768260101465592283090306942400"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "name": "strictly_beyond_constant_bound",
+          "backwardDuration": "17/32",
+          "tau": "-17/32",
+          "strictSamplingInterval": [
+            "6489009569994572721351191068618582954419179/12242867732432304780304396776849270920827200",
+            "3262400649003361873488273/6044629098073145873530880"
+          ],
+          "sturm": {
+            "distinctRealRoots": 4,
+            "variationAtMinusInfinity": 4,
+            "variationAtPlusInfinity": 0,
+            "gcdDegreeWithDerivative": 0,
+            "chainDegrees": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "controls": {
+    "rejectedNegativeControls": [
+      "heat sign reversed",
+      "inflated safe duration 7/10",
+      "duplicate roots",
+      "degree two outside theorem"
+    ],
+    "unsortedInputAcceptedBySorting": true,
+    "boundTranslationAndScalingCheckedExactly": true,
+    "quarticExactCollision": {
+      "tau": "-2/3",
+      "polynomial": "(z^2-1)^2",
+      "sturm": {
+        "distinctRealRoots": 2,
+        "variationAtMinusInfinity": 2,
+        "variationAtPlusInfinity": 0,
+        "gcdDegreeWithDerivative": 2,
+        "chainDegrees": [
+          4,
+          3,
+          2
+        ]
+      }
+    },
+    "inflatedDurationCounterexample": {
+      "tau": "-7/10",
+      "sturm": {
+        "distinctRealRoots": 0,
+        "variationAtMinusInfinity": 2,
+        "variationAtPlusInfinity": 2,
+        "gcdDegreeWithDerivative": 0,
+        "chainDegrees": [
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "The general gap bound requires the separate analytic proof; examples do not establish it.",
+    "Sturm counts certify only the listed rational sample times; the theorem supplies the interval claim.",
+    "Logarithm and rational-power enclosures are exact rational interval calculations.",
+    "An 80-step dynamic enclosure may be too broad to show improvement for extreme gap-to-diameter ratios.",
+    "No novelty, Riemann-zeta, or Riemann Hypothesis conclusion is claimed."
+  ],
+  "caseCount": 25,
+  "sampleCount": 100
+}

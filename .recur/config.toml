@@ -130,3 +130,51 @@ host = "hydrogen_review"
 context = ["research/prime-phase/graph.primes.phase.contract.current.md"]
 inputs = ["research/prime-phase/graph.primes.phase.contract.current.md", "research/prime-phase/run-review.py", "research/prime-phase/verify-review.py", "research/prime-phase/steer-review.py", "research/prime-phase/test_review_protocol.py"]
 tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "hydrogen"]}]
+
+[warp.dispatch.hosts.gap_carbon_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/gap-bound/run-review.py", "carbon", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.riemann.gap.carbon"]
+workspace = "research/gap-bound/carbon"
+host = "gap_carbon_review"
+context = ["research/gap-bound/graph.riemann.gap.contract.current.md"]
+inputs = ["research/gap-bound/graph.riemann.gap.contract.current.md", "research/gap-bound/run-review.py", "research/gap-bound/verify-review.py", "research/gap-bound/steer-review.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "carbon"]}]
+
+[warp.dispatch.hosts.gap_codex_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/gap-bound/run-review.py", "codex", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.riemann.gap.codex"]
+workspace = "research/gap-bound/codex"
+host = "gap_codex_review"
+context = ["research/gap-bound/graph.riemann.gap.contract.current.md"]
+inputs = ["research/gap-bound/graph.riemann.gap.contract.current.md", "research/gap-bound/run-review.py", "research/gap-bound/verify-review.py", "research/gap-bound/steer-review.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "codex"]}]
+
+[warp.dispatch.hosts.gap_hydrogen_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/gap-bound/run-review.py", "hydrogen", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.riemann.gap.hydrogen"]
+workspace = "research/gap-bound/hydrogen"
+host = "gap_hydrogen_review"
+context = ["research/gap-bound/graph.riemann.gap.contract.current.md"]
+inputs = ["research/gap-bound/graph.riemann.gap.contract.current.md", "research/gap-bound/run-review.py", "research/gap-bound/verify-review.py", "research/gap-bound/steer-review.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "hydrogen"]}]

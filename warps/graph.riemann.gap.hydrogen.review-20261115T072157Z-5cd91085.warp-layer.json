@@ -1,0 +1,17 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.gap",
+  "slice_id": "hydrogen",
+  "contract_hash": "contract:graph.riemann.gap.hydrogen:v1",
+  "attempt_id": "review-20261115T072157Z-5cd91085",
+  "result_state": "accepted",
+  "result_hash": "sha256:d3954a04ec277b04ced92965ee8235befd068f7db8a55da28de4a203e276a53a",
+  "evidence": {
+    "review": [
+      "research/gap-bound/evidence/review-audit.json",
+      "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/review.md",
+      "warps/graph.riemann.gap.hydrogen.review.complete.md"
+    ]
+  },
+  "reason": null
+}

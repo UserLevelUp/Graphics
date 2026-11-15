@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "C:\src\graph\research\gap-bound\run-review.py", line 257, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\src\graph\research\gap-bound\run-review.py", line 216, in main
+    code = monitor(command_for(args.provider, prompt, args.response_timeout), workspace, turn_dir,
+                   args.checkpoint_seconds, args.response_timeout, observe)
+  File "C:\src\graph\research\gap-bound\run-review.py", line 93, in monitor
+    publish("running", pid=process.pid, started_at=utc_now())
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\src\graph\research\gap-bound\run-review.py", line 213, in observe
+    publish(state, **fields)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\src\graph\research\gap-bound\run-review.py", line 186, in publish
+    temporary.replace(event)
+    ~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Python314\Lib\pathlib\__init__.py", line 1091, in replace
+    os.replace(self, target)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\src\\graph\\research\\gap-bound\\events\\graph.riemann.gap.carbon.20261115T072157Z-9c82ee75.progress.tmp' -> 'C:\\src\\graph\\research\\gap-bound\\events\\graph.riemann.gap.carbon.20261115T072157Z-9c82ee75.progress.md'

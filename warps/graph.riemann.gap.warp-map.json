@@ -1,0 +1,62 @@
+{
+  "bubble_uuid": "01a1de15-0774-72e6-9c20-355f15a12ed1",
+  "goal": "Prove and implement an interaction-aware finite-polynomial collision guarantee, with Watch-managed independent review",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "All conclusions are restricted to finite initially simple real-rooted polynomials.",
+    "Watch produced status and helper agreement do not establish mathematical truth.",
+    "The parent RH proof remains open."
+  ],
+  "required_slices": [
+    {
+      "slice_id": "carbon",
+      "slice_uuid": "01a1de15-080f-77fb-8e5a-15f7fe574193",
+      "contract_hash": "contract:graph.riemann.gap.carbon:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "codex",
+      "slice_uuid": "01a1de15-080f-77fb-8e5a-15f8b781c9bd",
+      "contract_hash": "contract:graph.riemann.gap.codex:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "hydrogen",
+      "slice_uuid": "01a1de15-080f-77fb-8e5a-15f9b3e7a1e1",
+      "contract_hash": "contract:graph.riemann.gap.hydrogen:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "acceptance",
+      "slice_uuid": "01a1de15-080f-77fb-8e5a-15fa46894895",
+      "contract_hash": "contract:graph.riemann.gap.acceptance:v1",
+      "depends_on": [
+        "carbon",
+        "codex",
+        "hydrogen"
+      ],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.riemann.gap"
+}

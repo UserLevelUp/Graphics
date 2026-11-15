@@ -1,0 +1,582 @@
+{
+  "schema": "graph-interaction-bound-evidence-v1",
+  "traceId": "graph.riemann.gap.verify",
+  "baselineCommit": "73518fc",
+  "claimScope": "Finite initially simple real-rooted polynomial heat flows only; no RH or novelty claim",
+  "commands": [
+    "python -B research/gap-bound/verify_bound.py",
+    "python -B -m unittest discover -s research/gap-bound -p test_review_*.py -v"
+  ],
+  "artifacts": [
+    {
+      "path": ".recur/config.toml",
+      "sha256": "e7e92aa57c25e3c2e101d5c391163e78fb8d1631cf420a36d2e5a11e453f9957",
+      "bytes": 7114
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072157Z-9c82ee75/assignment.txt",
+      "sha256": "723ba0b2694c6aedce753efe11a5a1d1cbb093afee1c20ea0c10969e358c1bf5",
+      "bytes": 4375
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072157Z-9c82ee75/events.jsonl",
+      "sha256": "6a83c864f6e53b9997e6accb9976ecfb9aa3f27035614fbeb594d35d70433ca1",
+      "bytes": 514
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072157Z-9c82ee75/status.json",
+      "sha256": "8ef578906b2c2090c8cde76e0abc010d589d9d650a55059e5ff6dfcfc0585838",
+      "bytes": 276
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072157Z-9c82ee75/turn-01/drain-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072157Z-9c82ee75/turn-01/drain-1.stdout.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "bytes": 4
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072157Z-9c82ee75/turn-01/prompt.txt",
+      "sha256": "2457d48169ebf53453cd494a33c8895b34b9f746a035c25de403bee37a6aeb53",
+      "bytes": 4567
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072157Z-9c82ee75/turn-01/received-traces.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "bytes": 4
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072157Z-9c82ee75/turn-01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072157Z-9c82ee75/turn-01/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/assignment.txt",
+      "sha256": "723ba0b2694c6aedce753efe11a5a1d1cbb093afee1c20ea0c10969e358c1bf5",
+      "bytes": 4375
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/events.jsonl",
+      "sha256": "d5ab0e730b1eab44004164a9d671c7a89e00b33e9201baca0a63fb4b77158946",
+      "bytes": 2720
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/review.md",
+      "sha256": "2b4371f82b290198fd6afb155d95f56af23def208943789593bd7f5829c2c5a8",
+      "bytes": 2505
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/status.json",
+      "sha256": "3058be78c82cb07648df3fb48112c910144d0a69cc06ebadf22a311fa4623c89",
+      "bytes": 290
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/steering-after-01.json",
+      "sha256": "65ea9543afef3632bfafa1344f533c62594aeee00c6d832bf41fd7aa0f536bda",
+      "bytes": 1418
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/turn-01/drain-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/turn-01/drain-1.stdout.json",
+      "sha256": "fa4b80b363027a83b6ad157713e8203cdcbc3c608207c36a03eba4aa1169151b",
+      "bytes": 212
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/turn-01/prompt.txt",
+      "sha256": "58f3070e35cefec60019756718b4e47053e331a42626f8e3f592eaba9beff5a1",
+      "bytes": 4567
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/turn-01/received-traces.json",
+      "sha256": "fa4b80b363027a83b6ad157713e8203cdcbc3c608207c36a03eba4aa1169151b",
+      "bytes": 212
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/turn-01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/turn-01/stdout.txt",
+      "sha256": "b87286be7ca9a3d71fbd74c08ca8f536a8c4215a966c13ea4c4352ddbdfa1755",
+      "bytes": 2312
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/turn-02/drain-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/turn-02/drain-1.stdout.json",
+      "sha256": "937325fa97a97fdf41ed4f18431d4b7b196017ce7dce9dd33115f996517ad145",
+      "bytes": 160
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/turn-02/prompt.txt",
+      "sha256": "b561a42bc1bab510a8c31b211671eaeac8fa4d5627345757a8fbf2207671d034",
+      "bytes": 7996
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/turn-02/received-traces.json",
+      "sha256": "937325fa97a97fdf41ed4f18431d4b7b196017ce7dce9dd33115f996517ad145",
+      "bytes": 160
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/turn-02/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/turn-02/stdout.txt",
+      "sha256": "d9b1da7c1b14123a51a02d30536a53908c139d46c457f321c74096edeb5952d3",
+      "bytes": 2445
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/assignment.txt",
+      "sha256": "2fc2165d0324b1dc185c0f5dc6cab1f1e76e816dee583fe9ae2d5ec03c8766e6",
+      "bytes": 4371
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/events.jsonl",
+      "sha256": "df708e44583097f3d0a640093399d51555970f8987d37bbb0f1ad09fb15d39d0",
+      "bytes": 2698
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/review.md",
+      "sha256": "35bd7626dcba8d0a39264a5bdc3e35da69166cefec00001976bca7cd182ad2c7",
+      "bytes": 2143
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/status.json",
+      "sha256": "786004e75c74450f709eb252857c287c2d8789372dcf15b40c8be535e3412939",
+      "bytes": 287
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/steering-after-01.json",
+      "sha256": "b44eb1622b23fa2d0f4e1b6d2b6bbd89cb0c2e1129dd70024cd451c1b0ea938a",
+      "bytes": 1447
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/turn-01/drain-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/turn-01/drain-1.stdout.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "bytes": 4
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/turn-01/prompt.txt",
+      "sha256": "8141d1c1583d9ce2ee1a82dcd6551c669462e8fd2b38f3c056820eab8390591e",
+      "bytes": 4639
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/turn-01/received-traces.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "bytes": 4
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/turn-01/stderr.txt",
+      "sha256": "836905805f9339a44e7b5f3a9efddfa6fdf0cd285b442b0524696b47dff16bcf",
+      "bytes": 10218
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/turn-01/stdout.txt",
+      "sha256": "927f40adbae55e6d00285ac18c0db6c964d69df7d10c141d643c328b82e6c968",
+      "bytes": 1779
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/turn-02/drain-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/turn-02/drain-1.stdout.json",
+      "sha256": "b82c3ab5766a9816d54e6b4dd1ca420e0afdb3166c16ce07ccbf66fbae2ec088",
+      "bytes": 264
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/turn-02/prompt.txt",
+      "sha256": "90dc6b70c06e6594206aa327f28f951399351430fbd0a607104b6a471129401b",
+      "bytes": 7571
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/turn-02/received-traces.json",
+      "sha256": "b82c3ab5766a9816d54e6b4dd1ca420e0afdb3166c16ce07ccbf66fbae2ec088",
+      "bytes": 264
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/turn-02/stderr.txt",
+      "sha256": "d8ace82f185a8c52abe07034fc7fec2bbfb5cf97830d20ac099823a6a58d9218",
+      "bytes": 13883
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072157Z-c61aa73b/turn-02/stdout.txt",
+      "sha256": "4720b869043254a07ead906e56cf65da26ed50b6ee32359222c3956fdb825802",
+      "bytes": 2070
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/assignment.txt",
+      "sha256": "2fc2165d0324b1dc185c0f5dc6cab1f1e76e816dee583fe9ae2d5ec03c8766e6",
+      "bytes": 4371
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/events.jsonl",
+      "sha256": "4a1f62d19f3d21735655c6213206f9cb38a86a299de77ff87906c0ec47f55970",
+      "bytes": 2698
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/review.md",
+      "sha256": "6f4070f81ff7de1041222ac1ca6eaa406d2cf6ca18cc31ba6f855eaef7869eaa",
+      "bytes": 2191
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/status.json",
+      "sha256": "e091292abbdc09040e7c64b488d6c116d15b54d2f47ad1e0057b2d0a61504acb",
+      "bytes": 287
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/steering-after-01.json",
+      "sha256": "b6ab9ccd6f0d366b257f76601d214f28fb58532177ef9794dc1f099ebda77ad0",
+      "bytes": 1795
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/turn-01/drain-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/turn-01/drain-1.stdout.json",
+      "sha256": "ea1bad3f65b7c233e49cce9dae5d7814c9d9f198b3cd1c6bc21c763c0f4b1e1c",
+      "bytes": 54
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/turn-01/prompt.txt",
+      "sha256": "5dc4d033551a976828fccdf368e97da32e0ba4e468be71f53a2025475d81bd7f",
+      "bytes": 4639
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/turn-01/received-traces.json",
+      "sha256": "ea1bad3f65b7c233e49cce9dae5d7814c9d9f198b3cd1c6bc21c763c0f4b1e1c",
+      "bytes": 54
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/turn-01/stderr.txt",
+      "sha256": "2a0ee73504cce34edc2ae622c173a4944b152b19e43e593db99e91807f2954ab",
+      "bytes": 10820
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/turn-01/stdout.txt",
+      "sha256": "a40ae7c2cbae1ad18dafdffe38f7f73761ce4fd4820f836eb09aa223796543ec",
+      "bytes": 2062
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/turn-02/drain-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/turn-02/drain-1.stdout.json",
+      "sha256": "1bce5272e7ad74bf17c4e777e5746b6d8284f0479338f4b5c3d7b83a731b5071",
+      "bytes": 106
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/turn-02/prompt.txt",
+      "sha256": "cd6f75886c2075c46f9d32cb938af915fa2ad2210d32f61bc758ee66581dc7c4",
+      "bytes": 8204
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/turn-02/received-traces.json",
+      "sha256": "1bce5272e7ad74bf17c4e777e5746b6d8284f0479338f4b5c3d7b83a731b5071",
+      "bytes": 106
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/turn-02/stderr.txt",
+      "sha256": "4d84565bc230cd68917bc88a6ac46a1cbce6f526ed0eeaf214f068eb33be5a5c",
+      "bytes": 14550
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/turn-02/stdout.txt",
+      "sha256": "f821fefbfeabb43e7b1464156275c38d946f1c1d160359b6e08c4afc44a8bc3d",
+      "bytes": 2113
+    },
+    {
+      "path": "research/gap-bound/events/graph.riemann.gap.carbon.20261115T072157Z-9c82ee75.progress.md",
+      "sha256": "d831a504a99a6b75d3c7906565a4b4fe3e56d7862288c86cd2d3f6654564bd99",
+      "bytes": 206
+    },
+    {
+      "path": "research/gap-bound/events/graph.riemann.gap.carbon.20261115T072157Z-9c82ee75.progress.tmp",
+      "sha256": "d562c117cc73f0023277292d14270995f481383211f341d9476be4c1676c2058",
+      "bytes": 198
+    },
+    {
+      "path": "research/gap-bound/events/graph.riemann.gap.carbon.20261115T072203Z-fe1b6967.progress.md",
+      "sha256": "5ff9607bae8218eecc5fe308ef1c8172ca72f7782b5b32b769188a893f27c49a",
+      "bytes": 199
+    },
+    {
+      "path": "research/gap-bound/events/graph.riemann.gap.codex.20261115T072157Z-c61aa73b.progress.md",
+      "sha256": "0f5d4e3db4132c090d9e46e60b34c20b28a1bbb57dd6c1adf90d56fbdfb5c6a3",
+      "bytes": 197
+    },
+    {
+      "path": "research/gap-bound/events/graph.riemann.gap.codex.20261115T072501Z-7f5a0c47.progress.md",
+      "sha256": "d0faf71d367d28c9260d8b38228c38a59d849412fd24b9b2f0f70380d8fdb0f0",
+      "bytes": 197
+    },
+    {
+      "path": "research/gap-bound/events/graph.riemann.gap.hydrogen.20261115T072157Z-5cd91085.progress.md",
+      "sha256": "e8a154bacce584d52ce126008257240a52b6a61055ca851690cb10c125a84089",
+      "bytes": 203
+    },
+    {
+      "path": "research/gap-bound/evidence/carbon-attempt-1.stderr.txt",
+      "sha256": "a044d6c144e0c6b2da5797cd53efc17d4f0859889e534e32f581d5225fffc720",
+      "bytes": 1292
+    },
+    {
+      "path": "research/gap-bound/evidence/certificates.json",
+      "sha256": "5d743d6fa41ed9fbe0b02d349aab44aadf4dc3119cd51760f7135f8c76c92634",
+      "bytes": 175132
+    },
+    {
+      "path": "research/gap-bound/evidence/cli-checks.json",
+      "sha256": "c907a83a0b84b227689e2fd9df227d421a207f3efb0659a2a33afcfaf03ab17e",
+      "bytes": 648
+    },
+    {
+      "path": "research/gap-bound/evidence/codex-attempt-1.stderr.txt",
+      "sha256": "ac53729d5b3f515793d19e0f37cd03d4c478b58b5f1e2b913791e0705c838e83",
+      "bytes": 617
+    },
+    {
+      "path": "research/gap-bound/evidence/dispatch-attempts.json",
+      "sha256": "8a7c3ac03a2453c9d60f16794780333b8f77c0a4d09dc41ceb209fcf81f42f34",
+      "bytes": 46045
+    },
+    {
+      "path": "research/gap-bound/evidence/gap-bounds.png",
+      "sha256": "0e651a1ab8be739d2d1e18205455c3c5863b8799a2edc40dd0c39a0257601b55",
+      "bytes": 114582
+    },
+    {
+      "path": "research/gap-bound/evidence/plot-report.json",
+      "sha256": "d2eb61e88b84173038285758ba0171e6b7d7856e51fb851be7237a7bb311ea1c",
+      "bytes": 451
+    },
+    {
+      "path": "research/gap-bound/evidence/protocol-tests.txt",
+      "sha256": "f53f21fcd02c31ecdbd7cbc6c5e6b9594449b40da7e6f6cbb75248c6e50ce9ff",
+      "bytes": 3380
+    },
+    {
+      "path": "research/gap-bound/evidence/review-audit.json",
+      "sha256": "a6391f4298eda924fefad512f07dc58e90334c5ea44b6e1489657e27e21dcfc7",
+      "bytes": 3335
+    },
+    {
+      "path": "research/gap-bound/evidence/runner-used.py",
+      "sha256": "b99c5bf5021ae6b7c1fc49da0b2941790abab0382b1fd471fe5ea814917ea3bc",
+      "bytes": 14241
+    },
+    {
+      "path": "research/gap-bound/evidence/watch-coordinator.jsonl",
+      "sha256": "6f0337bff8825ec3f3bc5af2fc842944044959798232198ca7ffa568e69c760a",
+      "bytes": 143729
+    },
+    {
+      "path": "research/gap-bound/graph.riemann.gap.contract.current.md",
+      "sha256": "8aa1b867659a70bc71c7ffe0c3a0ec7adc064c300f2ccc6012eb9defa2305eee",
+      "bytes": 3104
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/assignment.txt",
+      "sha256": "17dca56082e06081ca4b926ad41253499fddf3b76e385cc5df87816da2574d82",
+      "bytes": 4383
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/events.jsonl",
+      "sha256": "e971aea88d74c938305495665260e95c0a77ba5e7579eb709ff868d239616609",
+      "bytes": 2762
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/review.md",
+      "sha256": "d3954a04ec277b04ced92965ee8235befd068f7db8a55da28de4a203e276a53a",
+      "bytes": 1773
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/status.json",
+      "sha256": "45a141b843ee4a57dd6b9cea472b07c9cd0e69a49bc4ad333af6ac42843c6739",
+      "bytes": 296
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/steering-after-01.json",
+      "sha256": "42eceb29542d28c362a3254506aec9764b56279724a855ff622b7b241fc90a42",
+      "bytes": 1123
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/turn-01/drain-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/turn-01/drain-1.stdout.json",
+      "sha256": "1bce5272e7ad74bf17c4e777e5746b6d8284f0479338f4b5c3d7b83a731b5071",
+      "bytes": 106
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/turn-01/prompt.txt",
+      "sha256": "08d7bf0ae8b5e4cad383a5bd4c14315ceba9fe935391e2d8b95796634d9f0875",
+      "bytes": 4624
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/turn-01/received-traces.json",
+      "sha256": "1bce5272e7ad74bf17c4e777e5746b6d8284f0479338f4b5c3d7b83a731b5071",
+      "bytes": 106
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/turn-01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/turn-01/stdout.txt",
+      "sha256": "1a911a3ad345cf6f861089bd46329956be218076e18d0cd91ad94e08f991a450",
+      "bytes": 2029
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/turn-02/drain-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/turn-02/drain-1.stdout.json",
+      "sha256": "fa4b80b363027a83b6ad157713e8203cdcbc3c608207c36a03eba4aa1169151b",
+      "bytes": 212
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/turn-02/prompt.txt",
+      "sha256": "24d43b50425e298bf8eced39376423045280fda958d614b432a6fab97813d3a4",
+      "bytes": 7486
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/turn-02/received-traces.json",
+      "sha256": "fa4b80b363027a83b6ad157713e8203cdcbc3c608207c36a03eba4aa1169151b",
+      "bytes": 212
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/turn-02/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/turn-02/stdout.txt",
+      "sha256": "c2b76e304a8b8a709975f396e965aeb8edcf593f9777e0a1eb1213819236d9f4",
+      "bytes": 1709
+    },
+    {
+      "path": "research/gap-bound/interaction-bound-proof.md",
+      "sha256": "22026bb25c0ea437e75e2f1e16bbf2b91d81d3c117a291e36056fea767c2c559",
+      "bytes": 10025
+    },
+    {
+      "path": "research/gap-bound/README.md",
+      "sha256": "66c642901ff581d8ba54dcf33875cc1967a569a6f8786ab3c6273e43eae3be56",
+      "bytes": 2364
+    },
+    {
+      "path": "research/gap-bound/render_bounds.py",
+      "sha256": "e3e35c0d66e751152ecea0bbb5bf27f56960cd42039b7e60aedc0ce411fd5f70",
+      "bytes": 6148
+    },
+    {
+      "path": "research/gap-bound/run-review.py",
+      "sha256": "a8b6d570f6c9c0be1b65b8ee4770523f1315a9472a78896f97921cd2fd7ca9ca",
+      "bytes": 14843
+    },
+    {
+      "path": "research/gap-bound/steer-review.py",
+      "sha256": "d646a090340c2f86e691a1c8649ccd95982617902610cad5d71820740ae388ea",
+      "bytes": 1923
+    },
+    {
+      "path": "research/gap-bound/steering-carbon.txt",
+      "sha256": "a5b97c048a4928b90e75a92afdc1a0c1d1e5b002fe6dd3fbb595ac9a0c6a0da3",
+      "bytes": 1184
+    },
+    {
+      "path": "research/gap-bound/steering-codex-retry.txt",
+      "sha256": "3e200a0527ae98203656fda0c91cc4e8c5ae35dd6b1d1217fd1b3842181b39ba",
+      "bytes": 1559
+    },
+    {
+      "path": "research/gap-bound/steering-codex.txt",
+      "sha256": "af9e43ebb01487bf02c2122d8d3ab9c3ffce27bd4e7beb1205a4527804810ae2",
+      "bytes": 1213
+    },
+    {
+      "path": "research/gap-bound/steering-hydrogen.txt",
+      "sha256": "de5d650445f4f4e795eee4af56919e6a7ed47571f70809623b5e6dcc63af7a22",
+      "bytes": 886
+    },
+    {
+      "path": "research/gap-bound/test_review_protocol.py",
+      "sha256": "6f740311e36a727ac1d0c98f8e88aeeeceb4e9a739bee194d93860ea673264b1",
+      "bytes": 9828
+    },
+    {
+      "path": "research/gap-bound/test_review_runtime.py",
+      "sha256": "049c1d5c08318a406136937836a47f402054d65501a9f13c387eb697be84860a",
+      "bytes": 4542
+    },
+    {
+      "path": "research/gap-bound/verify-review.py",
+      "sha256": "4a577abf207e9c9b8c399ebf59ae0779211b472e2757b2adc9d05e804e6aa8c5",
+      "bytes": 1453
+    },
+    {
+      "path": "research/gap-bound/verify_bound.py",
+      "sha256": "a56bca6589b624bf52c172aa59351a623c37f593cb7011f77ec0bb971c465f56",
+      "bytes": 14481
+    },
+    {
+      "path": "warps/graph.riemann.gap.carbon.review.complete.md",
+      "sha256": "b931fd75e680aafe730dec7b30c5f81f26a3fb4eb54207c60a611bb41328375e",
+      "bytes": 768
+    },
+    {
+      "path": "warps/graph.riemann.gap.codex.review.complete.md",
+      "sha256": "d51bbef734fd5f4ccdbce9255e5e384b65142d3625f260929460c9417ccb109d",
+      "bytes": 734
+    },
+    {
+      "path": "warps/graph.riemann.gap.hydrogen.review.complete.md",
+      "sha256": "16350e57f0190a92545d71ed84d5c3b55c187525f6e3ad2d6dfcc35ebdc8baf4",
+      "bytes": 567
+    },
+    {
+      "path": "warps/graph.riemann.gap.results.complete.md",
+      "sha256": "b6c69dc43b667eec614f6258e16154a480f5f30bd761c7c0b1ba584e9dd7540a",
+      "bytes": 4473
+    },
+    {
+      "path": "warps/graph.riemann.gap.warp-map.json",
+      "sha256": "9cccda1f58c71fd214ce20590025572c88c2838ee2e8b1a2174a0802eed24db4",
+      "bytes": 1862
+    }
+  ]
+}

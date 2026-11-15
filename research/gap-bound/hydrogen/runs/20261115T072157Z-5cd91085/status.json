@@ -1,0 +1,9 @@
+{
+  "trace_id": "graph.riemann.gap.hydrogen.progress",
+  "run_id": "20261115T072157Z-5cd91085",
+  "provider": "hydrogen",
+  "turn": 2,
+  "state": "complete",
+  "at": "2026-11-15T07:23:07.292640+00:00",
+  "report": "research/gap-bound/hydrogen/runs/20261115T072157Z-5cd91085/review.md"
+}

@@ -1,0 +1,30 @@
+STATUS: CHECKPOINT
+ACK: initial
+CLOCK: 2026-11-14T23:22:04.4583767-08:00
+
+FINDINGS
+Provisional evidence checklist mapping for `graph.riemann.gap` (baseline `73518fc`, consumer `graph.riemann.collision`):
+
+1. **Proof Obligations -> Required Checks & Reviewer Decisions**
+   - *Backward integration sign*: verify sign of `(g^2)' <= 8 - 4*kappa*g^2` integrated backward for `t <= 0`.
+   - *Uniformity across gaps*: verify bound holds for all adjacent gaps `g = b - a` and is controlled by `m = min(r_(i+1)-r_i)`.
+   - *Logarithm domain*: verify `0 < x < 1` from `D0 >= (n-1)*m` and `n >= 3`.
+   - *First-collision bootstrap*: verify entireness of coefficients in `t`, no root escape to infinity on compact intervals, and contradiction at `t > -T`.
+   - *Boundary/invalid cases*: verify `n = 2` treated separately (`m^2/8`) and repeated-root cases rejected.
+   - *Circularity*: verify no step secretly assumes the conclusion.
+   - *Optional `T_dynamic`*: excluded from required acceptance unless independently proved and certified.
+
+2. **Implementation Acceptance -> Required Artifacts & Exact Checks**
+   - Full human proof document.
+   - Exact `Fraction` polynomial heat flow (`P_t = -P_zz`) and quartic control (`-3,-1,1,3`, `T = (9/2)*log(9/8)`).
+   - Independent Sturm real-root counts at rational `t` strictly inside certified `T`, including beyond `m^2/8`.
+   - Rational log enclosures via `sum x^k/k` with proved remainder.
+   - Test coverage: uneven, clustered, translated, and scaled root sets (degrees 3-8), plus rejection of deliberate invalid cases.
+   - Governance: saved evidence, reviewed Watch checkpoints/ACKs, local Git restore point.
+
+UNCERTAINTY
+- No workspace files, proof texts, code, test logs, or Watch artifacts have been inspected; no mathematical validation or test execution is claimed.
+- Exact artifact paths and reviewer/Watch records are not yet mapped to concrete files.
+
+NEXT
+- Await coordinator steering on whether to inspect specific supplied artifacts or proceed to a final `COMPLETE` checklist.

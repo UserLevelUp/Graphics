@@ -1,0 +1,9 @@
+{
+  "run_id": "20261115T072157Z-5cd91085",
+  "after_turn": 1,
+  "action": "continue",
+  "token": "01f721ebc4a142c68f9c8b576d2df35b",
+  "instruction": "Return STATUS: COMPLETE with a final evidence checklist. ACCEPT means the supplied acceptance checklist is adequate as a plan, not that mathematics or tests have passed. Map requirements to these planned paths: interaction-bound-proof.md, verify_bound.py, evidence/certificates.json, evidence/manifest.json, each provider's runs/<run_id>/events.jsonl and review.md, and the Git checkpoint. Add explicit checks that logged prediction inputs contain roots and parameters but no known collision answer; rational samples lie beyond m^2/8 yet below a certified bound; failures stay in the record; optional dynamic bound is accepted only after separate proof and exact enclosure. You may only execute Get-Date -Format o, as before. State clearly that no file or mathematical validation was performed by you. Keep the acknowledgement token and actual clock observation required by the runner.\n",
+  "state": "queued",
+  "queued_at": "2026-11-15T07:22:50.997706+00:00"
+}
