@@ -1,0 +1,110 @@
+{
+  "traceId": "graph.primes.quadrant_phase.native_validation",
+  "status": "passed",
+  "createdUtc": "2026-11-15T14:45:58.325308+00:00",
+  "coverage": {
+    "nativeExports": 7,
+    "comparedRecords": 805,
+    "exactTileColors": 707,
+    "rotatedSectorColors": 28,
+    "internalSieveRange": [
+      0,
+      2000
+    ]
+  },
+  "inputs": [
+    {
+      "path": "C:\\src\\graph\\research\\prime-quadrant-phase\\phase_test.py",
+      "sha256": "3bd03b4679b122090ac4ae616a6b904efd685c3d4794d8e0f016d6a447dbb222"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\prime-quadrant-phase\\verify_native.py",
+      "sha256": "8bad07062eca370f7efa3244ceed0ad4d5e0e58bc0897d5a217a2630aca40efd"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\prime-quadrant-phase\\evidence\\validation.json",
+      "sha256": "0f508908de88b6a823034125c231751afee3425eb0f3d9e42b42e18a355544ec"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\prime-quadrant-phase\\evidence\\build.log",
+      "sha256": "72bc8b1a8aeafbf0f54fec836fde547075275aa0e4d7d9426d15d01950f186ee"
+    },
+    {
+      "path": "C:\\src\\graph\\Graphics\\Program.cs",
+      "sha256": "4dc5ce877cd259cd114fa86032cf963802e77fea153dbeac70af1fef174fd5de"
+    },
+    {
+      "path": "C:\\src\\graph\\Graphics\\PrimeQuadrantPhaseExperiment.cs",
+      "sha256": "2517f56be251b2b9e79962cc193e65973f3b7808ce9eb09ca7a8c3b8164d450f"
+    },
+    {
+      "path": "C:\\src\\graph\\Graphics\\PrimeQuadrantPhaseForm.cs",
+      "sha256": "111171f886a0b40701a1a500fec72ce1efe57daf0830f34fe8fc184bc51a943c"
+    },
+    {
+      "path": "C:\\src\\graph\\Graphics\\bin\\Release\\net5.0-windows\\Graphics.exe",
+      "sha256": "75ab2941bf3ba7b3e8770ed5a4c60d173c5b1249bd172f1d8ad196ca0cb2ec67"
+    },
+    {
+      "path": "C:\\src\\graph\\Graphics\\bin\\Release\\net5.0-windows\\Graphics.dll",
+      "sha256": "e9e7ee1b726e6cc2d29a6e899381771e1c6de734832e8e2f726a4bdb6995bb4b"
+    }
+  ],
+  "exports": [
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\prime-quadrant-phase\\prime-quadrant-phase.json",
+      "sha256": "fbc8fc0ed4eeef7a583c7be6c6719fb36127f64502238fdba7e71fbc33b22324",
+      "pngSha256": "2c424c20d650501725b9161dbb863ed74fab16cd4f066a98020666eb5556c0bf",
+      "candidate": 97,
+      "rotation": 0
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\prime-quadrant-phase\\prime-quadrant-rotated.json",
+      "sha256": "ef3b6432bd56f2e96f15cd94884bc85a61a99ac31ac980e9c958834f47163132",
+      "pngSha256": "4eb916838abab56e54bd5b1dfd9d86a427495db5d2f91853c6bc675149cd1e0d",
+      "candidate": 97,
+      "rotation": 37
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\prime-quadrant-phase\\exports\\candidate-0.json",
+      "sha256": "60e1757282e900702c0bb4017ff795b7f31db822098c31975f35f5118099c150",
+      "pngSha256": "610999f4a9e9847086f7fd835e46f321b85ee288b6225eb209941e578a76f29b",
+      "candidate": 0,
+      "rotation": 0
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\prime-quadrant-phase\\exports\\candidate-100000.json",
+      "sha256": "5c083018667f8e32163d513d713802fae6eca7830ac7c5ba359bbadda5d499b1",
+      "pngSha256": "69bf9843b627e2b40e37dcad9a89d549b37d506634519feeba8b876cdcb43935",
+      "candidate": 100000,
+      "rotation": 0
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\prime-quadrant-phase\\exports\\candidate-4.json",
+      "sha256": "7b85d3d79bb4c4e2a8e1f23198f4f328f64cbfb0bb2dbd9a7e3130f34cce8549",
+      "pngSha256": "c63fe3d27ab405c6e8e07a30ce6defd1538587f92bc33966dd73f4b0055476ab",
+      "candidate": 4,
+      "rotation": 0
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\prime-quadrant-phase\\exports\\candidate-96.json",
+      "sha256": "b1351bbe2ea9879d6d5c0383f473eda111c2beac61d6fc5d3bdc9017f4030a14",
+      "pngSha256": "3ba8015693b5fda9666b56be1500167b00037f63302bff0f54e71c36042ebace",
+      "candidate": 96,
+      "rotation": 0
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\prime-quadrant-phase\\exports\\candidate-99991.json",
+      "sha256": "c69a933df8a452573df685a2e5ed35a7963f0e24f75382511a2607dd5e279d1f",
+      "pngSha256": "5539cba085a5d8106736965073f7df1375a6c00f637140ba845e9796437bde39",
+      "candidate": 99991,
+      "rotation": 0
+    }
+  ],
+  "runtime": "Release net5.0-windows build; DOTNET_ROLL_FORWARD=Major on installed newer Windows Desktop runtime.",
+  "limits": [
+    "Finite checks supplement the global theorem.",
+    "Pixel checks verify this rendering, not an independent optical primality theorem.",
+    "Interactive form controls are checked separately through UI observation."
+  ]
+}

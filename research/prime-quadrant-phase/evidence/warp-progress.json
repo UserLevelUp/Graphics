@@ -1,0 +1,124 @@
+{
+  "blocked": [],
+  "bubble_uuid": "01a1dfa6-d67f-722b-8639-0e36efc2bf7f",
+  "completed_slices": [
+    "equation",
+    "native"
+  ],
+  "conflicts": [],
+  "contract_status": "declared-gates-satisfied",
+  "counts": {
+    "blocked": 0,
+    "conflicting": 0,
+    "covered": 2,
+    "pending": 0,
+    "required": 2,
+    "stale_contract": 0
+  },
+  "covered": [
+    "equation",
+    "native"
+  ],
+  "current_slice": null,
+  "evidence_status": "declared",
+  "gate_evidence": [
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/review.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/validation.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "equation",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/acceptance.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/native-validation.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/review.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/ui-validation.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "native",
+      "status": "declared"
+    }
+  ],
+  "goal": "Adapt the exact prime function to a four-color quadrant decision with reviewed arithmetic and native rendering",
+  "layers": [
+    "equation@quadrant-reviewed-20261115",
+    "native@native-reviewed-20261115"
+  ],
+  "manifest": "graph.primes.quadrant_phase.warp-map.json",
+  "pending": [],
+  "ready_slices": [],
+  "root": "\\\\?\\C:\\src\\graph\\research\\prime-quadrant-phase\\warps",
+  "schema": "warp-progress-v1",
+  "slices": [
+    {
+      "contract_hash": "contract:graph.primes.quadrant_phase.equation:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "equation",
+      "slice_uuid": "01a1dfa6-d67f-7a04-985e-268d1088adb4",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.primes.quadrant_phase.native:v1",
+      "depends_on": [
+        "equation"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "native",
+      "slice_uuid": "01a1dfa6-d67f-767b-b01f-8857f9a66074",
+      "state": "complete"
+    }
+  ],
+  "stale_contract": [],
+  "state": "complete",
+  "warnings": [],
+  "warp_id": "graph.primes.quadrant_phase"
+}

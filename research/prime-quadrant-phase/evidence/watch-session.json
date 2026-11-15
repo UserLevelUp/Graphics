@@ -1,0 +1,27 @@
+{
+  "traceId": "graph.primes.quadrant_phase.watch",
+  "state": "stopped",
+  "pid": 28800,
+  "scope": "C:/src/graph/research/prime-quadrant-phase",
+  "filter": "graph.primes.quadrant_phase.**",
+  "stopMethod": "Stopped verified task-owned watcher after acceptance",
+  "processAbsent": true,
+  "lastRecordedStatus": {
+    "id": "graph-prime-quadrant-phase",
+    "path": ".recur/watch\\recur-watch.graph-prime-quadrant-phase.status.current.md",
+    "state": "active",
+    "ack": "accepted",
+    "nak_reason": null,
+    "filter": "graph.primes.quadrant_phase.**",
+    "dir": "C:/src/graph/research/prime-quadrant-phase",
+    "mode": "poll",
+    "poll_framing": "3",
+    "format": "json",
+    "pid": "28800",
+    "started_at": "unix:1794753615",
+    "last_event_at": "unix:1794754206",
+    "events_seen": "5",
+    "filtered_out": "0"
+  },
+  "note": "Watch events are coordination evidence, not mathematical or test evidence. Private status may retain its last active record after process termination."
+}

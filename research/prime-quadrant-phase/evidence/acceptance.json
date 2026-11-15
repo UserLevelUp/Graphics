@@ -1,0 +1,76 @@
+{
+  "traceId": "graph.primes.quadrant_phase.acceptance",
+  "status": "accepted",
+  "acceptedAtUtc": "2026-11-15T14:49:22.499918+00:00",
+  "claim": "For every integer n>=2, F(n)=(1+i)i^R(n), R(n)=((n-1)!+1) mod n, is in canonical quadrant I iff n is prime.",
+  "dataflow": "Modular factorial remainder -> exact integer complex coordinates -> canonical quadrant -> indicator and color.",
+  "nativeDomain": "0..100000;0/1neither with undefined phase. No fallback above cap.",
+  "evidence": [
+    {
+      "path": "evidence/validation.json",
+      "sha256": "0f508908de88b6a823034125c231751afee3425eb0f3d9e42b42e18a355544ec"
+    },
+    {
+      "path": "evidence/native-validation.json",
+      "sha256": "865cead6bc30c7c90ff1875ad03b627da6fe3433d3f80aa50ca21784939101d7"
+    },
+    {
+      "path": "evidence/review.json",
+      "sha256": "8a5e1938f87c3209f942ee15770f8b120c62a6feb84002089cd1eadf828f7f85"
+    },
+    {
+      "path": "evidence/ui-validation.json",
+      "sha256": "e1154f3d8e59bbd54932c784c4e37d43d6c3d12d741eb254aa8be785575cc16f"
+    }
+  ],
+  "sources": [
+    {
+      "path": "research\\prime-quadrant-phase\\phase_test.py",
+      "sha256": "3bd03b4679b122090ac4ae616a6b904efd685c3d4794d8e0f016d6a447dbb222"
+    },
+    {
+      "path": "research\\prime-quadrant-phase\\verify_phase.py",
+      "sha256": "75597d5c24cd2be897bb3fc5c248883ddf7fe3a9415a90dca1caf764d695b633"
+    },
+    {
+      "path": "research\\prime-quadrant-phase\\verify_native.py",
+      "sha256": "8bad07062eca370f7efa3244ceed0ad4d5e0e58bc0897d5a217a2630aca40efd"
+    },
+    {
+      "path": "research\\prime-quadrant-phase\\proof.md",
+      "sha256": "f3b3688a1898ce796ea05be1329c620f61125f4089b90452e39a180deb7fdb5b"
+    },
+    {
+      "path": "research\\prime-quadrant-phase\\README.md",
+      "sha256": "0a3c90ee67a6cf72e5c44db296d6efb5c07a514257a7b7e93a0887fb28271c47"
+    },
+    {
+      "path": "Graphics\\Program.cs",
+      "sha256": "4dc5ce877cd259cd114fa86032cf963802e77fea153dbeac70af1fef174fd5de"
+    },
+    {
+      "path": "Graphics\\PrimeQuadrantPhaseExperiment.cs",
+      "sha256": "2517f56be251b2b9e79962cc193e65973f3b7808ce9eb09ca7a8c3b8164d450f"
+    },
+    {
+      "path": "Graphics\\PrimeQuadrantPhaseForm.cs",
+      "sha256": "111171f886a0b40701a1a500fec72ce1efe57daf0830f34fe8fc184bc51a943c"
+    }
+  ],
+  "priorVideo": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\presentation-with-finite-proof.mp4",
+    "sha256": "4dbd34ae6816c32301c017fd386202fa5e93c4e65cf5a8a225edceef3402e12e",
+    "unchanged": true
+  },
+  "recoveredFindings": [
+    "Fixed large-integer and negative-near-axis observer rounding with exact rational interval arithmetic.",
+    "Fixed negative subnormal display rotation normalization and axis-label overlap."
+  ],
+  "runHistory": "One intermediate Python validation invocation raised NameError for a builtin; subsequent fresh invocations passed. No cause is asserted. Final standalone replay is recorded separately.",
+  "limitations": [
+    "Wilson-derived encoding, no independent zeta classifier or pixel-readback proof.",
+    "No speedup, novelty, fast nth-prime formula or RH result claimed.",
+    "Angular observation error bounds are supplied assumptions, not measured renderer guarantees.",
+    "Native build retains existing .NET5 and unused-field warnings."
+  ]
+}

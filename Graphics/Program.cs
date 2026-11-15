@@ -14,6 +14,14 @@ namespace Graphics
         [STAThread]
         static void Main(string[] args)
         {
+            // publish: graph.primes.quadrant_phase.export
+            if (args.Length >= 2 && args.Length <= 4 && args[0] == "--prime-quadrant-phase")
+            {
+                int candidate = args.Length >= 3 ? int.Parse(args[2], System.Globalization.CultureInfo.InvariantCulture) : 97;
+                double rotation = args.Length == 4 ? double.Parse(args[3], System.Globalization.CultureInfo.InvariantCulture) : 0;
+                PrimeQuadrantPhaseExperiment.Export(args[1], candidate, rotation);
+                return;
+            }
             // produces: graph.primes.function.export
             if ((args.Length == 2 || args.Length == 3) && args[0] == "--primality-function")
             {
@@ -137,7 +145,8 @@ namespace Graphics
             Application.Run(args.Length == 1 && args[0] == "--continuation-lab" ? (Form)new ZetaContinuationForm()
                 : args.Length == 1 && args[0] == "--switch-lab" ? (Form)new ZetaSwitchForm()
                 : args.Length == 1 && args[0] == "--zero-lab" ? (Form)new ZeroMotionForm()
-                : args.Length == 1 && args[0] == "--prime-lab" ? (Form)new PrimePhaseForm() : new GraphForm());
+                : args.Length == 1 && args[0] == "--prime-lab" ? (Form)new PrimePhaseForm()
+                : args.Length == 1 && args[0] == "--prime-quadrant-lab" ? (Form)new PrimeQuadrantPhaseForm() : new GraphForm());
         }
     }
 }

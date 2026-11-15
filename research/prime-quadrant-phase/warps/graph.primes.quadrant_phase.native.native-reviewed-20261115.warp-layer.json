@@ -1,0 +1,18 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.primes.quadrant_phase",
+  "slice_id": "native",
+  "contract_hash": "contract:graph.primes.quadrant_phase.native:v1",
+  "attempt_id": "native-reviewed-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:865cead6bc30c7c90ff1875ad03b627da6fe3433d3f80aa50ca21784939101d7",
+  "evidence": {
+    "review": [
+      "evidence/acceptance.json",
+      "evidence/native-validation.json",
+      "evidence/review.json",
+      "evidence/ui-validation.json"
+    ]
+  },
+  "reason": null
+}

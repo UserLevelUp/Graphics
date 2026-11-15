@@ -1,0 +1,16 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.primes.quadrant_phase",
+  "slice_id": "equation",
+  "contract_hash": "contract:graph.primes.quadrant_phase.equation:v1",
+  "attempt_id": "quadrant-reviewed-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:0f508908de88b6a823034125c231751afee3425eb0f3d9e42b42e18a355544ec",
+  "evidence": {
+    "review": [
+      "evidence/review.json",
+      "evidence/validation.json"
+    ]
+  },
+  "reason": null
+}

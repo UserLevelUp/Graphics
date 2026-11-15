@@ -1,0 +1,712 @@
+{
+  "traceId": "graph.primes.quadrant_phase.validation",
+  "status": "passed",
+  "createdUtc": "2026-11-15T14:43:14.956000+00:00",
+  "inputs": [
+    {
+      "path": "phase_test.py",
+      "sha256": "3bd03b4679b122090ac4ae616a6b904efd685c3d4794d8e0f016d6a447dbb222"
+    },
+    {
+      "path": "verify_phase.py",
+      "sha256": "75597d5c24cd2be897bb3fc5c248883ddf7fe3a9415a90dca1caf764d695b633"
+    }
+  ],
+  "coverage": {
+    "quadrantVsIndependentSieve": [
+      0,
+      10000
+    ],
+    "remainderVsFullIntegerFactorial": [
+      2,
+      2000
+    ],
+    "controls": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      9,
+      25,
+      49,
+      96,
+      97,
+      121,
+      341,
+      561,
+      1105,
+      1729,
+      2047,
+      6601,
+      9973,
+      99991,
+      100000
+    ],
+    "invalidInputsRejected": 12,
+    "angleIntervalChecks": 54,
+    "largeIntegerAngleRegressions": 3,
+    "nearAxisAndLargeErrorRegressions": 4
+  },
+  "counts0to100": {
+    "1": 25,
+    "2": 73,
+    "3": 0,
+    "4": 1,
+    "undefined": 2
+  },
+  "examples": [
+    {
+      "n": 0,
+      "defined": false,
+      "classification": "neither",
+      "indicator": 0,
+      "factorialMod": null,
+      "residue": null,
+      "x": null,
+      "y": null,
+      "quadrant": null,
+      "angleDegrees": null,
+      "multiplications": 0
+    },
+    {
+      "n": 1,
+      "defined": false,
+      "classification": "neither",
+      "indicator": 0,
+      "factorialMod": null,
+      "residue": null,
+      "x": null,
+      "y": null,
+      "quadrant": null,
+      "angleDegrees": null,
+      "multiplications": 0
+    },
+    {
+      "n": 2,
+      "defined": true,
+      "classification": "prime",
+      "indicator": 1,
+      "factorialMod": 1,
+      "residue": 0,
+      "x": 1,
+      "y": 1,
+      "quadrant": 1,
+      "angleDegrees": 45,
+      "multiplications": 0
+    },
+    {
+      "n": 3,
+      "defined": true,
+      "classification": "prime",
+      "indicator": 1,
+      "factorialMod": 2,
+      "residue": 0,
+      "x": 1,
+      "y": 1,
+      "quadrant": 1,
+      "angleDegrees": 45,
+      "multiplications": 1
+    },
+    {
+      "n": 4,
+      "defined": true,
+      "classification": "composite",
+      "indicator": 0,
+      "factorialMod": 2,
+      "residue": 3,
+      "x": 1,
+      "y": -1,
+      "quadrant": 4,
+      "angleDegrees": 315,
+      "multiplications": 2
+    },
+    {
+      "n": 9,
+      "defined": true,
+      "classification": "composite",
+      "indicator": 0,
+      "factorialMod": 0,
+      "residue": 1,
+      "x": -1,
+      "y": 1,
+      "quadrant": 2,
+      "angleDegrees": 135,
+      "multiplications": 5
+    },
+    {
+      "n": 25,
+      "defined": true,
+      "classification": "composite",
+      "indicator": 0,
+      "factorialMod": 0,
+      "residue": 1,
+      "x": -1,
+      "y": 1,
+      "quadrant": 2,
+      "angleDegrees": 135,
+      "multiplications": 9
+    },
+    {
+      "n": 49,
+      "defined": true,
+      "classification": "composite",
+      "indicator": 0,
+      "factorialMod": 0,
+      "residue": 1,
+      "x": -1,
+      "y": 1,
+      "quadrant": 2,
+      "angleDegrees": 135,
+      "multiplications": 13
+    },
+    {
+      "n": 96,
+      "defined": true,
+      "classification": "composite",
+      "indicator": 0,
+      "factorialMod": 0,
+      "residue": 1,
+      "x": -1,
+      "y": 1,
+      "quadrant": 2,
+      "angleDegrees": 135,
+      "multiplications": 7
+    },
+    {
+      "n": 97,
+      "defined": true,
+      "classification": "prime",
+      "indicator": 1,
+      "factorialMod": 96,
+      "residue": 0,
+      "x": 1,
+      "y": 1,
+      "quadrant": 1,
+      "angleDegrees": 45,
+      "multiplications": 95
+    },
+    {
+      "n": 121,
+      "defined": true,
+      "classification": "composite",
+      "indicator": 0,
+      "factorialMod": 0,
+      "residue": 1,
+      "x": -1,
+      "y": 1,
+      "quadrant": 2,
+      "angleDegrees": 135,
+      "multiplications": 21
+    },
+    {
+      "n": 341,
+      "defined": true,
+      "classification": "composite",
+      "indicator": 0,
+      "factorialMod": 0,
+      "residue": 1,
+      "x": -1,
+      "y": 1,
+      "quadrant": 2,
+      "angleDegrees": 135,
+      "multiplications": 30
+    },
+    {
+      "n": 561,
+      "defined": true,
+      "classification": "composite",
+      "indicator": 0,
+      "factorialMod": 0,
+      "residue": 1,
+      "x": -1,
+      "y": 1,
+      "quadrant": 2,
+      "angleDegrees": 135,
+      "multiplications": 16
+    },
+    {
+      "n": 1105,
+      "defined": true,
+      "classification": "composite",
+      "indicator": 0,
+      "factorialMod": 0,
+      "residue": 1,
+      "x": -1,
+      "y": 1,
+      "quadrant": 2,
+      "angleDegrees": 135,
+      "multiplications": 16
+    },
+    {
+      "n": 1729,
+      "defined": true,
+      "classification": "composite",
+      "indicator": 0,
+      "factorialMod": 0,
+      "residue": 1,
+      "x": -1,
+      "y": 1,
+      "quadrant": 2,
+      "angleDegrees": 135,
+      "multiplications": 18
+    },
+    {
+      "n": 2047,
+      "defined": true,
+      "classification": "composite",
+      "indicator": 0,
+      "factorialMod": 0,
+      "residue": 1,
+      "x": -1,
+      "y": 1,
+      "quadrant": 2,
+      "angleDegrees": 135,
+      "multiplications": 88
+    },
+    {
+      "n": 6601,
+      "defined": true,
+      "classification": "composite",
+      "indicator": 0,
+      "factorialMod": 0,
+      "residue": 1,
+      "x": -1,
+      "y": 1,
+      "quadrant": 2,
+      "angleDegrees": 135,
+      "multiplications": 40
+    },
+    {
+      "n": 9973,
+      "defined": true,
+      "classification": "prime",
+      "indicator": 1,
+      "factorialMod": 9972,
+      "residue": 0,
+      "x": 1,
+      "y": 1,
+      "quadrant": 1,
+      "angleDegrees": 45,
+      "multiplications": 9971
+    },
+    {
+      "n": 99991,
+      "defined": true,
+      "classification": "prime",
+      "indicator": 1,
+      "factorialMod": 99990,
+      "residue": 0,
+      "x": 1,
+      "y": 1,
+      "quadrant": 1,
+      "angleDegrees": 45,
+      "multiplications": 99989
+    },
+    {
+      "n": 100000,
+      "defined": true,
+      "classification": "composite",
+      "indicator": 0,
+      "factorialMod": 0,
+      "residue": 1,
+      "x": -1,
+      "y": 1,
+      "quadrant": 2,
+      "angleDegrees": 135,
+      "multiplications": 24
+    }
+  ],
+  "observations": [
+    {
+      "angle": 45,
+      "error": 0,
+      "quadrant": 1,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 0
+    },
+    {
+      "angle": 45,
+      "error": 1,
+      "quadrant": 1,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 1
+    },
+    {
+      "angle": 45,
+      "error": 44,
+      "quadrant": 1,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 44
+    },
+    {
+      "angle": 45,
+      "error": 44.999,
+      "quadrant": 1,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 44.999
+    },
+    {
+      "angle": 45,
+      "error": 45,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 45
+    },
+    {
+      "angle": 45,
+      "error": 46,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 46
+    },
+    {
+      "angle": 45,
+      "error": 90,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 90
+    },
+    {
+      "angle": 45,
+      "error": 360,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 360
+    },
+    {
+      "angle": 135,
+      "error": 0,
+      "quadrant": 2,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 0
+    },
+    {
+      "angle": 135,
+      "error": 1,
+      "quadrant": 2,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 1
+    },
+    {
+      "angle": 135,
+      "error": 44,
+      "quadrant": 2,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 44
+    },
+    {
+      "angle": 135,
+      "error": 44.999,
+      "quadrant": 2,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 44.999
+    },
+    {
+      "angle": 135,
+      "error": 45,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 45
+    },
+    {
+      "angle": 135,
+      "error": 46,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 46
+    },
+    {
+      "angle": 135,
+      "error": 90,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 90
+    },
+    {
+      "angle": 135,
+      "error": 360,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 360
+    },
+    {
+      "angle": 225,
+      "error": 0,
+      "quadrant": 3,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 0
+    },
+    {
+      "angle": 225,
+      "error": 1,
+      "quadrant": 3,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 1
+    },
+    {
+      "angle": 225,
+      "error": 44,
+      "quadrant": 3,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 44
+    },
+    {
+      "angle": 225,
+      "error": 44.999,
+      "quadrant": 3,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 44.999
+    },
+    {
+      "angle": 225,
+      "error": 45,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 45
+    },
+    {
+      "angle": 225,
+      "error": 46,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 46
+    },
+    {
+      "angle": 225,
+      "error": 90,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 90
+    },
+    {
+      "angle": 225,
+      "error": 360,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 360
+    },
+    {
+      "angle": 315,
+      "error": 0,
+      "quadrant": 4,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 0
+    },
+    {
+      "angle": 315,
+      "error": 1,
+      "quadrant": 4,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 1
+    },
+    {
+      "angle": 315,
+      "error": 44,
+      "quadrant": 4,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 44
+    },
+    {
+      "angle": 315,
+      "error": 44.999,
+      "quadrant": 4,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 44.999
+    },
+    {
+      "angle": 315,
+      "error": 45,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 45
+    },
+    {
+      "angle": 315,
+      "error": 46,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 46
+    },
+    {
+      "angle": 315,
+      "error": 90,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 90
+    },
+    {
+      "angle": 315,
+      "error": 360,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 360
+    },
+    {
+      "angle": -45,
+      "error": 0,
+      "quadrant": 4,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 0
+    },
+    {
+      "angle": -45,
+      "error": 1,
+      "quadrant": 4,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 1
+    },
+    {
+      "angle": -45,
+      "error": 44,
+      "quadrant": 4,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 44
+    },
+    {
+      "angle": -45,
+      "error": 44.999,
+      "quadrant": 4,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 44.999
+    },
+    {
+      "angle": -45,
+      "error": 45,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 45
+    },
+    {
+      "angle": -45,
+      "error": 46,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 46
+    },
+    {
+      "angle": -45,
+      "error": 90,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 90
+    },
+    {
+      "angle": -45,
+      "error": 360,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 360
+    },
+    {
+      "angle": 405,
+      "error": 0,
+      "quadrant": 1,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 0
+    },
+    {
+      "angle": 405,
+      "error": 1,
+      "quadrant": 1,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 1
+    },
+    {
+      "angle": 405,
+      "error": 44,
+      "quadrant": 1,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 44
+    },
+    {
+      "angle": 405,
+      "error": 44.999,
+      "quadrant": 1,
+      "status": "resolved",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 44.999
+    },
+    {
+      "angle": 405,
+      "error": 45,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 45
+    },
+    {
+      "angle": 405,
+      "error": 46,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 46
+    },
+    {
+      "angle": 405,
+      "error": 90,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 90
+    },
+    {
+      "angle": 405,
+      "error": 360,
+      "quadrant": null,
+      "status": "uncertain",
+      "marginDegrees": 45.0,
+      "suppliedErrorDegrees": 360
+    }
+  ],
+  "limits": [
+    "Global theorem and finite implementation tests are separate.",
+    "The supplied observation error is assumed, not measured or certified.",
+    "No prior-prime list enters the candidate function; the sieve is an oracle only.",
+    "Wilson-derived exact quadrant encoding; no new zeta or RH result or speed claim."
+  ]
+}

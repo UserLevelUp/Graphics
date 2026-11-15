@@ -1,0 +1,55 @@
+{
+  "traceId": "graph.primes.quadrant_phase.ui",
+  "status": "passed",
+  "observedAtUtc": "2026-11-15T14:49:22.472520+00:00",
+  "method": "Computer Use sky API: selected returned Exact quadrant prime laboratory window; observed native screenshot and accessibility state after actions.",
+  "observations": [
+    {
+      "candidate": 97,
+      "rotation": 0,
+      "result": "prime",
+      "quadrant": 1,
+      "method": "startup screenshot and status text"
+    },
+    {
+      "candidate": 96,
+      "rotation": 0,
+      "result": "composite",
+      "quadrant": 2,
+      "method": "Try96 button and refreshed status text"
+    },
+    {
+      "candidate": 4,
+      "rotation": 37,
+      "result": "composite",
+      "quadrant": 4,
+      "method": "set rotation, Try4 button, refreshed screenshot and status text"
+    },
+    {
+      "candidate": 97,
+      "rotation": 37,
+      "result": "prime",
+      "quadrant": 1,
+      "method": "Try97 button and refreshed status text"
+    }
+  ],
+  "finalState": "Lab left open at97 with37-degree display rotation.",
+  "notExercised": [
+    "SavePNG dialog",
+    "every possible candidate through the GUI"
+  ],
+  "inputs": [
+    {
+      "path": "C:\\src\\graph\\Graphics\\PrimeQuadrantPhaseForm.cs",
+      "sha256": "111171f886a0b40701a1a500fec72ce1efe57daf0830f34fe8fc184bc51a943c"
+    },
+    {
+      "path": "C:\\src\\graph\\Graphics\\PrimeQuadrantPhaseExperiment.cs",
+      "sha256": "2517f56be251b2b9e79962cc193e65973f3b7808ce9eb09ca7a8c3b8164d450f"
+    },
+    {
+      "path": "C:\\src\\graph\\Graphics\\bin\\Release\\net5.0-windows\\Graphics.dll",
+      "sha256": "e9e7ee1b726e6cc2d29a6e899381771e1c6de734832e8e2f726a4bdb6995bb4b"
+    }
+  ]
+}

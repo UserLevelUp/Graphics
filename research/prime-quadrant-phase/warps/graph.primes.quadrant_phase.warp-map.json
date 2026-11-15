@@ -1,0 +1,38 @@
+{
+  "bubble_uuid": "01a1dfa6-d67f-722b-8639-0e36efc2bf7f",
+  "goal": "Adapt the exact prime function to a four-color quadrant decision with reviewed arithmetic and native rendering",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "Compute a Wilson-derived complex point and determine the answer from its exact canonical quadrant; never pass in prime labels.",
+    "Keep 0 and 1 outside the phase domain, and separate exact quadrant decisions from uncertain observed angles and rendered pixels.",
+    "Preserve accepted historical experiments. Attribute Wilson's theorem; no independent zeta classifier, speedup or RH result is claimed."
+  ],
+  "required_slices": [
+    {
+      "contract_hash": "contract:graph.primes.quadrant_phase.equation:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "equation",
+      "slice_uuid": "01a1dfa6-d67f-7a04-985e-268d1088adb4"
+    },
+    {
+      "contract_hash": "contract:graph.primes.quadrant_phase.native:v1",
+      "depends_on": [
+        "equation"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "native",
+      "slice_uuid": "01a1dfa6-d67f-767b-b01f-8857f9a66074"
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.primes.quadrant_phase"
+}
