@@ -1,0 +1,252 @@
+[00:00:00,150]
+First, put one question inside a Warp: an isolated, reversible
+piece of work. It is a project boundary, not a mathematical
+force. We test the animation before building its explanation.
+
+[00:00:14,150]
+This approach assigns four quadrant colors to sampled points.
+Greater resolution reveals finer boundaries. Here, zeta's output
+origin moves smoothly from zero to one.
+
+[00:00:28,150]
+The brush stays upright as it follows a circle. Changing direction changes the colors left behind, while new marks overwrite old ones.
+
+[00:00:40,150]
+Wegert's phase plots explain the color view. Lester's work
+places zeta's a-points in an established research area. We
+connect those ideas to our earlier two-state switch, using
+classical prediction and Newton correction.
+
+[00:00:55,150]
+Platt and Trudgian provide rigorous finite checks. Lamzouri's
+preprint presents a proportion bound; OpenAI reports a zero-free
+region and formalization. These concern zeta zeros, not a
+certificate for our moving nonzero targets.
+
+[00:01:13,150]
+We follow the same root as the target moves. Where zeta prime is
+nonzero, this formula gives its direction and speed. Smaller
+steps and corrections help the computation stay on track.
+
+[00:01:28,150]
+Independent checks find two paths leaving the right edge before
+the target reaches one. The third reaches a finite one-point.
+Leaving our window means the view ended, not that the
+mathematical branch stopped.
+
+[00:01:44,150]
+Color shows phase. Continuation follows a solution. Higher
+precision checks numerical stability. Analytic estimates would
+be needed for a certificate. These methods help separate tracked
+connections from artifacts of switching or coarse pixels.
+
+[00:02:00,150]
+Our conjecture required all three paths to remain inside the
+window. The computed exits give numerical counterevidence. A
+rigorous rejection would require certified continuation bounds.
+We keep the original window.
+
+[00:02:15,150]
+One-points are not zeta zeros. Even three successful paths would
+not exclude an unseen zero off the critical line. A proof of
+Riemann needs a global constraint, beyond what these pictures
+establish.
+
+[00:02:30,150]
+This approach colors each sampled point by its output quadrant
+relative to a chosen origin. Greater rendering resolution
+reveals finer boundaries. Colors indicate direction; at a zero,
+the phase is undefined.
+
+[00:02:50,150]
+Our finite computation found two paths leaving the original
+window and one reaching a one-point. Independent numerical
+checks support those observations. They do not certify every
+point between samples, and they do not show that the exiting
+branches disappear.
+
+[00:03:09,150]
+The next precise task is to certify those three paths: prove
+uniqueness in overlapping boxes, exclude a zero derivative, and
+certify the two boundary crossings. That would turn selected
+numerical observations into a bounded mathematical certificate.
+
+[00:03:28,150]
+Boseman and Pauli already studied this continuation family.
+Complex target paths offer broader exploration. Speiser links
+Riemann to excluding derivative zeros throughout an entire half-
+strip. Our three paths do not cover that obligation; a global
+proof is still missing.
+
+[00:03:48,150]
+There is a genuine bridge to primes: explicit formulas connect
+weighted prime counts with zeta zeros. Our proposed next
+experiment would reconstruct that count from finitely many zeros
+and certify the omitted error. A useful result would be a
+rigorously bounded approximation to prime distribution.
+
+[00:04:12,150]
+From zero through one hundred, every composite has a prime
+divisor no larger than ten. Testing two, three, five and seven
+therefore gives a complete classification: twenty-five primes.
+Each label has an exact divisibility certificate. Violet
+displays the proved answers; it is not a color-based prediction.
+
+[00:04:40,150]
+Phase colors can guide us toward candidate zeros. Here the model
+function is simply z. Around the unit circle, it never vanishes
+and its phase makes one full turn, proving one zero inside. For
+zeta, rigorous bounds and complete zero counts are still needed.
+Brush trails alone do not supply them.
+
+[00:05:08,650]
+This idea starts with a four-color quadrant brush at each point.
+
+[00:05:14,217]
+Its trail changes with direction, overlap, rotation, and resolution.
+
+[00:05:18,772]
+That makes the geometry visible.
+
+[00:05:21,302]
+But a surviving pixel color is not, by itself, an arithmetic certificate of primality.
+
+[00:05:30,400]
+Z three means the third zeta zero, not twenty-three or a prime label.
+
+[00:05:36,857]
+For the first hundred zero indices, negative starting slopes occurred at fourteen prime indices and thirty-five composite indices.
+
+[00:05:45,798]
+Eleven prime indices sloped upward.
+
+[00:05:48,281]
+Both signs mix the classes, so this proposed rule fails.
+
+[00:05:55,275]
+The proposed denominator, g of n, simplifies exactly to n.
+
+[00:05:59,900]
+Substituting it into zeta's series leaves the same function where that series converges.
+
+[00:06:05,912]
+The half inside g does not set s to one half.
+
+[00:06:10,999]
+And ninety-seven and composite ninety-nine both have a fractional half when divided by two.
+
+[00:06:19,483]
+Zeta at one half exists and is about minus one point four six.
+
+[00:06:25,688]
+The critical line instead uses one half plus i t.
+
+[00:06:30,460]
+Particular heights give zeros.
+
+[00:06:32,369]
+Putting ninety-seven into t gives a nonzero complex value.
+
+[00:06:36,664]
+Fixing the real part does not identify an integer as prime.
+
+[00:06:43,942]
+With integer n used as height, ninety-seven and composite ninety-nine both occupy quadrant one.
+
+[00:06:50,839]
+Comparing zeta at s, s plus one, and s minus one still fails.
+
+[00:06:57,244]
+Matching ninety-seven's three colors keeps six primes and eighteen composites, while missing nineteen primes between two and one hundred.
+
+[00:07:08,608]
+Removing the unit term gives zeta minus one.
+
+[00:07:12,665]
+Its zeros are where zeta equals one.
+
+[00:07:16,214]
+Multiplying the two functions combines both zero sets.
+
+[00:07:20,271]
+Every hypothetical off-line zeta zero survives, so the switch does not prove the hypothesis.
+
+[00:07:29,400]
+Reordering the same finite sum leaves its value unchanged.
+
+[00:07:33,949]
+For the tested coefficient reversal, subtracting the reverse makes opposite positions have opposite signs.
+
+[00:07:41,025]
+A nonzero, nonnegative composite indicator cannot have that symmetry.
+
+[00:07:45,574]
+Other definitions of a backward recurrence would need a separate derivation.
+
+[00:07:53,150]
+Finite subtraction leaves nonprimes but requires knowing the prime terms to remove.
+
+[00:07:59,133]
+At s equals minus one, the ordinary integer series diverges.
+
+[00:08:04,120]
+Zeta's continued value, minus one twelfth, is not an ordinary sum for subtracting infinitely many primes.
+
+[00:08:14,108]
+For real s greater than one, define A as the odd-number part of zeta.
+
+[00:08:21,013]
+Then A minus one minus log A cancels every odd-prime coefficient and leaves weighted odd composites.
+
+[00:08:28,904]
+The coefficient at ninety-seven is zero; at ninety-nine it is one.
+
+[00:08:34,329]
+Evaluating H at ninety-seven does not extract that coefficient.
+
+[00:08:40,775]
+Wilson's theorem tests a candidate without a list of previous primes.
+
+[00:08:46,224]
+Our encoding places primes in quadrant one.
+
+[00:08:49,691]
+The modular factorial supplies the answer; color displays it.
+
+[00:08:54,150]
+This is not instantaneous.
+
+[00:08:56,131]
+The separate four-divisor color test works only within its stated range.
+
+[00:09:03,608]
+Removing trivial factor pairs leaves an exact composite remainder.
+
+[00:09:08,420]
+For odd integers greater than one, D counts nontrivial pairs: zero for ninety-seven, two for ninety-nine.
+
+[00:09:16,973]
+The proof covers that entire domain.
+
+[00:09:20,180]
+The implementation was independently checked through one hundred thousand.
+
+[00:09:24,991]
+It still performs divisor counting.
+
+[00:09:29,692]
+The contribution is reproducible tests and counterexamples.
+
+[00:09:33,309]
+Phase plots can guide searches; rigorous bounds must certify the zero count.
+
+[00:09:39,511]
+Prime extraction also needs error bounds and cost comparisons.
+
+[00:09:44,162]
+These experiments establish no new prime algorithm or Riemann Hypothesis advance.
+
+[00:09:51,358]
+The code and evidence are in the public Graphics project. Use
+this branch and source checkpoint to reproduce and extend the
+work.

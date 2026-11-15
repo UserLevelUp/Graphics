@@ -1,0 +1,35 @@
+00:00:00,000  A four-color brush is a display rule
+This idea starts with a four-color quadrant brush at each point. Its trail changes with direction, overlap, rotation, and resolution. That makes the geometry visible. But a surviving pixel color is not, by itself, an arithmetic certificate of primality.
+
+00:00:21,750  A downward slope did not identify primes
+Z three means the third zeta zero, not twenty-three or a prime label. For the first hundred zero indices, negative starting slopes occurred at fourteen prime indices and thirty-five composite indices. Eleven prime indices sloped upward. Both signs mix the classes, so this proposed rule fails.
+
+00:00:46,625  Substituting the half-unit expression
+The proposed denominator, g of n, simplifies exactly to n. Substituting it into zeta's series leaves the same function where that series converges. The half inside g does not set s to one half. And ninety-seven and composite ninety-nine both have a fractional half when divided by two.
+
+00:01:10,833  One half is a line coordinate
+Zeta at one half exists and is about minus one point four six. The critical line instead uses one half plus i t. Particular heights give zeros. Putting ninety-seven into t gives a nonzero complex value. Fixing the real part does not identify an integer as prime.
+
+00:01:35,292  Extra zeta colors did not fix the test
+With integer n used as height, ninety-seven and composite ninety-nine both occupy quadrant one. Comparing zeta at s, s plus one, and s minus one still fails. Matching ninety-seven's three colors keeps six primes and eighteen composites, while missing nineteen primes between two and one hundred.
+
+00:01:59,958  Switching the unit term changes the target
+Removing the unit term gives zeta minus one. Its zeros are where zeta equals one. Multiplying the two functions combines both zero sets. Every hypothetical off-line zeta zero survives, so the switch does not prove the hypothesis.
+
+00:02:20,750  Reversal does not create the complement
+Reordering the same finite sum leaves its value unchanged. For the tested coefficient reversal, subtracting the reverse makes opposite positions have opposite signs. A nonzero, nonnegative composite indicator cannot have that symmetry. Other definitions of a backward recurrence would need a separate derivation.
+
+00:02:44,500  Finite cancellation is well defined
+Finite subtraction leaves nonprimes but requires knowing the prime terms to remove. At s equals minus one, the ordinary integer series diverges. Zeta's continued value, minus one twelfth, is not an ordinary sum for subtracting infinitely many primes.
+
+00:03:05,458  Prime terms really can cancel
+For real s greater than one, define A as the odd-number part of zeta. Then A minus one minus log A cancels every odd-prime coefficient and leaves weighted odd composites. The coefficient at ninety-seven is zero; at ninety-nine it is one. Evaluating H at ninety-seven does not extract that coefficient.
+
+00:03:32,125  A correct color test still does arithmetic
+Wilson's theorem tests a candidate without a list of previous primes. Our encoding places primes in quadrant one. The modular factorial supplies the answer; color displays it. This is not instantaneous. The separate four-divisor color test works only within its stated range.
+
+00:03:54,958  What the finite experiment establishes
+Removing trivial factor pairs leaves an exact composite remainder. For odd integers greater than one, D counts nontrivial pairs: zero for ninety-seven, two for ninety-nine. The proof covers that entire domain. The implementation was independently checked through one hundred thousand. It still performs divisor counting.
+
+00:04:21,042  Useful next steps have explicit checks
+The contribution is reproducible tests and counterexamples. Phase plots can guide searches; rigorous bounds must certify the zero count. Prime extraction also needs error bounds and cost comparisons. These experiments establish no new prime algorithm or Riemann Hypothesis advance.

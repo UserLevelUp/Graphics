@@ -1,0 +1,216 @@
+{
+  "complete": true,
+  "coverage": {
+    "bytes_read": 219333,
+    "complete": true,
+    "entries": 67,
+    "files_read": 24,
+    "max_bytes": 33554432,
+    "max_entries": 50000,
+    "omissions": {}
+  },
+  "ids": [
+    {
+      "file_count": 9,
+      "files": [
+        "README.md",
+        "assemble.py",
+        "evidence/trace-inventory.json",
+        "evidence/warp-progress.json",
+        "evidence/watch-observation.json",
+        "graph.riemann.lessons.complete.md",
+        "warps/graph.riemann.lessons.explanation.lessons-explanation-reviewed-20261115.warp-layer.json",
+        "warps/graph.riemann.lessons.video.lessons-video-reviewed-20261115.warp-layer.json",
+        "warps/graph.riemann.lessons.warp-map.json"
+      ],
+      "id": "graph.riemann.lessons",
+      "namespace": "graph.riemann",
+      "occurrences": 21
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/acceptance.json"
+      ],
+      "id": "graph.riemann.lessons.acceptance",
+      "namespace": "graph.riemann.lessons",
+      "occurrences": 1
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "assemble.py",
+        "evidence/assembly-manifest.json",
+        "evidence/trace-inventory.json"
+      ],
+      "id": "graph.riemann.lessons.assembly",
+      "namespace": "graph.riemann.lessons",
+      "occurrences": 4
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/trace-inventory.json"
+      ],
+      "id": "graph.riemann.lessons.current.md",
+      "namespace": "graph.riemann.lessons.current",
+      "occurrences": 1
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "README.md",
+        "evidence/trace-inventory.json"
+      ],
+      "id": "graph.riemann.lessons.documentation",
+      "namespace": "graph.riemann.lessons",
+      "occurrences": 2
+    },
+    {
+      "file_count": 5,
+      "files": [
+        "assemble.py",
+        "evidence/trace-inventory.json",
+        "evidence/warp-progress.json",
+        "warps/graph.riemann.lessons.explanation.lessons-explanation-reviewed-20261115.warp-layer.json",
+        "warps/graph.riemann.lessons.warp-map.json"
+      ],
+      "id": "graph.riemann.lessons.explanation",
+      "namespace": "graph.riemann.lessons",
+      "occurrences": 5
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/trace-inventory.json"
+      ],
+      "id": "graph.riemann.lessons.explanation.lessons-explanation-reviewed-20261115.warp-layer.json",
+      "namespace": "graph.riemann.lessons.explanation.lessons-explanation-reviewed-20261115.warp-layer",
+      "occurrences": 2
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "evidence/explanation-review.json",
+        "evidence/trace-inventory.json",
+        "verify_explanation.py"
+      ],
+      "id": "graph.riemann.lessons.explanation_review",
+      "namespace": "graph.riemann.lessons",
+      "occurrences": 4
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "evidence/trace-inventory.json",
+        "math-notes.md"
+      ],
+      "id": "graph.riemann.lessons.math",
+      "namespace": "graph.riemann.lessons",
+      "occurrences": 2
+    },
+    {
+      "file_count": 4,
+      "files": [
+        "evidence/chapter-manifest.json",
+        "evidence/trace-inventory.json",
+        "evidence/watch-observation.json",
+        "render_chapter.py"
+      ],
+      "id": "graph.riemann.lessons.media",
+      "namespace": "graph.riemann.lessons",
+      "occurrences": 5
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "evidence/media-review.json",
+        "evidence/trace-inventory.json",
+        "verify_media.py"
+      ],
+      "id": "graph.riemann.lessons.media_review",
+      "namespace": "graph.riemann.lessons",
+      "occurrences": 4
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "assemble.py",
+        "evidence/repository.json",
+        "evidence/trace-inventory.json"
+      ],
+      "id": "graph.riemann.lessons.repository",
+      "namespace": "graph.riemann.lessons",
+      "occurrences": 3
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "evidence/trace-inventory.json",
+        "math-notes.md",
+        "script.json"
+      ],
+      "id": "graph.riemann.lessons.script",
+      "namespace": "graph.riemann.lessons",
+      "occurrences": 3
+    },
+    {
+      "file_count": 4,
+      "files": [
+        "evidence/trace-inventory.json",
+        "evidence/warp-progress.json",
+        "warps/graph.riemann.lessons.video.lessons-video-reviewed-20261115.warp-layer.json",
+        "warps/graph.riemann.lessons.warp-map.json"
+      ],
+      "id": "graph.riemann.lessons.video",
+      "namespace": "graph.riemann.lessons",
+      "occurrences": 4
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/visual-review.json"
+      ],
+      "id": "graph.riemann.lessons.visual_review",
+      "namespace": "graph.riemann.lessons",
+      "occurrences": 1
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "evidence/trace-inventory.json",
+        "evidence/warp-progress.json"
+      ],
+      "id": "graph.riemann.lessons.warp-map.json",
+      "namespace": "graph.riemann.lessons.warp-map",
+      "occurrences": 4
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/watch-observation.json"
+      ],
+      "id": "graph.riemann.lessons.watch",
+      "namespace": "graph.riemann.lessons",
+      "occurrences": 1
+    }
+  ],
+  "output": {
+    "complete": true,
+    "max_output_bytes": 32768,
+    "max_results": 200,
+    "omissions": {},
+    "returned_bytes": 3715
+  },
+  "provenance": "token-occurrences",
+  "request": {
+    "context": null,
+    "ignore_case": false,
+    "pattern": "graph.riemann.lessons.**",
+    "root": "research/riemann-lessons",
+    "scope": "**",
+    "selectors": [],
+    "separator": "."
+  },
+  "schema": "recur-trace-id-inventory-v1"
+}

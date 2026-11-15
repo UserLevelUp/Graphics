@@ -1,0 +1,195 @@
+1
+00:00:00,650 --> 00:00:06,217
+This idea starts with a four-color quadrant brush at each point.
+
+2
+00:00:06,217 --> 00:00:10,772
+Its trail changes with direction, overlap, rotation, and resolution.
+
+3
+00:00:10,772 --> 00:00:13,302
+That makes the geometry visible.
+
+4
+00:00:13,302 --> 00:00:20,387
+But a surviving pixel color is not, by itself, an arithmetic certificate of primality.
+
+5
+00:00:22,400 --> 00:00:28,857
+Z three means the third zeta zero, not twenty-three or a prime label.
+
+6
+00:00:28,857 --> 00:00:37,798
+For the first hundred zero indices, negative starting slopes occurred at fourteen prime indices and thirty-five composite indices.
+
+7
+00:00:37,798 --> 00:00:40,281
+Eleven prime indices sloped upward.
+
+8
+00:00:40,281 --> 00:00:45,248
+Both signs mix the classes, so this proposed rule fails.
+
+9
+00:00:47,275 --> 00:00:51,900
+The proposed denominator, g of n, simplifies exactly to n.
+
+10
+00:00:51,900 --> 00:00:57,912
+Substituting it into zeta's series leaves the same function where that series converges.
+
+11
+00:00:57,912 --> 00:01:02,999
+The half inside g does not set s to one half.
+
+12
+00:01:02,999 --> 00:01:09,473
+And ninety-seven and composite ninety-nine both have a fractional half when divided by two.
+
+13
+00:01:11,483 --> 00:01:17,688
+Zeta at one half exists and is about minus one point four six.
+
+14
+00:01:17,688 --> 00:01:22,460
+The critical line instead uses one half plus i t.
+
+15
+00:01:22,460 --> 00:01:24,369
+Particular heights give zeros.
+
+16
+00:01:24,369 --> 00:01:28,664
+Putting ninety-seven into t gives a nonzero complex value.
+
+17
+00:01:28,664 --> 00:01:33,914
+Fixing the real part does not identify an integer as prime.
+
+18
+00:01:35,942 --> 00:01:42,839
+With integer n used as height, ninety-seven and composite ninety-nine both occupy quadrant one.
+
+19
+00:01:42,839 --> 00:01:49,244
+Comparing zeta at s, s plus one, and s minus one still fails.
+
+20
+00:01:49,244 --> 00:01:58,604
+Matching ninety-seven's three colors keeps six primes and eighteen composites, while missing nineteen primes between two and one hundred.
+
+21
+00:02:00,608 --> 00:02:04,665
+Removing the unit term gives zeta minus one.
+
+22
+00:02:04,665 --> 00:02:08,214
+Its zeros are where zeta equals one.
+
+23
+00:02:08,214 --> 00:02:12,271
+Multiplying the two functions combines both zero sets.
+
+24
+00:02:12,271 --> 00:02:19,370
+Every hypothetical off-line zeta zero survives, so the switch does not prove the hypothesis.
+
+25
+00:02:21,400 --> 00:02:25,949
+Reordering the same finite sum leaves its value unchanged.
+
+26
+00:02:25,949 --> 00:02:33,025
+For the tested coefficient reversal, subtracting the reverse makes opposite positions have opposite signs.
+
+27
+00:02:33,025 --> 00:02:37,574
+A nonzero, nonnegative composite indicator cannot have that symmetry.
+
+28
+00:02:37,574 --> 00:02:43,134
+Other definitions of a backward recurrence would need a separate derivation.
+
+29
+00:02:45,150 --> 00:02:51,133
+Finite subtraction leaves nonprimes but requires knowing the prime terms to remove.
+
+30
+00:02:51,133 --> 00:02:56,120
+At s equals minus one, the ordinary integer series diverges.
+
+31
+00:02:56,120 --> 00:03:04,098
+Zeta's continued value, minus one twelfth, is not an ordinary sum for subtracting infinitely many primes.
+
+32
+00:03:06,108 --> 00:03:13,013
+For real s greater than one, define A as the odd-number part of zeta.
+
+33
+00:03:13,013 --> 00:03:20,904
+Then A minus one minus log A cancels every odd-prime coefficient and leaves weighted odd composites.
+
+34
+00:03:20,904 --> 00:03:26,329
+The coefficient at ninety-seven is zero; at ninety-nine it is one.
+
+35
+00:03:26,329 --> 00:03:30,768
+Evaluating H at ninety-seven does not extract that coefficient.
+
+36
+00:03:32,775 --> 00:03:38,224
+Wilson's theorem tests a candidate without a list of previous primes.
+
+37
+00:03:38,224 --> 00:03:41,691
+Our encoding places primes in quadrant one.
+
+38
+00:03:41,691 --> 00:03:46,150
+The modular factorial supplies the answer; color displays it.
+
+39
+00:03:46,150 --> 00:03:48,131
+This is not instantaneous.
+
+40
+00:03:48,131 --> 00:03:53,580
+The separate four-divisor color test works only within its stated range.
+
+41
+00:03:55,608 --> 00:04:00,420
+Removing trivial factor pairs leaves an exact composite remainder.
+
+42
+00:04:00,420 --> 00:04:08,973
+For odd integers greater than one, D counts nontrivial pairs: zero for ninety-seven, two for ninety-nine.
+
+43
+00:04:08,973 --> 00:04:12,180
+The proof covers that entire domain.
+
+44
+00:04:12,180 --> 00:04:16,991
+The implementation was independently checked through one hundred thousand.
+
+45
+00:04:16,991 --> 00:04:19,664
+It still performs divisor counting.
+
+46
+00:04:21,692 --> 00:04:25,309
+The contribution is reproducible tests and counterexamples.
+
+47
+00:04:25,309 --> 00:04:31,511
+Phase plots can guide searches; rigorous bounds must certify the zero count.
+
+48
+00:04:31,511 --> 00:04:36,162
+Prime extraction also needs error bounds and cost comparisons.
+
+49
+00:04:36,162 --> 00:04:41,847
+These experiments establish no new prime algorithm or Riemann Hypothesis advance.

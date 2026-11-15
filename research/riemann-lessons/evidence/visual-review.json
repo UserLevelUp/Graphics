@@ -1,0 +1,40 @@
+{
+  "traceId": "graph.riemann.lessons.visual_review",
+  "status": "passed",
+  "reviewedAtUtc": "2026-11-15T23:49:58.044303+00:00",
+  "observations": [
+    "Inspected all twelve final scene previews and all twelve encoded scene midpoint images in the contact sheet.",
+    "Individually inspected encoded denominator-substitution scene and the final repository card, plus earlier full-size critical-line, cancellation, finite classification, slope, reversal and Wilson layouts.",
+    "Unsupported implication/equivalence/midline-ellipsis glyphs were replaced by readable words or dots before final rendering.",
+    "The zero-index and prime-value distinction, conjecture label, series convergence condition and coefficient-versus-value distinction are visible.",
+    "The finite prime grid, factor-pair counts, color-rule failure counts and no-RH-proof conclusion are legible.",
+    "No text clipping observed. Reversal illustrates sum reordering and coefficient reversal separately. Wilson palette is labeled schematic.",
+    "The final public card shows the observed branch, pre-export source checkpoint and git remote -v result."
+  ],
+  "inputs": [
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\encoded-contact-sheet.png",
+      "sha256": "e2501e6fe7c44f0e97eba150baf9949ea39272b285cf1925063795a9ba6c9fba"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\review-frames\\03-half_identity.png",
+      "sha256": "6e2a1dd936a17ba18df42c1a77fd7e102093df836437ee271f457f3ae91f2ccc"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\review-frames\\repository-card.png",
+      "sha256": "af8f38725ed54686f278ecd00b65e655d351f0cbd388df6718ab1e2f1ad1c155"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\riemann-lessons\\script.json",
+      "sha256": "1ec6d94a22b2653f777f5ff5fdb7a56de24567d0085a52bf692bdefde2dc26e4"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\riemann-lessons\\render_chapter.py",
+      "sha256": "4515415cc2a02d7ad1da48fdfba000f904b18190c4d5cd0807dd72db9d54ecc3"
+    }
+  ],
+  "limits": [
+    "Visual editorial inspection is separate from mathematical and technical media checks.",
+    "Speech pronunciation was not independently transcribed; provider input text, complete clip placement and encoded waveforms were verified."
+  ]
+}

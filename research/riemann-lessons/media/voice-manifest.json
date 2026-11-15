@@ -1,0 +1,136 @@
+{
+  "clips": [
+    {
+      "id": "brush_order",
+      "narration": "This idea starts with a four-color quadrant brush at each point. Its trail changes with direction, overlap, rotation, and resolution. That makes the geometry visible. But a surviving pixel color is not, by itself, an arithmetic certificate of primality.",
+      "taskId": "f86e5079-94db-4dc8-861a-3e1faf348529",
+      "voice": "Serene",
+      "model": "eleven_multilingual_v2",
+      "speed": 1.03,
+      "sourceDurationSeconds": 19.736961,
+      "localPath": "voice/brush_order.mp3",
+      "sha256": "47a6ff34001c794d1df95c1791fc65073c32817c0ed17e02c162406cb4138cbe"
+    },
+    {
+      "id": "slope_rule",
+      "narration": "Z three means the third zeta zero, not twenty-three or a prime label. For the first hundred zero indices, negative starting slopes occurred at fourteen prime indices and thirty-five composite indices. Eleven prime indices sloped upward. Both signs mix the classes, so this proposed rule fails.",
+      "taskId": "96f589d2-51cf-4346-b8c6-2772346b48fb",
+      "voice": "Serene",
+      "model": "eleven_multilingual_v2",
+      "speed": 1.03,
+      "sourceDurationSeconds": 22.848435,
+      "localPath": "voice/slope_rule.mp3",
+      "sha256": "e33e5c131208634df6388eccf404f280ae4f8cc87166250cffe13bee4c3c2ae6"
+    },
+    {
+      "id": "half_identity",
+      "narration": "The proposed denominator, g of n, simplifies exactly to n. Substituting it into zeta's series leaves the same function where that series converges. The half inside g does not set s to one half. And ninety-seven and composite ninety-nine both have a fractional half when divided by two.",
+      "taskId": "52a132f6-fb6d-4467-b6a7-69f35344001b",
+      "voice": "Serene",
+      "model": "eleven_multilingual_v2",
+      "speed": 1.03,
+      "sourceDurationSeconds": 22.198277,
+      "localPath": "voice/half_identity.mp3",
+      "sha256": "f06bda8744ec51775af90b0f9bcb3d72d8987e7e4e0a1369cd00895bb44d5d04"
+    },
+    {
+      "id": "critical_line",
+      "narration": "Zeta at one half exists and is about minus one point four six. The critical line instead uses one half plus i t. Particular heights give zeros. Putting ninety-seven into t gives a nonzero complex value. Fixing the real part does not identify an integer as prime.",
+      "taskId": "55e3bd50-3066-4a8f-a6b4-2e7eaac4131b",
+      "voice": "Serene",
+      "model": "eleven_multilingual_v2",
+      "speed": 1.03,
+      "sourceDurationSeconds": 22.430476,
+      "localPath": "voice/critical_line.mp3",
+      "sha256": "5f16aebbad25e037a3a5d449ba60c22faece23e1207b498ff30e880c73b81988"
+    },
+    {
+      "id": "shifted_zeta",
+      "narration": "With integer n used as height, ninety-seven and composite ninety-nine both occupy quadrant one. Comparing zeta at s, s plus one, and s minus one still fails. Matching ninety-seven's three colors keeps six primes and eighteen composites, while missing nineteen primes between two and one hundred.",
+      "taskId": "030f2b5e-6d05-404e-96e0-f2227ca30e63",
+      "voice": "Serene",
+      "model": "eleven_multilingual_v2",
+      "speed": 1.03,
+      "sourceDurationSeconds": 22.662676,
+      "localPath": "voice/shifted_zeta.mp3",
+      "sha256": "6cad0cd75e7908abdbe10a24a0a968eb86214746ba69cd6d1ac5d7cdb2d77dd5"
+    },
+    {
+      "id": "unit_switch",
+      "narration": "Removing the unit term gives zeta minus one. Its zeros are where zeta equals one. Multiplying the two functions combines both zero sets. Every hypothetical off-line zeta zero survives, so the switch does not prove the hypothesis.",
+      "taskId": "f7551576-cbed-427d-b0ce-46def697ef45",
+      "voice": "Serene",
+      "model": "eleven_multilingual_v2",
+      "speed": 1.03,
+      "sourceDurationSeconds": 18.761723,
+      "localPath": "voice/unit_switch.mp3",
+      "sha256": "970bcdaa7470d7df912061620e0b14d1e49b1c0eadb30d768b6aa83f1b649e35"
+    },
+    {
+      "id": "finite_reversal",
+      "narration": "Reordering the same finite sum leaves its value unchanged. For the tested coefficient reversal, subtracting the reverse makes opposite positions have opposite signs. A nonzero, nonnegative composite indicator cannot have that symmetry. Other definitions of a backward recurrence would need a separate derivation.",
+      "taskId": "6a447ded-6924-438c-ae53-5f2d647b76da",
+      "voice": "Serene",
+      "model": "eleven_multilingual_v2",
+      "speed": 1.03,
+      "sourceDurationSeconds": 21.733878,
+      "localPath": "voice/finite_reversal.mp3",
+      "sha256": "95a20d40b09804cac56ff810f3b02bb945c4b90eaf4442e87363ea0d8fc5c272"
+    },
+    {
+      "id": "infinite_subtraction",
+      "narration": "Finite subtraction leaves nonprimes but requires knowing the prime terms to remove. At s equals minus one, the ordinary integer series diverges. Zeta's continued value, minus one twelfth, is not an ordinary sum for subtracting infinitely many primes.",
+      "taskId": "25dbf235-93fd-49c2-b81a-3b02e5f313dc",
+      "voice": "Serene",
+      "model": "eleven_multilingual_v2",
+      "speed": 1.03,
+      "sourceDurationSeconds": 18.947483,
+      "localPath": "voice/infinite_subtraction.mp3",
+      "sha256": "6646f8d0f52f536e41e2fef1fa7477bfa8def5100fc7ec6bffbfdb616723aa97"
+    },
+    {
+      "id": "coefficient_cancellation",
+      "narration": "For real s greater than one, define A as the odd-number part of zeta. Then A minus one minus log A cancels every odd-prime coefficient and leaves weighted odd composites. The coefficient at ninety-seven is zero; at ninety-nine it is one. Evaluating H at ninety-seven does not extract that coefficient.",
+      "taskId": "ce060ce4-b28c-40bc-8cff-81ea749a023a",
+      "voice": "Serene",
+      "model": "eleven_multilingual_v2",
+      "speed": 1.03,
+      "sourceDurationSeconds": 24.659592,
+      "localPath": "voice/coefficient_cancellation.mp3",
+      "sha256": "c737a6dbd64e11cae4545862c12c75ec9c119b8e2dfd837004cdc34ff7a80f3d"
+    },
+    {
+      "id": "exact_color",
+      "narration": "Wilson's theorem tests a candidate without a list of previous primes. Our encoding places primes in quadrant one. The modular factorial supplies the answer; color displays it. This is not instantaneous. The separate four-divisor color test works only within its stated range.",
+      "taskId": "b6f19c66-8759-4ab8-b538-cc29a5ccd251",
+      "voice": "Serene",
+      "model": "eleven_multilingual_v2",
+      "speed": 1.03,
+      "sourceDurationSeconds": 20.805079,
+      "localPath": "voice/exact_color.mp3",
+      "sha256": "705994ebaa92d9715ef7455abd337abded02b137aeaf942adf2082443fcf09a4"
+    },
+    {
+      "id": "finite_result",
+      "narration": "Removing trivial factor pairs leaves an exact composite remainder. For odd integers greater than one, D counts nontrivial pairs: zero for ninety-seven, two for ninety-nine. The proof covers that entire domain. The implementation was independently checked through one hundred thousand. It still performs divisor counting.",
+      "taskId": "746344cc-5240-4d02-8880-30c6751df16f",
+      "voice": "Serene",
+      "model": "eleven_multilingual_v2",
+      "speed": 1.03,
+      "sourceDurationSeconds": 24.055873,
+      "localPath": "voice/finite_result.mp3",
+      "sha256": "dfbb1e95a884c6b58d2f8b79a5ab9315411cbf46220351ee8b0234ebfc61ec1b"
+    },
+    {
+      "id": "next_steps",
+      "narration": "The contribution is reproducible tests and counterexamples. Phase plots can guide searches; rigorous bounds must certify the zero count. Prime extraction also needs error bounds and cost comparisons. These experiments establish no new prime algorithm or Riemann Hypothesis advance.",
+      "taskId": "e20328bc-d0ad-4b91-8e98-b12ff652e0f3",
+      "voice": "Serene",
+      "model": "eleven_multilingual_v2",
+      "speed": 1.03,
+      "sourceDurationSeconds": 20.154921,
+      "localPath": "voice/next_steps.mp3",
+      "sha256": "c810939b559c73b5a7e11573858d324ebf2ce564ed39fbb5c02e004dca87dd8c"
+    }
+  ]
+}

@@ -1,0 +1,1273 @@
+{
+  "schema": "graph-riemann-lessons-media-review-v1",
+  "traceId": "graph.riemann.lessons.media_review",
+  "status": "passed",
+  "reviewedAtUtc": "2026-11-15T23:48:35.875989+00:00",
+  "videos": {
+    "chapter": {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\chapter.mp4",
+      "sha256": "728481b87298a81bfc7180f97743ce63d2726313f57b81f37c555899e0e7ecf4",
+      "streamDescriptions": [
+        "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 74 kb/s, 24 fps, 24 tbr, 12288 tbn (default)",
+        "Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 175 kb/s (default)"
+      ],
+      "durationSeconds": 283.21,
+      "frames": 6797,
+      "strictDecode": true,
+      "stderr": "",
+      "logSha256": "6f57bf05f35c5a500707781b3d8155e4eea9742bcdbfe675319624bda143a4c9"
+    },
+    "presentation": {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\presentation-with-lessons.mp4",
+      "sha256": "8d9887ea23fec8a85adc0e13fc6f0c91e455650de9d66bd456be403c5aa37bf3",
+      "streamDescriptions": [
+        "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 168 kb/s, 24 fps, 24 tbr, 12288 tbn (default)",
+        "Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 172 kb/s (default)",
+        "Stream #0:2[0x3](eng): Subtitle: mov_text (tx3g / 0x67337874), 0 kb/s (default)",
+        "Stream #0:3[0x4](eng): Data: bin_data (text / 0x74786574), 0 kb/s"
+      ],
+      "durationSeconds": 603.21,
+      "frames": 14477,
+      "strictDecode": true,
+      "stderr": "",
+      "logSha256": "ff570861694994ae918a171421d08050a8515e8071a862985e65e4609f8855d4"
+    }
+  },
+  "coverage": {
+    "completeStrictVideoAudioDecodes": 2,
+    "chapterSceneComparisons": 36,
+    "presentationSceneComparisons": 44,
+    "sourcePrefixFrames": [
+      0,
+      321,
+      2880,
+      6000,
+      7391
+    ],
+    "scenePositions": "first, middle, last",
+    "voiceClips": 12,
+    "historicalAudioSamples": 4
+  },
+  "captions": {
+    "chapterCues": 49,
+    "presentationCues": 67,
+    "allHistoricalCuesPreservedAndRetimed": true,
+    "embeddedTextAndTimingsMatchExternalSrt": true,
+    "orderedAndNonOverlapping": true,
+    "timingMethod": "Sentence boundaries apportioned by word count within each complete narration clip; not forced-aligned."
+  },
+  "frameTolerance": {
+    "meanAbsoluteBelow": 4.5,
+    "percentile99Below": 45,
+    "fractionOver50Below": 0.015,
+    "reason": "H264 YUV420 encoding and intentional Lanczos upscale of the 1280 chapter inside the 1920 presentation."
+  },
+  "frameComparisons": [
+    {
+      "video": "chapter",
+      "frame": 0,
+      "scene": "brush_order",
+      "metrics": {
+        "meanAbsolute": 0.909908130787037,
+        "percentile99": 7.0,
+        "fractionOver50": 0.00018373842592592593
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 261,
+      "scene": "brush_order",
+      "metrics": {
+        "meanAbsolute": 1.1674327256944443,
+        "percentile99": 11.0,
+        "fractionOver50": 0.0005211950231481481
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 521,
+      "scene": "brush_order",
+      "metrics": {
+        "meanAbsolute": 1.2371730324074075,
+        "percentile99": 12.0,
+        "fractionOver50": 0.0005768952546296297
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 522,
+      "scene": "slope_rule",
+      "metrics": {
+        "meanAbsolute": 0.8951587818287037,
+        "percentile99": 6.0,
+        "fractionOver50": 7.957175925925927e-05
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 820,
+      "scene": "slope_rule",
+      "metrics": {
+        "meanAbsolute": 1.0918428096064814,
+        "percentile99": 9.0,
+        "fractionOver50": 7.523148148148149e-05
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 1118,
+      "scene": "slope_rule",
+      "metrics": {
+        "meanAbsolute": 1.1459874131944445,
+        "percentile99": 11.0,
+        "fractionOver50": 6.872106481481482e-05
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 1119,
+      "scene": "half_identity",
+      "metrics": {
+        "meanAbsolute": 1.0555385561342592,
+        "percentile99": 8.0,
+        "fractionOver50": 0.00022786458333333334
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 1409,
+      "scene": "half_identity",
+      "metrics": {
+        "meanAbsolute": 1.1103660300925926,
+        "percentile99": 8.0,
+        "fractionOver50": 0.00021158854166666667
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 1699,
+      "scene": "half_identity",
+      "metrics": {
+        "meanAbsolute": 1.145244140625,
+        "percentile99": 9.0,
+        "fractionOver50": 0.00021375868055555555
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 1700,
+      "scene": "critical_line",
+      "metrics": {
+        "meanAbsolute": 0.9044759114583333,
+        "percentile99": 7.0,
+        "fractionOver50": 0.00010814525462962963
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 1993,
+      "scene": "critical_line",
+      "metrics": {
+        "meanAbsolute": 0.9805262586805555,
+        "percentile99": 8.0,
+        "fractionOver50": 0.00011103877314814815
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 2286,
+      "scene": "critical_line",
+      "metrics": {
+        "meanAbsolute": 1.0173336226851852,
+        "percentile99": 9.0,
+        "fractionOver50": 0.00010923032407407408
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 2287,
+      "scene": "shifted_zeta",
+      "metrics": {
+        "meanAbsolute": 1.0046766493055554,
+        "percentile99": 7.0,
+        "fractionOver50": 0.00022063078703703703
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 2583,
+      "scene": "shifted_zeta",
+      "metrics": {
+        "meanAbsolute": 1.0599808304398148,
+        "percentile99": 8.0,
+        "fractionOver50": 0.00022641782407407409
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 2878,
+      "scene": "shifted_zeta",
+      "metrics": {
+        "meanAbsolute": 1.0977097800925926,
+        "percentile99": 9.0,
+        "fractionOver50": 0.00022280092592592593
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 2879,
+      "scene": "unit_switch",
+      "metrics": {
+        "meanAbsolute": 0.888207103587963,
+        "percentile99": 6.0,
+        "fractionOver50": 0.0001345486111111111
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 3128,
+      "scene": "unit_switch",
+      "metrics": {
+        "meanAbsolute": 0.9537677228009259,
+        "percentile99": 7.0,
+        "fractionOver50": 0.00012008101851851852
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 3377,
+      "scene": "unit_switch",
+      "metrics": {
+        "meanAbsolute": 0.9847131799768518,
+        "percentile99": 9.0,
+        "fractionOver50": 0.00011863425925925926
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 3378,
+      "scene": "finite_reversal",
+      "metrics": {
+        "meanAbsolute": 1.0325766782407408,
+        "percentile99": 11.0,
+        "fractionOver50": 0.0001414207175925926
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 3663,
+      "scene": "finite_reversal",
+      "metrics": {
+        "meanAbsolute": 0.9527944155092593,
+        "percentile99": 8.0,
+        "fractionOver50": 8.246527777777778e-05
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 3947,
+      "scene": "finite_reversal",
+      "metrics": {
+        "meanAbsolute": 0.9950748697916667,
+        "percentile99": 9.0,
+        "fractionOver50": 8.029513888888889e-05
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 3948,
+      "scene": "infinite_subtraction",
+      "metrics": {
+        "meanAbsolute": 1.050597511574074,
+        "percentile99": 9.0,
+        "fractionOver50": 0.0002564380787037037
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 4199,
+      "scene": "infinite_subtraction",
+      "metrics": {
+        "meanAbsolute": 1.0937377025462962,
+        "percentile99": 10.0,
+        "fractionOver50": 0.0002492042824074074
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 4450,
+      "scene": "infinite_subtraction",
+      "metrics": {
+        "meanAbsolute": 1.1319755497685184,
+        "percentile99": 12.0,
+        "fractionOver50": 0.00024305555555555555
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 4451,
+      "scene": "coefficient_cancellation",
+      "metrics": {
+        "meanAbsolute": 0.9156825086805556,
+        "percentile99": 7.0,
+        "fractionOver50": 0.00013237847222222223
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 4771,
+      "scene": "coefficient_cancellation",
+      "metrics": {
+        "meanAbsolute": 1.036171875,
+        "percentile99": 9.0,
+        "fractionOver50": 0.00011682581018518518
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 5090,
+      "scene": "coefficient_cancellation",
+      "metrics": {
+        "meanAbsolute": 1.0929325810185184,
+        "percentile99": 11.0,
+        "fractionOver50": 0.00011429398148148148
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 5091,
+      "scene": "exact_color",
+      "metrics": {
+        "meanAbsolute": 0.9833984375,
+        "percentile99": 8.0,
+        "fractionOver50": 0.00021158854166666667
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 5365,
+      "scene": "exact_color",
+      "metrics": {
+        "meanAbsolute": 1.057517361111111,
+        "percentile99": 9.0,
+        "fractionOver50": 0.00017433449074074074
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 5638,
+      "scene": "exact_color",
+      "metrics": {
+        "meanAbsolute": 1.0982204861111111,
+        "percentile99": 11.0,
+        "fractionOver50": 0.00020073784722222221
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 5639,
+      "scene": "finite_result",
+      "metrics": {
+        "meanAbsolute": 1.0368872974537038,
+        "percentile99": 7.0,
+        "fractionOver50": 0.00011140046296296297
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 5952,
+      "scene": "finite_result",
+      "metrics": {
+        "meanAbsolute": 1.1996770109953703,
+        "percentile99": 10.0,
+        "fractionOver50": 8.752893518518518e-05
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 6264,
+      "scene": "finite_result",
+      "metrics": {
+        "meanAbsolute": 1.240701316550926,
+        "percentile99": 12.0,
+        "fractionOver50": 9.150752314814815e-05
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 6265,
+      "scene": "next_steps",
+      "metrics": {
+        "meanAbsolute": 1.1900792100694444,
+        "percentile99": 15.0,
+        "fractionOver50": 0.0007881221064814814
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 6531,
+      "scene": "next_steps",
+      "metrics": {
+        "meanAbsolute": 1.2713035300925926,
+        "percentile99": 16.0,
+        "fractionOver50": 0.0009534143518518519
+      }
+    },
+    {
+      "video": "chapter",
+      "frame": 6796,
+      "scene": "next_steps",
+      "metrics": {
+        "meanAbsolute": 1.3176327401620371,
+        "percentile99": 17.0,
+        "fractionOver50": 0.000978370949074074
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 0,
+      "scene": "preserved_prefix",
+      "metrics": {
+        "meanAbsolute": 0.0,
+        "percentile99": 0.0,
+        "fractionOver50": 0.0
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 321,
+      "scene": "preserved_prefix",
+      "metrics": {
+        "meanAbsolute": 0.006098733281893004,
+        "percentile99": 0.0,
+        "fractionOver50": 0.0
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 2880,
+      "scene": "preserved_prefix",
+      "metrics": {
+        "meanAbsolute": 0.0013348765432098766,
+        "percentile99": 0.0,
+        "fractionOver50": 0.0
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 6000,
+      "scene": "preserved_prefix",
+      "metrics": {
+        "meanAbsolute": 0.0038078703703703703,
+        "percentile99": 0.0,
+        "fractionOver50": 0.0
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 7391,
+      "scene": "preserved_prefix",
+      "metrics": {
+        "meanAbsolute": 0.02808368698559671,
+        "percentile99": 1.0,
+        "fractionOver50": 0.0
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 7392,
+      "scene": "brush_order",
+      "metrics": {
+        "meanAbsolute": 0.9168282214506173,
+        "percentile99": 7.0,
+        "fractionOver50": 8.11792695473251e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 7653,
+      "scene": "brush_order",
+      "metrics": {
+        "meanAbsolute": 1.1800834297839506,
+        "percentile99": 11.0,
+        "fractionOver50": 0.00018952546296296295
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 7913,
+      "scene": "brush_order",
+      "metrics": {
+        "meanAbsolute": 1.2440661972736626,
+        "percentile99": 12.0,
+        "fractionOver50": 0.00021910365226337448
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 7914,
+      "scene": "slope_rule",
+      "metrics": {
+        "meanAbsolute": 0.9102858153292182,
+        "percentile99": 7.0,
+        "fractionOver50": 5.208333333333334e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 8212,
+      "scene": "slope_rule",
+      "metrics": {
+        "meanAbsolute": 1.112846579218107,
+        "percentile99": 10.0,
+        "fractionOver50": 4.902906378600823e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 8510,
+      "scene": "slope_rule",
+      "metrics": {
+        "meanAbsolute": 1.1653861239711933,
+        "percentile99": 10.0,
+        "fractionOver50": 4.902906378600823e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 8511,
+      "scene": "half_identity",
+      "metrics": {
+        "meanAbsolute": 1.070811149691358,
+        "percentile99": 8.0,
+        "fractionOver50": 0.00010223765432098765
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 8801,
+      "scene": "half_identity",
+      "metrics": {
+        "meanAbsolute": 1.121694637345679,
+        "percentile99": 8.0,
+        "fractionOver50": 0.00010191615226337448
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 9091,
+      "scene": "half_identity",
+      "metrics": {
+        "meanAbsolute": 1.1506106931584361,
+        "percentile99": 9.0,
+        "fractionOver50": 0.00010255915637860083
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 9092,
+      "scene": "critical_line",
+      "metrics": {
+        "meanAbsolute": 0.923585390946502,
+        "percentile99": 7.0,
+        "fractionOver50": 6.655092592592593e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 9385,
+      "scene": "critical_line",
+      "metrics": {
+        "meanAbsolute": 0.9988593106995884,
+        "percentile99": 8.0,
+        "fractionOver50": 6.928369341563786e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 9678,
+      "scene": "critical_line",
+      "metrics": {
+        "meanAbsolute": 1.0250842335390946,
+        "percentile99": 9.0,
+        "fractionOver50": 7.008744855967078e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 9679,
+      "scene": "shifted_zeta",
+      "metrics": {
+        "meanAbsolute": 1.0369700038580247,
+        "percentile99": 8.0,
+        "fractionOver50": 0.0001469264403292181
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 9975,
+      "scene": "shifted_zeta",
+      "metrics": {
+        "meanAbsolute": 1.0924873006687243,
+        "percentile99": 8.0,
+        "fractionOver50": 0.00014033564814814814
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 10270,
+      "scene": "shifted_zeta",
+      "metrics": {
+        "meanAbsolute": 1.1200927533436214,
+        "percentile99": 9.0,
+        "fractionOver50": 0.00014387217078189302
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 10271,
+      "scene": "unit_switch",
+      "metrics": {
+        "meanAbsolute": 0.9160906957304527,
+        "percentile99": 7.0,
+        "fractionOver50": 5.9960133744855965e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 10520,
+      "scene": "unit_switch",
+      "metrics": {
+        "meanAbsolute": 0.9641628086419753,
+        "percentile99": 8.0,
+        "fractionOver50": 5.835262345679012e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 10769,
+      "scene": "unit_switch",
+      "metrics": {
+        "meanAbsolute": 0.9930561985596708,
+        "percentile99": 9.0,
+        "fractionOver50": 5.803112139917695e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 10770,
+      "scene": "finite_reversal",
+      "metrics": {
+        "meanAbsolute": 1.0655902777777777,
+        "percentile99": 11.0,
+        "fractionOver50": 8.487654320987654e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 11055,
+      "scene": "finite_reversal",
+      "metrics": {
+        "meanAbsolute": 0.9714081790123457,
+        "percentile99": 8.0,
+        "fractionOver50": 5.626286008230453e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 11339,
+      "scene": "finite_reversal",
+      "metrics": {
+        "meanAbsolute": 1.004569508744856,
+        "percentile99": 9.0,
+        "fractionOver50": 5.336934156378601e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 11340,
+      "scene": "infinite_subtraction",
+      "metrics": {
+        "meanAbsolute": 1.0946203060699589,
+        "percentile99": 11.0,
+        "fractionOver50": 0.00017136059670781894
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 11591,
+      "scene": "infinite_subtraction",
+      "metrics": {
+        "meanAbsolute": 1.1447593557098765,
+        "percentile99": 12.0,
+        "fractionOver50": 0.0001912937242798354
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 11842,
+      "scene": "infinite_subtraction",
+      "metrics": {
+        "meanAbsolute": 1.2230547518004116,
+        "percentile99": 13.0,
+        "fractionOver50": 0.0001726466049382716
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 11843,
+      "scene": "coefficient_cancellation",
+      "metrics": {
+        "meanAbsolute": 0.9218542631172839,
+        "percentile99": 7.0,
+        "fractionOver50": 7.60352366255144e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 12163,
+      "scene": "coefficient_cancellation",
+      "metrics": {
+        "meanAbsolute": 1.0387954925411522,
+        "percentile99": 9.0,
+        "fractionOver50": 6.622942386831276e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 12482,
+      "scene": "coefficient_cancellation",
+      "metrics": {
+        "meanAbsolute": 1.08240435313786,
+        "percentile99": 10.0,
+        "fractionOver50": 7.089120370370371e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 12483,
+      "scene": "exact_color",
+      "metrics": {
+        "meanAbsolute": 1.0055497685185186,
+        "percentile99": 9.0,
+        "fractionOver50": 7.908950617283951e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 12757,
+      "scene": "exact_color",
+      "metrics": {
+        "meanAbsolute": 1.0777641139403291,
+        "percentile99": 9.0,
+        "fractionOver50": 6.333590534979424e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 13030,
+      "scene": "exact_color",
+      "metrics": {
+        "meanAbsolute": 1.1065462641460906,
+        "percentile99": 10.0,
+        "fractionOver50": 8.11792695473251e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 13031,
+      "scene": "finite_result",
+      "metrics": {
+        "meanAbsolute": 1.0490195794753086,
+        "percentile99": 7.0,
+        "fractionOver50": 5.4655349794238684e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 13344,
+      "scene": "finite_result",
+      "metrics": {
+        "meanAbsolute": 1.2479120048868313,
+        "percentile99": 10.0,
+        "fractionOver50": 5.626286008230453e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 13656,
+      "scene": "finite_result",
+      "metrics": {
+        "meanAbsolute": 1.2890623392489713,
+        "percentile99": 11.0,
+        "fractionOver50": 5.5619855967078186e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 13657,
+      "scene": "next_steps",
+      "metrics": {
+        "meanAbsolute": 1.189380144032922,
+        "percentile99": 12.0,
+        "fractionOver50": 0.00035381301440329217
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 13923,
+      "scene": "next_steps",
+      "metrics": {
+        "meanAbsolute": 1.274856127829218,
+        "percentile99": 13.0,
+        "fractionOver50": 0.00035734953703703704
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 14188,
+      "scene": "next_steps",
+      "metrics": {
+        "meanAbsolute": 1.3199463091563786,
+        "percentile99": 14.0,
+        "fractionOver50": 0.0003649048353909465
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 14189,
+      "scene": "repository_card",
+      "metrics": {
+        "meanAbsolute": 1.5119069894547326,
+        "percentile99": 6.0,
+        "fractionOver50": 9.45216049382716e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 14333,
+      "scene": "repository_card",
+      "metrics": {
+        "meanAbsolute": 1.506800250771605,
+        "percentile99": 6.0,
+        "fractionOver50": 6.413966049382716e-05
+      }
+    },
+    {
+      "video": "presentation",
+      "frame": 14476,
+      "scene": "repository_card",
+      "metrics": {
+        "meanAbsolute": 1.5068682484567901,
+        "percentile99": 6.0,
+        "fractionOver50": 6.413966049382716e-05
+      }
+    }
+  ],
+  "voiceChecks": [
+    {
+      "scene": "brush_order",
+      "sourceSamples": 947375,
+      "voiceSeconds": 19.736979166666668,
+      "sourcePeak": 15614,
+      "leadSeconds": 0.65,
+      "tailSeconds": 1.3630208333333333,
+      "sourceRetainedExactlyInNarrationWav": true,
+      "expectedMonoToStereoGainPerChannel": 0.7071067811865475,
+      "chapterMatch": {
+        "correlation": 0.9997622997831573,
+        "rmsRatio": 0.997422993138883,
+        "rms": 0.04530034109391522,
+        "peak": 0.33648040890693665,
+        "fractionAtOrAboveFullScale": 0.0
+      },
+      "presentationMatch": {
+        "correlation": 0.9992579654275786,
+        "rmsRatio": 0.9947838498596633,
+        "rms": 0.045180478115452956,
+        "peak": 0.33518075942993164,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    },
+    {
+      "scene": "slope_rule",
+      "sourceSamples": 1096725,
+      "voiceSeconds": 22.8484375,
+      "sourcePeak": 15438,
+      "leadSeconds": 0.65,
+      "tailSeconds": 1.3765625,
+      "sourceRetainedExactlyInNarrationWav": true,
+      "expectedMonoToStereoGainPerChannel": 0.7071067811865475,
+      "chapterMatch": {
+        "correlation": 0.9997424327966502,
+        "rmsRatio": 0.9977900174612493,
+        "rms": 0.046725800030926856,
+        "peak": 0.33235636353492737,
+        "fractionAtOrAboveFullScale": 0.0
+      },
+      "presentationMatch": {
+        "correlation": 0.9994241436748328,
+        "rmsRatio": 0.995667755111358,
+        "rms": 0.04662641598775263,
+        "peak": 0.3312637507915497,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    },
+    {
+      "scene": "half_identity",
+      "sourceSamples": 1065518,
+      "voiceSeconds": 22.198291666666666,
+      "sourcePeak": 23377,
+      "leadSeconds": 0.65,
+      "tailSeconds": 1.3600416666666666,
+      "sourceRetainedExactlyInNarrationWav": true,
+      "expectedMonoToStereoGainPerChannel": 0.7071067811865475,
+      "chapterMatch": {
+        "correlation": 0.999692436236057,
+        "rmsRatio": 0.9968925897836394,
+        "rms": 0.053584333084994905,
+        "peak": 0.5031905770301819,
+        "fractionAtOrAboveFullScale": 0.0
+      },
+      "presentationMatch": {
+        "correlation": 0.9993291460776145,
+        "rmsRatio": 0.9941516177606117,
+        "rms": 0.05343700210935745,
+        "peak": 0.5023428201675415,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    },
+    {
+      "scene": "critical_line",
+      "sourceSamples": 1076663,
+      "voiceSeconds": 22.430479166666668,
+      "sourcePeak": 20520,
+      "leadSeconds": 0.65,
+      "tailSeconds": 1.3778541666666666,
+      "sourceRetainedExactlyInNarrationWav": true,
+      "expectedMonoToStereoGainPerChannel": 0.7071067811865475,
+      "chapterMatch": {
+        "correlation": 0.9997243029618644,
+        "rmsRatio": 0.9972379423498825,
+        "rms": 0.05051861314110554,
+        "peak": 0.4317004382610321,
+        "fractionAtOrAboveFullScale": 0.0
+      },
+      "presentationMatch": {
+        "correlation": 0.9993531392803171,
+        "rmsRatio": 0.995007406562712,
+        "rms": 0.05040561746600725,
+        "peak": 0.43127840757369995,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    },
+    {
+      "scene": "shifted_zeta",
+      "sourceSamples": 1087809,
+      "voiceSeconds": 22.6626875,
+      "sourcePeak": 15153,
+      "leadSeconds": 0.65,
+      "tailSeconds": 1.3539791666666667,
+      "sourceRetainedExactlyInNarrationWav": true,
+      "expectedMonoToStereoGainPerChannel": 0.7071067811865475,
+      "chapterMatch": {
+        "correlation": 0.9996465180060072,
+        "rmsRatio": 0.9976371902102901,
+        "rms": 0.04783711517447754,
+        "peak": 0.3235001862049103,
+        "fractionAtOrAboveFullScale": 0.0
+      },
+      "presentationMatch": {
+        "correlation": 0.9994302894392837,
+        "rmsRatio": 0.9954291301377367,
+        "rms": 0.04773123778233598,
+        "peak": 0.3211984634399414,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    },
+    {
+      "scene": "unit_switch",
+      "sourceSamples": 900563,
+      "voiceSeconds": 18.761729166666665,
+      "sourcePeak": 20242,
+      "leadSeconds": 0.65,
+      "tailSeconds": 1.3799375,
+      "sourceRetainedExactlyInNarrationWav": true,
+      "expectedMonoToStereoGainPerChannel": 0.7071067811865475,
+      "chapterMatch": {
+        "correlation": 0.9997553639217497,
+        "rmsRatio": 0.9975904581318198,
+        "rms": 0.04994391986140215,
+        "peak": 0.4357486069202423,
+        "fractionAtOrAboveFullScale": 0.0
+      },
+      "presentationMatch": {
+        "correlation": 0.9995092684956468,
+        "rmsRatio": 0.9949564917204335,
+        "rms": 0.04981205151172461,
+        "peak": 0.4351956248283386,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    },
+    {
+      "scene": "finite_reversal",
+      "sourceSamples": 1043227,
+      "voiceSeconds": 21.73389583333333,
+      "sourcePeak": 20213,
+      "leadSeconds": 0.65,
+      "tailSeconds": 1.3661041666666667,
+      "sourceRetainedExactlyInNarrationWav": true,
+      "expectedMonoToStereoGainPerChannel": 0.7071067811865475,
+      "chapterMatch": {
+        "correlation": 0.9997861503766842,
+        "rmsRatio": 0.997630149875765,
+        "rms": 0.05160559393400509,
+        "peak": 0.43405061960220337,
+        "fractionAtOrAboveFullScale": 0.0
+      },
+      "presentationMatch": {
+        "correlation": 0.9995920510937604,
+        "rmsRatio": 0.9954196489308239,
+        "rms": 0.05149124873887483,
+        "peak": 0.4316740036010742,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    },
+    {
+      "scene": "infinite_subtraction",
+      "sourceSamples": 909480,
+      "voiceSeconds": 18.9475,
+      "sourcePeak": 16032,
+      "leadSeconds": 0.65,
+      "tailSeconds": 1.3608333333333333,
+      "sourceRetainedExactlyInNarrationWav": true,
+      "expectedMonoToStereoGainPerChannel": 0.7071067811865475,
+      "chapterMatch": {
+        "correlation": 0.9995972120059875,
+        "rmsRatio": 0.9969339621938318,
+        "rms": 0.04972261678910025,
+        "peak": 0.344375342130661,
+        "fractionAtOrAboveFullScale": 0.0
+      },
+      "presentationMatch": {
+        "correlation": 0.9993767822194846,
+        "rmsRatio": 0.9943784370306837,
+        "rms": 0.049595158599088855,
+        "peak": 0.34367918968200684,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    },
+    {
+      "scene": "coefficient_cancellation",
+      "sourceSamples": 1183661,
+      "voiceSeconds": 24.659604166666668,
+      "sourcePeak": 18145,
+      "leadSeconds": 0.65,
+      "tailSeconds": 1.3570625,
+      "sourceRetainedExactlyInNarrationWav": true,
+      "expectedMonoToStereoGainPerChannel": 0.7071067811865475,
+      "chapterMatch": {
+        "correlation": 0.9997832063910577,
+        "rmsRatio": 0.9977209229243876,
+        "rms": 0.04593518284616593,
+        "peak": 0.3891594111919403,
+        "fractionAtOrAboveFullScale": 0.0
+      },
+      "presentationMatch": {
+        "correlation": 0.999505757029042,
+        "rmsRatio": 0.9954691115938995,
+        "rms": 0.04583150920073624,
+        "peak": 0.3843803405761719,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    },
+    {
+      "scene": "exact_color",
+      "sourceSamples": 998644,
+      "voiceSeconds": 20.805083333333332,
+      "sourcePeak": 16490,
+      "leadSeconds": 0.65,
+      "tailSeconds": 1.37825,
+      "sourceRetainedExactlyInNarrationWav": true,
+      "expectedMonoToStereoGainPerChannel": 0.7071067811865475,
+      "chapterMatch": {
+        "correlation": 0.9997471854929557,
+        "rmsRatio": 0.9972383023299353,
+        "rms": 0.04626345814804019,
+        "peak": 0.35399189591407776,
+        "fractionAtOrAboveFullScale": 0.0
+      },
+      "presentationMatch": {
+        "correlation": 0.9991386259687444,
+        "rmsRatio": 0.9946967921450315,
+        "rms": 0.04614555348092361,
+        "peak": 0.3537096679210663,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    },
+    {
+      "scene": "finite_result",
+      "sourceSamples": 1154682,
+      "voiceSeconds": 24.055875,
+      "sourcePeak": 19545,
+      "leadSeconds": 0.65,
+      "tailSeconds": 1.3774583333333332,
+      "sourceRetainedExactlyInNarrationWav": true,
+      "expectedMonoToStereoGainPerChannel": 0.7071067811865475,
+      "chapterMatch": {
+        "correlation": 0.9997761071207981,
+        "rmsRatio": 0.9979678245761749,
+        "rms": 0.04940914425084911,
+        "peak": 0.4205820858478546,
+        "fractionAtOrAboveFullScale": 0.0
+      },
+      "presentationMatch": {
+        "correlation": 0.9996011396419471,
+        "rmsRatio": 0.9959962738223397,
+        "rms": 0.04931153325258322,
+        "peak": 0.42028361558914185,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    },
+    {
+      "scene": "next_steps",
+      "sourceSamples": 967437,
+      "voiceSeconds": 20.1549375,
+      "sourcePeak": 16516,
+      "leadSeconds": 0.65,
+      "tailSeconds": 1.3617291666666667,
+      "sourceRetainedExactlyInNarrationWav": true,
+      "expectedMonoToStereoGainPerChannel": 0.7071067811865475,
+      "chapterMatch": {
+        "correlation": 0.9996974650291032,
+        "rmsRatio": 0.9971218714216296,
+        "rms": 0.04474019713981964,
+        "peak": 0.3505063056945801,
+        "fractionAtOrAboveFullScale": 0.0
+      },
+      "presentationMatch": {
+        "correlation": 0.9993697044777817,
+        "rmsRatio": 0.9938971160229135,
+        "rms": 0.044595504503541834,
+        "peak": 0.34542009234428406,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    }
+  ],
+  "historicalAudioChecks": [
+    {
+      "baseSeconds": 24,
+      "presentationSeconds": 24.0,
+      "metrics": {
+        "correlation": 0.9999130558693364,
+        "rmsRatio": 0.9988754708438685,
+        "rms": 0.05905223603252297,
+        "peak": 0.20986828207969666,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    },
+    {
+      "baseSeconds": 122,
+      "presentationSeconds": 122.0,
+      "metrics": {
+        "correlation": 0.9995226784000486,
+        "rmsRatio": 0.9968223160395222,
+        "rms": 0.07281631345298573,
+        "peak": 0.3460533618927002,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    },
+    {
+      "baseSeconds": 232,
+      "presentationSeconds": 232.0,
+      "metrics": {
+        "correlation": 0.9997594575592215,
+        "rmsRatio": 0.9987358813000573,
+        "rms": 0.06913481819378785,
+        "peak": 0.3392312228679657,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    },
+    {
+      "baseSeconds": 310,
+      "presentationSeconds": 593.2083333333333,
+      "metrics": {
+        "correlation": 0.9976544889739392,
+        "rmsRatio": 0.9965084046000969,
+        "rms": 0.05106455284217022,
+        "peak": 0.5132739543914795,
+        "fractionAtOrAboveFullScale": 0.0
+      }
+    }
+  ],
+  "preservedSource": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\presentation-with-finite-proof.mp4",
+    "sha256": "4dbd34ae6816c32301c017fd386202fa5e93c4e65cf5a8a225edceef3402e12e",
+    "byteIdentical": true
+  },
+  "decodedContactSheet": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\encoded-contact-sheet.png",
+    "sha256": "e2501e6fe7c44f0e97eba150baf9949ea39272b285cf1925063795a9ba6c9fba"
+  },
+  "inputs": [
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\captions.srt",
+      "sha256": "9361fd689714239cdbacf4b6c103ec80271c1ab89c0a35616bf7d835bef248d3"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\presentation-with-finite-proof.mp4",
+      "sha256": "4dbd34ae6816c32301c017fd386202fa5e93c4e65cf5a8a225edceef3402e12e"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assembly-manifest.json",
+      "sha256": "e8483450f1b27468636696aab6d69adb8c22699292459df890c5d66f3d11fc5a"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\captions.srt",
+      "sha256": "bb24ee5a06891b522c53590a341d65cfe19d1dbb10b71448568dc82d9de40660"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\chapter-manifest.json",
+      "sha256": "afd7b9ec087caeaf11d48d64a658341f60894bbda7d9355fd1fef3b3d59071eb"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\chapter.mp4",
+      "sha256": "728481b87298a81bfc7180f97743ce63d2726313f57b81f37c555899e0e7ecf4"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\presentation-with-lessons.mp4",
+      "sha256": "8d9887ea23fec8a85adc0e13fc6f0c91e455650de9d66bd456be403c5aa37bf3"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\voice-inputs.json",
+      "sha256": "41b592852f4efd06fbc16fb15d5392a4e0cf036dc627db80920d111252ffb033"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\riemann-lessons\\assemble.py",
+      "sha256": "92e5e3861766bc3295b2177d03963ae00c83826dc8d650034ec22c123f560fd2"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\riemann-lessons\\evidence\\explanation-review.json",
+      "sha256": "3317df1191e2c5c2d08a0ddcef6b1ad275b89c1e163a929172206496b080597b"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\riemann-lessons\\render_chapter.py",
+      "sha256": "4515415cc2a02d7ad1da48fdfba000f904b18190c4d5cd0807dd72db9d54ecc3"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\riemann-lessons\\script.json",
+      "sha256": "1ec6d94a22b2653f777f5ff5fdb7a56de24567d0085a52bf692bdefde2dc26e4"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\riemann-lessons\\verify_media.py",
+      "sha256": "77d30f45a13e8fc4e666940a3e380fdbd0d8d6d5469c07f47b745ad0465a3ed8"
+    }
+  ],
+  "limits": [
+    "This verifies technical media integrity and consistency with the reviewed renderer; independent visual editorial inspection is recorded separately.",
+    "Narration clips match the supplied script in the provider manifest. Waveform tests do not establish pronunciation or speech-recognition accuracy.",
+    "Sentence caption timings are apportioned by word count, not forced-aligned; clip and scene boundaries are verified.",
+    "The chapter is rendered at 1280x720 and intentionally upscaled within the 1920x1080 combined export.",
+    "No new mathematical validation is inferred from video decoding, pixels, audio or subtitles."
+  ]
+}

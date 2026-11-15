@@ -305,3 +305,17 @@
 - lane.separator.src: _
 - evidence.docs.tree_cmd: recur tree "**" -d docs/ --sep .
 - evidence.src.tree_cmd: recur tree "**" -d src/ --sep _
+
+### lessons-video-accepted-20261115
+- date: unix:1794786627
+- lane.state.docs.current: none
+- lane.state.src.current: none
+- lane.state.tests.passed: none
+- lane.state.tests.failed: none
+- lane.git.branch: graph/riemann-continuation
+- lane.git.head: a6f42d0 Explain tested prime and zeta ideas in a reviewed video chapter
+- lane.git.worktree: dirty=16
+- lane.separator.docs: .
+- lane.separator.src: _
+- evidence.docs.tree_cmd: recur tree "**" -d docs/ --sep .
+- evidence.src.tree_cmd: recur tree "**" -d src/ --sep _

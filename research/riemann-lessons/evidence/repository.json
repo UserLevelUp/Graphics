@@ -1,0 +1,16 @@
+{
+  "traceId": "graph.riemann.lessons.repository",
+  "observedAtUtc": "2026-11-15T23:46:15.973350+00:00",
+  "branch": "graph/riemann-continuation",
+  "head": "a6f42d040b640c76e4d8fd50cc8179fc56e3739a",
+  "remoteLines": [
+    "origin\thttps://github.com/UserLevelUp/Graphics.git (fetch)",
+    "origin\thttps://github.com/UserLevelUp/Graphics.git (push)"
+  ],
+  "worktreeAtExport": "?? research/riemann-lessons/evidence/voice-jobs.json",
+  "commands": [
+    "git branch --show-current",
+    "git rev-parse HEAD",
+    "git remote -v"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "blocked": [],
+  "bubble_uuid": "01a1e194-4236-7ace-9848-df61c3f397fa",
+  "completed_slices": [
+    "explanation",
+    "video"
+  ],
+  "conflicts": [],
+  "contract_status": "declared-gates-satisfied",
+  "counts": {
+    "blocked": 0,
+    "conflicting": 0,
+    "covered": 2,
+    "pending": 0,
+    "required": 2,
+    "stale_contract": 0
+  },
+  "covered": [
+    "explanation",
+    "video"
+  ],
+  "current_slice": null,
+  "evidence_status": "declared",
+  "gate_evidence": [
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/explanation-review.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "explanation",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/acceptance.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "video",
+      "status": "declared"
+    }
+  ],
+  "goal": "Explain tested prime and zeta shortcuts and verified results in a narrated addition to the full presentation",
+  "layers": [
+    "explanation@lessons-explanation-reviewed-20261115",
+    "video@lessons-video-reviewed-20261115"
+  ],
+  "manifest": "graph.riemann.lessons.warp-map.json",
+  "pending": [],
+  "ready_slices": [],
+  "root": "\\\\?\\C:\\src\\graph\\research\\riemann-lessons\\warps",
+  "schema": "warp-progress-v1",
+  "slices": [
+    {
+      "contract_hash": "contract:graph.riemann.lessons.explanation:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "explanation",
+      "slice_uuid": "01a1e194-4236-72ad-a35a-86f054947894",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.lessons.video:v1",
+      "depends_on": [
+        "explanation"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "video",
+      "slice_uuid": "01a1e194-4236-76af-b0fe-ea141a053057",
+      "state": "complete"
+    }
+  ],
+  "stale_contract": [],
+  "state": "complete",
+  "warnings": [],
+  "warp_id": "graph.riemann.lessons"
+}

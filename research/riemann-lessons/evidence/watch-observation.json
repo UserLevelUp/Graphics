@@ -1,0 +1,9 @@
+{
+  "traceId": "graph.riemann.lessons.watch",
+  "pid": 8048,
+  "verifiedExecutable": "C:\\Users\\marcn\\.cargo\\bin\\recur-watch.exe",
+  "verifiedCommandLine": "\"C:\\Users\\marcn\\.cargo\\bin\\recur-watch.exe\" --id graph.riemann.lessons.media --filter graph.riemann.lessons.** -d C:/src/graph/research/riemann-lessons --poll-framing 3 --json",
+  "observation": "Owned bounded filesystem subscription; internal agents performed delegation separately.",
+  "stoppedAtUtc": "2026-11-15T23:50:27.8501833Z",
+  "runningAfterStop": false
+}

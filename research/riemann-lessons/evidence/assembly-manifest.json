@@ -1,0 +1,66 @@
+{
+  "traceId": "graph.riemann.lessons.assembly",
+  "createdAtUtc": "2026-11-15T23:46:41.728437+00:00",
+  "video": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\presentation-with-lessons.mp4",
+    "sha256": "8d9887ea23fec8a85adc0e13fc6f0c91e455650de9d66bd456be403c5aa37bf3",
+    "bytes": 26150833,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "frames": 14477,
+    "durationSeconds": 603.2083333333333
+  },
+  "chapter": {
+    "insertAtSeconds": 308,
+    "durationSeconds": 283.2083333333333,
+    "frames": 6797
+  },
+  "repositoryCard": {
+    "startSeconds": 591.2083333333333,
+    "durationSeconds": 12,
+    "sourceCheckpoint": "a6f42d040b640c76e4d8fd50cc8179fc56e3739a",
+    "imageSha256": "1240bcaca40f5b830986e4499d85e931c40beaa6f97963030e3018888721385c"
+  },
+  "captions": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\presentation-captions.srt",
+    "sha256": "9d5c1ce4120bbed5e8b27affeb9996af59f33714286a1b3acd080f50f62cf3f4",
+    "cues": 67,
+    "embedded": true
+  },
+  "preservedSource": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\presentation-with-finite-proof.mp4",
+    "sha256": "4dbd34ae6816c32301c017fd386202fa5e93c4e65cf5a8a225edceef3402e12e"
+  },
+  "inputs": [
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\presentation-with-finite-proof.mp4",
+      "sha256": "4dbd34ae6816c32301c017fd386202fa5e93c4e65cf5a8a225edceef3402e12e"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\chapter.mp4",
+      "sha256": "728481b87298a81bfc7180f97743ce63d2726313f57b81f37c555899e0e7ecf4"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\captions.srt",
+      "sha256": "bb24ee5a06891b522c53590a341d65cfe19d1dbb10b71448568dc82d9de40660"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\captions.srt",
+      "sha256": "9361fd689714239cdbacf4b6c103ec80271c1ab89c0a35616bf7d835bef248d3"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\riemann-lessons\\assemble.py",
+      "sha256": "92e5e3861766bc3295b2177d03963ae00c83826dc8d650034ec22c123f560fd2"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\riemann-lessons\\script.json",
+      "sha256": "1ec6d94a22b2653f777f5ff5fdb7a56de24567d0085a52bf692bdefde2dc26e4"
+    }
+  ],
+  "limits": [
+    "The existing 308-second body is re-encoded, not byte-copied, in this separate export.",
+    "The old export remains byte-identical. The new repository card replaces its final 12 seconds.",
+    "The displayed checkpoint identifies the source state before media export, not a self-referential final media commit."
+  ]
+}

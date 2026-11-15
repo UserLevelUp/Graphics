@@ -1,0 +1,221 @@
+{
+  "status": "produced",
+  "clips": [
+    {
+      "id": "brush_order",
+      "voice": "Serene",
+      "taskId": "f86e5079-94db-4dc8-861a-3e1faf348529",
+      "narration": "This idea starts with a four-color quadrant brush at each point. Its trail changes with direction, overlap, rotation, and resolution. That makes the geometry visible. But a surviving pixel color is not, by itself, an arithmetic certificate of primality.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\brush_order.mp3",
+        "sha256": "47a6ff34001c794d1df95c1791fc65073c32817c0ed17e02c162406cb4138cbe"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\brush_order.wav",
+        "sha256": "a3612eb0d185e074f5a906853c1a928b43076741e1cee3b1e4e556f727debd73"
+      },
+      "durationSeconds": 19.736979166666668,
+      "sceneSeconds": 21.75,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "slope_rule",
+      "voice": "Serene",
+      "taskId": "96f589d2-51cf-4346-b8c6-2772346b48fb",
+      "narration": "Z three means the third zeta zero, not twenty-three or a prime label. For the first hundred zero indices, negative starting slopes occurred at fourteen prime indices and thirty-five composite indices. Eleven prime indices sloped upward. Both signs mix the classes, so this proposed rule fails.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\slope_rule.mp3",
+        "sha256": "e33e5c131208634df6388eccf404f280ae4f8cc87166250cffe13bee4c3c2ae6"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\slope_rule.wav",
+        "sha256": "52d7b1eb8dc237b719a5e1e31999c8e9a9ad02608fc25cae232874320a90a104"
+      },
+      "durationSeconds": 22.8484375,
+      "sceneSeconds": 24.875,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "half_identity",
+      "voice": "Serene",
+      "taskId": "52a132f6-fb6d-4467-b6a7-69f35344001b",
+      "narration": "The proposed denominator, g of n, simplifies exactly to n. Substituting it into zeta's series leaves the same function where that series converges. The half inside g does not set s to one half. And ninety-seven and composite ninety-nine both have a fractional half when divided by two.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\half_identity.mp3",
+        "sha256": "f06bda8744ec51775af90b0f9bcb3d72d8987e7e4e0a1369cd00895bb44d5d04"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\half_identity.wav",
+        "sha256": "1afb46ad7babadd0858687b5a370fd3656ef27bd3f4cc976fae300da53d129ce"
+      },
+      "durationSeconds": 22.198291666666666,
+      "sceneSeconds": 24.208333333333332,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "critical_line",
+      "voice": "Serene",
+      "taskId": "55e3bd50-3066-4a8f-a6b4-2e7eaac4131b",
+      "narration": "Zeta at one half exists and is about minus one point four six. The critical line instead uses one half plus i t. Particular heights give zeros. Putting ninety-seven into t gives a nonzero complex value. Fixing the real part does not identify an integer as prime.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\critical_line.mp3",
+        "sha256": "5f16aebbad25e037a3a5d449ba60c22faece23e1207b498ff30e880c73b81988"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\critical_line.wav",
+        "sha256": "393615b8eb3a5e1595b7426ff9fe0b8cdb1b8a65d0651b01110e3378355c5f57"
+      },
+      "durationSeconds": 22.430479166666668,
+      "sceneSeconds": 24.458333333333332,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "shifted_zeta",
+      "voice": "Serene",
+      "taskId": "030f2b5e-6d05-404e-96e0-f2227ca30e63",
+      "narration": "With integer n used as height, ninety-seven and composite ninety-nine both occupy quadrant one. Comparing zeta at s, s plus one, and s minus one still fails. Matching ninety-seven's three colors keeps six primes and eighteen composites, while missing nineteen primes between two and one hundred.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\shifted_zeta.mp3",
+        "sha256": "6cad0cd75e7908abdbe10a24a0a968eb86214746ba69cd6d1ac5d7cdb2d77dd5"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\shifted_zeta.wav",
+        "sha256": "a0761ab8a9713b1527db052aaadce6cd158b63f2766e13635ae6385b820c3f60"
+      },
+      "durationSeconds": 22.6626875,
+      "sceneSeconds": 24.666666666666668,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "unit_switch",
+      "voice": "Serene",
+      "taskId": "f7551576-cbed-427d-b0ce-46def697ef45",
+      "narration": "Removing the unit term gives zeta minus one. Its zeros are where zeta equals one. Multiplying the two functions combines both zero sets. Every hypothetical off-line zeta zero survives, so the switch does not prove the hypothesis.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\unit_switch.mp3",
+        "sha256": "970bcdaa7470d7df912061620e0b14d1e49b1c0eadb30d768b6aa83f1b649e35"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\unit_switch.wav",
+        "sha256": "5eb6046265b7c680b5f2b640c469ba4349737915f49e2df78772a31aa0d0461d"
+      },
+      "durationSeconds": 18.761729166666665,
+      "sceneSeconds": 20.791666666666668,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "finite_reversal",
+      "voice": "Serene",
+      "taskId": "6a447ded-6924-438c-ae53-5f2d647b76da",
+      "narration": "Reordering the same finite sum leaves its value unchanged. For the tested coefficient reversal, subtracting the reverse makes opposite positions have opposite signs. A nonzero, nonnegative composite indicator cannot have that symmetry. Other definitions of a backward recurrence would need a separate derivation.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\finite_reversal.mp3",
+        "sha256": "95a20d40b09804cac56ff810f3b02bb945c4b90eaf4442e87363ea0d8fc5c272"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\finite_reversal.wav",
+        "sha256": "f0ec6441a8139e64fb9aa75d5df56b45017dd49f560fdd03ac19cff3e5323a40"
+      },
+      "durationSeconds": 21.73389583333333,
+      "sceneSeconds": 23.75,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "infinite_subtraction",
+      "voice": "Serene",
+      "taskId": "25dbf235-93fd-49c2-b81a-3b02e5f313dc",
+      "narration": "Finite subtraction leaves nonprimes but requires knowing the prime terms to remove. At s equals minus one, the ordinary integer series diverges. Zeta's continued value, minus one twelfth, is not an ordinary sum for subtracting infinitely many primes.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\infinite_subtraction.mp3",
+        "sha256": "6646f8d0f52f536e41e2fef1fa7477bfa8def5100fc7ec6bffbfdb616723aa97"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\infinite_subtraction.wav",
+        "sha256": "b4e3110e6b16718e1fcb60d9a343a2c531e4a38ad9ff022c622f7d9673d4b04b"
+      },
+      "durationSeconds": 18.9475,
+      "sceneSeconds": 20.958333333333332,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "coefficient_cancellation",
+      "voice": "Serene",
+      "taskId": "ce060ce4-b28c-40bc-8cff-81ea749a023a",
+      "narration": "For real s greater than one, define A as the odd-number part of zeta. Then A minus one minus log A cancels every odd-prime coefficient and leaves weighted odd composites. The coefficient at ninety-seven is zero; at ninety-nine it is one. Evaluating H at ninety-seven does not extract that coefficient.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\coefficient_cancellation.mp3",
+        "sha256": "c737a6dbd64e11cae4545862c12c75ec9c119b8e2dfd837004cdc34ff7a80f3d"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\coefficient_cancellation.wav",
+        "sha256": "ecfc0a85ee218f12c7244511453f678b5d727aa8fbe30c636998efec638f84b6"
+      },
+      "durationSeconds": 24.659604166666668,
+      "sceneSeconds": 26.666666666666668,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "exact_color",
+      "voice": "Serene",
+      "taskId": "b6f19c66-8759-4ab8-b538-cc29a5ccd251",
+      "narration": "Wilson's theorem tests a candidate without a list of previous primes. Our encoding places primes in quadrant one. The modular factorial supplies the answer; color displays it. This is not instantaneous. The separate four-divisor color test works only within its stated range.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\exact_color.mp3",
+        "sha256": "705994ebaa92d9715ef7455abd337abded02b137aeaf942adf2082443fcf09a4"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\exact_color.wav",
+        "sha256": "b66772ad450cbc33ecb4ece2be0a63a918845c3520399d13e555899e9a071847"
+      },
+      "durationSeconds": 20.805083333333332,
+      "sceneSeconds": 22.833333333333332,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "finite_result",
+      "voice": "Serene",
+      "taskId": "746344cc-5240-4d02-8880-30c6751df16f",
+      "narration": "Removing trivial factor pairs leaves an exact composite remainder. For odd integers greater than one, D counts nontrivial pairs: zero for ninety-seven, two for ninety-nine. The proof covers that entire domain. The implementation was independently checked through one hundred thousand. It still performs divisor counting.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\finite_result.mp3",
+        "sha256": "dfbb1e95a884c6b58d2f8b79a5ab9315411cbf46220351ee8b0234ebfc61ec1b"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\finite_result.wav",
+        "sha256": "adfc063e7858926c28850c170ff176ebecfe0695647837a7119232c82e555991"
+      },
+      "durationSeconds": 24.055875,
+      "sceneSeconds": 26.083333333333332,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "next_steps",
+      "voice": "Serene",
+      "taskId": "e20328bc-d0ad-4b91-8e98-b12ff652e0f3",
+      "narration": "The contribution is reproducible tests and counterexamples. Phase plots can guide searches; rigorous bounds must certify the zero count. Prime extraction also needs error bounds and cost comparisons. These experiments establish no new prime algorithm or Riemann Hypothesis advance.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\next_steps.mp3",
+        "sha256": "c810939b559c73b5a7e11573858d324ebf2ce564ed39fbb5c02e004dca87dd8c"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\assets\\voice\\next_steps.wav",
+        "sha256": "0c47afd14608a830e2d76cf152d6934b11b65d3b3f132b2bd17f49f3ddba96ba"
+      },
+      "durationSeconds": 20.1549375,
+      "sceneSeconds": 22.166666666666668,
+      "leadSeconds": 0.65,
+      "truncated": false
+    }
+  ]
+}
