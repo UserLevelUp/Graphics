@@ -1,0 +1,101 @@
+{
+  "traceId": "graph.primes.function.native.validation",
+  "status": "passed",
+  "createdUtc": "2026-11-15T14:27:15.305123+00:00",
+  "sourceAndBinaryInputs": [
+    {
+      "path": "Graphics/Program.cs",
+      "sha256": "ab4ad222138b0326e2936077adec01d800de57fe3fbbda918e6ad39e8ed16819"
+    },
+    {
+      "path": "Graphics/PrimalityFunctionExperiment.cs",
+      "sha256": "13b8b8aec7b31e03bb580c548fa191576ae3a9e07a685ebd7058d06050996d91"
+    },
+    {
+      "path": "Graphics/bin/Release/net5.0-windows/Graphics.exe",
+      "sha256": "43541269f672a1aed2f369bc3e377ab9334f0465b7dab93f16693140b0643095"
+    },
+    {
+      "path": "Graphics/bin/Release/net5.0-windows/Graphics.dll",
+      "sha256": "7475572cbeb7a5e44720c70aa2c731ee56063d4dd10be2afed40bfcffa394614"
+    },
+    {
+      "path": "research/prime-function/prime_function.py",
+      "sha256": "e6bcef4571144243eebbfed9a7a3b457b1b205a97b7fa4ad082136764365f448"
+    },
+    {
+      "path": "research/prime-function/verify_native.py",
+      "sha256": "6e0cadb0925e40736e4a60281f959755ceb11ffd0105dd77b3bf7ee724059e21"
+    },
+    {
+      "path": "research/prime-function/evidence/build.log",
+      "sha256": "cd20c140676f8c3d19c6460378fcb9a632bd32ff70ddab46b186e9ca4f5955af"
+    }
+  ],
+  "exports": [
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\prime-function\\primality-function.json",
+      "sha256": "f3990645c54e5642e2622c0102cc7d0d95acca1405d394b57ecb1cbf54cdbffd",
+      "selected": 97,
+      "recordsChecked": 116,
+      "status": "passed"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\prime-function-native\\candidate-0.json",
+      "sha256": "b91728c373fe9ea34ba848fb5c67cdd96e1c13791ead461ea09577f5cbd08ed2",
+      "selected": 0,
+      "recordsChecked": 116,
+      "status": "passed"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\prime-function-native\\candidate-4.json",
+      "sha256": "aa64359e48dff9fa47ce66557cf0ae3f8ad2927bd0d75928a6fe55a4a67dad75",
+      "selected": 4,
+      "recordsChecked": 116,
+      "status": "passed"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\prime-function-native\\candidate-96.json",
+      "sha256": "84ed6be85f9432c2cf125e9243d07b2c57fa3382a946639dba93c7615ff7103a",
+      "selected": 96,
+      "recordsChecked": 116,
+      "status": "passed"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\prime-function-native\\candidate-100001.json",
+      "sha256": "cdd4864505b80b1f5b56f96253bd5961ec88049bb55f218b0ef7c5a3ab4ea062",
+      "selected": 100001,
+      "recordsChecked": 116,
+      "status": "passed"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\prime-function-native\\candidate-2147483647.json",
+      "sha256": "ed271306b59a80edfe5b0a3bf91138734980bb7888f4228b3aee8ed33a45b437",
+      "selected": 2147483647,
+      "recordsChecked": 116,
+      "status": "passed"
+    }
+  ],
+  "render": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\prime-function\\primality-function.png",
+    "sha256": "7052026778006511d4184c1277914eed66465cce2f1bc6f233247f1e7d33e032",
+    "size": [
+      1920,
+      1080
+    ],
+    "exactTileColorsChecked": 101
+  },
+  "runtime": {
+    "rollForward": "Major",
+    "reason": "Project targets net5.0-windows; installed compatible runtime selected using the existing project convention."
+  },
+  "recovery": [
+    "Initial Release build was blocked by the old Graphics process14784; its exact repository executable path was verified before termination under prior authorization.",
+    "Initial apphost launch without runtime roll-forward produced no export; task-owned process31328 was stopped. The final export and five controls passed with DOTNET_ROLL_FORWARD=Major."
+  ],
+  "limits": [
+    "Native trial checks every integer divisor; Python skips even divisors after2, so trial operation counts intentionally differ.",
+    "Tile fills are checked by indexed pixel samples; glyphs/layout need separate visual inspection.",
+    "Exact mathematical claims derive from the theorem, not pixels or finite tests."
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "schema": "graph-primality-function-review-v1",
+  "traceId": "graph.primes.function.review",
+  "status": "passed",
+  "reviewer": "primality_function_review independent agent",
+  "reviewedAtUtc": "2026-11-15T14:29:51.458113+00:00",
+  "scope": "Independent mathematical/source review, separate integer/factorial checks, inspection of recorded build and native evidence, and one native PNG. No local Lean replay or formal implementation verification.",
+  "inputs": [
+    {
+      "path": "research/prime-function/proof.md",
+      "sha256": "67cee9899e2409466b4b2e5d00e7eacf5182f920b735c748193c123415de5b7e"
+    },
+    {
+      "path": "research/prime-function/README.md",
+      "sha256": "479f21d25f97cde435ff0144faac857061ace9ea903c9d5721082c5f3ce9e5c1"
+    },
+    {
+      "path": "research/prime-function/prime_function.py",
+      "sha256": "e6bcef4571144243eebbfed9a7a3b457b1b205a97b7fa4ad082136764365f448"
+    },
+    {
+      "path": "research/prime-function/verify_function.py",
+      "sha256": "db1c6e0391477f6da344c2cb7ae61e857cd1ae261cd966381de15990e157410f"
+    },
+    {
+      "path": "research/prime-function/verify_native.py",
+      "sha256": "6e0cadb0925e40736e4a60281f959755ceb11ffd0105dd77b3bf7ee724059e21"
+    },
+    {
+      "path": "research/prime-function/evidence/validation.json",
+      "sha256": "8e3ff90b51d01418700e081cafbb7b7f69d6a2eeb4ce1ccc337eebdb6c0c3dc4"
+    },
+    {
+      "path": "research/prime-function/evidence/native-validation.json",
+      "sha256": "6d6b35b61b83814a6a9fa4d2a061d793d8165032305a6a1c06804c2b237e5e6c"
+    },
+    {
+      "path": "research/prime-function/evidence/build.log",
+      "sha256": "cd20c140676f8c3d19c6460378fcb9a632bd32ff70ddab46b186e9ca4f5955af"
+    },
+    {
+      "path": "Graphics/PrimalityFunctionExperiment.cs",
+      "sha256": "13b8b8aec7b31e03bb580c548fa191576ae3a9e07a685ebd7058d06050996d91"
+    },
+    {
+      "path": "Graphics/Program.cs",
+      "sha256": "ab4ad222138b0326e2936077adec01d800de57fe3fbbda918e6ad39e8ed16819"
+    },
+    {
+      "path": "Graphics/Graphics.csproj",
+      "sha256": "aa2445d44b4785ecec5bbeb5cf17ba6fd78219f7abaf9723839d9f1af633d8a8"
+    },
+    {
+      "path": "Graphics/bin/Release/net5.0-windows/Graphics.exe",
+      "sha256": "43541269f672a1aed2f369bc3e377ab9334f0465b7dab93f16693140b0643095"
+    },
+    {
+      "path": "Graphics/bin/Release/net5.0-windows/Graphics.dll",
+      "sha256": "7475572cbeb7a5e44720c70aa2c731ee56063d4dd10be2afed40bfcffa394614"
+    },
+    {
+      "path": "Graphics/bin/Release/net5.0-windows/Graphics.runtimeconfig.json",
+      "sha256": "4c0cb85109ab4197bae60ba53d9a703f79b151540dbd5b1eec71aabc141fe4ca"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/prime-function/primality-function.png",
+      "sha256": "7052026778006511d4184c1277914eed66465cce2f1bc6f233247f1e7d33e032"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/prime-function/primality-function.json",
+      "sha256": "f3990645c54e5642e2622c0102cc7d0d95acca1405d394b57ecb1cbf54cdbffd"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/prime-function/primality-function.txt",
+      "sha256": "e2a9927710d07e31d74b71aa42ebe59f04a4e86170fca021e9d155a527273ef4"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/work/prime-function-native/candidate-0.json",
+      "sha256": "b91728c373fe9ea34ba848fb5c67cdd96e1c13791ead461ea09577f5cbd08ed2"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/work/prime-function-native/candidate-4.json",
+      "sha256": "aa64359e48dff9fa47ce66557cf0ae3f8ad2927bd0d75928a6fe55a4a67dad75"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/work/prime-function-native/candidate-96.json",
+      "sha256": "84ed6be85f9432c2cf125e9243d07b2c57fa3382a946639dba93c7615ff7103a"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/work/prime-function-native/candidate-100001.json",
+      "sha256": "cdd4864505b80b1f5b56f96253bd5961ec88049bb55f218b0ef7c5a3ab4ea062"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/work/prime-function-native/candidate-2147483647.json",
+      "sha256": "ed271306b59a80edfe5b0a3bf91138734980bb7888f4228b3aee8ed33a45b437"
+    }
+  ],
+  "checks": [
+    {
+      "id": "wilson_equivalence",
+      "status": "passed",
+      "detail": "Inspected the prime inverse-pair proof and composite-prime-divisor converse. For n >= 2, the least nonnegative residue is zero exactly at prime inputs; integer division returns the correct indicator."
+    },
+    {
+      "id": "boundary_and_composite_classes",
+      "status": "passed",
+      "detail": "0 and 1 are separately classified as neither. The proof that every composite n > 4 has residue 1 is valid; n = 4 has residue 3. Prime-square endpoints are included."
+    },
+    {
+      "id": "no_prior_prime_input",
+      "status": "passed",
+      "detail": "Inspected both candidate functions in Python and C#. Neither receives a sieve, earlier labels or a prime list. Sieve data appear only inside verification routines."
+    },
+    {
+      "id": "exact_arithmetic",
+      "status": "passed",
+      "detail": "Python uses integer modulo/division; native Wilson uses long intermediate products within its 100000 cap. Native trial uses divisor <= n/divisor, avoiding square overflow. Zero-product early exit preserves the final factorial residue."
+    },
+    {
+      "id": "python_independent_divisors_factorials",
+      "status": "passed",
+      "detail": "Independently evaluated all 2001 integers 0..2000 using every proper divisor and direct math.factorial(n-1), and matched trial, Wilson and both f() dispatches. Counts: 303 primes, 1696 composites, 2 neither."
+    },
+    {
+      "id": "python_api_boundaries",
+      "status": "passed",
+      "detail": "Independently rejected 13 invalid calls covering negatives, bools, float, string, None and an unknown evaluation method. Worked 96/97 operation counts and phases match exact arithmetic."
+    },
+    {
+      "id": "recorded_extended_validation",
+      "status": "passed",
+      "detail": "Verified hashes and inspected the recorded Python sieve check through 100000, full-factorial/Wilson check through 2000, special controls and bounded five-run timing. These recorded broader checks were not independently rerun by this reviewer."
+    },
+    {
+      "id": "native_source_and_cli",
+      "status": "passed",
+      "detail": "Inspected the new command branch, candidate parsing, trial/Wilson methods, native built-in verification and export schema. Candidate 96 is accepted directly rather than through the prefiltered prime dropdown."
+    },
+    {
+      "id": "native_independent_json",
+      "status": "passed",
+      "detail": "Independently checked 696 emitted records across six exports using integer factors, full factorial residues where available, domain limits and phases. Controls select 0, 4, 96, 97, 100001, 2147483647; the two above-cap candidates retain exact trial results with unavailable Wilson fields."
+    },
+    {
+      "id": "native_runtime_and_build",
+      "status": "passed",
+      "detail": "Read the successful Release build log and bound the executable, DLL, project and runtime configuration. Final native reports record DOTNET_ROLL_FORWARD=Major. Earlier lock/launch recovery is producer-recorded and was not replayed during review."
+    },
+    {
+      "id": "native_pixel_grid",
+      "status": "passed",
+      "detail": "Independently sampled all 101 indexed tile interiors in the 1920x1080 PNG: 25 violet primes, 74 composite fills and 2 neither. This is an indexed fill check, not OCR."
+    },
+    {
+      "id": "native_visual_inspection",
+      "status": "passed",
+      "detail": "Viewed the main selected 97 PNG at full resolution. Formula, 96/97 results, n = 4 exception,all 0..100 labels, legend and scope footers are legible without material clipping. The true 3.75-degree and 0-degree phasors are intentionally close. Control images were not visually reviewed."
+    },
+    {
+      "id": "phase_scope",
+      "status": "passed",
+      "detail": "Phase is computed only for illustration after exact residue classification. The proof explains same-quadrant aliasing and why tolerance or pixel resolution must not decide primality."
+    },
+    {
+      "id": "complex_extension_scope",
+      "status": "passed",
+      "detail": "Verified Gamma factorial/holomorphy sources and the argument for H(n)=0 iff prime on integers n >= 2. H(1)=0 and intermediate-value zeros in (4, 5) are correctly identified; the extension is not the implemented decision rule or an RH claim."
+    },
+    {
+      "id": "performance_and_nth_prime_scope",
+      "status": "passed",
+      "detail": "Operation-count and bit-length caveats are accurate. Trial and Wilson are established methods; timings are explicitly bounded observations. Counting inversion still requires work and no direct fast nth-prime algorithm or speed breakthrough is claimed."
+    },
+    {
+      "id": "readme_reproduction_and_evidence",
+      "status": "passed",
+      "detail": "README accurately distinguishes native Int32/Wilson-cap scope from Python arbitrary-precision integer inputs, documents runtime roll-forward and separates standard-library arithmetic checks from native rendering QA. All bound report inputs and current review inputs exist and match hashes."
+    }
+  ],
+  "independentPython": {
+    "range": [
+      0,
+      2000
+    ],
+    "integers": 2001,
+    "primeCount": 303,
+    "compositeCount": 1696,
+    "neitherCount": 2,
+    "oracle": "Every proper divisor and direct math.factorial(n-1)",
+    "invalidCallsRejected": 13
+  },
+  "independentNative": {
+    "exports": 6,
+    "records": 696,
+    "uniqueCandidateIntegers": 109,
+    "selected": [
+      {
+        "n": 97,
+        "indicator": 1,
+        "classification": "prime",
+        "wilsonAvailable": true
+      },
+      {
+        "n": 0,
+        "indicator": 0,
+        "classification": "neither",
+        "wilsonAvailable": false
+      },
+      {
+        "n": 4,
+        "indicator": 0,
+        "classification": "composite",
+        "wilsonAvailable": true
+      },
+      {
+        "n": 96,
+        "indicator": 0,
+        "classification": "composite",
+        "wilsonAvailable": true
+      },
+      {
+        "n": 100001,
+        "indicator": 0,
+        "classification": "composite",
+        "wilsonAvailable": false
+      },
+      {
+        "n": 2147483647,
+        "indicator": 1,
+        "classification": "prime",
+        "wilsonAvailable": false
+      }
+    ],
+    "oracle": "Exact potential divisors through isqrt(n), plus full factorial residues where Wilson is available",
+    "pixelCounts": {
+      "prime": 25,
+      "composite": 74,
+      "neither": 2
+    },
+    "reviewedImage": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\prime-function\\primality-function.png"
+  },
+  "references": [
+    "https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Wilson.html",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.4.E1",
+    "https://annals.math.princeton.edu/2004/160-2/p12"
+  ],
+  "openBlockerCount": 0,
+  "limits": [
+    "The mathematical all-n theorem is distinct from finite implementation coverage.",
+    "The broader native sieve tests are observed through the hash-bound exported verification reports, not a separate reviewer run of 100001 native calls.",
+    "Only the main selected 97 PNG was visually inspected; controls were checked as JSON.",
+    "No formal proof-assistant replay, new theorem, speedup, prime-prediction breakthrough or RH result is established."
+  ]
+}

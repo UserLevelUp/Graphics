@@ -14,6 +14,14 @@ namespace Graphics
         [STAThread]
         static void Main(string[] args)
         {
+            // produces: graph.primes.function.export
+            if ((args.Length == 2 || args.Length == 3) && args[0] == "--primality-function")
+            {
+                int candidate = args.Length == 3
+                    ? int.Parse(args[2], System.Globalization.CultureInfo.InvariantCulture) : 97;
+                PrimalityFunctionExperiment.Export(args[1], candidate);
+                return;
+            }
             // produces: graph.riemann.continuation.animation.export
             if (args.Length >= 2 && args.Length <= 5 && args[0] == "--zeta-continuation")
             {

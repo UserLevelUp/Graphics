@@ -1,0 +1,509 @@
+{
+  "traceId": "graph.primes.function.validation",
+  "status": "passed",
+  "createdUtc": "2026-11-15T14:20:39.059618+00:00",
+  "inputs": [
+    {
+      "path": "prime_function.py",
+      "sha256": "e6bcef4571144243eebbfed9a7a3b457b1b205a97b7fa4ad082136764365f448"
+    },
+    {
+      "path": "verify_function.py",
+      "sha256": "db1c6e0391477f6da344c2cb7ae61e857cd1ae261cd966381de15990e157410f"
+    }
+  ],
+  "coverage": {
+    "trialVsIndependentSieve": [
+      0,
+      100000
+    ],
+    "primesThrough100000": 9592,
+    "wilsonVsSieveAndBigIntegerFactorial": [
+      0,
+      2000
+    ],
+    "specialControls": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      9,
+      25,
+      49,
+      96,
+      97,
+      121,
+      341,
+      561,
+      1105,
+      1729,
+      2047,
+      2465,
+      2821,
+      6601,
+      9973,
+      99991,
+      100000
+    ],
+    "invalidInputsRejected": 10
+  },
+  "examples": [
+    {
+      "n": 0,
+      "trial": {
+        "indicator": 0,
+        "classification": "neither",
+        "divisor": null,
+        "checks": 0
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "neither",
+        "factorialMod": null,
+        "residue": null,
+        "multiplications": 0,
+        "phaseDegrees": null
+      }
+    },
+    {
+      "n": 1,
+      "trial": {
+        "indicator": 0,
+        "classification": "neither",
+        "divisor": null,
+        "checks": 0
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "neither",
+        "factorialMod": null,
+        "residue": null,
+        "multiplications": 0,
+        "phaseDegrees": null
+      }
+    },
+    {
+      "n": 2,
+      "trial": {
+        "indicator": 1,
+        "classification": "prime",
+        "divisor": null,
+        "checks": 0
+      },
+      "wilson": {
+        "indicator": 1,
+        "classification": "prime",
+        "factorialMod": 1,
+        "residue": 0,
+        "multiplications": 0,
+        "phaseDegrees": 0.0
+      }
+    },
+    {
+      "n": 3,
+      "trial": {
+        "indicator": 1,
+        "classification": "prime",
+        "divisor": null,
+        "checks": 1
+      },
+      "wilson": {
+        "indicator": 1,
+        "classification": "prime",
+        "factorialMod": 2,
+        "residue": 0,
+        "multiplications": 1,
+        "phaseDegrees": 0.0
+      }
+    },
+    {
+      "n": 4,
+      "trial": {
+        "indicator": 0,
+        "classification": "composite",
+        "divisor": 2,
+        "checks": 1
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "composite",
+        "factorialMod": 2,
+        "residue": 3,
+        "multiplications": 2,
+        "phaseDegrees": 270.0
+      }
+    },
+    {
+      "n": 9,
+      "trial": {
+        "indicator": 0,
+        "classification": "composite",
+        "divisor": 3,
+        "checks": 2
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "composite",
+        "factorialMod": 0,
+        "residue": 1,
+        "multiplications": 5,
+        "phaseDegrees": 40.0
+      }
+    },
+    {
+      "n": 25,
+      "trial": {
+        "indicator": 0,
+        "classification": "composite",
+        "divisor": 5,
+        "checks": 3
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "composite",
+        "factorialMod": 0,
+        "residue": 1,
+        "multiplications": 9,
+        "phaseDegrees": 14.4
+      }
+    },
+    {
+      "n": 49,
+      "trial": {
+        "indicator": 0,
+        "classification": "composite",
+        "divisor": 7,
+        "checks": 4
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "composite",
+        "factorialMod": 0,
+        "residue": 1,
+        "multiplications": 13,
+        "phaseDegrees": 7.346938775510203
+      }
+    },
+    {
+      "n": 96,
+      "trial": {
+        "indicator": 0,
+        "classification": "composite",
+        "divisor": 2,
+        "checks": 1
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "composite",
+        "factorialMod": 0,
+        "residue": 1,
+        "multiplications": 7,
+        "phaseDegrees": 3.75
+      }
+    },
+    {
+      "n": 97,
+      "trial": {
+        "indicator": 1,
+        "classification": "prime",
+        "divisor": null,
+        "checks": 5
+      },
+      "wilson": {
+        "indicator": 1,
+        "classification": "prime",
+        "factorialMod": 96,
+        "residue": 0,
+        "multiplications": 95,
+        "phaseDegrees": 0.0
+      }
+    },
+    {
+      "n": 121,
+      "trial": {
+        "indicator": 0,
+        "classification": "composite",
+        "divisor": 11,
+        "checks": 6
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "composite",
+        "factorialMod": 0,
+        "residue": 1,
+        "multiplications": 21,
+        "phaseDegrees": 2.975206611570248
+      }
+    },
+    {
+      "n": 341,
+      "trial": {
+        "indicator": 0,
+        "classification": "composite",
+        "divisor": 11,
+        "checks": 6
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "composite",
+        "factorialMod": 0,
+        "residue": 1,
+        "multiplications": 30,
+        "phaseDegrees": 1.0557184750733137
+      }
+    },
+    {
+      "n": 561,
+      "trial": {
+        "indicator": 0,
+        "classification": "composite",
+        "divisor": 3,
+        "checks": 2
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "composite",
+        "factorialMod": 0,
+        "residue": 1,
+        "multiplications": 16,
+        "phaseDegrees": 0.6417112299465241
+      }
+    },
+    {
+      "n": 1105,
+      "trial": {
+        "indicator": 0,
+        "classification": "composite",
+        "divisor": 5,
+        "checks": 3
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "composite",
+        "factorialMod": 0,
+        "residue": 1,
+        "multiplications": 16,
+        "phaseDegrees": 0.3257918552036199
+      }
+    },
+    {
+      "n": 1729,
+      "trial": {
+        "indicator": 0,
+        "classification": "composite",
+        "divisor": 7,
+        "checks": 4
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "composite",
+        "factorialMod": 0,
+        "residue": 1,
+        "multiplications": 18,
+        "phaseDegrees": 0.20821283979178715
+      }
+    },
+    {
+      "n": 2047,
+      "trial": {
+        "indicator": 0,
+        "classification": "composite",
+        "divisor": 23,
+        "checks": 12
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "composite",
+        "factorialMod": 0,
+        "residue": 1,
+        "multiplications": 88,
+        "phaseDegrees": 0.17586712261846604
+      }
+    },
+    {
+      "n": 2465,
+      "trial": {
+        "indicator": 0,
+        "classification": "composite",
+        "divisor": 5,
+        "checks": 3
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "composite",
+        "factorialMod": 0,
+        "residue": 1,
+        "multiplications": 28,
+        "phaseDegrees": 0.1460446247464503
+      }
+    },
+    {
+      "n": 2821,
+      "trial": {
+        "indicator": 0,
+        "classification": "composite",
+        "divisor": 7,
+        "checks": 4
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "composite",
+        "factorialMod": 0,
+        "residue": 1,
+        "multiplications": 30,
+        "phaseDegrees": 0.12761432116270827
+      }
+    },
+    {
+      "n": 6601,
+      "trial": {
+        "indicator": 0,
+        "classification": "composite",
+        "divisor": 7,
+        "checks": 4
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "composite",
+        "factorialMod": 0,
+        "residue": 1,
+        "multiplications": 40,
+        "phaseDegrees": 0.05453719133464627
+      }
+    },
+    {
+      "n": 9973,
+      "trial": {
+        "indicator": 1,
+        "classification": "prime",
+        "divisor": null,
+        "checks": 50
+      },
+      "wilson": {
+        "indicator": 1,
+        "classification": "prime",
+        "factorialMod": 9972,
+        "residue": 0,
+        "multiplications": 9971,
+        "phaseDegrees": 0.0
+      }
+    },
+    {
+      "n": 99991,
+      "trial": {
+        "indicator": 1,
+        "classification": "prime",
+        "divisor": null,
+        "checks": 158
+      },
+      "wilson": {
+        "indicator": 1,
+        "classification": "prime",
+        "factorialMod": 99990,
+        "residue": 0,
+        "multiplications": 99989,
+        "phaseDegrees": 0.0
+      }
+    },
+    {
+      "n": 100000,
+      "trial": {
+        "indicator": 0,
+        "classification": "composite",
+        "divisor": 2,
+        "checks": 1
+      },
+      "wilson": {
+        "indicator": 0,
+        "classification": "composite",
+        "factorialMod": 0,
+        "residue": 1,
+        "multiplications": 24,
+        "phaseDegrees": 0.0036000000000000003
+      }
+    }
+  ],
+  "invalidInputs": [
+    {
+      "method": "trial",
+      "value": "-1"
+    },
+    {
+      "method": "wilson",
+      "value": "-1"
+    },
+    {
+      "method": "trial",
+      "value": "True"
+    },
+    {
+      "method": "wilson",
+      "value": "True"
+    },
+    {
+      "method": "trial",
+      "value": "3.0"
+    },
+    {
+      "method": "wilson",
+      "value": "3.0"
+    },
+    {
+      "method": "trial",
+      "value": "'97'"
+    },
+    {
+      "method": "wilson",
+      "value": "'97'"
+    },
+    {
+      "method": "trial",
+      "value": "None"
+    },
+    {
+      "method": "wilson",
+      "value": "None"
+    }
+  ],
+  "timing": {
+    "inputs": [
+      96,
+      97,
+      9973,
+      10000,
+      99991,
+      100000
+    ],
+    "repetitions": 5,
+    "methods": {
+      "trial": {
+        "medianMilliseconds": 0.0062,
+        "runsMilliseconds": [
+          0.0116,
+          0.0066,
+          0.0062,
+          0.0062,
+          0.0062
+        ]
+      },
+      "wilson": {
+        "medianMilliseconds": 5.6973,
+        "runsMilliseconds": [
+          5.0346,
+          5.0483,
+          5.756,
+          5.8245,
+          5.6973
+        ]
+      }
+    },
+    "scope": "Single-host illustrative measurements of these Python implementations. Not a complexity proof or an optimized-algorithm benchmark."
+  },
+  "limits": [
+    "The all-integer correctness theorem is stated separately; finite tests check these implementations.",
+    "No input list of primes enters either candidate function. The sieve is only the independent validation oracle.",
+    "Floating phase is an illustration; exact residue determines Wilson classification.",
+    "Known theorem, no new formula or speedup claimed; no RH verification."
+  ]
+}

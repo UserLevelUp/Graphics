@@ -1,0 +1,2043 @@
+{
+  "schema": "graph-primality-function-v1",
+  "traceId": "graph.primes.function",
+  "definition": {
+    "inputDomain": "Nonnegative Int32 integers; 0 and 1 are neither prime nor composite.",
+    "wilsonDomain": "Integer n \u003E= 2; native evaluation capped at 100000.",
+    "wilsonLimit": 100000,
+    "residue": "R(n) = ((n-1)! \u002B 1) mod n",
+    "indicator": "f(n) = 1 / (1 \u002B R(n)), exact integer division",
+    "phase": "W(n)=exp(2*pi*i*R(n)/n); floating phase is illustrative only.",
+    "exactDecision": "Trial division for every candidate; agreement with exact Wilson remainder wherever available.",
+    "priorPrimeListRequired": false
+  },
+  "selected": {
+    "n": 100001,
+    "indicator": 0,
+    "classification": "composite",
+    "trialDivisor": 11,
+    "trialChecks": 10,
+    "wilson": {
+      "available": false,
+      "reason": "Wilson display limit is 100000; exact trial classification remains available.",
+      "factorialMod": null,
+      "residue": null,
+      "indicator": null,
+      "multiplications": 0,
+      "stoppedAtZero": false,
+      "phaseDegrees": null
+    }
+  },
+  "examples": [
+    {
+      "n": 0,
+      "indicator": 0,
+      "classification": "neither",
+      "trialDivisor": null,
+      "trialChecks": 0,
+      "wilson": {
+        "available": false,
+        "reason": "Wilson domain begins at 2; 0 and 1 are neither prime nor composite.",
+        "factorialMod": null,
+        "residue": null,
+        "indicator": null,
+        "multiplications": 0,
+        "stoppedAtZero": false,
+        "phaseDegrees": null
+      }
+    },
+    {
+      "n": 1,
+      "indicator": 0,
+      "classification": "neither",
+      "trialDivisor": null,
+      "trialChecks": 0,
+      "wilson": {
+        "available": false,
+        "reason": "Wilson domain begins at 2; 0 and 1 are neither prime nor composite.",
+        "factorialMod": null,
+        "residue": null,
+        "indicator": null,
+        "multiplications": 0,
+        "stoppedAtZero": false,
+        "phaseDegrees": null
+      }
+    },
+    {
+      "n": 2,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 0,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 1,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 0,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 3,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 0,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 2,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 1,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 4,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 2,
+        "residue": 3,
+        "indicator": 0,
+        "multiplications": 2,
+        "stoppedAtZero": false,
+        "phaseDegrees": 270
+      }
+    },
+    {
+      "n": 49,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 7,
+      "trialChecks": 6,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 13,
+        "stoppedAtZero": true,
+        "phaseDegrees": 7.346938775510204
+      }
+    },
+    {
+      "n": 96,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 7,
+        "stoppedAtZero": true,
+        "phaseDegrees": 3.75
+      }
+    },
+    {
+      "n": 97,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 8,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 96,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 95,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 121,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 11,
+      "trialChecks": 10,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 21,
+        "stoppedAtZero": true,
+        "phaseDegrees": 2.975206611570248
+      }
+    },
+    {
+      "n": 341,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 11,
+      "trialChecks": 10,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 30,
+        "stoppedAtZero": true,
+        "phaseDegrees": 1.0557184750733137
+      }
+    },
+    {
+      "n": 561,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 16,
+        "stoppedAtZero": true,
+        "phaseDegrees": 0.6417112299465241
+      }
+    },
+    {
+      "n": 1105,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 5,
+      "trialChecks": 4,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 16,
+        "stoppedAtZero": true,
+        "phaseDegrees": 0.3257918552036199
+      }
+    },
+    {
+      "n": 1729,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 7,
+      "trialChecks": 6,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 18,
+        "stoppedAtZero": true,
+        "phaseDegrees": 0.20821283979178715
+      }
+    },
+    {
+      "n": 2047,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 23,
+      "trialChecks": 22,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 88,
+        "stoppedAtZero": true,
+        "phaseDegrees": 0.17586712261846604
+      }
+    }
+  ],
+  "rows": [
+    {
+      "n": 0,
+      "indicator": 0,
+      "classification": "neither",
+      "trialDivisor": null,
+      "trialChecks": 0,
+      "wilson": {
+        "available": false,
+        "reason": "Wilson domain begins at 2; 0 and 1 are neither prime nor composite.",
+        "factorialMod": null,
+        "residue": null,
+        "indicator": null,
+        "multiplications": 0,
+        "stoppedAtZero": false,
+        "phaseDegrees": null
+      }
+    },
+    {
+      "n": 1,
+      "indicator": 0,
+      "classification": "neither",
+      "trialDivisor": null,
+      "trialChecks": 0,
+      "wilson": {
+        "available": false,
+        "reason": "Wilson domain begins at 2; 0 and 1 are neither prime nor composite.",
+        "factorialMod": null,
+        "residue": null,
+        "indicator": null,
+        "multiplications": 0,
+        "stoppedAtZero": false,
+        "phaseDegrees": null
+      }
+    },
+    {
+      "n": 2,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 0,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 1,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 0,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 3,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 0,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 2,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 1,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 4,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 2,
+        "residue": 3,
+        "indicator": 0,
+        "multiplications": 2,
+        "stoppedAtZero": false,
+        "phaseDegrees": 270
+      }
+    },
+    {
+      "n": 5,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 4,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 3,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 6,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 2,
+        "stoppedAtZero": true,
+        "phaseDegrees": 60
+      }
+    },
+    {
+      "n": 7,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 6,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 5,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 8,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 3,
+        "stoppedAtZero": true,
+        "phaseDegrees": 45
+      }
+    },
+    {
+      "n": 9,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 5,
+        "stoppedAtZero": true,
+        "phaseDegrees": 40
+      }
+    },
+    {
+      "n": 10,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 4,
+        "stoppedAtZero": true,
+        "phaseDegrees": 36
+      }
+    },
+    {
+      "n": 11,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 10,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 9,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 12,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 3,
+        "stoppedAtZero": true,
+        "phaseDegrees": 30
+      }
+    },
+    {
+      "n": 13,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 12,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 11,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 14,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 6,
+        "stoppedAtZero": true,
+        "phaseDegrees": 25.714285714285715
+      }
+    },
+    {
+      "n": 15,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 4,
+        "stoppedAtZero": true,
+        "phaseDegrees": 24
+      }
+    },
+    {
+      "n": 16,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 5,
+        "stoppedAtZero": true,
+        "phaseDegrees": 22.5
+      }
+    },
+    {
+      "n": 17,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 3,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 16,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 15,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 18,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 5,
+        "stoppedAtZero": true,
+        "phaseDegrees": 20
+      }
+    },
+    {
+      "n": 19,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 3,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 18,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 17,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 20,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 4,
+        "stoppedAtZero": true,
+        "phaseDegrees": 18
+      }
+    },
+    {
+      "n": 21,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 6,
+        "stoppedAtZero": true,
+        "phaseDegrees": 17.142857142857142
+      }
+    },
+    {
+      "n": 22,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 10,
+        "stoppedAtZero": true,
+        "phaseDegrees": 16.363636363636363
+      }
+    },
+    {
+      "n": 23,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 3,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 22,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 21,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 24,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 3,
+        "stoppedAtZero": true,
+        "phaseDegrees": 15
+      }
+    },
+    {
+      "n": 25,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 5,
+      "trialChecks": 4,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 9,
+        "stoppedAtZero": true,
+        "phaseDegrees": 14.4
+      }
+    },
+    {
+      "n": 26,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 12,
+        "stoppedAtZero": true,
+        "phaseDegrees": 13.846153846153847
+      }
+    },
+    {
+      "n": 27,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 8,
+        "stoppedAtZero": true,
+        "phaseDegrees": 13.333333333333334
+      }
+    },
+    {
+      "n": 28,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 6,
+        "stoppedAtZero": true,
+        "phaseDegrees": 12.857142857142858
+      }
+    },
+    {
+      "n": 29,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 4,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 28,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 27,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 30,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 4,
+        "stoppedAtZero": true,
+        "phaseDegrees": 12
+      }
+    },
+    {
+      "n": 31,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 4,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 30,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 29,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 32,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 7,
+        "stoppedAtZero": true,
+        "phaseDegrees": 11.25
+      }
+    },
+    {
+      "n": 33,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 10,
+        "stoppedAtZero": true,
+        "phaseDegrees": 10.909090909090908
+      }
+    },
+    {
+      "n": 34,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 16,
+        "stoppedAtZero": true,
+        "phaseDegrees": 10.588235294117647
+      }
+    },
+    {
+      "n": 35,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 5,
+      "trialChecks": 4,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 6,
+        "stoppedAtZero": true,
+        "phaseDegrees": 10.285714285714286
+      }
+    },
+    {
+      "n": 36,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 5,
+        "stoppedAtZero": true,
+        "phaseDegrees": 10
+      }
+    },
+    {
+      "n": 37,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 5,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 36,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 35,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 38,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 18,
+        "stoppedAtZero": true,
+        "phaseDegrees": 9.473684210526315
+      }
+    },
+    {
+      "n": 39,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 12,
+        "stoppedAtZero": true,
+        "phaseDegrees": 9.23076923076923
+      }
+    },
+    {
+      "n": 40,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 4,
+        "stoppedAtZero": true,
+        "phaseDegrees": 9
+      }
+    },
+    {
+      "n": 41,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 5,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 40,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 39,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 42,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 6,
+        "stoppedAtZero": true,
+        "phaseDegrees": 8.571428571428571
+      }
+    },
+    {
+      "n": 43,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 5,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 42,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 41,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 44,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 10,
+        "stoppedAtZero": true,
+        "phaseDegrees": 8.181818181818182
+      }
+    },
+    {
+      "n": 45,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 5,
+        "stoppedAtZero": true,
+        "phaseDegrees": 8
+      }
+    },
+    {
+      "n": 46,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 22,
+        "stoppedAtZero": true,
+        "phaseDegrees": 7.826086956521739
+      }
+    },
+    {
+      "n": 47,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 5,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 46,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 45,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 48,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 5,
+        "stoppedAtZero": true,
+        "phaseDegrees": 7.5
+      }
+    },
+    {
+      "n": 49,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 7,
+      "trialChecks": 6,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 13,
+        "stoppedAtZero": true,
+        "phaseDegrees": 7.346938775510204
+      }
+    },
+    {
+      "n": 50,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 9,
+        "stoppedAtZero": true,
+        "phaseDegrees": 7.2
+      }
+    },
+    {
+      "n": 51,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 16,
+        "stoppedAtZero": true,
+        "phaseDegrees": 7.0588235294117645
+      }
+    },
+    {
+      "n": 52,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 12,
+        "stoppedAtZero": true,
+        "phaseDegrees": 6.923076923076923
+      }
+    },
+    {
+      "n": 53,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 6,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 52,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 51,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 54,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 8,
+        "stoppedAtZero": true,
+        "phaseDegrees": 6.666666666666667
+      }
+    },
+    {
+      "n": 55,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 5,
+      "trialChecks": 4,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 10,
+        "stoppedAtZero": true,
+        "phaseDegrees": 6.545454545454546
+      }
+    },
+    {
+      "n": 56,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 6,
+        "stoppedAtZero": true,
+        "phaseDegrees": 6.428571428571429
+      }
+    },
+    {
+      "n": 57,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 18,
+        "stoppedAtZero": true,
+        "phaseDegrees": 6.315789473684211
+      }
+    },
+    {
+      "n": 58,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 28,
+        "stoppedAtZero": true,
+        "phaseDegrees": 6.206896551724138
+      }
+    },
+    {
+      "n": 59,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 6,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 58,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 57,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 60,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 4,
+        "stoppedAtZero": true,
+        "phaseDegrees": 6
+      }
+    },
+    {
+      "n": 61,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 6,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 60,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 59,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 62,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 30,
+        "stoppedAtZero": true,
+        "phaseDegrees": 5.806451612903226
+      }
+    },
+    {
+      "n": 63,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 6,
+        "stoppedAtZero": true,
+        "phaseDegrees": 5.714285714285714
+      }
+    },
+    {
+      "n": 64,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 7,
+        "stoppedAtZero": true,
+        "phaseDegrees": 5.625
+      }
+    },
+    {
+      "n": 65,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 5,
+      "trialChecks": 4,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 12,
+        "stoppedAtZero": true,
+        "phaseDegrees": 5.538461538461538
+      }
+    },
+    {
+      "n": 66,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 10,
+        "stoppedAtZero": true,
+        "phaseDegrees": 5.454545454545454
+      }
+    },
+    {
+      "n": 67,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 7,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 66,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 65,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 68,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 16,
+        "stoppedAtZero": true,
+        "phaseDegrees": 5.294117647058823
+      }
+    },
+    {
+      "n": 69,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 22,
+        "stoppedAtZero": true,
+        "phaseDegrees": 5.217391304347826
+      }
+    },
+    {
+      "n": 70,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 6,
+        "stoppedAtZero": true,
+        "phaseDegrees": 5.142857142857143
+      }
+    },
+    {
+      "n": 71,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 7,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 70,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 69,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 72,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 5,
+        "stoppedAtZero": true,
+        "phaseDegrees": 5
+      }
+    },
+    {
+      "n": 73,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 7,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 72,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 71,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 74,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 36,
+        "stoppedAtZero": true,
+        "phaseDegrees": 4.864864864864865
+      }
+    },
+    {
+      "n": 75,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 9,
+        "stoppedAtZero": true,
+        "phaseDegrees": 4.8
+      }
+    },
+    {
+      "n": 76,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 18,
+        "stoppedAtZero": true,
+        "phaseDegrees": 4.7368421052631575
+      }
+    },
+    {
+      "n": 77,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 7,
+      "trialChecks": 6,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 10,
+        "stoppedAtZero": true,
+        "phaseDegrees": 4.675324675324675
+      }
+    },
+    {
+      "n": 78,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 12,
+        "stoppedAtZero": true,
+        "phaseDegrees": 4.615384615384615
+      }
+    },
+    {
+      "n": 79,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 7,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 78,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 77,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 80,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 5,
+        "stoppedAtZero": true,
+        "phaseDegrees": 4.5
+      }
+    },
+    {
+      "n": 81,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 8,
+        "stoppedAtZero": true,
+        "phaseDegrees": 4.444444444444445
+      }
+    },
+    {
+      "n": 82,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 40,
+        "stoppedAtZero": true,
+        "phaseDegrees": 4.390243902439025
+      }
+    },
+    {
+      "n": 83,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 8,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 82,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 81,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 84,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 6,
+        "stoppedAtZero": true,
+        "phaseDegrees": 4.285714285714286
+      }
+    },
+    {
+      "n": 85,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 5,
+      "trialChecks": 4,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 16,
+        "stoppedAtZero": true,
+        "phaseDegrees": 4.235294117647059
+      }
+    },
+    {
+      "n": 86,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 42,
+        "stoppedAtZero": true,
+        "phaseDegrees": 4.186046511627907
+      }
+    },
+    {
+      "n": 87,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 28,
+        "stoppedAtZero": true,
+        "phaseDegrees": 4.137931034482759
+      }
+    },
+    {
+      "n": 88,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 10,
+        "stoppedAtZero": true,
+        "phaseDegrees": 4.090909090909091
+      }
+    },
+    {
+      "n": 89,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 8,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 88,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 87,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 90,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 5,
+        "stoppedAtZero": true,
+        "phaseDegrees": 4
+      }
+    },
+    {
+      "n": 91,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 7,
+      "trialChecks": 6,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 12,
+        "stoppedAtZero": true,
+        "phaseDegrees": 3.956043956043956
+      }
+    },
+    {
+      "n": 92,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 22,
+        "stoppedAtZero": true,
+        "phaseDegrees": 3.9130434782608696
+      }
+    },
+    {
+      "n": 93,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 30,
+        "stoppedAtZero": true,
+        "phaseDegrees": 3.870967741935484
+      }
+    },
+    {
+      "n": 94,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 46,
+        "stoppedAtZero": true,
+        "phaseDegrees": 3.8297872340425534
+      }
+    },
+    {
+      "n": 95,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 5,
+      "trialChecks": 4,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 18,
+        "stoppedAtZero": true,
+        "phaseDegrees": 3.789473684210526
+      }
+    },
+    {
+      "n": 96,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 7,
+        "stoppedAtZero": true,
+        "phaseDegrees": 3.75
+      }
+    },
+    {
+      "n": 97,
+      "indicator": 1,
+      "classification": "prime",
+      "trialDivisor": null,
+      "trialChecks": 8,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 96,
+        "residue": 0,
+        "indicator": 1,
+        "multiplications": 95,
+        "stoppedAtZero": false,
+        "phaseDegrees": 0
+      }
+    },
+    {
+      "n": 98,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 13,
+        "stoppedAtZero": true,
+        "phaseDegrees": 3.673469387755102
+      }
+    },
+    {
+      "n": 99,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 3,
+      "trialChecks": 2,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 10,
+        "stoppedAtZero": true,
+        "phaseDegrees": 3.6363636363636362
+      }
+    },
+    {
+      "n": 100,
+      "indicator": 0,
+      "classification": "composite",
+      "trialDivisor": 2,
+      "trialChecks": 1,
+      "wilson": {
+        "available": true,
+        "reason": null,
+        "factorialMod": 0,
+        "residue": 1,
+        "indicator": 0,
+        "multiplications": 9,
+        "stoppedAtZero": true,
+        "phaseDegrees": 3.6
+      }
+    }
+  ],
+  "verification": {
+    "status": "passed",
+    "traceId": "graph.primes.function.verify",
+    "trialRange": {
+      "lower": 0,
+      "upper": 100000,
+      "integers": 100001,
+      "primeCount": 9592
+    },
+    "wilsonRange": {
+      "lower": 0,
+      "upper": 2000,
+      "integers": 2001
+    },
+    "controls": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      9,
+      25,
+      49,
+      96,
+      97,
+      121,
+      341,
+      561,
+      1105,
+      1729,
+      2047
+    ],
+    "exactResidues": {
+      "n4": 3,
+      "n96": 1,
+      "n97": 0
+    },
+    "integerMaximumControl": 2147483647,
+    "negativeRejected": true,
+    "elapsedMilliseconds": 24.4232,
+    "scope": "Exact integer checks against an independent sieve. Timing is one verification run, not a benchmark or asymptotic speed claim."
+  },
+  "render": {
+    "width": 1920,
+    "height": 1080,
+    "paletteMeaning": "Violet means exact prime indicator1; color does not supply an independent prediction."
+  },
+  "limits": [
+    "Wilson is established mathematics, not a new prime formula.",
+    "No claim of a speedup, direct fast nth-prime formula, or RH proof.",
+    "No floating-point threshold is used for primality.",
+    "The sieve is an independent verification oracle only."
+  ]
+}

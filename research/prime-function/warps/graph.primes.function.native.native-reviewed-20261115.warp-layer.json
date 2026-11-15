@@ -1,0 +1,17 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.primes.function",
+  "slice_id": "native",
+  "contract_hash": "contract:graph.primes.function.native:v1",
+  "attempt_id": "native-reviewed-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:6d6b35b61b83814a6a9fa4d2a061d793d8165032305a6a1c06804c2b237e5e6c",
+  "evidence": {
+    "review": [
+      "evidence/acceptance.json",
+      "evidence/native-validation.json",
+      "evidence/review.json"
+    ]
+  },
+  "reason": null
+}

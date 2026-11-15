@@ -1,0 +1,82 @@
+{
+  "traceId": "graph.primes.function.acceptance",
+  "status": "accepted",
+  "acceptedAtUtc": "2026-11-15T14:31:19.839055+00:00",
+  "provedClaim": "For every nonnegative integer n, the defined Wilson indicator is 1 iff n is prime; 0/1 are handled separately.",
+  "implementations": {
+    "python": "Arbitrary-precision exact integer Wilson and trial functions; computational cost still grows.",
+    "native": "Nonnegative Int32 trial inputs; Wilson evaluated only for2..100000."
+  },
+  "checkedCoverage": {
+    "trialVsSieve": [
+      0,
+      100000
+    ],
+    "wilsonVsSieveAndFullFactorials": [
+      0,
+      2000
+    ],
+    "nativeExports": 6,
+    "gridColors": 101,
+    "independentReviewChecks": 16
+  },
+  "evidence": [
+    {
+      "path": "evidence/validation.json",
+      "sha256": "8e3ff90b51d01418700e081cafbb7b7f69d6a2eeb4ce1ccc337eebdb6c0c3dc4"
+    },
+    {
+      "path": "evidence/native-validation.json",
+      "sha256": "6d6b35b61b83814a6a9fa4d2a061d793d8165032305a6a1c06804c2b237e5e6c"
+    },
+    {
+      "path": "evidence/review.json",
+      "sha256": "72650d2a2f302d030bdff6fa4d1bf8fd39ed223601151ab17fe4f6419a40acaa"
+    }
+  ],
+  "source": [
+    {
+      "path": "research/prime-function/proof.md",
+      "sha256": "67cee9899e2409466b4b2e5d00e7eacf5182f920b735c748193c123415de5b7e"
+    },
+    {
+      "path": "research/prime-function/README.md",
+      "sha256": "479f21d25f97cde435ff0144faac857061ace9ea903c9d5721082c5f3ce9e5c1"
+    },
+    {
+      "path": "research/prime-function/prime_function.py",
+      "sha256": "e6bcef4571144243eebbfed9a7a3b457b1b205a97b7fa4ad082136764365f448"
+    },
+    {
+      "path": "research/prime-function/verify_function.py",
+      "sha256": "db1c6e0391477f6da344c2cb7ae61e857cd1ae261cd966381de15990e157410f"
+    },
+    {
+      "path": "research/prime-function/verify_native.py",
+      "sha256": "6e0cadb0925e40736e4a60281f959755ceb11ffd0105dd77b3bf7ee724059e21"
+    },
+    {
+      "path": "Graphics/Program.cs",
+      "sha256": "ab4ad222138b0326e2936077adec01d800de57fe3fbbda918e6ad39e8ed16819"
+    },
+    {
+      "path": "Graphics/PrimalityFunctionExperiment.cs",
+      "sha256": "13b8b8aec7b31e03bb580c548fa191576ae3a9e07a685ebd7058d06050996d91"
+    }
+  ],
+  "diagram": {
+    "path": "figures/primality-function.png",
+    "sha256": "7052026778006511d4184c1277914eed66465cce2f1bc6f233247f1e7d33e032"
+  },
+  "priorPresentation": {
+    "path": "presentation-with-finite-proof.mp4",
+    "sha256": "4dbd34ae6816c32301c017fd386202fa5e93c4e65cf5a8a225edceef3402e12e",
+    "unchanged": true
+  },
+  "limits": [
+    "Wilson and trial division are established mathematics; no novelty or speed breakthrough.",
+    "No supplied previous-prime list is required, but both algorithms perform arithmetic work.",
+    "Native output colors illustrate the exact result; floating phase never decides primality.",
+    "Mathematical proof plus finite implementation checks; no local Lean implementation proof, no RH result, no fast direct nth-prime algorithm."
+  ]
+}

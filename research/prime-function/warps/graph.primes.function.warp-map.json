@@ -1,0 +1,39 @@
+{
+  "bubble_uuid": "01a1df95-d074-76d9-9561-00363daddf46",
+  "goal": "Implement and review an exact candidate-input primality function with a native Graphics illustration",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "Primality is evaluated exactly on nonnegative integers; 0 and 1 are neither prime nor composite.",
+    "No prior-prime list is an input to either candidate function; independent oracles are validation only.",
+    "Rendering illustrates exact arithmetic and does not decide primality by floating phase.",
+    "Preserve previous accepted media and evidence; credit established Wilson and trial-division methods; no RH or speed breakthrough claim."
+  ],
+  "required_slices": [
+    {
+      "contract_hash": "contract:graph.primes.function.equation:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "equation",
+      "slice_uuid": "01a1df95-d074-7532-bc07-74af9d89278e"
+    },
+    {
+      "contract_hash": "contract:graph.primes.function.native:v1",
+      "depends_on": [
+        "equation"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "native",
+      "slice_uuid": "01a1df95-d074-7558-a0c9-4377671d3fb9"
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.primes.function"
+}

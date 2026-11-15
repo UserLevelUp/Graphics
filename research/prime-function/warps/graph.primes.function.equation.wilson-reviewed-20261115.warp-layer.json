@@ -1,0 +1,16 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.primes.function",
+  "slice_id": "equation",
+  "contract_hash": "contract:graph.primes.function.equation:v1",
+  "attempt_id": "wilson-reviewed-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:8e3ff90b51d01418700e081cafbb7b7f69d6a2eeb4ce1ccc337eebdb6c0c3dc4",
+  "evidence": {
+    "review": [
+      "evidence/review.json",
+      "evidence/validation.json"
+    ]
+  },
+  "reason": null
+}
