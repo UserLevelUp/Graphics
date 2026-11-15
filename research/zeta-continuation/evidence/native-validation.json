@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "traceId": "graph.riemann.continuation.animation.native_verify",
+  "precisionDigits": 80,
+  "mpmathVersion": "1.3.0",
+  "referenceSha256": "ec5fc8f06b90c6f79d094f3fa9d1a8053103b3a7fc34e78ff1264158ebde253e",
+  "exports": [
+    {
+      "target": 0.0,
+      "backgroundSamplesChecked": 30,
+      "maximumBackgroundZetaError": "4.1603263094070387839e-14",
+      "source": "C:\\src\\graph\\research\\zeta-continuation\\evidence\\native\\a0.values.json",
+      "sourceSha256": "8ffa32b690cbb91161fc34e5b61a57a6cd47cc8016802eee7a256c75eb2a3acb"
+    },
+    {
+      "target": 0.5,
+      "backgroundSamplesChecked": 30,
+      "maximumBackgroundZetaError": "4.1603263094070387839e-14",
+      "source": "C:\\src\\graph\\research\\zeta-continuation\\evidence\\native\\a05.values.json",
+      "sourceSha256": "0dc993ef97001b3a916e9d872a7f994b8485fc3a00c92ab4d59589eb9a4b436f"
+    },
+    {
+      "target": 1.0,
+      "backgroundSamplesChecked": 30,
+      "maximumBackgroundZetaError": "4.1603263094070387839e-14",
+      "source": "C:\\src\\graph\\research\\zeta-continuation\\evidence\\native\\a1.values.json",
+      "sourceSha256": "ae43b73200f6a7174bea749d09da701b135fc942f2adc76b1e255370a0c58234"
+    }
+  ],
+  "branches": [
+    {
+      "id": "Z1",
+      "status": "passed",
+      "acceptedNativePoints": 76,
+      "checkedPointRecordsIncludingDisplaysAndOutside": 80,
+      "exit": {
+        "nativeWidthA": "6.2500005171273187443e-11",
+        "containsReferenceBracket": true
+      },
+      "maximumErrors": {
+        "residual": "1.8751146681250798236e-11",
+        "coordinateError": "1.7352385168761300541e-10",
+        "derivativeError": "2.3390031193142121005e-14"
+      },
+      "rejectedNegativeControls": [
+        "corrupted coordinate",
+        "false target",
+        "false step history"
+      ]
+    },
+    {
+      "id": "Z2",
+      "status": "passed",
+      "acceptedNativePoints": 96,
+      "checkedPointRecordsIncludingDisplaysAndOutside": 100,
+      "exit": {
+        "nativeWidthA": "5.1200044204335881659e-11",
+        "containsReferenceBracket": true
+      },
+      "maximumErrors": {
+        "residual": "9.0045549067704990194e-12",
+        "coordinateError": "1.960505041837500075e-10",
+        "derivativeError": "4.6532493401413707614e-14"
+      },
+      "rejectedNegativeControls": [
+        "corrupted coordinate",
+        "false target",
+        "false step history"
+      ]
+    },
+    {
+      "id": "Z3",
+      "status": "passed",
+      "acceptedNativePoints": 105,
+      "checkedPointRecordsIncludingDisplaysAndOutside": 108,
+      "exit": null,
+      "maximumErrors": {
+        "residual": "1.260329639243308356e-13",
+        "coordinateError": "6.0392256012122689946e-13",
+        "derivativeError": "3.27223933557807892e-14"
+      },
+      "rejectedNegativeControls": [
+        "corrupted coordinate",
+        "false target",
+        "false step history"
+      ]
+    }
+  ],
+  "cachedPathsIdenticalAcrossExports": true,
+  "falsePostExitTransportRejected": true,
+  "tolerances": {
+    "nativeCoordinateAndDerivativeAbsolute": "5e-9",
+    "nativeResidualAbsolute": "1e-9",
+    "referenceCorrectionResidual": "1e-55",
+    "nativeBoundaryWidthA": "1e-10"
+  },
+  "limitations": [
+    "Empirical numerical validation, not interval-certified continuation.",
+    "Reference uses a separate80-digit implementation of the same Euler-Maclaurin algorithm family.",
+    "Accepted native targets are compared by local correction from the validated reference branch, never global endpoint search.",
+    "Native boundary brackets are checked separately against the refined reference brackets.",
+    "Root positions held after exit solve their recorded earlier a, not the later displayed target.",
+    "No exhaustive statement, global noncollision theorem, or RH conclusion."
+  ]
+}

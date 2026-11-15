@@ -1,0 +1,21 @@
+# Scientific continuation animation contract
+
+defines: graph.riemann.continuation.animation
+consumer: graph.riemann.continuation
+consumer: graph.riemann
+
+Baseline f24b64c is pushed to origin/master; work is on graph/riemann-continuation. This is the first child. The separate presentation child may prepare a script, but cannot produce final claims until this animation is accepted.
+
+Follow zeta(s)=a for real 0<=a<=1, starting from the first three known nontrivial zeta zeros. The fixed input rectangle is sigma .05..3 and height10..30. These are seeded diagnostic paths, not newly discovered zeros or an independent prime generator. Where zeta'(s)!=0, implicit differentiation gives ds/da=1/zeta'(s). That is a local continuation identity, not a global existence or noncollision theorem.
+
+Use adaptive predictor-corrector continuation with derivative, motion, correction and iteration guards. No global reseeding or nearest-endpoint replacement is allowed. Record accepted/rejected steps and stop reasons; bracket the first detected boundary exit. A boundary exit means leaving this viewport only; it does not mean disappearance, collision, or proof that the branch never returns. A small derivative or failed correction is a numerical stopping condition, not a certified critical point.
+
+The candidate finite conjecture is that each seeded path reaches a distinct zeta=1 point within the chosen rectangle without a critical encounter. The experiment may reject this conjecture. Presentation must use final observed outcomes, not assumed success. An off-line zeta=1 point is not a counterexample to RH, which concerns a=0 nontrivial zeros.
+
+Native implementation: cached shared Euler-Maclaurin values, four-color phase of zeta-a, continuous target slider/playback, three labeled paths and explicit stopped/exited state. Linear interpolation is display geometry, never zero certification. Native exports contain data, parameters, uncertainties and hashes. After Effects creates a separate editable scientific animation with data-driven path keyframes and visible target values; it must not imply smooth interpolation is a proof.
+
+Independent checks: pinned mpmath1.3.0 at80digits; adaptive root residual goals1e-55 orbetter; coarse/fine/reverse agreement at common target values; refined exit brackets in a; analytic linear/quadratic controls, branch preservation and derivative guards. Native values and coordinates should agree within5e-9 on common verified points, with residuals<=1e-9 and boundary brackets checked separately. If a test cannot meet these tolerances it must fail or record a justified stricter scope, not widen tolerances silently. Color rendering and mathematical conclusions are separate checks. Neither sample agreement nor a positive sampled derivative minimum certifies the entire path or all heights.
+
+Reviewers assess this contract only; native implementation and independent validation are separate. Carbon audits mathematics; Codex audits circularity and RH scope; Copilot audits numerical/rendering failures. Each checks actual time and returns before180seconds, then waits for explicit coordinator steering and ACK. All review verdicts are preserved. Produced is protocol success, not acceptance.
+
+Acceptance requires source review, executed independent controls, native UI/export checks, sampled final rendered-frame checks, editable After Effects project and playable animation, durable evidence, and a local Git checkpoint. The parent RH proof stays open. Combining geometry, continuation, independent numerics and analytic identities is an experimental method; it is not a logical substitute for a global zero-exclusion proof.

@@ -1,0 +1,39 @@
+{
+  "bubble_uuid": "01a1de9a-873a-75b2-a647-840a3f6bc5d0",
+  "goal": "Coordinate separately accepted root-continuation animation and presenter explanation, retaining the open Riemann proof obligation",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "Warp is a reversible work scope, not a physical or mathematical mechanism.",
+    "Only accepted numerical evidence may drive the explanatory presentation.",
+    "Boundary exit is not disappearance or a zero collision; known seeds do not constitute prime prediction.",
+    "Finite computations and elementary identities do not prove the global Riemann Hypothesis."
+  ],
+  "required_slices": [
+    {
+      "slice_id": "animation",
+      "slice_uuid": "01a1de9a-8743-700f-b410-727046b09a88",
+      "contract_hash": "contract:graph.riemann.continuation.animation:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "presentation",
+      "slice_uuid": "01a1de9a-8743-700f-b410-727130fa9229",
+      "contract_hash": "contract:graph.riemann.continuation.presentation:v1",
+      "depends_on": [
+        "animation"
+      ],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.riemann.continuation"
+}

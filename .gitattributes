@@ -97,3 +97,18 @@
 /research/zeta-switch/events/** -text whitespace=cr-at-eol,-blank-at-eof
 /research/zeta-switch/evidence/** -text whitespace=cr-at-eol,-blank-at-eof
 /warps/graph.riemann.switch* text eol=lf
+# Continuation sources normalize LF; runtime receipts retain their exact bytes.
+/Graphics/ZetaContinuation*.cs text eol=lf
+/research/zeta-continuation/*.py text eol=lf
+/research/zeta-continuation/*.jsx text eol=lf
+/research/zeta-continuation/*.md text eol=lf
+/research/zeta-continuation/*.json text eol=lf
+/research/zeta-continuation/animation/*.py text eol=lf
+/research/zeta-continuation/animation/*.md text eol=lf
+/research/zeta-continuation/animation/*/runs/** -text whitespace=cr-at-eol,-blank-at-eof
+/research/zeta-continuation/animation/*/review.md -text whitespace=cr-at-eol,-blank-at-eof
+/research/zeta-continuation/animation/*/latest-run.json -text whitespace=cr-at-eol,-blank-at-eof
+/research/zeta-continuation/animation/events/** -text whitespace=cr-at-eol,-blank-at-eof
+/research/zeta-continuation/animation/evidence/** -text whitespace=cr-at-eol,-blank-at-eof
+/research/zeta-continuation/evidence/** -text whitespace=cr-at-eol,-blank-at-eof
+/warps/graph.riemann.continuation* text eol=lf

@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.continuation.animation",
+  "slice_id": "codex",
+  "contract_hash": "contract:graph.riemann.continuation.animation.codex:v1",
+  "attempt_id": "scope-watch-codex-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:320b52bae866a5340ed41cdc759e01c7ab7763c3123c2dfc51a26911840343be",
+  "evidence": {
+    "review": [
+      "research/zeta-continuation/animation/codex/review.md"
+    ]
+  },
+  "reason": null
+}

@@ -1,0 +1,9 @@
+{
+  "trace_id": "graph.riemann.continuation.animation.copilot.progress",
+  "run_id": "20261115T095212Z-d20c018e",
+  "provider": "copilot",
+  "turn": 2,
+  "state": "complete",
+  "at": "2026-11-15T09:57:07.533592+00:00",
+  "report": "research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/review.md"
+}

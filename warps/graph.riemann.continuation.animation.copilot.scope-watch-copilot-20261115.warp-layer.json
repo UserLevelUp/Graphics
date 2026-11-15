@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.continuation.animation",
+  "slice_id": "copilot",
+  "contract_hash": "contract:graph.riemann.continuation.animation.copilot:v1",
+  "attempt_id": "scope-watch-copilot-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:3dfb5e2bff469f205cf8ca98d6d260f9cd309af0876e67d7e8d811b016ffa929",
+  "evidence": {
+    "review": [
+      "research/zeta-continuation/animation/copilot/review.md"
+    ]
+  },
+  "reason": null
+}

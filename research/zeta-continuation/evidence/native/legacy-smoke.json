@@ -1,0 +1,21 @@
+{
+  "traceId": "graph.riemann.continuation.animation.legacy-smoke",
+  "status": "passed",
+  "checkedUtc": "2026-11-15T10:06:09.950761+00:00",
+  "verification": "94 switch/model checks passed: pure selector/ties, nearest output, seam jump, opposite branches, invalid state, N64/96 refinement, analytic derivative, shift invariance, conjugation, and reference residuals. Numerical checks are not an RH proof.",
+  "acceptedReference": "C:\\src\\graph\\research\\zeta-switch\\evidence\\overview.png",
+  "currentExport": "C:\\src\\graph\\research\\zeta-continuation\\evidence\\native\\legacy-switch.png",
+  "pixelsIdentical": true,
+  "bytesIdentical": true,
+  "mathematicalJsonIdentical": true,
+  "excludedJsonFields": [
+    "metrics.elapsedMilliseconds"
+  ],
+  "elapsedMilliseconds": {
+    "accepted": 104,
+    "current": 115
+  },
+  "acceptedPngSha256": "96cb9f63e8bbe381947a3d7867134e695c38e76dfa0cee3093d4e9f33fcebeea",
+  "currentPngSha256": "96cb9f63e8bbe381947a3d7867134e695c38e76dfa0cee3093d4e9f33fcebeea",
+  "executableSha256": "a852360c3dde91b7f96cc3d80b024c64e1f64efe64f07e2e10f45f4cf8b55811"
+}

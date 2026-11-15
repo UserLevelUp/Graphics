@@ -58,6 +58,10 @@ namespace Graphics
             var unitSwitch = new Button { Text = "Zeta switch lab", AutoSize = true, Margin = Padding.Empty };
             unitSwitch.Click += (sender, args) => { using var lab = new ZetaSwitchForm(); lab.ShowDialog(this); };
             zetaButtons.Controls.Add(unitSwitch);
+            unitSwitch.Margin = new Padding(0, 0, 0, spacing);
+            var continuation = new Button { Text = "Zeta continuation lab", AutoSize = true, Margin = Padding.Empty };
+            continuation.Click += (sender, args) => { using var lab = new ZetaContinuationForm(); lab.ShowDialog(this); };
+            zetaButtons.Controls.Add(continuation);
             panel1.Controls.Add(zetaButtons);
         }
 

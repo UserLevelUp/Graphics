@@ -14,6 +14,50 @@ namespace Graphics
         [STAThread]
         static void Main(string[] args)
         {
+            // produces: graph.riemann.continuation.animation.export
+            if (args.Length >= 2 && args.Length <= 5 && args[0] == "--zeta-continuation")
+            {
+                double Parse(int index) => double.Parse(args[index], System.Globalization.CultureInfo.InvariantCulture);
+                var paths = ZetaContinuationExperiment.ComputePaths();
+                using var frame = ZetaContinuationExperiment.Render(paths, args.Length >= 3 ? Parse(2) : 0,
+                    args.Length >= 4 ? int.Parse(args[3]) : 256, args.Length == 5 ? Parse(4) : 0);
+                ZetaContinuationExperiment.Export(args[1], frame);
+                return;
+            }
+            if (args.Length == 2 && args[0] == "--verify-continuation")
+            {
+                string path = System.IO.Path.GetFullPath(args[1]);
+                System.IO.Directory.CreateDirectory(System.IO.Path.GetDirectoryName(path));
+                System.IO.File.WriteAllText(path, ZetaContinuationExperiment.Verify(ZetaContinuationExperiment.ComputePaths()));
+                return;
+            }
+            if ((args.Length == 3 || args.Length == 4) && args[0] == "--continuation-sequence")
+            {
+                string directory = System.IO.Path.GetFullPath(args[1]);
+                int count = int.Parse(args[2]);
+                int resolution = args.Length == 4 ? int.Parse(args[3]) : 256;
+                if (count < 2 || count > 10000) throw new ArgumentOutOfRangeException(nameof(count), "Use 2 through 10000 sequence frames.");
+                var paths = ZetaContinuationExperiment.ComputePaths();
+                ZetaContinuationExperiment.Verify(paths);
+                System.IO.Directory.CreateDirectory(directory);
+                for (int index = 0; index < count; index++)
+                {
+                    using var phase = ZetaContinuationExperiment.RenderPhase((double)index / (count - 1), resolution);
+                    phase.Save(System.IO.Path.Combine(directory, $"phase{index:D4}.png"), System.Drawing.Imaging.ImageFormat.Png);
+                }
+                using var frame = ZetaContinuationExperiment.Render(paths, 1, resolution);
+                ZetaContinuationExperiment.Export(System.IO.Path.Combine(directory, "paths.png"), frame);
+                System.IO.File.WriteAllText(System.IO.Path.Combine(directory, "sequence.json"),
+                    System.Text.Json.JsonSerializer.Serialize(new
+                    {
+                        schema = "graph-zeta-continuation-sequence-v1", traceId = "graph.riemann.continuation.animation",
+                        count, resolution, paletteDegrees = 0, filenamePattern = "phase{index:D4}.png",
+                        targetFormula = "a=index/(count-1)", targetMinimum = 0, targetMaximum = 1,
+                        domain = new { minSigma = 0.05, maxSigma = 3, minT = 10, maxT = 30 },
+                        note = "Phase-only numerical raster; paths and text remain separate. Not an RH proof."
+                    }, new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));
+                return;
+            }
             // produces: graph.riemann.switch.export
             if ((args.Length == 2 || args.Length == 7) && args[0] == "--zeta-switch")
             {
@@ -82,7 +126,8 @@ namespace Graphics
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(args.Length == 1 && args[0] == "--switch-lab" ? (Form)new ZetaSwitchForm()
+            Application.Run(args.Length == 1 && args[0] == "--continuation-lab" ? (Form)new ZetaContinuationForm()
+                : args.Length == 1 && args[0] == "--switch-lab" ? (Form)new ZetaSwitchForm()
                 : args.Length == 1 && args[0] == "--zero-lab" ? (Form)new ZeroMotionForm()
                 : args.Length == 1 && args[0] == "--prime-lab" ? (Form)new PrimePhaseForm() : new GraphForm());
         }

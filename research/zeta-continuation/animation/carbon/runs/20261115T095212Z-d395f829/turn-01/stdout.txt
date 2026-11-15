@@ -1,0 +1,17 @@
+STATUS: CHECKPOINT
+ACK: initial
+CLOCK: 2026-11-15T01:52:36.5266320-08:00
+
+### FINDINGS
+- **Derivative Identity & Local Invertibility**: For holomorphic $\zeta(s)$ away from its simple pole at $s=1$, differentiating $\zeta(s(a)) = a$ with respect to $a \in [0, 1]$ yields $\zeta'(s)\frac{ds}{da} = 1$, or $\frac{ds}{da} = \frac{1}{\zeta'(s)}$ wherever $\zeta'(s) \neq 0$. By the holomorphic Inverse Function Theorem, $\zeta'(s_0) \neq 0$ guarantees a unique local analytic continuation branch $s(a)$. In the viewport $R = [0.05, 3] \times [10, 30]$, $s=1$ is excluded ($\operatorname{Im}(s) \ge 10$), so $\zeta$ is strictly holomorphic throughout $R$.
+- **Critical Encounters & Stopping**: A branch fails to continue uniquely if and only if it hits a critical point ($\zeta'(s)=0$, causing algebraic branching/collision) or escapes to infinity/pole (impossible inside compact $R$). The contract properly distinguishes numerical stopping conditions (small $|\zeta'|$, predictor-corrector step rejection) from certified zeros of $\zeta'$, and prohibits global reseeding that could jump branches.
+- **Boundary-Exit Interpretation**: Since $\zeta(s) \to 1$ uniformly as $\sigma \to +\infty$, some $a \to 1^-$ preimages drift toward $+\infty$ (where $\sigma > 3$), while closed-rectangle paths stay bounded. Treating exit across $\partial R$ strictly as leaving the viewport—neither branch annihilation, collision, nor proof against re-entry—is mathematically exact.
+- **Missing Global RH Argument**:
+  1. Continuing three seeded zeros ($t \approx 14.13, 21.02, 25.01$) tests only three local $a$-homotopy lifts, saying nothing about infinitely many heights $t \to \infty$.
+  2. Even a complete bijection between $a=1$ preimages and $a=0$ zeros via $\zeta'$-free paths does not constrain $\operatorname{Re}(s(0)) = 1/2$: $a$-points for $a \neq 0$ routinely lie off the critical line (and outside the critical strip), and the ODE $\frac{ds}{da} = 1/\zeta'(s)$ carries no mechanism forcing $a=0$ endpoints onto $\sigma = 1/2$ or ruling out off-line zero pairs / $\zeta'(s)=0$ saddle bifurcations at arbitrary heights.
+
+### UNCERTAINTY
+- Whether the contract should explicitly state that as $a \to 1^-$, an escaping branch $\sigma(a) \to +\infty$ crosses $\sigma = 3$ (a natural asymptotic reason for right-edge exit when $\zeta(s) - 1 \sim -2^{-s}$) so that $\sigma=3$ exits are recognized as expected asymptotic behavior for certain branches rather than anomalous failures.
+
+### NEXT
+- Await coordinator steering on whether to scrutinize asymptotic $\sigma \to +\infty$ ($a \to 1^-$) branch behavior vs. interior $a=1$ roots in $R$, or proceed directly to final `VERDICT` (`ACCEPT` vs `REVISE`) with mathematical test specifications.

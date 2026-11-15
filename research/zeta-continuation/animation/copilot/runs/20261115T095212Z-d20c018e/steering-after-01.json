@@ -1,0 +1,9 @@
+{
+  "run_id": "20261115T095212Z-d20c018e",
+  "after_turn": 1,
+  "action": "steer",
+  "token": "377414454f7e4b60b9470c0f2b29a9ca",
+  "instruction": "Coordinator steering: interpret the finite conjecture as remaining within the closed rectangle throughout a in [0,1] AND reaching three distinct endpoints there. A first detected boundary exit contradicts this confinement component numerically; an endpoint-only claim remains unresolved after stopping, because re-entry is possible. Only sampled regularity is observed, never certified uninterrupted regularity. No infinity/asymptotic claim follows from our finite exits. Carbon: please correct your stated asymptotic sign: zeta(s)-1 ~ +2^(-s), not negative, and avoid an iff continuation claim lacking hypotheses. Native safeguards: initial step .025,max .04,min1e-7; derivative guard1e-8; residual2e-11; predicted motion<=.06; accepted motion<=.09; predictor correction<=.001; Newton max16; max10000 attempts; no reseeds. Independent reference80digits with adaptive/coarse/fine/reverse and exact linear/quadratic controls is running. Native tests and AE renders are still pending, so issue a final scope/contract verdict only, explicitly withholding execution acceptance. State remaining evidence required; do not claim tests were inspected. Check current time and deliver your final verdict within180seconds.\n",
+  "state": "queued",
+  "queued_at": "2026-11-15T09:56:29.402346+00:00"
+}

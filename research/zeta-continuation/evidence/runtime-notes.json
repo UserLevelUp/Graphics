@@ -1,0 +1,60 @@
+{
+  "traceId": "graph.riemann.continuation.animation.verify",
+  "environment": {
+    "python": "3.14.6, MSC v.1944 64-bit AMD64, Windows",
+    "mpmath": "1.3.0",
+    "precisionDigits": 80,
+    "pythonLauncherInventory": "Only C:/Python314/python.exe was listed by py -0p.",
+    "jitEnabledWhenInspected": false
+  },
+  "failedRuns": [
+    {
+      "stage": "Initial exact/model controls",
+      "failure": "Quadratic path stopped at a checkpoint because a rounding-sized landing step became the next adaptive step size.",
+      "resolution": "Preserve the prior proposed step size when a step is truncated solely to land on a checkpoint. Linear and both quadratic branch controls then passed."
+    },
+    {
+      "stage": "First combined baseline/coarse/fine run; default mpmath fast zeta route",
+      "failure": "TypeError: 'int' object is not an iterator",
+      "availableTraceback": [
+        "track_roots.py: track -> refine_exit -> advance -> corrected -> value",
+        "mpmath/functions/zeta.py:533: return ctx._zeta(s, **kwargs)",
+        "mpmath/ctx_mp_python.py:1007: ctx.make_mpc(mpc_f(x._mpc_, prec, rounding))",
+        "mpmath/libmp/gammazeta.py:1114: for k in xrange(n)"
+      ],
+      "followup": "The same isolated coarse Z2 path subsequently completed. The exact cause is not established and is not attributed to JIT."
+    },
+    {
+      "stage": "Combined run using explicit mpmath Euler-Maclaurin route; after all nine forward variants completed",
+      "failure": "TypeError: 'mpc' object is not iterable",
+      "availableTraceback": null,
+      "note": "The first error handler captured the exception message but not its full stack. Stack capture was added afterward. An isolated forward/reverse Z1 test passed."
+    },
+    {
+      "stage": "First aggregate native-export validation, after Z1 passed",
+      "failure": "Z2 validation subprocess returned nonzero with empty stderr.",
+      "exitCode": null,
+      "note": "The initial parent error omitted the child return code. Return-code capture was added immediately afterward; the original code cannot be reconstructed from the retained output.",
+      "followup": "An isolated Z2 check passed. A complete subsequent validation of Z1, Z2, Z3 and all three exports passed without changing tolerances."
+    }
+  ],
+  "mitigation": {
+    "referenceEvaluator": "Pinned mpmath1.3.0, explicit Euler-Maclaurin route, 80 digits",
+    "execution": "A fresh Python subprocess runs each branch and baseline/coarse/fine/reverse variant; output is accepted only on exit code0 and subsequent comparison checks.",
+    "tolerancesChanged": false,
+    "scope": "Separate high-precision implementation of the same algorithm family used by the native evaluator; no algorithmic-independence claim.",
+    "publication": "No failed combined run wrote the final trajectory or numerical report files."
+  },
+  "finalValidatedExecution": {
+    "referenceRun": "All baseline/coarse/fine branches and all reverse checks passed in fresh subprocesses; elapsed44.9003198seconds.",
+    "referenceOutputs": ["reference-trajectories.json", "numerical-report.json"],
+    "referenceOutcome": {"completed": ["Z3"], "viewportExits": ["Z1", "Z2"]},
+    "referenceMaximumBaseResidual": "9.8617003604103058e-61",
+    "nativeRun": "All three native branches and exports at a=0,.5,1 passed on the complete rerun.",
+    "nativeOutput": "native-validation.json",
+    "acceptedNativePointsChecked": 277,
+    "nativeMaximumCoordinateDifference": "1.960505041837500075e-10",
+    "nativeMaximumIndependentResidual": "1.875114668125079824e-11",
+    "conclusion": "Passing reports describe the successful executions. Prior runtime failures remain recorded; their underlying cause is not established."
+  }
+}

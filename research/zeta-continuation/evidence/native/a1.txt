@@ -1,0 +1,6 @@
+Zeta continuation at real target a=1; fixed view sigma[0.05,3], t[10,30].
+Z1: exited; point target=0.854447992938; s=2.999999999527+13.83867652423i; residual=1.875E-011.
+Z2: exited; point target=0.917224519373; s=2.999999999481+22.20906410453i; residual=9.005E-012.
+Z3: completed; point target=1; s=1.407788040653+23.32798775456i; residual=7.732E-016.
+Solid path is accepted history; dashed path is the computed future. Exited markers hold a previous target's boundary point.
+Adaptive predictor/Newton, no reseeding. Empirical floating-point continuation; not certified and not an RH proof.

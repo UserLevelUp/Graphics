@@ -226,3 +226,51 @@ host = "switch_copilot_review"
 context = ["research/zeta-switch/graph.riemann.switch.contract.current.md"]
 inputs = ["research/zeta-switch/graph.riemann.switch.contract.current.md", "research/zeta-switch/run-review.py", "research/zeta-switch/verify-review.py", "research/zeta-switch/steer-review.py"]
 tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "copilot"]}]
+
+[warp.dispatch.hosts.continuation_animation_carbon]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/zeta-continuation/animation/run-review.py", "carbon", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.riemann.continuation.animation.carbon"]
+workspace = "research/zeta-continuation/animation/carbon"
+host = "continuation_animation_carbon"
+context = ["research/zeta-continuation/animation/graph.riemann.continuation.animation.contract.current.md"]
+inputs = ["research/zeta-continuation/animation/graph.riemann.continuation.animation.contract.current.md", "research/zeta-continuation/animation/run-review.py", "research/zeta-continuation/animation/verify-review.py", "research/zeta-continuation/animation/steer-review.py"]
+tests = [{program="C:/Python314/python.exe", args=["../verify-review.py", "carbon"]}]
+
+[warp.dispatch.hosts.continuation_animation_codex]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/zeta-continuation/animation/run-review.py", "codex", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.riemann.continuation.animation.codex"]
+workspace = "research/zeta-continuation/animation/codex"
+host = "continuation_animation_codex"
+context = ["research/zeta-continuation/animation/graph.riemann.continuation.animation.contract.current.md"]
+inputs = ["research/zeta-continuation/animation/graph.riemann.continuation.animation.contract.current.md", "research/zeta-continuation/animation/run-review.py", "research/zeta-continuation/animation/verify-review.py", "research/zeta-continuation/animation/steer-review.py"]
+tests = [{program="C:/Python314/python.exe", args=["../verify-review.py", "codex"]}]
+
+[warp.dispatch.hosts.continuation_animation_copilot]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/zeta-continuation/animation/run-review.py", "copilot", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.riemann.continuation.animation.copilot"]
+workspace = "research/zeta-continuation/animation/copilot"
+host = "continuation_animation_copilot"
+context = ["research/zeta-continuation/animation/graph.riemann.continuation.animation.contract.current.md"]
+inputs = ["research/zeta-continuation/animation/graph.riemann.continuation.animation.contract.current.md", "research/zeta-continuation/animation/run-review.py", "research/zeta-continuation/animation/verify-review.py", "research/zeta-continuation/animation/steer-review.py"]
+tests = [{program="C:/Python314/python.exe", args=["../verify-review.py", "copilot"]}]

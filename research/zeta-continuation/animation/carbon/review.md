@@ -1,0 +1,19 @@
+publish: graph.riemann.continuation.animation.carbon.response
+
+STATUS: COMPLETE
+ACK: 30f6d5cf899947788efa2f6f8ff31547
+CLOCK: 2026-11-15T01:56:51.0645029-08:00
+
+### VERDICT
+ACCEPT (scope and mathematical contract only; execution acceptance explicitly withheld pending artifacts and test verification).
+
+### REASONING
+- **Local Continuation & Derivative Identity**: On $R = [0.05, 3] \times [10, 30]$, $s=1$ is excluded so $\zeta(s)$ is holomorphic. Differentiating $\zeta(s(a))=a$ yields $\frac{ds}{da} = \frac{1}{\zeta'(s)}$ wherever $\zeta'(s) \neq 0$, guaranteeing a unique local analytic continuation via the holomorphic Inverse Function Theorem. Over a half-open interval $[0, a_*)$ bounded inside compact $R$, a branch extends to $a_*$ if $\liminf_{a \to a_*^-} |\zeta'(s(a))| > 0$ (preventing oscillation/critical collision), whereas numerical step/derivative guards ($|\zeta'| \le 10^{-8}$, step $\ge 10^{-7}$, motion/correction caps, no reseeding) record only sampled regularity—never certified uninterrupted regularity or certified $\zeta'(s)=0$ zeros.
+- **Asymptotic Correction & Boundary Exit**: Correcting Turn 1: as $\sigma \to +\infty$, $\zeta(s) - 1 = 2^{-s} + 3^{-s} + \dots \sim +2^{-s}$ (positive coefficient). Under the two-part finite conjecture (confinement in $R$ throughout $a \in [0,1]$ AND three distinct $a=1$ endpoints in $R$), a first detected exit across $\partial R$ numerically refutes confinement, while leaving an endpoint-only claim unresolved upon stopping because re-entry into $R$ remains possible. Finite viewport exits imply no asymptotic/infinity claims.
+- **Missing Global RH Argument**: Continuing three seeded zeros ($t \approx 14.13, 21.02, 25.01$) is purely finite-height diagnostics, not zero discovery or $t \to \infty$ coverage. Furthermore, even $\zeta'$-free $a$-homotopies between $a=1$ and $a=0$ impose no mechanism forcing $\operatorname{Re}(s(0)) = 1/2$ or excluding off-line zero pairs and higher-height critical bifurcations (off-line $a \neq 0$ roots are routine).
+
+### TESTS
+No tests or artifacts were inspected. Execution acceptance requires:
+1. Executed 80-digit `mpmath==1.3.0` reference runs (`residual <= 1e-55`), forward/coarse/fine/reverse path agreement, refined exit brackets in $a$, and exact linear/quadratic analytic controls (branch preservation + derivative guards).
+2. Native implementation source review and UI/export checks matching reference points within $5 \times 10^{-9}$ (`residual <= 1e-9`) under the stated step/Newton/motion safeguards without reseeding.
+3. Editable After Effects project, playable render, sampled frame verification, durable evidence hashes, and local Git checkpoint.

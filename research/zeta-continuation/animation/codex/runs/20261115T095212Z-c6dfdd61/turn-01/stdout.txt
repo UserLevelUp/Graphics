@@ -1,0 +1,20 @@
+STATUS: CHECKPOINT
+ACK: initial
+CLOCK: 2026-11-15T01:52:39.9735295-08:00
+
+FINDINGS
+
+- The contract correctly separates seeded diagnostics from discovery. Returning to supplied zeros cannot independently establish their existence, completeness, or RH.
+- Off-critical-line solutions of ζ(s)=a for a≠0 do not contradict RH. Their motion supplies no global zero-exclusion argument at a=0.
+- **Missing premise: the conjecture’s confinement requirement is ambiguous.** “Reaches a distinct ζ=1 point within the rectangle” describes an endpoint condition; a first boundary exit does not refute it because the branch might return. If the intended conjecture requires remaining inside throughout 0≤a≤1, say so explicitly. Otherwise, exit leaves the endpoint claim unresolved.
+- Residuals, coarse/fine/reverse agreement, and positive sampled derivative minima provide numerical evidence, not certification of uninterrupted regular continuation. A proof-level “without a critical encounter” claim needs control between samples, such as validated neighborhoods covering the branch with ζ′ bounded away from zero.
+- Boundary exits, failed correction, and small derivatives must remain separate outcomes. None alone establishes disappearance or collision.
+- The supplied contract supports neither novelty nor a partial RH proof. Novelty requires a specific claim and prior-art assessment; partial RH progress requires a proved statement concerning a=0 beyond the seeded observations.
+
+UNCERTAINTY
+
+This is a contract-only audit. No implementation, numerical results, exports, or rendered frames were inspected. The safeguards are stated requirements, not verified behavior.
+
+NEXT
+
+Clarify confinement versus endpoint success and distinguish observed regularity from certified regularity. Then audit evidence and presentation language against those definitions, particularly exit captions and seed provenance. Await coordinator steering before a final verdict.

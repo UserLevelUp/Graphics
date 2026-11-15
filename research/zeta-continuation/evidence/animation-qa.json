@@ -1,0 +1,37 @@
+{
+  "traceId": "graph.riemann.continuation.animation.media.verify",
+  "status": "passed",
+  "application": "Adobe After Effects 27.0x78",
+  "composition": "Scientific animation",
+  "nativeEditableLayers": 109,
+  "durationSeconds": 32,
+  "resolution": [1920, 1080],
+  "framesPerSecond": 24,
+  "frames": 768,
+  "codec": "H.264 Main, yuv420p",
+  "audio": "None by design; narration belongs to the separate presentation child.",
+  "decode": "Complete video decoded by FFmpeg with no errors; animation-decode.log is empty.",
+  "renderEvidence": "animation-render.log reports Finished composition and 768 frames.",
+  "sampledTimesSeconds": [0, 15, 26, 30],
+  "observations": [
+    "At a=0, all three labeled starting zeros lie on the displayed critical line; future tracks are dashed.",
+    "At a=0.5, markers and solid histories have advanced and later samples remain dashed.",
+    "At a approximately0.923, Z1 and Z2 have square exit markers with their own earlier targets; Z3 is still tracking.",
+    "At a=1, Z1 and Z2 remain explicitly exited and Z3 is labeled reached zeta=1.",
+    "Phase image import is constrained to121 numbered256x256frames; source dimensions/count are checked before project save.",
+    "Axes, title, target, cards, source geometry and footers are readable in inspected final frames. The initial height-label overlap was corrected and rerendered.",
+    "Native paths, marker positions, labels, cards and axes remain editable. Raster phase samples are linked source assets.",
+    "Visible text states that marker interpolation, discrete phase frames and finite numerical evidence do not certify RH."
+  ],
+  "buildIncidents": [
+    "Initial script passed2-element spatial tangent vectors where AE required3; corrected to3-element vectors.",
+    "The initial alphabetical image import included an unrelated overview PNG; corrected to numbered-sequence import with dimensions/count assertion before acceptance.",
+    "A stalled task-owned partial build was stopped, producing a subsequent crash-recovery prompt. The corrected script then saved and rendered successfully.",
+    "Initial render had one height-label/trace-label overlap. Layout corrected and complete video rerendered; final sampled frames inspected."
+  ],
+  "limits": [
+    "Visual inspection samples frames; complete decoding checks stream integrity but does not prove every frame's mathematics.",
+    "Trajectory keyframe interpolation and held phase samples are illustrative display geometry.",
+    "Neither high-precision agreement nor this video proves continuous branch regularity or RH."
+  ]
+}

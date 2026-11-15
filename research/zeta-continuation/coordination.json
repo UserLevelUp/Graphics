@@ -1,0 +1,46 @@
+{
+  "schema": "graph-continuation-coordination-v1",
+  "defines": "graph.riemann.continuation",
+  "parent": "graph.riemann",
+  "intent": "Produce a checked scientific animation first, then a separate presenter explanation, with explicit child acceptance and parent integration.",
+  "mainlineLanding": {
+    "defaultBranch": "master",
+    "from": "692ba9f",
+    "to": "f24b64c97916eb12aae25f5844458c687365fb2f",
+    "localAndOriginEqual": true,
+    "pushWasFastForward": true,
+    "restoreTagsPushed": 7,
+    "newBranch": "graph/riemann-continuation",
+    "draftStashRetained": "graph continuation drafts before mainline fast-forward 2026-11-15"
+  },
+  "children": {
+    "animation": {
+      "traceId": "graph.riemann.continuation.animation",
+      "contract": "animation/graph.riemann.continuation.animation.contract.current.md",
+      "requires": ["independent numerical checks", "native UI/export", "editable AEP", "rendered video and frame QA", "evidence checkpoint"]
+    },
+    "presentation": {
+      "traceId": "graph.riemann.continuation.presentation",
+      "dependsOnAccepted": "graph.riemann.continuation.animation",
+      "contract": "storyboard.json",
+      "requires": ["final result narration", "original presenter and bubbles", "editable AEP", "voice timing", "render QA", "mathematical scope review"]
+    }
+  },
+  "clarifications": [
+    "The finite conjecture requires staying in the fixed rectangle throughout a in [0,1], as well as reaching three distinct 1-points there.",
+    "An observed exit supplies numerical counterevidence to confinement, not a formal certified counterexample or a disproof of an endpoint-only statement.",
+    "The stopped experiment cannot decide re-entry, escape to infinity, or later collisions.",
+    "Local derivative identities, finite numerics and visual color changes do not supply the global zero-exclusion argument required for RH."
+  ],
+  "watch": {
+    "topic": "graph.riemann.continuation.animation",
+    "workers": ["carbon", "codex", "copilot"],
+    "checkpointSeconds": 180,
+    "steering": "animation/evidence/steering-01.txt",
+    "dispatch": "animation/evidence/dispatch-final.json",
+    "reviewScope": "contract only; not execution acceptance",
+    "protocolDoesNotProveMathematics": true
+  },
+  "state": "animation_under_verification",
+  "globalRhProof": "open"
+}

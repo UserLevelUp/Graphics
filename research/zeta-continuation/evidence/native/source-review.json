@@ -1,0 +1,75 @@
+{
+  "traceId": "graph.riemann.continuation.animation.source-review",
+  "status": "reviewed",
+  "reviewerRole": "Implementation-agent source audit; independent numerical validation is a separate artifact.",
+  "checkedUtc": "2026-11-15T10:06:09.952326+00:00",
+  "contract": "research/zeta-continuation/animation/graph.riemann.continuation.animation.contract.current.md",
+  "files": [
+    {
+      "path": "Graphics/ZetaContinuationExperiment.cs",
+      "sha256": "55aebcce73f055dd7694bb0b9bcf8ee6901a7fbd64b2301e583ba53f5db43f7c"
+    },
+    {
+      "path": "Graphics/ZetaContinuationForm.cs",
+      "sha256": "668301e4498418e991dfd6ddc41db6c48c153ca56381ee98b7aa09fe2bc9f6fd"
+    },
+    {
+      "path": "Graphics/Program.cs",
+      "sha256": "acb5c456c4d00ca59f160374303b9b2293023f6304577aae85dbc959a1a7ddd7"
+    },
+    {
+      "path": "Graphics/GraphForm.cs",
+      "sha256": "7261a20cdddf73474283e583015dff6d4fec2d5056be1f7885883c75501b38c1"
+    }
+  ],
+  "inspected": [
+    {
+      "requirement": "Fixed equation and domain",
+      "finding": "The only tracked equation is zeta(s)=a, a in[0,1]. Domain is sigma[.05,3], t[10,30]. The three fixed known-zero seeds are checked with native evaluator residuals before tracking."
+    },
+    {
+      "requirement": "Adaptive predictor and corrector",
+      "finding": "Predictor uses previous s+(target-a)/zetaPrime. Predicted displacement<=.06; Newton correction step<=.09; total accepted displacement<=.09; final predictor correction<=.001. Failed attempts halve the parameter step; iteration and minimum-step stops are explicit."
+    },
+    {
+      "requirement": "Derivative handling",
+      "finding": "Prediction rejects nonfinite or abs(derivative)<1e-8. Newton iterations apply the same guard before dividing. Measured accepted-point derivatives are exported; no sampled minimum is presented as a uniform path bound."
+    },
+    {
+      "requirement": "No branch replacement",
+      "finding": "No global root finder, nearest-endpoint matching, or reseeding occurs after the initial seeds. Each trajectory retains its starting ID and accepted/rejected records."
+    },
+    {
+      "requirement": "Boundary semantics",
+      "finding": "The first detected outside corrected point starts bisection in a. Each accepted inside refinement is retained; last inside/outside points and bracket width<=1e-10 are exported. Status is exited, not collided or disappeared. This brackets the detected crossing numerically, not every possible excursion between samples."
+    },
+    {
+      "requirement": "Displayed roots",
+      "finding": "At an intermediate target, a local predictor/Newton correction from the preceding accepted point provides the marker. A failed display correction is explicitly labeled. After exit, the earlier endpoint is held with its own target and heldAtEarlierTarget=true; the report discloses that it is not a current solution."
+    },
+    {
+      "requirement": "Phase and path rendering",
+      "finding": "Background caches one shared native Euler-Maclaurin zeta grid per resolution and colors zeta-a. Solid history and dashed precomputed future are separate. RenderPhase uses the same raster without labels for editable AE composition. Paths between samples are display geometry."
+    },
+    {
+      "requirement": "UI lifecycle and export",
+      "finding": "Rendering runs off the UI thread; version checks discard stale frames and dispose old bitmaps. Playback waits while rendering. Native Save uses the displayed Frame, not pending control values. Form disposal stops the timer and releases its bitmap."
+    },
+    {
+      "requirement": "CLI validation",
+      "finding": "Sequence requires count2..10000; renderer requires finite a in[0,1], grid64..512, finite rotation. Six executed invalid-input cases rejected; default switch smoke remains unchanged."
+    },
+    {
+      "requirement": "Provenance and scope",
+      "finding": "JSON stores parameters, all paths, rejected attempts, boundary brackets, displayed states, samples and numerical limitations. File/source hashes are recorded in external evidence/manifests. Native code does not claim RH, novelty, exhaustive zeros or interval certification."
+    }
+  ],
+  "materialDefectsFound": [],
+  "unresolvedLimits": [
+    "No certified continuation tubes, global derivative bound, or rigorous boundary enclosure.",
+    "Motion and correction caps reduce numerical branch jumping but do not prove global branch preservation.",
+    "A first detected exit does not rule out an unobserved between-sample excursion or later return outside the view.",
+    "Independent high-precision controls and rendered AE checks remain separate acceptance obligations.",
+    "This audit does not claim independence from the implementation author."
+  ]
+}

@@ -1,0 +1,2 @@
+Clock-formatted response, checkpoint, coordinator handoff, acknowledgment and final artifact verified.
+Clock values are worker observations; mathematical acceptance requires coordinator review.

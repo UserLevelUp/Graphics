@@ -1,0 +1,107 @@
+{
+  "traceId": "graph.riemann.continuation.animation.ui.verify",
+  "status": "passed",
+  "checkedUtc": "2026-11-15T10:04:10.281009+00:00",
+  "method": "Native Windows app through @oai/sky; screenshot and accessibility observations; filesystem comparison of native Save result.",
+  "windowTitle": "Zeta real-target continuation laboratory",
+  "windowId": 32375852,
+  "observations": {
+    "initialLayout": "All controls, graph, three status cards, phase legend text and disclaimer visible without clipping at1280x940client.",
+    "playback": "Play changed to Pause and advanced target from0 to0.290; moving colored roots and updated residuals observed.",
+    "pause": "Pause changed to Play at0.560 and subsequent numeric entry remained stationary.",
+    "numericTarget": "Set0.500, committed withTab; numeric control, slider50percent, graph target and data report all became0.5.",
+    "slider": "Dragged thumb frommidpoint towardthreequarters; numeric/displaytarget became0.751.",
+    "reset": "Reset to zero returned numeric, slider and graph to0, withthree startingzeros active.",
+    "endpoint": "Target one showedZ1/Z2 EXITED withheldboundarymarkers andZ3 COMPLETED atknownonepoint.",
+    "hover": "Hover reportedcomplexinput,zeta,andabs(zeta-a) without changingframe.",
+    "nativeSave": "SavedthroughobservednativeSaveFileDialog; dialogclosedandSavebuttonreturned.",
+    "appLeftAt": "a=1,grid256,palette0,playbackstopped."
+  },
+  "nativeExport": {
+    "image": "research\\zeta-continuation\\evidence\\native\\native-ui.png",
+    "imageSha256": "5db9eccd28e9bbec91efcbdd1d845208a178575f4eb4814502d867aed5407696",
+    "cliReferenceSha256": "5db9eccd28e9bbec91efcbdd1d845208a178575f4eb4814502d867aed5407696",
+    "pixelsIdenticalToCliA1": true,
+    "bytesIdenticalToCliA1": true,
+    "jsonIdenticalToCliA1": true,
+    "textIdenticalToCliA1": true
+  },
+  "inputValidation": [
+    {
+      "case": "sequence-count-one",
+      "args": [
+        "--continuation-sequence",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\continuation-input-checks\\count-one",
+        "1"
+      ],
+      "exitCode": 3762504530,
+      "rejected": true,
+      "diagnostic": "Unhandled exception. System.ArgumentOutOfRangeException: Use 2 through 10000 sequence frames. (Parameter 'count')"
+    },
+    {
+      "case": "sequence-count-too-large",
+      "args": [
+        "--continuation-sequence",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\continuation-input-checks\\count-large",
+        "10001"
+      ],
+      "exitCode": 3762504530,
+      "rejected": true,
+      "diagnostic": "Unhandled exception. System.ArgumentOutOfRangeException: Use 2 through 10000 sequence frames. (Parameter 'count')"
+    },
+    {
+      "case": "negative-target",
+      "args": [
+        "--zeta-continuation",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\continuation-input-checks\\negative.png",
+        "-0.1"
+      ],
+      "exitCode": 3762504530,
+      "rejected": true,
+      "diagnostic": "Unhandled exception. System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'target')"
+    },
+    {
+      "case": "target-over-one",
+      "args": [
+        "--zeta-continuation",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\continuation-input-checks\\over.png",
+        "1.1"
+      ],
+      "exitCode": 3762504530,
+      "rejected": true,
+      "diagnostic": "Unhandled exception. System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'target')"
+    },
+    {
+      "case": "grid-too-small",
+      "args": [
+        "--zeta-continuation",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\continuation-input-checks\\grid.png",
+        "0.5",
+        "15"
+      ],
+      "exitCode": 3762504530,
+      "rejected": true,
+      "diagnostic": "Unhandled exception. System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'resolution')"
+    },
+    {
+      "case": "nonfinite-rotation",
+      "args": [
+        "--zeta-continuation",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\continuation-input-checks\\rotation.png",
+        "0.5",
+        "256",
+        "NaN"
+      ],
+      "exitCode": 3762504530,
+      "rejected": true,
+      "diagnostic": "Unhandled exception. System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'rotation')"
+    }
+  ],
+  "limitations": [
+    "No long-duration playback or every-resolution interaction test performed.",
+    "Sky accessibility focus metadata was stale for the Save dialog; visual caret/selection and observed filename were used before typing.",
+    "Early Sky inputs returned geometry/cache errors without app action; fresh screenshots and coordinate actions succeeded.",
+    "CLI rejects invalid inputs via ArgumentOutOfRangeException and nonzero exit; friendly CLI diagnostic formatting is not implemented.",
+    "These UI checks do not certify the continuation mathematics."
+  ]
+}

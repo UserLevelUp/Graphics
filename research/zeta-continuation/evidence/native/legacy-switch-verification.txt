@@ -1,0 +1,1 @@
+94 switch/model checks passed: pure selector/ties, nearest output, seam jump, opposite branches, invalid state, N64/96 refinement, analytic derivative, shift invariance, conjugation, and reference residuals. Numerical checks are not an RH proof.

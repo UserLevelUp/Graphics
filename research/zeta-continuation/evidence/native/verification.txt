@@ -1,0 +1,1 @@
+3 trajectories and 277 accepted points pass residual, motion, ordering and explicit endpoint checks. Independent high-precision validation is separate; these are not certified enclosures.

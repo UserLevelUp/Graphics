@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.continuation.animation",
+  "slice_id": "carbon",
+  "contract_hash": "contract:graph.riemann.continuation.animation.carbon:v1",
+  "attempt_id": "scope-watch-carbon-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:06f972c35d1329ccd1d58cc313f6e7c45a769394ba68d8fc2d728ea5e7f4652e",
+  "evidence": {
+    "review": [
+      "research/zeta-continuation/animation/carbon/review.md"
+    ]
+  },
+  "reason": null
+}

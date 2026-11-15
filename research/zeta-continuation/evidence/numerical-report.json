@@ -1,0 +1,500 @@
+{
+  "status": "passed",
+  "traceId": "graph.riemann.continuation.animation.verify",
+  "precisionDigits": 80,
+  "mpmathVersion": "1.3.0",
+  "settings": {
+    "initial_step": "0.025",
+    "max_step": "0.04",
+    "min_step": "0.0000000001",
+    "derivative_guard": "0.00000001",
+    "residual_goal": "1.0e-60",
+    "prediction_motion": "0.08",
+    "accepted_motion": "0.12",
+    "correction_limit": "0.001",
+    "boundary_tolerance": "1.0e-24",
+    "max_newton": 14,
+    "max_attempts": 20000
+  },
+  "referenceMethod": "mpmath Euler-Maclaurin at80digits",
+  "executionModel": "Fresh Python subprocess per branch and forward/reverse variant; no failed run is accepted.",
+  "modelControls": {
+    "linearExact": true,
+    "quadraticBranches": [
+      {
+        "sign": 1,
+        "points": 24,
+        "endpointError": "0.0"
+      },
+      {
+        "sign": -1,
+        "points": 24,
+        "endpointError": "0.0"
+      }
+    ],
+    "linearBoundaryWidthA": "5.29395592033937711917701562924776226282119750976562499999283130539860324e-25",
+    "criticalStartStopped": true,
+    "zeroResidualWrongBranchRejected": true
+  },
+  "variants": {
+    "base": [
+      {
+        "id": "Z1",
+        "status": "exited",
+        "stopReason": "first_detected_boundary_exit",
+        "acceptedPoints": 107,
+        "rejectedSteps": 4,
+        "maximumResidual": "6.60606520754174943305223325289737974337059366282994704878409498866168805e-61",
+        "minimumSampledDerivativeMagnitude": "0.108060917812447780743387131579815391441186117909532344972142149467768198",
+        "maximumPredictionError": "0.000846196015845640026921403720194803099730052053928375244140625",
+        "endpoint": {
+          "a": 0.854447992969996,
+          "aDecimal": "0.854447992969995946578561851930710187991158122144952358212321996688842773",
+          "s": {
+            "real": 3.0,
+            "imaginary": 13.838676524192683
+          },
+          "sDecimal": {
+            "real": "2.99999999999999999999999634112331713997557257730247477843256904851544544",
+            "imaginary": "13.8386765241926833638705727359192869034379454547243756265493872621975633"
+          },
+          "derivative": {
+            "real": 0.10769415799095598,
+            "imaginary": 0.008895520956504274
+          },
+          "derivativeDecimal": {
+            "real": "0.10769415799095597807863362992037586567416980525516273962193570200516081",
+            "imaginary": "0.00889552095650427406661290819168546483640537934539091564466125574974552579"
+          },
+          "residual": 1.0752614466949573e-81,
+          "residualDecimal": "1.07526144669495738725706266692593740082725646072343778468715121041638904e-81",
+          "step": 1.0291450309139749e-24,
+          "stepDecimal": "1.02914503091397491196801183832576498389244079589843750000043653133243329e-24",
+          "predictionError": 3.4585556879417404e-47,
+          "newtonIterations": 1,
+          "event": "boundary-refinement"
+        },
+        "exitWidthA": "5.14572515456987455984005919162882491946220397949218749999164045871893592e-25",
+        "exitBoundaries": [
+          "maxSigma"
+        ]
+      },
+      {
+        "id": "Z2",
+        "status": "exited",
+        "stopReason": "first_detected_boundary_exit",
+        "acceptedPoints": 136,
+        "rejectedSteps": 4,
+        "maximumResidual": "9.86170036041030575369269043564733546044915137102647748118018101164995023e-61",
+        "minimumSampledDerivativeMagnitude": "0.0459297717661977219330432500714924873521292149845975266656260414794209734",
+        "maximumPredictionError": "0.00081859785836367452739603667311030221753753721714019775390625",
+        "endpoint": {
+          "a": 0.9172245193893167,
+          "aDecimal": "0.91722451938931672697920266801308031290318467654287815093994140625",
+          "s": {
+            "real": 3.0,
+            "imaginary": 22.209064104699262
+          },
+          "sDecimal": {
+            "real": "2.99999999999999999999999671668151276071935670412650673094711721461457714",
+            "imaginary": "22.2090641046992617145756135797295949408513385901846410821782122985770834"
+          },
+          "derivative": {
+            "real": 0.041221948172718396,
+            "imaginary": -0.02025573803495523
+          },
+          "derivativeDecimal": {
+            "real": "0.0412219481727183966354493189295060190526872731025602034946102316015564647",
+            "imaginary": "-0.0202557380349552271242452560953554286110400753294112277778654347404164633"
+          },
+          "residual": 1.1835304469688716e-81,
+          "residualDecimal": "1.18353044696887164153985133658305802679753705658299766170002558349580139e-81",
+          "step": 6.744604874597826e-25,
+          "stepDecimal": "6.74460487459782598307356238365173339843750000000000000000064108654130819e-25",
+          "predictionError": 9.625149493631844e-47,
+          "newtonIterations": 1,
+          "event": "boundary-refinement"
+        },
+        "exitWidthA": "6.74460487459782598307356238365173339843750000000000000000064108654130819e-25",
+        "exitBoundaries": [
+          "maxSigma"
+        ]
+      },
+      {
+        "id": "Z3",
+        "status": "completed",
+        "stopReason": "target_reached",
+        "acceptedPoints": 120,
+        "rejectedSteps": 4,
+        "maximumResidual": "8.80988505514264057764056721988930121776983551540519228904060398323646135e-61",
+        "minimumSampledDerivativeMagnitude": "0.100413318171208041382958963917009217789729962407019181893864260877604413",
+        "maximumPredictionError": "0.000858210328635990150024370759496150640188716351985931396484375",
+        "endpoint": {
+          "a": 1.0,
+          "aDecimal": "1.0",
+          "s": {
+            "real": 1.4077880406528867,
+            "imaginary": 23.327987754559103
+          },
+          "sDecimal": {
+            "real": "1.40778804065288669385419974236805666338030480226676766497379469599269619",
+            "imaginary": "23.3279877545591044950394126864606589268898708975940066763539925119626187"
+          },
+          "derivative": {
+            "real": -0.18858916738132578,
+            "imaginary": 0.07438268737813186
+          },
+          "derivativeDecimal": {
+            "real": "-0.188589167381325777554443789436150842644107444718826435288357580643064395",
+            "imaginary": "0.0743826873781318600182570998097780126086882179390802256346553786221601642"
+          },
+          "residual": 4.862061682958596e-69,
+          "residualDecimal": "4.86206168295859669478787028314899171345793298117246992322199052810796026e-69",
+          "step": 0.00157312,
+          "stepDecimal": "0.00157312",
+          "predictionError": 6.039580561752646e-05,
+          "newtonIterations": 4,
+          "event": "continuation"
+        },
+        "exitWidthA": null,
+        "exitBoundaries": []
+      }
+    ],
+    "coarse": [
+      {
+        "id": "Z1",
+        "status": "exited",
+        "stopReason": "first_detected_boundary_exit",
+        "acceptedPoints": 73,
+        "rejectedSteps": 2,
+        "maximumResidual": "5.98479780321847639038414038500574859102210232321858949071320141671517401e-61",
+        "minimumSampledDerivativeMagnitude": "0.1080609178124477807433874511718312520912566143689819047028861766346315",
+        "maximumPredictionError": "0.0037462748293870628928103894139667318086139857769012451171875",
+        "endpoint": {
+          "a": 0.854447992969996,
+          "aDecimal": "0.85444799296999594657856143264940129711249028332531452178955078125",
+          "s": {
+            "real": 3.0,
+            "imaginary": 13.838676524192683
+          },
+          "sDecimal": {
+            "real": "2.99999999999999999999999247424644389406738073800853747780614658467700522",
+            "imaginary": "13.8386765241926833638705730553227244145923525334472747063074539350227309"
+          },
+          "derivative": {
+            "real": 0.10769415799095598,
+            "imaginary": 0.008895520956504274
+          },
+          "derivativeDecimal": {
+            "real": "0.107694157990955978078633947592960874128243194588351463903643824743118194",
+            "imaginary": "0.00889552095650427406661294460607892422330902352059315635636106529725949884"
+          },
+          "residual": 1.1284141206657615e-82,
+          "residualDecimal": "1.12841412066576146571132518264940657162597927573759667592686394495964826e-82",
+          "step": 1.5612511283791264e-23,
+          "stepDecimal": "0.0000000000000000000000156125112837912638497073203325271606445312500000000000000005469123617781",
+          "predictionError": 7.959524804475607e-45,
+          "newtonIterations": 1,
+          "event": "boundary-refinement"
+        },
+        "exitWidthA": "9.75781955236953990606707520782947540283203125000000000000429514445482275e-25",
+        "exitBoundaries": [
+          "maxSigma"
+        ]
+      },
+      {
+        "id": "Z2",
+        "status": "exited",
+        "stopReason": "first_detected_boundary_exit",
+        "acceptedPoints": 95,
+        "rejectedSteps": 4,
+        "maximumResidual": "8.54401408728220607824878764053041890889781517739917483169342139852534728e-62",
+        "minimumSampledDerivativeMagnitude": "0.0459297717661977219330433625275885175094667311310005330886840554512601868",
+        "maximumPredictionError": "0.003679684328427953142470752112558329827152192592620849609375",
+        "endpoint": {
+          "a": 0.9172245193893167,
+          "aDecimal": "0.91722451938931672697920253101329379763484439536114223301410675048828125",
+          "s": {
+            "real": 3.0,
+            "imaginary": 22.209064104699262
+          },
+          "sDecimal": {
+            "real": "2.99999999999999999999999403961088765531666962881635430960377753860758512",
+            "imaginary": "22.2090641046992617145756122642643225087038268325387587476300891905890224"
+          },
+          "derivative": {
+            "real": 0.041221948172718396,
+            "imaginary": -0.02025573803495523
+          },
+          "derivativeDecimal": {
+            "real": "0.0412219481727183966354493986562659408960385647315288530328700787161705215",
+            "imaginary": "-0.0202557380349552271242453488389748249459002430272419912301688327201195066"
+          },
+          "residual": 4.361824348330032e-82,
+          "residualDecimal": "4.36182434833003187212078676755330060373869612021773832797161282485729414e-82",
+          "step": 7.318364664277155e-25,
+          "stepDecimal": "7.3183646642771549295503064058721065521240234374999999999979502593695018e-25",
+          "predictionError": 1.1332417115613965e-46,
+          "newtonIterations": 1,
+          "event": "boundary-refinement"
+        },
+        "exitWidthA": "7.3183646642771549295503064058721065521240234374999999999979502593695018e-25",
+        "exitBoundaries": [
+          "maxSigma"
+        ]
+      },
+      {
+        "id": "Z3",
+        "status": "completed",
+        "stopReason": "target_reached",
+        "acceptedPoints": 55,
+        "rejectedSteps": 1,
+        "maximumResidual": "9.78435870670110429435240478167772174323794845612695040147619256087256959e-67",
+        "minimumSampledDerivativeMagnitude": "0.100528402503002157072805624565534322707030259703641962606021607634954226",
+        "maximumPredictionError": "0.003829653158735352690145159471057922928594052791595458984375",
+        "endpoint": {
+          "a": 1.0,
+          "aDecimal": "1.0",
+          "s": {
+            "real": 1.4077880406528867,
+            "imaginary": 23.327987754559103
+          },
+          "sDecimal": {
+            "real": "1.40778804065288669385419974236805666338030480226676766497379469598973609",
+            "imaginary": "23.3279877545591044950394126864606589268898708975940066763539925119588371"
+          },
+          "derivative": {
+            "real": -0.18858916738132578,
+            "imaginary": 0.07438268737813186
+          },
+          "derivativeDecimal": {
+            "real": "-0.188589167381325777554443789436150842644107444718826435288357580644672494",
+            "imaginary": "0.0743826873781318600182570998097780126086882179390802256346553786211244556"
+          },
+          "residual": 9.784358706701104e-67,
+          "residualDecimal": "9.78435870670110429435240478167772174323794845612695040147619256087256959e-67",
+          "step": 0.0018532864,
+          "stepDecimal": "0.0018532864",
+          "predictionError": 8.413797426998358e-05,
+          "newtonIterations": 4,
+          "event": "continuation"
+        },
+        "exitWidthA": null,
+        "exitBoundaries": []
+      }
+    ],
+    "fine": [
+      {
+        "id": "Z1",
+        "status": "exited",
+        "stopReason": "first_detected_boundary_exit",
+        "acceptedPoints": 172,
+        "rejectedSteps": 3,
+        "maximumResidual": "1.59766799708434719296611502345921001905925263414079227123810721729916416e-61",
+        "minimumSampledDerivativeMagnitude": "0.108060917812447780743387218741274262527568980580288194942889394767665357",
+        "maximumPredictionError": "0.00019800016344390051884795378445147662205272354185581207275390625",
+        "endpoint": {
+          "a": 0.854447992969996,
+          "aDecimal": "0.854447992969995946578561737581262308660612347921414766460657119750976562",
+          "s": {
+            "real": 3.0,
+            "imaginary": 13.838676524192683
+          },
+          "sDecimal": {
+            "real": "2.99999999999999999999999528652053352745515662113026381281508668660328105",
+            "imaginary": "13.8386765241926833638705728230293153155709655671034058003879303333731976"
+          },
+          "derivative": {
+            "real": 0.10769415799095598,
+            "imaginary": 0.008895520956504274
+          },
+          "derivativeDecimal": {
+            "real": "0.107694157990955978078633716558353595252553456891484231764323966544781181",
+            "imaginary": "0.00889552095650427406661291812288368103283364593862387806793613649822368536"
+          },
+          "residual": 1.2514741760169086e-82,
+          "residualDecimal": "1.25147417601690864825358210056408461251833795175665807774837767324229237e-82",
+          "step": 9.147955830346444e-25,
+          "stepDecimal": "9.14795583034644366193788300734013319015502929687499999999216672524026199e-25",
+          "predictionError": 2.7326859756576715e-47,
+          "newtonIterations": 1,
+          "event": "boundary-refinement"
+        },
+        "exitWidthA": "9.14795583034644366193788300734013319015502929687500000000270892318349252e-25",
+        "exitBoundaries": [
+          "maxSigma"
+        ]
+      },
+      {
+        "id": "Z2",
+        "status": "exited",
+        "stopReason": "first_detected_boundary_exit",
+        "acceptedPoints": 226,
+        "rejectedSteps": 3,
+        "maximumResidual": "2.79531607083006958673196578359452946435631667699204209848227506593541949e-62",
+        "minimumSampledDerivativeMagnitude": "0.0459297717661977219330433066647825237253260778110538615010962443155803766",
+        "maximumPredictionError": "0.00022963172743839676171080654842882040611584670841693878173828125",
+        "endpoint": {
+          "a": 0.9172245193893167,
+          "aDecimal": "0.9172245193893167269792025990682304836809635162353515625",
+          "s": {
+            "real": 3.0,
+            "imaginary": 22.209064104699262
+          },
+          "sDecimal": {
+            "real": "2.99999999999999999999999536945144091280388478109763690913018121357398291",
+            "imaginary": "22.2090641046992617145756129177245074126047959210376695090007201359181401"
+          },
+          "derivative": {
+            "real": 0.041221948172718396,
+            "imaginary": -0.02025573803495523
+          },
+          "derivativeDecimal": {
+            "real": "0.0412219481727183966354493590518275933957344872146109027983887676343408873",
+            "imaginary": "-0.0202557380349552271242453027683837196896432092956217875032979090362041478"
+          },
+          "residual": 6.017595674504277e-82,
+          "residualDecimal": "6.01759567450427688179874189032744764235000501329076287367277628464915562e-82",
+          "step": 6.139089236967265e-25,
+          "stepDecimal": "6.13908923696726560592651367187500000000000000000000000000170803233021089e-25",
+          "predictionError": 7.9744796092322e-47,
+          "newtonIterations": 1,
+          "event": "boundary-refinement"
+        },
+        "exitWidthA": "6.13908923696726560592651367187500000000000000000000000000170803233021089e-25",
+        "exitBoundaries": [
+          "maxSigma"
+        ]
+      },
+      {
+        "id": "Z3",
+        "status": "completed",
+        "stopReason": "target_reached",
+        "acceptedPoints": 230,
+        "rejectedSteps": 3,
+        "maximumResidual": "3.28640471369026602888336071081118031783053994585978311610275296404696956e-61",
+        "minimumSampledDerivativeMagnitude": "0.100412397004712810215056298169378770421070579370385700078485682297248829",
+        "maximumPredictionError": "0.000195828809733570338540153965567469640518538653850555419921875",
+        "endpoint": {
+          "a": 1.0,
+          "aDecimal": "1.0",
+          "s": {
+            "real": 1.4077880406528867,
+            "imaginary": 23.327987754559103
+          },
+          "sDecimal": {
+            "real": "1.40778804065288669385419974236805666338030480226676766497379469599271147",
+            "imaginary": "23.3279877545591044950394126864606589268898708975940066763539925119626372"
+          },
+          "derivative": {
+            "real": -0.18858916738132578,
+            "imaginary": 0.07438268737813186
+          },
+          "derivativeDecimal": {
+            "real": "-0.188589167381325777554443789436150842644107444718826435288357580643056229",
+            "imaginary": "0.0743826873781318600182570998097780126086882179390802256346553786221651203"
+          },
+          "residual": 9.640405120327074e-80,
+          "residualDecimal": "9.64040512032707494447239447128554296600866307211649818799550794484355201e-80",
+          "step": 0.0007326208,
+          "stepDecimal": "0.0007326208",
+          "predictionError": 1.2953657200411844e-05,
+          "newtonIterations": 4,
+          "event": "continuation"
+        },
+        "exitWidthA": null,
+        "exitBoundaries": []
+      }
+    ]
+  },
+  "coarseFineComparisons": [
+    {
+      "id": "Z1",
+      "coarse": {
+        "commonCheckpoints": 9,
+        "maximumRootDifference": "1.95376298597814235032131136804528228130581174622323796832028055435676582e-60",
+        "endpointADifference": "4.19281308890878667838819637836422771215438842772999999999721666201771914e-25",
+        "endpointSDifference": "3.8800457869383440366143876092274359321060150411533888973769853779967099e-24"
+      },
+      "fine": {
+        "commonCheckpoints": 9,
+        "maximumRootDifference": "3.33190864986768202406291908815440860343083736943446223600260767892776955e-62",
+        "endpointADifference": "1.14349447879330545774223537591751664876937866210999999999438748254375314e-25",
+        "endpointSDifference": "1.05819430552863928271301594056304211442956888612859387605209225207772586e-24"
+      }
+    },
+    {
+      "id": "Z2",
+      "coarse": {
+        "commonCheckpoints": 10,
+        "maximumRootDifference": "3.23148779316137687017363181888324215078980849342941423237578037878407076e-61",
+        "endpointADifference": "1.36999786515268340281181735917925834655761718750000000000045966438942918e-25",
+        "endpointSDifference": "2.98281008694439270566981937529081977062030436253752919425438354347560576e-24"
+      },
+      "fine": {
+        "commonCheckpoints": 10,
+        "maximumRootDifference": "1.0763103198933840440475648944688891000458616356042401131852171752270024e-65",
+        "endpointADifference": "6.89448498292222211603075265884399414062499999999999999990226148543874126e-26",
+        "endpointSDifference": "1.50109280272893882487041941557430099709697420852469295549934621816332953e-24"
+      }
+    },
+    {
+      "id": "Z3",
+      "coarse": {
+        "commonCheckpoints": 11,
+        "maximumRootDifference": "1.39799451999153945029353873657492938958719735397232863338708649726610497e-60",
+        "endpointADifference": "0.0",
+        "endpointSDifference": "4.80236301938952388410860881246975325494839942087017542809439805052493101e-66"
+      },
+      "fine": {
+        "commonCheckpoints": 11,
+        "maximumRootDifference": "1.39799451999153945029353873657492938958719735397232863338708649726610497e-60",
+        "endpointADifference": "0.0",
+        "endpointSDifference": "2.3994340999495591342944566645194726512607153527862405247701044175935789e-68"
+      }
+    }
+  ],
+  "reverseComparisons": [
+    {
+      "id": "Z1",
+      "acceptedPoints": 80,
+      "endpointError": "9.78668093903640099987113554438798844127775196414559469031360711753667994e-67",
+      "commonCheckpoints": 9,
+      "maximumCommonTargetError": "3.33190864986768202406291908815440860343083736943446223600260767892776955e-62"
+    },
+    {
+      "id": "Z2",
+      "acceptedPoints": 135,
+      "endpointError": "0.0",
+      "commonCheckpoints": 10,
+      "maximumCommonTargetError": "8.97308135480702672782217999198760316766018061774800906052563826958152292e-68"
+    },
+    {
+      "id": "Z3",
+      "acceptedPoints": 124,
+      "endpointError": "0.0",
+      "commonCheckpoints": 11,
+      "maximumCommonTargetError": "1.39799451008263571094685217368181808231881793611599621200988890539064375e-60"
+    }
+  ],
+  "elapsedSeconds": 44.90031980000276,
+  "observedOutcome": {
+    "completed": [
+      "Z3"
+    ],
+    "exited": [
+      "Z1",
+      "Z2"
+    ],
+    "allThreeReachDistinctInViewOnePoints": false
+  },
+  "limitations": [
+    "Empirical high-precision continuation, not interval-certified branch isolation.",
+    "Reference and native evaluators are separate implementations of the same Euler-Maclaurin algorithm family.",
+    "First detected exits are bracketed; an unseen excursion between samples is not rigorously excluded.",
+    "A positive sampled derivative minimum does not certify nonvanishing between samples.",
+    "A viewport exit is not disappearance or proof that a branch never returns.",
+    "Display interpolation is not a solved root. No global reseeding or endpoint replacement is used.",
+    "Off-line zeta=1 points are not counterexamples to RH. No exhaustive or RH claim is made."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "recur-warp-complete-v1",
+  "warp_id": "graph.riemann.continuation.animation",
+  "slice_id": "carbon",
+  "attempt_id": "scope-watch-carbon-20261115",
+  "state": "planned",
+  "path": "warps/graph.riemann.continuation.animation.carbon.scope-watch-carbon-20261115.warp-layer.json",
+  "contract_hash": "contract:graph.riemann.continuation.animation.carbon:v1",
+  "result_hash": "sha256:06f972c35d1329ccd1d58cc313f6e7c45a769394ba68d8fc2d728ea5e7f4652e",
+  "evidence": {
+    "review": [
+      "research/zeta-continuation/animation/carbon/review.md"
+    ]
+  }
+}
