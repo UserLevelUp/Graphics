@@ -1,0 +1,40 @@
+{
+  "bubble_uuid": "01a1e194-4236-7ace-9848-df61c3f397fa",
+  "goal": "Explain tested prime and zeta shortcuts and verified results in a narrated addition to the full presentation",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "Preserve the accepted 320-second source export; publish a separately named revised presentation.",
+    "Explain the tested rule and its scope, with counterexamples or exact supporting evidence.",
+    "Distinguish a prime value, a zero index, a zero height, a coefficient and a function argument.",
+    "No novelty, instantaneous primality, or RH advance without a corresponding proof.",
+    "Keep the verified public repository and branch card last; verify audio, captions and video."
+  ],
+  "required_slices": [
+    {
+      "contract_hash": "contract:graph.riemann.lessons.explanation:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "explanation",
+      "slice_uuid": "01a1e194-4236-72ad-a35a-86f054947894"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.lessons.video:v1",
+      "depends_on": [
+        "explanation"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "video",
+      "slice_uuid": "01a1e194-4236-76af-b0fe-ea141a053057"
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.riemann.lessons"
+}

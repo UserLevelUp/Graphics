@@ -1,0 +1,15 @@
+{
+  "schema": "warp-bubble-map-v1", "warp_id": "{warp}", "goal": "{goal}",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "Preserve the accepted 320-second source export; publish a separately named revised presentation.",
+    "Explain the tested rule and its scope, with counterexamples or exact supporting evidence.",
+    "Distinguish a prime value, a zero index, a zero height, a coefficient and a function argument.",
+    "No novelty, instantaneous primality, or RH advance without a corresponding proof.",
+    "Keep the verified public repository and branch card last; verify audio, captions and video."
+  ],
+  "required_slices": [
+    {"slice_id":"explanation","contract_hash":"contract:{warp}.explanation:v1","depends_on":[],"evidence_gates":["review"],"evidence_mode":"declared","intelligence_tick":0},
+    {"slice_id":"video","contract_hash":"contract:{warp}.video:v1","depends_on":["explanation"],"evidence_gates":["review"],"evidence_mode":"declared","intelligence_tick":0}
+  ]
+}

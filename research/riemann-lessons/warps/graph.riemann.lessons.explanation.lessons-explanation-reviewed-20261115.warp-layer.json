@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.lessons",
+  "slice_id": "explanation",
+  "contract_hash": "contract:graph.riemann.lessons.explanation:v1",
+  "attempt_id": "lessons-explanation-reviewed-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:3317df1191e2c5c2d08a0ddcef6b1ad275b89c1e163a929172206496b080597b",
+  "evidence": {
+    "review": [
+      "evidence/explanation-review.json"
+    ]
+  },
+  "reason": null
+}

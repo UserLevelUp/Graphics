@@ -1,0 +1,131 @@
+{
+  "schema": "graph-riemann-lessons-script-v1",
+  "traceId": "graph.riemann.lessons.script",
+  "title": "What worked, what failed, and what remains open",
+  "audience": "Public mathematical exploration; no prior conversation assumed",
+  "plannedDurationSeconds": 246,
+  "meaning": "A retrospective on explicitly tested rules, not a claim that every possible zeta-based approach is impossible.",
+  "scenes": [
+    {
+      "id": "brush_order",
+      "title": "A four-color brush is a display rule",
+      "narration": "This idea starts with a four-color quadrant brush at each point. Its trail changes with direction, overlap, rotation, and resolution. That makes the geometry visible. But a surviving pixel color is not, by itself, an arithmetic certificate of primality.",
+      "durationSeconds": 18,
+      "screenLines": ["Direction + overlap + resolution → visible trail", "A pixel records rendering choices", "An arithmetic claim needs a separate test"],
+      "status": "USEFUL VISUALIZATION • NO PRIME CERTIFICATE",
+      "evidencePaths": ["research/zeta-origin-trail/prepare_revision.py", "research/prime-quadrant-phase/README.md"],
+      "sourceURLs": []
+    },
+    {
+      "id": "slope_rule",
+      "title": "A downward slope did not identify primes",
+      "narration": "Z three means the third zeta zero, not twenty-three or a prime label. For the first hundred zero indices, negative starting slopes occurred at fourteen prime indices and thirty-five composite indices. Eleven prime indices sloped upward. Both signs mix the classes, so this proposed rule fails.",
+      "durationSeconds": 22,
+      "screenLines": ["Z3 = zero #3, at height 25.010857…", "Prime indices: 14 down • 11 up", "Composite indices: 35 down • 39 up", "Initial paths: ζ(s)=a, starting at a=0"],
+      "cohortNote": "Index 1 is neither prime nor composite and has a negative initial slope.",
+      "status": "COUNTEREXAMPLES TO THE PROPOSED SLOPE RULE",
+      "evidencePaths": ["research/zeta-zero-index/README.md", "research/zeta-zero-index/proof-notes.md", "research/zeta-zero-index/evidence/zero-index.json"],
+      "sourceURLs": ["https://dlmf.nist.gov/25.10"]
+    },
+    {
+      "id": "half_identity",
+      "title": "Substituting the half-unit expression",
+      "narration": "The proposed denominator, g of n, simplifies exactly to n. Substituting it into zeta's series leaves the same function where that series converges. The half inside g does not set s to one half. And ninety-seven and composite ninety-nine both have a fractional half when divided by two.",
+      "durationSeconds": 22,
+      "screenLines": ["g(n) = 2(n/2 − 1/2) + 2·1/2 = n", "Σ 1/g(n)ˢ = Σ 1/nˢ = ζ(s), Re(s) > 1", "The half inside g(n) does not set s = 1/2", "97/2 = 48.5   •   99/2 = 49.5"],
+      "status": "EXACT SUBSTITUTION • THE ZETA SERIES IS UNCHANGED",
+      "evidencePaths": ["research/prime-divisor-phases/proof-and-findings.md", "research/prime-divisor-phases/README.md"],
+      "sourceURLs": ["https://dlmf.nist.gov/25.2"]
+    },
+    {
+      "id": "critical_line",
+      "title": "One half is a line coordinate",
+      "narration": "Zeta at one half exists and is about minus one point four six. The critical line instead uses one half plus i t. Particular heights give zeros. Putting ninety-seven into t gives a nonzero complex value. Fixing the real part does not identify an integer as prime.",
+      "durationSeconds": 22,
+      "screenLines": ["ζ(1/2) ≈ −1.460354509 ≠ 0", "Critical line: s = 1/2 + it", "ζ(1/2 + 97i) ≈ 1.375850 + 2.047089i", "RH conjecture: all nontrivial zeros lie on this line"],
+      "status": "A ZETA ZERO IS NOT AN INDIVIDUAL PRIME LABEL",
+      "evidencePaths": ["research/zeta-prime-check96/README.md", "research/zeta-zero-index/README.md"],
+      "sourceURLs": ["https://dlmf.nist.gov/25.10", "https://dlmf.nist.gov/25.2"]
+    },
+    {
+      "id": "shifted_zeta",
+      "title": "Extra zeta colors did not fix the test",
+      "narration": "With integer n used as height, ninety-seven and composite ninety-nine both occupy quadrant one. Comparing zeta at s, s plus one, and s minus one still fails. Matching ninety-seven's three colors keeps six primes and eighteen composites, while missing nineteen primes between two and one hundred.",
+      "durationSeconds": 22,
+      "screenLines": ["Test mapping: s = 1/2 + in, 2 ≤ n ≤ 100", "97 and 99 share the original quadrant I", "Match all 3 colors: 6 primes + 18 composites", "19 of the 25 primes are missed"],
+      "status": "THIS SPECIFIC COLOR RULE FAILS",
+      "evidencePaths": ["research/zeta-prime-check96/README.md", "research/zeta-prime-check96/evidence/comparison.json", "research/zeta-prime-check96/evidence/review.json"],
+      "sourceURLs": ["https://dlmf.nist.gov/25.4.E2"]
+    },
+    {
+      "id": "unit_switch",
+      "title": "Switching the unit term changes the target",
+      "narration": "Removing the unit term gives zeta minus one. Its zeros are where zeta equals one. Multiplying the two functions combines both zero sets. Every hypothetical off-line zeta zero survives, so the switch does not prove the hypothesis.",
+      "durationSeconds": 18,
+      "screenLines": ["1 is a unit; it is not prime", "ζ(s) − 1 = 0 means ζ(s) = 1", "ζ(s)[ζ(s) − 1] retains both zero sets"],
+      "status": "VALID TRANSFORMATION • RH STILL OPEN",
+      "evidencePaths": ["research/zeta-switch/README.md", "research/zeta-switch/math-audit.md"],
+      "sourceURLs": ["https://dlmf.nist.gov/25.2.E1", "https://dlmf.nist.gov/25.2.E11"]
+    },
+    {
+      "id": "finite_reversal",
+      "title": "Reversal does not create the complement",
+      "narration": "Reordering the same finite sum leaves its value unchanged. For the tested coefficient reversal, subtracting the reverse makes opposite positions have opposite signs. A nonzero, nonnegative composite indicator cannot have that symmetry. Other definitions of a backward recurrence would need a separate derivation.",
+      "durationSeconds": 20,
+      "screenLines": ["Reverse coefficients: (RF)(z) = zᴺF(1/z)", "B = F − RF implies b(N−n) = −b(n)", "Through 10: prime polynomial difference = z² − z⁸"],
+      "status": "THE TESTED REVERSAL DOES NOT ISOLATE COMPOSITES",
+      "evidencePaths": ["research/composite-remainder/proof.md", "research/composite-remainder/evidence/validation.json"],
+      "sourceURLs": []
+    },
+    {
+      "id": "infinite_subtraction",
+      "title": "Finite cancellation is well defined",
+      "narration": "Finite subtraction leaves nonprimes but requires knowing the prime terms to remove. At s equals minus one, the ordinary integer series diverges. Zeta's continued value, minus one twelfth, is not an ordinary sum for subtracting infinitely many primes.",
+      "durationSeconds": 18,
+      "screenLines": ["(1 + ... + 10) − (2 + 3 + 5 + 7)", "= 1 + 4 + 6 + 8 + 9 + 10", "ζ(−1) = −1/12 by analytic continuation", "1 remains nonprime, but is not composite"],
+      "status": "FINITE IDENTITY • NO INFINITY-MINUS-INFINITY SHORTCUT",
+      "evidencePaths": ["research/composite-remainder/proof.md"],
+      "sourceURLs": ["https://dlmf.nist.gov/25.2", "https://dlmf.nist.gov/25.6.E3"]
+    },
+    {
+      "id": "coefficient_cancellation",
+      "title": "Prime terms really can cancel",
+      "narration": "For real s greater than one, define A as the odd-number part of zeta. Then A minus one minus log A cancels every odd-prime coefficient and leaves weighted odd composites. The coefficient at ninety-seven is zero; at ninety-nine it is one. Evaluating H at ninety-seven does not extract that coefficient.",
+      "durationSeconds": 24,
+      "screenLines": ["A(s) = (1 − 2⁻ˢ)ζ(s),  s > 1 real", "H(s) = A(s) − 1 − log A(s)", "Coefficients: 97⁻ˢ → 0; 99⁻ˢ → 1", "H(97) > 0: argument ≠ coefficient index"],
+      "status": "EXACT COEFFICIENT IDENTITY • NO SPEEDUP ESTABLISHED",
+      "evidencePaths": ["research/composite-remainder/proof.md", "research/composite-remainder/evidence/independent-review.json"],
+      "sourceURLs": ["https://dlmf.nist.gov/25.2.E11"]
+    },
+    {
+      "id": "exact_color",
+      "title": "A correct color test still does arithmetic",
+      "narration": "Wilson's theorem tests a candidate without a list of previous primes. Our encoding places primes in quadrant one. The modular factorial supplies the answer; color displays it. This is not instantaneous. The separate four-divisor color test works only within its stated range.",
+      "durationSeconds": 20,
+      "screenLines": ["R(n) = ((n−1)! + 1) mod n, n ≥ 2", "R(n) = 0 exactly when n is prime", "F(n) = (1+i)iᴿ: quadrant I means prime", "Four fixed divisors suffice through 100, not for all n"],
+      "status": "CORRECT CLASSICAL TEST • NO NEW FAST ALGORITHM",
+      "evidencePaths": ["research/prime-quadrant-phase/README.md", "research/prime-quadrant-phase/proof.md", "research/prime-divisor-phases/proof-and-findings.md"],
+      "sourceURLs": ["https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Wilson.html", "https://annals.math.princeton.edu/2004/160-2/p12"]
+    },
+    {
+      "id": "finite_result",
+      "title": "What the finite experiment establishes",
+      "narration": "Removing trivial factor pairs leaves an exact composite remainder. For odd integers greater than one, D counts nontrivial pairs: zero for ninety-seven, two for ninety-nine. The proof covers that entire domain. The implementation was independently checked through one hundred thousand. It still performs divisor counting.",
+      "durationSeconds": 22,
+      "screenLines": ["D(n) counts pairs n = ab with 3 ≤ a ≤ b", "D(97) = 0; D(99) = 2: (3,33), (9,11)", "For odd n > 1: D(n)=0 exactly when n is prime", "0–100: 25 primes • implementation checked through 100,000"],
+      "status": "PROVED CLASSICAL IDENTITY + FINITE IMPLEMENTATION CHECKS",
+      "evidencePaths": ["research/composite-remainder/proof.md", "research/composite-remainder/evidence/validation.json", "research/composite-remainder/evidence/independent-review.json", "research/prime-range-100/proof.md"],
+      "sourceURLs": ["https://dlmf.nist.gov/27.7.E5", "https://dlmf.nist.gov/27.4.E10"]
+    },
+    {
+      "id": "next_steps",
+      "title": "Useful next steps have explicit checks",
+      "narration": "The contribution is reproducible tests and counterexamples. Phase plots can guide searches; rigorous bounds must certify the zero count. Prime extraction also needs error bounds and cost comparisons. These experiments establish no new prime algorithm or Riemann Hypothesis advance.",
+      "durationSeconds": 18,
+      "screenLines": ["Visual candidate → certified contour → zero count", "Coefficient extraction → error bound → cost comparison", "Finite examples do not settle the infinite problem", "Reusable evidence, not an RH proof"],
+      "status": "REPRODUCIBLE EXPLORATION • OPEN PROBLEMS REMAIN",
+      "evidencePaths": ["research/zeta-zero-index/README.md", "research/zeta-prime-check96/README.md", "research/composite-remainder/proof.md", "research/gap-bound/interaction-bound-proof.md"],
+      "sourceURLs": ["https://dlmf.nist.gov/1.10.E9", "https://dlmf.nist.gov/27.4.E12", "https://www.claymath.org/millennium/riemann-hypothesis/"]
+    }
+  ]
+}

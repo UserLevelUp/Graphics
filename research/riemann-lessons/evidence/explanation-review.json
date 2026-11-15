@@ -1,0 +1,739 @@
+{
+  "schema": "graph-riemann-lessons-explanation-review-v1",
+  "traceId": "graph.riemann.lessons.explanation_review",
+  "status": "passed",
+  "reviewedAtUtc": "2026-11-15T23:44:18.133307+00:00",
+  "reviewedScriptSha256": "1ec6d94a22b2653f777f5ff5fdb7a56de24567d0085a52bf692bdefde2dc26e4",
+  "reviewer": "Independent Codex subagent /root/lessons_review; no candidate classifier imports",
+  "runtime": {
+    "python": "3.11.5 (main, Jan 23 2026, 07:39:48) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Program Files\\KiCad\\10.0\\bin\\python.exe",
+    "mpmath": "1.3.0",
+    "decimalDigits": 60
+  },
+  "scope": "Independent arithmetic checks, saved-row aggregation, high-precision numerical examples, and editorial mathematical review of this exact script revision.",
+  "checks": {
+    "slopeCountsRecomputedFrom100Rows": {
+      "prime": {
+        "negative": 14,
+        "positive": 11
+      },
+      "composite": {
+        "negative": 35,
+        "positive": 39
+      },
+      "neither": {
+        "negative": 1,
+        "positive": 0
+      }
+    },
+    "largestStoredDerivativeRatioError": "5.13169086483519831889683124544611108365950075568932107730628e-47",
+    "shiftedColorCountsFrom99Rows": [
+      {
+        "channels": [
+          0
+        ],
+        "primesKept": 10,
+        "compositesKept": 33,
+        "primesMissed": 15,
+        "selected": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          15,
+          16,
+          17,
+          22,
+          23,
+          26,
+          27,
+          31,
+          34,
+          35,
+          38,
+          41,
+          42,
+          44,
+          45,
+          51,
+          54,
+          57,
+          60,
+          62,
+          63,
+          68,
+          70,
+          71,
+          73,
+          76,
+          78,
+          80,
+          81,
+          83,
+          85,
+          88,
+          90,
+          93,
+          95,
+          97,
+          99
+        ]
+      },
+      {
+        "channels": [
+          0,
+          1
+        ],
+        "primesKept": 7,
+        "compositesKept": 28,
+        "primesMissed": 18,
+        "selected": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          15,
+          16,
+          17,
+          22,
+          23,
+          26,
+          27,
+          34,
+          35,
+          42,
+          44,
+          45,
+          51,
+          54,
+          60,
+          62,
+          63,
+          68,
+          70,
+          71,
+          73,
+          78,
+          80,
+          81,
+          85,
+          88,
+          90,
+          97,
+          99
+        ]
+      },
+      {
+        "channels": [
+          0,
+          2
+        ],
+        "primesKept": 7,
+        "compositesKept": 22,
+        "primesMissed": 18,
+        "selected": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          16,
+          17,
+          22,
+          23,
+          27,
+          31,
+          35,
+          42,
+          45,
+          51,
+          54,
+          57,
+          60,
+          63,
+          68,
+          73,
+          76,
+          78,
+          81,
+          88,
+          93,
+          95,
+          97
+        ]
+      },
+      {
+        "channels": [
+          0,
+          1,
+          2
+        ],
+        "primesKept": 6,
+        "compositesKept": 18,
+        "primesMissed": 19,
+        "selected": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          16,
+          17,
+          22,
+          23,
+          27,
+          35,
+          42,
+          45,
+          51,
+          54,
+          60,
+          63,
+          68,
+          73,
+          78,
+          81,
+          88,
+          97
+        ]
+      }
+    ],
+    "zetaHalf": "-1.46035450880958681288949915251529801246722933101258149054289",
+    "firstZero": {
+      "real": "0.5",
+      "imaginary": "14.1347251417346937904572519835624702707842571156992431756856"
+    },
+    "thirdZero": {
+      "real": "0.5",
+      "imaginary": "25.0108575801456887632137909925628218186595496725579966724965"
+    },
+    "independentlyReevaluatedZetaExamples": {
+      "95": [
+        {
+          "sigma": "0.5",
+          "real": "0.343529789273761244544723045655059854957014265844602674441151",
+          "imaginary": "0.217245403334830001355772036922117865335067671496374483314233",
+          "quadrant": 1
+        },
+        {
+          "sigma": "1.5",
+          "real": "0.587035885899138229583115216359845731794190180178622457843465",
+          "imaginary": "-0.006257376048070159584466443533072038611006029197376744136974",
+          "quadrant": 4
+        },
+        {
+          "sigma": "-0.5",
+          "real": "3.67675692253485604576220170318306594974966364622413113831201",
+          "imaginary": "8.07915447246254021040116614534732882578419369127421453544297",
+          "quadrant": 1
+        }
+      ],
+      "96": [
+        {
+          "sigma": "0.5",
+          "real": "-0.166198281260930600610955607199952739794620036367362643416977",
+          "imaginary": "0.170005882101963018682104950721240989486416241545068319093115",
+          "quadrant": 2
+        },
+        {
+          "sigma": "1.5",
+          "real": "0.646570000660439323556642155035640916464078747456967389538008",
+          "imaginary": "0.297821401182797304674510739210486739483066821029905042083669",
+          "quadrant": 1
+        },
+        {
+          "sigma": "-0.5",
+          "real": "-4.72203897106164129009703698391236774877334691502860835938404",
+          "imaginary": "-9.79813196189700610643675903045398556047121774284196377714924",
+          "quadrant": 3
+        }
+      ],
+      "97": [
+        {
+          "sigma": "0.5",
+          "real": "1.3758497974564355982604633293590756350730272170709118055295",
+          "imaginary": "2.04708914778039367085940107176551048091990646730039037997983",
+          "quadrant": 1
+        },
+        {
+          "sigma": "1.5",
+          "real": "1.07044712327833820046124866094746114917920908803559644645199",
+          "imaginary": "0.483665318134380152332935907707269499646034064239754290832323",
+          "quadrant": 1
+        },
+        {
+          "sigma": "-0.5",
+          "real": "0.579079961439107249657623671620779296362605501958662088552385",
+          "imaginary": "18.1251858035566234884175074248961397631674385304313758070367",
+          "quadrant": 1
+        }
+      ],
+      "98": [
+        {
+          "sigma": "0.5",
+          "real": "2.27775503435517880488831833363918449798303926560638278427874",
+          "imaginary": "-0.941457501064692479427178870882559241125066468931480318988427",
+          "quadrant": 4
+        },
+        {
+          "sigma": "1.5",
+          "real": "1.2875922733300579963854322240609830696428513264693750577161",
+          "imaginary": "0.106573542852005950850363232953366443346951101542283331319751",
+          "quadrant": 1
+        },
+        {
+          "sigma": "-0.5",
+          "real": "13.1269216445781278640776465336577907787452286133984691892633",
+          "imaginary": "-15.2897674506032114691107289791901533206125896907587731963422",
+          "quadrant": 4
+        }
+      ],
+      "99": [
+        {
+          "sigma": "0.5",
+          "real": "0.11507381562464694794100619763145579494340758914073659108107",
+          "imaginary": "0.575861300069389947575245129382743721599686888610722649460632",
+          "quadrant": 1
+        },
+        {
+          "sigma": "1.5",
+          "real": "1.1499053940500655867031837905970784986124704811719935167716",
+          "imaginary": "0.0772419572550825442007451560613734336578340117401289855694859",
+          "quadrant": 1
+        },
+        {
+          "sigma": "-0.5",
+          "real": "-16.2999891418100224934676097918889133586276108988463845727591",
+          "imaginary": "8.0045461147950401034702280727295715253138073711746467992294",
+          "quadrant": 2
+        }
+      ]
+    },
+    "finite0to100": {
+      "primes": 25,
+      "composites": 74,
+      "neither": [
+        0,
+        1
+      ],
+      "oddCompositeCoefficients": 25,
+      "unorderedPairs": 30
+    },
+    "wilsonExamples": {
+      "4": {
+        "remainder": 3,
+        "point": [
+          1,
+          -1
+        ]
+      },
+      "96": {
+        "remainder": 1,
+        "point": [
+          -1,
+          1
+        ]
+      },
+      "97": {
+        "remainder": 0,
+        "point": [
+          1,
+          1
+        ]
+      }
+    },
+    "finiteFilterOutsideDomainControl": {
+      "n": 121,
+      "classification": "composite",
+      "fixedFourDivisorFilter": "passes"
+    },
+    "halfIdentity": "Exact rational checks on -100..100 supplement the elementary identity n-1+1=n.",
+    "denominatorSubstitutionFiniteSums": [
+      {
+        "sReal": "2.0",
+        "sImaginary": "0.0",
+        "terms": 100,
+        "absoluteDifference": "0.0",
+        "finiteSumReal": "1.63498390018489286507716949818032376668332170003126381385311",
+        "finiteSumImaginary": "0.0"
+      },
+      {
+        "sReal": "0.5",
+        "sImaginary": "14.134725",
+        "terms": 100,
+        "absoluteDifference": "0.0",
+        "finiteSumReal": "0.496254594211055838898677967223793446984724590853396909517135",
+        "finiteSumImaginary": "-0.506912117815772379406862656398640087681457565799932974678851"
+      }
+    ],
+    "denominatorSubstitutionConclusion": "Termwise equality extends to the ordinary infinite zeta series for Re(s)>1. The critical-line entry above is only a 100-term finite sum; it is not an evaluation of analytically continued zeta.",
+    "reversalN10NonzeroCoefficients": {
+      "2": 1,
+      "8": -1
+    },
+    "weightedCompositeCoefficients": {
+      "9": "1/2",
+      "27": "2/3",
+      "97": "0",
+      "99": "1"
+    },
+    "H97At160Digits": "1.372292180628845130048337412278022567767630109241423876274981347565042850148347484658636520084398511572208911125883077312316312092236121116203549495961544437062e-93",
+    "archivedLargerImplementationReview": {
+      "range": [
+        0,
+        100000
+      ],
+      "scalarClassifications": 100001,
+      "reevaluatedInThisReview": false
+    }
+  },
+  "editorialReview": [
+    "The claim being rejected is stated with its input mapping and finite scope, not as a universal impossibility theorem.",
+    "Prime values, zero indices, noninteger zero heights, coefficients and function arguments are kept distinct.",
+    "Exact Wilson/quadrant and divisor constructions are described as established arithmetic, with computational work retained.",
+    "The denominator substitution g(n)=n leaves each Dirichlet-series term unchanged; its internal half does not set the exponent s to one half.",
+    "The finite reversal obstruction applies to the defined polynomial reversal, not every conceivable reverse recurrence.",
+    "Unit-factor inclusion and exclusion is explicit; 1 is not reclassified as prime.",
+    "At s=-1 the ordinary integer series diverges; analytic continuation cannot be treated as ordinary subtraction of infinite sums.",
+    "At real s>1 H(s) uses an unambiguous real logarithm; coefficient cancellation does not mean H(97)=0.",
+    "No mathematical novelty, constant-time classifier, new zero certification or RH progress is claimed."
+  ],
+  "scenes": [
+    {
+      "id": "brush_order",
+      "title": "A four-color brush is a display rule",
+      "status": "USEFUL VISUALIZATION \u2022 NO PRIME CERTIFICATE",
+      "narrationWords": 39,
+      "durationSeconds": 18,
+      "evidence": [
+        {
+          "path": "C:\\src\\graph\\research\\zeta-origin-trail\\prepare_revision.py",
+          "sha256": "a4f2a402a271dd4353f7a93ff5528b50db59318050a0931ab652b603b54a319e"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\prime-quadrant-phase\\README.md",
+          "sha256": "0a3c90ee67a6cf72e5c44db296d6efb5c07a514257a7b7e93a0887fb28271c47"
+        }
+      ]
+    },
+    {
+      "id": "slope_rule",
+      "title": "A downward slope did not identify primes",
+      "status": "COUNTEREXAMPLES TO THE PROPOSED SLOPE RULE",
+      "narrationWords": 46,
+      "durationSeconds": 22,
+      "evidence": [
+        {
+          "path": "C:\\src\\graph\\research\\zeta-zero-index\\README.md",
+          "sha256": "0e32820d048bddd64235d1275b55001f43d41ca52f8cfca6e3b04468b46e2b4c"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\zeta-zero-index\\proof-notes.md",
+          "sha256": "9522c0b886c039bc2c51e8227dc9a6870e092c12e04de0d30185891fc49a9153"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\zeta-zero-index\\evidence\\zero-index.json",
+          "sha256": "c8710419108605bb58a8e4c25ae2a3f0376793e354eb3a2e064e24ad083200d2"
+        }
+      ]
+    },
+    {
+      "id": "half_identity",
+      "title": "Substituting the half-unit expression",
+      "status": "EXACT SUBSTITUTION \u2022 THE ZETA SERIES IS UNCHANGED",
+      "narrationWords": 48,
+      "durationSeconds": 22,
+      "evidence": [
+        {
+          "path": "C:\\src\\graph\\research\\prime-divisor-phases\\proof-and-findings.md",
+          "sha256": "da80ba003631b592529a4df9c664ac6d808791277af3162867a59a01dca7713b"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\prime-divisor-phases\\README.md",
+          "sha256": "8d978ef2a9c0fcbab3162d02db1d66fe70109d3e12a4a4b65e9def6af09a58e5"
+        }
+      ]
+    },
+    {
+      "id": "critical_line",
+      "title": "One half is a line coordinate",
+      "status": "A ZETA ZERO IS NOT AN INDIVIDUAL PRIME LABEL",
+      "narrationWords": 47,
+      "durationSeconds": 22,
+      "evidence": [
+        {
+          "path": "C:\\src\\graph\\research\\zeta-prime-check96\\README.md",
+          "sha256": "ae4c793adae39613131fd77d96661affe9a9adc0d42e1077f5d935bf9ef2a987"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\zeta-zero-index\\README.md",
+          "sha256": "0e32820d048bddd64235d1275b55001f43d41ca52f8cfca6e3b04468b46e2b4c"
+        }
+      ]
+    },
+    {
+      "id": "shifted_zeta",
+      "title": "Extra zeta colors did not fix the test",
+      "status": "THIS SPECIFIC COLOR RULE FAILS",
+      "narrationWords": 46,
+      "durationSeconds": 22,
+      "evidence": [
+        {
+          "path": "C:\\src\\graph\\research\\zeta-prime-check96\\README.md",
+          "sha256": "ae4c793adae39613131fd77d96661affe9a9adc0d42e1077f5d935bf9ef2a987"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\zeta-prime-check96\\evidence\\comparison.json",
+          "sha256": "e3fb31fcc8561a321ef8101d83a91b5ba5cde60163756f0b1bc05e545aa7d93f"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\zeta-prime-check96\\evidence\\review.json",
+          "sha256": "1f6fdfe242ca2ae1579d39fe9b8ca4d789e4effbb9970f3b4053fe73e068d0ef"
+        }
+      ]
+    },
+    {
+      "id": "unit_switch",
+      "title": "Switching the unit term changes the target",
+      "status": "VALID TRANSFORMATION \u2022 RH STILL OPEN",
+      "narrationWords": 37,
+      "durationSeconds": 18,
+      "evidence": [
+        {
+          "path": "C:\\src\\graph\\research\\zeta-switch\\README.md",
+          "sha256": "39e3b56345e327a6f115e6c55b793f538dd2e4c55bf253dbf9f760de5a1d0b06"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\zeta-switch\\math-audit.md",
+          "sha256": "3b4380a4d6f4856a6ed67936291ac97b0d197dbca6c520d1b3dee3043fdd0acd"
+        }
+      ]
+    },
+    {
+      "id": "finite_reversal",
+      "title": "Reversal does not create the complement",
+      "status": "THE TESTED REVERSAL DOES NOT ISOLATE COMPOSITES",
+      "narrationWords": 43,
+      "durationSeconds": 20,
+      "evidence": [
+        {
+          "path": "C:\\src\\graph\\research\\composite-remainder\\proof.md",
+          "sha256": "3ac5927ab770019f3575f780d537c6f8051db1683dab6bbe85f8bf7550158586"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\composite-remainder\\evidence\\validation.json",
+          "sha256": "6adab0a34a5f72116a7aa60ac3f13dc84c14454672c27bd6de0eb1662986ae6d"
+        }
+      ]
+    },
+    {
+      "id": "infinite_subtraction",
+      "title": "Finite cancellation is well defined",
+      "status": "FINITE IDENTITY \u2022 NO INFINITY-MINUS-INFINITY SHORTCUT",
+      "narrationWords": 38,
+      "durationSeconds": 18,
+      "evidence": [
+        {
+          "path": "C:\\src\\graph\\research\\composite-remainder\\proof.md",
+          "sha256": "3ac5927ab770019f3575f780d537c6f8051db1683dab6bbe85f8bf7550158586"
+        }
+      ]
+    },
+    {
+      "id": "coefficient_cancellation",
+      "title": "Prime terms really can cancel",
+      "status": "EXACT COEFFICIENT IDENTITY \u2022 NO SPEEDUP ESTABLISHED",
+      "narrationWords": 50,
+      "durationSeconds": 24,
+      "evidence": [
+        {
+          "path": "C:\\src\\graph\\research\\composite-remainder\\proof.md",
+          "sha256": "3ac5927ab770019f3575f780d537c6f8051db1683dab6bbe85f8bf7550158586"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\composite-remainder\\evidence\\independent-review.json",
+          "sha256": "2bfd59bf0b7f4a85d7372ecbc69de613aa2fbb4ad5dff4a3a432f941871c038d"
+        }
+      ]
+    },
+    {
+      "id": "exact_color",
+      "title": "A correct color test still does arithmetic",
+      "status": "CORRECT CLASSICAL TEST \u2022 NO NEW FAST ALGORITHM",
+      "narrationWords": 42,
+      "durationSeconds": 20,
+      "evidence": [
+        {
+          "path": "C:\\src\\graph\\research\\prime-quadrant-phase\\README.md",
+          "sha256": "0a3c90ee67a6cf72e5c44db296d6efb5c07a514257a7b7e93a0887fb28271c47"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\prime-quadrant-phase\\proof.md",
+          "sha256": "f3b3688a1898ce796ea05be1329c620f61125f4089b90452e39a180deb7fdb5b"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\prime-divisor-phases\\proof-and-findings.md",
+          "sha256": "da80ba003631b592529a4df9c664ac6d808791277af3162867a59a01dca7713b"
+        }
+      ]
+    },
+    {
+      "id": "finite_result",
+      "title": "What the finite experiment establishes",
+      "status": "PROVED CLASSICAL IDENTITY + FINITE IMPLEMENTATION CHECKS",
+      "narrationWords": 45,
+      "durationSeconds": 22,
+      "evidence": [
+        {
+          "path": "C:\\src\\graph\\research\\composite-remainder\\proof.md",
+          "sha256": "3ac5927ab770019f3575f780d537c6f8051db1683dab6bbe85f8bf7550158586"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\composite-remainder\\evidence\\validation.json",
+          "sha256": "6adab0a34a5f72116a7aa60ac3f13dc84c14454672c27bd6de0eb1662986ae6d"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\composite-remainder\\evidence\\independent-review.json",
+          "sha256": "2bfd59bf0b7f4a85d7372ecbc69de613aa2fbb4ad5dff4a3a432f941871c038d"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\prime-range-100\\proof.md",
+          "sha256": "a8b63f0c040139353cebadb10cbbba3a39b4703b55bffdfb835f287255338b76"
+        }
+      ]
+    },
+    {
+      "id": "next_steps",
+      "title": "Useful next steps have explicit checks",
+      "status": "REPRODUCIBLE EXPLORATION \u2022 OPEN PROBLEMS REMAIN",
+      "narrationWords": 39,
+      "durationSeconds": 18,
+      "evidence": [
+        {
+          "path": "C:\\src\\graph\\research\\zeta-zero-index\\README.md",
+          "sha256": "0e32820d048bddd64235d1275b55001f43d41ca52f8cfca6e3b04468b46e2b4c"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\zeta-prime-check96\\README.md",
+          "sha256": "ae4c793adae39613131fd77d96661affe9a9adc0d42e1077f5d935bf9ef2a987"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\composite-remainder\\proof.md",
+          "sha256": "3ac5927ab770019f3575f780d537c6f8051db1683dab6bbe85f8bf7550158586"
+        },
+        {
+          "path": "C:\\src\\graph\\research\\gap-bound\\interaction-bound-proof.md",
+          "sha256": "22026bb25c0ea437e75e2f1e16bbf2b91d81d3c117a291e36056fea767c2c559"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "The semantic review is a documented human-readable mathematical assessment by an independent model, not machine-checked theorem proving.",
+    "Saved-row count checks recompute the aggregation but do not reevaluate every historical trajectory.",
+    "Numerical examples use mpmath at higher precision, not a separate library or interval enclosures.",
+    "Finite tests verify the cited examples; all-domain assertions depend on the accompanying elementary arguments and established theorems.",
+    "Video, narration pronunciation, captions and layout require separate media review."
+  ],
+  "inputs": [
+    {
+      "path": "C:\\src\\graph\\research\\riemann-lessons\\script.json",
+      "sha256": "1ec6d94a22b2653f777f5ff5fdb7a56de24567d0085a52bf692bdefde2dc26e4"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\riemann-lessons\\verify_explanation.py",
+      "sha256": "228296a656f0fdadec74ade102d5a3f2a6c888c7f2ad79c58a9fa07055cef1e7"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\riemann-lessons\\math-notes.md",
+      "sha256": "7d23d6ef700bea770d39e8913c75f278dfc4ece345798e03c2cca132e7614b23"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\evidence\\zero-index.json",
+      "sha256": "c8710419108605bb58a8e4c25ae2a3f0376793e354eb3a2e064e24ad083200d2"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\proof-notes.md",
+      "sha256": "9522c0b886c039bc2c51e8227dc9a6870e092c12e04de0d30185891fc49a9153"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-prime-check96\\evidence\\comparison.json",
+      "sha256": "e3fb31fcc8561a321ef8101d83a91b5ba5cde60163756f0b1bc05e545aa7d93f"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-prime-check96\\README.md",
+      "sha256": "ae4c793adae39613131fd77d96661affe9a9adc0d42e1077f5d935bf9ef2a987"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\composite-remainder\\evidence\\table-0-100.json",
+      "sha256": "09272b9ffddc704fe1e89534ce52f64ad57cb1f677777449cd9f628fa04c25dd"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\composite-remainder\\evidence\\independent-review.json",
+      "sha256": "2bfd59bf0b7f4a85d7372ecbc69de613aa2fbb4ad5dff4a3a432f941871c038d"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\composite-remainder\\proof.md",
+      "sha256": "3ac5927ab770019f3575f780d537c6f8051db1683dab6bbe85f8bf7550158586"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\prime-divisor-phases\\proof-and-findings.md",
+      "sha256": "da80ba003631b592529a4df9c664ac6d808791277af3162867a59a01dca7713b"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\prime-function\\proof.md",
+      "sha256": "67cee9899e2409466b4b2e5d00e7eacf5182f920b735c748193c123415de5b7e"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\prime-quadrant-phase\\proof.md",
+      "sha256": "f3b3688a1898ce796ea05be1329c620f61125f4089b90452e39a180deb7fdb5b"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-origin-trail\\prepare_revision.py",
+      "sha256": "a4f2a402a271dd4353f7a93ff5528b50db59318050a0931ab652b603b54a319e"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\prime-quadrant-phase\\README.md",
+      "sha256": "0a3c90ee67a6cf72e5c44db296d6efb5c07a514257a7b7e93a0887fb28271c47"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\README.md",
+      "sha256": "0e32820d048bddd64235d1275b55001f43d41ca52f8cfca6e3b04468b46e2b4c"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\prime-divisor-phases\\README.md",
+      "sha256": "8d978ef2a9c0fcbab3162d02db1d66fe70109d3e12a4a4b65e9def6af09a58e5"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-prime-check96\\evidence\\review.json",
+      "sha256": "1f6fdfe242ca2ae1579d39fe9b8ca4d789e4effbb9970f3b4053fe73e068d0ef"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-switch\\README.md",
+      "sha256": "39e3b56345e327a6f115e6c55b793f538dd2e4c55bf253dbf9f760de5a1d0b06"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-switch\\math-audit.md",
+      "sha256": "3b4380a4d6f4856a6ed67936291ac97b0d197dbca6c520d1b3dee3043fdd0acd"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\composite-remainder\\evidence\\validation.json",
+      "sha256": "6adab0a34a5f72116a7aa60ac3f13dc84c14454672c27bd6de0eb1662986ae6d"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\prime-range-100\\proof.md",
+      "sha256": "a8b63f0c040139353cebadb10cbbba3a39b4703b55bffdfb835f287255338b76"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\gap-bound\\interaction-bound-proof.md",
+      "sha256": "22026bb25c0ea437e75e2f1e16bbf2b91d81d3c117a291e36056fea767c2c559"
+    }
+  ]
+}
