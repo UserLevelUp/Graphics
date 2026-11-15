@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.switch",
+  "slice_id": "copilot",
+  "contract_hash": "contract:graph.riemann.switch.copilot:v1",
+  "attempt_id": "review-20261115T090814Z-e8b1a903",
+  "result_state": "accepted",
+  "result_hash": "sha256:552791b35f7408994b6482fbf968fdbb57eabe11a2c4408cc7575508b41adf1b",
+  "evidence": {
+    "review": [
+      "warps/graph.riemann.switch.copilot.review.complete.md"
+    ]
+  },
+  "reason": null
+}

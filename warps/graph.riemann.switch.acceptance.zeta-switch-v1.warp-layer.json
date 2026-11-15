@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.switch",
+  "slice_id": "acceptance",
+  "contract_hash": "contract:graph.riemann.switch.acceptance:v1",
+  "attempt_id": "zeta-switch-v1",
+  "result_state": "accepted",
+  "result_hash": "sha256:65b82b6742b955733ee1492978166f2c64a7bf3b0d26223ca3d429ab03ec0033",
+  "evidence": {
+    "verification": [
+      "research/zeta-switch/evidence/manifest.json"
+    ]
+  },
+  "reason": null
+}
