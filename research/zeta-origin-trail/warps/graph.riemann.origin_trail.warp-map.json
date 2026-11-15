@@ -1,0 +1,38 @@
+{
+  "bubble_uuid": "01a1df02-1bed-7fe1-b632-3b448c4c706b",
+  "goal": "Demonstrate a persistent four-color brush with a straight stroke and subsequent circular stroke",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "Preserve the accepted conclusion and original presentation archives.",
+    "Revise the14\u201328second origin visual, insert a12second circle brush demonstration immediately afterward, and refresh the final source-checkpoint metadata. Existing narration and mathematical claims stay fixed.",
+    "The persistent trail is rendering history, not new mathematical evidence."
+  ],
+  "required_slices": [
+    {
+      "contract_hash": "contract:graph.riemann.origin_trail.production:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "production",
+      "slice_uuid": "01a1df02-1bed-74a0-acd7-159af46eaf1a"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.origin_trail.acceptance:v1",
+      "depends_on": [
+        "production"
+      ],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "acceptance",
+      "slice_uuid": "01a1df02-1bed-7d20-ab0c-9d598c7ffd08"
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.riemann.origin_trail"
+}

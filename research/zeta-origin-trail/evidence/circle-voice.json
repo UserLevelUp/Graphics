@@ -1,0 +1,14 @@
+{
+  "traceId": "graph.riemann.origin_trail.voice",
+  "status": "passed",
+  "taskId": "92be1b58-956e-4aed-b207-cd8b2fb25350",
+  "voice": "Serene",
+  "model": "eleven_multilingual_v2",
+  "speed": 1.03,
+  "durationSeconds": 9.102222,
+  "sceneSeconds": 12,
+  "narration": "The brush stays upright as it follows a circle. Changing direction changes the colors left behind, while new marks overwrite old ones.",
+  "sha256": "9059a46c7eea4b80dd804173723b3c23efffc6accc473606612f35e919e6cf7c",
+  "audioDecodePassed": true,
+  "truncated": false
+}

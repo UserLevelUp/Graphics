@@ -1,0 +1,9 @@
+{
+  "traceId": "graph.riemann.origin_trail.design.review",
+  "status": "passed",
+  "reviewer": "local_quadrant_math independent agent",
+  "basis": "Code geometry and scene intent, before native rendering",
+  "horizontal": "For c from1335to1600, yellow [1240,c]x[475,570], purple [1240,c]x[570,665]; green/blue remain95pixels wide immediately to the right. This is the envelope of opaque fixed-orientation stamps.",
+  "circle": "Fixed screen-oriented96pixel square, centered on a clockwise circle. Later stamps overwrite earlier marks. Pointer outline is separate from deposited paint.",
+  "limits": "Presentation of compositing history, not a new phase map or mathematical result. Native visual review remains required."
+}

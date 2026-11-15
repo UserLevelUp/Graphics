@@ -1,0 +1,35 @@
+{
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "{warp}",
+  "goal": "{goal}",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "Preserve the accepted conclusion and original presentation archives.",
+    "Revise the14\u201328second origin visual, insert a12second circle brush demonstration immediately afterward, and refresh the final source-checkpoint metadata. Existing narration and mathematical claims stay fixed.",
+    "The persistent trail is rendering history, not new mathematical evidence."
+  ],
+  "required_slices": [
+    {
+      "slice_id": "production",
+      "contract_hash": "contract:{warp}.production:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "acceptance",
+      "contract_hash": "contract:{warp}.acceptance:v1",
+      "depends_on": [
+        "production"
+      ],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    }
+  ]
+}

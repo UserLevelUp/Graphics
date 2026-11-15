@@ -1,0 +1,74 @@
+{
+  "traceId": "graph.riemann.origin_trail",
+  "baselineCommit": "9ba4fc32e7cb6d25548749741feb21657f63d5d5",
+  "request": "Leave yellow and purple colors behind as the output origin moves smoothly right, including to the left of its starting position.",
+  "originalVideo": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-conclusion\\presentation-with-conclusion.mp4",
+  "originalVideoSha256": "98e9ece7d8cac4e4974b72d6c6ed9b63752f4b8744e60677879124e19d7a56dd",
+  "originalProject": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-conclusion\\presentation-with-conclusion.aep",
+  "originalProjectSha256": "a9d0a1a424b739b91b61cda36df5893f28bfc2bceee1f48da22349a59436973e",
+  "sceneIntervalSeconds": [
+    14,
+    28
+  ],
+  "durationSeconds": 264,
+  "geometry": {
+    "startOrigin": [
+      1335,
+      570
+    ],
+    "endOrigin": [
+      1600,
+      570
+    ],
+    "leftTrailEdge": 1240,
+    "tileSize": 95,
+    "motionStartLocalSeconds": 1,
+    "motionEndLocalSeconds": 12,
+    "topTrailColorRgb": [
+      136,
+      102,
+      39
+    ],
+    "bottomTrailColorRgb": [
+      101,
+      60,
+      133
+    ],
+    "topRightColorRgb": [
+      27,
+      115,
+      94
+    ],
+    "bottomRightColorRgb": [
+      39,
+      77,
+      136
+    ]
+  },
+  "compositing": "Newest opaque quadrant marks overwrite older marks; yellow and purple remain anchored at x1240 and grow to the moving origin. Right-hand green and blue squares remain95pixels wide.",
+  "unmodified": "Existing narration and mathematical statements, shifted12seconds after the inserted circle scene; prior accepted media and manifests.",
+  "additionalMetadataChange": "Update final repository card to the new pushed render-source checkpoint.",
+  "status": "active",
+  "scope": "Presentation rendering revision with a new12second narrated circle demonstration; no new mathematical evidence.",
+  "circleScene": {
+    "intervalSeconds": [
+      28,
+      40
+    ],
+    "durationSeconds": 12,
+    "center": [
+      1165,
+      600
+    ],
+    "radius": 210,
+    "quadrantPixels": 48,
+    "fixedBrushOrientation": true,
+    "clockwiseMotionLocalSeconds": [
+      1,
+      9
+    ],
+    "holdUntilSeconds": 12,
+    "compositing": "Accumulate opaque brush stamps in chronological order; later marks overwrite earlier marks.",
+    "narration": "The brush stays upright as it follows a circle. Changing direction changes the colors left behind, while new marks overwrite old ones."
+  }
+}
