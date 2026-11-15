@@ -1,0 +1,361 @@
+{
+  "traceId": "graph.primes.composite_remainder.validation",
+  "status": "passed",
+  "limit": 100000,
+  "createdUtc": "2026-11-15T23:01:02.477581+00:00",
+  "python": "3.11.5 (main, Jan 23 2026, 07:39:48) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "checkedIntegers": 100001,
+  "primeCount": 9592,
+  "oddPrimeCount": 9591,
+  "oddCompositeCount": 40408,
+  "constructionAgreement": "Ordered enumeration equals all-pairs-minus-unit-families; unordered expansion equals exact floor-divisor formula.",
+  "prefixConsistencyCutoffs": [
+    0,
+    1,
+    2,
+    3,
+    8,
+    9,
+    10,
+    24,
+    25,
+    26,
+    48,
+    49,
+    50,
+    96,
+    97,
+    98,
+    99,
+    100,
+    120,
+    121
+  ],
+  "extraControls": [
+    {
+      "n": 121,
+      "coefficient": 1,
+      "classification": "composite",
+      "factorPairs": [
+        [
+          11,
+          11
+        ]
+      ],
+      "oddDivisorsExamined": 5
+    },
+    {
+      "n": 169,
+      "coefficient": 1,
+      "classification": "composite",
+      "factorPairs": [
+        [
+          13,
+          13
+        ]
+      ],
+      "oddDivisorsExamined": 6
+    },
+    {
+      "n": 221,
+      "coefficient": 1,
+      "classification": "composite",
+      "factorPairs": [
+        [
+          13,
+          17
+        ]
+      ],
+      "oddDivisorsExamined": 6
+    },
+    {
+      "n": 341,
+      "coefficient": 1,
+      "classification": "composite",
+      "factorPairs": [
+        [
+          11,
+          31
+        ]
+      ],
+      "oddDivisorsExamined": 8
+    },
+    {
+      "n": 561,
+      "coefficient": 3,
+      "classification": "composite",
+      "factorPairs": [
+        [
+          3,
+          187
+        ],
+        [
+          11,
+          51
+        ],
+        [
+          17,
+          33
+        ]
+      ],
+      "oddDivisorsExamined": 11
+    },
+    {
+      "n": 1105,
+      "coefficient": 3,
+      "classification": "composite",
+      "factorPairs": [
+        [
+          5,
+          221
+        ],
+        [
+          13,
+          85
+        ],
+        [
+          17,
+          65
+        ]
+      ],
+      "oddDivisorsExamined": 16
+    },
+    {
+      "n": 1729,
+      "coefficient": 3,
+      "classification": "composite",
+      "factorPairs": [
+        [
+          7,
+          247
+        ],
+        [
+          13,
+          133
+        ],
+        [
+          19,
+          91
+        ]
+      ],
+      "oddDivisorsExamined": 20
+    },
+    {
+      "n": 104729,
+      "coefficient": 0,
+      "classification": "prime",
+      "factorPairs": [],
+      "oddDivisorsExamined": 161
+    },
+    {
+      "n": 999983,
+      "coefficient": 0,
+      "classification": "prime",
+      "factorPairs": [],
+      "oddDivisorsExamined": 499
+    },
+    {
+      "n": 1000001,
+      "coefficient": 1,
+      "classification": "composite",
+      "factorPairs": [
+        [
+          101,
+          9901
+        ]
+      ],
+      "oddDivisorsExamined": 499
+    },
+    {
+      "n": 1000003,
+      "coefficient": 0,
+      "classification": "prime",
+      "factorPairs": [],
+      "oddDivisorsExamined": 499
+    },
+    {
+      "n": 2147483647,
+      "coefficient": 0,
+      "classification": "prime",
+      "factorPairs": [],
+      "oddDivisorsExamined": 23169
+    },
+    {
+      "n": 3215031751,
+      "coefficient": 3,
+      "classification": "composite",
+      "factorPairs": [
+        [
+          151,
+          21291601
+        ],
+        [
+          751,
+          4281001
+        ],
+        [
+          28351,
+          113401
+        ]
+      ],
+      "oddDivisorsExamined": 28350
+    }
+  ],
+  "reversalControls": [
+    {
+      "cutoff": 10,
+      "nonzeroDifference": [
+        {
+          "exponent": 2,
+          "coefficient": 1
+        },
+        {
+          "exponent": 8,
+          "coefficient": -1
+        }
+      ],
+      "antisymmetric": true,
+      "exampleCoefficients": {
+        "9": 0
+      },
+      "equalsCompositeSupport": false,
+      "note": "F_N(z)-z^N F_N(1/z); prime oracle used only for this diagnostic control."
+    },
+    {
+      "cutoff": 100,
+      "nonzeroDifference": [
+        {
+          "exponent": 2,
+          "coefficient": 1
+        },
+        {
+          "exponent": 5,
+          "coefficient": 1
+        },
+        {
+          "exponent": 7,
+          "coefficient": 1
+        },
+        {
+          "exponent": 13,
+          "coefficient": 1
+        },
+        {
+          "exponent": 19,
+          "coefficient": 1
+        },
+        {
+          "exponent": 21,
+          "coefficient": -1
+        },
+        {
+          "exponent": 23,
+          "coefficient": 1
+        },
+        {
+          "exponent": 27,
+          "coefficient": -1
+        },
+        {
+          "exponent": 31,
+          "coefficient": 1
+        },
+        {
+          "exponent": 33,
+          "coefficient": -1
+        },
+        {
+          "exponent": 37,
+          "coefficient": 1
+        },
+        {
+          "exponent": 39,
+          "coefficient": -1
+        },
+        {
+          "exponent": 43,
+          "coefficient": 1
+        },
+        {
+          "exponent": 57,
+          "coefficient": -1
+        },
+        {
+          "exponent": 61,
+          "coefficient": 1
+        },
+        {
+          "exponent": 63,
+          "coefficient": -1
+        },
+        {
+          "exponent": 67,
+          "coefficient": 1
+        },
+        {
+          "exponent": 69,
+          "coefficient": -1
+        },
+        {
+          "exponent": 73,
+          "coefficient": 1
+        },
+        {
+          "exponent": 77,
+          "coefficient": -1
+        },
+        {
+          "exponent": 79,
+          "coefficient": 1
+        },
+        {
+          "exponent": 81,
+          "coefficient": -1
+        },
+        {
+          "exponent": 87,
+          "coefficient": -1
+        },
+        {
+          "exponent": 93,
+          "coefficient": -1
+        },
+        {
+          "exponent": 95,
+          "coefficient": -1
+        },
+        {
+          "exponent": 98,
+          "coefficient": -1
+        }
+      ],
+      "antisymmetric": true,
+      "exampleCoefficients": {
+        "9": 0,
+        "15": 0,
+        "97": 0,
+        "99": 0
+      },
+      "equalsCompositeSupport": false,
+      "note": "F_N(z)-z^N F_N(1/z); prime oracle used only for this diagnostic control."
+    }
+  ],
+  "coefficientSha256": "d30ab079334edcafd7bb4bdf3f4f091baf97ca13fbf8bec1aa2d8c53f6fdb30c",
+  "sources": [
+    {
+      "path": "composite_remainder.py",
+      "sha256": "653113cd6b1d47d98a5a4e4897e2b259c3f4e2129032dd95008faca15f3a5a63"
+    },
+    {
+      "path": "run_experiment.py",
+      "sha256": "f3bfbc1abbbbe4e3d5d755d39ca0c609d3cc8bbc2315a26f0cd25e3f0c8c63df"
+    }
+  ],
+  "elapsedSeconds": 0.912089699995704,
+  "limits": [
+    "Finite code checks accompany an elementary all-integer proof, not an RH proof.",
+    "No previous-prime list enters the candidate coefficient function.",
+    "The direct coefficient is a trial-divisor count, not constant-time primality."
+  ]
+}

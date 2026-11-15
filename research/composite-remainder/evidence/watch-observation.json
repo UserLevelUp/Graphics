@@ -1,0 +1,23 @@
+{
+  "note": "Filesystem observations are separate from test and mathematical acceptance. Private status can retain active after termination.",
+  "processId": 32600,
+  "processAbsentAfterStop": true,
+  "traceId": "graph.primes.composite_remainder.watch_observation",
+  "recordedBeforeStop": {
+    "id": "graph-composite-remainder",
+    "path": ".recur/watch\\recur-watch.graph-composite-remainder.status.current.md",
+    "state": "active",
+    "ack": "accepted",
+    "nak_reason": null,
+    "filter": "graph.primes.composite_remainder.**",
+    "dir": "C:/src/graph/research/composite-remainder",
+    "mode": "poll",
+    "poll_framing": "3",
+    "format": "json",
+    "pid": "32600",
+    "started_at": "unix:1794783494",
+    "last_event_at": "unix:1794784056",
+    "events_seen": "4",
+    "filtered_out": "0"
+  }
+}

@@ -1,0 +1,941 @@
+{
+  "traceId": "graph.primes.composite_remainder.table",
+  "range": [
+    0,
+    100
+  ],
+  "rows": [
+    {
+      "n": 0,
+      "classification": "neither",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 1,
+      "classification": "neither",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 2,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 3,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 4,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 5,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 6,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 7,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 8,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 9,
+      "classification": "composite",
+      "orderedCoefficient": 1,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "n": 10,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 11,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 12,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 13,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 14,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 15,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          3,
+          5
+        ]
+      ]
+    },
+    {
+      "n": 16,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 17,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 18,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 19,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 20,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 21,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          3,
+          7
+        ]
+      ]
+    },
+    {
+      "n": 22,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 23,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 24,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 25,
+      "classification": "composite",
+      "orderedCoefficient": 1,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          5,
+          5
+        ]
+      ]
+    },
+    {
+      "n": 26,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 27,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          3,
+          9
+        ]
+      ]
+    },
+    {
+      "n": 28,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 29,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 30,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 31,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 32,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 33,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          3,
+          11
+        ]
+      ]
+    },
+    {
+      "n": 34,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 35,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          5,
+          7
+        ]
+      ]
+    },
+    {
+      "n": 36,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 37,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 38,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 39,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          3,
+          13
+        ]
+      ]
+    },
+    {
+      "n": 40,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 41,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 42,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 43,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 44,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 45,
+      "classification": "composite",
+      "orderedCoefficient": 4,
+      "unorderedCoefficient": 2,
+      "factorPairs": [
+        [
+          3,
+          15
+        ],
+        [
+          5,
+          9
+        ]
+      ]
+    },
+    {
+      "n": 46,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 47,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 48,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 49,
+      "classification": "composite",
+      "orderedCoefficient": 1,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          7,
+          7
+        ]
+      ]
+    },
+    {
+      "n": 50,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 51,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          3,
+          17
+        ]
+      ]
+    },
+    {
+      "n": 52,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 53,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 54,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 55,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          5,
+          11
+        ]
+      ]
+    },
+    {
+      "n": 56,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 57,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          3,
+          19
+        ]
+      ]
+    },
+    {
+      "n": 58,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 59,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 60,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 61,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 62,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 63,
+      "classification": "composite",
+      "orderedCoefficient": 4,
+      "unorderedCoefficient": 2,
+      "factorPairs": [
+        [
+          3,
+          21
+        ],
+        [
+          7,
+          9
+        ]
+      ]
+    },
+    {
+      "n": 64,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 65,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          5,
+          13
+        ]
+      ]
+    },
+    {
+      "n": 66,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 67,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 68,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 69,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          3,
+          23
+        ]
+      ]
+    },
+    {
+      "n": 70,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 71,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 72,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 73,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 74,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 75,
+      "classification": "composite",
+      "orderedCoefficient": 4,
+      "unorderedCoefficient": 2,
+      "factorPairs": [
+        [
+          3,
+          25
+        ],
+        [
+          5,
+          15
+        ]
+      ]
+    },
+    {
+      "n": 76,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 77,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          7,
+          11
+        ]
+      ]
+    },
+    {
+      "n": 78,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 79,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 80,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 81,
+      "classification": "composite",
+      "orderedCoefficient": 3,
+      "unorderedCoefficient": 2,
+      "factorPairs": [
+        [
+          3,
+          27
+        ],
+        [
+          9,
+          9
+        ]
+      ]
+    },
+    {
+      "n": 82,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 83,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 84,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 85,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          5,
+          17
+        ]
+      ]
+    },
+    {
+      "n": 86,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 87,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          3,
+          29
+        ]
+      ]
+    },
+    {
+      "n": 88,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 89,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 90,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 91,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          7,
+          13
+        ]
+      ]
+    },
+    {
+      "n": 92,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 93,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          3,
+          31
+        ]
+      ]
+    },
+    {
+      "n": 94,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 95,
+      "classification": "composite",
+      "orderedCoefficient": 2,
+      "unorderedCoefficient": 1,
+      "factorPairs": [
+        [
+          5,
+          19
+        ]
+      ]
+    },
+    {
+      "n": 96,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 97,
+      "classification": "prime",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 98,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    },
+    {
+      "n": 99,
+      "classification": "composite",
+      "orderedCoefficient": 4,
+      "unorderedCoefficient": 2,
+      "factorPairs": [
+        [
+          3,
+          33
+        ],
+        [
+          9,
+          11
+        ]
+      ]
+    },
+    {
+      "n": 100,
+      "classification": "composite",
+      "orderedCoefficient": 0,
+      "unorderedCoefficient": 0,
+      "factorPairs": []
+    }
+  ],
+  "finiteTerms": [
+    {
+      "factor": 3,
+      "exponents": [
+        9,
+        15,
+        21,
+        27,
+        33,
+        39,
+        45,
+        51,
+        57,
+        63,
+        69,
+        75,
+        81,
+        87,
+        93,
+        99
+      ]
+    },
+    {
+      "factor": 5,
+      "exponents": [
+        25,
+        35,
+        45,
+        55,
+        65,
+        75,
+        85,
+        95
+      ]
+    },
+    {
+      "factor": 7,
+      "exponents": [
+        49,
+        63,
+        77,
+        91
+      ]
+    },
+    {
+      "factor": 9,
+      "exponents": [
+        81,
+        99
+      ]
+    }
+  ],
+  "oddComposites": [
+    9,
+    15,
+    21,
+    25,
+    27,
+    33,
+    35,
+    39,
+    45,
+    49,
+    51,
+    55,
+    57,
+    63,
+    65,
+    69,
+    75,
+    77,
+    81,
+    85,
+    87,
+    91,
+    93,
+    95,
+    99
+  ],
+  "note": "Counts are nontrivial odd factor pairs. Even composites need the separate even-number guard."
+}

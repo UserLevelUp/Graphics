@@ -1,0 +1,483 @@
+{
+  "schema": "graph-composite-remainder-independent-review-v1",
+  "traceId": "graph.primes.composite_remainder.independent_review",
+  "status": "passed",
+  "reviewedAtUtc": "2026-11-15T23:05:34.844109+00:00",
+  "runtime": {
+    "python": "3.11.5 (main, Jan 23 2026, 07:39:48) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Program Files\\KiCad\\10.0\\bin\\python.exe"
+  },
+  "oracle": "Least-prime-factor factorization; tau(n) is the product of exponent+1, with factor-pair reconstruction from generated divisors.",
+  "coverage": {
+    "range": [
+      0,
+      100000
+    ],
+    "coefficients": 100001,
+    "scalarClassifications": 100001,
+    "factorPairLists": 100001,
+    "prefixCutoffs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      100000
+    ],
+    "domainRejections": 99,
+    "extraControls": 13,
+    "supplementaryHCoefficients": 100001,
+    "savedTableRows": 101
+  },
+  "counts": {
+    "primes": 9592,
+    "oddPrimes": 9591,
+    "oddComposites": 40408
+  },
+  "extraControls": [
+    {
+      "n": 121,
+      "factorization": [
+        [
+          11,
+          2
+        ]
+      ],
+      "coefficient": 1,
+      "classification": "composite"
+    },
+    {
+      "n": 169,
+      "factorization": [
+        [
+          13,
+          2
+        ]
+      ],
+      "coefficient": 1,
+      "classification": "composite"
+    },
+    {
+      "n": 221,
+      "factorization": [
+        [
+          13,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "coefficient": 1,
+      "classification": "composite"
+    },
+    {
+      "n": 341,
+      "factorization": [
+        [
+          11,
+          1
+        ],
+        [
+          31,
+          1
+        ]
+      ],
+      "coefficient": 1,
+      "classification": "composite"
+    },
+    {
+      "n": 561,
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "coefficient": 3,
+      "classification": "composite"
+    },
+    {
+      "n": 1105,
+      "factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "coefficient": 3,
+      "classification": "composite"
+    },
+    {
+      "n": 1729,
+      "factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "coefficient": 3,
+      "classification": "composite"
+    },
+    {
+      "n": 104729,
+      "factorization": [
+        [
+          104729,
+          1
+        ]
+      ],
+      "coefficient": 0,
+      "classification": "prime"
+    },
+    {
+      "n": 999983,
+      "factorization": [
+        [
+          999983,
+          1
+        ]
+      ],
+      "coefficient": 0,
+      "classification": "prime"
+    },
+    {
+      "n": 1000001,
+      "factorization": [
+        [
+          101,
+          1
+        ],
+        [
+          9901,
+          1
+        ]
+      ],
+      "coefficient": 1,
+      "classification": "composite"
+    },
+    {
+      "n": 1000003,
+      "factorization": [
+        [
+          1000003,
+          1
+        ]
+      ],
+      "coefficient": 0,
+      "classification": "prime"
+    },
+    {
+      "n": 2147483647,
+      "factorization": [
+        [
+          2147483647,
+          1
+        ]
+      ],
+      "coefficient": 0,
+      "classification": "prime"
+    },
+    {
+      "n": 3215031751,
+      "factorization": [
+        [
+          151,
+          1
+        ],
+        [
+          751,
+          1
+        ],
+        [
+          28351,
+          1
+        ]
+      ],
+      "coefficient": 3,
+      "classification": "composite"
+    }
+  ],
+  "reversal": [
+    {
+      "cutoff": 10,
+      "antisymmetric": true,
+      "examples": {
+        "9": 0
+      }
+    },
+    {
+      "cutoff": 100,
+      "antisymmetric": true,
+      "examples": {
+        "9": 0,
+        "15": 0,
+        "97": 0,
+        "99": 0
+      }
+    }
+  ],
+  "cliLimit100": {
+    "exitCode": 0,
+    "checkedIntegers": 101,
+    "outputDirectory": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\composite-remainder-review\\limit-100",
+    "stdout": "{\n  \"status\": \"passed\",\n  \"checked\": 101,\n  \"primeCount\": 25,\n  \"oddCompositesThrough100\": [\n    9,\n    15,\n    21,\n    25,\n    27,\n    33,\n    35,\n    39,\n    45,\n    49,\n    51,\n    55,\n    57,\n    63,\n    65,\n    69,\n    75,\n    77,\n    81,\n    85,\n    87,\n    91,\n    93,\n    95,\n    99\n  ],\n  \"medianSeconds\": {\n    \"coefficientBatch\": 2.9999937396496534e-06,\n    \"completeClassificationBatch\": 9.000010322779417e-06,\n    \"independentSieveBatch\": 1.5999976312741637e-06\n  }\n}",
+    "files": [
+      {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\composite-remainder-review\\limit-100\\cost.json",
+        "sha256": "553aa8c2065417dc55eabe1a3582fb545dd814740bc3c98e5c664f1127e92c1c"
+      },
+      {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\composite-remainder-review\\limit-100\\table-0-100.json",
+        "sha256": "09272b9ffddc704fe1e89534ce52f64ad57cb1f677777449cd9f628fa04c25dd"
+      },
+      {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\composite-remainder-review\\limit-100\\validation.json",
+        "sha256": "17264eafcdd0f4f45fd331aaaee5724fbddf2ab1c6824fb8786d62ebb043fdcc"
+      }
+    ]
+  },
+  "mathematicalReview": {
+    "status": "passed",
+    "statements": [
+      "The floor difference equals the exact divisibility indicator.",
+      "Restricting the smaller odd divisor to sqrt(n) counts unordered pairs, including square pairs once.",
+      "Subtracting the two unit-factor families and restoring (1,1) yields ordered odd composite multiplicities.",
+      "U_N has exact coefficients through N; omitted d>sqrt(N) cannot contribute there.",
+      "The Lambert series converge absolutely for |z|<1, with the stated r^9/(1-r^6)^2 bound.",
+      "A(s)=(1-2^(-s))*zeta(s), Q_D=(A-1)^2 and U_D=((A-1)^2+A(2s)-1)/2 have the claimed coefficients for Re(s)>1.",
+      "H=A-1-log(A) uses the analytic Euler-product logarithm on Re(s)>1; its stated prime-power and composite weights are correct.",
+      "For real s>1, Q_D and U_D are positive; analytic values at s=n are not coefficient extraction.",
+      "At a nontrivial zeta zero rho, Q_D(rho)=1; continuation to Re(s)=1/2 does not prove RH.",
+      "A bare polynomial reversal difference is antisymmetric, preventing a nonzero nonnegative full-range composite indicator."
+    ],
+    "supplementaryHExamples": [
+      {
+        "n": 1,
+        "coefficient": "0"
+      },
+      {
+        "n": 9,
+        "coefficient": "1/2"
+      },
+      {
+        "n": 15,
+        "coefficient": "1"
+      },
+      {
+        "n": 25,
+        "coefficient": "1/2"
+      },
+      {
+        "n": 27,
+        "coefficient": "2/3"
+      },
+      {
+        "n": 45,
+        "coefficient": "1"
+      },
+      {
+        "n": 81,
+        "coefficient": "3/4"
+      },
+      {
+        "n": 97,
+        "coefficient": "0"
+      },
+      {
+        "n": 99,
+        "coefficient": "1"
+      }
+    ],
+    "supplementaryScope": "Q_D/U_D/H are reviewed mathematical identities. Only U coefficients and separate domain guards supply the executed candidate classifier."
+  },
+  "benchmarkReview": {
+    "status": "scope-checked-only",
+    "coefficientUpdates": 113247,
+    "statement": "Local CPython timings compare Python coefficient loops with an optimized bytearray sieve using C-level slice assignment. They do not isolate algorithmic efficiency. Multiplicity counts and prime flags also differ in output content.",
+    "scalarCost": "The scalar equation uses two floor divisions per odd candidate divisor and counts all candidates through sqrt(n); the equivalent modulo test can use one remainder and stop after finding a factor.",
+    "acceptedTimingRerun": false,
+    "smallCliBenchmarkExecuted": true,
+    "timingNote": "The --limit 100 smoke run also executes the producer timing section; those new timings are not used to claim performance."
+  },
+  "blockers": [],
+  "limitations": [
+    "Finite implementation verification supplements the elementary all-integer argument; it is not a formal proof-assistant replay.",
+    "No performance advantage, novel prime algorithm, instant coefficient extraction, or RH progress is established.",
+    "No graphics or presentation rendering is included in this review.",
+    "H coefficient checks validate the stated supplementary expansion, not a numerical complex-log evaluator."
+  ],
+  "inputs": [
+    {
+      "path": "C:\\src\\graph\\research\\composite-remainder\\composite_remainder.py",
+      "sha256": "653113cd6b1d47d98a5a4e4897e2b259c3f4e2129032dd95008faca15f3a5a63"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\composite-remainder\\run_experiment.py",
+      "sha256": "f3bfbc1abbbbe4e3d5d755d39ca0c609d3cc8bbc2315a26f0cd25e3f0c8c63df"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\composite-remainder\\proof.md",
+      "sha256": "3ac5927ab770019f3575f780d537c6f8051db1683dab6bbe85f8bf7550158586"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\composite-remainder\\evidence\\validation.json",
+      "sha256": "6adab0a34a5f72116a7aa60ac3f13dc84c14454672c27bd6de0eb1662986ae6d"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\composite-remainder\\evidence\\table-0-100.json",
+      "sha256": "09272b9ffddc704fe1e89534ce52f64ad57cb1f677777449cd9f628fa04c25dd"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\composite-remainder\\evidence\\cost.json",
+      "sha256": "28497561efca8e438728ff8455964103b118f04e290e7a4bcd9c82c14a574c52"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\composite-remainder\\verify_independent.py",
+      "sha256": "1f921754d52ad8b41bfa48ec7f54b6121968e740b5c3fbe4039a4c3eaea3fee4"
+    }
+  ],
+  "elapsedSeconds": 2.0705241999967257
+}

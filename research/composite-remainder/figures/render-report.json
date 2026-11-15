@@ -1,0 +1,39 @@
+{
+  "traceId": "graph.primes.composite_remainder.visualization",
+  "status": "rendered",
+  "coverage": {
+    "coefficientIndices": 101,
+    "factorLanes": 4,
+    "nontrivialPairDots": 30,
+    "oddComposites": 25,
+    "zeroOddPrimeMarkers": 24,
+    "checkedExamples": {
+      "81": 2,
+      "97": 0,
+      "99": 2
+    }
+  },
+  "meaning": "Factor-lane contributions and exact unordered pair coefficients. Colors are not zeta phase quadrants.",
+  "inputs": [
+    {
+      "path": "C:\\src\\graph\\research\\composite-remainder\\render.py",
+      "sha256": "9fd9e1258449892aec220d78546c9347181946615d416b922fabe0f8c14454b2"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\composite-remainder\\evidence\\table-0-100.json",
+      "sha256": "09272b9ffddc704fe1e89534ce52f64ad57cb1f677777449cd9f628fa04c25dd"
+    }
+  ],
+  "figures": [
+    {
+      "path": "finite-composite-remainder-0-100.png",
+      "sha256": "01bf862c924ead0943cfb309670a48bdbd3cd4c896bc606b265cbcceff724b2c",
+      "bytes": 198139
+    },
+    {
+      "path": "finite-composite-remainder-0-100.svg",
+      "sha256": "a48985b448ac4ea4793959f1afd0671aafb467f01189e295fc35eb44df6f0171",
+      "bytes": 132509
+    }
+  ]
+}

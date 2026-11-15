@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.primes.composite_remainder",
+  "slice_id": "implementation",
+  "contract_hash": "contract:graph.primes.composite_remainder.implementation:v1",
+  "attempt_id": "composite-implementation-reviewed-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:15e17909aa9dc90ea40e4fa1f1b9699531ae89551d8ea39466f7225431066aa1",
+  "evidence": {
+    "review": [
+      "evidence/acceptance.json"
+    ]
+  },
+  "reason": null
+}

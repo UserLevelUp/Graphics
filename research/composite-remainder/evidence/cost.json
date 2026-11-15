@@ -1,0 +1,54 @@
+{
+  "traceId": "graph.primes.composite_remainder.cost",
+  "range": [
+    0,
+    100000
+  ],
+  "coefficientBatch": {
+    "repeats": 7,
+    "seconds": [
+      0.00427740000304766,
+      0.004226600009133108,
+      0.004538699999102391,
+      0.004266500007361174,
+      0.004222799994749948,
+      0.004274999999324791,
+      0.004438100004335865
+    ],
+    "medianSeconds": 0.004274999999324791
+  },
+  "completeClassificationBatch": {
+    "repeats": 7,
+    "seconds": [
+      0.011384400000679307,
+      0.01287890000094194,
+      0.011364899997715838,
+      0.011212599987629801,
+      0.011261499996180646,
+      0.012280399998417124,
+      0.012769799999659881
+    ],
+    "medianSeconds": 0.011384400000679307
+  },
+  "independentSieveBatch": {
+    "repeats": 7,
+    "seconds": [
+      9.479999425821006e-05,
+      9.480000881012529e-05,
+      8.420000085607171e-05,
+      8.6499989265576e-05,
+      8.230000094044954e-05,
+      8.33000085549429e-05,
+      8.199999865610152e-05
+    ],
+    "medianSeconds": 8.420000085607171e-05
+  },
+  "coefficientUpdates": 113247,
+  "perOddCandidateDivisors": "max(0,(isqrt(n)-1)//2); exact coefficient needs all these candidates",
+  "operationsPerDivisor": "Two integer floor divisions and subtraction in the equation implementation; the equivalent remainder test uses one modulo.",
+  "interpretation": "One local CPython benchmark, not a universal complexity or speedup claim. Coefficient output contains multiplicities; classifier and sieve outputs both provide primality flags.",
+  "runtime": {
+    "python": "3.11.5 (main, Jan 23 2026, 07:39:48) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26300-SP0"
+  }
+}

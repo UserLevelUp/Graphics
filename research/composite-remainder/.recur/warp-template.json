@@ -1,0 +1,14 @@
+{
+  "schema":"warp-bubble-map-v1","warp_id":"{warp}","goal":"{goal}",
+  "intelligence_baseline":"host-current",
+  "invariants":[
+    "Construct composite coefficients from integer factor pairs, never from supplied prime labels.",
+    "State domain guards for zero, one, even numbers and negative or noninteger inputs.",
+    "Distinguish coefficient extraction from evaluating the generating function at a candidate integer.",
+    "Test reversal and complementation separately; no novelty, speedup or RH claim without evidence."
+  ],
+  "required_slices":[
+    {"slice_id":"math","contract_hash":"contract:{warp}.math:v1","depends_on":[],"evidence_gates":["review"],"evidence_mode":"declared","intelligence_tick":0},
+    {"slice_id":"implementation","contract_hash":"contract:{warp}.implementation:v1","depends_on":["math"],"evidence_gates":["review"],"evidence_mode":"declared","intelligence_tick":0}
+  ]
+}

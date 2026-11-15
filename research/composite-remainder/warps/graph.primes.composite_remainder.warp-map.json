@@ -1,0 +1,39 @@
+{
+  "bubble_uuid": "01a1e16d-4be6-7dad-8958-cd1b8daae4af",
+  "goal": "Derive and test an exact odd-composite remainder from factor-pair subtraction, including reversal controls and computational limits",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "Construct composite coefficients from integer factor pairs, never from supplied prime labels.",
+    "State domain guards for zero, one, even numbers and negative or noninteger inputs.",
+    "Distinguish coefficient extraction from evaluating the generating function at a candidate integer.",
+    "Test reversal and complementation separately; no novelty, speedup or RH claim without evidence."
+  ],
+  "required_slices": [
+    {
+      "contract_hash": "contract:graph.primes.composite_remainder.math:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "math",
+      "slice_uuid": "01a1e16d-4be6-7e0a-984e-ebd8445c7441"
+    },
+    {
+      "contract_hash": "contract:graph.primes.composite_remainder.implementation:v1",
+      "depends_on": [
+        "math"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "implementation",
+      "slice_uuid": "01a1e16d-4be6-7493-a27d-1fca882bc17c"
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.primes.composite_remainder"
+}

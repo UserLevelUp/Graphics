@@ -1,0 +1,66 @@
+{
+  "traceId": "graph.primes.composite_remainder.acceptance",
+  "status": "accepted",
+  "reviewedAtUtc": "2026-11-15T23:06:48.894824+00:00",
+  "result": "Exact finite composite remainder from removing unit-factor families; no previous-prime inputs to the candidate coefficient.",
+  "mathematicalScope": "Elementary all-integer argument for odd n>1; finite reversal antisymmetry; supplementary ordinary and Dirichlet generating functions with domains.",
+  "executionScope": "All integers 0..100000, independent factorization and sieve comparisons, boundary/domain controls, larger individual cases, and a saved figure for 0..100.",
+  "evidence": [
+    {
+      "path": "evidence/independent-review.json",
+      "sha256": "2bfd59bf0b7f4a85d7372ecbc69de613aa2fbb4ad5dff4a3a432f941871c038d"
+    },
+    {
+      "path": "figures/figure-review.json",
+      "sha256": "65d38a9706bbbc601feb32ada531cce2e326d72011a212d4f26d353743dce18a"
+    },
+    {
+      "path": "figures/render-report.json",
+      "sha256": "20297db3128417915865fc54f8c11caf7c07ef3b245efcc77ea155b7b6a1f8ae"
+    },
+    {
+      "path": "evidence/validation.json",
+      "sha256": "6adab0a34a5f72116a7aa60ac3f13dc84c14454672c27bd6de0eb1662986ae6d"
+    },
+    {
+      "path": "evidence/cost.json",
+      "sha256": "28497561efca8e438728ff8455964103b118f04e290e7a4bcd9c82c14a574c52"
+    },
+    {
+      "path": "evidence/table-0-100.json",
+      "sha256": "09272b9ffddc704fe1e89534ce52f64ad57cb1f677777449cd9f628fa04c25dd"
+    },
+    {
+      "path": "proof.md",
+      "sha256": "3ac5927ab770019f3575f780d537c6f8051db1683dab6bbe85f8bf7550158586"
+    },
+    {
+      "path": "README.md",
+      "sha256": "35e6b29256c877d396f9200d8345226cd3135d16771c6f6a647c183762801a66"
+    },
+    {
+      "path": "composite_remainder.py",
+      "sha256": "653113cd6b1d47d98a5a4e4897e2b259c3f4e2129032dd95008faca15f3a5a63"
+    },
+    {
+      "path": "run_experiment.py",
+      "sha256": "f3bfbc1abbbbe4e3d5d755d39ca0c609d3cc8bbc2315a26f0cd25e3f0c8c63df"
+    },
+    {
+      "path": "verify_independent.py",
+      "sha256": "1f921754d52ad8b41bfa48ec7f54b6121968e740b5c3fbe4039a4c3eaea3fee4"
+    },
+    {
+      "path": "render.py",
+      "sha256": "9fd9e1258449892aec220d78546c9347181946615d416b922fabe0f8c14454b2"
+    }
+  ],
+  "limits": [
+    "Known divisor construction, not established as novel.",
+    "Finite truncation is exact coefficientwise through its cutoff; it does not imply zero computational cost.",
+    "Direct coefficient extraction is divisor counting. The local sieve timing was faster; implementation choices differ.",
+    "The coefficient index is not the complex argument of the generating function.",
+    "No new primality speedup, fast nth-prime formula, or RH advance is established.",
+    "Proof reviewed by mathematical reasoning and finite tests; no proof-assistant replay."
+  ]
+}

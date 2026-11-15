@@ -1,0 +1,194 @@
+{
+  "complete": true,
+  "coverage": {
+    "bytes_read": 232255,
+    "complete": true,
+    "entries": 30,
+    "files_read": 20,
+    "max_bytes": 33554432,
+    "max_entries": 50000,
+    "omissions": {}
+  },
+  "ids": [
+    {
+      "file_count": 6,
+      "files": [
+        "README.md",
+        "evidence/warp-progress.json",
+        "graph.primes.composite_remainder.complete.md",
+        "warps/graph.primes.composite_remainder.implementation.composite-implementation-reviewed-20261115.warp-layer.json",
+        "warps/graph.primes.composite_remainder.math.composite-math-reviewed-20261115.warp-layer.json",
+        "warps/graph.primes.composite_remainder.warp-map.json"
+      ],
+      "id": "graph.primes.composite_remainder",
+      "namespace": "graph.primes",
+      "occurrences": 6
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/acceptance.json"
+      ],
+      "id": "graph.primes.composite_remainder.acceptance",
+      "namespace": "graph.primes.composite_remainder",
+      "occurrences": 1
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "evidence/cost.json",
+        "run_experiment.py"
+      ],
+      "id": "graph.primes.composite_remainder.cost",
+      "namespace": "graph.primes.composite_remainder",
+      "occurrences": 2
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "README.md"
+      ],
+      "id": "graph.primes.composite_remainder.documentation",
+      "namespace": "graph.primes.composite_remainder",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "run_experiment.py"
+      ],
+      "id": "graph.primes.composite_remainder.experiment",
+      "namespace": "graph.primes.composite_remainder",
+      "occurrences": 1
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "evidence/warp-progress.json",
+        "warps/graph.primes.composite_remainder.implementation.composite-implementation-reviewed-20261115.warp-layer.json",
+        "warps/graph.primes.composite_remainder.warp-map.json"
+      ],
+      "id": "graph.primes.composite_remainder.implementation",
+      "namespace": "graph.primes.composite_remainder",
+      "occurrences": 3
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "evidence/independent-review.json",
+        "verify_independent.py"
+      ],
+      "id": "graph.primes.composite_remainder.independent_review",
+      "namespace": "graph.primes.composite_remainder",
+      "occurrences": 3
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "evidence/warp-progress.json",
+        "warps/graph.primes.composite_remainder.math.composite-math-reviewed-20261115.warp-layer.json",
+        "warps/graph.primes.composite_remainder.warp-map.json"
+      ],
+      "id": "graph.primes.composite_remainder.math",
+      "namespace": "graph.primes.composite_remainder",
+      "occurrences": 3
+    },
+    {
+      "file_count": 4,
+      "files": [
+        "composite_remainder.py",
+        "proof.md",
+        "run_experiment.py",
+        "verify_independent.py"
+      ],
+      "id": "graph.primes.composite_remainder.model",
+      "namespace": "graph.primes.composite_remainder",
+      "occurrences": 4
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "proof.md"
+      ],
+      "id": "graph.primes.composite_remainder.proof",
+      "namespace": "graph.primes.composite_remainder",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/runtime-note.json"
+      ],
+      "id": "graph.primes.composite_remainder.runtime",
+      "namespace": "graph.primes.composite_remainder",
+      "occurrences": 1
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "evidence/table-0-100.json",
+        "render.py",
+        "run_experiment.py"
+      ],
+      "id": "graph.primes.composite_remainder.table",
+      "namespace": "graph.primes.composite_remainder",
+      "occurrences": 3
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "evidence/validation.json",
+        "run_experiment.py"
+      ],
+      "id": "graph.primes.composite_remainder.validation",
+      "namespace": "graph.primes.composite_remainder",
+      "occurrences": 2
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "figures/figure-review.json"
+      ],
+      "id": "graph.primes.composite_remainder.visual_review",
+      "namespace": "graph.primes.composite_remainder",
+      "occurrences": 1
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "figures/render-report.json",
+        "render.py"
+      ],
+      "id": "graph.primes.composite_remainder.visualization",
+      "namespace": "graph.primes.composite_remainder",
+      "occurrences": 3
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/warp-progress.json"
+      ],
+      "id": "graph.primes.composite_remainder.warp-map.json",
+      "namespace": "graph.primes.composite_remainder.warp-map",
+      "occurrences": 1
+    }
+  ],
+  "output": {
+    "complete": true,
+    "max_output_bytes": 32768,
+    "max_results": 200,
+    "omissions": {},
+    "returned_bytes": 3432
+  },
+  "provenance": "token-occurrences",
+  "request": {
+    "context": null,
+    "ignore_case": false,
+    "pattern": "graph.primes.composite_remainder.**",
+    "root": "research/composite-remainder",
+    "scope": "**",
+    "selectors": [],
+    "separator": "."
+  },
+  "schema": "recur-trace-id-inventory-v1"
+}

@@ -1,0 +1,11 @@
+{
+  "traceId": "graph.primes.composite_remainder.runtime",
+  "initialAttempt": {
+    "executable": "C:/Python314/python.exe",
+    "exitCode": 1,
+    "observedOutput": "",
+    "cause": "Not established"
+  },
+  "acceptedRuntime": "3.11.5 (main, Jan 23 2026, 07:39:48) [MSC v.1944 64 bit (AMD64)]",
+  "note": "The accepted producer and independent reviewer used the already installed Python 3.11 interpreter. No runtime installation or project settings changed."
+}

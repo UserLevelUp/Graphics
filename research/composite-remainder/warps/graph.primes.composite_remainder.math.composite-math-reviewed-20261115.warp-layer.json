@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.primes.composite_remainder",
+  "slice_id": "math",
+  "contract_hash": "contract:graph.primes.composite_remainder.math:v1",
+  "attempt_id": "composite-math-reviewed-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:2bfd59bf0b7f4a85d7372ecbc69de613aa2fbb4ad5dff4a3a432f941871c038d",
+  "evidence": {
+    "review": [
+      "evidence/independent-review.json"
+    ]
+  },
+  "reason": null
+}
