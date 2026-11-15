@@ -6,6 +6,7 @@ consumer: graph.zeta.contours
 consumer: graph.zeta.origins
 consumer: graph.riemann.collision
 consumer: graph.riemann.gap
+consumer: graph.riemann.switch
 
 The proof remains open. This parent tracks the attempt to derive a global statement from the user's local-origin quadrant geometry. The completed children record finite experiments.
 
@@ -34,3 +35,5 @@ The completed graph.riemann.collision child now proves an exact quartic heat-flo
 For context, the de Bruijn-Newman deformation H_t has all zeros real exactly when t >= Lambda. RH is equivalent to Lambda <= 0; Rodgers and Tao proved Lambda >= 0. Thus an argument on this route still needs the complementary bound. Our quartic threshold is a different parameter for a different function. [Rodgers and Tao](https://arxiv.org/abs/1801.05914)
 
 The graph.riemann.gap child proves stronger finite-polynomial safe intervals by retaining exterior-root interactions and diameter contraction. Its exact checker validates 100 rational-time samples across 25 configurations. The guarantee improves in the quartic control, but these global-diameter bounds degenerate for growing dense root sets. See graph.riemann.gap.results.complete.md and graph.riemann.gap.next.current.md. No infinite-system transfer or all-heights exclusion has been established.
+
+The graph.riemann.switch child implements the auxiliary n=1 additive-term switch and an analytic product comparison. Its exact zero-set identity is W(s)=0 if and only if zeta(s) is 0 or 1. Every hypothetical off-critical-line zeta zero survives. The output seam Re(zeta)=1/2 is distinct from the input critical line, and the selected map jumps there. Independent numerical checks and native UI/export controls validate the finite tool; they supply no global exclusion. See graph.riemann.switch.results.complete.md. Standard primality and Euler's product remain unchanged, and RH remains open.

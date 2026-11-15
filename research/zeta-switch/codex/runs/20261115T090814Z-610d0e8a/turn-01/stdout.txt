@@ -1,0 +1,23 @@
+STATUS: CHECKPOINT
+ACK: initial
+CLOCK: 2026-11-15T01:08:41.7236458-08:00
+
+FINDINGS
+
+The supplied contract contains no apparent circular proof or changed standard primality definition. Adding or removing the n=1 series term is explicitly distinguished from changing Euler’s prime product.
+
+The selector cannot eliminate a hypothetical off-critical-line zeta zero: if ζ(s₀)=0, then Re ζ(s₀)≤1/2, so b(s₀)=1 and W(s₀)=0. Also G(s₀)=0. Thus both constructions preserve every possible counterexample to RH. Any RH conclusion needs an independent premise excluding those original zeros; the switching identities supply none.
+
+The supplied approximate 1-point at 1.40778804065+23.32798775456i is a candidate counterexample to “all selected-map zeros lie on the critical line.” If independently confirmed, it is a zero of W and G off that line, but **not** a counterexample to RH.
+
+The seam and critical line are logically distinct. Indeed, at any zeta zero, Re ζ(s)=0, whereas the seam requires Re ζ(s)=1/2. No original zeta zero lies on the seam.
+
+UNCERTAINTY
+
+I inspected only the supplied text. Selector independence, numerical accuracy, marker provenance, and rendering behavior remain implementation claims, not verified facts. The approximate 1-point has not been numerically tested here.
+
+The stated identities are sound, but they do not establish any global zero-location theorem.
+
+NEXT
+
+Await coordinator steering. A targeted follow-up should inspect whether implementation or explanatory text silently promotes zero-union identities, finite-window plots, or constant-canceling local differences into global uniqueness or RH claims. Check that selector inputs contain only the evaluated ζ(s), and that 1-point markers remain explicitly distinguished from zeta zeros.

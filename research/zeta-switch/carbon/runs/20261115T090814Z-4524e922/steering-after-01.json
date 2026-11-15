@@ -1,0 +1,9 @@
+{
+  "run_id": "20261115T090814Z-4524e922",
+  "after_turn": 1,
+  "action": "steer",
+  "token": "e554d7facabf4f33a475143e66db2191",
+  "instruction": "Provide your final scoped review now, acknowledging this new token. No new commands except actual clock checks. You are accepting or revising the mathematical contract and validation plan only, not certifying code or tests. The implementation is separately checked; global RH remains open. Pole s=1 is excluded from the displayed domain; G is holomorphic away from that pole. Reference coordinates are explicitly approximate numerical candidates. Please explicitly confirm W discontinuity even at seam points where zeta derivative vanishes, and whether the switch adds any constraint excluding hypothetical off-line zeta zeros.",
+  "state": "queued",
+  "queued_at": "2026-11-15T09:10:20.630956+00:00"
+}

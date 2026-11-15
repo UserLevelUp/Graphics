@@ -85,3 +85,15 @@
 /research/gap-bound/events/** -text whitespace=cr-at-eol,-blank-at-eof
 /research/gap-bound/evidence/** -text whitespace=cr-at-eol,-blank-at-eof
 /warps/graph.riemann.gap* text eol=lf
+# Preserve switch experiment source and the bytes of accepted provider/runtime evidence.
+/Graphics/ZetaSwitch*.cs text eol=lf
+/research/zeta-switch/*.py text eol=lf
+/research/zeta-switch/*.md text eol=lf
+/research/zeta-switch/*.txt text eol=lf
+/research/zeta-switch/*.json text eol=lf
+/research/zeta-switch/*/runs/** -text whitespace=cr-at-eol,-blank-at-eof
+/research/zeta-switch/*/review.md -text whitespace=cr-at-eol,-blank-at-eof
+/research/zeta-switch/*/latest-run.json -text whitespace=cr-at-eol,-blank-at-eof
+/research/zeta-switch/events/** -text whitespace=cr-at-eol,-blank-at-eof
+/research/zeta-switch/evidence/** -text whitespace=cr-at-eol,-blank-at-eof
+/warps/graph.riemann.switch* text eol=lf

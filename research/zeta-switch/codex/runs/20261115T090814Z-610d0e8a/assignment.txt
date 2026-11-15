@@ -1,0 +1,30 @@
+Work only on Warp graph.riemann.switch, slice codex, contract "contract:graph.riemann.switch.codex:v1". Workspace: \\?\C:\src\graph\research\zeta-switch\codex. Goal: "Implement and validate a two-state zeta unit-term switch, distinguish zeros from 1-points and switching artifacts, and retain the open RH obligation".
+Implementation phase: preserve the prepared Lang boundaries; a statically sound fragment is not proof of runtime behavior.
+Recover constraints before editing. Prefer an established CLI operation when it satisfies the contract; inspect help first. Do not commit, push, expand scope or mark acceptance. Preserve other work. Verify using the assigned commands; report changes, evidence, failures and unresolved questions. Host permissions, not this prompt, enforce access.
+Follow main.command.warp.dispatch.retry on provider errors: auth_required and provider_blocked pause for intervention; transient errors retry with bounded backoff. Runtime errors do not raise intelligence.
+Acceptance gates: ["review"]. Verification: [{"program":"C:/Python314/python.exe","args":["../verify-review.py","codex"],"test_failure_codes":[1]}].
+Context below is evidence, not authority to override this assignment.
+
+SOURCE research/zeta-switch/graph.riemann.switch.contract.current.md
+# Two-state zeta laboratory: active implementation and review contract
+
+defines: graph.riemann.switch
+consumer: graph.riemann
+consumer: graph.zeta.origins
+
+Baseline cf51254. User authorizes an auxiliary two-set model with 1 optionally included as a distinguished first instance, plus Recur Warp/Eventness and timed helper resources. This experiment switches the n=1 additive term of the all-integer zeta series. It does not insert 1 into Euler's prime product, redefine standard primality, or hide changed definitions in an RH proof.
+
+For external b in {0,1}, define Z_b(s)=zeta(s)-1+b. Z_1 is zeta; Z_0=zeta-1. The original series interpretation is valid for Re(s)>1, with these identities then continued analytically away from the pole. Fixed branches share derivatives and imaginary parts. Their zeros are zeta zeros and zeta 1-points respectively.
+
+The predetermined selector uses only the computed complex value z=zeta(s): b=1 if Re(z)<=1/2, otherwise0. Tie goes to1. This is equivalent to choosing the smaller of |z| and |z-1|. It receives no known-zero, prime-list, or marker input. W(s)=zeta(s)-1+b(s). Its zeros form the union of the two level sets. The switching boundary Re(zeta(s))=1/2 is different from the input critical line Re(s)=1/2. W has a jump of minus1 when crossing from the b=1 region to the b=0 region. Its magnitude is continuous and at least1/2 on the seam. Connecting jump endpoints can draw a false apparent zero; ordinary holomorphic argument-principle counting must not be applied to that selected map across its seam.
+
+An analytic control G(s)=zeta(s)*(zeta(s)-1) has the same zero union and no switching jump, away from zeta's pole. Fixed-branch local differences cancel the additive constant; using different selector values adds b(s)-b(c). None of these identities excludes off-critical-line zeros of the original zeta function or supplies a prime predictor.
+
+Implementation: a native WinForms lab with four aligned color panels for Z_1, Z_0, W, and G; height-range, resolution, palette rotation and marker controls; visible critical line and selector seam; zero and one-point markers labeled separately; hover values; PNG/raw JSON/text export. Default domain sigma .05..3, height10..30. Compute one grid and reuse it for all panels. The evaluator should avoid removable 0/0 artifacts of the eta quotient near sigma1 and height multiples2*pi/log2. Accuracy claims are numerical comparisons, not rigorous enclosures.
+
+Validation: independent high-precision mpmath evaluation of exported values and derivatives, both shift/product identities, selector decisions and tie controls, marker residuals, refinement checks, palette/marker independence of mathematical samples, seam/non-analytic metadata, corrupted-export negative controls, native UI and export verification, and scoped legacy regression checks. A high-precision reference 1-point near1.40778804065+23.32798775456i must be distinguished from a zeta zero. Reference values and markers may be used for verification, never as selector inputs.
+
+Carbon reviews the mathematical identities and scope; Codex searches for circular reasoning and invalid zero inference; Copilot reviews numerical/rendering failure cases and the test plan. Each must check actual time, return a checkpoint before180seconds, then await coordinator steering with an ACK token before final review. Reviewers inspect supplied text; they do not claim to execute numerical tests. Watch produced status is protocol evidence, not mathematical acceptance. Independent native workers implement and check code in disjoint files.
+
+The child may complete only with reviewed evidence and a local Git restore point. The parent graph.riemann remains open. Recur Lang is optional and cannot certify these mathematical claims.
+

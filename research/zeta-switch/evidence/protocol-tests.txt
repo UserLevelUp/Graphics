@@ -1,0 +1,34 @@
+Trace: graph.riemann.switch.review.protocol
+Command: C:\Python314\python.exe -m unittest discover -s research/zeta-switch -p test_review*.py -v
+Exit code: 0
+
+test_absent_decision_returns_none (test_review_protocol.DecisionValidationTests.test_absent_decision_returns_none) ... ok
+test_exact_run_and_turn_are_accepted (test_review_protocol.DecisionValidationTests.test_exact_run_and_turn_are_accepted) ... ok
+test_non_string_token_is_rejected (test_review_protocol.DecisionValidationTests.test_non_string_token_is_rejected) ... ok
+test_stale_run_is_rejected (test_review_protocol.DecisionValidationTests.test_stale_run_is_rejected) ... ok
+test_stale_turn_is_rejected (test_review_protocol.DecisionValidationTests.test_stale_turn_is_rejected) ... ok
+test_unknown_action_is_rejected (test_review_protocol.DecisionValidationTests.test_unknown_action_is_rejected) ... ok
+test_nonzero_exit_is_returned_with_diagnostics (test_review_protocol.MonitorTests.test_nonzero_exit_is_returned_with_diagnostics) ... ok
+test_normal_exit_retains_both_streams (test_review_protocol.MonitorTests.test_normal_exit_retains_both_streams) ... ok
+test_overdue_checkpoint_then_timeout_retains_partial_output (test_review_protocol.MonitorTests.test_overdue_checkpoint_then_timeout_retains_partial_output) ... ok
+test_publication_error_stops_owned_child (test_review_protocol.MonitorTests.test_publication_error_stops_owned_child) ... ok
+test_accepts_checkpoint_and_completed_review (test_review_protocol.ReplyValidationTests.test_accepts_checkpoint_and_completed_review) ... ok
+test_rejects_checkpoint_without_requested_sections (test_review_protocol.ReplyValidationTests.test_rejects_checkpoint_without_requested_sections) ... ok
+test_rejects_complete_without_verdict (test_review_protocol.ReplyValidationTests.test_rejects_complete_without_verdict) ... ok
+test_rejects_conflicting_statuses (test_review_protocol.ReplyValidationTests.test_rejects_conflicting_statuses) ... ok
+test_rejects_duplicate_acknowledgements (test_review_protocol.ReplyValidationTests.test_rejects_duplicate_acknowledgements) ... ok
+test_rejects_invalid_calendar_timestamp (test_review_protocol.ReplyValidationTests.test_rejects_invalid_calendar_timestamp) ... ok
+test_rejects_missing_clock (test_review_protocol.ReplyValidationTests.test_rejects_missing_clock) ... ok
+test_rejects_wrong_acknowledgement (test_review_protocol.ReplyValidationTests.test_rejects_wrong_acknowledgement) ... ok
+test_queues_exact_checkpoint_once (test_review_protocol.SteeringCliTests.test_queues_exact_checkpoint_once) ... ok
+test_refuses_stale_checkpoint (test_review_protocol.SteeringCliTests.test_refuses_stale_checkpoint) ... ok
+test_math_report_round_trips_through_strict_cp1252_console (test_review_runtime.ConsoleTransportTests.test_math_report_round_trips_through_strict_cp1252_console) ... ok
+test_atomic_json_recovers_from_reader_lock (test_review_runtime.ReplaceRetryTests.test_atomic_json_recovers_from_reader_lock) ... ok
+test_other_oserror_is_not_retried (test_review_runtime.ReplaceRetryTests.test_other_oserror_is_not_retried) ... ok
+test_persistent_permission_error_exhausts_five_attempts_and_preserves_files (test_review_runtime.ReplaceRetryTests.test_persistent_permission_error_exhausts_five_attempts_and_preserves_files) ... ok
+test_transient_permission_errors_then_real_atomic_replace (test_review_runtime.ReplaceRetryTests.test_transient_permission_errors_then_real_atomic_replace) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 1.469s
+
+OK

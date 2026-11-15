@@ -1,0 +1,228 @@
+# Warp output alternatives: docs/warps or .recur/warps
+[warp]
+
+[warp.creation]
+directory = "warps"
+template = ".recur/warp-template.json"
+
+[warp.removal]
+require_confirmation = true
+require_committed_snapshot = true
+require_preservation_ref = true
+require_pushed_ref = false
+
+[warp.intelligence]
+default_tick = 0
+baseline = "host-current"
+
+[warp.dispatch]
+enabled = true
+default_host = "codex"
+max_parallel = 3
+timeout_seconds = 1800
+max_attempts = 4
+failure_threshold = 2
+easy_success_threshold = 3
+easy_seconds = 30
+[warp.dispatch.retry]
+delay_seconds = 5
+max_delay_seconds = 60
+auth_required_markers = ["AUTH_REQUIRED", "UNAUTHENTICATED", "LOGIN_REQUIRED", "INVALID_GRANT", "Please set an Auth method"]
+provider_blocked_markers = ["UNSUPPORTED_CLIENT", "MODEL_NOT_FOUND", "UNSUPPORTED_MODEL"]
+transient_markers = ["RATE_LIMIT_EXCEEDED", "RESOURCE_EXHAUSTED", "SERVICE_UNAVAILABLE", "ECONNRESET", "ETIMEDOUT"]
+[warp.dispatch.hosts.codex]
+enabled = true
+program = "codex"
+args = ["exec", "--json", "--sandbox", "workspace-write", "-c", 'model_reasoning_effort="{reasoning}"', "-"]
+prompt_stdin = true
+reasoning_levels = ["low", "medium", "high", "xhigh", "max"]
+baseline_index = 1
+max_parallel = 2
+[warp.dispatch.hosts.copilot]
+enabled = true
+program = "copilot"
+args = ["--silent", "--reasoning-effort", "{reasoning}", "-p", "{prompt}"]
+prompt_stdin = false
+reasoning_levels = ["low", "medium", "high", "xhigh", "max"]
+baseline_index = 1
+max_parallel = 1
+[warp.dispatch.hosts.gemini]
+enabled = false
+program = "gemini"
+args = []
+prompt_stdin = true
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+[warp.dispatch.hosts.antigravity]
+enabled = false
+program = "antigravity"
+args = []
+prompt_stdin = true
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[watch]
+[watch.dispatch]
+poll_seconds = 2
+
+[warp.dispatch.hosts.carbon_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/prime-phase/run-review.py", "carbon", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.primes.phase.carbon"]
+workspace = "research/prime-phase/carbon"
+host = "carbon_review"
+context = ["research/prime-phase/graph.primes.phase.contract.current.md"]
+inputs = ["research/prime-phase/graph.primes.phase.contract.current.md", "research/prime-phase/run-review.py", "research/prime-phase/verify-review.py", "research/prime-phase/steer-review.py", "research/prime-phase/test_review_protocol.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "carbon"]}]
+
+[warp.dispatch.hosts.copilot_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/prime-phase/run-review.py", "copilot", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.primes.phase.copilot"]
+workspace = "research/prime-phase/copilot"
+host = "copilot_review"
+context = ["research/prime-phase/graph.primes.phase.contract.current.md"]
+inputs = ["research/prime-phase/graph.primes.phase.contract.current.md", "research/prime-phase/run-review.py", "research/prime-phase/verify-review.py", "research/prime-phase/steer-review.py", "research/prime-phase/test_review_protocol.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "copilot"]}]
+
+[warp.dispatch.hosts.codex_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/prime-phase/run-review.py", "codex", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.primes.phase.codex"]
+workspace = "research/prime-phase/codex"
+host = "codex_review"
+context = ["research/prime-phase/graph.primes.phase.contract.current.md"]
+inputs = ["research/prime-phase/graph.primes.phase.contract.current.md", "research/prime-phase/run-review.py", "research/prime-phase/verify-review.py", "research/prime-phase/steer-review.py", "research/prime-phase/test_review_protocol.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "codex"]}]
+
+[warp.dispatch.hosts.hydrogen_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/prime-phase/run-review.py", "hydrogen", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.primes.phase.hydrogen"]
+workspace = "research/prime-phase/hydrogen"
+host = "hydrogen_review"
+context = ["research/prime-phase/graph.primes.phase.contract.current.md"]
+inputs = ["research/prime-phase/graph.primes.phase.contract.current.md", "research/prime-phase/run-review.py", "research/prime-phase/verify-review.py", "research/prime-phase/steer-review.py", "research/prime-phase/test_review_protocol.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "hydrogen"]}]
+
+[warp.dispatch.hosts.gap_carbon_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/gap-bound/run-review.py", "carbon", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.riemann.gap.carbon"]
+workspace = "research/gap-bound/carbon"
+host = "gap_carbon_review"
+context = ["research/gap-bound/graph.riemann.gap.contract.current.md"]
+inputs = ["research/gap-bound/graph.riemann.gap.contract.current.md", "research/gap-bound/run-review.py", "research/gap-bound/verify-review.py", "research/gap-bound/steer-review.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "carbon"]}]
+
+[warp.dispatch.hosts.gap_codex_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/gap-bound/run-review.py", "codex", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.riemann.gap.codex"]
+workspace = "research/gap-bound/codex"
+host = "gap_codex_review"
+context = ["research/gap-bound/graph.riemann.gap.contract.current.md"]
+inputs = ["research/gap-bound/graph.riemann.gap.contract.current.md", "research/gap-bound/run-review.py", "research/gap-bound/verify-review.py", "research/gap-bound/steer-review.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "codex"]}]
+
+[warp.dispatch.hosts.gap_hydrogen_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/gap-bound/run-review.py", "hydrogen", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.riemann.gap.hydrogen"]
+workspace = "research/gap-bound/hydrogen"
+host = "gap_hydrogen_review"
+context = ["research/gap-bound/graph.riemann.gap.contract.current.md"]
+inputs = ["research/gap-bound/graph.riemann.gap.contract.current.md", "research/gap-bound/run-review.py", "research/gap-bound/verify-review.py", "research/gap-bound/steer-review.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "hydrogen"]}]
+
+[warp.dispatch.hosts.switch_carbon_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/zeta-switch/run-review.py", "carbon", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.riemann.switch.carbon"]
+workspace = "research/zeta-switch/carbon"
+host = "switch_carbon_review"
+context = ["research/zeta-switch/graph.riemann.switch.contract.current.md"]
+inputs = ["research/zeta-switch/graph.riemann.switch.contract.current.md", "research/zeta-switch/run-review.py", "research/zeta-switch/verify-review.py", "research/zeta-switch/steer-review.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "carbon"]}]
+
+[warp.dispatch.hosts.switch_codex_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/zeta-switch/run-review.py", "codex", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.riemann.switch.codex"]
+workspace = "research/zeta-switch/codex"
+host = "switch_codex_review"
+context = ["research/zeta-switch/graph.riemann.switch.contract.current.md"]
+inputs = ["research/zeta-switch/graph.riemann.switch.contract.current.md", "research/zeta-switch/run-review.py", "research/zeta-switch/verify-review.py", "research/zeta-switch/steer-review.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "codex"]}]
+
+[warp.dispatch.hosts.switch_copilot_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/zeta-switch/run-review.py", "copilot", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.riemann.switch.copilot"]
+workspace = "research/zeta-switch/copilot"
+host = "switch_copilot_review"
+context = ["research/zeta-switch/graph.riemann.switch.contract.current.md"]
+inputs = ["research/zeta-switch/graph.riemann.switch.contract.current.md", "research/zeta-switch/run-review.py", "research/zeta-switch/verify-review.py", "research/zeta-switch/steer-review.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "copilot"]}]

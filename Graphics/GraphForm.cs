@@ -54,6 +54,10 @@ namespace Graphics
             var zeros = new Button { Text = "Zero motion lab", AutoSize = true, Margin = Padding.Empty };
             zeros.Click += (sender, args) => { using var lab = new ZeroMotionForm(); lab.ShowDialog(this); };
             zetaButtons.Controls.Add(zeros);
+            zeros.Margin = new Padding(0, 0, 0, spacing);
+            var unitSwitch = new Button { Text = "Zeta switch lab", AutoSize = true, Margin = Padding.Empty };
+            unitSwitch.Click += (sender, args) => { using var lab = new ZetaSwitchForm(); lab.ShowDialog(this); };
+            zetaButtons.Controls.Add(unitSwitch);
             panel1.Controls.Add(zetaButtons);
         }
 

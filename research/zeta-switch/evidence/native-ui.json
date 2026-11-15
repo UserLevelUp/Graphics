@@ -1,0 +1,17 @@
+{
+  "traceId": "graph.riemann.switch.ui",
+  "observedUtc": "2026-11-15T09:18:01.894030+00:00",
+  "status": "passed",
+  "checks": [
+    "Native lab opens with4alignedpanels and distinguishable zero/1-point markers",
+    "One-pointpreset changesheightbounds to23.1..23.6",
+    "Palette73 changescolors; markercheckbox hidesmarkers",
+    "SaveImage exports displayedframe toPNG plusvaluesJSON andTXT",
+    "Hover returnscomplexs,zeta,shiftedvalue,b,W,G,quadrants andbothseamresiduals",
+    "Invertedheightbounds give feedback anddisableSave",
+    "Overview restores10..30; final app leftopen atpalette0 withmarkers"
+  ],
+  "export": "research\\zeta-switch\\evidence\\native-export.values.json",
+  "exportSha256": "63bedf2e9b350c8e74dac09bae0ccc32365f5925d36bf2126e5e53cd4b5ddc1e",
+  "note": "Observed with native Windows Computer Use; screenshot UI readback and exported files. Final subsequent UI-only guard preserves invalid-range feedback on pointer leave. Math/export implementation unchanged."
+}

@@ -1,0 +1,162 @@
+{
+  "status": "passed",
+  "traceId": "graph.riemann.switch.verify",
+  "mpmathVersion": "1.3.0",
+  "precisionDigits": 80,
+  "exports": [
+    {
+      "status": "passed",
+      "sampleCount": 165,
+      "markerCount": 1,
+      "maximumAbsoluteErrors": {
+        "zetaError": "6.43896983798558e-14",
+        "derivativeError": "2.29710349170428e-13",
+        "refinedZetaError": "8.49572956698879e-14"
+      },
+      "nearSeamSamplesNotIndependentlyClassified": 1,
+      "maximumIndependentMarkerResidual": "6.96315822573347e-13",
+      "selectorControls": {
+        "count": 8,
+        "tieSelectsOne": true,
+        "unitJumpControl": true,
+        "seamIsNonzero": true,
+        "tinyBranchOneValuesPreservedExactly": true
+      },
+      "settings": {
+        "resolution": 256,
+        "paletteDegrees": 0,
+        "showMarkers": true,
+        "evaluator": {
+          "method": "Euler-Maclaurin",
+          "n": 64,
+          "corrections": 10,
+          "refinementN": 96
+        }
+      },
+      "domain": {
+        "minSigma": 0.05,
+        "maxSigma": 3,
+        "minT": 23.1,
+        "maxT": 23.6
+      },
+      "source": "C:\\src\\graph\\research\\zeta-switch\\evidence\\one-point.values.json",
+      "sourceSha256": "687ee949859e6a3be2f79b3eefaff8584484db72df9efe9116a0acab66c3cd83"
+    },
+    {
+      "status": "passed",
+      "sampleCount": 165,
+      "markerCount": 1,
+      "maximumAbsoluteErrors": {
+        "zetaError": "6.43896983798558e-14",
+        "derivativeError": "2.29710349170428e-13",
+        "refinedZetaError": "8.49572956698879e-14"
+      },
+      "nearSeamSamplesNotIndependentlyClassified": 1,
+      "maximumIndependentMarkerResidual": "6.96315822573347e-13",
+      "selectorControls": {
+        "count": 8,
+        "tieSelectsOne": true,
+        "unitJumpControl": true,
+        "seamIsNonzero": true,
+        "tinyBranchOneValuesPreservedExactly": true
+      },
+      "settings": {
+        "resolution": 256,
+        "paletteDegrees": 73,
+        "showMarkers": false,
+        "evaluator": {
+          "method": "Euler-Maclaurin",
+          "n": 64,
+          "corrections": 10,
+          "refinementN": 96
+        }
+      },
+      "domain": {
+        "minSigma": 0.05,
+        "maxSigma": 3,
+        "minT": 23.1,
+        "maxT": 23.6
+      },
+      "source": "C:\\src\\graph\\research\\zeta-switch\\evidence\\native-export.values.json",
+      "sourceSha256": "63bedf2e9b350c8e74dac09bae0ccc32365f5925d36bf2126e5e53cd4b5ddc1e"
+    }
+  ],
+  "auditedNativeSearch": {
+    "source": "C:\\src\\graph\\Graphics\\ZetaSwitchExperiment.cs",
+    "sourceSha256": "2a2ffbee95ca4f7a6c6c4e3b9658eb62dc3aaaf44a6b4603959111490f6c3f75",
+    "maximumNewtonIterations": 30,
+    "successResidualStrictlyBelow": "2e-12",
+    "minimumDerivativeMagnitude": "1e-10",
+    "maximumStepMagnitude": "1.5",
+    "sameTargetDeduplicationDistanceStrictlyBelow": "1e-7",
+    "seedSigmas": [
+      0.35,
+      1.0,
+      2.0,
+      2.8
+    ],
+    "heightSeedRule": "inclusive endpoints with count=max(2,ceil(maxT-minT)); spacing<=1",
+    "refinement": "Repeat Newton at N96; export value residual at original coordinate and movement.",
+    "stoppingScope": "Invalid values, small derivative, outside expanded guard, or30iterations terminate the candidate search; candidates must finish inside the plot rectangle.",
+    "interpretation": "Empirical search and stopping criteria, not exhaustive or certified root isolation."
+  },
+  "controls": {
+    "sharedSampleComparisons": 165,
+    "pairs": [
+      {
+        "firstExport": 0,
+        "secondExport": 1,
+        "identicalSharedSamples": 165,
+        "paletteChanged": true,
+        "resolutionChanged": false,
+        "markerVisibilityChanged": true,
+        "domainChanged": false
+      }
+    ],
+    "paletteControlPresent": true,
+    "resolutionControlPresent": false,
+    "markerVisibilityControlPresent": true,
+    "domainControlPresent": false
+  },
+  "rejectedNegativeControls": [
+    "self-consistent incorrect zeta",
+    "incorrect derivative",
+    "selector flipped",
+    "selected value corrupted",
+    "analytic product corrupted",
+    "refinement discrepancy hidden",
+    "tie incorrectly chooses zero",
+    "seam drawn as a zero",
+    "tiny branch1 value erased",
+    "zeta zero and one-point labels exchanged",
+    "selected map falsely declared analytic"
+  ],
+  "tolerances": {
+    "zetaScaled": "0.00000000005",
+    "derivativeScaled": "0.0000000005",
+    "algebraScaled": "0.000000000002",
+    "markerResidualAbsolute": "1e-8",
+    "markerMovementAbsolute": "1e-6",
+    "markerDerivativeMagnitudeMinimum": "1e-6",
+    "reportedSmallMagnitudeAbsolute": "1e-20",
+    "branchOneAndImaginaryPreservation": "exact equality of exported binary values"
+  },
+  "samplingAndStopping": {
+    "independentPrecisionDigits": 80,
+    "referenceEvaluation": "Pinned mpmath1.3.0 zeta and analytic derivative at every exported sample.",
+    "perExportMandatorySamples": "144 rectangle points (16x9 inclusive), 18 eta-removable-neighborhood points, 3 reference-location probes.",
+    "etaNeighborhood": "sigma=1+dx, t=2*k*pi/log(2)+dy; k=2,3; dx,dy in {-1e-7,0,1e-7}.",
+    "selectorProbes": "8 required, including exact ties, both seam sides, exact0/1, and positive/negative1e-18 preservation.",
+    "classificationNearSeam": "Independent selector comparison withheld when |Re(reference)-.5|<=5e-11; computed-value selector still checked exactly.",
+    "stopping": "Evaluate all listed samples/markers and cross-export matches; fail immediately on any mismatch. No adaptive claim between sampled points.",
+    "gridMetrics": "Structural consistency checked; full pixel grids are not independently recomputed at80digits."
+  },
+  "limitations": [
+    "High-precision numerical comparisons, not certified interval bounds.",
+    "Numerical marker searches are not exhaustive.",
+    "Cross-export controls apply only to supplied files and common input coordinates.",
+    "Palette images and UI behavior require separate visual verification.",
+    "The selected map is discontinuous at its seam and is not globally analytic.",
+    "No result about the Riemann Hypothesis is established."
+  ]
+}

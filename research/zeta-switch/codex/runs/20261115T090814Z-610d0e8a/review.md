@@ -1,0 +1,31 @@
+publish: graph.riemann.switch.codex.response
+
+STATUS: COMPLETE
+ACK: 5b20438ab4f04d09ab861ee4243fb076
+CLOCK: 2026-11-15T01:10:36.0088635-08:00
+
+VERDICT
+
+ACCEPT the mathematical contract and validation plan within the stated scope. This does not certify implementation, executed tests, or RH.
+
+REASONING
+
+For exact finite zeta values away from the pole,
+\[
+W(s)=0 \iff \zeta(s)\in\{0,1\}\iff G(s)=0.
+\]
+At ζ=0 the selector chooses b=1; at ζ=1 it chooses b=0. Conversely, either selected branch can vanish only at its corresponding level. This zero-union identity is the strongest justified conclusion.
+
+Every hypothetical off-critical-line nontrivial zeta zero therefore survives in both W and G. The missing RH premise is an independent global argument excluding ζ(s)=0 throughout \(0<\Re(s)<1\), \(\Re(s)\ne1/2\). Switching, finite plots, and reference markers provide no such argument. Trivial zeros must also be excluded from any RH formulation.
+
+The output seam \(\Re\zeta(s)=1/2\) is distinct from the input critical line \(\Re(s)=1/2\). Neither zeta zeros nor zeta 1-points lie on the seam. W is discontinuous there, despite its continuous magnitude.
+
+The supplied selector has no marker or known-zero input. Separate Newton overlays do not introduce circular reasoning into this contract. Adding the distinguished integer 1 changes an additive series term, not standard primality or Euler’s product.
+
+TESTS
+
+The proposed independent comparisons, refinement, marker residuals, export negative controls, and seam checks appropriately test numerical consistency. None establishes global zero exclusion.
+
+Ensure nonfinite selector return −1 is treated as invalid data, outside the mathematical two-state definition. Test exact tie behavior separately from floating-point classifications near the seam.
+
+The stated off-line 1-point is a numerical candidate against “all W/G zeros lie on the critical line,” not against RH; it remains unverified in this review. Only clock checks were executed.

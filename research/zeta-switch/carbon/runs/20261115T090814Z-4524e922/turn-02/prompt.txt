@@ -1,0 +1,50 @@
+You are carbon in Warp graph.riemann.switch. Audit the supplied two-state zeta identities, selector equivalence, seam discontinuity, analytic product comparison, and exact boundary of any relation to RH.
+Coordinator turn 2, acknowledgement token e554d7facabf4f33a475143e66db2191.
+Absolute UTC progress deadline: 2026-11-15T09:13:21.389241+00:00. Budget 180 seconds.
+Check actual time by executing only Get-Date -Format o in PowerShell at the start, after each short reasoning step (no step over 30 seconds), and immediately before returning. Do not estimate elapsed time from tokens. Aim to return 30 seconds before the deadline. At the deadline return findings so far, uncertainties, blockers, and your proposed next step, even if unfinished. No file edits or other commands. If the clock is unavailable, state that explicitly.
+Response format: an exact line STATUS: CHECKPOINT or STATUS: COMPLETE, an exact line ACK: e554d7facabf4f33a475143e66db2191, and CLOCK: <last observed ISO timestamp with offset>. A checkpoint uses FINDINGS, UNCERTAINTY, NEXT sections. A complete review uses VERDICT (ACCEPT or REVISE), REASONING, TESTS. Keep response under 350 words. Coordinator acceptance is separate.
+
+CURRENT COORDINATOR INSTRUCTION
+Provide your final scoped review now, acknowledging this new token. No new commands except actual clock checks. You are accepting or revising the mathematical contract and validation plan only, not certifying code or tests. The implementation is separately checked; global RH remains open. Pole s=1 is excluded from the displayed domain; G is holomorphic away from that pole. Reference coordinates are explicitly approximate numerical candidates. Please explicitly confirm W discontinuity even at seam points where zeta derivative vanishes, and whether the switch adds any constraint excluding hypothetical off-line zeta zeros.
+
+PRIOR TURN RESPONSES (explicit transcript replay, not a native session resume)
+STATUS: CHECKPOINT
+ACK: initial
+CLOCK: 2026-11-15T01:08:47.8966204-08:00
+
+FINDINGS
+- **Two-state zeta identities**: For $b \in \{0,1\}$, $Z_b(s) = \zeta(s) - 1 + b$ correctly represents switching the $n=1$ Dirichlet term for $\text{Re}(s) > 1$ and continues meromorphically to $\mathbb{C} \setminus \{1\}$. Fixed branches differ by $-1 \in \mathbb{R}$, so $Z_0'(s) = Z_1'(s) = \zeta'(s)$ and $\text{Im}(Z_0) = \text{Im}(Z_1)$; their zero sets are $\{s : \zeta(s)=0\}$ and $\{s : \zeta(s)=1\}$. Local differences satisfy $Z_b(s) - Z_b(c) = \zeta(s) - \zeta(c)$, whereas $W(s) - W(c) = \zeta(s) - \zeta(c) + b(s) - b(c)$.
+- **Selector equivalence**: Since $|z|^2 - |z-1|^2 = 2\text{Re}(z) - 1$, the condition $\text{Re}(z) \le 1/2$ (tie to $b=1$) is algebraically identical to $|z| \le |z-1|$. Under $W(s) = \zeta(s) - 1 + b(s)$, zeros require $z=0$ ($\text{Re}(z)=0 \le 1/2 \Rightarrow b=1$) or $z=1$ ($\text{Re}(z)=1 > 1/2 \Rightarrow b=0$), so $W^{-1}(0) = Z_1^{-1}(0) \cup Z_0^{-1}(0)$ without spurious zeros.
+- **Seam discontinuity**: Across the preimage seam $\text{Re}(\zeta(s)) = 1/2$ (distinct from $\text{Re}(s) = 1/2$), crossing from $b=1$ to $b=0$ yields jump $(z_0 - 1) - z_0 = -1$. On the seam $z_0 = 1/2 + iy$, $|z_0| = |z_0 - 1| = \sqrt{1/4 + y^2} \ge 1/2$, making $|W(s)|$ continuous and $\ge 1/2$. Linear interpolation across $[-1/2+iy, 1/2+iy]$ at $y=0$ passes through $0$ (false zero), and non-holomorphic jumps invalidate ordinary argument-principle contour integrals intersecting the seam.
+- **Analytic product & RH boundary**: $G(s) = \zeta(s)(\zeta(s)-1)$ is meromorphic on $\mathbb{C} \setminus \{1\}$ (double pole at $s=1$), smooth across the seam, and shares the exact zero union (adding multiplicities, as $\{z=0\} \cap \{z=1\} = \emptyset$). Because $W$ and $G$ are post-compositions of $\zeta(s)$, they preserve off-critical-line zeros, leave Euler's product untouched, and yield no RH constraint or prime predictor.
+- **Removable eta singularity**: At $s_k = 1 + 2\pi i k / \log 2$ ($k \in \mathbb{Z} \setminus \{0\}$), $1 - 2^{1-s_k} = 0$ forces $\eta(s_k) = 0$, creating a $0/0$ removable singularity properly flagged for numerical avoidance.
+
+UNCERTAINTY
+- Whether $s=1$ pole behavior ($G$ order 2 vs. $Z_b$ order 1; undefined selector limit at $s=1$, though outside default $[0.05,3]\times[10,30]$) or reference 1-point precision ($1.40778804065+23.32798775456i$ being an approximate root) needs explicit qualification in the contract text.
+
+NEXT
+- Await coordinator steering and next ACK token before issuing final `STATUS: COMPLETE` verdict (`ACCEPT` or `REVISE`) with `REASONING` and `TESTS`.
+
+
+REVIEW SCOPE
+# Two-state zeta laboratory: active implementation and review contract
+
+defines: graph.riemann.switch
+consumer: graph.riemann
+consumer: graph.zeta.origins
+
+Baseline cf51254. User authorizes an auxiliary two-set model with 1 optionally included as a distinguished first instance, plus Recur Warp/Eventness and timed helper resources. This experiment switches the n=1 additive term of the all-integer zeta series. It does not insert 1 into Euler's prime product, redefine standard primality, or hide changed definitions in an RH proof.
+
+For external b in {0,1}, define Z_b(s)=zeta(s)-1+b. Z_1 is zeta; Z_0=zeta-1. The original series interpretation is valid for Re(s)>1, with these identities then continued analytically away from the pole. Fixed branches share derivatives and imaginary parts. Their zeros are zeta zeros and zeta 1-points respectively.
+
+The predetermined selector uses only the computed complex value z=zeta(s): b=1 if Re(z)<=1/2, otherwise0. Tie goes to1. This is equivalent to choosing the smaller of |z| and |z-1|. It receives no known-zero, prime-list, or marker input. W(s)=zeta(s)-1+b(s). Its zeros form the union of the two level sets. The switching boundary Re(zeta(s))=1/2 is different from the input critical line Re(s)=1/2. W has a jump of minus1 when crossing from the b=1 region to the b=0 region. Its magnitude is continuous and at least1/2 on the seam. Connecting jump endpoints can draw a false apparent zero; ordinary holomorphic argument-principle counting must not be applied to that selected map across its seam.
+
+An analytic control G(s)=zeta(s)*(zeta(s)-1) has the same zero union and no switching jump, away from zeta's pole. Fixed-branch local differences cancel the additive constant; using different selector values adds b(s)-b(c). None of these identities excludes off-critical-line zeros of the original zeta function or supplies a prime predictor.
+
+Implementation: a native WinForms lab with four aligned color panels for Z_1, Z_0, W, and G; height-range, resolution, palette rotation and marker controls; visible critical line and selector seam; zero and one-point markers labeled separately; hover values; PNG/raw JSON/text export. Default domain sigma .05..3, height10..30. Compute one grid and reuse it for all panels. The evaluator should avoid removable 0/0 artifacts of the eta quotient near sigma1 and height multiples2*pi/log2. Accuracy claims are numerical comparisons, not rigorous enclosures.
+
+Validation: independent high-precision mpmath evaluation of exported values and derivatives, both shift/product identities, selector decisions and tie controls, marker residuals, refinement checks, palette/marker independence of mathematical samples, seam/non-analytic metadata, corrupted-export negative controls, native UI and export verification, and scoped legacy regression checks. A high-precision reference 1-point near1.40778804065+23.32798775456i must be distinguished from a zeta zero. Reference values and markers may be used for verification, never as selector inputs.
+
+Carbon reviews the mathematical identities and scope; Codex searches for circular reasoning and invalid zero inference; Copilot reviews numerical/rendering failure cases and the test plan. Each must check actual time, return a checkpoint before180seconds, then await coordinator steering with an ACK token before final review. Reviewers inspect supplied text; they do not claim to execute numerical tests. Watch produced status is protocol evidence, not mathematical acceptance. Independent native workers implement and check code in disjoint files.
+
+The child may complete only with reviewed evidence and a local Git restore point. The parent graph.riemann remains open. Recur Lang is optional and cannot certify these mathematical claims.

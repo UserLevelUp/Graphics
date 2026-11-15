@@ -1,0 +1,946 @@
+{
+  "schema": "graph-zeta-switch-manifest-v1",
+  "traceId": "graph.riemann.switch.integrity",
+  "createdUtc": "2026-11-15T09:23:39.072776+00:00",
+  "baseline": "cf51254",
+  "scope": "Accepted finite experiment source and evidence at this Git checkpoint; not a proof certificate.",
+  "hashRules": "text-lf replaces CRLF with LF before hashing source; raw retains exact runtime/evidence bytes.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "a9a0537c9a1f20a5f0999976d83625085c18ef256a5457b5bdca773c65cacc36",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 4851
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "92b6dc9c6e7fb38a5b7c9cad2f64e35f1fca029522725c3dc192a7360627fe22",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 6774
+    },
+    {
+      "path": ".recur/config.toml",
+      "sha256": "c38ea21143eccf4dd8a38c9708ee3207294dff9dc4ec599b10e92ecb934d11ef",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 9367
+    },
+    {
+      "path": "Graphics/GraphForm.cs",
+      "sha256": "406abd0cb0908ad0af5a6a490edc7648229f12aa353f8b5dfc805797da606485",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 16216
+    },
+    {
+      "path": "Graphics/GraphForm.Designer.cs",
+      "sha256": "abf495ede6cf1d0453847bfcdf814d5397768903c4890d09897c77c7ef06df83",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 12860
+    },
+    {
+      "path": "Graphics/GraphForm.resx",
+      "sha256": "d986dbf65e9c3bf4ba187e72b431820e1ba3c8f0c047fd9c88030f676eb55672",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 126306
+    },
+    {
+      "path": "Graphics/Graphics.csproj",
+      "sha256": "97764f91d95add27e1fd8d92290bb8d5cebe1423889991a36bd11ef1682987f8",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 1278
+    },
+    {
+      "path": "Graphics/lib/consts/Consts.cs",
+      "sha256": "6069f6e472b2ccdaeee7a7f5e5c7f4e8b104ad5cb0be16cec100d029248a05cd",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 296
+    },
+    {
+      "path": "Graphics/lib/enums/GraphingState.cs",
+      "sha256": "40f9a1455a3f26722988b2e83e03a76ef322fcd91416c4e25b7e0589357685ac",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 260
+    },
+    {
+      "path": "Graphics/lib/enums/PaintCommand.cs",
+      "sha256": "de8cd20fbbde842267f939ace3db55b387a98cad3389b78a844c4f8e69c78f9c",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 261
+    },
+    {
+      "path": "Graphics/lib/formulas/Formula.cs",
+      "sha256": "4166ab4f6a8a17b9233091db3d604f0c26587be0502f67b87775f6dcfa74d45d",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 4786
+    },
+    {
+      "path": "Graphics/PrimePhaseExperiment.cs",
+      "sha256": "e56779f6b319d085142b69e9cab24627deda586bbfcd062d96c8e3895765db10",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 31977
+    },
+    {
+      "path": "Graphics/PrimePhaseForm.cs",
+      "sha256": "288ebba1623fa6b93252be14347d237818be3c8c5fda3ef251900a29b9953dae",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 12771
+    },
+    {
+      "path": "Graphics/PrimeUnwrap.cs",
+      "sha256": "e71ef0015427e28461236cc11496279c2f8b30bf2d5969fb7fa8c03e16778ba2",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 8596
+    },
+    {
+      "path": "Graphics/Program.cs",
+      "sha256": "bfe2d3bb492f3b8d390f322782c6a749337985dead463e74c639e9b6c9de0e8a",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 4916
+    },
+    {
+      "path": "Graphics/Settings1.Designer.cs",
+      "sha256": "ffde947c8e4c002866318b659072702fed11b479564e0e8e42fc18917dc62585",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 1085
+    },
+    {
+      "path": "Graphics/ZeroMotionExperiment.cs",
+      "sha256": "86ccd88fd7df172bfb613c35b61a4ecf3990be4871cebbfc1d934d24bb201b28",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 25402
+    },
+    {
+      "path": "Graphics/ZeroMotionForm.cs",
+      "sha256": "ba9d48d123e2213efac06cccaa31559e5b1a00f609b3966def2bef28518d2c58",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 17382
+    },
+    {
+      "path": "Graphics/ZeroMotionPath.cs",
+      "sha256": "da64d7122792bb06007cae96a4b2216887f48c08dbe9b34f63c95b269a03de2c",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 20750
+    },
+    {
+      "path": "Graphics/ZetaContours.cs",
+      "sha256": "0ee914c2d35e7e19e85a2b7d66c19fb1e7d9e1938d998f36970d64e86422dc00",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 9700
+    },
+    {
+      "path": "Graphics/ZetaExperiment.cs",
+      "sha256": "8ac9eb82da207bb1f119e68f55219c7add333cb8dc179022199c9cb4a14587b9",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 9893
+    },
+    {
+      "path": "Graphics/ZetaOrigins.cs",
+      "sha256": "1c13233d57b7396ed3d95e724d33c9d15dedcbc557758f8c3c43d17a13b91e92",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 10284
+    },
+    {
+      "path": "Graphics/ZetaSwitchExperiment.cs",
+      "sha256": "2a2ffbee95ca4f7a6c6c4e3b9658eb62dc3aaaf44a6b4603959111490f6c3f75",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 34316
+    },
+    {
+      "path": "Graphics/ZetaSwitchForm.cs",
+      "sha256": "1dc512ffffc44f4e5306dcf3a61f45a66e5e80f86973a5f3e090f60a3ff59815",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 8980
+    },
+    {
+      "path": "research/zeta-switch/audit_reviews.py",
+      "sha256": "138af58908d0cab5eb1252ad0df1b825bf27c4cb12940c91436c387945a0c9ba",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 14775
+    },
+    {
+      "path": "research/zeta-switch/carbon/latest-run.json",
+      "sha256": "c8a7f8e915eee5038dcaa695e361a06ffb5dd5d3b3893fb98fc89ea340bd3255",
+      "hashMode": "raw",
+      "bytesAtSeal": 72
+    },
+    {
+      "path": "research/zeta-switch/carbon/review.md",
+      "sha256": "58da39a878f7d5222539fe86224a11a3abcefd682c911887be0f4568f7140cd1",
+      "hashMode": "raw",
+      "bytesAtSeal": 2817
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/assignment.txt",
+      "sha256": "1367c6e8a7e6e6545489345fbd2ea3edc2397865bdce6d3b61371c984d2a1bb9",
+      "hashMode": "raw",
+      "bytesAtSeal": 5092
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/events.jsonl",
+      "sha256": "adde4896c5551e0bd9678954a54fc7c0dc7c215c365145ab27548cfde2b5868e",
+      "hashMode": "raw",
+      "bytesAtSeal": 2754
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/review.md",
+      "sha256": "58da39a878f7d5222539fe86224a11a3abcefd682c911887be0f4568f7140cd1",
+      "hashMode": "raw",
+      "bytesAtSeal": 2817
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/status.json",
+      "sha256": "2f9a111495fec510525e4581ca2681a91d91049bce9b507bb2c8ea64aa32cf0d",
+      "hashMode": "raw",
+      "bytesAtSeal": 295
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/steering-after-01.json",
+      "sha256": "da1943b20149ca9c226440a6cb8ba35c9f00f49b0f81b8a8458c3cab4cafe2e2",
+      "hashMode": "raw",
+      "bytesAtSeal": 860
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-01/drain-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-01/drain-1.stdout.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "hashMode": "raw",
+      "bytesAtSeal": 4
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-01/prompt.txt",
+      "sha256": "1bfd25a707a51769927d2f9e97ed1df71a2643497d5610383062ad6e8e011843",
+      "hashMode": "raw",
+      "bytesAtSeal": 5220
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-01/received-traces.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "hashMode": "raw",
+      "bytesAtSeal": 4
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-01/stdout.txt",
+      "sha256": "fecfcf6e99835e7840c066e3dd141b1d2c4095d43dd1a630709d2a11e1a2ab6e",
+      "hashMode": "raw",
+      "bytesAtSeal": 2629
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-02/drain-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-02/drain-1.stdout.json",
+      "sha256": "d958b6e2c6206f2f667649f6c4d3daa4eaa74e819c142c9d984098a245b589c6",
+      "hashMode": "raw",
+      "bytesAtSeal": 168
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-02/prompt.txt",
+      "sha256": "f415597b9cd040d2a2e959ee5f8428855241a36b15742f5dc2c887fb01ea1e07",
+      "hashMode": "raw",
+      "bytesAtSeal": 8408
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-02/received-traces.json",
+      "sha256": "d958b6e2c6206f2f667649f6c4d3daa4eaa74e819c142c9d984098a245b589c6",
+      "hashMode": "raw",
+      "bytesAtSeal": 168
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-02/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-02/stdout.txt",
+      "sha256": "69671b4e5d704503e6754753b489922fbbb07e55051ff2e294da7df784918e2e",
+      "hashMode": "raw",
+      "bytesAtSeal": 2751
+    },
+    {
+      "path": "research/zeta-switch/codex/latest-run.json",
+      "sha256": "4a2be6cc079fb0bf1ef60c5621fe9062fca149f65d9958b8ac07ededa6e6bc3f",
+      "hashMode": "raw",
+      "bytesAtSeal": 71
+    },
+    {
+      "path": "research/zeta-switch/codex/review.md",
+      "sha256": "b91cd2085bcfa74442508d32469b5834c0c3fbe57d7d6b32483afabd23e5bc66",
+      "hashMode": "raw",
+      "bytesAtSeal": 2037
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/assignment.txt",
+      "sha256": "fb14e3633385103c5110bcb27afa358316cc6a83d186166cd62d06b63bf605cb",
+      "hashMode": "raw",
+      "bytesAtSeal": 5088
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/events.jsonl",
+      "sha256": "52623ba6ae8694a5b807ace26cf4c8ea3cfb1b56768a9d3624ced3e8f2f57003",
+      "hashMode": "raw",
+      "bytesAtSeal": 2732
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/review.md",
+      "sha256": "b91cd2085bcfa74442508d32469b5834c0c3fbe57d7d6b32483afabd23e5bc66",
+      "hashMode": "raw",
+      "bytesAtSeal": 2037
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/status.json",
+      "sha256": "9f5d023de02a64fa2e88f30f3a664b8e842e2cb79189fafc6057561baf56dc47",
+      "hashMode": "raw",
+      "bytesAtSeal": 292
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/steering-after-01.json",
+      "sha256": "a2efac3b6351a1f10675eaeccafa7b67085cceb9005190d5a61fbeb4443ae0b5",
+      "hashMode": "raw",
+      "bytesAtSeal": 828
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-01/drain-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-01/drain-1.stdout.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "hashMode": "raw",
+      "bytesAtSeal": 4
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-01/prompt.txt",
+      "sha256": "80eb13d0ac5437e8e774347391a97481dfdc6a99099696f0f84b18d0d273caf5",
+      "hashMode": "raw",
+      "bytesAtSeal": 5318
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-01/received-traces.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "hashMode": "raw",
+      "bytesAtSeal": 4
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-01/stderr.txt",
+      "sha256": "6da0e268a8360ccb36acae94ad730194bb9d69e7b5eb39161c24f5823eaf5de9",
+      "hashMode": "raw",
+      "bytesAtSeal": 10922
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-01/stdout.txt",
+      "sha256": "69af75f4a65764ee754865f900c4555444714377ca647d8a663308a2a4137450",
+      "hashMode": "raw",
+      "bytesAtSeal": 1792
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-02/drain-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-02/drain-1.stdout.json",
+      "sha256": "d958b6e2c6206f2f667649f6c4d3daa4eaa74e819c142c9d984098a245b589c6",
+      "hashMode": "raw",
+      "bytesAtSeal": 168
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-02/prompt.txt",
+      "sha256": "71813a920f228c77b5d3ede7e819cc1fc3470487d6965c0701fd4d6c3c162186",
+      "hashMode": "raw",
+      "bytesAtSeal": 7644
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-02/received-traces.json",
+      "sha256": "d958b6e2c6206f2f667649f6c4d3daa4eaa74e819c142c9d984098a245b589c6",
+      "hashMode": "raw",
+      "bytesAtSeal": 168
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-02/stderr.txt",
+      "sha256": "45c96d7e2aded0ba3fc7a028fbb66ee8f8634fc5b58990b03f82459194208313",
+      "hashMode": "raw",
+      "bytesAtSeal": 13543
+    },
+    {
+      "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-02/stdout.txt",
+      "sha256": "cc5cfbb300944adccd9a10463a350488fea012960c7e0cf8ec6d6d27c1e737b2",
+      "hashMode": "raw",
+      "bytesAtSeal": 1960
+    },
+    {
+      "path": "research/zeta-switch/copilot/latest-run.json",
+      "sha256": "85503ececaf9d2e6f3d0913650271eaf5223f2c61b3f44895eb08ce84e391603",
+      "hashMode": "raw",
+      "bytesAtSeal": 73
+    },
+    {
+      "path": "research/zeta-switch/copilot/review.md",
+      "sha256": "b6cb8c99373f85d68f3c4eed0ec76297d9f4e79f921501727763991420f991d5",
+      "hashMode": "raw",
+      "bytesAtSeal": 1285
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/assignment.txt",
+      "sha256": "767014860f9d666ad3e3023434a3182e639d7dfe12d9892684cac90fccba0967",
+      "hashMode": "raw",
+      "bytesAtSeal": 5096
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/events.jsonl",
+      "sha256": "67d272efbcbe61dca43ad38dab8fa9c238a6ad6ae0ce1866b8c40a20c23efdb9",
+      "hashMode": "raw",
+      "bytesAtSeal": 2774
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/review.md",
+      "sha256": "b6cb8c99373f85d68f3c4eed0ec76297d9f4e79f921501727763991420f991d5",
+      "hashMode": "raw",
+      "bytesAtSeal": 1285
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/status.json",
+      "sha256": "b143c9549d6b45f9378ed4d3fd8772466b2e3c73a6ea93f4b5c40f1705f4c101",
+      "hashMode": "raw",
+      "bytesAtSeal": 298
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/steering-after-01.json",
+      "sha256": "5310ec0d9ecba6ef45f8e6274623dc09ea42a513a453e072b78c63d923b9dedc",
+      "hashMode": "raw",
+      "bytesAtSeal": 1116
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-01/drain-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-01/drain-1.stdout.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "hashMode": "raw",
+      "bytesAtSeal": 4
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-01/prompt.txt",
+      "sha256": "379fd2e88b0bceb6773c9ec1c0519a4fb46c603df8794e8c8b04c34be6d57823",
+      "hashMode": "raw",
+      "bytesAtSeal": 5354
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-01/received-traces.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "hashMode": "raw",
+      "bytesAtSeal": 4
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-01/stdout.txt",
+      "sha256": "79f546fcd55c4d32cee6e2db5b627b5e2baca03d6de7a8ec38fa4fcbea6aa6a8",
+      "hashMode": "raw",
+      "bytesAtSeal": 1071
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-02/drain-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-02/drain-1.stdout.json",
+      "sha256": "d958b6e2c6206f2f667649f6c4d3daa4eaa74e819c142c9d984098a245b589c6",
+      "hashMode": "raw",
+      "bytesAtSeal": 168
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-02/prompt.txt",
+      "sha256": "481170f7a8b0fc682b625365f326222883a07d79b1a92520b6eb6471889db7e5",
+      "hashMode": "raw",
+      "bytesAtSeal": 7239
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-02/received-traces.json",
+      "sha256": "d958b6e2c6206f2f667649f6c4d3daa4eaa74e819c142c9d984098a245b589c6",
+      "hashMode": "raw",
+      "bytesAtSeal": 168
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-02/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-02/stdout.txt",
+      "sha256": "31c52361114302c42de54e3455e44efaf9f3da810b25a0626a78b9c0f25de758",
+      "hashMode": "raw",
+      "bytesAtSeal": 1221
+    },
+    {
+      "path": "research/zeta-switch/events/graph.riemann.switch.carbon.20261115T090814Z-4524e922.progress.md",
+      "sha256": "30fa8fd487f1f7e651ce892c8e44583a35f243fd3489f0578477b9f59b618841",
+      "hashMode": "raw",
+      "bytesAtSeal": 204
+    },
+    {
+      "path": "research/zeta-switch/events/graph.riemann.switch.codex.20261115T090814Z-610d0e8a.progress.md",
+      "sha256": "535b73d83fe712192647f7ddeab7a47d3110d447ed4cce336ee7f5fc082c0fb6",
+      "hashMode": "raw",
+      "bytesAtSeal": 202
+    },
+    {
+      "path": "research/zeta-switch/events/graph.riemann.switch.copilot.20261115T090814Z-e8b1a903.progress.md",
+      "sha256": "8b3419bc7c1aa09b7c978b4915decd8267a65fbd5ac52db5dccee75c7ba65180",
+      "hashMode": "raw",
+      "bytesAtSeal": 206
+    },
+    {
+      "path": "research/zeta-switch/evidence/archive-note.txt",
+      "sha256": "9d4fae4f1e3fd93b014c3363204c3d59b0ee1d96ffe0aeb88116fae6e91dcfa2",
+      "hashMode": "raw",
+      "bytesAtSeal": 395
+    },
+    {
+      "path": "research/zeta-switch/evidence/build.txt",
+      "sha256": "f375c3c60fd6df78ea205170212e4a6ffd19119896f60dc1e0b32bf9ab6e30c8",
+      "hashMode": "raw",
+      "bytesAtSeal": 2965
+    },
+    {
+      "path": "research/zeta-switch/evidence/builtin-verification.txt",
+      "sha256": "05d762b19456b547ac707d641472629b14985fd174d8ba842d2fb853e308d255",
+      "hashMode": "raw",
+      "bytesAtSeal": 245
+    },
+    {
+      "path": "research/zeta-switch/evidence/carbon-steering.txt",
+      "sha256": "4ae5c6c8401e4d9e4f3f5dca6552daa034913b469928ec12abbc2ba32b009c11",
+      "hashMode": "raw",
+      "bytesAtSeal": 627
+    },
+    {
+      "path": "research/zeta-switch/evidence/codex-steering.txt",
+      "sha256": "419a9f32899536df7e47668ce67f0ea3e1939174345e388a859517431d69ae7c",
+      "hashMode": "raw",
+      "bytesAtSeal": 595
+    },
+    {
+      "path": "research/zeta-switch/evidence/coordinator-drain.json",
+      "sha256": "ee62248197908d1741bc52766cd0733ab3d072d33e71c13791e6a185337dec88",
+      "hashMode": "raw",
+      "bytesAtSeal": 167
+    },
+    {
+      "path": "research/zeta-switch/evidence/copilot-steering.txt",
+      "sha256": "879f9a09eba00d5a54458268ce7b62b576cc5dc85554cbee856c7b597c13491b",
+      "hashMode": "raw",
+      "bytesAtSeal": 883
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-2ffb778dfae54384.1.agent.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-2ffb778dfae54384.1.agent.stdout.txt",
+      "sha256": "890591e7712bb45bcb87d47e0466010bcb49c2e79a9e65c4795804e002c9758f",
+      "hashMode": "raw",
+      "bytesAtSeal": 4831
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-2ffb778dfae54384.1.json",
+      "sha256": "91952c6787d1b019a3834b7470cdc8e2c43350696c481d0b50207b711c7d80f0",
+      "hashMode": "raw",
+      "bytesAtSeal": 9637
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-2ffb778dfae54384.1.prompt.txt",
+      "sha256": "ba61d27f47bab12fa0fa6fb83ef6a57002b3bc77788a7c213501c5e882fca098",
+      "hashMode": "raw",
+      "bytesAtSeal": 5058
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-2ffb778dfae54384.1.test-0.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-2ffb778dfae54384.1.test-0.stdout.txt",
+      "sha256": "be742299e24d237d10d4aeb0867e5e0c5ba0bfbc857aaf09648aea98d1c73226",
+      "hashMode": "raw",
+      "bytesAtSeal": 196
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-a113d2745d706ce3.1.agent.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-a113d2745d706ce3.1.agent.stdout.txt",
+      "sha256": "04b55987d98f6aa7436a3075f67eb2fce097af7802a85f9e19d5cee55da65e12",
+      "hashMode": "raw",
+      "bytesAtSeal": 4081
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-a113d2745d706ce3.1.json",
+      "sha256": "1c2fa861714ccde44c07a578328735a5c0c7b896727b3c00ca2909e9b307b6a5",
+      "hashMode": "raw",
+      "bytesAtSeal": 9661
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-a113d2745d706ce3.1.prompt.txt",
+      "sha256": "65b338ba745f6d6b85a6857d895390c2ca11071d53c8dc0a03cd94c1f261aa3f",
+      "hashMode": "raw",
+      "bytesAtSeal": 5066
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-a113d2745d706ce3.1.test-0.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-a113d2745d706ce3.1.test-0.stdout.txt",
+      "sha256": "be742299e24d237d10d4aeb0867e5e0c5ba0bfbc857aaf09648aea98d1c73226",
+      "hashMode": "raw",
+      "bytesAtSeal": 196
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-cd7f00510a10f0e4.1.agent.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-cd7f00510a10f0e4.1.agent.stdout.txt",
+      "sha256": "8a5ab765fe799a968d9b4a40767ced7570380b2e8ecb828cbc0d3d199b45bfb7",
+      "hashMode": "raw",
+      "bytesAtSeal": 5647
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-cd7f00510a10f0e4.1.json",
+      "sha256": "920ad7fb0a2c4f7caf1cd65035ad89330fbb3b6c162e160700fe85b7115fa934",
+      "hashMode": "raw",
+      "bytesAtSeal": 9648
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-cd7f00510a10f0e4.1.prompt.txt",
+      "sha256": "beaf9bf6376ca3a4d830f7728b47fe410c24a50b88b1c11ab1c0a66e4294047e",
+      "hashMode": "raw",
+      "bytesAtSeal": 5062
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-cd7f00510a10f0e4.1.test-0.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "raw",
+      "bytesAtSeal": 0
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch/fnv1a64-cd7f00510a10f0e4.1.test-0.stdout.txt",
+      "sha256": "be742299e24d237d10d4aeb0867e5e0c5ba0bfbc857aaf09648aea98d1c73226",
+      "hashMode": "raw",
+      "bytesAtSeal": 196
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch-config-used.toml",
+      "sha256": "3d5fc56c5badcd8a47a51b509df6d0501b35d0cc2da334e61e969df56310c15d",
+      "hashMode": "raw",
+      "bytesAtSeal": 9595
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch-map-used.json",
+      "sha256": "b1569ed3f849b358e4e96f54c7b6d1d9f95f17f7450740789c798fcbc8f6eba0",
+      "hashMode": "raw",
+      "bytesAtSeal": 2000
+    },
+    {
+      "path": "research/zeta-switch/evidence/dispatch-preview.json",
+      "sha256": "e5d8f2f33d55322d487130bff84536507fc58be071efd588fc2dd924a8543859",
+      "hashMode": "raw",
+      "bytesAtSeal": 22699
+    },
+    {
+      "path": "research/zeta-switch/evidence/independent-validation.json",
+      "sha256": "fd2442688f37b6feb59c98e28ddbb0946ffbbd344eea04d12d7af8d37d85ee91",
+      "hashMode": "raw",
+      "bytesAtSeal": 9966
+    },
+    {
+      "path": "research/zeta-switch/evidence/native-export.png",
+      "sha256": "6ca8998c7f48989059ec28710f09c1790e5bf87c5114fb2bef9d2801015ca514",
+      "hashMode": "raw",
+      "bytesAtSeal": 66808
+    },
+    {
+      "path": "research/zeta-switch/evidence/native-export.txt",
+      "sha256": "1e1c6c8b5ec7bcc47efcb42daf307c1ab73ea85ef0cf0d7d7360cb400a553313",
+      "hashMode": "raw",
+      "bytesAtSeal": 761
+    },
+    {
+      "path": "research/zeta-switch/evidence/native-export.values.json",
+      "sha256": "63bedf2e9b350c8e74dac09bae0ccc32365f5925d36bf2126e5e53cd4b5ddc1e",
+      "hashMode": "raw",
+      "bytesAtSeal": 153520
+    },
+    {
+      "path": "research/zeta-switch/evidence/native-ui.json",
+      "sha256": "69ec9b0a7580fca0f7e347e4f899a29d29b5f74f511eb970b9ffcd1fb3e8a2d9",
+      "hashMode": "raw",
+      "bytesAtSeal": 998
+    },
+    {
+      "path": "research/zeta-switch/evidence/native-validation.json",
+      "sha256": "5bac464157e997646fd23e3ddfad9c96faeee318a2a82ad19632b5ed49d65f4f",
+      "hashMode": "raw",
+      "bytesAtSeal": 6299
+    },
+    {
+      "path": "research/zeta-switch/evidence/one-point.png",
+      "sha256": "7a5d8f3d66799a40607814590455d5f6c3d8ad2a1e13bd02b222c6f437de87bc",
+      "hashMode": "raw",
+      "bytesAtSeal": 68735
+    },
+    {
+      "path": "research/zeta-switch/evidence/one-point.txt",
+      "sha256": "7ea708bcc49182d4edb91c6cb4df9537911822fa9d6871d3c81bd4fc4ac5a38a",
+      "hashMode": "raw",
+      "bytesAtSeal": 761
+    },
+    {
+      "path": "research/zeta-switch/evidence/one-point.values.json",
+      "sha256": "687ee949859e6a3be2f79b3eefaff8584484db72df9efe9116a0acab66c3cd83",
+      "hashMode": "raw",
+      "bytesAtSeal": 153518
+    },
+    {
+      "path": "research/zeta-switch/evidence/overview.png",
+      "sha256": "96cb9f63e8bbe381947a3d7867134e695c38e76dfa0cee3093d4e9f33fcebeea",
+      "hashMode": "raw",
+      "bytesAtSeal": 72252
+    },
+    {
+      "path": "research/zeta-switch/evidence/overview.txt",
+      "sha256": "77cebb2ce44bf42be58283aa9c554e1c1ef9334e973c61172ec6969bd9c83d2d",
+      "hashMode": "raw",
+      "bytesAtSeal": 1075
+    },
+    {
+      "path": "research/zeta-switch/evidence/overview.values.json",
+      "sha256": "df976588f4e9a62df5fc0bb90dee485535a541a2a136179c34bf6619a7c4989f",
+      "hashMode": "raw",
+      "bytesAtSeal": 153657
+    },
+    {
+      "path": "research/zeta-switch/evidence/palette.png",
+      "sha256": "3d736141f1c494c15ccf64ade989e6652d76abc2f9e6f34400905f7e647f4471",
+      "hashMode": "raw",
+      "bytesAtSeal": 69248
+    },
+    {
+      "path": "research/zeta-switch/evidence/palette.txt",
+      "sha256": "9fc1769a8cfb3e920d872b35dba7692fa5911426284e83bd804b343f7d4cd702",
+      "hashMode": "raw",
+      "bytesAtSeal": 1074
+    },
+    {
+      "path": "research/zeta-switch/evidence/palette.values.json",
+      "sha256": "11cc43da02d019cb025e1bbecbe57056a7e4ab8df159035880fe4651d9b23339",
+      "hashMode": "raw",
+      "bytesAtSeal": 153658
+    },
+    {
+      "path": "research/zeta-switch/evidence/protocol-tests.txt",
+      "sha256": "b5769427e60a5fa3af01d7c9c66ab1570b8eb5ff978a0dba47f1be445bf98df9",
+      "hashMode": "raw",
+      "bytesAtSeal": 3538
+    },
+    {
+      "path": "research/zeta-switch/evidence/refinement.png",
+      "sha256": "5559a1976b5051605c0d546081c67495ba04f6d0c67a59cac42347da46f7fa85",
+      "hashMode": "raw",
+      "bytesAtSeal": 72172
+    },
+    {
+      "path": "research/zeta-switch/evidence/refinement.txt",
+      "sha256": "b7d60cb64956577c58a933e7f9008496359c29b74c73df7d5557ad937d4f80e5",
+      "hashMode": "raw",
+      "bytesAtSeal": 1078
+    },
+    {
+      "path": "research/zeta-switch/evidence/refinement.values.json",
+      "sha256": "2b2aca677ba5e408219aa7334f414e2067e9be1f5e61499858e68497a86987b9",
+      "hashMode": "raw",
+      "bytesAtSeal": 153661
+    },
+    {
+      "path": "research/zeta-switch/evidence/regression-first-final-attempt.json",
+      "sha256": "8b02cf4102b827f44bbae04a6b0989f49029bc38cc52a6046c40d1bdaadadd0a",
+      "hashMode": "raw",
+      "bytesAtSeal": 18688
+    },
+    {
+      "path": "research/zeta-switch/evidence/regression.json",
+      "sha256": "144d180d28a5a7d7eb54812c938238db4b6034103943ed68c530b81b2abc08e4",
+      "hashMode": "raw",
+      "bytesAtSeal": 22176
+    },
+    {
+      "path": "research/zeta-switch/evidence/review-audit.json",
+      "sha256": "848e75c28f8bed25711eac460eeab5640035279189a8dd99016f640c5eef0c81",
+      "hashMode": "raw",
+      "bytesAtSeal": 32997
+    },
+    {
+      "path": "research/zeta-switch/evidence/review-resolution.md",
+      "sha256": "2dcebe030310cebcff1d58be20d86ef9adefc6c6e696237ee16d6615a2715f77",
+      "hashMode": "raw",
+      "bytesAtSeal": 4077
+    },
+    {
+      "path": "research/zeta-switch/evidence/trace-report.txt",
+      "sha256": "e23e092ff6e8b5f9aa85d8683c22f5520e234864293f480a687990f0590a9611",
+      "hashMode": "raw",
+      "bytesAtSeal": 169363
+    },
+    {
+      "path": "research/zeta-switch/evidence/watch-coordinator.jsonl",
+      "sha256": "dc82a9b6ff385ca4a20a7f7be0835897fbb5c2ba4431155871b8048ee83a32d1",
+      "hashMode": "raw",
+      "bytesAtSeal": 67445
+    },
+    {
+      "path": "research/zeta-switch/graph.riemann.switch.contract.current.md",
+      "sha256": "9ecb4972e98a7fe72529516d959784fdc7df9e9191695f6a78f0bc211068fb03",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 3774
+    },
+    {
+      "path": "research/zeta-switch/math-audit.md",
+      "sha256": "3b4380a4d6f4856a6ed67936291ac97b0d197dbca6c520d1b3dee3043fdd0acd",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 10281
+    },
+    {
+      "path": "research/zeta-switch/README.md",
+      "sha256": "39e3b56345e327a6f115e6c55b793f538dd2e4c55bf253dbf9f760de5a1d0b06",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 3739
+    },
+    {
+      "path": "research/zeta-switch/reference.json",
+      "sha256": "2a5194c4a67f0bd731497f1308b3eac184de410c7a72343f511d7beae122b3e8",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 17137
+    },
+    {
+      "path": "research/zeta-switch/requirements.txt",
+      "sha256": "a699f46ed76bd216f1081b6b2330e4fb45d7c8c5a5354b208694d6590a5a8645",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 14
+    },
+    {
+      "path": "research/zeta-switch/run-review.py",
+      "sha256": "b1cfa69b62600141eb0f46dfd72ca8f22042578b29edbfcb0633513cc4c190ee",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 14928
+    },
+    {
+      "path": "research/zeta-switch/run_regressions.py",
+      "sha256": "6c11c06c639cfc4d91c5b1e8284a8460f836db306acbc10ff184e8c71c60b032",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 6068
+    },
+    {
+      "path": "research/zeta-switch/seal_evidence.py",
+      "sha256": "47bcf24a3737765b47237eab75e036e5400bd742d76de0b4034f2a9b6b2faf21",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 3688
+    },
+    {
+      "path": "research/zeta-switch/steer-review.py",
+      "sha256": "d646a090340c2f86e691a1c8649ccd95982617902610cad5d71820740ae388ea",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 1923
+    },
+    {
+      "path": "research/zeta-switch/test_review_protocol.py",
+      "sha256": "6f740311e36a727ac1d0c98f8e88aeeeceb4e9a739bee194d93860ea673264b1",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 9828
+    },
+    {
+      "path": "research/zeta-switch/test_review_runtime.py",
+      "sha256": "03fbbe296fb819d3ee40e2a1c268c33dc0425c74642f5f4c1d066f7f6cd41de0",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 4548
+    },
+    {
+      "path": "research/zeta-switch/verify-review.py",
+      "sha256": "5693ecb55f3b16d0e4aa2f59e2b4336f269cfab2372a1888936d54cab4f73e38",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 1456
+    },
+    {
+      "path": "research/zeta-switch/verify_exports.py",
+      "sha256": "8754561cb8e6d73a0760e87195a5f59c8fdd350ab8127dc32e1b5af1709896a5",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 28341
+    },
+    {
+      "path": "warps/graph.riemann.switch.carbon.review.complete.md",
+      "sha256": "7f8d0b7c956586c84871b3f81bc9927618759baec430a57ea31f0c1140ab9ba7",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 890
+    },
+    {
+      "path": "warps/graph.riemann.switch.codex.review.complete.md",
+      "sha256": "c369258510dfa055c4c57ace0b82f047ddf0d8d09fab5ecec3376b46d6596272",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 887
+    },
+    {
+      "path": "warps/graph.riemann.switch.copilot.review.complete.md",
+      "sha256": "552791b35f7408994b6482fbf968fdbb57eabe11a2c4408cc7575508b41adf1b",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 1063
+    },
+    {
+      "path": "warps/graph.riemann.switch.results.complete.md",
+      "sha256": "4ddc6ddd1e70f6ccd7489815b3e570c341dabc8b6bcc64dddc42c46f973a3ad4",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 4499
+    },
+    {
+      "path": "warps/graph.riemann.switch.warp-map.json",
+      "sha256": "13a26be331d7d93d0189b3c5a895d0696f5c7b2fe1914ddf0f3e0eaba619c944",
+      "hashMode": "text-lf",
+      "bytesAtSeal": 1938
+    }
+  ]
+}

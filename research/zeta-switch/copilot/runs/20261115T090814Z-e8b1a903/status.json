@@ -1,0 +1,9 @@
+{
+  "trace_id": "graph.riemann.switch.copilot.progress",
+  "run_id": "20261115T090814Z-e8b1a903",
+  "provider": "copilot",
+  "turn": 2,
+  "state": "complete",
+  "at": "2026-11-15T09:10:43.642619+00:00",
+  "report": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/review.md"
+}

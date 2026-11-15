@@ -1,0 +1,430 @@
+{
+  "traceId": "graph.riemann.switch.regression",
+  "status": "failed",
+  "createdUtc": "2026-11-15T09:17:36.030829+00:00",
+  "workDirectory": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184",
+  "executable": "C:\\src\\graph\\Graphics\\bin\\Release\\net5.0-windows\\Graphics.dll",
+  "executableSha256": "ae30fa62f861e011fb98eba869236fafc0168f81d38c1e7b0f7877cc77aaae7d",
+  "cases": [
+    {
+      "name": "zero-before",
+      "command": [
+        "dotnet",
+        "C:\\src\\graph\\Graphics\\bin\\Release\\net5.0-windows\\Graphics.dll",
+        "--zero-motion",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zero-before.png",
+        "0.5",
+        "0"
+      ],
+      "returnCode": 0,
+      "acceptedImage": "C:\\src\\graph\\research\\zero-motion\\evidence\\zero-before.png",
+      "outputImage": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zero-before.png",
+      "dataComparisons": [
+        {
+          "suffix": ".values.json",
+          "identical": true,
+          "comparison": "parsed JSON; no fields removed",
+          "acceptedSha256": "fcbe68fcb95a83bedc0590a35f073f664a02e9aee2ba2b846d85f95569d5993d",
+          "outputSha256": "fcbe68fcb95a83bedc0590a35f073f664a02e9aee2ba2b846d85f95569d5993d"
+        },
+        {
+          "suffix": ".txt",
+          "identical": true,
+          "comparison": "text; only drawing elapsed milliseconds normalized",
+          "acceptedSha256": "864d78dde2ebaef03a41e55403aa9a765275c2e46bd5338dc554f3015f07c290",
+          "outputSha256": "864d78dde2ebaef03a41e55403aa9a765275c2e46bd5338dc554f3015f07c290"
+        }
+      ],
+      "dimensions": [
+        1440,
+        940
+      ],
+      "pixelsIdentical": true,
+      "pixelDifferenceBounds": null,
+      "acceptedSha256": "5bfbf7a55eb5e4f988541c58ec5f2699a2600d0616fc80890c3734bbb9511914",
+      "outputSha256": "5bfbf7a55eb5e4f988541c58ec5f2699a2600d0616fc80890c3734bbb9511914",
+      "bytesIdentical": true,
+      "passed": true
+    },
+    {
+      "name": "zero-collision",
+      "command": [
+        "dotnet",
+        "C:\\src\\graph\\Graphics\\bin\\Release\\net5.0-windows\\Graphics.dll",
+        "--zero-motion",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zero-collision.png",
+        "0",
+        "0"
+      ],
+      "returnCode": 0,
+      "acceptedImage": "C:\\src\\graph\\research\\zero-motion\\evidence\\zero-collision.png",
+      "outputImage": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zero-collision.png",
+      "dataComparisons": [
+        {
+          "suffix": ".values.json",
+          "identical": true,
+          "comparison": "parsed JSON; no fields removed",
+          "acceptedSha256": "98cb8479b6d1ab4d5f2919c69a952b6612b2925ca5f6413eaf0442b8442b24cf",
+          "outputSha256": "98cb8479b6d1ab4d5f2919c69a952b6612b2925ca5f6413eaf0442b8442b24cf"
+        },
+        {
+          "suffix": ".txt",
+          "identical": true,
+          "comparison": "text; only drawing elapsed milliseconds normalized",
+          "acceptedSha256": "312d4c0760a5eee6c5ff3ced02d658d186f6ff4284e61f413c205743a47e0089",
+          "outputSha256": "312d4c0760a5eee6c5ff3ced02d658d186f6ff4284e61f413c205743a47e0089"
+        }
+      ],
+      "dimensions": [
+        1440,
+        940
+      ],
+      "pixelsIdentical": true,
+      "pixelDifferenceBounds": null,
+      "acceptedSha256": "5c4606e38f5f1e03bedeeee25d4a6dab698ead8e9587f90c6f463d1d636a2f22",
+      "outputSha256": "5c4606e38f5f1e03bedeeee25d4a6dab698ead8e9587f90c6f463d1d636a2f22",
+      "bytesIdentical": true,
+      "passed": true
+    },
+    {
+      "name": "zero-after",
+      "command": [
+        "dotnet",
+        "C:\\src\\graph\\Graphics\\bin\\Release\\net5.0-windows\\Graphics.dll",
+        "--zero-motion",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zero-after.png",
+        "-0.5",
+        "0"
+      ],
+      "returnCode": 0,
+      "acceptedImage": "C:\\src\\graph\\research\\zero-motion\\evidence\\zero-after.png",
+      "outputImage": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zero-after.png",
+      "dataComparisons": [
+        {
+          "suffix": ".values.json",
+          "identical": true,
+          "comparison": "parsed JSON; no fields removed",
+          "acceptedSha256": "efe4de007d4973caea03eef84601dd180a3805ac6444547ef29ae90cb1a4f48f",
+          "outputSha256": "efe4de007d4973caea03eef84601dd180a3805ac6444547ef29ae90cb1a4f48f"
+        },
+        {
+          "suffix": ".txt",
+          "identical": true,
+          "comparison": "text; only drawing elapsed milliseconds normalized",
+          "acceptedSha256": "60b37ab0f026a60d4b4cd3264403ca2b0454db070c49c63e8205d538704f1e06",
+          "outputSha256": "60b37ab0f026a60d4b4cd3264403ca2b0454db070c49c63e8205d538704f1e06"
+        }
+      ],
+      "dimensions": [
+        1440,
+        940
+      ],
+      "pixelsIdentical": true,
+      "pixelDifferenceBounds": null,
+      "acceptedSha256": "b8b61eb76cc83e5a5e8a0d4aa8ca26a9613c9f696ea0f5b8d7ce9297bd6e7edc",
+      "outputSha256": "b8b61eb76cc83e5a5e8a0d4aa8ca26a9613c9f696ea0f5b8d7ce9297bd6e7edc",
+      "bytesIdentical": true,
+      "passed": true
+    },
+    {
+      "name": "zero-rotated",
+      "command": [
+        "dotnet",
+        "C:\\src\\graph\\Graphics\\bin\\Release\\net5.0-windows\\Graphics.dll",
+        "--zero-motion",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zero-rotated.png",
+        "0.5",
+        "22.5"
+      ],
+      "returnCode": 0,
+      "acceptedImage": "C:\\src\\graph\\research\\zero-motion\\evidence\\zero-rotated.png",
+      "outputImage": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zero-rotated.png",
+      "dataComparisons": [
+        {
+          "suffix": ".values.json",
+          "identical": true,
+          "comparison": "parsed JSON; no fields removed",
+          "acceptedSha256": "5d8d1dc75edd6f4b014bc8f9d4639149dfcde6cf131a9041c3bc2aa56770e045",
+          "outputSha256": "5d8d1dc75edd6f4b014bc8f9d4639149dfcde6cf131a9041c3bc2aa56770e045"
+        },
+        {
+          "suffix": ".txt",
+          "identical": true,
+          "comparison": "text; only drawing elapsed milliseconds normalized",
+          "acceptedSha256": "864d78dde2ebaef03a41e55403aa9a765275c2e46bd5338dc554f3015f07c290",
+          "outputSha256": "864d78dde2ebaef03a41e55403aa9a765275c2e46bd5338dc554f3015f07c290"
+        }
+      ],
+      "dimensions": [
+        1440,
+        940
+      ],
+      "pixelsIdentical": true,
+      "pixelDifferenceBounds": null,
+      "acceptedSha256": "4658ba742383616148e8a49bf6481c60a5b158f5f9e9c318b5d6ff165937db55",
+      "outputSha256": "4658ba742383616148e8a49bf6481c60a5b158f5f9e9c318b5d6ff165937db55",
+      "bytesIdentical": true,
+      "passed": true
+    },
+    {
+      "name": "zero-path",
+      "command": [
+        "dotnet",
+        "C:\\src\\graph\\Graphics\\bin\\Release\\net5.0-windows\\Graphics.dll",
+        "--zero-path",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zero-path.json",
+        "0.5",
+        "-1.6",
+        "0.7",
+        "1.6",
+        "0.7",
+        "0"
+      ],
+      "returnCode": 0,
+      "acceptedImage": "C:\\src\\graph\\research\\zero-motion\\evidence\\zero-path.png",
+      "outputImage": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zero-path.png",
+      "dataComparisons": [
+        {
+          "suffix": ".json",
+          "identical": true,
+          "comparison": "parsed JSON; no fields removed",
+          "acceptedSha256": "a7e48955e7c10441b895f83f8e67024fa81460e6acfd890928a80266fc92ddbc",
+          "outputSha256": "a7e48955e7c10441b895f83f8e67024fa81460e6acfd890928a80266fc92ddbc"
+        },
+        {
+          "suffix": ".path.json",
+          "identical": true,
+          "comparison": "parsed JSON; no fields removed",
+          "acceptedSha256": "6d2a91e9cfb2aa464bc8aff00439fc7cfffb48e3ea22ba0d5b2367bdd01578fb",
+          "outputSha256": "6d2a91e9cfb2aa464bc8aff00439fc7cfffb48e3ea22ba0d5b2367bdd01578fb"
+        },
+        {
+          "suffix": ".values.json",
+          "identical": true,
+          "comparison": "parsed JSON; no fields removed",
+          "acceptedSha256": "fcbe68fcb95a83bedc0590a35f073f664a02e9aee2ba2b846d85f95569d5993d",
+          "outputSha256": "fcbe68fcb95a83bedc0590a35f073f664a02e9aee2ba2b846d85f95569d5993d"
+        },
+        {
+          "suffix": ".path.txt",
+          "identical": true,
+          "comparison": "text; only drawing elapsed milliseconds normalized",
+          "acceptedSha256": "1b5f9ec2fb5b00e6e260296ac3eeed8708797477bc573e123e4e8eb9b2bb632c",
+          "outputSha256": "1b5f9ec2fb5b00e6e260296ac3eeed8708797477bc573e123e4e8eb9b2bb632c"
+        },
+        {
+          "suffix": ".txt",
+          "identical": true,
+          "comparison": "text; only drawing elapsed milliseconds normalized",
+          "acceptedSha256": "864d78dde2ebaef03a41e55403aa9a765275c2e46bd5338dc554f3015f07c290",
+          "outputSha256": "864d78dde2ebaef03a41e55403aa9a765275c2e46bd5338dc554f3015f07c290"
+        }
+      ],
+      "dimensions": [
+        1440,
+        940
+      ],
+      "pixelsIdentical": true,
+      "pixelDifferenceBounds": null,
+      "acceptedSha256": "4bd31e83389e66fcda22031c85e3fa7690bb4d193edcda73266cbb2b1b00719a",
+      "outputSha256": "4bd31e83389e66fcda22031c85e3fa7690bb4d193edcda73266cbb2b1b00719a",
+      "bytesIdentical": true,
+      "passed": true
+    },
+    {
+      "name": "prime-color-loom",
+      "command": [
+        "dotnet",
+        "C:\\src\\graph\\Graphics\\bin\\Release\\net5.0-windows\\Graphics.dll",
+        "--prime-phase",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\prime-color-loom.png"
+      ],
+      "returnCode": 0,
+      "acceptedImage": "C:\\src\\graph\\research\\prime-phase\\evidence\\render\\prime-color-loom.png",
+      "outputImage": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\prime-color-loom.png",
+      "dataComparisons": [
+        {
+          "suffix": ".values.json",
+          "identical": true,
+          "comparison": "parsed JSON; no fields removed",
+          "acceptedSha256": "e399b0b45fb18b97e586fe61c24264eb878e8ec79dabe54de3c5afecec1b770a",
+          "outputSha256": "e399b0b45fb18b97e586fe61c24264eb878e8ec79dabe54de3c5afecec1b770a"
+        },
+        {
+          "suffix": ".txt",
+          "identical": true,
+          "comparison": "text; only drawing elapsed milliseconds normalized",
+          "acceptedSha256": "d73382f35b2ed7851abba7116ef8f28aa9a77f046c3ba84874044442ec000173",
+          "outputSha256": "14dbe258e0f4efdaa33cf325b4e1894934846e0a5ed44bc14f144e0b6d4d9734"
+        }
+      ],
+      "dimensions": [
+        1500,
+        1060
+      ],
+      "pixelsIdentical": true,
+      "pixelDifferenceBounds": null,
+      "acceptedSha256": "afb1aad6e8186dffb21416bd96d7d25921b17541a48c38037132fc0d711831fc",
+      "outputSha256": "afb1aad6e8186dffb21416bd96d7d25921b17541a48c38037132fc0d711831fc",
+      "bytesIdentical": true,
+      "passed": true
+    },
+    {
+      "name": "prime-color-overlay",
+      "command": [
+        "dotnet",
+        "C:\\src\\graph\\Graphics\\bin\\Release\\net5.0-windows\\Graphics.dll",
+        "--prime-phase",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\prime-color-overlay.png",
+        "1.2",
+        "512",
+        "0",
+        "13",
+        "false",
+        "true"
+      ],
+      "returnCode": 0,
+      "acceptedImage": "C:\\src\\graph\\research\\prime-phase\\evidence\\render\\prime-color-overlay.png",
+      "outputImage": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\prime-color-overlay.png",
+      "dataComparisons": [
+        {
+          "suffix": ".values.json",
+          "identical": true,
+          "comparison": "parsed JSON; no fields removed",
+          "acceptedSha256": "256ef1d0ac6f0eb71f0baeb5a0eb977a482665aa1d92a5d34e7f63c016ac36db",
+          "outputSha256": "256ef1d0ac6f0eb71f0baeb5a0eb977a482665aa1d92a5d34e7f63c016ac36db"
+        },
+        {
+          "suffix": ".txt",
+          "identical": true,
+          "comparison": "text; only drawing elapsed milliseconds normalized",
+          "acceptedSha256": "dc83012215c372244793c33ef32a15acfd917ae3c32e7a1687bd082e34b9f0d5",
+          "outputSha256": "cbc1c45291001a27c51957a4b4aad4f90f22b35dea54f4c446f782831af6bf1b"
+        }
+      ],
+      "dimensions": [
+        1500,
+        1060
+      ],
+      "pixelsIdentical": true,
+      "pixelDifferenceBounds": null,
+      "acceptedSha256": "19f01998dce8ef429e59847b2d86064b8dc2861155f02a91ab178644e889179c",
+      "outputSha256": "19f01998dce8ef429e59847b2d86064b8dc2861155f02a91ab178644e889179c",
+      "bytesIdentical": true,
+      "passed": true
+    },
+    {
+      "name": "prime-unwrapped",
+      "command": [
+        "dotnet",
+        "C:\\src\\graph\\Graphics\\bin\\Release\\net5.0-windows\\Graphics.dll",
+        "--prime-unwrap",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\prime-unwrapped.png"
+      ],
+      "returnCode": 0,
+      "acceptedImage": "C:\\src\\graph\\research\\prime-phase\\evidence\\render\\prime-unwrapped.png",
+      "outputImage": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\prime-unwrapped.png",
+      "dataComparisons": [
+        {
+          "suffix": ".json",
+          "identical": true,
+          "comparison": "parsed JSON; no fields removed",
+          "acceptedSha256": "a8f994ceeabc33299919f4eb238b4bac1e87df46bdc9d24b65deb91c4e8f025d",
+          "outputSha256": "a8f994ceeabc33299919f4eb238b4bac1e87df46bdc9d24b65deb91c4e8f025d"
+        },
+        {
+          "suffix": ".txt",
+          "identical": true,
+          "comparison": "text; only drawing elapsed milliseconds normalized",
+          "acceptedSha256": "41d71fc1ca84880c585dddb5850b71764c45f1010eaae2f0f1b841377e039ee9",
+          "outputSha256": "41d71fc1ca84880c585dddb5850b71764c45f1010eaae2f0f1b841377e039ee9"
+        }
+      ],
+      "dimensions": [
+        1320,
+        650
+      ],
+      "pixelsIdentical": true,
+      "pixelDifferenceBounds": null,
+      "acceptedSha256": "6652c5f2c73efc7313ed2d469764f6fada8094a37c2c463e8376bfa24859a8bd",
+      "outputSha256": "6652c5f2c73efc7313ed2d469764f6fada8094a37c2c463e8376bfa24859a8bd",
+      "bytesIdentical": true,
+      "passed": true
+    },
+    {
+      "name": "zeta-overwrite",
+      "command": [
+        "dotnet",
+        "C:\\src\\graph\\Graphics\\bin\\Release\\net5.0-windows\\Graphics.dll",
+        "--zeta-preview",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zeta-overwrite.png"
+      ],
+      "returnCode": 0,
+      "acceptedImage": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\zeta-overwrite.png",
+      "outputImage": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zeta-overwrite.png",
+      "dataComparisons": [],
+      "dimensions": [
+        996,
+        370
+      ],
+      "pixelsIdentical": true,
+      "pixelDifferenceBounds": null,
+      "acceptedSha256": "d171dcd84c055b5f341722ba1cf14d815530d31ae3ccd363cbcd42f2e0aef77c",
+      "outputSha256": "d171dcd84c055b5f341722ba1cf14d815530d31ae3ccd363cbcd42f2e0aef77c",
+      "bytesIdentical": true,
+      "passed": true
+    },
+    {
+      "name": "zeta-contours",
+      "command": [
+        "dotnet",
+        "C:\\src\\graph\\Graphics\\bin\\Release\\net5.0-windows\\Graphics.dll",
+        "--zeta-contours",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zeta-contours.png"
+      ],
+      "returnCode": 0,
+      "acceptedImage": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\zeta-contours.png",
+      "outputImage": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zeta-contours.png",
+      "dataComparisons": [],
+      "dimensions": [
+        856,
+        448
+      ],
+      "pixelsIdentical": false,
+      "pixelDifferenceBounds": [
+        795,
+        159,
+        797,
+        161
+      ],
+      "acceptedSha256": "f22f53d14f9d0b2d1247b9fb26fabf28a0204021c2c3d680cb9bf4d2b5c86918",
+      "outputSha256": "d3f6b280979547505994a51ccaeef4195f82099e1fc6593a4faf8ed0ebe971ee",
+      "bytesIdentical": false,
+      "passed": false
+    },
+    {
+      "name": "zeta-origins",
+      "command": [
+        "dotnet",
+        "C:\\src\\graph\\Graphics\\bin\\Release\\net5.0-windows\\Graphics.dll",
+        "--zeta-origins",
+        "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zeta-origins.png"
+      ],
+      "returnCode": 0,
+      "acceptedImage": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\zeta-origins.png",
+      "outputImage": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\switch-final-regression\\switch-regression-20261115T091733Z-d88184\\zeta-origins.png",
+      "dataComparisons": [],
+      "dimensions": [
+        888,
+        448
+      ],
+      "pixelsIdentical": true,
+      "pixelDifferenceBounds": null,
+      "acceptedSha256": "60595fb4da963e07bbbfb6ef9df009b7430f677f5d95694b68fa3a114359dfe9",
+      "outputSha256": "60595fb4da963e07bbbfb6ef9df009b7430f677f5d95694b68fa3a114359dfe9",
+      "bytesIdentical": true,
+      "passed": true
+    }
+  ],
+  "scope": "Legacy CLI route compatibility; these comparisons do not validate the new zeta mathematics."
+}

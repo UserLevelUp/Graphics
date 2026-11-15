@@ -1,0 +1,5969 @@
+{
+  "schema": "graph-zeta-switch-v1",
+  "traceId": "graph.riemann.switch",
+  "domain": {
+    "minSigma": 0.05,
+    "maxSigma": 3,
+    "minT": 10,
+    "maxT": 30
+  },
+  "settings": {
+    "resolution": 256,
+    "paletteDegrees": 0,
+    "showMarkers": true,
+    "evaluator": {
+      "method": "Euler-Maclaurin",
+      "n": 64,
+      "corrections": 10,
+      "refinementN": 96
+    }
+  },
+  "selector": {
+    "definition": "b=1 if Re(zeta)\u003C=0.5, otherwise b=0; W=zeta-1\u002Bb",
+    "tie": 1,
+    "inputs": "complex zeta value only",
+    "seam": "Re(zeta)=0.5",
+    "selectedMapHolomorphic": false,
+    "product": "G=zeta*(zeta-1); holomorphic on this viewing rectangle"
+  },
+  "metrics": {
+    "validPixels": 65536,
+    "invalidPixels": 0,
+    "branchOnePixels": 7468,
+    "branchZeroPixels": 58068,
+    "seamCells": 786,
+    "maxRefinementDelta": 8.448738861189356E-14,
+    "maxDerivativeRefinementDelta": 3.655848021084434E-13,
+    "elapsedMilliseconds": 104
+  },
+  "interpretation": {
+    "selectorUsesMarkers": false,
+    "selectedAnalytic": false,
+    "productAnalyticOnDomain": true
+  },
+  "samples": [
+    {
+      "id": "grid-0-0",
+      "s": {
+        "real": 0.05,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.732277402092808,
+        "imaginary": -0.10421909512595445
+      },
+      "zetaMinusOne": {
+        "real": 0.732277402092808,
+        "imaginary": -0.10421909512595445
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.732277402092808,
+        "imaginary": -0.10421909512595445
+      },
+      "product": {
+        "real": 1.2576459759197274,
+        "imaginary": -0.2568536715805488
+      },
+      "derivative": {
+        "real": -0.47654488379026533,
+        "imaginary": -0.05059512091200809
+      },
+      "refinedZeta": {
+        "real": 1.7322774020928071,
+        "imaginary": -0.1042190951259759
+      },
+      "refinementDelta": 2.1459570206677372E-14,
+      "insideView": true
+    },
+    {
+      "id": "grid-0-1",
+      "s": {
+        "real": 0.2466666666666667,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.6439554323923042,
+        "imaginary": -0.11169771561576464
+      },
+      "zetaMinusOne": {
+        "real": 0.6439554323923042,
+        "imaginary": -0.11169771561576464
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.6439554323923042,
+        "imaginary": -0.11169771561576464
+      },
+      "product": {
+        "real": 1.0461576516260835,
+        "imaginary": -0.25555441712892935
+      },
+      "derivative": {
+        "real": -0.4225688793471747,
+        "imaginary": -0.02649481660386128
+      },
+      "refinedZeta": {
+        "real": 1.6439554323923042,
+        "imaginary": -0.11169771561577382
+      },
+      "refinementDelta": 9.18709552877317E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-0-2",
+      "s": {
+        "real": 0.44333333333333336,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.5657146803481388,
+        "imaginary": -0.11500902815601469
+      },
+      "zetaMinusOne": {
+        "real": 0.5657146803481388,
+        "imaginary": -0.11500902815601469
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.5657146803481388,
+        "imaginary": -0.11500902815601469
+      },
+      "product": {
+        "real": 0.8725207033521446,
+        "imaginary": -0.24513361935687455
+      },
+      "derivative": {
+        "real": -0.37396565847713176,
+        "imaginary": -0.008024390097982085
+      },
+      "refinedZeta": {
+        "real": 1.5657146803481383,
+        "imaginary": -0.11500902815601874
+      },
+      "refinementDelta": 4.076575070341349E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-0-3",
+      "s": {
+        "real": 0.6400000000000001,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.4965339349401896,
+        "imaginary": -0.11515356019653948
+      },
+      "zetaMinusOne": {
+        "real": 0.4965339349401896,
+        "imaginary": -0.11515356019653948
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.4965339349401896,
+        "imaginary": -0.11515356019653948
+      },
+      "product": {
+        "real": 0.7298195410614401,
+        "imaginary": -0.22950886093005896
+      },
+      "derivative": {
+        "real": -0.3303704124233907,
+        "imaginary": 0.0058704122957980165
+      },
+      "refinedZeta": {
+        "real": 1.4965339349401896,
+        "imaginary": -0.11515356019654123
+      },
+      "refinementDelta": 1.7486012637846216E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-0-4",
+      "s": {
+        "real": 0.8366666666666668,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.4354657679504221,
+        "imaginary": -0.11294173805156925
+      },
+      "zetaMinusOne": {
+        "real": 0.43546576795042213,
+        "imaginary": -0.11294173805156925
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.43546576795042213,
+        "imaginary": -0.11294173805156925
+      },
+      "product": {
+        "real": 0.6123403668129638,
+        "imaginary": -0.2113062594401333
+      },
+      "derivative": {
+        "real": -0.29140040840528897,
+        "imaginary": 0.016072780938029597
+      },
+      "refinedZeta": {
+        "real": 1.4354657679504226,
+        "imaginary": -0.11294173805156996
+      },
+      "refinementDelta": 8.355534721610419E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-0-5",
+      "s": {
+        "real": 1.0333333333333332,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.3816385638739668,
+        "imaginary": -0.10902513193337914
+      },
+      "zetaMinusOne": {
+        "real": 0.3816385638739668,
+        "imaginary": -0.10902513193337914
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.3816385638739668,
+        "imaginary": -0.10902513193337914
+      },
+      "product": {
+        "real": 0.5154000779166599,
+        "imaginary": -0.19224152148782828
+      },
+      "derivative": {
+        "real": -0.2566694543687801,
+        "imaginary": 0.02331877890658547
+      },
+      "refinedZeta": {
+        "real": 1.3816385638739668,
+        "imaginary": -0.1090251319333795
+      },
+      "refinementDelta": 3.608224830031759E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-0-6",
+      "s": {
+        "real": 1.2300000000000002,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.3342561105280786,
+        "imaginary": -0.10392325337957935
+      },
+      "zetaMinusOne": {
+        "real": 0.3342561105280786,
+        "imaginary": -0.10392325337957935
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.3342561105280786,
+        "imaginary": -0.10392325337957935
+      },
+      "product": {
+        "real": 0.4351832153604414,
+        "imaginary": -0.17339721831574373
+      },
+      "derivative": {
+        "real": -0.22579839383359163,
+        "imaginary": 0.02821865064953545
+      },
+      "refinedZeta": {
+        "real": 1.3342561105280788,
+        "imaginary": -0.1039232533795795
+      },
+      "refinementDelta": 2.6945789820192466E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-0-7",
+      "s": {
+        "real": 1.4266666666666667,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.292595446168571,
+        "imaginary": -0.0980464109937935
+      },
+      "zetaMinusOne": {
+        "real": 0.2925954461685709,
+        "imaginary": -0.0980464109937935
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.2925954461685709,
+        "imaginary": -0.0980464109937935
+      },
+      "product": {
+        "real": 0.36859444257839213,
+        "imaginary": -0.15542227773370568
+      },
+      "derivative": {
+        "real": -0.19842246789259543,
+        "imaginary": 0.03127562271113458
+      },
+      "refinedZeta": {
+        "real": 1.292595446168571,
+        "imaginary": -0.09804641099379356
+      },
+      "refinementDelta": 5.551115123125783E-17,
+      "insideView": true
+    },
+    {
+      "id": "grid-0-8",
+      "s": {
+        "real": 1.6233333333333335,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.2560035093041129,
+        "imaginary": -0.09171510204242901
+      },
+      "zetaMinusOne": {
+        "real": 0.25600350930411286,
+        "imaginary": -0.09171510204242901
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.25600350930411286,
+        "imaginary": -0.09171510204242901
+      },
+      "product": {
+        "real": 0.31312964613748073,
+        "imaginary": -0.13867387800052228
+      },
+      "derivative": {
+        "real": -0.17419623267558526,
+        "imaginary": 0.0329023618134934
+      },
+      "refinedZeta": {
+        "real": 1.256003509304113,
+        "imaginary": -0.09171510204242904
+      },
+      "refinementDelta": 2.237726045655905E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-0-9",
+      "s": {
+        "real": 1.82,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.2238930148494673,
+        "imaginary": -0.08517638211717578
+      },
+      "zetaMinusOne": {
+        "real": 0.22389301484946733,
+        "imaginary": -0.08517638211717578
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.22389301484946733,
+        "imaginary": -0.08517638211717578
+      },
+      "product": {
+        "real": 0.26676608087728,
+        "imaginary": -0.12331717608954526
+      },
+      "derivative": {
+        "real": -0.15279659368968024,
+        "imaginary": 0.03343528149898546
+      },
+      "refinedZeta": {
+        "real": 1.223893014849467,
+        "imaginary": -0.08517638211717579
+      },
+      "refinementDelta": 2.2247786310271853E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-0-10",
+      "s": {
+        "real": 2.0166666666666666,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.1957378806988135,
+        "imaginary": -0.07861761615022146
+      },
+      "zetaMinusOne": {
+        "real": 0.19573788069881348,
+        "imaginary": -0.07861761615022146
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.19573788069881348,
+        "imaginary": -0.07861761615022146
+      },
+      "product": {
+        "real": 0.22787046907013286,
+        "imaginary": -0.10939450729189577
+      },
+      "derivative": {
+        "real": -0.1339244111808081,
+        "imaginary": 0.03314689990629807
+      },
+      "refinedZeta": {
+        "real": 1.1957378806988137,
+        "imaginary": -0.07861761615022148
+      },
+      "refinementDelta": 2.2247786310271853E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-0-11",
+      "s": {
+        "real": 2.2133333333333334,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.1710684485914866,
+        "imaginary": -0.07217797399130547
+      },
+      "zetaMinusOne": {
+        "real": 0.17106844859148662,
+        "imaginary": -0.07217797399130547
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.17106844859148662,
+        "imaginary": -0.07217797399130547
+      },
+      "product": {
+        "real": 0.19512320276549514,
+        "imaginary": -0.09687272205764406
+      },
+      "derivative": {
+        "real": -0.11730504076339951,
+        "imaginary": 0.03225645224456922
+      },
+      "refinedZeta": {
+        "real": 1.1710684485914866,
+        "imaginary": -0.07217797399130546
+      },
+      "refinementDelta": 1.3877787807814457E-17,
+      "insideView": true
+    },
+    {
+      "id": "grid-0-12",
+      "s": {
+        "real": 2.41,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.1494666790867152,
+        "imaginary": -0.06595799423170633
+      },
+      "zetaMinusOne": {
+        "real": 0.14946667908671518,
+        "imaginary": -0.06595799423170633
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.14946667908671518,
+        "imaginary": -0.06595799423170633
+      },
+      "product": {
+        "real": 0.16745651024085648,
+        "imaginary": -0.08567503894577404
+      },
+      "derivative": {
+        "real": -0.10268809883564925,
+        "imaginary": 0.030938955375706376
+      },
+      "refinedZeta": {
+        "real": 1.1494666790867152,
+        "imaginary": -0.06595799423170634
+      },
+      "refinementDelta": 1.3877787807814457E-17,
+      "insideView": true
+    },
+    {
+      "id": "grid-0-13",
+      "s": {
+        "real": 2.6066666666666665,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.1305614497848733,
+        "imaginary": -0.060027502141935404
+      },
+      "zetaMinusOne": {
+        "real": 0.13056144978487327,
+        "imaginary": -0.060027502141935404
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.13056144978487327,
+        "imaginary": -0.060027502141935404
+      },
+      "product": {
+        "real": 0.1440044409414012,
+        "imaginary": -0.07570205755516675
+      },
+      "derivative": {
+        "real": -0.08984668066168283,
+        "imaginary": 0.029332911078196324
+      },
+      "refinedZeta": {
+        "real": 1.1305614497848737,
+        "imaginary": -0.06002750214193541
+      },
+      "refinementDelta": 4.441434166503682E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-0-14",
+      "s": {
+        "real": 2.8033333333333332,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.114024046245361,
+        "imaginary": -0.054432132207383584
+      },
+      "zetaMinusOne": {
+        "real": 0.114024046245361,
+        "imaginary": -0.054432132207383584
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.114024046245361,
+        "imaginary": -0.054432132207383584
+      },
+      "product": {
+        "real": 0.12406267235088314,
+        "imaginary": -0.0668452761274802
+      },
+      "derivative": {
+        "real": -0.0785762085558215,
+        "imaginary": 0.027546820896043055
+      },
+      "refinedZeta": {
+        "real": 1.114024046245361,
+        "imaginary": -0.05443213220738358
+      },
+      "refinementDelta": 6.938893903907228E-18,
+      "insideView": true
+    },
+    {
+      "id": "grid-0-15",
+      "s": {
+        "real": 3,
+        "imaginary": 10
+      },
+      "zeta": {
+        "real": 1.099563904326673,
+        "imaginary": -0.049198673215464325
+      },
+      "zetaMinusOne": {
+        "real": 0.09956390432667295,
+        "imaginary": -0.049198673215464325
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.09956390432667295,
+        "imaginary": -0.049198673215464325
+      },
+      "product": {
+        "real": 0.10705636592528178,
+        "imaginary": -0.0589954972015118
+      },
+      "derivative": {
+        "real": -0.06869304663394893,
+        "imaginary": 0.025664670336928187
+      },
+      "refinedZeta": {
+        "real": 1.099563904326673,
+        "imaginary": -0.049198673215464325
+      },
+      "refinementDelta": 0,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-0",
+      "s": {
+        "real": 0.05,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.7049799816132974,
+        "imaginary": -1.0717765347056645
+      },
+      "zetaMinusOne": {
+        "real": -0.29502001838670255,
+        "imaginary": -1.0717765347056645
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.29502001838670255,
+        "imaginary": -1.0717765347056645
+      },
+      "product": {
+        "real": -1.3566881474834946,
+        "imaginary": -0.4393854687550615
+      },
+      "derivative": {
+        "real": 0.04309307254515875,
+        "imaginary": 0.8285762781154665
+      },
+      "refinedZeta": {
+        "real": 0.7049799816132977,
+        "imaginary": -1.0717765347056494
+      },
+      "refinementDelta": 1.510066572755813E-14,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-1",
+      "s": {
+        "real": 0.2466666666666667,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.7158544359368787,
+        "imaginary": -0.9204490327527286
+      },
+      "zetaMinusOne": {
+        "real": -0.2841455640631213,
+        "imaginary": -0.9204490327527286
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.2841455640631213,
+        "imaginary": -0.9204490327527286
+      },
+      "product": {
+        "real": -1.0506332843818056,
+        "imaginary": -0.39736601354697165
+      },
+      "derivative": {
+        "real": 0.06594792373324809,
+        "imaginary": 0.7131025237752393
+      },
+      "refinedZeta": {
+        "real": 0.7158544359368794,
+        "imaginary": -0.920449032752722
+      },
+      "refinementDelta": 6.584099933341187E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-2",
+      "s": {
+        "real": 0.44333333333333336,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.7303868449384366,
+        "imaginary": -0.7902730560811453
+      },
+      "zetaMinusOne": {
+        "real": -0.26961315506156336,
+        "imaginary": -0.7902730560811453
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.26961315506156336,
+        "imaginary": -0.7902730560811453
+      },
+      "product": {
+        "real": -0.8214534048471458,
+        "imaginary": -0.3641370320607826
+      },
+      "derivative": {
+        "real": 0.08066074092386046,
+        "imaginary": 0.6131409213514494
+      },
+      "refinedZeta": {
+        "real": 0.7303868449384369,
+        "imaginary": -0.7902730560811427
+      },
+      "refinementDelta": 2.563148888826738E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-3",
+      "s": {
+        "real": 0.6400000000000001,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.747177565999081,
+        "imaginary": -0.6783892613096676
+      },
+      "zetaMinusOne": {
+        "real": -0.25282243400091897,
+        "imaginary": -0.6783892613096676
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.25282243400091897,
+        "imaginary": -0.6783892613096676
+      },
+      "product": {
+        "real": -0.6491152407270464,
+        "imaginary": -0.3353652128208764
+      },
+      "derivative": {
+        "real": 0.08920589175434641,
+        "imaginary": 0.5267773733355731
+      },
+      "refinedZeta": {
+        "real": 0.7471775659990814,
+        "imaginary": -0.6783892613096665
+      },
+      "refinementDelta": 1.159106867033638E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-4",
+      "s": {
+        "real": 0.8366666666666668,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.7651733002125438,
+        "imaginary": -0.5822958869463977
+      },
+      "zetaMinusOne": {
+        "real": -0.23482669978745618,
+        "imaginary": -0.5822958869463977
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.23482669978745618,
+        "imaginary": -0.5822958869463977
+      },
+      "product": {
+        "real": -0.5187516208090801,
+        "imaginary": -0.3088186440835332
+      },
+      "derivative": {
+        "real": 0.09314545586402012,
+        "imaginary": 0.45228882961019096
+      },
+      "refinedZeta": {
+        "real": 0.7651733002125438,
+        "imaginary": -0.582295886946397
+      },
+      "refinementDelta": 6.661338147750939E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-5",
+      "s": {
+        "real": 1.0333333333333332,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.7835939499588725,
+        "imaginary": -0.4998117735812963
+      },
+      "zetaMinusOne": {
+        "real": -0.21640605004112745,
+        "imaginary": -0.4998117735812963
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.21640605004112745,
+        "imaginary": -0.4998117735812963
+      },
+      "product": {
+        "real": -0.4193862805572055,
+        "imaginary": -0.28348719021173896
+      },
+      "derivative": {
+        "real": 0.09370751421369237,
+        "imaginary": 0.3881364782439684
+      },
+      "refinedZeta": {
+        "real": 0.7835939499588727,
+        "imaginary": -0.499811773581296
+      },
+      "refinementDelta": 2.9893669801409088E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-6",
+      "s": {
+        "real": 1.2300000000000002,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.8018734952855338,
+        "imaginary": -0.4290411210528012
+      },
+      "zetaMinusOne": {
+        "real": -0.19812650471446625,
+        "imaginary": -0.4290411210528012
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.19812650471446625,
+        "imaginary": -0.4290411210528012
+      },
+      "product": {
+        "real": -0.34294867639833926,
+        "imaginary": -0.2590322856668658
+      },
+      "derivative": {
+        "real": 0.09185080309569979,
+        "imaginary": 0.3329551903439957
+      },
+      "refinedZeta": {
+        "real": 0.8018734952855338,
+        "imaginary": -0.4290411210528011
+      },
+      "refinementDelta": 5.551115123125783E-17,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-7",
+      "s": {
+        "real": 1.4266666666666667,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.8196124217553995,
+        "imaginary": -0.36834055898494206
+      },
+      "zetaMinusOne": {
+        "real": -0.1803875782446005,
+        "imaginary": -0.36834055898494206
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.1803875782446005,
+        "imaginary": -0.36834055898494206
+      },
+      "product": {
+        "real": -0.28352266725298825,
+        "imaginary": -0.23545243617582984
+      },
+      "derivative": {
+        "real": 0.08831786430391,
+        "imaginary": 0.2855407689965331
+      },
+      "refinedZeta": {
+        "real": 0.8196124217553993,
+        "imaginary": -0.36834055898494195
+      },
+      "refinementDelta": 2.482534153247273E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-8",
+      "s": {
+        "real": 1.6233333333333335,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.8365396241137075,
+        "imaginary": -0.3162888458206618
+      },
+      "zetaMinusOne": {
+        "real": -0.16346037588629247,
+        "imaginary": -0.3162888458206618
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.16346037588629247,
+        "imaginary": -0.3162888458206618
+      },
+      "product": {
+        "real": -0.23677971539197082,
+        "imaginary": -0.21288745856768782
+      },
+      "derivative": {
+        "real": 0.0836785463574738,
+        "imaginary": 0.24483612749838427
+      },
+      "refinedZeta": {
+        "real": 0.8365396241137074,
+        "imaginary": -0.3162888458206618
+      },
+      "refinementDelta": 1.1102230246251565E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-9",
+      "s": {
+        "real": 1.82,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.8524820493959144,
+        "imaginary": -0.27165932374481777
+      },
+      "zetaMinusOne": {
+        "real": -0.14751795060408557,
+        "imaginary": -0.27165932374481777
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.14751795060408557,
+        "imaginary": -0.27165932374481777
+      },
+      "product": {
+        "real": -0.19955519303114783,
+        "imaginary": -0.19151007034216316
+      },
+      "derivative": {
+        "real": 0.07836545590604178,
+        "imaginary": 0.20991719537717662
+      },
+      "refinedZeta": {
+        "real": 0.8524820493959141,
+        "imaginary": -0.27165932374481777
+      },
+      "refinementDelta": 3.3306690738754696E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-10",
+      "s": {
+        "real": 2.0166666666666666,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.8673406344023693,
+        "imaginary": -0.23339512543945362
+      },
+      "zetaMinusOne": {
+        "real": -0.1326593655976307,
+        "imaginary": -0.23339512543945362
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.1326593655976307,
+        "imaginary": -0.23339512543945362
+      },
+      "product": {
+        "real": -0.16953414289576316,
+        "imaginary": -0.17147102689069893
+      },
+      "derivative": {
+        "real": 0.07270272676394572,
+        "imaginary": 0.1799791020214421
+      },
+      "refinedZeta": {
+        "real": 0.8673406344023692,
+        "imaginary": -0.23339512543945362
+      },
+      "refinementDelta": 1.1102230246251565E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-11",
+      "s": {
+        "real": 2.2133333333333334,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.8810713406800457,
+        "imaginary": -0.20058703977234194
+      },
+      "zetaMinusOne": {
+        "real": -0.11892865931995433,
+        "imaginary": -0.20058703977234194
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.11892865931995433,
+        "imaginary": -0.20058703977234194
+      },
+      "product": {
+        "real": -0.14501979383694366,
+        "imaginary": -0.15287594433817597
+      },
+      "derivative": {
+        "real": 0.06692926754862477,
+        "imaginary": 0.15432300063511906
+      },
+      "refinedZeta": {
+        "real": 0.8810713406800458,
+        "imaginary": -0.2005870397723419
+      },
+      "refinementDelta": 1.1443916996305594E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-12",
+      "s": {
+        "real": 2.41,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.8936703002208183,
+        "imaginary": -0.1724538865391558
+      },
+      "zetaMinusOne": {
+        "real": -0.10632969977918172,
+        "imaginary": -0.1724538865391558
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.10632969977918172,
+        "imaginary": -0.1724538865391558
+      },
+      "product": {
+        "real": -0.12476403770651082,
+        "imaginary": -0.1357799465762328
+      },
+      "derivative": {
+        "real": 0.06121746731056394,
+        "imaginary": 0.13234375633023482
+      },
+      "refinedZeta": {
+        "real": 0.8936703002208184,
+        "imaginary": -0.1724538865391558
+      },
+      "refinementDelta": 1.1102230246251565E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-13",
+      "s": {
+        "real": 2.6066666666666665,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.9051622617928393,
+        "imaginary": -0.14832521687769215
+      },
+      "zetaMinusOne": {
+        "real": -0.09483773820716068,
+        "imaginary": -0.14832521687769215
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.09483773820716068,
+        "imaginary": -0.14832521687769215
+      },
+      "product": {
+        "real": -0.10784391158072515,
+        "imaginary": -0.12019156070215835
+      },
+      "derivative": {
+        "real": 0.05568818059033615,
+        "imaginary": 0.11351862070226505
+      },
+      "refinedZeta": {
+        "real": 0.9051622617928393,
+        "imaginary": -0.14832521687769215
+      },
+      "refinementDelta": 0,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-14",
+      "s": {
+        "real": 2.8033333333333332,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.9155916756449578,
+        "imaginary": -0.1276261394674793
+      },
+      "zetaMinusOne": {
+        "real": -0.0844083243550422,
+        "imaginary": -0.1276261394674793
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.0844083243550422,
+        "imaginary": -0.1276261394674793
+      },
+      "product": {
+        "real": -0.09357199060998866,
+        "imaginary": -0.10608072231477361
+      },
+      "derivative": {
+        "real": 0.05042267722876372,
+        "imaginary": 0.09739694257440916
+      },
+      "refinedZeta": {
+        "real": 0.9155916756449577,
+        "imaginary": -0.1276261394674793
+      },
+      "refinementDelta": 1.1102230246251565E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-1-15",
+      "s": {
+        "real": 3,
+        "imaginary": 12.5
+      },
+      "zeta": {
+        "real": 0.9250158773585015,
+        "imaginary": -0.10986406815325693
+      },
+      "zetaMinusOne": {
+        "real": -0.07498412264149845,
+        "imaginary": -0.10986406815325693
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.07498412264149845,
+        "imaginary": -0.10986406815325693
+      },
+      "product": {
+        "real": -0.08143161746436665,
+        "imaginary": -0.09338794663266141
+      },
+      "derivative": {
+        "real": 0.04547212591635042,
+        "imaginary": 0.08359091390227864
+      },
+      "refinedZeta": {
+        "real": 0.9250158773585018,
+        "imaginary": -0.10986406815325692
+      },
+      "refinementDelta": 2.2247786310271853E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-0",
+      "s": {
+        "real": 0.05,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": -0.28374648607519987,
+        "imaginary": 0.9525227665203878
+      },
+      "zetaMinusOne": {
+        "real": -1.2837464860752,
+        "imaginary": 0.9525227665203878
+      },
+      "b": 1,
+      "selected": {
+        "real": -0.28374648607519987,
+        "imaginary": 0.9525227665203878
+      },
+      "product": {
+        "real": -0.5430410663044297,
+        "imaginary": -1.493072742333964
+      },
+      "derivative": {
+        "real": 1.1743054866195857,
+        "imaginary": -0.6242669888437666
+      },
+      "refinedZeta": {
+        "real": -0.2837464860751727,
+        "imaginary": 0.9525227665204276
+      },
+      "refinementDelta": 4.813098520997222E-14,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-1",
+      "s": {
+        "real": 0.2466666666666667,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": -0.07292153550134317,
+        "imaginary": 0.8362459985274038
+      },
+      "zetaMinusOne": {
+        "real": -1.0729215355013433,
+        "imaginary": 0.8362459985274038
+      },
+      "b": 1,
+      "selected": {
+        "real": -0.07292153550134317,
+        "imaginary": 0.8362459985274038
+      },
+      "product": {
+        "real": -0.6210682842118778,
+        "imaginary": -0.9582066830663484
+      },
+      "derivative": {
+        "real": 0.9758836167839375,
+        "imaginary": -0.5588069200396703
+      },
+      "refinedZeta": {
+        "real": -0.07292153550133258,
+        "imaginary": 0.836245998527421
+      },
+      "refinementDelta": 2.0205263156622796E-14,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-2",
+      "s": {
+        "real": 0.44333333333333336,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": 0.10232644459125063,
+        "imaginary": 0.7324588626420959
+      },
+      "zetaMinusOne": {
+        "real": -0.8976735554087494,
+        "imaginary": 0.7324588626420959
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.10232644459125063,
+        "imaginary": 0.7324588626420959
+      },
+      "product": {
+        "real": -0.6283517287915171,
+        "imaginary": -0.5825590401950621
+      },
+      "derivative": {
+        "real": 0.8114465838296752,
+        "imaginary": -0.49739555671966296
+      },
+      "refinedZeta": {
+        "real": 0.10232644459125467,
+        "imaginary": 0.732458862642103
+      },
+      "refinementDelta": 8.172885983311544E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-3",
+      "s": {
+        "real": 0.6400000000000001,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": 0.24809216938917406,
+        "imaginary": 0.640296436683869
+      },
+      "zetaMinusOne": {
+        "real": -0.751907830610826,
+        "imaginary": 0.640296436683869
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.24809216938917406,
+        "imaginary": 0.640296436683869
+      },
+      "product": {
+        "real": -0.5965219717070074,
+        "imaginary": -0.3225913726257511
+      },
+      "derivative": {
+        "real": 0.6751816675673346,
+        "imaginary": -0.44066007952534975
+      },
+      "refinedZeta": {
+        "real": 0.2480921693891756,
+        "imaginary": 0.6402964366838718
+      },
+      "refinementDelta": 3.1811328642149315E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-4",
+      "s": {
+        "real": 0.8366666666666668,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": 0.36942580548691206,
+        "imaginary": 0.5588080433117167
+      },
+      "zetaMinusOne": {
+        "real": -0.6305741945130879,
+        "imaginary": 0.5588080433117167
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.36942580548691206,
+        "imaginary": 0.5588080433117167
+      },
+      "product": {
+        "real": -0.5452168089971278,
+        "imaginary": -0.14593182028572435
+      },
+      "derivative": {
+        "real": 0.5622509724142506,
+        "imaginary": -0.38886671437507647
+      },
+      "refinedZeta": {
+        "real": 0.3694258054869126,
+        "imaginary": 0.558808043311718
+      },
+      "refinementDelta": 1.3414875847488983E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-5",
+      "s": {
+        "real": 1.0333333333333332,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": 0.4705089269100202,
+        "imaginary": 0.48701677561414186
+      },
+      "zetaMinusOne": {
+        "real": -0.5294910730899798,
+        "imaginary": 0.48701677561414186
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.4705089269100202,
+        "imaginary": 0.48701677561414186
+      },
+      "product": {
+        "real": -0.4863156163375969,
+        "imaginary": -0.02872529465136589
+      },
+      "derivative": {
+        "real": 0.4686351997554783,
+        "imaginary": -0.3420318984770006
+      },
+      "refinedZeta": {
+        "real": 0.47050892691002055,
+        "imaginary": 0.4870167756141424
+      },
+      "refinementDelta": 6.473657049138937E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-6",
+      "s": {
+        "real": 1.2300000000000002,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": 0.554802038614247,
+        "imaginary": 0.4239600883742826
+      },
+      "zetaMinusOne": {
+        "real": -0.44519796138575296,
+        "imaginary": 0.4239600883742826
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.44519796138575296,
+        "imaginary": 0.4239600883742826
+      },
+      "product": {
+        "real": -0.42673889309805213,
+        "imaginary": 0.04646775426797406
+      },
+      "derivative": {
+        "real": 0.39100027292053363,
+        "imaginary": -0.3000049126379759
+      },
+      "refinedZeta": {
+        "real": 0.554802038614247,
+        "imaginary": 0.42396008837428284
+      },
+      "refinementDelta": 2.220446049250313E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-7",
+      "s": {
+        "real": 1.4266666666666667,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": 0.6251678935514206,
+        "imaginary": 0.36871638663039347
+      },
+      "zetaMinusOne": {
+        "real": -0.37483210644857945,
+        "imaginary": 0.36871638663039347
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.37483210644857945,
+        "imaginary": 0.36871638663039347
+      },
+      "product": {
+        "real": -0.37028477219367406,
+        "imaginary": 0.092302906864835
+      },
+      "derivative": {
+        "real": 0.3265841013101049,
+        "imaginary": -0.2625286271595894
+      },
+      "refinedZeta": {
+        "real": 0.6251678935514206,
+        "imaginary": 0.3687163866303935
+      },
+      "refinementDelta": 5.551115123125783E-17,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-8",
+      "s": {
+        "real": 1.6233333333333335,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": 0.6839743073496387,
+        "imaginary": 0.32042138297835876
+      },
+      "zetaMinusOne": {
+        "real": -0.3160256926503613,
+        "imaginary": 0.32042138297835876
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.3160256926503613,
+        "imaginary": 0.32042138297835876
+      },
+      "product": {
+        "real": -0.3188233169049847,
+        "imaginary": 0.11789860398691375
+      },
+      "derivative": {
+        "real": 0.2731009020293342,
+        "imaginary": -0.22928356627425736
+      },
+      "refinedZeta": {
+        "real": 0.6839743073496388,
+        "imaginary": 0.32042138297835887
+      },
+      "refinementDelta": 1.5700924586837752E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-9",
+      "s": {
+        "real": 1.82,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": 0.7331796853594197,
+        "imaginary": 0.2782770887943012
+      },
+      "zetaMinusOne": {
+        "real": -0.2668203146405803,
+        "imaginary": 0.2782770887943012
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.2668203146405803,
+        "imaginary": 0.2782770887943012
+      },
+      "product": {
+        "real": -0.2730653724835134,
+        "imaginary": 0.1297771280155809
+      },
+      "derivative": {
+        "real": 0.22866069231260214,
+        "imaginary": -0.1999193463622333
+      },
+      "refinedZeta": {
+        "real": 0.7331796853594198,
+        "imaginary": 0.27827708879430124
+      },
+      "refinementDelta": 1.2412670766236366E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-10",
+      "s": {
+        "real": 2.0166666666666666,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": 0.7744040293866752,
+        "imaginary": 0.2415556001944481
+      },
+      "zetaMinusOne": {
+        "real": -0.22559597061332481,
+        "imaginary": 0.2415556001944481
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.22559597061332481,
+        "imaginary": 0.2415556001944481
+      },
+      "product": {
+        "real": -0.2330515366416568,
+        "imaginary": 0.13256766002854659
+      },
+      "derivative": {
+        "real": 0.19170179252656983,
+        "imaginary": -0.1740766312627969
+      },
+      "refinedZeta": {
+        "real": 0.7744040293866753,
+        "imaginary": 0.2415556001944481
+      },
+      "refinementDelta": 1.1102230246251565E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-11",
+      "s": {
+        "real": 2.2133333333333334,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": 0.8089877898307329,
+        "imaginary": 0.20959929496523247
+      },
+      "zetaMinusOne": {
+        "real": -0.19101221016926706,
+        "imaginary": 0.20959929496523247
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.19101221016926706,
+        "imaginary": 0.20959929496523247
+      },
+      "product": {
+        "real": -0.19845841018544133,
+        "imaginary": 0.1295272458027741
+      },
+      "derivative": {
+        "real": 0.16093441620554957,
+        "imaginary": -0.15140202815454915
+      },
+      "refinedZeta": {
+        "real": 0.8089877898307328,
+        "imaginary": 0.2095992949652325
+      },
+      "refinementDelta": 1.1443916996305594E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-12",
+      "s": {
+        "real": 2.41,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": 0.8380405736889688,
+        "imaginary": 0.18181863794507755
+      },
+      "zetaMinusOne": {
+        "real": -0.16195942631103122,
+        "imaginary": 0.18181863794507755
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.16195942631103122,
+        "imaginary": 0.18181863794507755
+      },
+      "product": {
+        "real": -0.16878658764423607,
+        "imaginary": 0.12292415335660185
+      },
+      "derivative": {
+        "real": 0.13529365637965582,
+        "imaginary": -0.13155778196926235
+      },
+      "refinedZeta": {
+        "real": 0.8380405736889688,
+        "imaginary": 0.18181863794507758
+      },
+      "refinementDelta": 2.7755575615628914E-17,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-13",
+      "s": {
+        "real": 2.6066666666666665,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": 0.8624814082892344,
+        "imaginary": 0.15768847221765137
+      },
+      "zetaMinusOne": {
+        "real": -0.13751859171076564,
+        "imaginary": 0.15768847221765137
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.13751859171076564,
+        "imaginary": 0.15768847221765137
+      },
+      "product": {
+        "real": -0.14347288291499039,
+        "imaginary": 0.11431827896086416
+      },
+      "derivative": {
+        "real": 0.11390039768198341,
+        "imaginary": -0.11422768414407938
+      },
+      "refinedZeta": {
+        "real": 0.8624814082892343,
+        "imaginary": 0.15768847221765134
+      },
+      "refinementDelta": 1.1443916996305594E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-14",
+      "s": {
+        "real": 2.8033333333333332,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": 0.8830719916535338,
+        "imaginary": 0.13674343029384153
+      },
+      "zetaMinusOne": {
+        "real": -0.11692800834646622,
+        "imaginary": 0.13674343029384153
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.11692800834646622,
+        "imaginary": 0.13674343029384153
+      },
+      "product": {
+        "real": -0.12195461493912164,
+        "imaginary": 0.10476515637639608
+      },
+      "derivative": {
+        "real": 0.09602888639787367,
+        "imaginary": -0.09912026746377173
+      },
+      "refinedZeta": {
+        "real": 0.8830719916535336,
+        "imaginary": 0.1367434302938415
+      },
+      "refinementDelta": 2.237726045655905E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-2-15",
+      "s": {
+        "real": 3,
+        "imaginary": 15
+      },
+      "zeta": {
+        "real": 0.9004441293619145,
+        "imaginary": 0.1185729160042933
+      },
+      "zetaMinusOne": {
+        "real": -0.09955587063808546,
+        "imaginary": 0.1185729160042933
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.09955587063808546,
+        "imaginary": 0.1185729160042933
+      },
+      "product": {
+        "real": -0.10370403566933944,
+        "imaginary": 0.09496365623048532
+      },
+      "derivative": {
+        "real": 0.08107987337513348,
+        "imaginary": -0.08597009234996894
+      },
+      "refinedZeta": {
+        "real": 0.9004441293619145,
+        "imaginary": 0.11857291600429329
+      },
+      "refinementDelta": 1.3877787807814457E-17,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-0",
+      "s": {
+        "real": 0.05,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 2.89277406070529,
+        "imaginary": 0.6487491739291849
+      },
+      "zetaMinusOne": {
+        "real": 1.8927740607052899,
+        "imaginary": 0.6487491739291849
+      },
+      "b": 0,
+      "selected": {
+        "real": 1.8927740607052899,
+        "imaginary": 0.6487491739291849
+      },
+      "product": {
+        "real": 5.054492214910282,
+        "imaginary": 3.104620390563476
+      },
+      "derivative": {
+        "real": -1.7054981259796484,
+        "imaginary": -0.6853940088907063
+      },
+      "refinedZeta": {
+        "real": 2.8927740607052845,
+        "imaginary": 0.6487491739291785
+      },
+      "refinementDelta": 8.273210349046304E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-1",
+      "s": {
+        "real": 0.2466666666666667,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 2.5861707539967935,
+        "imaginary": 0.5284667109755063
+      },
+      "zetaMinusOne": {
+        "real": 1.5861707539967935,
+        "imaginary": 0.5284667109755063
+      },
+      "b": 0,
+      "selected": {
+        "real": 1.5861707539967935,
+        "imaginary": 0.5284667109755063
+      },
+      "product": {
+        "real": 3.8228313502222804,
+        "imaginary": 2.204943593795955
+      },
+      "derivative": {
+        "real": -1.4212316018174864,
+        "imaginary": -0.5436895549975417
+      },
+      "refinedZeta": {
+        "real": 2.5861707539967904,
+        "imaginary": 0.5284667109755026
+      },
+      "refinementDelta": 4.890025172686939E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-2",
+      "s": {
+        "real": 0.44333333333333336,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 2.3306181473230057,
+        "imaginary": 0.4328623730845457
+      },
+      "zetaMinusOne": {
+        "real": 1.3306181473230057,
+        "imaginary": 0.4328623730845457
+      },
+      "b": 0,
+      "selected": {
+        "real": 1.3306181473230057,
+        "imaginary": 0.4328623730845457
+      },
+      "product": {
+        "real": 2.913792967275929,
+        "imaginary": 1.5848114309237415
+      },
+      "derivative": {
+        "real": -1.1848851764577517,
+        "imaginary": -0.4331041808503242
+      },
+      "refinedZeta": {
+        "real": 2.3306181473230043,
+        "imaginary": 0.4328623730845437
+      },
+      "refinementDelta": 2.4481613482230045E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-3",
+      "s": {
+        "real": 0.6400000000000001,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 2.117502355481895,
+        "imaginary": 0.3565362552747693
+      },
+      "zetaMinusOne": {
+        "real": 1.117502355481895,
+        "imaginary": 0.3565362552747693
+      },
+      "b": 0,
+      "selected": {
+        "real": 1.117502355481895,
+        "imaginary": 0.3565362552747693
+      },
+      "product": {
+        "real": 2.239195768664123,
+        "imaginary": 1.1533964654432671
+      },
+      "derivative": {
+        "real": -0.9884495652222829,
+        "imaginary": -0.34661440672976873
+      },
+      "refinedZeta": {
+        "real": 2.1175023554818937,
+        "imaginary": 0.3565362552747683
+      },
+      "refinementDelta": 1.6653345369377348E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-4",
+      "s": {
+        "real": 0.8366666666666668,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 1.9396544881597035,
+        "imaginary": 0.2953064218107964
+      },
+      "zetaMinusOne": {
+        "real": 0.9396544881597035,
+        "imaginary": 0.2953064218107964
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.9396544881597035,
+        "imaginary": 0.2953064218107964
+      },
+      "product": {
+        "real": 1.735399162515682,
+        "imaginary": 0.8502784310845912
+      },
+      "derivative": {
+        "real": -0.8252055545796995,
+        "imaginary": -0.2787901651622417
+      },
+      "refinedZeta": {
+        "real": 1.9396544881597035,
+        "imaginary": 0.2953064218107959
+      },
+      "refinementDelta": 4.996003610813204E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-5",
+      "s": {
+        "real": 1.0333333333333332,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 1.7911160353719155,
+        "imaginary": 0.24593224899202532
+      },
+      "zetaMinusOne": {
+        "real": 0.7911160353719155,
+        "imaginary": 0.24593224899202532
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.7911160353719155,
+        "imaginary": 0.24593224899202532
+      },
+      "product": {
+        "real": 1.3564979457002178,
+        "imaginary": 0.635054140577365
+      },
+      "derivative": {
+        "real": -0.6895335651810595,
+        "imaginary": -0.22543630182222887
+      },
+      "refinedZeta": {
+        "real": 1.7911160353719153,
+        "imaginary": 0.2459322489920251
+      },
+      "refinementDelta": 3.1401849173675503E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-6",
+      "s": {
+        "real": 1.2300000000000002,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 1.6669394735779144,
+        "imaginary": 0.20590016143342768
+      },
+      "zetaMinusOne": {
+        "real": 0.6669394735779144,
+        "imaginary": 0.20590016143342768
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.6669394735779144,
+        "imaginary": 0.20590016143342768
+      },
+      "product": {
+        "real": 1.0693528585159884,
+        "imaginary": 0.48054605198546335
+      },
+      "derivative": {
+        "real": -0.5767458400511116,
+        "imaginary": -0.18331336965275216
+      },
+      "refinedZeta": {
+        "real": 1.6669394735779144,
+        "imaginary": 0.20590016143342754
+      },
+      "refinementDelta": 1.3877787807814457E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-7",
+      "s": {
+        "real": 1.4266666666666667,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 1.5630197174517952,
+        "imaginary": 0.1732579161562712
+      },
+      "zetaMinusOne": {
+        "real": 0.5630197174517952,
+        "imaginary": 0.1732579161562712
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.5630197174517952,
+        "imaginary": 0.1732579161562712
+      },
+      "product": {
+        "real": 0.8499926141804811,
+        "imaginary": 0.3683531621574525
+      },
+      "derivative": {
+        "real": -0.4829403531962176,
+        "imaginary": -0.14992059744575584
+      },
+      "refinedZeta": {
+        "real": 1.5630197174517952,
+        "imaginary": 0.17325791615627115
+      },
+      "refinementDelta": 5.551115123125783E-17,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-8",
+      "s": {
+        "real": 1.6233333333333335,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 1.475952292417049,
+        "imaginary": 0.14648659063449448
+      },
+      "zetaMinusOne": {
+        "real": 0.47595229241704895,
+        "imaginary": 0.14648659063449448
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.47595229241704895,
+        "imaginary": 0.14648659063449448
+      },
+      "product": {
+        "real": 0.6810245558383751,
+        "imaginary": 0.2859278478761854
+      },
+      "derivative": {
+        "real": -0.4048748659837353,
+        "imaginary": -0.12332749273746689
+      },
+      "refinedZeta": {
+        "real": 1.4759522924170492,
+        "imaginary": 0.14648659063449446
+      },
+      "refinementDelta": 2.237726045655905E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-9",
+      "s": {
+        "real": 1.82,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 1.4029144499587787,
+        "imaginary": 0.12440180178543578
+      },
+      "zetaMinusOne": {
+        "real": 0.4029144499587787,
+        "imaginary": 0.12440180178543578
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.4029144499587787,
+        "imaginary": 0.12440180178543578
+      },
+      "product": {
+        "real": 0.549778695656901,
+        "imaginary": 0.22464836886595552
+      },
+      "derivative": {
+        "real": -0.3398592207687895,
+        "imaginary": -0.10204340150115976
+      },
+      "refinedZeta": {
+        "real": 1.402914449958779,
+        "imaginary": 0.12440180178543578
+      },
+      "refinementDelta": 2.220446049250313E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-10",
+      "s": {
+        "real": 2.0166666666666666,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 1.341565837963298,
+        "imaginary": 0.10607754995401628
+      },
+      "zetaMinusOne": {
+        "real": 0.341565837963298,
+        "imaginary": 0.10607754995401628
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.341565837963298,
+        "imaginary": 0.10607754995401628
+      },
+      "product": {
+        "real": 0.44698061302262104,
+        "imaginary": 0.17854248443229062
+      },
+      "derivative": {
+        "real": -0.28566384301649644,
+        "imaginary": -0.08491662811333021
+      },
+      "refinedZeta": {
+        "real": 1.3415658379632982,
+        "imaginary": 0.10607754995401625
+      },
+      "refinementDelta": 2.237726045655905E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-11",
+      "s": {
+        "real": 2.2133333333333334,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 1.289965736880548,
+        "imaginary": 0.09078754827688928
+      },
+      "zetaMinusOne": {
+        "real": 0.28996573688054794,
+        "imaginary": 0.09078754827688928
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.28996573688054794,
+        "imaginary": 0.09078754827688928
+      },
+      "product": {
+        "real": 0.36580348652309863,
+        "imaginary": 0.14343810494826234
+      },
+      "derivative": {
+        "real": -0.24044244595866393,
+        "imaginary": -0.07105653011261365
+      },
+      "refinedZeta": {
+        "real": 1.2899657368805477,
+        "imaginary": 0.09078754827688928
+      },
+      "refinementDelta": 2.220446049250313E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-12",
+      "s": {
+        "real": 2.41,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 1.2465042573840153,
+        "imaginary": 0.07796004650018332
+      },
+      "zetaMinusOne": {
+        "real": 0.24650425738401527,
+        "imaginary": 0.07796004650018332
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.24650425738401527,
+        "imaginary": 0.07796004650018332
+      },
+      "product": {
+        "real": 0.30119083744214936,
+        "imaginary": 0.1163950132364853
+      },
+      "derivative": {
+        "real": -0.20266704039658376,
+        "imaginary": -0.05977343543755719
+      },
+      "refinedZeta": {
+        "real": 1.2465042573840155,
+        "imaginary": 0.07796004650018332
+      },
+      "refinementDelta": 2.220446049250313E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-13",
+      "s": {
+        "real": 2.6066666666666665,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 1.209845253533211,
+        "imaginary": 0.06714305601485517
+      },
+      "zetaMinusOne": {
+        "real": 0.20984525353321093,
+        "imaginary": 0.06714305601485517
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.20984525353321093,
+        "imaginary": 0.06714305601485517
+      },
+      "product": {
+        "real": 0.2493720939926145,
+        "imaginary": 0.09532235923971889
+      },
+      "derivative": {
+        "real": -0.17107350847612227,
+        "imaginary": -0.05053236048380417
+      },
+      "refinedZeta": {
+        "real": 1.2098452535332112,
+        "imaginary": 0.06714305601485517
+      },
+      "refinementDelta": 2.220446049250313E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-14",
+      "s": {
+        "real": 2.8033333333333332,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 1.1788790305598142,
+        "imaginary": 0.05797758282328648
+      },
+      "zetaMinusOne": {
+        "real": 0.17887903055981424,
+        "imaginary": 0.05797758282328648
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.17887903055981424,
+        "imaginary": 0.05797758282328648
+      },
+      "product": {
+        "real": 0.20751533802380215,
+        "imaginary": 0.07871953044254813
+      },
+      "derivative": {
+        "real": -0.144616178356688,
+        "imaginary": -0.04291739676325099
+      },
+      "refinedZeta": {
+        "real": 1.1788790305598142,
+        "imaginary": 0.05797758282328647
+      },
+      "refinementDelta": 6.938893903907228E-18,
+      "insideView": true
+    },
+    {
+      "id": "grid-3-15",
+      "s": {
+        "real": 3,
+        "imaginary": 17.5
+      },
+      "zeta": {
+        "real": 1.152683215780098,
+        "imaginary": 0.05017701974799768
+      },
+      "zetaMinusOne": {
+        "real": 0.15268321578009791,
+        "imaginary": 0.05017701974799768
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.15268321578009791,
+        "imaginary": 0.05017701974799768
+      },
+      "product": {
+        "real": 0.1734776468502589,
+        "imaginary": 0.0654993972147692
+      },
+      "derivative": {
+        "real": -0.12243001977642086,
+        "imaginary": -0.03660433175992527
+      },
+      "refinedZeta": {
+        "real": 1.152683215780098,
+        "imaginary": 0.050177019747997674
+      },
+      "refinementDelta": 6.938893903907228E-18,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-0",
+      "s": {
+        "real": 0.05,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.007899029158320364,
+        "imaginary": -1.6464368659545152
+      },
+      "zetaMinusOne": {
+        "real": -0.9921009708416796,
+        "imaginary": -1.6464368659545152
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.007899029158320364,
+        "imaginary": -1.6464368659545152
+      },
+      "product": {
+        "real": -2.7185909880708024,
+        "imaginary": 1.6204263603314986
+      },
+      "derivative": {
+        "real": 1.2006985750168784,
+        "imaginary": 1.6381260436085288
+      },
+      "refinedZeta": {
+        "real": 0.007899029158319536,
+        "imaginary": -1.6464368659544901
+      },
+      "refinementDelta": 2.510468086535982E-14,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-1",
+      "s": {
+        "real": 0.2466666666666667,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.21940176923461274,
+        "imaginary": -1.3568081014975055
+      },
+      "zetaMinusOne": {
+        "real": -0.7805982307653873,
+        "imaginary": -1.3568081014975055
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.21940176923461274,
+        "imaginary": -1.3568081014975055
+      },
+      "product": {
+        "real": -2.0121928571805996,
+        "imaginary": 0.7614359055366879
+      },
+      "derivative": {
+        "real": 0.9587383125772839,
+        "imaginary": 1.319721676903708
+      },
+      "refinedZeta": {
+        "real": 0.21940176923461313,
+        "imaginary": -1.3568081014974949
+      },
+      "refinementDelta": 1.0665222138308495E-14,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-2",
+      "s": {
+        "real": 0.44333333333333336,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.3880546495069617,
+        "imaginary": -1.1230047441414464
+      },
+      "zetaMinusOne": {
+        "real": -0.6119453504930383,
+        "imaginary": -1.1230047441414464
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.3880546495069617,
+        "imaginary": -1.1230047441414464
+      },
+      "product": {
+        "real": -1.4986078938671863,
+        "imaginary": 0.25143031937651805
+      },
+      "derivative": {
+        "real": 0.7633874410477346,
+        "imaginary": 1.0676829546229938
+      },
+      "refinedZeta": {
+        "real": 0.3880546495069622,
+        "imaginary": -1.1230047441414415
+      },
+      "refinementDelta": 4.910462595695867E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-3",
+      "s": {
+        "real": 0.6400000000000001,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.5221618605559375,
+        "imaginary": -0.933457889102809
+      },
+      "zetaMinusOne": {
+        "real": -0.4778381394440625,
+        "imaginary": -0.933457889102809
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.4778381394440625,
+        "imaginary": -0.933457889102809
+      },
+      "product": {
+        "real": -1.1208524826649713,
+        "imaginary": -0.04137432714627243
+      },
+      "derivative": {
+        "real": 0.6061339793454951,
+        "imaginary": 0.8675380064099442
+      },
+      "refinedZeta": {
+        "real": 0.5221618605559379,
+        "imaginary": -0.9334578891028071
+      },
+      "refinementDelta": 1.9389211565826713E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-4",
+      "s": {
+        "real": 0.8366666666666668,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.6284982479528531,
+        "imaginary": -0.7791134758023632
+      },
+      "zetaMinusOne": {
+        "real": -0.37150175204714686,
+        "imaginary": -0.7791134758023632
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.37150175204714686,
+        "imaginary": -0.7791134758023632
+      },
+      "product": {
+        "real": -0.8405060084498867,
+        "imaginary": -0.20022943319412267
+      },
+      "derivative": {
+        "real": 0.4799011752550546,
+        "imaginary": 0.708046860480481
+      },
+      "refinedZeta": {
+        "real": 0.6284982479528531,
+        "imaginary": -0.7791134758023622
+      },
+      "refinementDelta": 9.992007221626409E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-5",
+      "s": {
+        "real": 1.0333333333333332,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.712570833205456,
+        "imaginary": -0.6528712573553133
+      },
+      "zetaMinusOne": {
+        "real": -0.287429166794544,
+        "imaginary": -0.6528712573553133
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.287429166794544,
+        "imaginary": -0.6528712573553133
+      },
+      "product": {
+        "real": -0.631054519551046,
+        "imaginary": -0.27756277430382525
+      },
+      "derivative": {
+        "real": 0.3788395065149662,
+        "imaginary": 0.5804737763116794
+      },
+      "refinedZeta": {
+        "real": 0.7125708332054561,
+        "imaginary": -0.6528712573553133
+      },
+      "refinementDelta": 1.1102230246251565E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-6",
+      "s": {
+        "real": 1.2300000000000002,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.778841285666359,
+        "imaginary": -0.5491501467656908
+      },
+      "zetaMinusOne": {
+        "real": -0.22115871433364098,
+        "imaginary": -0.5491501467656908
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.22115871433364098,
+        "imaginary": -0.5491501467656908
+      },
+      "product": {
+        "real": -0.4738134211007118,
+        "imaginary": -0.3062514658960299
+      },
+      "derivative": {
+        "real": 0.29813814069719297,
+        "imaginary": 0.47802292468266366
+      },
+      "refinedZeta": {
+        "real": 0.7788412856663591,
+        "imaginary": -0.5491501467656908
+      },
+      "refinementDelta": 1.1102230246251565E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-7",
+      "s": {
+        "real": 1.4266666666666667,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.8309134190977848,
+        "imaginary": -0.4635515237846548
+      },
+      "zetaMinusOne": {
+        "real": -0.16908658090221518,
+        "imaginary": -0.4635515237846548
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.16908658090221518,
+        "imaginary": -0.4635515237846548
+      },
+      "product": {
+        "real": -0.3553763242640892,
+        "imaginary": -0.30679083932713647
+      },
+      "derivative": {
+        "real": 0.23385794748400368,
+        "imaginary": 0.3954011704698757
+      },
+      "refinedZeta": {
+        "real": 0.8309134190977846,
+        "imaginary": -0.46355152378465486
+      },
+      "refinementDelta": 2.2887833992611187E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-8",
+      "s": {
+        "real": 1.6233333333333335,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.8716899866754805,
+        "imaginary": -0.3925984087241111
+      },
+      "zetaMinusOne": {
+        "real": -0.12831001332451952,
+        "imaginary": -0.3925984087241111
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.12831001332451952,
+        "imaginary": -0.3925984087241111
+      },
+      "product": {
+        "real": -0.26598006433788535,
+        "imaginary": -0.2918497946149594
+      },
+      "derivative": {
+        "real": 0.18278616490197389,
+        "imaginary": 0.32847959845461755
+      },
+      "refinedZeta": {
+        "real": 0.8716899866754804,
+        "imaginary": -0.392598408724111
+      },
+      "refinementDelta": 1.5700924586837752E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-9",
+      "s": {
+        "real": 1.82,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.9035029403894966,
+        "imaginary": -0.3335333510380052
+      },
+      "zetaMinusOne": {
+        "real": -0.09649705961050337,
+        "imaginary": -0.3335333510380052
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.09649705961050337,
+        "imaginary": -0.3335333510380052
+      },
+      "product": {
+        "real": -0.1984298733516715,
+        "imaginary": -0.2691633757235945
+      },
+      "derivative": {
+        "real": 0.1423116305482632,
+        "imaginary": 0.2740316417198648
+      },
+      "refinedZeta": {
+        "real": 0.9035029403894964,
+        "imaginary": -0.33353335103800524
+      },
+      "refinementDelta": 2.2887833992611187E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-10",
+      "s": {
+        "real": 2.0166666666666666,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.9282210355715443,
+        "imaginary": -0.28416173449832244
+      },
+      "zetaMinusOne": {
+        "real": -0.07177896442845566,
+        "imaginary": -0.28416173449832244
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.07177896442845566,
+        "imaginary": -0.28416173449832244
+      },
+      "product": {
+        "real": -0.14737463604712925,
+        "imaginary": -0.24336806443335574
+      },
+      "derivative": {
+        "real": 0.11031883890762358,
+        "imaginary": 0.22953056276881892
+      },
+      "refinedZeta": {
+        "real": 0.9282210355715446,
+        "imaginary": -0.2841617344983225
+      },
+      "refinementDelta": 2.2887833992611187E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-11",
+      "s": {
+        "real": 2.2133333333333334,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.9473382857728259,
+        "imaginary": -0.24273020080809418
+      },
+      "zetaMinusOne": {
+        "real": -0.05266171422717414,
+        "imaginary": -0.24273020080809418
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.05266171422717414,
+        "imaginary": -0.24273020080809418
+      },
+      "product": {
+        "real": -0.1088064084661673,
+        "imaginary": -0.2171650238695733
+      },
+      "derivative": {
+        "real": 0.0850987921711938,
+        "imaginary": 0.1929928724989166
+      },
+      "refinedZeta": {
+        "real": 0.9473382857728261,
+        "imaginary": -0.24273020080809418
+      },
+      "refinementDelta": 2.220446049250313E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-12",
+      "s": {
+        "real": 2.41,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.9620463640623017,
+        "imaginary": -0.20783222465666307
+      },
+      "zetaMinusOne": {
+        "real": -0.03795363593769829,
+        "imaginary": -0.20783222465666307
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.03795363593769829,
+        "imaginary": -0.20783222465666307
+      },
+      "product": {
+        "real": -0.07970739106254462,
+        "imaginary": -0.19205624747518124
+      },
+      "derivative": {
+        "real": 0.06527454574578254,
+        "imaginary": 0.16285727185582116
+      },
+      "refinedZeta": {
+        "real": 0.9620463640623015,
+        "imaginary": -0.20783222465666298
+      },
+      "refinementDelta": 2.3714374201337736E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-13",
+      "s": {
+        "real": 2.6066666666666665,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.9732936394668429,
+        "imaginary": -0.17833468180186093
+      },
+      "zetaMinusOne": {
+        "real": -0.026706360533157114,
+        "imaginary": -0.17833468180186093
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.026706360533157114,
+        "imaginary": -0.17833468180186093
+      },
+      "product": {
+        "real": -0.05779638957360113,
+        "imaginary": -0.16880934118632823
+      },
+      "derivative": {
+        "real": 0.04973942210628718,
+        "imaginary": 0.13789104193807097
+      },
+      "refinedZeta": {
+        "real": 0.9732936394668429,
+        "imaginary": -0.1783346818018609
+      },
+      "refinementDelta": 2.7755575615628914E-17,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-14",
+      "s": {
+        "real": 2.8033333333333332,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.9818331526949192,
+        "imaginary": -0.1533206529350769
+      },
+      "zetaMinusOne": {
+        "real": -0.01816684730508078,
+        "imaginary": -0.1533206529350769
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.01816684730508078,
+        "imaginary": -0.1533206529350769
+      },
+      "product": {
+        "real": -0.041344035580512965,
+        "imaginary": -0.14774994715390327
+      },
+      "derivative": {
+        "real": 0.03760601759497445,
+        "imaginary": 0.11711763138464941
+      },
+      "refinedZeta": {
+        "real": 0.9818331526949194,
+        "imaginary": -0.15332065293507693
+      },
+      "refinementDelta": 2.237726045655905E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-4-15",
+      "s": {
+        "real": 3,
+        "imaginary": 20
+      },
+      "zeta": {
+        "real": 0.9882614847041057,
+        "imaginary": -0.13204479027108082
+      },
+      "zetaMinusOne": {
+        "real": -0.011738515295894314,
+        "imaginary": -0.13204479027108082
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.011738515295894314,
+        "imaginary": -0.13204479027108082
+      },
+      "product": {
+        "real": -0.029036549192276093,
+        "imaginary": -0.12894477069040036
+      },
+      "derivative": {
+        "real": 0.02816431624310292,
+        "imaginary": 0.09976060694247811
+      },
+      "refinedZeta": {
+        "real": 0.9882614847041056,
+        "imaginary": -0.13204479027108082
+      },
+      "refinementDelta": 1.1102230246251565E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-0",
+      "s": {
+        "real": 0.05,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 1.5474979271883686,
+        "imaginary": 1.0443824813666311
+      },
+      "zetaMinusOne": {
+        "real": 0.5474979271883686,
+        "imaginary": 1.0443824813666311
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.5474979271883686,
+        "imaginary": 1.0443824813666311
+      },
+      "product": {
+        "real": -0.2434828599215928,
+        "imaginary": 2.1879769688467823
+      },
+      "derivative": {
+        "real": -1.0887155360883427,
+        "imaginary": -1.4875105936349446
+      },
+      "refinedZeta": {
+        "real": 1.5474979271883622,
+        "imaginary": 1.044382481366653
+      },
+      "refinementDelta": 2.2693132434496382E-14,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-1",
+      "s": {
+        "real": 0.2466666666666667,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 1.3611126042977577,
+        "imaginary": 0.7888880779992555
+      },
+      "zetaMinusOne": {
+        "real": 0.3611126042977577,
+        "imaginary": 0.7888880779992555
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.3611126042977577,
+        "imaginary": 0.7888880779992555
+      },
+      "product": {
+        "real": -0.13082948232889285,
+        "imaginary": 1.3586429346907831
+      },
+      "derivative": {
+        "real": -0.8179220381052269,
+        "imaginary": -1.1273140203689909
+      },
+      "refinedZeta": {
+        "real": 1.3611126042977537,
+        "imaginary": 0.7888880779992651
+      },
+      "refinementDelta": 1.035070875304337E-14,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-2",
+      "s": {
+        "real": 0.44333333333333336,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 1.2218471736628644,
+        "imaginary": 0.5952826374027448
+      },
+      "zetaMinusOne": {
+        "real": 0.22184717366286444,
+        "imaginary": 0.5952826374027448
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.22184717366286444,
+        "imaginary": 0.5952826374027448
+      },
+      "product": {
+        "real": -0.08329807626810215,
+        "imaginary": 0.8594061786794941
+      },
+      "derivative": {
+        "real": -0.6072446529770142,
+        "imaginary": -0.8541293497176377
+      },
+      "refinedZeta": {
+        "real": 1.2218471736628627,
+        "imaginary": 0.5952826374027489
+      },
+      "refinementDelta": 4.47545209131181E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-3",
+      "s": {
+        "real": 0.6400000000000001,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 1.1191391048033574,
+        "imaginary": 0.44861474738775964
+      },
+      "zetaMinusOne": {
+        "real": 0.11913910480335743,
+        "imaginary": 0.44861474738775964
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.11913910480335743,
+        "imaginary": 0.44861474738775964
+      },
+      "product": {
+        "real": -0.06792196047708057,
+        "imaginary": 0.5555098661984837
+      },
+      "derivative": {
+        "real": -0.44429935938208703,
+        "imaginary": -0.6469461808517608
+      },
+      "refinedZeta": {
+        "real": 1.1191391048033572,
+        "imaginary": 0.4486147473877614
+      },
+      "refinementDelta": 1.790180836524724E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-4",
+      "s": {
+        "real": 0.8366666666666668,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 1.0446209383056886,
+        "imaginary": 0.3375437418385007
+      },
+      "zetaMinusOne": {
+        "real": 0.044620938305688584,
+        "imaginary": 0.3375437418385007
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.044620938305688584,
+        "imaginary": 0.3375437418385007
+      },
+      "product": {
+        "real": -0.06732381121336778,
+        "imaginary": 0.3676667787985947
+      },
+      "derivative": {
+        "real": -0.3190741147649468,
+        "imaginary": -0.4898233568051824
+      },
+      "refinedZeta": {
+        "real": 1.044620938305688,
+        "imaginary": 0.33754374183850155
+      },
+      "refinementDelta": 1.066334393690002E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-5",
+      "s": {
+        "real": 1.0333333333333332,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 0.9916951094671177,
+        "imaginary": 0.25346818354320616
+      },
+      "zetaMinusOne": {
+        "real": -0.008304890532882303,
+        "imaginary": 0.25346818354320616
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.008304890532882303,
+        "imaginary": 0.25346818354320616
+      },
+      "product": {
+        "real": -0.07248203939481158,
+        "imaginary": 0.2492581325074165
+      },
+      "derivative": {
+        "real": -0.22351855570937024,
+        "imaginary": -0.3706688855370878
+      },
+      "refinedZeta": {
+        "real": 0.9916951094671175,
+        "imaginary": 0.2534681835432065
+      },
+      "refinementDelta": 4.0029660424867215E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-6",
+      "s": {
+        "real": 1.2300000000000002,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 0.9551837248659794,
+        "imaginary": 0.18986426545380686
+      },
+      "zetaMinusOne": {
+        "real": -0.044816275134020644,
+        "imaginary": 0.18986426545380686
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.044816275134020644,
+        "imaginary": 0.18986426545380686
+      },
+      "product": {
+        "real": -0.07885621591344605,
+        "imaginary": 0.17284624713641378
+      },
+      "derivative": {
+        "real": -0.15119165107026186,
+        "imaginary": -0.2803120853746207
+      },
+      "refinedZeta": {
+        "real": 0.9551837248659791,
+        "imaginary": 0.18986426545380702
+      },
+      "refinementDelta": 2.7755575615628914E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-7",
+      "s": {
+        "real": 1.4266666666666667,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 0.9310422243870743,
+        "imaginary": 0.14178379132459348
+      },
+      "zetaMinusOne": {
+        "real": -0.06895777561292571,
+        "imaginary": 0.14178379132459348
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.06895777561292571,
+        "imaginary": 0.14178379132459348
+      },
+      "product": {
+        "real": -0.08430524427781896,
+        "imaginary": 0.1222296015891711
+      },
+      "derivative": {
+        "real": -0.09696356797331196,
+        "imaginary": -0.2117985142910301
+      },
+      "refinedZeta": {
+        "real": 0.9310422243870743,
+        "imaginary": 0.14178379132459354
+      },
+      "refinementDelta": 5.551115123125783E-17,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-8",
+      "s": {
+        "real": 1.6233333333333335,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 0.9161267783665684,
+        "imaginary": 0.10547337959375651
+      },
+      "zetaMinusOne": {
+        "real": -0.08387322163343158,
+        "imaginary": 0.10547337959375651
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.08387322163343158,
+        "imaginary": 0.10547337959375651
+      },
+      "product": {
+        "real": -0.0879631381291895,
+        "imaginary": 0.08778059530756811
+      },
+      "derivative": {
+        "real": -0.05676637575782792,
+        "imaginary": -0.15985455281795777
+      },
+      "refinedZeta": {
+        "real": 0.9161267783665685,
+        "imaginary": 0.10547337959375655
+      },
+      "refinementDelta": 1.1857187100668868E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-9",
+      "s": {
+        "real": 1.82,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 0.9080064001274285,
+        "imaginary": 0.07808569589826259
+      },
+      "zetaMinusOne": {
+        "real": -0.0919935998725715,
+        "imaginary": 0.07808569589826259
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.0919935998725715,
+        "imaginary": 0.07808569589826259
+      },
+      "product": {
+        "real": -0.08962815335897266,
+        "imaginary": 0.06371892736979046
+      },
+      "derivative": {
+        "real": -0.02738759694140927,
+        "imaginary": -0.12048105187598547
+      },
+      "refinedZeta": {
+        "real": 0.9080064001274286,
+        "imaginary": 0.07808569589826259
+      },
+      "refinementDelta": 1.1102230246251565E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-10",
+      "s": {
+        "real": 2.0166666666666666,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 0.9048119395865194,
+        "imaginary": 0.057460513841869836
+      },
+      "zetaMinusOne": {
+        "real": -0.0951880604134806,
+        "imaginary": 0.057460513841869836
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.0951880604134806,
+        "imaginary": 0.057460513841869836
+      },
+      "product": {
+        "real": -0.0894290042191719,
+        "imaginary": 0.046521404115930746
+      },
+      "derivative": {
+        "real": -0.00630061910838999,
+        "imaginary": -0.09064508068362351
+      },
+      "refinedZeta": {
+        "real": 0.9048119395865196,
+        "imaginary": 0.057460513841869836
+      },
+      "refinementDelta": 2.220446049250313E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-11",
+      "s": {
+        "real": 2.2133333333333334,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 0.9051152696402056,
+        "imaginary": 0.04195873625499693
+      },
+      "zetaMinusOne": {
+        "real": -0.09488473035979439,
+        "imaginary": 0.04195873625499693
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.09488473035979439,
+        "imaginary": 0.04195873625499693
+      },
+      "product": {
+        "real": -0.0876421538524599,
+        "imaginary": 0.0339962495034107
+      },
+      "derivative": {
+        "real": 0.008473658216382202,
+        "imaginary": -0.06804618126956727
+      },
+      "refinedZeta": {
+        "real": 0.9051152696402058,
+        "imaginary": 0.04195873625499694
+      },
+      "refinementDelta": 2.2215299868541707E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-12",
+      "s": {
+        "real": 2.41,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 0.907833032088448,
+        "imaginary": 0.03033657013797847
+      },
+      "zetaMinusOne": {
+        "real": -0.09216696791155199,
+        "imaginary": 0.03033657013797847
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.09216696791155199,
+        "imaginary": 0.03033657013797847
+      },
+      "product": {
+        "real": -0.08459252542527942,
+        "imaginary": 0.024744510765071254
+      },
+      "derivative": {
+        "real": 0.01847902556280101,
+        "imaginary": -0.050939172713484776
+      },
+      "refinedZeta": {
+        "real": 0.9078330320884478,
+        "imaginary": 0.030336570137978466
+      },
+      "refinementDelta": 2.220717083251841E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-13",
+      "s": {
+        "real": 2.6066666666666665,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 0.9121502498449531,
+        "imaginary": 0.02165013775528113
+      },
+      "zetaMinusOne": {
+        "real": -0.08784975015504692,
+        "imaginary": 0.02165013775528113
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.08784975015504692,
+        "imaginary": 0.02165013775528113
+      },
+      "product": {
+        "real": -0.08060090001756541,
+        "imaginary": 0.017846219370033535
+      },
+      "derivative": {
+        "real": 0.02491448444471018,
+        "imaginary": -0.03799985179018798
+      },
+      "refinedZeta": {
+        "real": 0.9121502498449531,
+        "imaginary": 0.02165013775528113
+      },
+      "refinementDelta": 0,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-14",
+      "s": {
+        "real": 2.8033333333333332,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 0.9174599301975742,
+        "imaginary": 0.01518315424295467
+      },
+      "zetaMinusOne": {
+        "real": -0.08254006980242579,
+        "imaginary": 0.01518315424295467
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.08254006980242579,
+        "imaginary": 0.01518315424295467
+      },
+      "product": {
+        "real": -0.07595773485220182,
+        "imaginary": 0.012676717020885719
+      },
+      "derivative": {
+        "real": 0.0287069391869453,
+        "imaginary": -0.028223217949454305
+      },
+      "refinedZeta": {
+        "real": 0.9174599301975742,
+        "imaginary": 0.015183154242954673
+      },
+      "refinementDelta": 3.469446951953614E-18,
+      "insideView": true
+    },
+    {
+      "id": "grid-5-15",
+      "s": {
+        "real": 3,
+        "imaginary": 22.5
+      },
+      "zeta": {
+        "real": 0.9233154832747094,
+        "imaginary": 0.01039208505687306
+      },
+      "zetaMinusOne": {
+        "real": -0.07668451672529064,
+        "imaginary": 0.01039208505687306
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.07668451672529064,
+        "imaginary": 0.01039208505687306
+      },
+      "product": {
+        "real": -0.07091199705172854,
+        "imaginary": 0.00879826101616421
+      },
+      "derivative": {
+        "real": 0.030569328023644905,
+        "imaginary": -0.020846349281447275
+      },
+      "refinedZeta": {
+        "real": 0.9233154832747092,
+        "imaginary": 0.01039208505687306
+      },
+      "refinementDelta": 1.1102230246251565E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-0",
+      "s": {
+        "real": 0.05,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": -0.7784362472262395,
+        "imaginary": -0.354028477568992
+      },
+      "zetaMinusOne": {
+        "real": -1.7784362472262396,
+        "imaginary": -0.354028477568992
+      },
+      "b": 1,
+      "selected": {
+        "real": -0.7784362472262395,
+        "imaginary": -0.354028477568992
+      },
+      "product": {
+        "real": 1.2590630752920924,
+        "imaginary": 0.905205676549042
+      },
+      "derivative": {
+        "real": 2.2926352372491756,
+        "imaginary": 1.122914091927424
+      },
+      "refinedZeta": {
+        "real": -0.7784362472262576,
+        "imaginary": -0.3540284775689942
+      },
+      "refinementDelta": 1.823235009232622E-14,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-1",
+      "s": {
+        "real": 0.2466666666666667,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": -0.37999048693285625,
+        "imaginary": -0.1690068465119881
+      },
+      "zetaMinusOne": {
+        "real": -1.3799904869328563,
+        "imaginary": -0.1690068465119881
+      },
+      "b": 1,
+      "selected": {
+        "real": -0.37999048693285625,
+        "imaginary": -0.1690068465119881
+      },
+      "product": {
+        "real": 0.4958199429243988,
+        "imaginary": 0.2974488343141418
+      },
+      "derivative": {
+        "real": 1.7807381323100304,
+        "imaginary": 0.7770555687683676
+      },
+      "refinedZeta": {
+        "real": -0.37999048693286375,
+        "imaginary": -0.1690068465119896
+      },
+      "refinementDelta": 7.642415970454963E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-2",
+      "s": {
+        "real": 0.44333333333333336,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": -0.07057120899917899,
+        "imaginary": -0.042164206774165804
+      },
+      "zetaMinusOne": {
+        "real": -1.070571208999179,
+        "imaginary": -0.042164206774165804
+      },
+      "b": 1,
+      "selected": {
+        "real": -0.07057120899917899,
+        "imaginary": -0.042164206774165804
+      },
+      "product": {
+        "real": 0.07377368420589017,
+        "imaginary": 0.04811536487125431
+      },
+      "derivative": {
+        "real": 1.382581375139545,
+        "imaginary": 0.5264076081923624
+      },
+      "refinedZeta": {
+        "real": -0.07057120899918223,
+        "imaginary": -0.04216420677416698
+      },
+      "refinementDelta": 3.4550117783166132E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-3",
+      "s": {
+        "real": 0.6400000000000001,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": 0.16962696608100233,
+        "imaginary": 0.04262303498135007
+      },
+      "zetaMinusOne": {
+        "real": -0.8303730339189976,
+        "imaginary": 0.04262303498135007
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.16962696608100233,
+        "imaginary": 0.04262303498135007
+      },
+      "product": {
+        "real": -0.1426703815701782,
+        "imaginary": -0.02816300276324838
+      },
+      "derivative": {
+        "real": 1.0731115370578694,
+        "imaginary": 0.34578302652563864
+      },
+      "refinedZeta": {
+        "real": 0.16962696608100095,
+        "imaginary": 0.04262303498134962
+      },
+      "refinementDelta": 1.459231405488224E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-4",
+      "s": {
+        "real": 0.8366666666666668,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": 0.35603803269566286,
+        "imaginary": 0.0972030803576442
+      },
+      "zetaMinusOne": {
+        "real": -0.6439619673043371,
+        "imaginary": 0.0972030803576442
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.35603803269566286,
+        "imaginary": 0.0972030803576442
+      },
+      "product": {
+        "real": -0.23872339080087956,
+        "imaginary": -0.027987093352656055
+      },
+      "derivative": {
+        "real": 0.8327130023737913,
+        "imaginary": 0.2165623557432659
+      },
+      "refinedZeta": {
+        "real": 0.3560380326956624,
+        "imaginary": 0.09720308035764398
+      },
+      "refinementDelta": 4.965068306494546E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-5",
+      "s": {
+        "real": 1.0333333333333332,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": 0.5006764706142931,
+        "imaginary": 0.13026449800987824
+      },
+      "zetaMinusOne": {
+        "real": -0.4993235293857069,
+        "imaginary": 0.13026449800987824
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.4993235293857069,
+        "imaginary": 0.13026449800987824
+      },
+      "product": {
+        "real": -0.26696838182927357,
+        "imaginary": 0.00017624020997863976
+      },
+      "derivative": {
+        "real": 0.6460556673849998,
+        "imaginary": 0.12498997372481478
+      },
+      "refinedZeta": {
+        "real": 0.5006764706142928,
+        "imaginary": 0.13026449800987808
+      },
+      "refinementDelta": 3.7238012298709097E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-6",
+      "s": {
+        "real": 1.2300000000000002,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": 0.6128863843520242,
+        "imaginary": 0.1481623990221875
+      },
+      "zetaMinusOne": {
+        "real": -0.38711361564797575,
+        "imaginary": 0.1481623990221875
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.38711361564797575,
+        "imaginary": 0.1481623990221875
+      },
+      "product": {
+        "real": -0.25920876071193694,
+        "imaginary": 0.033451035045073275
+      },
+      "derivative": {
+        "real": 0.5011774489825519,
+        "imaginary": 0.06091117689259497
+      },
+      "refinedZeta": {
+        "real": 0.612886384352024,
+        "imaginary": 0.14816239902218742
+      },
+      "refinementDelta": 2.3714374201337736E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-7",
+      "s": {
+        "real": 1.4266666666666667,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": 0.6999295624328472,
+        "imaginary": 0.15553000645673426
+      },
+      "zetaMinusOne": {
+        "real": -0.3000704375671528,
+        "imaginary": 0.15553000645673426
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.3000704375671528,
+        "imaginary": 0.15553000645673426
+      },
+      "product": {
+        "real": -0.23421775297384204,
+        "imaginary": 0.06219009227214556
+      },
+      "derivative": {
+        "real": 0.3887568646944711,
+        "imaginary": 0.016836408353147946
+      },
+      "refinedZeta": {
+        "real": 0.6999295624328472,
+        "imaginary": 0.15553000645673423
+      },
+      "refinementDelta": 2.7755575615628914E-17,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-8",
+      "s": {
+        "real": 1.6233333333333335,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": 0.767446057290827,
+        "imaginary": 0.15573123339306522
+      },
+      "zetaMinusOne": {
+        "real": -0.23255394270917296,
+        "imaginary": 0.15573123339306522
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.23255394270917296,
+        "imaginary": 0.15573123339306522
+      },
+      "product": {
+        "real": -0.202724823493717,
+        "imaginary": 0.08329940873602576
+      },
+      "derivative": {
+        "real": 0.301538419677609,
+        "imaginary": -0.012751915857370049
+      },
+      "refinedZeta": {
+        "real": 0.7674460572908268,
+        "imaginary": 0.15573123339306524
+      },
+      "refinementDelta": 2.237726045655905E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-9",
+      "s": {
+        "real": 1.82,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": 0.819814221836931,
+        "imaginary": 0.15119550033051662
+      },
+      "zetaMinusOne": {
+        "real": -0.18018577816306902,
+        "imaginary": 0.15119550033051662
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.18018577816306902,
+        "imaginary": 0.15119550033051662
+      },
+      "product": {
+        "real": -0.17057894283103356,
+        "imaginary": 0.09670894256689924
+      },
+      "derivative": {
+        "real": 0.23388013531065252,
+        "imaginary": -0.0319127667328556
+      },
+      "refinedZeta": {
+        "real": 0.8198142218369311,
+        "imaginary": 0.1511955003305166
+      },
+      "refinementDelta": 1.1443916996305594E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-10",
+      "s": {
+        "real": 2.0166666666666666,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": 0.860431681056159,
+        "imaginary": 0.14366534679263515
+      },
+      "zetaMinusOne": {
+        "real": -0.13956831894384103,
+        "imaginary": 0.14366534679263515
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.13956831894384103,
+        "imaginary": 0.14366534679263515
+      },
+      "product": {
+        "real": -0.14072873516007942,
+        "imaginary": 0.10356308490797109
+      },
+      "derivative": {
+        "real": 0.18139823039443076,
+        "imaginary": -0.043626632578001416
+      },
+      "refinedZeta": {
+        "real": 0.8604316810561587,
+        "imaginary": 0.14366534679263512
+      },
+      "refinementDelta": 2.237726045655905E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-11",
+      "s": {
+        "real": 2.2133333333333334,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": 0.891934287388743,
+        "imaginary": 0.13437947304999767
+      },
+      "zetaMinusOne": {
+        "real": -0.10806571261125697,
+        "imaginary": 0.13437947304999767
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.10806571261125697,
+        "imaginary": 0.13437947304999767
+      },
+      "product": {
+        "real": -0.11444535714627324,
+        "imaginary": 0.10533584601905127
+      },
+      "derivative": {
+        "real": 0.14068875485728782,
+        "imaginary": -0.05007696242280286
+      },
+      "refinedZeta": {
+        "real": 0.8919342873887431,
+        "imaginary": 0.13437947304999767
+      },
+      "refinementDelta": 1.1102230246251565E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-12",
+      "s": {
+        "real": 2.41,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": 0.9163665398472947,
+        "imaginary": 0.12420797735628218
+      },
+      "zetaMinusOne": {
+        "real": -0.08363346015270534,
+        "imaginary": 0.12420797735628218
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.08363346015270534,
+        "imaginary": 0.12420797735628218
+      },
+      "product": {
+        "real": -0.0920665261345299,
+        "imaginary": 0.10343209150653267
+      },
+      "derivative": {
+        "real": 0.1091099562662505,
+        "imaginary": -0.05285852347494467
+      },
+      "refinedZeta": {
+        "real": 0.9163665398472944,
+        "imaginary": 0.12420797735628215
+      },
+      "refinementDelta": 2.237726045655905E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-13",
+      "s": {
+        "real": 2.6066666666666665,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": 0.9353140892712779,
+        "imaginary": 0.1137522041268756
+      },
+      "zetaMinusOne": {
+        "real": -0.0646859107287221,
+        "imaginary": 0.1137522041268756
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.0646859107287221,
+        "imaginary": 0.1137522041268756
+      },
+      "product": {
+        "real": -0.07344120762564027,
+        "imaginary": 0.09903587428418271
+      },
+      "derivative": {
+        "real": 0.08461242903792673,
+        "imaginary": -0.05313163854246224
+      },
+      "refinedZeta": {
+        "real": 0.9353140892712778,
+        "imaginary": 0.11375220412687562
+      },
+      "refinementDelta": 1.1188630228279524E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-14",
+      "s": {
+        "real": 2.8033333333333332,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": 0.9500066760233974,
+        "imaginary": 0.10341839640822251
+      },
+      "zetaMinusOne": {
+        "real": -0.04999332397660261,
+        "imaginary": 0.10341839640822251
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.04999332397660261,
+        "imaginary": 0.10341839640822251
+      },
+      "product": {
+        "real": -0.05818935625002131,
+        "imaginary": 0.09307793761466854
+      },
+      "derivative": {
+        "real": 0.06560675642359079,
+        "imaginary": -0.05173634955825195
+      },
+      "refinedZeta": {
+        "real": 0.9500066760233975,
+        "imaginary": 0.10341839640822251
+      },
+      "refinementDelta": 1.1102230246251565E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-6-15",
+      "s": {
+        "real": 3,
+        "imaginary": 25
+      },
+      "zeta": {
+        "real": 0.9613980415627075,
+        "imaginary": 0.09347195998647032
+      },
+      "zetaMinusOne": {
+        "real": -0.03860195843729253,
+        "imaginary": 0.09347195998647032
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.03860195843729253,
+        "imaginary": 0.09347195998647032
+      },
+      "product": {
+        "real": -0.04584885454581038,
+        "imaginary": 0.08625555855757033
+      },
+      "derivative": {
+        "real": 0.05086050272996729,
+        "imaginary": -0.04927690746102385
+      },
+      "refinedZeta": {
+        "real": 0.9613980415627074,
+        "imaginary": 0.09347195998647032
+      },
+      "refinementDelta": 1.1102230246251565E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-0",
+      "s": {
+        "real": 0.05,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 4.025839369053704,
+        "imaginary": 0.6841470001079737
+      },
+      "zetaMinusOne": {
+        "real": 3.0258393690537044,
+        "imaginary": 0.6841470001079737
+      },
+      "b": 0,
+      "selected": {
+        "real": 3.0258393690537044,
+        "imaginary": 0.6841470001079737
+      },
+      "product": {
+        "real": 11.713486138612286,
+        "imaginary": 4.824384854401366
+      },
+      "derivative": {
+        "real": -3.599577018462154,
+        "imaginary": -1.00863950000032
+      },
+      "refinedZeta": {
+        "real": 4.02583936905374,
+        "imaginary": 0.6841470001079846
+      },
+      "refinementDelta": 3.715583248890202E-14,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-1",
+      "s": {
+        "real": 0.2466666666666667,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 3.4004652605866847,
+        "imaginary": 0.5123820946605389
+      },
+      "zetaMinusOne": {
+        "real": 2.4004652605866847,
+        "imaginary": 0.5123820946605389
+      },
+      "b": 0,
+      "selected": {
+        "real": 2.4004652605866847,
+        "imaginary": 0.5123820946605389
+      },
+      "product": {
+        "real": 7.900163316941463,
+        "imaginary": 2.9722929314190623
+      },
+      "derivative": {
+        "real": -2.795868168513969,
+        "imaginary": -0.7513099071197152
+      },
+      "refinedZeta": {
+        "real": 3.4004652605867007,
+        "imaginary": 0.5123820946605434
+      },
+      "refinementDelta": 1.6622600819525912E-14,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-2",
+      "s": {
+        "real": 0.44333333333333336,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 2.9138638090709614,
+        "imaginary": 0.3842021387489271
+      },
+      "zetaMinusOne": {
+        "real": 1.9138638090709614,
+        "imaginary": 0.3842021387489271
+      },
+      "b": 0,
+      "selected": {
+        "real": 1.9138638090709614,
+        "imaginary": 0.3842021387489271
+      },
+      "product": {
+        "real": 5.42912720532332,
+        "imaginary": 1.8548232761873904
+      },
+      "derivative": {
+        "real": -2.179764649316362,
+        "imaginary": -0.5617898175788036
+      },
+      "refinedZeta": {
+        "real": 2.913863809070967,
+        "imaginary": 0.38420213874892917
+      },
+      "refinementDelta": 6.127636591359964E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-3",
+      "s": {
+        "real": 0.6400000000000001,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 2.533761366730192,
+        "imaginary": 0.28818963998911934
+      },
+      "zetaMinusOne": {
+        "real": 1.5337613667301921,
+        "imaginary": 0.28818963998911934
+      },
+      "b": 0,
+      "selected": {
+        "real": 1.5337613667301921,
+        "imaginary": 0.28818963998911934
+      },
+      "product": {
+        "real": 3.8031320282072008,
+        "imaginary": 1.1722179122035068
+      },
+      "derivative": {
+        "real": -1.7063398967379584,
+        "imaginary": -0.4215862059760117
+      },
+      "refinedZeta": {
+        "real": 2.533761366730195,
+        "imaginary": 0.2881896399891202
+      },
+      "refinementDelta": 2.808666774861361E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-4",
+      "s": {
+        "real": 0.8366666666666668,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 2.235598955353951,
+        "imaginary": 0.2160256904150255
+      },
+      "zetaMinusOne": {
+        "real": 1.235598955353951,
+        "imaginary": 0.2160256904150255
+      },
+      "b": 0,
+      "selected": {
+        "real": 1.235598955353951,
+        "imaginary": 0.2160256904150255
+      },
+      "product": {
+        "real": 2.7156366349064376,
+        "imaginary": 0.7498679252278686
+      },
+      "derivative": {
+        "real": -1.341561030321174,
+        "imaginary": -0.3173906277664014
+      },
+      "refinedZeta": {
+        "real": 2.2355989553539533,
+        "imaginary": 0.2160256904150259
+      },
+      "refinementDelta": 2.2541902238434278E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-5",
+      "s": {
+        "real": 1.0333333333333332,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 2.000662523148897,
+        "imaginary": 0.16162410769166685
+      },
+      "zetaMinusOne": {
+        "real": 1.0006625231488968,
+        "imaginary": 0.16162410769166685
+      },
+      "b": 0,
+      "selected": {
+        "real": 1.0006625231488968,
+        "imaginary": 0.16162410769166685
+      },
+      "product": {
+        "real": 1.9758656561964858,
+        "imaginary": 0.4850864825005316
+      },
+      "derivative": {
+        "real": -1.059638164650748,
+        "imaginary": -0.23959912715224901
+      },
+      "refinedZeta": {
+        "real": 2.000662523148898,
+        "imaginary": 0.161624107691667
+      },
+      "refinementDelta": 1.3394761424494087E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-6",
+      "s": {
+        "real": 1.2300000000000002,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 1.8146683993910253,
+        "imaginary": 0.1205123408139283
+      },
+      "zetaMinusOne": {
+        "real": 0.8146683993910253,
+        "imaginary": 0.1205123408139283
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.8146683993910253,
+        "imaginary": 0.1205123408139283
+      },
+      "product": {
+        "real": 1.463829776068908,
+        "imaginary": 0.31686753240942567
+      },
+      "derivative": {
+        "real": -0.8410166349055646,
+        "imaginary": -0.18125867714969915
+      },
+      "refinedZeta": {
+        "real": 1.814668399391025,
+        "imaginary": 0.12051234081392838
+      },
+      "refinementDelta": 2.3714374201337736E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-7",
+      "s": {
+        "real": 1.4266666666666667,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 1.666693382571993,
+        "imaginary": 0.08938806094399912
+      },
+      "zetaMinusOne": {
+        "real": 0.666693382571993,
+        "imaginary": 0.08938806094399912
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.666693382571993,
+        "imaginary": 0.08938806094399912
+      },
+      "product": {
+        "real": 1.1031832234979506,
+        "imaginary": 0.20857691836861156
+      },
+      "derivative": {
+        "real": -0.6708576083454918,
+        "imaginary": -0.13731689592893045
+      },
+      "refinedZeta": {
+        "real": 1.666693382571993,
+        "imaginary": 0.08938806094399913
+      },
+      "refinementDelta": 1.3877787807814457E-17,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-8",
+      "s": {
+        "real": 1.6233333333333335,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 1.5483655353424373,
+        "imaginary": 0.06580090631946088
+      },
+      "zetaMinusOne": {
+        "real": 0.5483655353424373,
+        "imaginary": 0.06580090631946088
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.5483655353424373,
+        "imaginary": 0.06580090631946088
+      },
+      "product": {
+        "real": 0.8447405364213726,
+        "imaginary": 0.13796680475923834
+      },
+      "derivative": {
+        "real": -0.5378891284329029,
+        "imaginary": -0.10408733309150126
+      },
+      "refinedZeta": {
+        "real": 1.548365535342437,
+        "imaginary": 0.06580090631946091
+      },
+      "refinementDelta": 2.237726045655905E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-9",
+      "s": {
+        "real": 1.82,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 1.4532520701694074,
+        "imaginary": 0.04792346602444055
+      },
+      "zetaMinusOne": {
+        "real": 0.4532520701694074,
+        "imaginary": 0.04792346602444055
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.4532520701694074,
+        "imaginary": 0.04792346602444055
+      },
+      "product": {
+        "real": 0.656392850686465,
+        "imaginary": 0.09136628639498243
+      },
+      "derivative": {
+        "real": -0.43353775758486646,
+        "imaginary": -0.07886796757147613
+      },
+      "refinedZeta": {
+        "real": 1.4532520701694078,
+        "imaginary": 0.04792346602444056
+      },
+      "refinementDelta": 4.441434166503682E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-10",
+      "s": {
+        "real": 2.0166666666666666,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 1.3763961635159108,
+        "imaginary": 0.034385975623145604
+      },
+      "zetaMinusOne": {
+        "real": 0.37639616351591076,
+        "imaginary": 0.034385975623145604
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.37639616351591076,
+        "imaginary": 0.034385975623145604
+      },
+      "product": {
+        "real": 0.5168878401058514,
+        "imaginary": 0.060271474229752875
+      },
+      "derivative": {
+        "real": -0.3512725344211085,
+        "imaginary": -0.059668611755359785
+      },
+      "refinedZeta": {
+        "real": 1.3763961635159112,
+        "imaginary": 0.0343859756231456
+      },
+      "refinementDelta": 4.441434166503682E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-11",
+      "s": {
+        "real": 2.2133333333333334,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 1.3139662732525998,
+        "imaginary": 0.024156576471733145
+      },
+      "zetaMinusOne": {
+        "real": 0.31396627325259985,
+        "imaginary": 0.024156576471733145
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.31396627325259985,
+        "imaginary": 0.024156576471733145
+      },
+      "product": {
+        "real": 0.41195755380589133,
+        "imaginary": 0.039325277050476136
+      },
+      "derivative": {
+        "real": -0.2861094305644492,
+        "imaginary": -0.0450157598974221
+      },
+      "refinedZeta": {
+        "real": 1.3139662732525996,
+        "imaginary": 0.024156576471733145
+      },
+      "refinementDelta": 2.220446049250313E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-12",
+      "s": {
+        "real": 2.41,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 1.2629904336590632,
+        "imaginary": 0.01645422935782884
+      },
+      "zetaMinusOne": {
+        "real": 0.26299043365906316,
+        "imaginary": 0.01645422935782884
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.26299043365906316,
+        "imaginary": 0.01645422935782884
+      },
+      "product": {
+        "real": 0.33188366019148524,
+        "imaginary": 0.02510883918651103
+      },
+      "derivative": {
+        "real": -0.23423704753758862,
+        "imaginary": -0.033812547304978804
+      },
+      "refinedZeta": {
+        "real": 1.2629904336590632,
+        "imaginary": 0.01645422935782884
+      },
+      "refinementDelta": 0,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-13",
+      "s": {
+        "real": 2.6066666666666665,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 1.221154741282444,
+        "imaginary": 0.010685091608528994
+      },
+      "zetaMinusOne": {
+        "real": 0.22115474128244395,
+        "imaginary": 0.010685091608528994
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.22115474128244395,
+        "imaginary": 0.010685091608528994
+      },
+      "product": {
+        "real": 0.269949989691466,
+        "imaginary": 0.015411208949055878
+      },
+      "derivative": {
+        "real": -0.19273384548346148,
+        "imaginary": -0.025237969110823696
+      },
+      "refinedZeta": {
+        "real": 1.221154741282444,
+        "imaginary": 0.010685091608528992
+      },
+      "refinementDelta": 1.734723475976807E-18,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-14",
+      "s": {
+        "real": 2.8033333333333332,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 1.1866503416401364,
+        "imaginary": 0.006395806045097241
+      },
+      "zetaMinusOne": {
+        "real": 0.18665034164013639,
+        "imaginary": 0.006395806045097241
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.18665034164013639,
+        "imaginary": 0.006395806045097241
+      },
+      "product": {
+        "real": 0.2214477853395495,
+        "imaginary": 0.00878336481186014
+      },
+      "derivative": {
+        "real": -0.15935444743309088,
+        "imaginary": -0.018674107381913056
+      },
+      "refinedZeta": {
+        "real": 1.1866503416401362,
+        "imaginary": 0.00639580604509724
+      },
+      "refinementDelta": 2.220462989844635E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-7-15",
+      "s": {
+        "real": 3,
+        "imaginary": 27.5
+      },
+      "zeta": {
+        "real": 1.1580570776031565,
+        "imaginary": 0.003239023771575755
+      },
+      "zetaMinusOne": {
+        "real": 0.15805707760315646,
+        "imaginary": 0.003239023771575755
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.15805707760315646,
+        "imaginary": 0.003239023771575755
+      },
+      "product": {
+        "real": 0.18302862610861384,
+        "imaginary": 0.00426292503482059
+      },
+      "derivative": {
+        "real": -0.13236805999706544,
+        "imaginary": -0.013653377566838522
+      },
+      "refinedZeta": {
+        "real": 1.158057077603156,
+        "imaginary": 0.0032390237715757557
+      },
+      "refinementDelta": 4.440900568822021E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-0",
+      "s": {
+        "real": 0.05,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": -1.108073353586737,
+        "imaginary": -0.6080487719735216
+      },
+      "zetaMinusOne": {
+        "real": -2.108073353586737,
+        "imaginary": -0.6080487719735216
+      },
+      "b": 1,
+      "selected": {
+        "real": -1.108073353586737,
+        "imaginary": -0.6080487719735216
+      },
+      "product": {
+        "real": 1.966176601417187,
+        "imaginary": 1.955574055783516
+      },
+      "derivative": {
+        "real": 3.0230345097334657,
+        "imaginary": -0.09195602826403212
+      },
+      "refinedZeta": {
+        "real": -1.108073353586794,
+        "imaginary": -0.6080487719734591
+      },
+      "refinementDelta": 8.448738861189356E-14,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-1",
+      "s": {
+        "real": 0.2466666666666667,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": -0.5939479348663863,
+        "imaginary": -0.6113158124642699
+      },
+      "zetaMinusOne": {
+        "real": -1.5939479348663863,
+        "imaginary": -0.6113158124642699
+      },
+      "b": 1,
+      "selected": {
+        "real": -0.5939479348663863,
+        "imaginary": -0.6113158124642699
+      },
+      "product": {
+        "real": 0.573015061629581,
+        "imaginary": 1.3374953411929102
+      },
+      "derivative": {
+        "real": 2.245165257974327,
+        "imaginary": 0.048900354617570155
+      },
+      "refinedZeta": {
+        "real": -0.5939479348664103,
+        "imaginary": -0.6113158124642433
+      },
+      "refinementDelta": 3.58476556361086E-14,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-2",
+      "s": {
+        "real": 0.44333333333333336,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": -0.21155030509948894,
+        "imaginary": -0.5921213838718777
+      },
+      "zetaMinusOne": {
+        "real": -1.211550305099489,
+        "imaginary": -0.5921213838718777
+      },
+      "b": 1,
+      "selected": {
+        "real": -0.21155030509948894,
+        "imaginary": -0.5921213838718777
+      },
+      "product": {
+        "real": -0.09430389655117183,
+        "imaginary": 0.8426483026999323
+      },
+      "derivative": {
+        "real": 1.6727515649510225,
+        "imaginary": 0.13916775385633418
+      },
+      "refinedZeta": {
+        "real": -0.21155030509949943,
+        "imaginary": -0.5921213838718666
+      },
+      "refinementDelta": 1.5275252734744304E-14,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-3",
+      "s": {
+        "real": 0.6400000000000001,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": 0.07382881335682905,
+        "imaginary": -0.5589555185393038
+      },
+      "zetaMinusOne": {
+        "real": -0.926171186643171,
+        "imaginary": -0.5589555185393038
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.07382881335682905,
+        "imaginary": -0.5589555185393038
+      },
+      "product": {
+        "real": -0.3808093913806936,
+        "imaginary": 0.4764214732332881
+      },
+      "derivative": {
+        "real": 1.2507430898565517,
+        "imaginary": 0.1930289397183161
+      },
+      "refinedZeta": {
+        "real": 0.0738288133568245,
+        "imaginary": -0.5589555185392993
+      },
+      "refinementDelta": 6.4373790806034785E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-4",
+      "s": {
+        "real": 0.8366666666666668,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": 0.2876107696896269,
+        "imaginary": -0.5178770671717371
+      },
+      "zetaMinusOne": {
+        "real": -0.7123892303103732,
+        "imaginary": -0.5178770671717371
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.2876107696896269,
+        "imaginary": -0.5178770671717371
+      },
+      "product": {
+        "real": -0.4730874715505672,
+        "imaginary": 0.2199830233839973
+      },
+      "derivative": {
+        "real": 0.9389544616259496,
+        "imaginary": 0.22116654504201666
+      },
+      "refinedZeta": {
+        "real": 0.287610769689625,
+        "imaginary": -0.517877067171735
+      },
+      "refinementDelta": 2.830524433501838E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-5",
+      "s": {
+        "real": 1.0333333333333332,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": 0.4484353149854491,
+        "imaginary": -0.4731236609095292
+      },
+      "zetaMinusOne": {
+        "real": -0.5515646850145509,
+        "imaginary": -0.4731236609095292
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.4484353149854491,
+        "imaginary": -0.4731236609095292
+      },
+      "product": {
+        "real": -0.47118708177178525,
+        "imaginary": 0.04879294509546214
+      },
+      "derivative": {
+        "real": 0.7080357375334072,
+        "imaginary": 0.23153485545522556
+      },
+      "refinedZeta": {
+        "real": 0.44843531498544825,
+        "imaginary": -0.47312366090952834
+      },
+      "refinementDelta": 1.1775693440128313E-15,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-6",
+      "s": {
+        "real": 1.2300000000000002,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": 0.5699876750548631,
+        "imaginary": -0.4275844140975255
+      },
+      "zetaMinusOne": {
+        "real": -0.43001232494513686,
+        "imaginary": -0.4275844140975255
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.43001232494513686,
+        "imaginary": -0.4275844140975255
+      },
+      "product": {
+        "real": -0.42793015651953903,
+        "imaginary": -0.059851278064763314
+      },
+      "derivative": {
+        "real": 0.5365366726601131,
+        "imaginary": 0.22998663659629426
+      },
+      "refinedZeta": {
+        "real": 0.5699876750548629,
+        "imaginary": -0.4275844140975252
+      },
+      "refinementDelta": 4.0029660424867215E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-7",
+      "s": {
+        "real": 1.4266666666666667,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": 0.6623307704258052,
+        "imaginary": -0.3831621176694993
+      },
+      "zetaMinusOne": {
+        "real": -0.33766922957419476,
+        "imaginary": -0.3831621176694993
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.33766922957419476,
+        "imaginary": -0.3831621176694993
+      },
+      "product": {
+        "real": -0.3704619293899397,
+        "imaginary": -0.12439800351854574
+      },
+      "derivative": {
+        "real": 0.40876805143774436,
+        "imaginary": 0.22077341823524066
+      },
+      "refinedZeta": {
+        "real": 0.662330770425805,
+        "imaginary": -0.3831621176694992
+      },
+      "refinementDelta": 2.482534153247273E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-8",
+      "s": {
+        "real": 1.6233333333333335,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": 0.7328769385682233,
+        "imaginary": -0.3410478554788652
+      },
+      "zetaMinusOne": {
+        "real": -0.26712306143177666,
+        "imaginary": -0.3410478554788652
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.26712306143177666,
+        "imaginary": -0.3410478554788652
+      },
+      "product": {
+        "real": -0.31208197120982484,
+        "imaginary": -0.15884436097835197
+      },
+      "derivative": {
+        "real": 0.31324365731199433,
+        "imaginary": 0.20693911324332429
+      },
+      "refinedZeta": {
+        "real": 0.7328769385682231,
+        "imaginary": -0.34104785547886507
+      },
+      "refinementDelta": 2.482534153247273E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-9",
+      "s": {
+        "real": 1.82,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": 0.7870970211564893,
+        "imaginary": -0.3019271262671495
+      },
+      "zetaMinusOne": {
+        "real": -0.21290297884351073,
+        "imaginary": -0.3019271262671495
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.21290297884351073,
+        "imaginary": -0.3019271262671495
+      },
+      "product": {
+        "real": -0.2587352900190096,
+        "imaginary": -0.17336475711527566
+      },
+      "derivative": {
+        "real": 0.2415451256561364,
+        "imaginary": 0.19062597228364322
+      },
+      "refinedZeta": {
+        "real": 0.7870970211564888,
+        "imaginary": -0.3019271262671495
+      },
+      "refinementDelta": 4.440892098500626E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-10",
+      "s": {
+        "real": 2.0166666666666666,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": 0.8290380853558912,
+        "imaginary": -0.26613300287156033
+      },
+      "zetaMinusOne": {
+        "real": -0.17096191464410881,
+        "imaginary": -0.26613300287156033
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.17096191464410881,
+        "imaginary": -0.26613300287156033
+      },
+      "product": {
+        "real": -0.2125607136027632,
+        "imaginary": -0.17513578742974423
+      },
+      "derivative": {
+        "real": 0.18749474251105802,
+        "imaginary": 0.17330986916307148
+      },
+      "refinedZeta": {
+        "real": 0.8290380853558912,
+        "imaginary": -0.26613300287156033
+      },
+      "refinementDelta": 0,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-11",
+      "s": {
+        "real": 2.2133333333333334,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": 0.861701675851521,
+        "imaginary": -0.2337587533449779
+      },
+      "zetaMinusOne": {
+        "real": -0.13829832414847898,
+        "imaginary": -0.2337587533449779
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.13829832414847898,
+        "imaginary": -0.2337587533449779
+      },
+      "product": {
+        "real": -0.17381505245159945,
+        "imaginary": -0.1691018656596817
+      },
+      "derivative": {
+        "real": 0.14655247860444973,
+        "imaginary": 0.1559794890446971
+      },
+      "refinedZeta": {
+        "real": 0.861701675851521,
+        "imaginary": -0.2337587533449779
+      },
+      "refinementDelta": 0,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-12",
+      "s": {
+        "real": 2.41,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": 0.8873203872237057,
+        "imaginary": -0.20473972454697578
+      },
+      "zetaMinusOne": {
+        "real": -0.11267961277629435,
+        "imaginary": -0.20473972454697578
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.11267961277629435,
+        "imaginary": -0.20473972454697578
+      },
+      "product": {
+        "real": -0.14190127244845024,
+        "imaginary": -0.158599738783219
+      },
+      "derivative": {
+        "real": 0.1153763082419294,
+        "imaginary": 0.13927155220112256
+      },
+      "refinedZeta": {
+        "real": 0.8873203872237054,
+        "imaginary": -0.20473972454697578
+      },
+      "refinementDelta": 2.220446049250313E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-13",
+      "s": {
+        "real": 2.6066666666666665,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": 0.9075602757864853,
+        "imaginary": -0.17891212797003045
+      },
+      "zetaMinusOne": {
+        "real": -0.09243972421351465,
+        "imaginary": -0.17891212797003045
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.09243972421351465,
+        "imaginary": -0.17891212797003045
+      },
+      "product": {
+        "real": -0.11590417113560855,
+        "imaginary": -0.14583495243402514
+      },
+      "derivative": {
+        "real": 0.09150144326951977,
+        "imaginary": 0.12357195676724435
+      },
+      "refinedZeta": {
+        "real": 0.9075602757864855,
+        "imaginary": -0.17891212797003048
+      },
+      "refinementDelta": 1.1443916996305594E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-14",
+      "s": {
+        "real": 2.8033333333333332,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": 0.9236691538990982,
+        "imaginary": -0.156054622281932
+      },
+      "zetaMinusOne": {
+        "real": -0.0763308461009018,
+        "imaginary": -0.156054622281932
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.0763308461009018,
+        "imaginary": -0.156054622281932
+      },
+      "product": {
+        "real": -0.09485749316997871,
+        "imaginary": -0.132231059568459
+      },
+      "derivative": {
+        "real": 0.07310618610598366,
+        "imaginary": 0.10909075604716849
+      },
+      "refinedZeta": {
+        "real": 0.9236691538990983,
+        "imaginary": -0.15605462228193204
+      },
+      "refinementDelta": 1.1443916996305594E-16,
+      "insideView": true
+    },
+    {
+      "id": "grid-8-15",
+      "s": {
+        "real": 3,
+        "imaginary": 30
+      },
+      "zeta": {
+        "real": 0.9365853681541059,
+        "imaginary": -0.13591719880903091
+      },
+      "zetaMinusOne": {
+        "real": -0.06341463184589413,
+        "imaginary": -0.13591719880903091
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.06341463184589413,
+        "imaginary": -0.13591719880903091
+      },
+      "product": {
+        "real": -0.07786670124583747,
+        "imaginary": -0.11867892056103113
+      },
+      "derivative": {
+        "real": 0.058840894917998175,
+        "imaginary": 0.09591722328462138
+      },
+      "refinedZeta": {
+        "real": 0.9365853681541058,
+        "imaginary": -0.135917198809031
+      },
+      "refinementDelta": 1.3877787807814457E-16,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-2--1E-07--1E-07",
+      "s": {
+        "real": 0.9999999,
+        "imaginary": 18.129440467308775
+      },
+      "zeta": {
+        "real": 1.8247449721241196,
+        "imaginary": -0.21603516322221136
+      },
+      "zetaMinusOne": {
+        "real": 0.8247449721241196,
+        "imaginary": -0.21603516322221136
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.8247449721241196,
+        "imaginary": -0.21603516322221136
+      },
+      "product": {
+        "real": 1.4582780494196868,
+        "imaginary": -0.572382992561276
+      },
+      "derivative": {
+        "real": -0.7355587765145788,
+        "imaginary": 0.20711307037422305
+      },
+      "refinedZeta": {
+        "real": 1.8247449721241193,
+        "imaginary": -0.21603516322221153
+      },
+      "refinementDelta": 2.7755575615628914E-16,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-2--1E-07-0",
+      "s": {
+        "real": 0.9999999,
+        "imaginary": 18.129440567308777
+      },
+      "zeta": {
+        "real": 1.8247449514128098,
+        "imaginary": -0.21603523677808986
+      },
+      "zetaMinusOne": {
+        "real": 0.8247449514128098,
+        "imaginary": -0.21603523677808986
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.8247449514128098,
+        "imaginary": -0.21603523677808986
+      },
+      "product": {
+        "real": 1.4582779627639626,
+        "imaginary": -0.5723831784980911
+      },
+      "derivative": {
+        "real": -0.7355587581596666,
+        "imaginary": 0.2071131409614074
+      },
+      "refinedZeta": {
+        "real": 1.8247449514128093,
+        "imaginary": -0.21603523677809014
+      },
+      "refinementDelta": 5.23691153334427E-16,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-2--1E-07-1E-07",
+      "s": {
+        "real": 0.9999999,
+        "imaginary": 18.129440667308778
+      },
+      "zeta": {
+        "real": 1.8247449307014902,
+        "imaginary": -0.21603531033396323
+      },
+      "zetaMinusOne": {
+        "real": 0.8247449307014902,
+        "imaginary": -0.21603531033396323
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.8247449307014902,
+        "imaginary": -0.21603531033396323
+      },
+      "product": {
+        "real": 1.4582778761082045,
+        "imaginary": -0.5723833644348821
+      },
+      "derivative": {
+        "real": -0.7355587398047437,
+        "imaginary": 0.20711321154858067
+      },
+      "refinedZeta": {
+        "real": 1.8247449307014894,
+        "imaginary": -0.21603531033396292
+      },
+      "refinementDelta": 9.39188966358397E-16,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-2-0--1E-07",
+      "s": {
+        "real": 1,
+        "imaginary": 18.129440467308775
+      },
+      "zeta": {
+        "real": 1.8247448985682453,
+        "imaginary": -0.2160351425109053
+      },
+      "zetaMinusOne": {
+        "real": 0.8247448985682453,
+        "imaginary": -0.2160351425109053
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.8247448985682453,
+        "imaginary": -0.2160351425109053
+      },
+      "product": {
+        "real": 1.4582778634828832,
+        "imaginary": -0.5723829059055714
+      },
+      "derivative": {
+        "real": -0.7355587059274017,
+        "imaginary": 0.20711305201931365
+      },
+      "refinedZeta": {
+        "real": 1.8247448985682453,
+        "imaginary": -0.21603514251090547
+      },
+      "refinementDelta": 1.6653345369377348E-16,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-2-0-0",
+      "s": {
+        "real": 1,
+        "imaginary": 18.129440567308777
+      },
+      "zeta": {
+        "real": 1.8247448778569373,
+        "imaginary": -0.21603521606677684
+      },
+      "zetaMinusOne": {
+        "real": 0.8247448778569373,
+        "imaginary": -0.21603521606677684
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.8247448778569373,
+        "imaginary": -0.21603521606677684
+      },
+      "product": {
+        "real": 1.4582777768271729,
+        "imaginary": -0.5723830918423587
+      },
+      "derivative": {
+        "real": -0.7355586875724908,
+        "imaginary": 0.20711312260649103
+      },
+      "refinedZeta": {
+        "real": 1.8247448778569366,
+        "imaginary": -0.21603521606677706
+      },
+      "refinementDelta": 7.021666937153402E-16,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-2-0-1E-07",
+      "s": {
+        "real": 1,
+        "imaginary": 18.129440667308778
+      },
+      "zeta": {
+        "real": 1.82474485714562,
+        "imaginary": -0.2160352896226431
+      },
+      "zetaMinusOne": {
+        "real": 0.82474485714562,
+        "imaginary": -0.2160352896226431
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.82474485714562,
+        "imaginary": -0.2160352896226431
+      },
+      "product": {
+        "real": 1.4582776901714296,
+        "imaginary": -0.5723832777791219
+      },
+      "derivative": {
+        "real": -0.7355586692175694,
+        "imaginary": 0.20711319319365729
+      },
+      "refinedZeta": {
+        "real": 1.8247448571456193,
+        "imaginary": -0.2160352896226428
+      },
+      "refinementDelta": 7.327682229021408E-16,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-2-1E-07--1E-07",
+      "s": {
+        "real": 1.0000001,
+        "imaginary": 18.129440467308775
+      },
+      "zeta": {
+        "real": 1.8247448250123788,
+        "imaginary": -0.216035121799601
+      },
+      "zetaMinusOne": {
+        "real": 0.8247448250123788,
+        "imaginary": -0.216035121799601
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.8247448250123788,
+        "imaginary": -0.216035121799601
+      },
+      "product": {
+        "real": 1.4582776775461097,
+        "imaginary": -0.5723828192498808
+      },
+      "derivative": {
+        "real": -0.7355586353402319,
+        "imaginary": 0.2071130336644056
+      },
+      "refinedZeta": {
+        "real": 1.8247448250123781,
+        "imaginary": -0.2160351217996012
+      },
+      "refinementDelta": 6.938893903907228E-16,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-2-1E-07-0",
+      "s": {
+        "real": 1.0000001,
+        "imaginary": 18.129440567308777
+      },
+      "zeta": {
+        "real": 1.8247448043010723,
+        "imaginary": -0.21603519535546542
+      },
+      "zetaMinusOne": {
+        "real": 0.8247448043010723,
+        "imaginary": -0.21603519535546542
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.8247448043010723,
+        "imaginary": -0.21603519535546542
+      },
+      "product": {
+        "real": 1.4582775908904124,
+        "imaginary": -0.5723830051866399
+      },
+      "derivative": {
+        "real": -0.7355586169853224,
+        "imaginary": 0.20711310425157564
+      },
+      "refinedZeta": {
+        "real": 1.8247448043010719,
+        "imaginary": -0.21603519535546567
+      },
+      "refinementDelta": 5.095246377785861E-16,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-2-1E-07-1E-07",
+      "s": {
+        "real": 1.0000001,
+        "imaginary": 18.129440667308778
+      },
+      "zeta": {
+        "real": 1.8247447835897566,
+        "imaginary": -0.21603526891132455
+      },
+      "zetaMinusOne": {
+        "real": 0.8247447835897566,
+        "imaginary": -0.21603526891132455
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.8247447835897566,
+        "imaginary": -0.21603526891132455
+      },
+      "product": {
+        "real": 1.4582775042346827,
+        "imaginary": -0.572383191123375
+      },
+      "derivative": {
+        "real": -0.735558598630402,
+        "imaginary": 0.2071131748387346
+      },
+      "refinedZeta": {
+        "real": 1.8247447835897557,
+        "imaginary": -0.21603526891132432
+      },
+      "refinementDelta": 9.155133597044475E-16,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-3--1E-07--1E-07",
+      "s": {
+        "real": 0.9999999,
+        "imaginary": 27.19416075096316
+      },
+      "zeta": {
+        "real": 1.90172747296665,
+        "imaginary": 0.4824878444413288
+      },
+      "zetaMinusOne": {
+        "real": 0.90172747296665,
+        "imaginary": 0.4824878444413288
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.90172747296665,
+        "imaginary": 0.4824878444413288
+      },
+      "product": {
+        "real": 1.4820453884358307,
+        "imaginary": 1.35263293385174
+      },
+      "derivative": {
+        "real": -0.9183390318517987,
+        "imaginary": -0.6179663992779248
+      },
+      "refinedZeta": {
+        "real": 1.9017274729666498,
+        "imaginary": 0.48248784444133
+      },
+      "refinementDelta": 1.2412670766236364E-15,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-3--1E-07-0",
+      "s": {
+        "real": 0.9999999,
+        "imaginary": 27.19416085096316
+      },
+      "zeta": {
+        "real": 1.9017275347632865,
+        "imaginary": 0.48248775260742144
+      },
+      "zetaMinusOne": {
+        "real": 0.9017275347632865,
+        "imaginary": 0.48248775260742144
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.9017275347632865,
+        "imaginary": 0.48248775260742144
+      },
+      "product": {
+        "real": 1.4820456502974002,
+        "imaginary": 1.3526327360317587
+      },
+      "derivative": {
+        "real": -0.9183391144765476,
+        "imaginary": -0.6179662940516366
+      },
+      "refinedZeta": {
+        "real": 1.9017275347632863,
+        "imaginary": 0.4824877526074223
+      },
+      "refinementDelta": 9.155133597044475E-16,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-3--1E-07-1E-07",
+      "s": {
+        "real": 0.9999999,
+        "imaginary": 27.194160950963163
+      },
+      "zeta": {
+        "real": 1.9017275965599096,
+        "imaginary": 0.4824876607735015
+      },
+      "zetaMinusOne": {
+        "real": 0.9017275965599096,
+        "imaginary": 0.4824876607735015
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.9017275965599096,
+        "imaginary": 0.4824876607735015
+      },
+      "product": {
+        "real": 1.4820459121589353,
+        "imaginary": 1.3526325382117066
+      },
+      "derivative": {
+        "real": -0.9183391971012766,
+        "imaginary": -0.617966188825325
+      },
+      "refinedZeta": {
+        "real": 1.9017275965599096,
+        "imaginary": 0.482487660773502
+      },
+      "refinementDelta": 4.996003610813204E-16,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-3-0--1E-07",
+      "s": {
+        "real": 1,
+        "imaginary": 27.19416075096316
+      },
+      "zeta": {
+        "real": 1.9017273811327522,
+        "imaginary": 0.482487782644693
+      },
+      "zetaMinusOne": {
+        "real": 0.9017273811327522,
+        "imaginary": 0.482487782644693
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.9017273811327522,
+        "imaginary": 0.482487782644693
+      },
+      "product": {
+        "real": 1.4820451906158914,
+        "imaginary": 1.3526326719901882
+      },
+      "derivative": {
+        "real": -0.9183389266255204,
+        "imaginary": -0.617966316653178
+      },
+      "refinedZeta": {
+        "real": 1.9017273811327522,
+        "imaginary": 0.4824877826446943
+      },
+      "refinementDelta": 1.27675647831893E-15,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-3-0-0",
+      "s": {
+        "real": 1,
+        "imaginary": 27.19416085096316
+      },
+      "zeta": {
+        "real": 1.9017274429293802,
+        "imaginary": 0.4824876908107963
+      },
+      "zetaMinusOne": {
+        "real": 0.9017274429293802,
+        "imaginary": 0.4824876908107963
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.9017274429293802,
+        "imaginary": 0.4824876908107963
+      },
+      "product": {
+        "real": 1.4820454524774045,
+        "imaginary": 1.3526324741702378
+      },
+      "derivative": {
+        "real": -0.9183390092502582,
+        "imaginary": -0.6179662114269029
+      },
+      "refinedZeta": {
+        "real": 1.9017274429293805,
+        "imaginary": 0.48248769081079707
+      },
+      "refinementDelta": 8.082545620880531E-16,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-3-0-1E-07",
+      "s": {
+        "real": 1,
+        "imaginary": 27.194160950963163
+      },
+      "zeta": {
+        "real": 1.9017275047259958,
+        "imaginary": 0.4824875989768869
+      },
+      "zetaMinusOne": {
+        "real": 0.9017275047259958,
+        "imaginary": 0.4824875989768869
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.9017275047259958,
+        "imaginary": 0.4824875989768869
+      },
+      "product": {
+        "real": 1.4820457143388854,
+        "imaginary": 1.3526322763502172
+      },
+      "derivative": {
+        "real": -0.9183390918749764,
+        "imaginary": -0.6179661062006045
+      },
+      "refinedZeta": {
+        "real": 1.9017275047259952,
+        "imaginary": 0.4824875989768874
+      },
+      "refinementDelta": 8.326672684688674E-16,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-3-1E-07--1E-07",
+      "s": {
+        "real": 1.0000001,
+        "imaginary": 27.19416075096316
+      },
+      "zeta": {
+        "real": 1.9017272892988653,
+        "imaginary": 0.4824877208480654
+      },
+      "zetaMinusOne": {
+        "real": 0.9017272892988653,
+        "imaginary": 0.4824877208480654
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.9017272892988653,
+        "imaginary": 0.4824877208480654
+      },
+      "product": {
+        "real": 1.482044992795984,
+        "imaginary": 1.3526324101286926
+      },
+      "derivative": {
+        "real": -0.9183388213992563,
+        "imaginary": -0.6179662340284431
+      },
+      "refinedZeta": {
+        "real": 1.9017272892988646,
+        "imaginary": 0.4824877208480666
+      },
+      "refinementDelta": 1.3911054626160788E-15,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-3-1E-07-0",
+      "s": {
+        "real": 1.0000001,
+        "imaginary": 27.19416085096316
+      },
+      "zeta": {
+        "real": 1.901727351095485,
+        "imaginary": 0.4824876290141793
+      },
+      "zetaMinusOne": {
+        "real": 0.9017273510954851,
+        "imaginary": 0.4824876290141793
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.9017273510954851,
+        "imaginary": 0.4824876290141793
+      },
+      "product": {
+        "real": 1.4820452546574412,
+        "imaginary": 1.3526322123087733
+      },
+      "derivative": {
+        "real": -0.918338904023982,
+        "imaginary": -0.6179661288021807
+      },
+      "refinedZeta": {
+        "real": 1.9017273510954844,
+        "imaginary": 0.48248762901418
+      },
+      "refinementDelta": 9.820925191391734E-16,
+      "insideView": true
+    },
+    {
+      "id": "eta-removable-3-1E-07-1E-07",
+      "s": {
+        "real": 1.0000001,
+        "imaginary": 27.194160950963163
+      },
+      "zeta": {
+        "real": 1.9017274128920918,
+        "imaginary": 0.48248753718028037
+      },
+      "zetaMinusOne": {
+        "real": 0.9017274128920918,
+        "imaginary": 0.48248753718028037
+      },
+      "b": 0,
+      "selected": {
+        "real": 0.9017274128920918,
+        "imaginary": 0.48248753718028037
+      },
+      "product": {
+        "real": 1.4820455165188644,
+        "imaginary": 1.3526320144887827
+      },
+      "derivative": {
+        "real": -0.9183389866486887,
+        "imaginary": -0.617966023575895
+      },
+      "refinedZeta": {
+        "real": 1.9017274128920914,
+        "imaginary": 0.4824875371802808
+      },
+      "refinementDelta": 6.280369834735101E-16,
+      "insideView": true
+    },
+    {
+      "id": "reference-zero",
+      "s": {
+        "real": 0.5,
+        "imaginary": 14.134725141734695
+      },
+      "zeta": {
+        "real": -5.931415468613966E-15,
+        "imaginary": -2.766342427466276E-15
+      },
+      "zetaMinusOne": {
+        "real": -1.000000000000006,
+        "imaginary": -2.766342427466276E-15
+      },
+      "b": 1,
+      "selected": {
+        "real": -5.931415468613966E-15,
+        "imaginary": -2.766342427466276E-15
+      },
+      "product": {
+        "real": 5.931415468613994E-15,
+        "imaginary": 2.766342427466309E-15
+      },
+      "derivative": {
+        "real": 0.7832965118670483,
+        "imaginary": 0.12469982974818614
+      },
+      "refinedZeta": {
+        "real": -1.95350441465085E-15,
+        "imaginary": 2.609049349622591E-15
+      },
+      "refinementDelta": 6.687197702359079E-15,
+      "insideView": true
+    },
+    {
+      "id": "reference-one",
+      "s": {
+        "real": 1.4077880406528867,
+        "imaginary": 23.327987754559103
+      },
+      "zeta": {
+        "real": 0.9999999999999999,
+        "imaginary": -4.1285680631787315E-16
+      },
+      "zetaMinusOne": {
+        "real": -1.1102230246251565E-16,
+        "imaginary": -4.1285680631787315E-16
+      },
+      "b": 0,
+      "selected": {
+        "real": -1.1102230246251565E-16,
+        "imaginary": -4.1285680631787315E-16
+      },
+      "product": {
+        "real": -1.110223024625158E-16,
+        "imaginary": -4.1285680631787305E-16
+      },
+      "derivative": {
+        "real": -0.18858916738132578,
+        "imaginary": 0.07438268737813183
+      },
+      "refinedZeta": {
+        "real": 0.9999999999999998,
+        "imaginary": -4.3625146095391775E-16
+      },
+      "refinementDelta": 1.1346039621655706E-16,
+      "insideView": true
+    },
+    {
+      "id": "reference-seam",
+      "s": {
+        "real": 1.3869097447840162,
+        "imaginary": 14.134725141734695
+      },
+      "zeta": {
+        "real": 0.49999999999999956,
+        "imaginary": 0.049035899745250626
+      },
+      "zetaMinusOne": {
+        "real": -0.5000000000000004,
+        "imaginary": 0.049035899745250626
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.49999999999999956,
+        "imaginary": 0.049035899745250626
+      },
+      "product": {
+        "real": -0.25240451946382625,
+        "imaginary": -4.163336342344337E-17
+      },
+      "derivative": {
+        "real": 0.3892825915672842,
+        "imaginary": 0.01056007838430155
+      },
+      "refinedZeta": {
+        "real": 0.4999999999999996,
+        "imaginary": 0.04903589974525074
+      },
+      "refinementDelta": 1.2412670766236366E-16,
+      "insideView": true
+    }
+  ],
+  "controls": [
+    {
+      "input": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "b": 1,
+      "selected": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "product": {
+        "real": -0,
+        "imaginary": 0
+      }
+    },
+    {
+      "input": {
+        "real": 1,
+        "imaginary": 0
+      },
+      "b": 0,
+      "selected": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "product": {
+        "real": 0,
+        "imaginary": 0
+      }
+    },
+    {
+      "input": {
+        "real": 0.5,
+        "imaginary": 2
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.5,
+        "imaginary": 2
+      },
+      "product": {
+        "real": -4.25,
+        "imaginary": 0
+      }
+    },
+    {
+      "input": {
+        "real": 0.4999999,
+        "imaginary": 0.7
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.4999999,
+        "imaginary": 0.7
+      },
+      "product": {
+        "real": -0.73999999999999,
+        "imaginary": -1.4000000003733248E-07
+      }
+    },
+    {
+      "input": {
+        "real": 0.5000001,
+        "imaginary": 0.7
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.49999990000000005,
+        "imaginary": 0.7
+      },
+      "product": {
+        "real": -0.73999999999999,
+        "imaginary": 1.3999999992631018E-07
+      }
+    },
+    {
+      "input": {
+        "real": -2,
+        "imaginary": 4
+      },
+      "b": 1,
+      "selected": {
+        "real": -2,
+        "imaginary": 4
+      },
+      "product": {
+        "real": -10,
+        "imaginary": -20
+      }
+    },
+    {
+      "input": {
+        "real": 3,
+        "imaginary": -5
+      },
+      "b": 0,
+      "selected": {
+        "real": 2,
+        "imaginary": -5
+      },
+      "product": {
+        "real": -19,
+        "imaginary": -25
+      }
+    }
+  ],
+  "selectorProbes": [
+    {
+      "id": "seam-left",
+      "zeta": {
+        "real": 0.49999999,
+        "imaginary": 0.3
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.49999999,
+        "imaginary": 0.3
+      },
+      "product": {
+        "real": -0.33999999999999986,
+        "imaginary": -5.999999969086289E-09
+      }
+    },
+    {
+      "id": "seam-right",
+      "zeta": {
+        "real": 0.50000001,
+        "imaginary": 0.3
+      },
+      "b": 0,
+      "selected": {
+        "real": -0.49999998999999995,
+        "imaginary": 0.3
+      },
+      "product": {
+        "real": -0.33999999999999986,
+        "imaginary": 6.000000052353016E-09
+      }
+    },
+    {
+      "id": "seam-tie-complex",
+      "zeta": {
+        "real": 0.5,
+        "imaginary": 0.3
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.5,
+        "imaginary": 0.3
+      },
+      "product": {
+        "real": -0.33999999999999997,
+        "imaginary": 0
+      }
+    },
+    {
+      "id": "seam-tie-real",
+      "zeta": {
+        "real": 0.5,
+        "imaginary": 0
+      },
+      "b": 1,
+      "selected": {
+        "real": 0.5,
+        "imaginary": 0
+      },
+      "product": {
+        "real": -0.25,
+        "imaginary": 0
+      }
+    },
+    {
+      "id": "exact-zero",
+      "zeta": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "b": 1,
+      "selected": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "product": {
+        "real": -0,
+        "imaginary": 0
+      }
+    },
+    {
+      "id": "exact-one",
+      "zeta": {
+        "real": 1,
+        "imaginary": 0
+      },
+      "b": 0,
+      "selected": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "product": {
+        "real": 0,
+        "imaginary": 0
+      }
+    },
+    {
+      "id": "tiny-positive",
+      "zeta": {
+        "real": 1E-18,
+        "imaginary": 0
+      },
+      "b": 1,
+      "selected": {
+        "real": 1E-18,
+        "imaginary": 0
+      },
+      "product": {
+        "real": -1E-18,
+        "imaginary": 0
+      }
+    },
+    {
+      "id": "tiny-negative",
+      "zeta": {
+        "real": -1E-18,
+        "imaginary": 0
+      },
+      "b": 1,
+      "selected": {
+        "real": -1E-18,
+        "imaginary": 0
+      },
+      "product": {
+        "real": 1E-18,
+        "imaginary": -0
+      }
+    }
+  ],
+  "markers": [
+    {
+      "label": "Z1",
+      "kind": "zeta-zero",
+      "s": {
+        "real": 0.5000000000000082,
+        "imaginary": 14.134725141734702
+      },
+      "zeta": {
+        "real": -2.8865908020668354E-16,
+        "imaginary": 2.4020690935744536E-15
+      },
+      "target": 0,
+      "residual": 2.4193511516295783E-15,
+      "refinedResidual": 5.737204079686935E-15,
+      "refinementMovement": 0,
+      "iterations": 8
+    },
+    {
+      "label": "Z2",
+      "kind": "zeta-zero",
+      "s": {
+        "real": 0.5000000000003519,
+        "imaginary": 21.02203963877188
+      },
+      "zeta": {
+        "real": 4.65862589745082E-13,
+        "imaginary": 2.810407802378372E-13
+      },
+      "target": 0,
+      "residual": 5.440697314505622E-13,
+      "refinedResidual": 5.424351331635688E-13,
+      "refinementMovement": 0,
+      "iterations": 7
+    },
+    {
+      "label": "Z3",
+      "kind": "zeta-zero",
+      "s": {
+        "real": 0.5000000000000051,
+        "imaginary": 25.01085758014568
+      },
+      "zeta": {
+        "real": 1.0093778833522506E-14,
+        "imaginary": -1.24595505168605E-14
+      },
+      "target": 0,
+      "residual": 1.6035110545994554E-14,
+      "refinedResidual": 2.0539274207439603E-14,
+      "refinementMovement": 0,
+      "iterations": 7
+    },
+    {
+      "label": "O1",
+      "kind": "zeta-one",
+      "s": {
+        "real": 1.4077880406528904,
+        "imaginary": 23.327987754559103
+      },
+      "zeta": {
+        "real": 0.9999999999999992,
+        "imaginary": -1.4222331119669471E-16
+      },
+      "target": 1,
+      "residual": 7.900627195404104E-16,
+      "refinedResidual": 9.050977552194696E-16,
+      "refinementMovement": 0,
+      "iterations": 10
+    }
+  ],
+  "limitations": [
+    "Floating-point Euler-Maclaurin values; refinement agreement is not a certified error bound.",
+    "Newton markers are empirical candidates, not exhaustive root counts or rigorous enclosures.",
+    "Sampled seam interpolation is display geometry, not a certified contour.",
+    "Colors and the selector do not prove RH or distinguish prime numbers."
+  ]
+}

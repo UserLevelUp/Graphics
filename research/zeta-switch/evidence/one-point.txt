@@ -1,0 +1,9 @@
+Zeta switching laboratory: sigma [0.05, 3], t [23.1, 23.6].
+One shared 256x256 Euler-Maclaurin grid; N=64, 10 corrections.
+Z1=zeta; Z0=zeta-1; b=1 when Re(zeta)<=1/2 (tie1), else0; W=Zb. G=zeta(zeta-1).
+W has a jump at the output seam Re(zeta)=1/2. G is holomorphic in this view.
+Dashed white input line sigma=1/2 differs from the cyan output seam. Palette rotation affects colors only.
+Pixels: b1=0; b0=65536; invalid=0; seam cells=0.
+165 numeric samples; N64/96 max value difference=6.411E-014; derivative difference=2.757E-013.
+O1: zeta=1, s=1.407788040656302+23.32798775455874i, residual=6.970E-013, refinement movement=0.000E+000
+Elapsed 95 ms. Marker search is empirical and not exhaustive. Refinement is not a rigorous enclosure. No RH result is claimed.

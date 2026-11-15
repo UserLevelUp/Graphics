@@ -178,3 +178,51 @@ host = "gap_hydrogen_review"
 context = ["research/gap-bound/graph.riemann.gap.contract.current.md"]
 inputs = ["research/gap-bound/graph.riemann.gap.contract.current.md", "research/gap-bound/run-review.py", "research/gap-bound/verify-review.py", "research/gap-bound/steer-review.py"]
 tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "hydrogen"]}]
+
+[warp.dispatch.hosts.switch_carbon_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/zeta-switch/run-review.py", "carbon", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.riemann.switch.carbon"]
+workspace = "research/zeta-switch/carbon"
+host = "switch_carbon_review"
+context = ["research/zeta-switch/graph.riemann.switch.contract.current.md"]
+inputs = ["research/zeta-switch/graph.riemann.switch.contract.current.md", "research/zeta-switch/run-review.py", "research/zeta-switch/verify-review.py", "research/zeta-switch/steer-review.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "carbon"]}]
+
+[warp.dispatch.hosts.switch_codex_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/zeta-switch/run-review.py", "codex", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.riemann.switch.codex"]
+workspace = "research/zeta-switch/codex"
+host = "switch_codex_review"
+context = ["research/zeta-switch/graph.riemann.switch.contract.current.md"]
+inputs = ["research/zeta-switch/graph.riemann.switch.contract.current.md", "research/zeta-switch/run-review.py", "research/zeta-switch/verify-review.py", "research/zeta-switch/steer-review.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "codex"]}]
+
+[warp.dispatch.hosts.switch_copilot_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/zeta-switch/run-review.py", "copilot", "{prompt_file}"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[warp.dispatch.assignments."graph.riemann.switch.copilot"]
+workspace = "research/zeta-switch/copilot"
+host = "switch_copilot_review"
+context = ["research/zeta-switch/graph.riemann.switch.contract.current.md"]
+inputs = ["research/zeta-switch/graph.riemann.switch.contract.current.md", "research/zeta-switch/run-review.py", "research/zeta-switch/verify-review.py", "research/zeta-switch/steer-review.py"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "copilot"]}]

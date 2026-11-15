@@ -1,0 +1,570 @@
+{
+  "schema": "graph-watch-review-audit-v2",
+  "traceId": "graph.riemann.switch.review.audit",
+  "auditedAtUtc": "2026-11-15T09:19:32.589321+00:00",
+  "status": "passed",
+  "issues": [],
+  "statusMeaning": "recorded protocol, ACK, timestamp, artifact, and configured-check audit only",
+  "runner": {
+    "path": "research/zeta-switch/run-review.py",
+    "sha256": "b1cfa69b62600141eb0f46dfd72ca8f22042578b29edbfcb0633513cc4c190ee"
+  },
+  "reviews": [
+    {
+      "provider": "carbon",
+      "runId": "20261115T090814Z-4524e922",
+      "finalState": "complete",
+      "verdict": "ACCEPT",
+      "verdictMeaning": "review of supplied mathematical contract and validation plan only",
+      "report": {
+        "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/review.md",
+        "sha256": "58da39a878f7d5222539fe86224a11a3abcefd682c911887be0f4568f7140cd1",
+        "text": "publish: graph.riemann.switch.carbon.response\n\nSTATUS: COMPLETE\nACK: e554d7facabf4f33a475143e66db2191\nCLOCK: 2026-11-15T01:10:49.2879368-08:00\n\nVERDICT\nACCEPT\n\nREASONING\nThis review accepts the mathematical contract and validation plan only; it does not certify implementation code or executed tests, and global RH remains open.\n\n- **Two-state & product identities**: On $\\mathbb{C} \\setminus \\{1\\}$, $Z_b(s) = \\zeta(s) - 1 + b$ ($b \\in \\{0,1\\}$) continues the $n=1$ Dirichlet-term switch analytically with $Z_0' = Z_1' = \\zeta'$, $\\operatorname{Im}(Z_0) = \\operatorname{Im}(Z_1)$, and zero sets $\\zeta^{-1}(0)$ ($b=1$) and $\\zeta^{-1}(1)$ ($b=0$). $G(s) = \\zeta(s)(\\zeta(s)-1)$ is holomorphic away from $s=1$ and shares the exact zero union $\\zeta^{-1}(\\{0,1\\})$ without switching jumps. Local differences cancel $-1+b$ on fixed branches and add $b(s)-b(c)$ across branches.\n- **Selector equivalence**: Because $|z|^2 - |z-1|^2 = 2\\operatorname{Re}(z) - 1$, $\\operatorname{Re}(z) \\le 1/2$ (tie to $b=1$) equals $|z| \\le |z-1|$, giving $W^{-1}(0) = \\zeta^{-1}(0) \\cup \\zeta^{-1}(1)$ with no spurious zeros.\n- **Seam discontinuity (including $\\zeta'(s_0)=0$)**: On $\\operatorname{Re}(\\zeta(s)) = 1/2$ (distinct from $\\operatorname{Re}(s)=1/2$), $|W(s)| = \\sqrt{1/4 + \\operatorname{Im}(\\zeta(s))^2} \\ge 1/2$ is continuous, while $W$ jumps by $-1$ from $b=1$ to $b=0$. Even if $\\zeta'(s_0)=0$ at a seam point $s_0 \\neq 1$, $\\zeta$ is non-constant holomorphic (open mapping theorem): $\\zeta(s) - \\zeta(s_0) = c_m(s-s_0)^m + O(|s-s_0|^{m+1})$ ($m \\ge 2, c_m \\neq 0$) creates $m$ alternating sectors of $\\operatorname{Re}(\\zeta) \\le 1/2$ and $\\operatorname{Re}(\\zeta) > 1/2$ meeting at $s_0$. Approaching $s_0$ from any $b=0$ sector yields limit $\\zeta(s_0)-1 \\neq \\zeta(s_0) = W(s_0)$, so the $-1$ discontinuity persists at every seam point, prohibiting cross-seam linear interpolation and ordinary argument-principle counting.\n- **No off-line zero constraint**: $W(s)$ and $G(s)$ post-compose $\\zeta(s)$ with fixed maps on $\\mathbb{C}$ independent of $\\operatorname{Re}(s)$. Any hypothetical off-critical-line zero ($\\zeta(s_*)=0, \\operatorname{Re}(s_*) \\neq 1/2$) maps to $z=0 \\implies b=1, W(s_*)=0, G(s_*)=0$ identically to an on-line zero. The switch leaves Euler's product intact and adds zero constraint excluding off-line $\\zeta$ zeros.\n\nTESTS\nNo tests were executed in this text-only audit. The validation plan appropriately specifies independent `mpmath` checks of $Z_b, W, G$, derivatives, selector/tie boundaries, seam/non-analytic metadata, removable $\\eta$-quotient singularities near $1 + 2\\pi i k/\\log 2$, UI/export invariance, corrupted-export negative controls, and non-circular distinction of the approximate 1-point candidate near $1.40778804065+23.32798775456i$ from $\\zeta$ zeros.\n"
+      },
+      "events": {
+        "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/events.jsonl",
+        "sha256": "adde4896c5551e0bd9678954a54fc7c0dc7c215c365145ab27548cfde2b5868e"
+      },
+      "turns": [
+        {
+          "turn": 1,
+          "responseStatus": "CHECKPOINT",
+          "acknowledgedToken": "initial",
+          "startedAt": "2026-11-15T09:08:14.703818+00:00",
+          "deadlineUtc": "2026-11-15T09:11:14.692035+00:00",
+          "acknowledgedAt": "2026-11-15T09:09:04.322257+00:00",
+          "elapsedSeconds": 49.618439,
+          "reportedClock": "2026-11-15T01:08:47.8966204-08:00",
+          "reportedClockUtc": "2026-11-15T09:08:47.896620+00:00",
+          "clockExecutionEvidence": "provider-reported only; a timestamp does not prove a clock command executed",
+          "checks": {
+            "eventOrder": true,
+            "deadlineIs180SecondsFromQueue": true,
+            "sameDeliveredDeadline": true,
+            "ackBeforeAbsoluteDeadline": true,
+            "ackWithin180SecondsOfStart": true,
+            "reportedClockWithinTurn": true,
+            "matchingTokens": true,
+            "matchingStatus": true,
+            "deadlinePresentInPrompt": true,
+            "tokenPresentInPrompt": true,
+            "budgetPresentInPrompt": true,
+            "checkpointSections": true,
+            "initialToken": true
+          },
+          "passed": true,
+          "response": {
+            "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-01/stdout.txt",
+            "sha256": "fecfcf6e99835e7840c066e3dd141b1d2c4095d43dd1a630709d2a11e1a2ab6e"
+          },
+          "prompt": {
+            "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-01/prompt.txt",
+            "sha256": "1bfd25a707a51769927d2f9e97ed1df71a2643497d5610383062ad6e8e011843"
+          }
+        },
+        {
+          "turn": 2,
+          "responseStatus": "COMPLETE",
+          "acknowledgedToken": "e554d7facabf4f33a475143e66db2191",
+          "startedAt": "2026-11-15T09:10:21.412004+00:00",
+          "deadlineUtc": "2026-11-15T09:13:21.389241+00:00",
+          "acknowledgedAt": "2026-11-15T09:11:05.782765+00:00",
+          "elapsedSeconds": 44.370761,
+          "reportedClock": "2026-11-15T01:10:49.2879368-08:00",
+          "reportedClockUtc": "2026-11-15T09:10:49.287936+00:00",
+          "clockExecutionEvidence": "provider-reported only; a timestamp does not prove a clock command executed",
+          "checks": {
+            "eventOrder": true,
+            "deadlineIs180SecondsFromQueue": true,
+            "sameDeliveredDeadline": true,
+            "ackBeforeAbsoluteDeadline": true,
+            "ackWithin180SecondsOfStart": true,
+            "reportedClockWithinTurn": true,
+            "matchingTokens": true,
+            "matchingStatus": true,
+            "deadlinePresentInPrompt": true,
+            "tokenPresentInPrompt": true,
+            "budgetPresentInPrompt": true,
+            "finalSections": true,
+            "continuationToken": true,
+            "continuationAuthorization": true,
+            "handoffBeforeContinuation": true
+          },
+          "passed": true,
+          "response": {
+            "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-02/stdout.txt",
+            "sha256": "69671b4e5d704503e6754753b489922fbbb07e55051ff2e294da7df784918e2e"
+          },
+          "prompt": {
+            "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/turn-02/prompt.txt",
+            "sha256": "f415597b9cd040d2a2e959ee5f8428855241a36b15742f5dc2c887fb01ea1e07"
+          },
+          "steering": {
+            "path": "research/zeta-switch/carbon/runs/20261115T090814Z-4524e922/steering-after-01.json",
+            "sha256": "da1943b20149ca9c226440a6cb8ba35c9f00f49b0f81b8a8458c3cab4cafe2e2"
+          }
+        }
+      ],
+      "configuredProtocolCheckPassed": true,
+      "dispatchAttempt": 1
+    },
+    {
+      "provider": "codex",
+      "runId": "20261115T090814Z-610d0e8a",
+      "finalState": "complete",
+      "verdict": "ACCEPT",
+      "verdictMeaning": "review of supplied mathematical contract and validation plan only",
+      "report": {
+        "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/review.md",
+        "sha256": "b91cd2085bcfa74442508d32469b5834c0c3fbe57d7d6b32483afabd23e5bc66",
+        "text": "publish: graph.riemann.switch.codex.response\n\nSTATUS: COMPLETE\nACK: 5b20438ab4f04d09ab861ee4243fb076\nCLOCK: 2026-11-15T01:10:36.0088635-08:00\n\nVERDICT\n\nACCEPT the mathematical contract and validation plan within the stated scope. This does not certify implementation, executed tests, or RH.\n\nREASONING\n\nFor exact finite zeta values away from the pole,\n\\[\nW(s)=0 \\iff \\zeta(s)\\in\\{0,1\\}\\iff G(s)=0.\n\\]\nAt ζ=0 the selector chooses b=1; at ζ=1 it chooses b=0. Conversely, either selected branch can vanish only at its corresponding level. This zero-union identity is the strongest justified conclusion.\n\nEvery hypothetical off-critical-line nontrivial zeta zero therefore survives in both W and G. The missing RH premise is an independent global argument excluding ζ(s)=0 throughout \\(0<\\Re(s)<1\\), \\(\\Re(s)\\ne1/2\\). Switching, finite plots, and reference markers provide no such argument. Trivial zeros must also be excluded from any RH formulation.\n\nThe output seam \\(\\Re\\zeta(s)=1/2\\) is distinct from the input critical line \\(\\Re(s)=1/2\\). Neither zeta zeros nor zeta 1-points lie on the seam. W is discontinuous there, despite its continuous magnitude.\n\nThe supplied selector has no marker or known-zero input. Separate Newton overlays do not introduce circular reasoning into this contract. Adding the distinguished integer 1 changes an additive series term, not standard primality or Euler’s product.\n\nTESTS\n\nThe proposed independent comparisons, refinement, marker residuals, export negative controls, and seam checks appropriately test numerical consistency. None establishes global zero exclusion.\n\nEnsure nonfinite selector return −1 is treated as invalid data, outside the mathematical two-state definition. Test exact tie behavior separately from floating-point classifications near the seam.\n\nThe stated off-line 1-point is a numerical candidate against “all W/G zeros lie on the critical line,” not against RH; it remains unverified in this review. Only clock checks were executed.\n"
+      },
+      "events": {
+        "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/events.jsonl",
+        "sha256": "52623ba6ae8694a5b807ace26cf4c8ea3cfb1b56768a9d3624ced3e8f2f57003"
+      },
+      "turns": [
+        {
+          "turn": 1,
+          "responseStatus": "CHECKPOINT",
+          "acknowledgedToken": "initial",
+          "startedAt": "2026-11-15T09:08:14.704704+00:00",
+          "deadlineUtc": "2026-11-15T09:11:14.692041+00:00",
+          "acknowledgedAt": "2026-11-15T09:08:58.799854+00:00",
+          "elapsedSeconds": 44.09515,
+          "reportedClock": "2026-11-15T01:08:41.7236458-08:00",
+          "reportedClockUtc": "2026-11-15T09:08:41.723645+00:00",
+          "clockExecutionEvidence": "provider-reported only; a timestamp does not prove a clock command executed",
+          "checks": {
+            "eventOrder": true,
+            "deadlineIs180SecondsFromQueue": true,
+            "sameDeliveredDeadline": true,
+            "ackBeforeAbsoluteDeadline": true,
+            "ackWithin180SecondsOfStart": true,
+            "reportedClockWithinTurn": true,
+            "matchingTokens": true,
+            "matchingStatus": true,
+            "deadlinePresentInPrompt": true,
+            "tokenPresentInPrompt": true,
+            "budgetPresentInPrompt": true,
+            "checkpointSections": true,
+            "initialToken": true
+          },
+          "passed": true,
+          "response": {
+            "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-01/stdout.txt",
+            "sha256": "69af75f4a65764ee754865f900c4555444714377ca647d8a663308a2a4137450"
+          },
+          "prompt": {
+            "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-01/prompt.txt",
+            "sha256": "80eb13d0ac5437e8e774347391a97481dfdc6a99099696f0f84b18d0d273caf5"
+          }
+        },
+        {
+          "turn": 2,
+          "responseStatus": "COMPLETE",
+          "acknowledgedToken": "5b20438ab4f04d09ab861ee4243fb076",
+          "startedAt": "2026-11-15T09:10:20.875671+00:00",
+          "deadlineUtc": "2026-11-15T09:13:20.856736+00:00",
+          "acknowledgedAt": "2026-11-15T09:10:51.438557+00:00",
+          "elapsedSeconds": 30.562886,
+          "reportedClock": "2026-11-15T01:10:36.0088635-08:00",
+          "reportedClockUtc": "2026-11-15T09:10:36.008863+00:00",
+          "clockExecutionEvidence": "provider-reported only; a timestamp does not prove a clock command executed",
+          "checks": {
+            "eventOrder": true,
+            "deadlineIs180SecondsFromQueue": true,
+            "sameDeliveredDeadline": true,
+            "ackBeforeAbsoluteDeadline": true,
+            "ackWithin180SecondsOfStart": true,
+            "reportedClockWithinTurn": true,
+            "matchingTokens": true,
+            "matchingStatus": true,
+            "deadlinePresentInPrompt": true,
+            "tokenPresentInPrompt": true,
+            "budgetPresentInPrompt": true,
+            "finalSections": true,
+            "continuationToken": true,
+            "continuationAuthorization": true,
+            "handoffBeforeContinuation": true
+          },
+          "passed": true,
+          "response": {
+            "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-02/stdout.txt",
+            "sha256": "cc5cfbb300944adccd9a10463a350488fea012960c7e0cf8ec6d6d27c1e737b2"
+          },
+          "prompt": {
+            "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/turn-02/prompt.txt",
+            "sha256": "71813a920f228c77b5d3ede7e819cc1fc3470487d6965c0701fd4d6c3c162186"
+          },
+          "steering": {
+            "path": "research/zeta-switch/codex/runs/20261115T090814Z-610d0e8a/steering-after-01.json",
+            "sha256": "a2efac3b6351a1f10675eaeccafa7b67085cceb9005190d5a61fbeb4443ae0b5"
+          }
+        }
+      ],
+      "configuredProtocolCheckPassed": true,
+      "dispatchAttempt": 1
+    },
+    {
+      "provider": "copilot",
+      "runId": "20261115T090814Z-e8b1a903",
+      "finalState": "complete",
+      "verdict": "REVISE",
+      "verdictMeaning": "review of supplied mathematical contract and validation plan only",
+      "report": {
+        "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/review.md",
+        "sha256": "b6cb8c99373f85d68f3c4eed0ec76297d9f4e79f921501727763991420f991d5",
+        "text": "publish: graph.riemann.switch.copilot.response\n\nSTATUS: COMPLETE\nACK: 17ebab1e931f490eb033c0de2ce1af25\nCLOCK: 2026-11-15T01:10:38.1345511-08:00\n\nVERDICT: REVISE\n\nREASONING\nThe plan covers the principal mathematical and rendering risks: independent high-precision values and derivatives at fixed samples, eta removable sites and neighborhoods, separate zero/one-point residuals, palette and marker independence, higher-resolution exports, seam metadata, no interpolation-based zero certification, and targeted corrupted-export controls. Its scope also appropriately avoids claiming global RH results or rigorous error bounds.\n\nA material gap remains: no quantitative pass tolerances are specified for values, derivatives, identities, selector decisions, or marker residuals. Nor are refinement stopping criteria and sampling limits defined. Comparing higher-resolution exports is useful, but without thresholds and a clear statement that rendered candidates are exploratory—not exhaustive or certified—it cannot establish reliable refinement behavior. Specify those criteria and keep completeness claims explicitly out of scope.\n\nTESTS\nNo tests executed; this is a review of the supplied mathematical contract and validation plan, not a code or test certification.\n\n"
+      },
+      "events": {
+        "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/events.jsonl",
+        "sha256": "67d272efbcbe61dca43ad38dab8fa9c238a6ad6ae0ce1866b8c40a20c23efdb9"
+      },
+      "turns": [
+        {
+          "turn": 1,
+          "responseStatus": "CHECKPOINT",
+          "acknowledgedToken": "initial",
+          "startedAt": "2026-11-15T09:08:14.703819+00:00",
+          "deadlineUtc": "2026-11-15T09:11:14.692426+00:00",
+          "acknowledgedAt": "2026-11-15T09:08:30.996826+00:00",
+          "elapsedSeconds": 16.293007,
+          "reportedClock": "2026-11-15T01:08:25.8544824-08:00",
+          "reportedClockUtc": "2026-11-15T09:08:25.854482+00:00",
+          "clockExecutionEvidence": "provider-reported only; a timestamp does not prove a clock command executed",
+          "checks": {
+            "eventOrder": true,
+            "deadlineIs180SecondsFromQueue": true,
+            "sameDeliveredDeadline": true,
+            "ackBeforeAbsoluteDeadline": true,
+            "ackWithin180SecondsOfStart": true,
+            "reportedClockWithinTurn": true,
+            "matchingTokens": true,
+            "matchingStatus": true,
+            "deadlinePresentInPrompt": true,
+            "tokenPresentInPrompt": true,
+            "budgetPresentInPrompt": true,
+            "checkpointSections": true,
+            "initialToken": true
+          },
+          "passed": true,
+          "response": {
+            "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-01/stdout.txt",
+            "sha256": "79f546fcd55c4d32cee6e2db5b627b5e2baca03d6de7a8ec38fa4fcbea6aa6a8"
+          },
+          "prompt": {
+            "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-01/prompt.txt",
+            "sha256": "379fd2e88b0bceb6773c9ec1c0519a4fb46c603df8794e8c8b04c34be6d57823"
+          }
+        },
+        {
+          "turn": 2,
+          "responseStatus": "COMPLETE",
+          "acknowledgedToken": "17ebab1e931f490eb033c0de2ce1af25",
+          "startedAt": "2026-11-15T09:10:21.078636+00:00",
+          "deadlineUtc": "2026-11-15T09:13:21.065990+00:00",
+          "acknowledgedAt": "2026-11-15T09:10:43.640324+00:00",
+          "elapsedSeconds": 22.561688,
+          "reportedClock": "2026-11-15T01:10:38.1345511-08:00",
+          "reportedClockUtc": "2026-11-15T09:10:38.134551+00:00",
+          "clockExecutionEvidence": "provider-reported only; a timestamp does not prove a clock command executed",
+          "checks": {
+            "eventOrder": true,
+            "deadlineIs180SecondsFromQueue": true,
+            "sameDeliveredDeadline": true,
+            "ackBeforeAbsoluteDeadline": true,
+            "ackWithin180SecondsOfStart": true,
+            "reportedClockWithinTurn": true,
+            "matchingTokens": true,
+            "matchingStatus": true,
+            "deadlinePresentInPrompt": true,
+            "tokenPresentInPrompt": true,
+            "budgetPresentInPrompt": true,
+            "finalSections": true,
+            "continuationToken": true,
+            "continuationAuthorization": true,
+            "handoffBeforeContinuation": true
+          },
+          "passed": true,
+          "response": {
+            "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-02/stdout.txt",
+            "sha256": "31c52361114302c42de54e3455e44efaf9f3da810b25a0626a78b9c0f25de758"
+          },
+          "prompt": {
+            "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/turn-02/prompt.txt",
+            "sha256": "481170f7a8b0fc682b625365f326222883a07d79b1a92520b6eb6471889db7e5"
+          },
+          "steering": {
+            "path": "research/zeta-switch/copilot/runs/20261115T090814Z-e8b1a903/steering-after-01.json",
+            "sha256": "5310ec0d9ecba6ef45f8e6274623dc09ea42a513a453e072b78c63d923b9dedc"
+          }
+        }
+      ],
+      "configuredProtocolCheckPassed": true,
+      "dispatchAttempt": 1
+    }
+  ],
+  "dispatchAttempts": [
+    {
+      "warp_id": "graph.riemann.switch",
+      "slice_id": "carbon",
+      "attempt": 1,
+      "state": "produced",
+      "claimed_at_unix": 1794733694,
+      "finished_at_unix": 1794733865,
+      "elapsed_seconds": 171,
+      "host_id": "switch_carbon_review",
+      "test_failures": 0,
+      "input_fingerprints": {
+        "research/zeta-switch/graph.riemann.switch.contract.current.md": "fnv1a64:6c090bebbfa52a8a",
+        "research/zeta-switch/run-review.py": "fnv1a64:1dac4065190c2c31",
+        "research/zeta-switch/steer-review.py": "fnv1a64:005ba32d4842aa74",
+        "research/zeta-switch/verify-review.py": "fnv1a64:85cb14306c32cb3a"
+      },
+      "verification_inputs": {
+        "research/zeta-switch/graph.riemann.switch.contract.current.md": "fnv1a64:6c090bebbfa52a8a",
+        "research/zeta-switch/run-review.py": "fnv1a64:1dac4065190c2c31",
+        "research/zeta-switch/steer-review.py": "fnv1a64:005ba32d4842aa74",
+        "research/zeta-switch/verify-review.py": "fnv1a64:85cb14306c32cb3a"
+      },
+      "agentResult": {
+        "elapsed_seconds": 171,
+        "exit_code": 0,
+        "stderr": "\\\\?\\C:\\src\\graph\\.recur\\dispatch\\fnv1a64-625b8be9e964d703\\fnv1a64-cd7f00510a10f0e4.1.agent.stderr.txt",
+        "stderr_fingerprint": "fnv1a64:cbf29ce484222325",
+        "stdout": "\\\\?\\C:\\src\\graph\\.recur\\dispatch\\fnv1a64-625b8be9e964d703\\fnv1a64-cd7f00510a10f0e4.1.agent.stdout.txt",
+        "stdout_fingerprint": "fnv1a64:85a49f74af7e8654",
+        "success": true,
+        "timed_out": false
+      },
+      "testResults": [
+        {
+          "elapsed_seconds": 0,
+          "exit_code": 0,
+          "stderr": "\\\\?\\C:\\src\\graph\\.recur\\dispatch\\fnv1a64-625b8be9e964d703\\fnv1a64-cd7f00510a10f0e4.1.test-0.stderr.txt",
+          "stderr_fingerprint": "fnv1a64:cbf29ce484222325",
+          "stdout": "\\\\?\\C:\\src\\graph\\.recur\\dispatch\\fnv1a64-625b8be9e964d703\\fnv1a64-cd7f00510a10f0e4.1.test-0.stdout.txt",
+          "stdout_fingerprint": "fnv1a64:14991ade06e89b68",
+          "success": true,
+          "timed_out": false,
+          "stdoutArtifact": {
+            "path": ".recur/dispatch/fnv1a64-625b8be9e964d703/fnv1a64-cd7f00510a10f0e4.1.test-0.stdout.txt",
+            "sha256": "be742299e24d237d10d4aeb0867e5e0c5ba0bfbc857aaf09648aea98d1c73226",
+            "text": "Clock-formatted response, checkpoint, coordinator handoff, acknowledgment and final artifact verified.\nClock values are worker observations; mathematical acceptance requires coordinator review.\n"
+          },
+          "stderrArtifact": {
+            "path": ".recur/dispatch/fnv1a64-625b8be9e964d703/fnv1a64-cd7f00510a10f0e4.1.test-0.stderr.txt",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "text": ""
+          }
+        }
+      ],
+      "agentStdoutArtifact": {
+        "path": ".recur/dispatch/fnv1a64-625b8be9e964d703/fnv1a64-cd7f00510a10f0e4.1.agent.stdout.txt",
+        "sha256": "8a5ab765fe799a968d9b4a40767ced7570380b2e8ecb828cbc0d3d199b45bfb7"
+      },
+      "observedRunIdsInAgentOutput": [
+        "20261115T090814Z-4524e922"
+      ]
+    },
+    {
+      "warp_id": "graph.riemann.switch",
+      "slice_id": "codex",
+      "attempt": 1,
+      "state": "produced",
+      "claimed_at_unix": 1794733694,
+      "finished_at_unix": 1794733851,
+      "elapsed_seconds": 156,
+      "host_id": "switch_codex_review",
+      "test_failures": 0,
+      "input_fingerprints": {
+        "research/zeta-switch/graph.riemann.switch.contract.current.md": "fnv1a64:6c090bebbfa52a8a",
+        "research/zeta-switch/run-review.py": "fnv1a64:1dac4065190c2c31",
+        "research/zeta-switch/steer-review.py": "fnv1a64:005ba32d4842aa74",
+        "research/zeta-switch/verify-review.py": "fnv1a64:85cb14306c32cb3a"
+      },
+      "verification_inputs": {
+        "research/zeta-switch/graph.riemann.switch.contract.current.md": "fnv1a64:6c090bebbfa52a8a",
+        "research/zeta-switch/run-review.py": "fnv1a64:1dac4065190c2c31",
+        "research/zeta-switch/steer-review.py": "fnv1a64:005ba32d4842aa74",
+        "research/zeta-switch/verify-review.py": "fnv1a64:85cb14306c32cb3a"
+      },
+      "agentResult": {
+        "elapsed_seconds": 156,
+        "exit_code": 0,
+        "stderr": "\\\\?\\C:\\src\\graph\\.recur\\dispatch\\fnv1a64-625b8be9e964d703\\fnv1a64-2ffb778dfae54384.1.agent.stderr.txt",
+        "stderr_fingerprint": "fnv1a64:cbf29ce484222325",
+        "stdout": "\\\\?\\C:\\src\\graph\\.recur\\dispatch\\fnv1a64-625b8be9e964d703\\fnv1a64-2ffb778dfae54384.1.agent.stdout.txt",
+        "stdout_fingerprint": "fnv1a64:0ff92b8bada342f7",
+        "success": true,
+        "timed_out": false
+      },
+      "testResults": [
+        {
+          "elapsed_seconds": 0,
+          "exit_code": 0,
+          "stderr": "\\\\?\\C:\\src\\graph\\.recur\\dispatch\\fnv1a64-625b8be9e964d703\\fnv1a64-2ffb778dfae54384.1.test-0.stderr.txt",
+          "stderr_fingerprint": "fnv1a64:cbf29ce484222325",
+          "stdout": "\\\\?\\C:\\src\\graph\\.recur\\dispatch\\fnv1a64-625b8be9e964d703\\fnv1a64-2ffb778dfae54384.1.test-0.stdout.txt",
+          "stdout_fingerprint": "fnv1a64:14991ade06e89b68",
+          "success": true,
+          "timed_out": false,
+          "stdoutArtifact": {
+            "path": ".recur/dispatch/fnv1a64-625b8be9e964d703/fnv1a64-2ffb778dfae54384.1.test-0.stdout.txt",
+            "sha256": "be742299e24d237d10d4aeb0867e5e0c5ba0bfbc857aaf09648aea98d1c73226",
+            "text": "Clock-formatted response, checkpoint, coordinator handoff, acknowledgment and final artifact verified.\nClock values are worker observations; mathematical acceptance requires coordinator review.\n"
+          },
+          "stderrArtifact": {
+            "path": ".recur/dispatch/fnv1a64-625b8be9e964d703/fnv1a64-2ffb778dfae54384.1.test-0.stderr.txt",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "text": ""
+          }
+        }
+      ],
+      "agentStdoutArtifact": {
+        "path": ".recur/dispatch/fnv1a64-625b8be9e964d703/fnv1a64-2ffb778dfae54384.1.agent.stdout.txt",
+        "sha256": "890591e7712bb45bcb87d47e0466010bcb49c2e79a9e65c4795804e002c9758f"
+      },
+      "observedRunIdsInAgentOutput": [
+        "20261115T090814Z-610d0e8a"
+      ]
+    },
+    {
+      "warp_id": "graph.riemann.switch",
+      "slice_id": "copilot",
+      "attempt": 1,
+      "state": "produced",
+      "claimed_at_unix": 1794733694,
+      "finished_at_unix": 1794733843,
+      "elapsed_seconds": 149,
+      "host_id": "switch_copilot_review",
+      "test_failures": 0,
+      "input_fingerprints": {
+        "research/zeta-switch/graph.riemann.switch.contract.current.md": "fnv1a64:6c090bebbfa52a8a",
+        "research/zeta-switch/run-review.py": "fnv1a64:1dac4065190c2c31",
+        "research/zeta-switch/steer-review.py": "fnv1a64:005ba32d4842aa74",
+        "research/zeta-switch/verify-review.py": "fnv1a64:85cb14306c32cb3a"
+      },
+      "verification_inputs": {
+        "research/zeta-switch/graph.riemann.switch.contract.current.md": "fnv1a64:6c090bebbfa52a8a",
+        "research/zeta-switch/run-review.py": "fnv1a64:1dac4065190c2c31",
+        "research/zeta-switch/steer-review.py": "fnv1a64:005ba32d4842aa74",
+        "research/zeta-switch/verify-review.py": "fnv1a64:85cb14306c32cb3a"
+      },
+      "agentResult": {
+        "elapsed_seconds": 149,
+        "exit_code": 0,
+        "stderr": "\\\\?\\C:\\src\\graph\\.recur\\dispatch\\fnv1a64-625b8be9e964d703\\fnv1a64-a113d2745d706ce3.1.agent.stderr.txt",
+        "stderr_fingerprint": "fnv1a64:cbf29ce484222325",
+        "stdout": "\\\\?\\C:\\src\\graph\\.recur\\dispatch\\fnv1a64-625b8be9e964d703\\fnv1a64-a113d2745d706ce3.1.agent.stdout.txt",
+        "stdout_fingerprint": "fnv1a64:9987ed96a8e214c3",
+        "success": true,
+        "timed_out": false
+      },
+      "testResults": [
+        {
+          "elapsed_seconds": 0,
+          "exit_code": 0,
+          "stderr": "\\\\?\\C:\\src\\graph\\.recur\\dispatch\\fnv1a64-625b8be9e964d703\\fnv1a64-a113d2745d706ce3.1.test-0.stderr.txt",
+          "stderr_fingerprint": "fnv1a64:cbf29ce484222325",
+          "stdout": "\\\\?\\C:\\src\\graph\\.recur\\dispatch\\fnv1a64-625b8be9e964d703\\fnv1a64-a113d2745d706ce3.1.test-0.stdout.txt",
+          "stdout_fingerprint": "fnv1a64:14991ade06e89b68",
+          "success": true,
+          "timed_out": false,
+          "stdoutArtifact": {
+            "path": ".recur/dispatch/fnv1a64-625b8be9e964d703/fnv1a64-a113d2745d706ce3.1.test-0.stdout.txt",
+            "sha256": "be742299e24d237d10d4aeb0867e5e0c5ba0bfbc857aaf09648aea98d1c73226",
+            "text": "Clock-formatted response, checkpoint, coordinator handoff, acknowledgment and final artifact verified.\nClock values are worker observations; mathematical acceptance requires coordinator review.\n"
+          },
+          "stderrArtifact": {
+            "path": ".recur/dispatch/fnv1a64-625b8be9e964d703/fnv1a64-a113d2745d706ce3.1.test-0.stderr.txt",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "text": ""
+          }
+        }
+      ],
+      "agentStdoutArtifact": {
+        "path": ".recur/dispatch/fnv1a64-625b8be9e964d703/fnv1a64-a113d2745d706ce3.1.agent.stdout.txt",
+        "sha256": "04b55987d98f6aa7436a3075f67eb2fce097af7802a85f9e19d5cee55da65e12"
+      },
+      "observedRunIdsInAgentOutput": [
+        "20261115T090814Z-e8b1a903"
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "C:\\src\\graph\\research\\zeta-switch\\verify-review.py",
+        "carbon"
+      ],
+      "cwd": "C:\\src\\graph",
+      "exitCode": 0,
+      "stdout": "Clock-formatted response, checkpoint, coordinator handoff, acknowledgment and final artifact verified.\nClock values are worker observations; mathematical acceptance requires coordinator review.\n",
+      "stderr": "",
+      "stdoutSha256": "73a0816315bf644b2c73106163688fd3f0e3126b12b5ddadf8e27fc65307b2bd"
+    },
+    {
+      "argv": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "C:\\src\\graph\\research\\zeta-switch\\verify-review.py",
+        "codex"
+      ],
+      "cwd": "C:\\src\\graph",
+      "exitCode": 0,
+      "stdout": "Clock-formatted response, checkpoint, coordinator handoff, acknowledgment and final artifact verified.\nClock values are worker observations; mathematical acceptance requires coordinator review.\n",
+      "stderr": "",
+      "stdoutSha256": "73a0816315bf644b2c73106163688fd3f0e3126b12b5ddadf8e27fc65307b2bd"
+    },
+    {
+      "argv": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "C:\\src\\graph\\research\\zeta-switch\\verify-review.py",
+        "copilot"
+      ],
+      "cwd": "C:\\src\\graph",
+      "exitCode": 0,
+      "stdout": "Clock-formatted response, checkpoint, coordinator handoff, acknowledgment and final artifact verified.\nClock values are worker observations; mathematical acceptance requires coordinator review.\n",
+      "stderr": "",
+      "stdoutSha256": "73a0816315bf644b2c73106163688fd3f0e3126b12b5ddadf8e27fc65307b2bd"
+    },
+    {
+      "argv": [
+        "recur",
+        "warp",
+        "dispatch",
+        "graph.riemann.switch",
+        "-d",
+        "C:\\src\\graph",
+        "--json"
+      ],
+      "cwd": "C:\\src\\graph",
+      "exitCode": 0,
+      "stderr": "",
+      "stdoutSha256": "72bc526bfd0779a7129614c20d3ce430c65f32ca956ced6b8e1b22ec27d810dd",
+      "stdoutCapture": "parsed and compacted into dispatchAttempts; complete raw stdout SHA-256 retained"
+    }
+  ],
+  "providerVerdicts": {
+    "carbon": "ACCEPT",
+    "codex": "ACCEPT",
+    "copilot": "REVISE"
+  },
+  "providersRequestingRevision": [
+    "copilot"
+  ],
+  "coordinatorAcceptance": "not decided by this audit; any resolution must be recorded separately",
+  "limits": [
+    "Clock command execution is provider-reported. A plausible CLOCK timestamp does not prove execution.",
+    "Elapsed response time is derived from recorded runner start/ACK events, not independently attested wall-clock instrumentation.",
+    "Produced means configured protocol checks succeeded, not that a reviewer accepted the plan or that mathematics/code/tests are certified.",
+    "Each reviewer verdict is preserved verbatim in its report; REVISE is never converted to ACCEPT by this audit.",
+    "Compact attempt records retain actual configured test results and stdout/stderr artifact hashes and text.",
+    "These reviews and this audit do not establish the Riemann Hypothesis."
+  ]
+}

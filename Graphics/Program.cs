@@ -14,6 +14,20 @@ namespace Graphics
         [STAThread]
         static void Main(string[] args)
         {
+            // produces: graph.riemann.switch.export
+            if ((args.Length == 2 || args.Length == 7) && args[0] == "--zeta-switch")
+            {
+                double Parse(int i) => double.Parse(args[i], System.Globalization.CultureInfo.InvariantCulture);
+                using var frame = args.Length == 2 ? ZetaSwitchExperiment.Compute(10, 30, 256, 0)
+                    : ZetaSwitchExperiment.Compute(Parse(2), Parse(3), int.Parse(args[4]), Parse(5), bool.Parse(args[6]));
+                ZetaSwitchExperiment.Export(args[1], frame);
+                return;
+            }
+            if (args.Length == 2 && args[0] == "--verify-switch")
+            {
+                System.IO.File.WriteAllText(args[1], ZetaSwitchExperiment.Verify());
+                return;
+            }
             if (args.Length == 8 && args[0] == "--zero-path")
             {
                 double Parse(int i) => double.Parse(args[i], System.Globalization.CultureInfo.InvariantCulture);
@@ -68,7 +82,8 @@ namespace Graphics
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(args.Length == 1 && args[0] == "--zero-lab" ? (Form)new ZeroMotionForm()
+            Application.Run(args.Length == 1 && args[0] == "--switch-lab" ? (Form)new ZetaSwitchForm()
+                : args.Length == 1 && args[0] == "--zero-lab" ? (Form)new ZeroMotionForm()
                 : args.Length == 1 && args[0] == "--prime-lab" ? (Form)new PrimePhaseForm() : new GraphForm());
         }
     }

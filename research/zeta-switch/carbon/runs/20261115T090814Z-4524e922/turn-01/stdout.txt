@@ -1,0 +1,16 @@
+STATUS: CHECKPOINT
+ACK: initial
+CLOCK: 2026-11-15T01:08:47.8966204-08:00
+
+FINDINGS
+- **Two-state zeta identities**: For $b \in \{0,1\}$, $Z_b(s) = \zeta(s) - 1 + b$ correctly represents switching the $n=1$ Dirichlet term for $\text{Re}(s) > 1$ and continues meromorphically to $\mathbb{C} \setminus \{1\}$. Fixed branches differ by $-1 \in \mathbb{R}$, so $Z_0'(s) = Z_1'(s) = \zeta'(s)$ and $\text{Im}(Z_0) = \text{Im}(Z_1)$; their zero sets are $\{s : \zeta(s)=0\}$ and $\{s : \zeta(s)=1\}$. Local differences satisfy $Z_b(s) - Z_b(c) = \zeta(s) - \zeta(c)$, whereas $W(s) - W(c) = \zeta(s) - \zeta(c) + b(s) - b(c)$.
+- **Selector equivalence**: Since $|z|^2 - |z-1|^2 = 2\text{Re}(z) - 1$, the condition $\text{Re}(z) \le 1/2$ (tie to $b=1$) is algebraically identical to $|z| \le |z-1|$. Under $W(s) = \zeta(s) - 1 + b(s)$, zeros require $z=0$ ($\text{Re}(z)=0 \le 1/2 \Rightarrow b=1$) or $z=1$ ($\text{Re}(z)=1 > 1/2 \Rightarrow b=0$), so $W^{-1}(0) = Z_1^{-1}(0) \cup Z_0^{-1}(0)$ without spurious zeros.
+- **Seam discontinuity**: Across the preimage seam $\text{Re}(\zeta(s)) = 1/2$ (distinct from $\text{Re}(s) = 1/2$), crossing from $b=1$ to $b=0$ yields jump $(z_0 - 1) - z_0 = -1$. On the seam $z_0 = 1/2 + iy$, $|z_0| = |z_0 - 1| = \sqrt{1/4 + y^2} \ge 1/2$, making $|W(s)|$ continuous and $\ge 1/2$. Linear interpolation across $[-1/2+iy, 1/2+iy]$ at $y=0$ passes through $0$ (false zero), and non-holomorphic jumps invalidate ordinary argument-principle contour integrals intersecting the seam.
+- **Analytic product & RH boundary**: $G(s) = \zeta(s)(\zeta(s)-1)$ is meromorphic on $\mathbb{C} \setminus \{1\}$ (double pole at $s=1$), smooth across the seam, and shares the exact zero union (adding multiplicities, as $\{z=0\} \cap \{z=1\} = \emptyset$). Because $W$ and $G$ are post-compositions of $\zeta(s)$, they preserve off-critical-line zeros, leave Euler's product untouched, and yield no RH constraint or prime predictor.
+- **Removable eta singularity**: At $s_k = 1 + 2\pi i k / \log 2$ ($k \in \mathbb{Z} \setminus \{0\}$), $1 - 2^{1-s_k} = 0$ forces $\eta(s_k) = 0$, creating a $0/0$ removable singularity properly flagged for numerical avoidance.
+
+UNCERTAINTY
+- Whether $s=1$ pole behavior ($G$ order 2 vs. $Z_b$ order 1; undefined selector limit at $s=1$, though outside default $[0.05,3]\times[10,30]$) or reference 1-point precision ($1.40778804065+23.32798775456i$ being an approximate root) needs explicit qualification in the contract text.
+
+NEXT
+- Await coordinator steering and next ACK token before issuing final `STATUS: COMPLETE` verdict (`ACCEPT` or `REVISE`) with `REASONING` and `TESTS`.

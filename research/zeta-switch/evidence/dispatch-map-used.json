@@ -1,0 +1,62 @@
+{
+  "bubble_uuid": "01a1de76-4d5f-7fa6-8044-19080797fd95",
+  "goal": "Implement and validate a two-state zeta unit-term switch, distinguish zeros from 1-points and switching artifacts, and retain the open RH obligation",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "The switched term is the additive n=1 term, never an Euler product factor.",
+    "Markers and known zeros cannot influence the predetermined selector.",
+    "Numerical observations and helper review do not prove RH; graph.riemann remains open."
+  ],
+  "required_slices": [
+    {
+      "slice_id": "carbon",
+      "slice_uuid": "01a1de76-a6d8-76f1-8c23-4aafe4c77e4f",
+      "contract_hash": "contract:graph.riemann.switch.carbon:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "codex",
+      "slice_uuid": "01a1de76-a6d8-76f1-8c23-4ab0e772373b",
+      "contract_hash": "contract:graph.riemann.switch.codex:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "copilot",
+      "slice_uuid": "01a1de76-a6d8-76f1-8c23-4ab1f1c4e33f",
+      "contract_hash": "contract:graph.riemann.switch.copilot:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "acceptance",
+      "slice_uuid": "01a1de76-a6d8-76f1-8c23-4ab2878321c7",
+      "contract_hash": "contract:graph.riemann.switch.acceptance:v1",
+      "depends_on": [
+        "carbon",
+        "codex",
+        "copilot"
+      ],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.riemann.switch"
+}
