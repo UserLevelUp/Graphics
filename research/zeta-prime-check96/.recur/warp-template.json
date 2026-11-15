@@ -1,0 +1,8 @@
+{
+  "schema":"warp-bubble-map-v1",
+  "warp_id":"{warp}",
+  "goal":"{goal}",
+  "intelligence_baseline":"host-current",
+  "invariants":["Preserve previous accepted videos and certificates.","Use actual zeta values; separate ground-truth primality from phase observations.","Report failure of a quadrant-only classifier without claiming all phase methods impossible or progress on RH."],
+  "required_slices":[{"slice_id":"comparison","contract_hash":"contract:{warp}.comparison:v1","depends_on":[],"evidence_gates":["review"],"evidence_mode":"declared","intelligence_tick":0}]
+}

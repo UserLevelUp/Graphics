@@ -1,0 +1,500 @@
+{
+  "schema": "graph-zeta-prime-review-v1",
+  "traceId": "graph.primes.zeta_check96.review",
+  "status": "passed",
+  "reviewer": "prime_formula_review independent agent",
+  "reviewedAtUtc": "2026-11-15T14:04:24.992737+00:00",
+  "inputs": [
+    {
+      "path": "research/zeta-prime-check96/check_phase.py",
+      "sha256": "54682a7f6206c31a43c73258bb5cb70665153e75583b155061395adf37e99980"
+    },
+    {
+      "path": "research/zeta-prime-check96/plot_phase.py",
+      "sha256": "b85f43d3e75386d175211edc7b9c2e02ae90520feffa5be038c213b2f5ff3220"
+    },
+    {
+      "path": "research/zeta-prime-check96/README.md",
+      "sha256": "695860daa17e5a479cad8944d2bb22a5a131fe9aefca73331b6680d1489ae7b6"
+    },
+    {
+      "path": "research/zeta-prime-check96/requirements.txt",
+      "sha256": "da7307a6ad1353fe40658179b53ed0b92cb6c20130e1f57aec5ea82a122a5918"
+    },
+    {
+      "path": "research/zeta-prime-check96/evidence/comparison.json",
+      "sha256": "8966d9314c1f3da6885adca2d128a049646af4a8a49faf13f6a94086c4f3d350"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/zeta-prime-96-97/zeta-phase-96-97.png",
+      "sha256": "63ac0633902504625c05dd037c28917ff3db7b0a2a0d861af6fdb350ed2932db"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/zeta-prime-96-97/zeta-shift-96-97.png",
+      "sha256": "bb272d46087ee10984f4c902ad99f70881b29dfdc63b4e519d413ddd4c62f511"
+    }
+  ],
+  "scope": "Read-only mathematical/source review, separate same-library90digit numerical recomputation and visual inspection of two static PNGs. Only this review file was written.",
+  "checks": [
+    {
+      "id": "fixed_mapping",
+      "status": "passed",
+      "detail": "Input s=1/2+i*n, secondary zeta(s+1)=zeta(3/2+i*n), zero target and unrotated half-open phase sectors are explicit. The superseded output translation is not used."
+    },
+    {
+      "id": "exact_labels",
+      "status": "passed",
+      "detail": "Independently tested every proper divisor for every n=0..100; matched all 101 labels and reviewed the small-factor proof for 96/97."
+    },
+    {
+      "id": "independent_90_digit_values",
+      "status": "passed",
+      "detail": "Recomputed 202 zeta values, both vertical lines at all 101 integer heights, in a separate 90-digit run of the same mpmath library. Reported 35-digit values and phases agree to the declared tolerance."
+    },
+    {
+      "id": "all_sector_and_pair_members",
+      "status": "passed",
+      "detail": "Independently reproduced every prime/composite member list in four original sectors and six occupied sector pairs."
+    },
+    {
+      "id": "pair_filter_result",
+      "status": "passed",
+      "detail": "Pair(I,I) contains 7 primes and 28 composites. Relative to original sector I, five composite matches and three prime matches are removed; 18 of 25 primes are missed."
+    },
+    {
+      "id": "finite_classifier_limit",
+      "status": "passed",
+      "detail": "Enumerated all 64 binary assignments of the six occupied sector pairs; the minimum error count is 25 among integers2..100. Every occupied pair contains both classes."
+    },
+    {
+      "id": "method_routing_corrected",
+      "status": "passed",
+      "detail": "Inspected mpmath1.3.0 source and instrumented all16 accepted method-comparison cases. Default calls reach libmp.mpc_zeta (Borwein coefficients); explicit Euler-Maclaurin calls reach _hurwitz. Explicit borwein was correctly replaced because its spelling does not activate the fast path."
+    },
+    {
+      "id": "hardy_and_real_axis_scope",
+      "status": "passed",
+      "detail": "Confirmed the HardyZ reality relation numerically on the critical line. Direct positive real zeta96/zeta97 have phase0. Neither gives an integer-height primality criterion."
+    },
+    {
+      "id": "formal_equation_scope",
+      "status": "passed",
+      "detail": "The integer-remainder indicator, prime-count inversion and next-prime search are exact classical identities without a supplied prior-prime list. They are not efficient shortcuts. The vonMangoldt identity and prime-power caveat are correct and coefficient extraction is explicitly future work."
+    },
+    {
+      "id": "plot_visual_review",
+      "status": "passed",
+      "detail": "Inspected both full PNGs. Requested95..99 labels, phase tables, sector colors and bar counts agree with the report; mathematical glyphs and scope labels are readable. No clipping or material overlap observed."
+    },
+    {
+      "id": "claim_limits",
+      "status": "passed",
+      "detail": "README and figure state numerical validation rather than interval certification, separate exact labels from zeta evaluations, and make no new prime algorithm, speedup, novelty or RH claim."
+    },
+    {
+      "id": "hash_binding",
+      "status": "passed",
+      "detail": "Verified all sourceInput and libraryImplementationInput fingerprints in comparison.json, and bound current core, report, README, plot source, requirements and inspected PNGs."
+    }
+  ],
+  "independentPrecisionDigits": 90,
+  "numericValidation": {
+    "zetaValuesRecomputed": 202,
+    "maximumDifferenceFromRoundedReport": "4.684106129888160552e-33",
+    "reportComparisonAbsoluteTolerance": "1e-31",
+    "maximumHardyImaginaryResidual": "1.8512472260797514736e-89",
+    "methodRoutes": [
+      {
+        "n": 49,
+        "sigma": ".5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      },
+      {
+        "n": 49,
+        "sigma": "1.5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      },
+      {
+        "n": 91,
+        "sigma": ".5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      },
+      {
+        "n": 91,
+        "sigma": "1.5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      },
+      {
+        "n": 95,
+        "sigma": ".5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      },
+      {
+        "n": 95,
+        "sigma": "1.5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      },
+      {
+        "n": 96,
+        "sigma": ".5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      },
+      {
+        "n": 96,
+        "sigma": "1.5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      },
+      {
+        "n": 97,
+        "sigma": ".5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      },
+      {
+        "n": 97,
+        "sigma": "1.5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      },
+      {
+        "n": 98,
+        "sigma": ".5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      },
+      {
+        "n": 98,
+        "sigma": "1.5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      },
+      {
+        "n": 99,
+        "sigma": ".5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      },
+      {
+        "n": 99,
+        "sigma": "1.5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      },
+      {
+        "n": 100,
+        "sigma": ".5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      },
+      {
+        "n": 100,
+        "sigma": "1.5",
+        "defaultRoute": [
+          "libmp.mpc_zeta"
+        ],
+        "explicitRoute": [
+          "_hurwitz/Euler-Maclaurin"
+        ],
+        "difference": "0.0"
+      }
+    ]
+  },
+  "independentExamples": [
+    {
+      "n": 49,
+      "classification": "composite",
+      "original": {
+        "real": "0.66641831144925627046363209184549632",
+        "imaginary": "-0.20366296564540797460234048645765641",
+        "phaseDegrees": "-16.993587102518830684424398445295786"
+      },
+      "secondary": {
+        "real": "0.63493173854223588092856659135755219",
+        "imaginary": "-0.060869963600754294487893527062730422",
+        "phaseDegrees": "-5.4761256732439643406994183387986096"
+      },
+      "pair": [
+        4,
+        4
+      ]
+    },
+    {
+      "n": 91,
+      "classification": "composite",
+      "original": {
+        "real": "4.0851065052670120113688435049966884",
+        "imaginary": "-1.3992834116870390748354745525509825",
+        "phaseDegrees": "-18.908019561483795185350562611758486"
+      },
+      "secondary": {
+        "real": "1.7630609659900440530635047353807236",
+        "imaginary": "-0.20426142426990634649492469599672384",
+        "phaseDegrees": "-6.6086041889839629333824785912160891"
+      },
+      "pair": [
+        4,
+        4
+      ]
+    },
+    {
+      "n": 95,
+      "classification": "composite",
+      "original": {
+        "real": "0.34352978927376124454472304565505985",
+        "imaginary": "0.21724540333483000135577203692211787",
+        "phaseDegrees": "32.30892269433511608544952728730579"
+      },
+      "secondary": {
+        "real": "0.58703588589913822958311521635984573",
+        "imaginary": "-0.0062573760480701595844664435330720386",
+        "phaseDegrees": "-0.6107082539758434787020309777563201"
+      },
+      "pair": [
+        1,
+        4
+      ]
+    },
+    {
+      "n": 96,
+      "classification": "composite",
+      "original": {
+        "real": "-0.16619828126093060061095560719995274",
+        "imaginary": "0.17000588210196301868210495072124099",
+        "phaseDegrees": "134.35113792275238922262814392733004"
+      },
+      "secondary": {
+        "real": "0.64657000066043932355664215503564092",
+        "imaginary": "0.29782140118279730467451073921048674",
+        "phaseDegrees": "24.731620455146547536642550483221798"
+      },
+      "pair": [
+        2,
+        1
+      ]
+    },
+    {
+      "n": 97,
+      "classification": "prime",
+      "original": {
+        "real": "1.3758497974564355982604633293590756",
+        "imaginary": "2.0470891477803936708594010717655105",
+        "phaseDegrees": "56.094929537203763270917717909643223"
+      },
+      "secondary": {
+        "real": "1.0704471232783382004612486609474611",
+        "imaginary": "0.4836653181343801523329359077072695",
+        "phaseDegrees": "24.31511088194930647973097177575193"
+      },
+      "pair": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 98,
+      "classification": "composite",
+      "original": {
+        "real": "2.2777550343551788048883183336391845",
+        "imaginary": "-0.94145750106469247942717887088255924",
+        "phaseDegrees": "-22.456625765846880506227522593604194"
+      },
+      "secondary": {
+        "real": "1.2875922733300579963854322240609831",
+        "imaginary": "0.10657354285200595085036323295336644",
+        "phaseDegrees": "4.7315654197898407245720622053490102"
+      },
+      "pair": [
+        4,
+        1
+      ]
+    },
+    {
+      "n": 99,
+      "classification": "composite",
+      "original": {
+        "real": "0.11507381562464694794100619763145579",
+        "imaginary": "0.57586130006938994757524512938274372",
+        "phaseDegrees": "78.699485915385421499212914986708006"
+      },
+      "secondary": {
+        "real": "1.1499053940500655867031837905970785",
+        "imaginary": "0.077241957255082544200745156061373434",
+        "phaseDegrees": "3.8429246224857216594416597310904504"
+      },
+      "pair": [
+        1,
+        1
+      ]
+    }
+  ],
+  "independentSectorCounts": [
+    {
+      "quadrant": 1,
+      "primes": 10,
+      "composites": 33
+    },
+    {
+      "quadrant": 2,
+      "primes": 3,
+      "composites": 3
+    },
+    {
+      "quadrant": 3,
+      "primes": 1,
+      "composites": 6
+    },
+    {
+      "quadrant": 4,
+      "primes": 11,
+      "composites": 32
+    }
+  ],
+  "independentPairCounts": [
+    {
+      "pair": [
+        1,
+        1
+      ],
+      "primes": 7,
+      "composites": 28
+    },
+    {
+      "pair": [
+        1,
+        4
+      ],
+      "primes": 3,
+      "composites": 5
+    },
+    {
+      "pair": [
+        2,
+        1
+      ],
+      "primes": 3,
+      "composites": 3
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "primes": 1,
+      "composites": 6
+    },
+    {
+      "pair": [
+        4,
+        1
+      ],
+      "primes": 2,
+      "composites": 8
+    },
+    {
+      "pair": [
+        4,
+        4
+      ],
+      "primes": 9,
+      "composites": 24
+    }
+  ],
+  "minimalFinitePairErrors": 25,
+  "openBlockerCount": 0,
+  "primarySources": [
+    "https://dlmf.nist.gov/25.2.E1",
+    "https://dlmf.nist.gov/25.10.E1",
+    "https://dlmf.nist.gov/25.10.E2",
+    "https://dlmf.nist.gov/27.4.E12",
+    "https://annals.math.princeton.edu/2004/160-2/p12"
+  ],
+  "limitations": [
+    "No directed-rounding/interval certificate or independent-library comparison.",
+    "No zeta-zero certification, finite RH verification, global RH proof or new prime algorithm.",
+    "The finite mixed-sector result refutes perfect classifiers using only these fixed sectors/pairs on this range, not all richer phase-based methods.",
+    "PNG visual review covers these static figures only; no SVG, video or native-app rendering review is claimed."
+  ]
+}

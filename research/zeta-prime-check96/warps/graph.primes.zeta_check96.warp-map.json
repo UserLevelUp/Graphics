@@ -1,0 +1,25 @@
+{
+  "bubble_uuid": "01a1df7f-9424-7735-9c62-b642f2fa8a59",
+  "goal": "Test actual zeta phase at heights 96 and 97 against exact prime labels and composite controls",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "Preserve previous accepted videos and certificates.",
+    "Use actual zeta values; separate ground-truth primality from phase observations.",
+    "Report failure of a quadrant-only classifier without claiming all phase methods impossible or progress on RH."
+  ],
+  "required_slices": [
+    {
+      "contract_hash": "contract:graph.primes.zeta_check96.comparison:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "comparison",
+      "slice_uuid": "01a1df7f-9424-7f4e-936b-0246fa1d9b72"
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.primes.zeta_check96"
+}
