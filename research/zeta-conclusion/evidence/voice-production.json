@@ -1,0 +1,99 @@
+{
+  "traceId": "graph.riemann.conclusion.voice",
+  "status": "passed",
+  "allPromptsMatchFinalNarration": true,
+  "processing": "Pitch-preserving tempo adjustment where needed; no truncated narration.",
+  "clips": [
+    {
+      "id": "finite_findings",
+      "taskId": "46965b14-55ee-46a5-a9c3-8f42b23fdc33",
+      "voice": "Serene",
+      "prompt": "Our finite computation found two paths leaving the original window and one reaching a one-point. Independent numerical checks support those observations. They do not certify every point between samples, and they do not show that the exiting branches disappear.",
+      "sourceDurationSeconds": 17.879365,
+      "tempoFactor": 1,
+      "expectedOutputDurationSeconds": 17.879365,
+      "sceneDurationSeconds": 19,
+      "sha256": "19aca5af909a37240d3219b9cf80b14acf58bb9bd12c9308c478dd6dcc420809",
+      "sourceSha256": "d0f083a6fec2fd79db601c5e1496569d116bee1a750a1dcdc3e05efcd5ac2067",
+      "audioDecodePassed": true
+    },
+    {
+      "id": "bounded_certificate",
+      "taskId": "fe41ac6e-f0b3-4010-b4b8-e4bfbf6e47d9",
+      "voice": "Serene",
+      "prompt": "The next precise task is to certify those three paths: prove uniqueness in overlapping boxes, exclude a zero derivative, and certify the two boundary crossings. That would turn selected numerical observations into a bounded mathematical certificate.",
+      "sourceDurationSeconds": 19.226122,
+      "tempoFactor": 1.065159113573407,
+      "expectedOutputDurationSeconds": 18.05,
+      "sceneDurationSeconds": 19,
+      "sha256": "379c15160bb4bd171442592ad43df1a7db00452b0e4f555ab3d2e3a1e43c04f0",
+      "sourceSha256": "be032aeccea79042fbcab2400596e7f5bd09d5dde5c3829b01e150a28303d8ae",
+      "audioDecodePassed": true
+    },
+    {
+      "id": "global_obligation",
+      "taskId": "d5094583-248e-4629-a75f-45a5e93fef05",
+      "voice": "Serene",
+      "prompt": "Boseman and Pauli already studied this continuation family. Complex target paths offer broader exploration. Speiser links Riemann to excluding derivative zeros throughout an entire half-strip. Our three paths do not cover that obligation; a global proof is still missing.",
+      "sourceDurationSeconds": 19.783401,
+      "tempoFactor": 1.0384987401574803,
+      "expectedOutputDurationSeconds": 19.05,
+      "sceneDurationSeconds": 20,
+      "sha256": "649f5876d92a28aaa11750278c183d599149c4e1e23a7f1d77d2b5642b53abb5",
+      "sourceSha256": "7e60e9e19d40587b7c0dd199396f5c8fdd3c32aee5baa23a2e454aa723a52571",
+      "audioDecodePassed": true
+    },
+    {
+      "id": "repository",
+      "taskId": "dda11ca8-eef8-424b-8e4e-2969f417545c",
+      "voice": "Serene",
+      "prompt": "The code and evidence are in the public Graphics project. Use this branch and source checkpoint to reproduce and extend the work.",
+      "sourceDurationSeconds": 7.755465,
+      "tempoFactor": 1,
+      "expectedOutputDurationSeconds": 7.755465,
+      "sceneDurationSeconds": 12,
+      "sha256": "3423447fd64eb4b675a8bb21211c2e3dff808f2b73ef3de28836b9544ec74842",
+      "sourceSha256": "f7432912b49204069aa1a18171e29771b7b08360f1fc9065e45f4beec9285930",
+      "audioDecodePassed": true
+    },
+    {
+      "id": "formal_object",
+      "taskId": "7fb7850a-4325-4981-98c1-fb3f13879bd2",
+      "voice": "Serene",
+      "prompt": "This approach colors each sampled point by its output quadrant relative to a chosen origin. Greater rendering resolution reveals finer boundaries. Colors indicate direction; at a zero, the phase is undefined.",
+      "sourceDurationSeconds": 15.23229,
+      "tempoFactor": 1,
+      "expectedOutputDurationSeconds": 15.23229,
+      "sceneDurationSeconds": 20,
+      "sha256": "2b9a65d58e4e2f0947a8e13a1586280d5477ae381cde5f806063d37d6bacaac1",
+      "sourceSha256": "fdbc251dd13204c3b9ff8862b1660ad85a23e6027ab69b78c1a5e59d123a249e",
+      "audioDecodePassed": true
+    },
+    {
+      "id": "prime_connection",
+      "taskId": "64a343da-65ec-4f61-9f74-66eeb949c6cd",
+      "voice": "Serene",
+      "prompt": "There is a genuine bridge to primes: explicit formulas connect weighted prime counts with zeta zeros. Our proposed next experiment would reconstruct that count from finitely many zeros and certify the omitted error. A useful result would be a rigorously bounded approximation to prime distribution.",
+      "sourceDurationSeconds": 20.7122,
+      "tempoFactor": 1,
+      "expectedOutputDurationSeconds": 20.7122,
+      "sceneDurationSeconds": 24,
+      "sha256": "2bd800fdb3b0001882ab99e58f732d68fcc237bd3b1ee42df85a0aac63f4053b",
+      "sourceSha256": "311dbd73781d1add22d3a263d159f624016ff812166774eba49840ec1dd4af6d",
+      "audioDecodePassed": true
+    },
+    {
+      "id": "origin_public",
+      "taskId": "9383e353-d90a-4906-b2bf-21dce6fd721d",
+      "voice": "Serene",
+      "prompt": "This approach assigns four quadrant colors to sampled points. Greater resolution reveals finer boundaries. Here, zeta's output origin moves smoothly from zero to one.",
+      "sourceDurationSeconds": 11.981497,
+      "tempoFactor": 1,
+      "expectedOutputDurationSeconds": 11.981497,
+      "sceneDurationSeconds": 14,
+      "sha256": "ab95296cf05cf8d1aae4e48b0092df94af90dff613e47f6b8b5c34cd892616e2",
+      "sourceSha256": "0b7af1f5a84ac635210709909ea417cca5c1fd297451a0f06d8190da0586aa1f",
+      "audioDecodePassed": true
+    }
+  ]
+}

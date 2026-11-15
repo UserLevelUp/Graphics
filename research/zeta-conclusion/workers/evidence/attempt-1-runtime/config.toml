@@ -1,0 +1,29 @@
+# Isolated review configuration; accepted C:/src/graph/.recur/config.toml is unchanged.
+[warp.creation]
+directory = "warps"
+template = ".recur/warp-template.json"
+[warp.dispatch]
+enabled = true
+default_host = "conclusion_codex_review"
+max_parallel = 1
+timeout_seconds = 900
+max_attempts = 1
+failure_threshold = 2
+easy_success_threshold = 3
+easy_seconds = 30
+[warp.dispatch.hosts.conclusion_codex_review]
+enabled = true
+program = "C:/Python314/python.exe"
+args = ["C:/src/graph/research/zeta-conclusion/workers/run-review.py", "codex", "{prompt_file}", "--checkpoint-seconds", "180", "--response-timeout", "240", "--coordinator-wait", "300", "--max-turns", "2"]
+prompt_stdin = false
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+[warp.dispatch.assignments."graph.riemann.conclusion.review"]
+workspace = "workers/codex"
+host = "conclusion_codex_review"
+context = ["workers/review-scope.md", "formulation/conclusion.json", "formulation/closing-scenes.json"]
+inputs = ["workers/run-review.py", "workers/verify-review.py", "workers/steer-review.py", "workers/review-scope.md", "workers/test_review_protocol.py", "workers/test_review_runtime.py", "workers/test_review_bounds.py", "formulation/conclusion.json", "formulation/closing-scenes.json", "inputs/animation-acceptance.json", "inputs/math-scope.md", "inputs/native-validation.json", "inputs/numerical-report.json", "inputs/presentation-acceptance.json", "inputs/prior-work-audit.json", "inputs/reference-trajectories.json"]
+tests = [{program = "C:/Python314/python.exe", args = ["../verify-review.py", "codex"]}]
+[watch.dispatch]
+poll_seconds = 2

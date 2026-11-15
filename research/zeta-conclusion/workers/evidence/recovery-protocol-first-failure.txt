@@ -1,0 +1,49 @@
+test_absent_decision_returns_none (test_review_protocol.DecisionValidationTests.test_absent_decision_returns_none) ... ok
+test_exact_run_and_turn_are_accepted (test_review_protocol.DecisionValidationTests.test_exact_run_and_turn_are_accepted) ... ok
+test_non_string_token_is_rejected (test_review_protocol.DecisionValidationTests.test_non_string_token_is_rejected) ... ok
+test_stale_run_is_rejected (test_review_protocol.DecisionValidationTests.test_stale_run_is_rejected) ... ok
+test_stale_turn_is_rejected (test_review_protocol.DecisionValidationTests.test_stale_turn_is_rejected) ... ok
+test_unknown_action_is_rejected (test_review_protocol.DecisionValidationTests.test_unknown_action_is_rejected) ... ok
+test_nonzero_exit_is_returned_with_diagnostics (test_review_protocol.MonitorTests.test_nonzero_exit_is_returned_with_diagnostics) ... ok
+test_normal_exit_retains_both_streams (test_review_protocol.MonitorTests.test_normal_exit_retains_both_streams) ... ok
+test_overdue_checkpoint_then_timeout_retains_partial_output (test_review_protocol.MonitorTests.test_overdue_checkpoint_then_timeout_retains_partial_output) ... ok
+test_publication_error_stops_owned_child (test_review_protocol.MonitorTests.test_publication_error_stops_owned_child) ... ok
+test_accepts_checkpoint_and_completed_review (test_review_protocol.ReplyValidationTests.test_accepts_checkpoint_and_completed_review) ... ok
+test_rejects_checkpoint_without_requested_sections (test_review_protocol.ReplyValidationTests.test_rejects_checkpoint_without_requested_sections) ... ok
+test_rejects_complete_without_verdict (test_review_protocol.ReplyValidationTests.test_rejects_complete_without_verdict) ... ok
+test_rejects_conflicting_statuses (test_review_protocol.ReplyValidationTests.test_rejects_conflicting_statuses) ... ok
+test_rejects_duplicate_acknowledgements (test_review_protocol.ReplyValidationTests.test_rejects_duplicate_acknowledgements) ... ok
+test_rejects_invalid_calendar_timestamp (test_review_protocol.ReplyValidationTests.test_rejects_invalid_calendar_timestamp) ... ok
+test_rejects_missing_clock (test_review_protocol.ReplyValidationTests.test_rejects_missing_clock) ... ok
+test_rejects_wrong_acknowledgement (test_review_protocol.ReplyValidationTests.test_rejects_wrong_acknowledgement) ... ok
+test_queues_exact_checkpoint_once (test_review_protocol.SteeringCliTests.test_queues_exact_checkpoint_once) ... ok
+test_refuses_stale_checkpoint (test_review_protocol.SteeringCliTests.test_refuses_stale_checkpoint) ... ok
+test_math_report_round_trips_through_strict_cp1252_console (test_review_runtime.ConsoleTransportTests.test_math_report_round_trips_through_strict_cp1252_console) ... ok
+test_atomic_json_recovers_from_reader_lock (test_review_runtime.ReplaceRetryTests.test_atomic_json_recovers_from_reader_lock) ... ok
+test_other_oserror_is_not_retried (test_review_runtime.ReplaceRetryTests.test_other_oserror_is_not_retried) ... ok
+test_persistent_permission_error_exhausts_five_attempts_and_preserves_files (test_review_runtime.ReplaceRetryTests.test_persistent_permission_error_exhausts_five_attempts_and_preserves_files) ... ok
+test_transient_permission_errors_then_real_atomic_replace (test_review_runtime.ReplaceRetryTests.test_transient_permission_errors_then_real_atomic_replace) ... ok
+test_codex_uses_read_only_without_permission_bypass (test_review_bounds.ReviewBoundsTests.test_codex_uses_read_only_without_permission_bypass) ... ok
+test_large_utf8_prompt_is_passed_by_stdin (test_review_bounds.ReviewBoundsTests.test_large_utf8_prompt_is_passed_by_stdin) ... ok
+test_larger_budgets_or_invalid_order_are_rejected (test_review_bounds.ReviewBoundsTests.test_larger_budgets_or_invalid_order_are_rejected) ... ok
+test_recovery_preserves_checkpoint_and_requires_its_hash (test_review_bounds.ReviewBoundsTests.test_recovery_preserves_checkpoint_and_requires_its_hash) ... ERROR
+test_recovery_refuses_additional_prior_turns (test_review_bounds.ReviewBoundsTests.test_recovery_refuses_additional_prior_turns) ... ok
+test_reference_projection_labels_omitted_interior_points (test_review_bounds.ReviewBoundsTests.test_reference_projection_labels_omitted_interior_points) ... ok
+test_requested_limits_are_accepted (test_review_bounds.ReviewBoundsTests.test_requested_limits_are_accepted) ... ok
+test_unconfigured_provider_is_rejected (test_review_bounds.ReviewBoundsTests.test_unconfigured_provider_is_rejected) ... ok
+
+======================================================================
+ERROR: test_recovery_preserves_checkpoint_and_requires_its_hash (test_review_bounds.ReviewBoundsTests.test_recovery_preserves_checkpoint_and_requires_its_hash)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\src\graph\research\zeta-conclusion\workers\test_review_bounds.py", line 77, in test_recovery_preserves_checkpoint_and_requires_its_hash
+    loaded, text = runner.load_recovery(path, root)
+                   ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\src\graph\research\zeta-conclusion\workers\run-review.py", line 133, in load_recovery
+    raise ValueError("Recovery must reference the retained initial checkpoint")
+ValueError: Recovery must reference the retained initial checkpoint
+
+----------------------------------------------------------------------
+Ran 33 tests in 1.632s
+
+FAILED (errors=1)

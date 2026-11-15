@@ -1,0 +1,32 @@
+{
+  "schema": "graph-conclusion-contract-v1",
+  "defines": "graph.riemann.conclusion",
+  "consumer": "graph.riemann.continuation.presentation",
+  "goal": "Append a formal, understandable conclusion to the accepted 138-second presentation, with formulas, status-labeled conjectures and concrete uses for further RH-related or complex-analysis work.",
+  "acceptedBaseline": "508768457a6e4e0839a525d0aebb0d9d418fc10d",
+  "originalVideo": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/riemann-continuation/presentation/presentation.mp4",
+  "originalVideoSha256": "f817d1192148f440fa5da413ff44d52726c5ba36b38544603655bda838c3bfd6",
+  "deliverables": [
+    "Revised video containing the existing presentation followed by a narrated formal conclusion",
+    "Editable After Effects project and conclusion source",
+    "Supporting formula and conjecture register with primary sources",
+    "Independent mathematical review, actual Codex CLI review receipts, render checks and trace map"
+  ],
+  "invariants": [
+    "Accepted original sources and media remain unchanged; produce a new version.",
+    "Definitions, established local identities, numerical observations, conjectures and global proof obligations are explicitly distinct.",
+    "Parameter a changes the target; numerical step size controls sampling.",
+    "Two exits and one endpoint remain numerical observations, not certified continuations.",
+    "Four-color phase display has a convention on axes and no defined phase at a zero.",
+    "No claim of novel continuation mathematics or progress on RH without independent evidence.",
+    "Formal conclusion means precise mathematical statements and derivations, not a machine-checked proof.",
+    "A finite derivative-zero count or three real-target paths do not supply the global Speiser exclusion."
+  ],
+  "slices": {
+    "formulation": "Precise statements, four short closing scenes, source audit and accepted numerical inputs",
+    "review": "Independent content review plus bounded read-only Codex CLI review through recur-watch",
+    "production": "Append-only After Effects ending, matching narration, combined video and captions",
+    "acceptance": "Source integrity, mathematics review, decoded media, frame review and final integration"
+  },
+  "globalRiemannHypothesisStatus": "open"
+}

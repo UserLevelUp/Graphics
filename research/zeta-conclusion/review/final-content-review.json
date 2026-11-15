@@ -1,0 +1,45 @@
+{
+  "schema": "graph-zeta-conclusion-final-content-review-v1",
+  "traceId": "graph.riemann.conclusion.review",
+  "status": "passed",
+  "reviewedAtUtc": "2026-11-15T10:58:07Z",
+  "reviewer": "Independent prime_phase_scope agent; formulation authored by local_quadrant_math",
+  "scope": "Mathematical content acceptance of the formal conclusion and four closing scenes. Both retain their authoring-draft metadata; this external review accepts only the exact hashes below. Media production and the repository card remain separate checks.",
+  "inputs": [
+    {"path": "research/zeta-conclusion/formulation/conclusion.json", "sha256": "57c23d751722f02a81fa1211a6cbe32654896a9c2056bf50682d51329f082ae7"},
+    {"path": "research/zeta-conclusion/formulation/closing-scenes.json", "sha256": "9be9da32da8c9f5690907a7ae17cb6d126dd297980d8ee16c0f9cb3a104a690a"}
+  ],
+  "referenceEvidence": {
+    "path": "research/zeta-continuation/evidence/reference-trajectories.json",
+    "sha256": "ec5fc8f06b90c6f79d094f3fa9d1a8053103b3a7fc34e78ff1264158ebde253e",
+    "sourceAudit": "research/zeta-conclusion/review/source-audit.json",
+    "fourAcceptedInputHashesMatch": true,
+    "numericsRerun": false
+  },
+  "checks": [
+    {"id": "definitions-and-phase", "status": "passed", "detail": "Output translation is distinguished from input coordinates. The phase angle, fixed display rotation, half-open quadrant convention, undefined phase at a zero, pole exclusion, and loss of information under four-color quantization are correctly stated. Final card explicitly restricts Q to nonzero F and says the input axes stay fixed."},
+    {"id": "derivative-identities", "status": "passed", "detail": "Translation and pairwise-difference identities, inverse speed and second derivative, complex-target chain rule, and nonzero-point phase-rate identity follow by direct algebra. Quotient formulas require a regular lift. The signed Euclidean curvature expression agrees with Im(conjugate(s prime)*s double-prime)/|s prime|^3. The phase-rate formula is explicitly inapplicable at the tracked root itself."},
+    {"id": "continuation-versus-existence", "status": "passed", "detail": "The compact-continuation lemma includes compact containment away from the pole, a uniform derivative lower bound and bounded target speed. The asymptotic-value discussion correctly prevents interpreting avoidance of critical values as a global compactness guarantee. No quotient formula or successful numerical step is promoted to an unconditional existence theorem."},
+    {"id": "accepted-results", "status": "passed", "detail": "All three reported statuses, target decimal strings and point decimal strings match the saved reference trajectories exactly. Stated residual, refinement and reverse-comparison summaries agree with the accepted report. The two exits are first-detected observations; the text excludes claims of certified first exit, disappearance, eventual escape or nonreturn. The finite one-point endpoint is not described as a zeta zero."},
+    {"id": "proposed-exact-targets", "status": "passed", "detail": "Read-only 100-digit Decimal comparisons put each saved seed approximation strictly inside its radius-1e-12 rational disk, Z3's saved endpoint strictly inside the proposed radius-1e-10 disk, and both saved exit target/height approximations strictly inside the fixed rational brackets. This checks sensible target placement, not rigorous containment of exact roots. All target assertions remain proposed and unproved."},
+    {"id": "bounded-proof-obligations", "status": "passed", "detail": "The proposed Z3 claim covers every target, regularity, original-window containment and a fixed endpoint disk. The Z1/Z2 claims require branch identity, exclusion of earlier boundary contacts, fixed brackets and transverse outward crossings. The note requires validated tubes, seed isolation, uniform derivative exclusion and analytic remainder bounds. The card's B3 disk is the same numerical disk called E3 in the formal target; its C3 label denotes the Z3 proposal, not an established theorem."},
+    {"id": "speiser-scope", "status": "passed", "detail": "Both note and card state the open strip 0<Re(s)<1/2, with all heights. Three real-target lifts examine neither all derivative zeros nor all critical values. No zero-free result about a=0 is transferred to nonzero targets. The missing global exclusion is explicitly retained."},
+    {"id": "argument-principle", "status": "passed", "detail": "The proposed derivative-zero count uses zeta double-prime/zeta prime, a positively oriented boundary, proved boundary nonvanishing and multiplicity. The specified box lies strictly inside the open left half of the critical strip, so zeta prime is analytic nearby and has no pole in the box. This finite proposal is not presented as completed certification or as a global RH proof."},
+    {"id": "prior-work-and-novelty", "status": "passed", "detail": "Boseman-Pauli is credited for the exact continuation family. Wegert and the established inverse-function methods are not presented as new. The four scenes make no unsupported recent-research import, new verification-height claim or mathematical novelty claim. The contribution is a reproducible finite experiment and explicit proposed certificate obligations."},
+    {"id": "narration-and-card-consistency", "status": "passed", "detail": "All four narrations preserve the distinction between definitions, observed numerics, proposed proof and global obligation. Numeric display rounding is correct. No caption asserts the existence of a certified branch or completed RH result. The derivative guard and theta definition requested during review are present."},
+    {"id": "scene-contract", "status": "passed", "detail": "Four contiguous mathematical scenes last 20, 19, 19, 20 seconds: 78 total, with 35, 39, 36, 39 narration words: 149 total. Each has at most 4 formula lines and 3 bullets. Append metadata preserves the 138-second prefix, adds 78 formal seconds plus a separately produced 12-second repository card, and declares 228 seconds total. Source credits are present."}
+  ],
+  "resolvedReviewFindings": [
+    {"id": "undefined-theta", "resolution": "The formal-object card now defines theta modulo 2*pi and restricts the quadrant formula to nonzero F."},
+    {"id": "complex-lift-guard", "resolution": "The final card now explicitly labels the lift regular and requires zeta prime nonzero before its quotient formula."},
+    {"id": "explicit-count-scope", "resolution": "The formal note now supplies the derivative count integral, its orientation, multiplicity and boundary hypotheses, with DLMF 1.10.E9 credit."}
+  ],
+  "openMathematicalContentIssues": [],
+  "limitations": [
+    "This review does not certify the conjectures or recompute any zeta trajectory.",
+    "Decimal comparisons concern saved approximations; they are not interval enclosures of exact roots or paths.",
+    "The correctness of a mathematical caption does not verify its rendered layout, glyph coverage, legibility, audio alignment or duration.",
+    "The 12-second repository card and preservation of the accepted prefix are production obligations, not proved by this content review.",
+    "Any later edit of either accepted input requires reviewing the changed content and recording its new hash."
+  ]
+}

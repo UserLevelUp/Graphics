@@ -1,0 +1,16 @@
+{
+  "traceId": "graph.riemann.conclusion.future.phase_rotation",
+  "status": "deferred_user_idea_not_implemented_in_this_video",
+  "intent": "Explore rotating phase-sector frames, including frames related to stroke direction, in a later rendering version.",
+  "definition": "W_alpha(s,a)=exp(-i*alpha)*(zeta(s)-a); classify arg W_alpha modulo2*pi into four half-open sectors when W_alpha is finite and nonzero.",
+  "fixedFrame": "A constant alpha rotates the quadrant boundaries in the output plane.",
+  "movingFrame": "For a parameterized stroke s(u), define an explicit real frame angle alpha(u). If input tangent angle is chosen, state the input/output coordinate identification. Alternatively use output tangent arg(zeta prime(s(u))*s prime(u)) wherever that tangent is nonzero. Undefined tangents need an explicit invalid or fallback-frame state.",
+  "invariant": "Multiplication by exp(-i*alpha) is nonzero, so W_alpha=0 iff zeta(s)=a for every defined real alpha. Phase is still undefined at a root.",
+  "controls": [
+    "Compare fixed and moving frames on identical samples and targets.",
+    "Retain rotation, sampling resolution, numerical precision, draw order and blending mode separately.",
+    "Compare forward and reverse draw order when overlapping strokes are rendered.",
+    "Avoid interpreting frame-induced color boundaries as new zeros or proof of RH."
+  ],
+  "scope": "Rendering and local geometric exploration; not a new theorem or an implemented next-prime algorithm."
+}

@@ -1,0 +1,180 @@
+{
+  "schema": "graph-riemann-conclusion-closing-scenes-v1",
+  "traceId": "graph.riemann.conclusion.formulation",
+  "status": "draft_for_independent_review",
+  "append": {
+    "startSeconds": 138,
+    "durationSeconds": 90,
+    "preserveAcceptedPrefix": true,
+    "newTotalSeconds": 228,
+    "repositoryCardSeconds": 12,
+    "formalScenesDurationSeconds": 78,
+    "finalCard": "repository"
+  },
+  "presentation": {
+    "width": 1920,
+    "height": 1080,
+    "framesPerSecond": 24,
+    "originalPresenter": "Retain the accepted original geometric presenter; do not imitate a real person.",
+    "productionGate": "Authoring draft only; independent mathematical review and media acceptance remain required.",
+    "narrationPolicy": "Only narration fields are spoken. Formula lines and source credits are separate visual text.",
+    "palette": "Q1 green, Q2 ochre, Q3 violet, Q4 blue; zero phase undefined."
+  },
+  "scenes": [
+    {
+      "id": "formal_object",
+      "start": 0,
+      "duration": 20,
+      "title": "The formal object",
+      "claimStatus": "DEFINITION + ELEMENTARY IDENTITIES",
+      "narration": "Here is the formal object: subtract a target from zeta, then color the remaining phase. The colors classify output directions; they do not decide whether a zero exists. At a zero, the phase is undefined.",
+      "formulaLines": [
+        "F_a(s) = ζ(s) − a",
+        "θ = arg F_a − α (mod 2π),  0 ≤ θ < 2π",
+        "F_a ≠ 0: Q = 1 + floor(2θ/π)",
+        "F_a(s) = 0: phase undefined"
+      ],
+      "bullets": [
+        "The output origin moves; the input axes stay fixed.",
+        "Four half-open phase sectors; retain the target label."
+      ],
+      "bubble": "Define the object before interpreting the colors.",
+      "visual": "Editable output-plane origin shifts to a. Four correct orientation sectors label phase directions; a white zero marker is explicitly undefined. Use an axis-boundary tag rather than assigning two colors.",
+      "sourceIds": [
+        "dlmf-definition",
+        "wegert-2010"
+      ],
+      "narrationWordCount": 35,
+      "formulaTextIsNotNarrated": true,
+      "sourceCredit": "Phase plots: Wegert (2010) • Four sectors: display convention"
+    },
+    {
+      "id": "finite_findings",
+      "start": 20,
+      "duration": 19,
+      "title": "What the computation supports",
+      "claimStatus": "OBSERVED NUMERICALLY",
+      "narration": "Our finite computation found two paths leaving the original window and one reaching a one-point. Independent numerical checks support those observations. They do not certify every point between samples, and they do not show that the exiting branches disappear.",
+      "formulaLines": [
+        "Z1 exit: a ≈ 0.854448",
+        "Z2 exit: a ≈ 0.917225",
+        "Z3 at a=1: s ≈ 1.407788 + 23.327988 i"
+      ],
+      "bullets": [
+        "Original window: 0.05 ≤ Re(s) ≤ 3; 10 ≤ Im(s) ≤ 30.",
+        "First detected exits; no interval certificate yet."
+      ],
+      "bubble": "An exit from the picture is not an end to the mathematics.",
+      "visual": "Reuse accepted paths at original scale. Mark two right-boundary exits and the Z3 endpoint; preserve old-target labels on held exit markers. Do not animate an uncomputed continuation beyond the viewport.",
+      "sourceIds": [],
+      "narrationWordCount": 39,
+      "formulaTextIsNotNarrated": true,
+      "sourceCredit": "Accepted 80-digit reference + native cross-check • Numerical evidence"
+    },
+    {
+      "id": "bounded_certificate",
+      "start": 39,
+      "duration": 19,
+      "title": "A precise certificate to build",
+      "claimStatus": "PROPOSED — NOT YET PROVED",
+      "narration": "The next precise task is to certify those three paths: prove uniqueness in overlapping boxes, exclude a zero derivative, and certify the two boundary crossings. That would turn selected numerical observations into a bounded mathematical certificate.",
+      "formulaLines": [
+        "C₃: ∃ regular s₃:[0,1] → int R",
+        "ζ(s₃(a)) = a,  s₃(0) = ρ₃",
+        "s₃(1) ∈ B₃   (fixed endpoint disk)",
+        "Regular: ζ′ ≠ 0;  ds₃/da = 1/ζ′(s₃)"
+      ],
+      "bullets": [
+        "B₃ center: 1.4077880406528867 + 23.3279877545591045 i.",
+        "B₃ radius: 10⁻¹⁰. Fixed rational data; not yet certified.",
+        "Z1/Z2: certify first crossings in the fixed brackets."
+      ],
+      "bubble": "The proof must cover the spaces between samples.",
+      "visual": "Draw illustrative tube boxes around accepted paths. Use a prominent PROPOSED label: these are diagrams of future certificates, not actual interval enclosures. Check icons remain outlined/pending.",
+      "sourceIds": [],
+      "narrationWordCount": 36,
+      "formulaTextIsNotNarrated": true,
+      "sourceCredit": "Proposed bounded certificate • Not yet proved"
+    },
+    {
+      "id": "global_obligation",
+      "start": 58,
+      "duration": 20,
+      "title": "Where this can be useful",
+      "claimStatus": "ESTABLISHED CONNECTION / GLOBAL OBLIGATION OPEN",
+      "narration": "Boseman and Pauli already studied this continuation family. Complex target paths offer broader exploration. Speiser links Riemann to excluding derivative zeros throughout an entire half-strip. Our three paths do not cover that obligation; a global proof is still missing.",
+      "formulaLines": [
+        "Regular lift: ζ(s(t))=γ(t),  ζ′(s(t))≠0",
+        "ds/dt = γ′(t)/ζ′(s(t))",
+        "Speiser: RH ⇔ ζ′(s) ≠ 0",
+        "for every 0 < Re(s) < 1/2, at all heights"
+      ],
+      "bullets": [
+        "Boseman–Pauli, Involve 6 (2013), 137–146.",
+        "Finite tool validation; no RH proof or novelty claim."
+      ],
+      "bubble": "Useful local evidence still needs a global argument.",
+      "visual": "Small finite path window beside a strip extending beyond the frame in both height directions. Label critical values may be nonreal, and every height remains the global requirement. Keep source credit legible; no success mark on RH.",
+      "sourceIds": [
+        "boseman-pauli-2013",
+        "levinson-montgomery-1974",
+        "dlmf-rh"
+      ],
+      "narrationWordCount": 39,
+      "formulaTextIsNotNarrated": true,
+      "sourceCredit": "Boseman–Pauli (2013) • Speiser via Levinson–Montgomery (1974)"
+    }
+  ],
+  "totalNarrationWords": 149,
+  "sources": [
+    {
+      "id": "boseman-pauli-2013",
+      "title": "Adam Boseman and Sebastian Pauli, On the zeros of zeta(s)-c",
+      "year": 2013,
+      "publication": "Involve 6(2), 137-146",
+      "doi": "10.2140/involve.2013.6.137",
+      "url": "https://msp.org/involve/2013/6-2/involve-v6-n2-p02-s.pdf",
+      "location": "Abstract and pp. 137-140",
+      "use": "Direct prior work on this same real-target continuation family from zeta zeros, including paths toward 1-points and rightward paths. Our finite viewport exits do not classify their eventual behavior."
+    },
+    {
+      "id": "dlmf-definition",
+      "title": "NIST DLMF 25.2, Definition and Expansions",
+      "url": "https://dlmf.nist.gov/25.2",
+      "use": "Dirichlet series for Re(s)>1 and meromorphic continuation with a simple pole at s=1."
+    },
+    {
+      "id": "dlmf-rh",
+      "title": "NIST DLMF 25.10(i), Distribution of zeros",
+      "url": "https://dlmf.nist.gov/25.10.i",
+      "use": "RH concerns all nontrivial zeta zeros at target zero."
+    },
+    {
+      "id": "levinson-montgomery-1974",
+      "title": "Norman Levinson and Hugh L. Montgomery, Zeros of the derivatives of the Riemann zeta-function",
+      "year": 1974,
+      "publication": "Acta Mathematica 133",
+      "url": "https://archive.ymsc.tsinghua.edu.cn/pacm_download/117/6174-11511_2006_Article_BF02392141.pdf",
+      "location": "Corollary to Theorem 1, first page",
+      "use": "Published Speiser equivalence: RH iff zeta prime has no zero in 0<Re(s)<1/2. Previously checked in the accepted prior-work audit; also stated on p. 137 of Boseman-Pauli."
+    },
+    {
+      "id": "wegert-2010",
+      "title": "Elias Wegert, Phase Plots of Complex Functions: A Journey in Illustration",
+      "url": "https://arxiv.org/abs/1007.2295",
+      "use": "Established phase-coloring foundation. Four half-open color sectors are this display convention, not a new theorem."
+    },
+    {
+      "id": "lester-2014",
+      "title": "S. J. Lester, a-Points of the Riemann zeta-function on the critical line",
+      "url": "https://arxiv.org/abs/1402.0169",
+      "use": "Established research context for nonzero a-points; no distribution theorem from this paper is implemented here."
+    },
+    {
+      "id": "platt-trudgian",
+      "title": "Dave Platt and Tim Trudgian, The Riemann hypothesis is true up to 3*10^12",
+      "url": "https://arxiv.org/abs/2004.09765",
+      "use": "Existing rigorous finite verification already includes our displayed heights; this experiment adds no verified RH height."
+    }
+  ]
+}

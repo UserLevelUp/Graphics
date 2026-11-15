@@ -1,0 +1,32 @@
+{
+  "schema": "graph-zeta-conclusion-prime-connection-review-v1",
+  "traceId": "graph.riemann.conclusion.review",
+  "status": "passed",
+  "path": "research/zeta-conclusion/formulation/prime-connection.json",
+  "sha256": "327f78fc785707a788a4390c26feeff20aa95ff66ba26767f50c115ccbe59a2e",
+  "reviewedAtUtc": "2026-11-15T11:10:21Z",
+  "reviewType": "Independent mathematical content review of a separately authorized supplement. This was not part of the prior CLI review of the four frozen mathematical scenes; no new CLI review is claimed.",
+  "checks": [
+    {"id": "weighted-prime-definition", "status": "passed", "detail": "Psi sums log p over prime powers p^k<=x with k>=1. It is distinguished from pi, the unweighted prime count. Natural logarithms and actual target-zero zeta zeros are specified."},
+    {"id": "explicit-formula", "status": "passed", "detail": "The supporting exact formula has the correct main term, negative zero sum, negative log(2*pi), and negative half-log correction. It is restricted to real noninteger x>1. The sum uses symmetric height cutoffs and multiplicities rather than arbitrary rearrangement. The half-weight psi_0 convention at a prime-power jump is correct. The short card labels its compressed formula schematic."},
+    {"id": "zero-phase-identity", "status": "passed", "detail": "For real x>1, x^(beta+i*gamma)=x^beta exp(i*gamma*log x). Conjugate zero contributions combine to real oscillations. RH fixes beta=1/2 for every nontrivial zero, but a moving nonzero-target a-point must not be substituted for such a zero."},
+    {"id": "rh-error-scope", "status": "passed", "detail": "The sqrt(x)*log(x)^2 bound is explicitly conditional on RH and asymptotic. The note defines its Big-O meaning, does not assume RH, does not supply an unsupported numerical constant, and explicitly rejects treating this bound for psi-x as an arbitrary finite-sum truncation bound."},
+    {"id": "pi-and-nth-prime", "status": "passed", "detail": "The grouping of psi into theta at fractional powers is correct. The stated theta-to-pi integral identity follows by the displayed finite-sum argument, including x=2. The minimum-integer definition of p_n is exact. The text correctly requires counting bounds to isolate a jump before claiming an exact nth prime."},
+    {"id": "proposed-pipeline", "status": "passed", "detail": "Finite-zero reconstruction, a complete certified zero table, explicit omitted-tail and evaluation bounds, and comparison with a sieve are all future obligations. The chosen half-integer grid avoids jump conventions. No implementation, certificate, improved algorithm, or new RH result is claimed. The conditional RH estimate is not silently used to discharge those obligations."},
+    {"id": "narration-and-composition", "status": "passed", "detail": "The 45-word narration presents an established bridge and a proposed experiment. The scene has 4 formula lines and 3 bullets, starts at ending-time 78 and lasts 24 seconds. Its composition places the 12-second repository card at ending-time 102, for 114 ending seconds plus the 138-second prefix: 252 total. Any separately authorized prefix-audio replacement is governed by the public-language review."},
+    {"id": "frozen-inputs", "status": "passed", "detail": "The two prior formulation files retain their accepted hashes. This supplement explicitly changes production composition without editing those originals."}
+  ],
+  "sourcesChecked": [
+    {"url": "https://dlmf.nist.gov/25.16", "location": "25.16(i), especially E1 and E4", "supports": "Psi definition and the epsilon-form RH equivalence. The supplement correctly does not attribute the sharper log-squared expression solely to this page."},
+    {"url": "https://terrytao.wordpress.com/2021/02/12/246b-notes-4-the-riemann-zeta-function-and-the-prime-number-theorem/", "location": "Theorem 8 and Section 2", "supports": "The exact noninteger-x formula and its symmetric zero summation; the discussion warns that the zero series is not absolutely convergent."},
+    {"url": "https://terrytao.wordpress.com/2013/07/19/the-riemann-hypothesis-in-various-settings/", "location": "Equation 6", "supports": "The RH-conditional sqrt(x)*log(x)^2 error estimate."},
+    {"url": "https://arxiv.org/html/2312.05628v4", "location": "Introduction equation 1 and Theorem 1.2", "supports": "Lee-Nosal's explicit conditional bounds support the stated asymptotic scale. Improved constants are not imported into the proposed program."}
+  ],
+  "openIssues": [],
+  "limitations": [
+    "No numerical prime reconstruction or omitted-tail certificate was computed or validated in this review.",
+    "A future certificate must explicitly record any conditional assumptions; an RH-conditional result is not an unconditional certificate.",
+    "No originality or practical speed advantage follows from this established connection.",
+    "Rendering, audio and repository-card verification remain separate production checks."
+  ]
+}

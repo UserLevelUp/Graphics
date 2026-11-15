@@ -1,0 +1,123 @@
+{
+  "schema": "graph-zeta-conclusion-cli-review-v1",
+  "traceId": "graph.riemann.conclusion.review",
+  "status": "review_gate_accepted_by_coordinator",
+  "reviewVerdict": "ACCEPT",
+  "mathematicalScope": "Supplied formulation and four mathematical closing scenes; repository card and media production excluded",
+  "actualProvider": "Codex CLI 0.154.0, authenticated via ChatGPT",
+  "actualModelTurns": 2,
+  "wallClockLimits": {
+    "checkpointSeconds": 180,
+    "perTurnStopSeconds": 240,
+    "actualAgentElapsedSeconds": [
+      26,
+      19
+    ]
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "originalState": "execution_error",
+      "currentState": "interrupted",
+      "runId": "20261115T105931Z-69586dd6",
+      "reason": "Model truthfully reported clock unavailable after policy rejection; strict protocol failed before coordinator-wait state."
+    },
+    {
+      "attempt": 2,
+      "state": "produced",
+      "runId": "20261115T110307Z-e18f01f4",
+      "agentExitCode": 0,
+      "testExitCodes": [
+        0
+      ]
+    }
+  ],
+  "recovery": {
+    "kind": "Runtime protocol only; no mathematical/source-input changes",
+    "priorCheckpointHashVerified": true,
+    "steeringToken": "48fdd511ef6a4ee38899b0e9462db75c",
+    "exactAcknowledgmentObserved": true,
+    "clockSource": "coordinator",
+    "modelClockCommandSucceeded": false,
+    "runnerWallClockEnforced": true,
+    "permissionPolicyUnchanged": "read-only sandbox; no approval bypass",
+    "unrelatedRunwayStartupAuthWarning": "Retained; no authentication changes; did not prevent textual review"
+  },
+  "findings": [
+    "Quadrant definition excludes zero from its domain without inferring zero absence.",
+    "Local regularity assumptions are present; finite paths do not establish all-height Speiser exclusion.",
+    "Boseman-Pauli receives credit for this exact continuation family; no novelty claim.",
+    "Tubes, unique roots, and crossings remain proposed certificates.",
+    "Explicit B3/E3 endpoint-disk mapping resolved the notation concern."
+  ],
+  "optionalWording": "Stronger spoken no-partial-proof sentence is optional, not a mathematical blocker.",
+  "unchangedInputs": {
+    "formulation/closing-scenes.json": "fnv1a64:d7ccd68540c72b2b",
+    "formulation/conclusion.json": "fnv1a64:df814b5c379829de",
+    "inputs/animation-acceptance.json": "fnv1a64:562eaa8610cb51b2",
+    "inputs/math-scope.md": "fnv1a64:e864dd61aac46e2e",
+    "inputs/native-validation.json": "fnv1a64:3b6bb3ba67f7e2ca",
+    "inputs/numerical-report.json": "fnv1a64:386f99df317504fa",
+    "inputs/presentation-acceptance.json": "fnv1a64:7bcf225b86935054",
+    "inputs/prior-work-audit.json": "fnv1a64:543dc8a3a0334fe8",
+    "inputs/reference-trajectories.json": "fnv1a64:c08ee9d3abc6a233"
+  },
+  "rootConfigSha256Unchanged": "e8f14f67eae1c85d50fe92843da6c232172949b4d653001fdcfe163bcaa31436",
+  "protocolTests": {
+    "passed": 33,
+    "log": "workers/evidence/recovery-protocol-tests.txt",
+    "firstFailurePreserved": "workers/evidence/recovery-protocol-first-failure.txt",
+    "resolvedIssue": "CRLF-compatible ACK matching"
+  },
+  "limits": [
+    "Textual review only: no new numerical computations, proof replay, external-source verification, or video playback.",
+    "Produced means the configured verifier passed under stable inputs; it does not accept the review gate."
+  ],
+  "receipts": [
+    {
+      "path": "workers/evidence/fnv1a64-0e9718950b3dd3a1.1.agent.stdout.txt",
+      "sha256": "b83264402765af7ceea7dca5231c529bf99a43caf6f847ed9b351d6da7312bab"
+    },
+    {
+      "path": "workers/evidence/fnv1a64-0e9718950b3dd3a1.1.agent.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "workers/evidence/fnv1a64-0e9718950b3dd3a1.2.agent.stdout.txt",
+      "sha256": "ccd12fd23c973c2a72851f7bf323bca0d4aff146754876b6ed96149ce770a9d0"
+    },
+    {
+      "path": "workers/evidence/fnv1a64-0e9718950b3dd3a1.2.agent.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "workers/evidence/fnv1a64-0e9718950b3dd3a1.2.test-0.stdout.txt",
+      "sha256": "2344b47a6588ab530709fb29a3100b2161c097dcaed9cd7dc765b1a1ea5ab8c6"
+    },
+    {
+      "path": "workers/evidence/fnv1a64-0e9718950b3dd3a1.2.test-0.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "workers/evidence/first-checkpoint.txt",
+      "sha256": "2c29c38806ca35483db5121e28091b73dae2bb61e20c26db90dc54b2776941d7"
+    },
+    {
+      "path": "workers/evidence/first-provider.stderr.txt",
+      "sha256": "f5515677f990b41399eb313b8a84631b4dc418a0f9a10ea1bb9cc136550be256"
+    },
+    {
+      "path": "workers/evidence/final-review.md",
+      "sha256": "6e2a17c9ade6b52db23b22b1a45f77dbbed0e0594458afe3f740b7d5745e6cbf"
+    },
+    {
+      "path": "workers/evidence/final-provider.stderr.txt",
+      "sha256": "2cd8b28a06e6c26277ad9085f82a1dcc1df67b2bd5903284c6240fe9811ce1d2"
+    }
+  ],
+  "coordinatorAcceptance": {
+    "reportedBy": "root coordinator",
+    "basis": "Actual CLI final review.md plus independent content review",
+    "workerDoesNotSelfAccept": true
+  }
+}

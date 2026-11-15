@@ -1,0 +1,16 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.conclusion",
+  "slice_id": "review",
+  "contract_hash": "contract:graph.riemann.conclusion.review:v1",
+  "attempt_id": "independent-and-cli-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:7b9730f7da8ec8775475dfb96315c30471808c0c0bb6b282cb172be25c2858bf",
+  "evidence": {
+    "review": [
+      "review/final-content-review.json",
+      "workers/codex/review.md"
+    ]
+  },
+  "reason": null
+}

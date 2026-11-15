@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.conclusion",
+  "slice_id": "formulation",
+  "contract_hash": "contract:graph.riemann.conclusion.formulation:v1",
+  "attempt_id": "formalization-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:57c23d751722f02a81fa1211a6cbe32654896a9c2056bf50682d51329f082ae7",
+  "evidence": {
+    "review": [
+      "formulation/conclusion.json"
+    ]
+  },
+  "reason": null
+}

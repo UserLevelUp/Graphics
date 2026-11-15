@@ -1,0 +1,99 @@
+{
+  "schema": "graph-zeta-conclusion-source-audit-v1",
+  "traceId": "graph.riemann.conclusion.review",
+  "checkedAtUtc": "2026-11-15T10:50:22Z",
+  "status": "sources_checked_awaiting_author_formulation",
+  "scope": "Independent mathematical-direction and primary-source audit. No accepted files changed, no numerical experiments rerun, no external proof or formalization replayed.",
+  "acceptedEvidenceRead": [
+    "research/zeta-continuation/math-scope.md",
+    "research/zeta-continuation/prior-work-audit.json",
+    "research/zeta-continuation/evidence/numerical-report.json",
+    "research/zeta-continuation/evidence/reference-trajectories.json",
+    "research/zeta-continuation/evidence/native-validation.json"
+  ],
+  "primarySources": [
+    {
+      "id": "levinson-montgomery-speiser",
+      "title": "Zeros of the derivatives of the Riemann zeta-function",
+      "authors": ["Norman Levinson", "Hugh L. Montgomery"],
+      "year": 1974,
+      "venue": "Acta Mathematica 133, 49-65",
+      "doi": "https://doi.org/10.1007/BF02392141",
+      "url": "https://archive.ymsc.tsinghua.edu.cn/pacm_download/117/6174-11511_2006_Article_BF02392141.pdf",
+      "location": "Corollary to Theorem 1, first page",
+      "statement": "RH is equivalent to zeta prime having no zeros in the open strip 0 < Re(s) < 1/2.",
+      "access": "Primary-paper indexed first-page extraction checked. A subsequent direct PDF open timed out; statement independently corroborated in the accessible Boseman-Pauli publisher PDF, page 137.",
+      "scope": "This is a global, all-height equivalence. It is not a conclusion about a finite sample, and does not prohibit derivative zeros to the right of the critical line. Do not replace the open strip by the entire left half-plane, which contains real derivative zeros."
+    },
+    {
+      "id": "argument-principle",
+      "title": "NIST DLMF 1.10(iv): Phase (or Argument) Principle",
+      "url": "https://dlmf.nist.gov/1.10.E9",
+      "contextUrl": "https://dlmf.nist.gov/1.10#iv",
+      "statement": "For a positively oriented simple closed contour with no zeros or poles on it, the integral of f prime/f divided by 2*pi*i equals the number of enclosed zeros minus poles, with multiplicity.",
+      "application": "For f=zeta prime in a box avoiding s=1, N=(1/(2*pi*i))*integral_boundary(zeta double-prime/zeta prime ds). The same integer is the continuous phase winding divided by 2*pi. If a region includes s=1, zeta prime has a double pole and its pole contribution must be included.",
+      "scope": "Finite-box certification needs proved boundary nonvanishing and validated winding or integration error. Rounded phase samples, four-color counts, or a nearly integral numerical answer alone do not establish the count."
+    },
+    {
+      "id": "boseman-pauli-exact-family",
+      "title": "On the zeros of zeta(s)-c",
+      "authors": ["Adam Boseman", "Sebastian Pauli"],
+      "year": 2013,
+      "venue": "Involve 6(2), 137-146",
+      "doi": "https://doi.org/10.2140/involve.2013.6.137",
+      "url": "https://msp.org/involve/2013/6-2/involve-v6-n2-p02-s.pdf",
+      "locations": ["Abstract, page 137", "Introduction and Figure 1, pages 138-139", "Real lines, pages 140-141"],
+      "overlap": "The paper explicitly studies the same implicit family zeta(z(c))=c for real c in [0,1), starting at a nonreal zeta zero. It discusses finite 1-point connections and paths extending rightward. This is a closer precedent than generic a-point theory.",
+      "noveltyConsequence": "Neither the family nor the qualitative finite-endpoint-versus-rightward-motion picture is newly introduced by this project. Reproducible diagnostics may be useful, but originality of any future bounded certificate requires a separate comparison with prior results.",
+      "compatibility": "Our two finite exits and one numerical 1-point endpoint do not conflict with this literature. A finite viewport exit does not establish an asymptotic class or exclude later return. No source asymptotic conclusion is automatically assigned to Z1 or Z2."
+    },
+    {
+      "id": "established-context",
+      "phasePlotUrl": "https://arxiv.org/abs/1007.2295",
+      "aPointUrl": "https://arxiv.org/abs/1402.0169",
+      "finiteVerificationUrl": "https://arxiv.org/abs/2004.09765",
+      "scope": "Wegert supports phase-color visualization; Lester supplies established nonzero a-point theory. The accepted prior-work audit records Platt-Trudgian's rigorous zeta-zero verification through height 3*10^12. No new RH verification height is supplied by this height-10-to-30 experiment. These references were checked in the preceding independent review and retained as context."
+    }
+  ],
+  "mathematicalAssessment": {
+    "observedData": "The accepted numerical suite records Z1 and Z2 first-detected right-boundary exits near a=0.854447992969996 and 0.917224519389317. Z3 reaches a=1 near 1.407788040652887+23.327987754559104i. Refinement and reversal support numerical consistency; they do not certify all parameter values.",
+    "existingConjecture": "The original all-three-branches-stay-in-R assertion has numerical counterevidence. It is not a proved rejection until the relevant exact branch and boundary crossing are certified. Changing the viewport afterwards does not rescue the original all-target confinement clause.",
+    "speiserLink": "The derivative in ds/da=1/zeta prime is a legitimate local link to Speiser's criterion. A critical point on a tracked real-level branch must also have critical value zeta(s) real and in the tracked interval. General derivative zeros need not satisfy this extra condition, so three paths cannot test Speiser globally.",
+    "finiteCountImplications": "A certified positive zero count for zeta prime inside a box wholly contained in 0<Re(s)<1/2 would contradict RH by Speiser. A certified zero count of zero excludes derivative zeros only in that box. It does not exclude the remaining strip, heights, or narrow omitted margins. Exact equality of zeta and derivative zero counts at every fixed height must not be inferred from the global equivalence.",
+    "complexTargetExtension": "For a differentiable complex target path gamma(t), a regular lift obeys ds/dt=gamma prime(t)/zeta prime(s(t)). Avoiding critical values alone does not guarantee a finite global lift: compactness and asymptotic escape also matter. The limit zeta(sigma)->1 as real sigma->+infinity exhibits an asymptotic value. This observation does not classify either recorded exiting branch.",
+    "noGlobalConclusion": "No endpoint at zeta=1 is an off-line zeta zero. Neither successful continuation of three known on-line zeros nor a finite derivative-zero-free box excludes every off-line zero. Existing recent AI-associated analytic results remain attributed reports, not premises imported into this experiment."
+  },
+  "safeProposedCertificates": [
+    {
+      "id": "z3-regular-connection",
+      "status": "unproved proposed bounded statement",
+      "claim": "The branch anchored at the certified third positive-height zeta zero has a unique regular continuation for every real a in [0,1], stays in the original rectangle, and ends in a stated rational box enclosing the observed 1-point.",
+      "obligations": ["Certify the initial root and its indexing or cite an adequate certified source.", "Cover the whole parameter interval by overlapping validated tubes with branch identity preserved.", "Exclude zero from derivative enclosures throughout each tube, not only at sampled roots.", "Prove confinement for all targets and isolate the endpoint in its fixed rational box."]
+    },
+    {
+      "id": "z1-z2-first-transverse-exits",
+      "status": "unproved proposed bounded statement",
+      "claim": "For each of Z1 and Z2, certify its first right-boundary crossing at Re(s)=3 inside fixed rational target and height brackets around the observed exit.",
+      "obligations": ["Certify continuous branch identity from the initial zero to the crossing.", "Exclude all earlier boundary hits if the formulation says first crossing; a first-exit claim must state its different boundary convention precisely.", "Prove the side change and transversality, for example a positive lower bound for Re(1/zeta prime) on the crossing interval.", "Do not extend the certificate to eventual escape, nonreturn, or a missing endpoint at a=1."]
+    },
+    {
+      "id": "finite-speiser-box",
+      "status": "legitimate alternative validation target, not yet computed or certified",
+      "claim": "Certify the multiplicity-weighted zeta-prime zero count in a specified rectangle strictly inside 0<Re(s)<1/2 using the argument principle.",
+      "obligations": ["Freeze exact rational boundaries and positive orientation.", "Enclose zeta prime and zeta double-prime with proved evaluation remainders; prove no boundary zero.", "Use certified quadrature enclosing a single integer, or a justified nonzero homotopy for the contour image.", "Retain an unresolved outcome when boundary exclusion or integer isolation fails.", "Validate the implementation on known counts, reversed orientation, near-boundary zeros, and a meromorphic control with an explicit pole contribution."]
+    }
+  ],
+  "finalFormulationReviewChecklist": [
+    "Keep observed numerical results, established theorems, conjectures, and proposed proof obligations explicitly separate.",
+    "Keep the original seeds, rectangle, target interval, and branch identities fixed; specify exact rational brackets for future certificates.",
+    "Cite Boseman-Pauli for the exact family; do not present standard continuation or phase coloring as a new mathematical technique.",
+    "Label numerical exits as first-detected and explain that the view ends, not the branch.",
+    "State Speiser with its open strip and all-height scope; never infer global absence from three paths or one finite box.",
+    "State the zero/pole/boundary hypotheses of the argument principle and distinguish certified winding from pixel patterns.",
+    "If complex-target lifting is introduced, address both critical values and asymptotic escape rather than promising global continuation from derivative samples.",
+    "Use four closing cards to convey findings, established context, a concrete bounded certificate, and the remaining global gap without claiming new RH progress.",
+    "Check every narration sentence and card against the formal note, with no stronger claim introduced by a short caption.",
+    "Treat any mathematical proof validation or novelty claim as a separate acceptance gate from a successful animation render."
+  ],
+  "nextAction": "Await the coordinator's request to review the author's final conclusion note and four cards/narrations."
+}

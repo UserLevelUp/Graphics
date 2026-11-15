@@ -1,0 +1,401 @@
+{
+  "schema": "graph-riemann-conclusion-formulation-v1",
+  "traceId": "graph.riemann.conclusion.formulation",
+  "status": "draft_for_independent_review",
+  "checkedDate": "2026-11-15",
+  "title": "Formal conclusion: output-origin continuation and its bounded obligations",
+  "scope": "A mathematical formulation and an appended explanation of the accepted finite experiment. This file supplies elementary derivations and proposed certification targets; it does not perform interval certification, establish novelty, or prove RH.",
+  "acceptedInputs": [
+    {
+      "path": "research/zeta-continuation/math-scope.md",
+      "sha256": "9a6deee7fe9c929d32714da032057b7d784b225e38a1281caca37eebd997644f"
+    },
+    {
+      "path": "research/zeta-continuation/evidence/numerical-report.json",
+      "sha256": "355b366b33a69b79b2bc02b8fb9dc3ab334d2c0e9d70a35afd37e487fa1af1bd"
+    },
+    {
+      "path": "research/zeta-continuation/evidence/native-validation.json",
+      "sha256": "66193c2c5d555ae3ee70e4fa434e4fcbb1dffe84bfdccbf5338a25e06e0596ea"
+    },
+    {
+      "path": "research/zeta-continuation/prior-work-audit.json",
+      "sha256": "5b435acb67aad11866be6d6d7cd214e98ea7be538327048bab1cb866968f7666"
+    }
+  ],
+  "definitions": {
+    "domain": {
+      "symbol": "Omega",
+      "formula": "Omega = C \\ {1}",
+      "meaning": "Zeta is analytic here; s=1 is its pole."
+    },
+    "input": {
+      "formula": "s = sigma + i t",
+      "meaning": "The independent complex coordinate. Subtracting a target does not translate this input coordinate."
+    },
+    "outputOrigin": {
+      "formula": "F_a(s) = zeta(s) - a",
+      "targetDomain": "a in C in general; a in [0,1] real in the accepted experiment",
+      "meaning": "The target a becomes the origin in the output plane."
+    },
+    "viewport": {
+      "formula": "R = {s: 0.05 <= Re(s) <= 3, 10 <= Im(s) <= 30}",
+      "endpointsAreExactRationals": true
+    },
+    "phaseQuadrant": {
+      "rotation": "alpha is a fixed real display angle in radians, modulo 2*pi.",
+      "formula": "theta_alpha = (arg(F_a(s)) - alpha) mod 2*pi in [0,2*pi); Q_alpha = 1 + floor(2*theta_alpha/pi)",
+      "domain": "Finite nonzero F_a(s) only. The modulo makes the choice of an argument representative immaterial.",
+      "halfOpenSectors": [
+        {
+          "q": 1,
+          "interval": "[0,pi/2)",
+          "color": "green"
+        },
+        {
+          "q": 2,
+          "interval": "[pi/2,pi)",
+          "color": "ochre"
+        },
+        {
+          "q": 3,
+          "interval": "[pi,3*pi/2)",
+          "color": "violet"
+        },
+        {
+          "q": 4,
+          "interval": "[3*pi/2,2*pi)",
+          "color": "blue"
+        }
+      ],
+      "axisConvention": "Nonzero rotated axes take the sector beginning at that axis: positive real Q1, positive imaginary Q2, negative real Q3, negative imaginary Q4. An additional axis tag may be displayed.",
+      "zeroConvention": "At F_a(s)=0, argument and quadrant are undefined. A white marker is a display convention, not an assigned angle.",
+      "poleConvention": "At s=1, F_a is not finite and this quadrant definition does not apply.",
+      "numericalConvention": "Invalid evaluations must remain invalid. Near-axis tolerance and uncertain-color labels are numerical display policies, not exact sector membership certificates.",
+      "informationLimit": "Q retains only a quarter-turn interval. It discards magnitude and within-sector phase; four colors alone cannot certify a zero, continuous winding, or a branch identity."
+    },
+    "seedLabels": {
+      "meaning": "The numerical labels Z1, Z2, Z3 refer to the first three positive-height starting zeros in the accepted experiment. The new bounded claims below specify exact rational disks and include seed certification as an obligation.",
+      "approximateHeights": [
+        "14.13472514173469379",
+        "21.02203963877155499",
+        "25.01085758014568876"
+      ]
+    },
+    "regularLift": {
+      "formula": "zeta(s(a))=a, zeta prime(s(a)) != 0",
+      "meaning": "A branch continued from a specified seed, with no arbitrary replacement by another root."
+    }
+  },
+  "provedElementaryIdentities": [
+    {
+      "id": "translation",
+      "status": "elementary exact identity",
+      "statement": "F_a(s)=0 iff zeta(s)=a; partial_s F_a=zeta prime; partial_a F_a=-1.",
+      "derivation": "Substitute F_a=zeta-a and differentiate while holding the other variable fixed. At a=0 these are zeta zeros; at a=1 these are zeta 1-points."
+    },
+    {
+      "id": "pairwise-origin",
+      "status": "elementary exact identity",
+      "statement": "F_a(s)-F_a(c)=zeta(s)-zeta(c). More generally F_a(s)-F_b(c)=zeta(s)-zeta(c)-(a-b).",
+      "derivation": "Expand and cancel the constant terms. Fixed-target pairwise differences retain relative output geometry but lose the additive target; the target label must be retained separately to identify the zero level."
+    },
+    {
+      "id": "inverse-speed-curvature",
+      "status": "standard local inverse theorem and differentiation",
+      "hypotheses": "s0 != 1, zeta(s0)=a0, zeta prime(s0) != 0.",
+      "statement": "There is a unique local analytic inverse branch through (a0,s0). On a regular branch, ds/da=1/zeta prime(s), and d2s/da2=-zeta double-prime(s)/(zeta prime(s))^3.",
+      "derivation": "Differentiate zeta(s(a))=a to obtain zeta prime(s)*s prime=1. Differentiate again: zeta double-prime(s)*(s prime)^2+zeta prime(s)*s double-prime=0. Substitute s prime=1/zeta prime(s).",
+      "limitation": "These are local formulas. They do not prove global existence, a nonzero derivative everywhere, or confinement in R. The second derivative is parameter acceleration, often informally called curvature; Euclidean curvature additionally divides the normal component by speed squared.",
+      "geometricCurvature": "For a real increasing target a, the signed Euclidean curvature is Im(conjugate(s prime)*s double-prime)/|s prime|^3 = -|zeta prime(s)| Im[zeta double-prime(s)/(zeta prime(s))^2]; its absolute value is the unsigned curvature. This follows by substituting the two derivative identities."
+    },
+    {
+      "id": "real-target-contour",
+      "status": "elementary exact identity",
+      "statement": "For a real-target exact branch, Im zeta(s(a))=0 and Re zeta(s(a))=a.",
+      "derivation": "Take imaginary and real parts of zeta(s(a))=a. This follows a part of an existing real-value contour."
+    },
+    {
+      "id": "complex-target",
+      "status": "standard chain-rule extension",
+      "hypotheses": "gamma is C1 (C2 for the second identity), s is a regular lift in Omega, and zeta(s(t))=gamma(t).",
+      "statement": "ds/dt=gamma prime(t)/zeta prime(s(t)); d2s/dt2=gamma double-prime(t)/zeta prime(s(t))-zeta double-prime(s(t))*(gamma prime(t))^2/(zeta prime(s(t)))^3.",
+      "derivation": "Differentiate zeta(s(t))=gamma(t) once and twice, then solve using the nonzero derivative.",
+      "limitation": "At a derivative zero the inverse theorem fails. A specially parameterized lift may still exist, so failure of this quotient formula is not a proof that every possible lift terminates."
+    },
+    {
+      "id": "moving-point-phase-rate",
+      "status": "elementary local logarithmic-derivative identity",
+      "hypotheses": "s(t) and gamma(t) are C1, s(t) != 1, and W(t)=zeta(s(t))-gamma(t) != 0 throughout the interval. Choose a continuous real argument theta of W on that interval.",
+      "statement": "d theta/dt = Im[(zeta prime(s(t))*s prime(t)-gamma prime(t))/(zeta(s(t))-gamma(t))].",
+      "derivation": "Write W=r exp(i theta); W prime/W = r prime/r + i theta prime. Substitute the chain rule for W prime.",
+      "quadrantUse": "For fixed alpha, a sector-boundary event occurs when theta-alpha equals an integer multiple of pi/2. A nonzero phase rate there gives a transverse crossing; zero phase rate requires higher-order analysis. Integrating the rate retains full turns; endpoint principal phases alone may not.",
+      "limitation": "On a tracked level root W=0, this phase formula is undefined, including the apparent 0/0. It describes nonzero sample points near or away from a tracked root, not the phase at that root. Quantized colors alone do not provide the continuous argument."
+    },
+    {
+      "id": "compact-continuation",
+      "status": "elementary continuation lemma",
+      "hypotheses": "A regular lift exists on [t0,t*) for finite t*. It remains in a compact K subset Omega. On the lift |zeta prime| >= delta > 0, gamma is C1 through t*, and |gamma prime| <= M.",
+      "statement": "The lift extends regularly through t*.",
+      "derivation": "The inverse derivative formula gives |s prime|<=M/delta. Thus s is Lipschitz and has a limit s* in K as t approaches t*. Continuity gives zeta(s*)=gamma(t*) and |zeta prime(s*)|>=delta. The local inverse theorem extends the lift and local uniqueness identifies it with the original branch.",
+      "limitation": "A finite list of samples does not establish compact containment or the uniform derivative bound."
+    },
+    {
+      "id": "asymptotic-value",
+      "status": "elementary consequence of the Dirichlet series",
+      "statement": "For real sigma>1, 0<zeta(sigma)-1<=2^(-sigma)+2^(1-sigma)/(sigma-1), hence zeta(sigma) tends to 1 as sigma tends to infinity.",
+      "derivation": "Separate the n=2 term of sum from n=2 to infinity of n^(-sigma), then bound the remaining decreasing positive tail by integral from 2 to infinity of x^(-sigma) dx. Both bound terms tend to zero.",
+      "limitation": "Thus absence of critical values along a target route is not by itself a global compactness argument: an inverse can escape to infinity toward the finite asymptotic value 1. This does not establish escape of our Z1 or Z2 branch.",
+      "sourceIds": [
+        "dlmf-definition"
+      ]
+    }
+  ],
+  "observedFiniteFindings": {
+    "status": "numerical evidence, not an interval-certified theorem",
+    "parameterRange": "real a in [0,1], stopping an in-view branch at its first detected viewport exit",
+    "method": "80-digit reference evaluation, model controls, smaller/larger step comparisons, reverse continuation, and a separate native implementation check. Both evaluators use the Euler-Maclaurin algorithm family.",
+    "branches": [
+      {
+        "branch": "Z1",
+        "status": "exited",
+        "meaning": "first detected right-viewport exit, not a proved first exit",
+        "targetApproximation": "0.854447992969995946578561851930710187991158122144952358212321996688842773",
+        "pointApproximation": {
+          "real": "2.99999999999999999999999634112331713997557257730247477843256904851544544",
+          "imaginary": "13.8386765241926833638705727359192869034379454547243756265493872621975633"
+        },
+        "maximumSampledResidual": "6.60606520754174943305223325289737974337059366282994704878409498866168805e-61",
+        "minimumSampledDerivativeMagnitude": "0.108060917812447780743387131579815391441186117909532344972142149467768198",
+        "intervalCertified": false
+      },
+      {
+        "branch": "Z2",
+        "status": "exited",
+        "meaning": "first detected right-viewport exit, not a proved first exit",
+        "targetApproximation": "0.91722451938931672697920266801308031290318467654287815093994140625",
+        "pointApproximation": {
+          "real": "2.99999999999999999999999671668151276071935670412650673094711721461457714",
+          "imaginary": "22.2090641046992617145756135797295949408513385901846410821782122985770834"
+        },
+        "maximumSampledResidual": "9.86170036041030575369269043564733546044915137102647748118018101164995023e-61",
+        "minimumSampledDerivativeMagnitude": "0.0459297717661977219330432500714924873521292149845975266656260414794209734",
+        "intervalCertified": false
+      },
+      {
+        "branch": "Z3",
+        "status": "completed",
+        "meaning": "computed target-one endpoint",
+        "targetApproximation": "1.0",
+        "pointApproximation": {
+          "real": "1.40778804065288669385419974236805666338030480226676766497379469599269619",
+          "imaginary": "23.3279877545591044950394126864606589268898708975940066763539925119626187"
+        },
+        "maximumSampledResidual": "8.80988505514264057764056721988930121776983551540519228904060398323646135e-61",
+        "minimumSampledDerivativeMagnitude": "0.100413318171208041382958963917009217789729962407019181893864260877604413",
+        "intervalCertified": false
+      }
+    ],
+    "checks": {
+      "maximumBaseSampledResidualLessThan": "9.87e-61",
+      "maximumCommonTargetCoarseFineDifferenceLessThan": "1.96e-60",
+      "maximumReverseEndpointErrorLessThan": "9.79e-67",
+      "maximumBaseNumericalExitBracketWidthLessThan": "6.75e-25"
+    },
+    "interpretation": "Two first-detected right-boundary exits and one computed target-one endpoint. These are consistent with earlier work on the same family. A viewport exit does not mean disappearance, a derivative zero, eventual escape to infinity, or exclusion of later return.",
+    "limitations": [
+      "Residual and agreement digits are not rigorous error enclosures.",
+      "Positive sampled derivative minima do not exclude an unseen derivative zero.",
+      "A first-detected numerical exit does not exclude an earlier excursion between samples.",
+      "An off-line zeta=1 point is not an off-line zeta zero and is not an RH counterexample.",
+      "Held exit markers in later animation frames retain their earlier targets; they are not claimed to solve the current target equation."
+    ]
+  },
+  "conjectures": {
+    "wordNewMeans": "Newly specified project certification targets, not claims of new mathematics or first discovery.",
+    "oldConfinement": {
+      "status": "numerical counterevidence; no interval-certified refutation performed here",
+      "statement": "Every one of the three seeded branches is regular for all a in [0,1], remains in R for every a, and ends at a distinct 1-point in R.",
+      "evidenceAgainst": "The computed Z1 and Z2 exits violate the observed all-target confinement requirement. A later return would not restore that requirement.",
+      "formalRefutationNeeded": "Certify a continued seeded branch and an actual boundary crossing; a solver failure or a sampled crossing alone is not the proof."
+    },
+    "sharedSeedObligation": {
+      "status": "to be certified in this project",
+      "statement": "Each disk D_j below contains exactly one simple zero rho_j of zeta; the continued branch is the one through that root.",
+      "rationalDisks": [
+        {
+          "id": "Z1",
+          "centerReal": "0.5",
+          "centerImaginary": "14.13472514173469",
+          "radius": "0.000000000001"
+        },
+        {
+          "id": "Z2",
+          "centerReal": "0.5",
+          "centerImaginary": "21.02203963877155",
+          "radius": "0.000000000001"
+        },
+        {
+          "id": "Z3",
+          "centerReal": "0.5",
+          "centerImaginary": "25.01085758014569",
+          "radius": "0.000000000001"
+        }
+      ],
+      "note": "All decimal disk data define exact rational values. Approximate labels alone are not the certificate."
+    },
+    "boundedTargets": [
+      {
+        "id": "C1-Z3-regular-endpoint",
+        "status": "proposed, unproved here",
+        "statement": "The branch from rho_3 extends regularly to every a in [0,1], stays in the interior of R, and its endpoint lies in E3. The endpoint is the unique zeta=1 point in E3.",
+        "endpointDisk": {
+          "centerReal": "1.4077880406528867",
+          "centerImaginary": "23.3279877545591045",
+          "radius": "0.0000000001",
+          "decimalDataAreExactRationals": true
+        },
+        "falsification": "A certified derivative zero on this branch, a certified boundary contact/exit, or an endpoint exclusion from E3 would refute the corresponding clause. Failure to certify is inconclusive.",
+        "displayLabel": "C3 (subscript denotes the Z3 branch)"
+      },
+      {
+        "id": "C2-Z1-Z2-first-transverse-exits",
+        "status": "proposed, unproved here",
+        "statement": "For j=1,2, the seeded branch stays in the interior of R for 0<=a<a_j, has a unique crossing of Re(s)=3 in A_j at a_j with Im(s(a_j)) in J_j, and Re(1/zeta prime(s(a_j)))>0. It extends regularly through the upper endpoint of A_j, with Re(s)>3 immediately after a_j.",
+        "brackets": [
+          {
+            "id": "Z1",
+            "A": [
+              "0.85444799",
+              "0.85444800"
+            ],
+            "J": [
+              "13.83867652",
+              "13.83867653"
+            ]
+          },
+          {
+            "id": "Z2",
+            "A": [
+              "0.91722451",
+              "0.91722453"
+            ],
+            "J": [
+              "22.20906410",
+              "22.20906411"
+            ]
+          }
+        ],
+        "decimalDataAreExactRationals": true,
+        "coverageRequirement": "Cover every parameter from zero through the crossing, exclude all earlier contacts with every boundary of R, and certify a positive real part of 1/zeta prime throughout the crossing slab. A sampled exit bracket alone is insufficient.",
+        "falsification": "A certified earlier boundary contact, a nonregular point, absence of the claimed crossing, or a crossing outside the fixed target/height brackets would refute the corresponding clause."
+      }
+    ]
+  },
+  "rigorousCertificationObligations": [
+    "Produce outward-rounded enclosures of zeta, zeta prime, and any higher derivatives used, with an explicit rigorous analytic remainder; precision alone is not a remainder bound.",
+    "Prove the stated seed disks isolate one simple zero each and connect their identities to the numerical labels.",
+    "Cover the entire claimed parameter interval with overlapping slabs and complex boxes. Use a validated parameter-dependent Newton/contraction or Rouche certificate proving existence and uniqueness for each target in each slab.",
+    "Exclude zero from zeta prime throughout each full tube, not just at sample points; prove overlaps preserve the seeded branch without reseeding.",
+    "For C1, prove full-tube interior containment and a unique endpoint in E3. For C2, prove no earlier boundary hit, the fixed crossing brackets, and transverse outward direction using a uniform positive enclosure of Re(1/zeta prime) on the crossing slab.",
+    "Store rational inputs, enclosure parameters, proof inequalities, failure states, and an independently replayable checker. An unmet obligation remains open rather than being replaced by a visually plausible path."
+  ],
+  "futureUses": [
+    {
+      "id": "bounded-certificate",
+      "status": "specific next task, not completed",
+      "use": "Convert the selected finite observations into replayable certificates C1 and C2. This tests the reliability of continuation and branch identity without changing the viewport after seeing the result."
+    },
+    {
+      "id": "complex-target-map",
+      "status": "proposed exploration, no numerical result claimed here",
+      "use": "Allow prescribed complex target curves gamma and use the exact chain-rule formulas to study regular inverse branches and their connectivity. Record critical encounters, poles, and escape separately.",
+      "constraint": "A derivative zero c has critical value zeta(c). Avoidance of critical values does not replace a compactness/escape argument. Every finite lift claim still needs a tube certificate."
+    },
+    {
+      "id": "phase-events",
+      "status": "proposed validated visualization use",
+      "use": "Use the nonzero-point phase-rate identity to bracket quadrant crossings and compare continuous phase with four-color summaries. Track full turns instead of silently reducing all phase changes modulo 2*pi.",
+      "constraint": "Do not apply the phase formula at F=0. For a fixed-target closed contour, a zero/pole count by the argument principle additionally requires a proved nonvanishing boundary and controlled winding."
+    },
+    {
+      "id": "speiser-facing-box",
+      "status": "possible separate finite experiment, not performed",
+      "use": "Choose a fixed closed rectangle strictly inside 0<Re(s)<1/2. Certify the zero count of zeta prime with the argument principle and rigorous boundary enclosures.",
+      "constraint": "A finite box supplies only its own count. Before using winding, prove boundary nonvanishing; zeta prime is analytic in such a box.",
+      "certificateFormula": "N = (1/(2*pi*i)) integral over boundary B of [zeta double-prime(s)/zeta prime(s)] ds, for positively oriented boundary and zeta prime nonzero on it. Since zeta prime is analytic in a neighborhood of this closed box, N counts its interior zeros with multiplicity and no poles are subtracted.",
+      "sourceIds": [
+        "dlmf-argument-principle"
+      ]
+    }
+  ],
+  "riemannScope": {
+    "establishedCriterion": "Speiser: RH iff zeta prime has no zero in the open strip 0<Re(s)<1/2, over all imaginary heights. The boundary lines are not included.",
+    "sourceIds": [
+      "levinson-montgomery-1974",
+      "boseman-pauli-2013",
+      "dlmf-rh"
+    ],
+    "whyThreePathsAreInsufficient": "Our real-target branches could meet only derivative zeros whose critical values are real and in [0,1], and only on the three selected lifts. Other critical values may be nonreal or outside this interval, and other lifts/heights remain unexamined.",
+    "missingGlobalObligation": "A proof using Speiser would need a valid argument excluding every derivative zero throughout that full open strip, with complete coverage or a uniform analytic exclusion. No such argument is supplied here.",
+    "noTransfer": "Neither four colors, the derivative formulas, numerical confinement of a selected branch, nor an off-line 1-point imposes the missing global exclusion. RH does not assert that all nonzero a-points lie on the critical line or that all zeta zeros are simple.",
+    "priorWorkAndContribution": "Boseman-Pauli already studies the same continuation family. The current deliverable is a reproducible finite experiment, explicit elementary formulation, and proposed bounded certification obligations. No established novelty, new verified RH height, or partial RH proof is claimed."
+  },
+  "sources": [
+    {
+      "id": "boseman-pauli-2013",
+      "title": "Adam Boseman and Sebastian Pauli, On the zeros of zeta(s)-c",
+      "year": 2013,
+      "publication": "Involve 6(2), 137-146",
+      "doi": "10.2140/involve.2013.6.137",
+      "url": "https://msp.org/involve/2013/6-2/involve-v6-n2-p02-s.pdf",
+      "location": "Abstract and pp. 137-140",
+      "use": "Direct prior work on this same real-target continuation family from zeta zeros, including paths toward 1-points and rightward paths. Our finite viewport exits do not classify their eventual behavior."
+    },
+    {
+      "id": "dlmf-definition",
+      "title": "NIST DLMF 25.2, Definition and Expansions",
+      "url": "https://dlmf.nist.gov/25.2",
+      "use": "Dirichlet series for Re(s)>1 and meromorphic continuation with a simple pole at s=1."
+    },
+    {
+      "id": "dlmf-rh",
+      "title": "NIST DLMF 25.10(i), Distribution of zeros",
+      "url": "https://dlmf.nist.gov/25.10.i",
+      "use": "RH concerns all nontrivial zeta zeros at target zero."
+    },
+    {
+      "id": "levinson-montgomery-1974",
+      "title": "Norman Levinson and Hugh L. Montgomery, Zeros of the derivatives of the Riemann zeta-function",
+      "year": 1974,
+      "publication": "Acta Mathematica 133",
+      "url": "https://archive.ymsc.tsinghua.edu.cn/pacm_download/117/6174-11511_2006_Article_BF02392141.pdf",
+      "location": "Corollary to Theorem 1, first page",
+      "use": "Published Speiser equivalence: RH iff zeta prime has no zero in 0<Re(s)<1/2. Previously checked in the accepted prior-work audit; also stated on p. 137 of Boseman-Pauli."
+    },
+    {
+      "id": "wegert-2010",
+      "title": "Elias Wegert, Phase Plots of Complex Functions: A Journey in Illustration",
+      "url": "https://arxiv.org/abs/1007.2295",
+      "use": "Established phase-coloring foundation. Four half-open color sectors are this display convention, not a new theorem."
+    },
+    {
+      "id": "lester-2014",
+      "title": "S. J. Lester, a-Points of the Riemann zeta-function on the critical line",
+      "url": "https://arxiv.org/abs/1402.0169",
+      "use": "Established research context for nonzero a-points; no distribution theorem from this paper is implemented here."
+    },
+    {
+      "id": "platt-trudgian",
+      "title": "Dave Platt and Tim Trudgian, The Riemann hypothesis is true up to 3*10^12",
+      "url": "https://arxiv.org/abs/2004.09765",
+      "use": "Existing rigorous finite verification already includes our displayed heights; this experiment adds no verified RH height."
+    },
+    {
+      "id": "dlmf-argument-principle",
+      "title": "NIST DLMF 1.10, Argument Principle",
+      "url": "https://dlmf.nist.gov/1.10.E9",
+      "use": "Contour logarithmic derivative counts zeros minus poles, with multiplicity, assuming boundary nonvanishing and a suitable positively oriented contour."
+    }
+  ]
+}

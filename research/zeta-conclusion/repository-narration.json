@@ -1,0 +1,12 @@
+{
+  "traceId": "graph.riemann.conclusion.repository",
+  "id": "repository",
+  "duration": 12,
+  "narration": "The code and evidence are in the public Graphics project. Use this branch and source checkpoint to reproduce and extend the work.",
+  "requirements": [
+    "Display actual git remote -v output",
+    "Display actual current branch and source checkpoint",
+    "Verify GitHub repository visibility independently of the remote URL",
+    "Hold the repository card through the final video frame"
+  ]
+}

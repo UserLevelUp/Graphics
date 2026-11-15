@@ -1,0 +1,42 @@
+{
+  "schema": "graph-riemann-conclusion-public-language-delta-v1",
+  "traceId": "graph.riemann.conclusion.formulation",
+  "status": "draft_for_independent_review",
+  "targetFile": "research/zeta-conclusion/formulation/closing-scenes.json",
+  "targetFileSha256": "9be9da32da8c9f5690907a7ae17cb6d126dd297980d8ee16c0f9cb3a104a690a",
+  "targetSceneId": "formal_object",
+  "changes": {
+    "narration": "This approach colors each sampled point by its output quadrant relative to a chosen origin. Greater rendering resolution reveals finer boundaries. Colors indicate direction; at a zero, the phase is undefined.",
+    "narrationWordCount": 31,
+    "bulletReplacements": [
+      {
+        "index": 1,
+        "text": "Resolution refines sampling; it does not certify a boundary."
+      },
+      {
+        "index": 2,
+        "text": "Overlapping strokes: draw order or blending sets the visible pixel."
+      }
+    ],
+    "originalOriginReplacement": {
+      "id": "origin_public",
+      "start": 14,
+      "duration": 14,
+      "narration": "This approach assigns four quadrant colors to sampled points. Greater resolution reveals finer boundaries. Here, zeta's output origin moves smoothly from zero to one.",
+      "narrationWordCount": 24,
+      "scope": "Replace only this narration interval in the derived output; retain the original source file unchanged and preserve all prefix visuals."
+    }
+  },
+  "preserve": [
+    "All other narration, formulas, timing and sources remain unchanged.",
+    "The first bullet remains: The output origin moves; the input axes stay fixed.",
+    "Apply this delta in production without changing the frozen source JSON."
+  ],
+  "interpretativeNote": "This is one chosen origin in the output plane, with one quadrant color assigned to each nonzero input sample. It does not assert independent self-solving axes at every point. Greater sampling resolution can expose finer rendered structure; it does not certify an exact boundary or exclude unresolved features. At zero, phase remains undefined.",
+  "audioRequirement": "Regenerate formal_object and the explicitly authorized origin_public replacement from their exact narration fields. All other scene voices remain valid. Preserve the archived original source file; apply the origin replacement only to derived delivery audio and the matching native project.",
+  "bulletReplacementSemantics": "Replace an existing bullet at its zero-based index; append when the index equals the current bullet count. Apply in ascending index order.",
+  "drawOrderNote": {
+    "currentMeaning": "The current phase grid first computes the mathematical quadrant at each sample. When separately rendered strokes overlap, draw order or blending determines the visible pixel; that compositing outcome is not a mathematical proof or an additional quadrant invariant.",
+    "proposedControl": "A future forward-versus-reversed draw-order comparison could identify rendering artifacts while holding sample coordinates and computed quadrant values fixed. This control has not been implemented in the present deliverable."
+  }
+}

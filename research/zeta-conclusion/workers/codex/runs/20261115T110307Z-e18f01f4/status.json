@@ -1,0 +1,9 @@
+{
+  "trace_id": "graph.riemann.conclusion.review.codex.progress",
+  "run_id": "20261115T110307Z-e18f01f4",
+  "provider": "codex",
+  "turn": 2,
+  "state": "complete",
+  "at": "2026-11-15T11:03:26.639444+00:00",
+  "report": "workers/codex/runs/20261115T110307Z-e18f01f4/review.md"
+}

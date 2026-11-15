@@ -1,0 +1,2 @@
+# Keep review fingerprints and native source bytes stable across Windows checkouts.
+* -text

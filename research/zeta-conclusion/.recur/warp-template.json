@@ -1,0 +1,59 @@
+{
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "{warp}",
+  "goal": "{goal}",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "The endcap is appended to the accepted existing video; review and production do not rewrite accepted scientific evidence.",
+    "Floating-point observations, reported external proofs, and future certification plans remain separate.",
+    "No RH proof, new RH progress, or prime prediction is claimed by this finite experiment."
+  ],
+  "required_slices": [
+    {
+      "slice_id": "formulation",
+      "contract_hash": "contract:{warp}.formulation:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "review",
+      "contract_hash": "contract:{warp}.review:v1",
+      "depends_on": [
+        "formulation"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "production",
+      "contract_hash": "contract:{warp}.production:v1",
+      "depends_on": [
+        "review"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "acceptance",
+      "contract_hash": "contract:{warp}.acceptance:v1",
+      "depends_on": [
+        "production"
+      ],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    }
+  ]
+}

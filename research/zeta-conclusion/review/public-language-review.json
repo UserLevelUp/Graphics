@@ -1,0 +1,30 @@
+{
+  "schema": "graph-zeta-conclusion-public-language-review-v1",
+  "traceId": "graph.riemann.conclusion.review",
+  "status": "passed",
+  "path": "research/zeta-conclusion/formulation/public-language.json",
+  "sha256": "35177f06e6ec43664d708d932f0faca5994fd0a8768131618850feabf2adc491",
+  "reviewedAtUtc": "2026-11-15T11:12:22Z",
+  "finalDeltaReviewed": "Includes the subsequently authorized origin_public audio replacement and the nonnarrated overlap-compositing clarification; both are covered by the final hash above.",
+  "reviewType": "Independent content review of a separately authorized production delta; not included in the earlier CLI review and not represented as a new CLI run.",
+  "target": {
+    "path": "research/zeta-conclusion/formulation/closing-scenes.json",
+    "sha256": "9be9da32da8c9f5690907a7ae17cb6d126dd297980d8ee16c0f9cb3a104a690a",
+    "sceneId": "formal_object",
+    "targetHashVerified": true
+  },
+  "checks": [
+    {"id": "point-and-origin-meaning", "status": "passed", "detail": "One quadrant color is assigned to each nonzero sampled output relative to a chosen output origin. The wording and interpretive note do not claim an independent self-solving coordinate system at each point. The unchanged first bullet keeps input axes fixed while the output origin moves."},
+    {"id": "resolution-scope", "status": "passed", "detail": "Rendering resolution concerns denser spatial sampling and finer visible structure; it is not arithmetic precision, proof of boundary location, or exclusion of unresolved features. The replacement bullet and interpretive note explicitly retain those limits. 'Reveals finer boundaries' is read as a rendering description under these qualifications, not a universal error guarantee."},
+    {"id": "phase-at-zero", "status": "passed", "detail": "The new narration correctly says phase is undefined at a zero. The frozen formulas retain the nonzero-domain restriction for quadrant assignment."},
+    {"id": "draw-order-scope", "status": "passed", "detail": "The added third bullet correctly describes overlapping rendered strokes: draw order or blending sets the visible pixel. The supporting note separately explains that the phase grid computes a mathematical quadrant per sample. Raster compositing is not a new quadrant invariant or proof; the proposed reversed-order control is explicitly unimplemented."},
+    {"id": "original-origin-replacement", "status": "passed", "detail": "The authorized 24-word replacement at seconds 14-28 uses the same phase-color and moving-output-origin interpretation. Four colors describe the available palette, not four simultaneous values at each point. This changes derived audio and its native project only; the archived prefix source and prefix visuals remain unchanged."},
+    {"id": "delta-contract", "status": "passed", "detail": "The closing formal_object narration contains 31 words. Its bullet index1 is replaced and index2 appended under explicit zero-based semantics, leaving 3 bullets. The separate origin_public narration contains 24 words and occupies the original 14-second interval. Other mathematical formulas, scene timing, source credits and narrations remain unchanged. Production must apply this delta and regenerate only these two affected narrations."}
+  ],
+  "openIssues": [],
+  "limitations": [
+    "This accepts the text and its intended mathematical meaning, not the rendered spatial resolution or glyph legibility.",
+    "The regenerated voices must match the exact 31-word and 24-word narrations; audio was not checked by this review.",
+    "The two frozen original files remain unchanged, and this supplement must be included in the production provenance."
+  ]
+}

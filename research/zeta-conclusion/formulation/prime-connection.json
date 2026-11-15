@@ -1,0 +1,131 @@
+{
+  "schema": "graph-riemann-conclusion-prime-connection-v1",
+  "traceId": "graph.riemann.conclusion.formulation",
+  "status": "draft_for_independent_review",
+  "checkedDate": "2026-11-15",
+  "id": "prime_connection",
+  "start": 78,
+  "duration": 24,
+  "title": "A future connection to primes",
+  "claimStatus": "ESTABLISHED BRIDGE / PROPOSED EXPERIMENT",
+  "narration": "There is a genuine bridge to primes: explicit formulas connect weighted prime counts with zeta zeros. Our proposed next experiment would reconstruct that count from finitely many zeros and certify the omitted error. A useful result would be a rigorously bounded approximation to prime distribution.",
+  "narrationWordCount": 45,
+  "formulaTextIsNotNarrated": true,
+  "formulaLines": [
+    "ψ(x) = ∑_{pᵏ ≤ x} log p",
+    "x^(β+iγ) = x^β exp(iγ log x)",
+    "RH ⇒ ψ(x) = x + O(√x log² x),  x → ∞",
+    "Goal: |ψ(x) − Ψ_T(x)| ≤ E(x,T)"
+  ],
+  "bullets": [
+    "Schematic bridge: ψ = x − ∑ρ x^ρ/ρ + corrections.",
+    "Zeros oscillate in log x; RH fixes β = 1/2.",
+    "Future: compare with sieve-computed ψ; certify E."
+  ],
+  "bubble": "Connect the zero patterns to a measurable prime function.",
+  "visual": "Editable symbolic arrows connect actual zeta zeros at target a=0 to oscillations in log x, then to a weighted prime-power staircase. Mark every illustrative reconstruction PROPOSED, not measured. Never feed nonzero-target a-points into the zero sum. Show no newly computed curve or certificate.",
+  "sourceCredit": "DLMF §25.16 • Tao (2013, 2021) • Established explicit formulas",
+  "sourceIds": [
+    "dlmf-primes",
+    "tao-explicit-2021",
+    "tao-rh-2013"
+  ],
+  "composition": {
+    "placement": "After the four frozen formal scenes and before the repository card",
+    "formalScenesSeconds": 78,
+    "primeConnectionSeconds": 24,
+    "repositoryStartSeconds": 102,
+    "repositorySeconds": 12,
+    "endingSeconds": 114,
+    "acceptedPrefixSeconds": 138,
+    "combinedSeconds": 252,
+    "preserveFrozenFiles": {
+      "conclusion.json": "57c23d751722f02a81fa1211a6cbe32654896a9c2056bf50682d51329f082ae7",
+      "closing-scenes.json": "9be9da32da8c9f5690907a7ae17cb6d126dd297980d8ee16c0f9cb3a104a690a"
+    },
+    "note": "This supplemental composition overrides only production timing; neither frozen formulation file is edited."
+  },
+  "supportingMathematics": {
+    "definitions": {
+      "psi": "For real x>1, psi(x)=sum over prime p and integers k>=1 with p^k<=x of log p. Equivalently sum_{n<=x} Lambda(n), with Lambda(p^k)=log p and Lambda(n)=0 otherwise. Natural logarithms are used. This weights prime powers; it is not the ordinary count pi(x).",
+      "rho": "rho=beta+i*gamma ranges over actual nontrivial zeros of zeta, counted with multiplicity. These are target-a=0 zeros, not solutions of zeta(s)=a for a!=0.",
+      "powerConvention": "For real x>1, x^rho=exp(rho*log x), so x^rho=x^beta exp(i*gamma*log x). The phase winds in log x. Conjugate zeros combine into real oscillatory contributions."
+    },
+    "exactFormula": {
+      "status": "established theorem; not newly proved or implemented here",
+      "domain": "Real noninteger x>1. This deliberately avoids every integer jump location.",
+      "formula": "psi(x)=x-lim_{T->infinity} sum_{rho: |Im(rho)|<=T} x^rho/rho-log(2*pi)-(1/2)*log(1-x^(-2)).",
+      "summation": "Symmetric height cutoff, all nontrivial zeros with multiplicity; no arbitrary rearrangement or absolute-convergence claim.",
+      "jumpConvention": "At a prime power x=p^k, the standard midpoint version uses psi_0(x)=(psi(x-)+psi(x))/2=psi(x)-(log p)/2. The displayed exact formula here is restricted to nonintegers, so it makes no endpoint assignment at a jump. A future implementation must select and state its jump convention.",
+      "sourceIds": [
+        "tao-explicit-2021"
+      ]
+    },
+    "rhConditionalEstimate": {
+      "status": "established conditional implication",
+      "statement": "If RH holds, psi(x)=x+O(sqrt(x)*(log x)^2) as x tends to infinity.",
+      "meaning": "There exist constants C and x0 such that |psi(x)-x|<=C*sqrt(x)*(log x)^2 for x>=x0. This does not assert RH, provide the numerical constant for a new program, or bound the error of an arbitrary finite zero sum.",
+      "sourceIds": [
+        "tao-rh-2013",
+        "lee-nosal-2025"
+      ]
+    },
+    "countingAndNthPrime": {
+      "piDefinition": "pi(x)=number of primes p<=x.",
+      "thetaDefinition": "theta(x)=sum_{p<=x} log p.",
+      "elementaryRelations": [
+        "psi(x)=sum_{k>=1} theta(x^(1/k)); only finitely many terms are nonzero.",
+        "pi(x)=theta(x)/log x + integral from 2 to x of theta(u)/(u*(log u)^2) du, for x>=2.",
+        "For integer n>=1, p_n=min{m in integers, m>=2: pi(m)>=n}."
+      ],
+      "derivation": "The first identity groups prime powers. The second follows by writing 1/log p=1/log x+integral_p^x du/(u*(log u)^2), multiplying by log p, and summing over primes. The last is the definition of the nth jump of pi.",
+      "scope": "These connect prime distribution and counting to prime locations. A bounded approximation does not identify an exact nth prime unless its counting bounds isolate the relevant jump; no such solver is proposed as the present deliverable."
+    }
+  },
+  "proposedBoundedExperiment": {
+    "status": "future work; no reconstruction or certified truncation bound has been implemented here",
+    "objective": "Construct a finite-zero approximation Psi_T on a fixed finite test domain and prove explicit total errors E(x,T), then independently compare with a sieve-computed weighted prime-power sum.",
+    "initialTestDomain": "Suggested exact grid x=j+1/2 for integers j=2,...,100; it avoids jump ambiguities. Freeze the chosen grid, height cutoff T and desired error tolerance before evaluating success.",
+    "approximation": "Psi_T(x)=x-sum_{rho: |Im(rho)|<=T} x^rho/rho-log(2*pi)-(1/2)*log(1-x^(-2)).",
+    "proofObligations": [
+      "Certify all zeros included below the cutoff, their multiplicities, and numerical enclosures; prove completeness up to T rather than using a selected visual sample.",
+      "Derive an explicit remainder for omitted zeros with its exact x/T restrictions; bound evaluation and zero-location errors separately. Never treat the conditional RH estimate for psi-x as a finite-sum tail bound.",
+      "Handle jumps or use a precisely specified smoothing and separately bound the smoothing error.",
+      "Compare with an independently enumerated prime-power sum using rigorous logarithm enclosures; store replayable inequalities |psi(x)-Psi_T(x)|<=E(x,T)."
+    ],
+    "passFail": "Pass only when all declared error inequalities are certified and the independent values lie in the enclosures. A smaller empirical discrepancy without a tail proof is numerical evidence only; inability to certify remains an open obligation.",
+    "connectionToCurrentTool": "The phase/origin visualizer can inspect how individual genuine-zero contributions combine. The accepted continuation experiment supplies no complete zero table or prime reconstruction certificate.",
+    "noveltyAndRhLimit": "Explicit formulas and finite-zero reconstructions are established methods. This proposed experiment makes no originality, improved algorithm, new RH bound, or RH-proof claim."
+  },
+  "sources": [
+    {
+      "id": "dlmf-primes",
+      "title": "NIST DLMF 25.16(i), Distribution of Primes",
+      "url": "https://dlmf.nist.gov/25.16",
+      "use": "Definition of psi and its zero connection. Its displayed RH error is O(x^(1/2+epsilon)) for every epsilon>0, not the sharper log-squared form."
+    },
+    {
+      "id": "tao-explicit-2021",
+      "title": "Terence Tao, 246B Notes 4: The Riemann zeta function and the prime number theorem",
+      "date": "2021-02-12",
+      "url": "https://terrytao.wordpress.com/2021/02/12/246b-notes-4-the-riemann-zeta-function-and-the-prime-number-theorem/",
+      "location": "Theorem 8; discussion of symmetric truncation and smoothing",
+      "use": "Exact noninteger-x explicit formula and the need to control infinite-zero contributions."
+    },
+    {
+      "id": "tao-rh-2013",
+      "title": "Terence Tao, The Riemann hypothesis in various settings",
+      "date": "2013-07-19",
+      "url": "https://terrytao.wordpress.com/2013/07/19/the-riemann-hypothesis-in-various-settings/",
+      "location": "Equation (6)",
+      "use": "RH-conditional sqrt(x) log-squared error form."
+    },
+    {
+      "id": "lee-nosal-2025",
+      "title": "Ethan Simpson Lee and Pawel Nosal, Sharper bounds for the error in the prime number theorem assuming the Riemann Hypothesis",
+      "url": "https://arxiv.org/html/2312.05628v4",
+      "location": "Introduction equation (1) and Theorem 1.2",
+      "use": "Primary paper giving explicit conditional bounds, which in particular support the stated asymptotic log-squared bound. Its improved constants are not imported into this proposed implementation."
+    }
+  ]
+}

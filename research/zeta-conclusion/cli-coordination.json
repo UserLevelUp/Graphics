@@ -1,0 +1,50 @@
+{
+  "schema": "graph-zeta-conclusion-cli-coordination-v1",
+  "traceId": "graph.riemann.conclusion.review",
+  "state": "review_gate_accepted_by_coordinator",
+  "provider": "codex",
+  "availability": {
+    "version": "0.154.0",
+    "loginStatus": "Logged in using ChatGPT",
+    "copilotVersion": "1.0.112 (unused)",
+    "carbonLauncherPresent": true
+  },
+  "nestedRoot": "C:\\src\\graph\\research\\zeta-conclusion",
+  "rootConfigSha256Before": "e8f14f67eae1c85d50fe92843da6c232172949b4d653001fdcfe163bcaa31436",
+  "bounds": {
+    "checkpointSeconds": 180,
+    "turnTimeoutSeconds": 240,
+    "maxTurns": 2,
+    "maxAttempts": 2,
+    "coordinatorWaitSeconds": 300
+  },
+  "writes": "Only nested .recur/, workers/, and this coordination record",
+  "publication": "Completed: final Codex review ACCEPT; attempt2 produced and coordinator accepted the review gate. Original clock-protocol failure retained.",
+  "preDispatchRequirement": "Add each copied inputs/ evidence file to assignment inputs before dispatch; do not mutate inputs during active review",
+  "tests": {
+    "count": 33,
+    "result": "passed",
+    "record": "workers/evidence/recovery-protocol-tests.txt"
+  },
+  "rootConfigSha256After": "e8f14f67eae1c85d50fe92843da6c232172949b4d653001fdcfe163bcaa31436",
+  "commands": {
+    "preview": "recur-watch dispatch graph.riemann.conclusion -d C:/src/graph/research/zeta-conclusion --json",
+    "dispatch": "recur-watch dispatch graph.riemann.conclusion --confirm -d C:/src/graph/research/zeta-conclusion --cycles 600 --json",
+    "status": "recur warp dispatch graph.riemann.conclusion -d C:/src/graph/research/zeta-conclusion --json",
+    "steer": "C:/Python314/python.exe C:/src/graph/research/zeta-conclusion/workers/steer-review.py codex RUN_ID 1 steer INSTRUCTION_FILE"
+  },
+  "transport": "UTF-8 prompt file on stdin, avoiding Windows command-line size limits",
+  "actualModelTurns": 2,
+  "reviewVerdict": "ACCEPT",
+  "recovery": {
+    "priorFailureRetained": true,
+    "clockSource": "coordinator",
+    "modelClockSuccess": false
+  },
+  "summary": "workers/evidence/cli-review-summary.json",
+  "coordinatorAcceptance": {
+    "reportedBy": "root coordinator",
+    "basis": "Actual CLI final review.md plus independent content review",
+    "workerDoesNotSelfAccept": true
+  }
+}

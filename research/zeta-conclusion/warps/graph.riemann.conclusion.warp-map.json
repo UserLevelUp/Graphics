@@ -1,0 +1,64 @@
+{
+  "bubble_uuid": "01a1ded6-5994-7a57-9d3e-79a958101beb",
+  "goal": "Append a reviewed formal conclusion with formulas, bounded conjectures and further-work applications to the accepted video",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "The endcap is appended to the accepted existing video; review and production do not rewrite accepted scientific evidence.",
+    "Floating-point observations, reported external proofs, and future certification plans remain separate.",
+    "No RH proof, new RH progress, or prime prediction is claimed by this finite experiment."
+  ],
+  "required_slices": [
+    {
+      "contract_hash": "contract:graph.riemann.conclusion.formulation:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "formulation",
+      "slice_uuid": "01a1ded6-5994-7170-8c82-1210cc653e9c"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.conclusion.review:v1",
+      "depends_on": [
+        "formulation"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "review",
+      "slice_uuid": "01a1ded6-5994-7e54-a193-782dbce3c21c"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.conclusion.production:v1",
+      "depends_on": [
+        "review"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "production",
+      "slice_uuid": "01a1ded6-5994-7e53-ad7b-7fbc3bd5c35b"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.conclusion.acceptance:v1",
+      "depends_on": [
+        "production"
+      ],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "acceptance",
+      "slice_uuid": "01a1ded6-5994-7ec6-a5bc-b3c8e128bf0f"
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.riemann.conclusion"
+}
