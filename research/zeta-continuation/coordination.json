@@ -17,13 +17,30 @@
     "animation": {
       "traceId": "graph.riemann.continuation.animation",
       "contract": "animation/graph.riemann.continuation.animation.contract.current.md",
-      "requires": ["independent numerical checks", "native UI/export", "editable AEP", "rendered video and frame QA", "evidence checkpoint"]
+      "requires": [
+        "independent numerical checks",
+        "native UI/export",
+        "editable AEP",
+        "rendered video and frame QA",
+        "evidence checkpoint"
+      ],
+      "state": "accepted",
+      "acceptance": "evidence/animation-acceptance.json"
     },
     "presentation": {
       "traceId": "graph.riemann.continuation.presentation",
       "dependsOnAccepted": "graph.riemann.continuation.animation",
       "contract": "storyboard.json",
-      "requires": ["final result narration", "original presenter and bubbles", "editable AEP", "voice timing", "render QA", "mathematical scope review"]
+      "requires": [
+        "final result narration",
+        "original presenter and bubbles",
+        "editable AEP",
+        "voice timing",
+        "render QA",
+        "mathematical scope review"
+      ],
+      "state": "accepted",
+      "acceptance": "evidence/presentation-acceptance.json"
     }
   },
   "clarifications": [
@@ -34,13 +51,20 @@
   ],
   "watch": {
     "topic": "graph.riemann.continuation.animation",
-    "workers": ["carbon", "codex", "copilot"],
+    "workers": [
+      "carbon",
+      "codex",
+      "copilot"
+    ],
     "checkpointSeconds": 180,
     "steering": "animation/evidence/steering-01.txt",
     "dispatch": "animation/evidence/dispatch-final.json",
     "reviewScope": "contract only; not execution acceptance",
     "protocolDoesNotProveMathematics": true
   },
-  "state": "animation_under_verification",
-  "globalRhProof": "open"
+  "state": "complete",
+  "globalRhProof": "open",
+  "acceptedUtc": "2026-11-15T10:33:37.387901+00:00",
+  "integrationEvidence": "evidence/coordination-live-gates.json",
+  "nextResearchStep": "Deferred: formulate a literature-checked bounded claim and certify its continuation with interval bounds. No new mathematical work is claimed by media completion."
 }

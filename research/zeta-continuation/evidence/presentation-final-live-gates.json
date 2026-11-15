@@ -1,0 +1,133 @@
+{
+  "blocked": [],
+  "bubble_uuid": "01a1de9a-8757-7033-a4ee-23aed8c5d847",
+  "completed_slices": [
+    "acceptance",
+    "animation_input",
+    "production"
+  ],
+  "conflicts": [],
+  "contract_status": "declared-gates-satisfied",
+  "counts": {
+    "blocked": 0,
+    "conflicting": 0,
+    "covered": 3,
+    "pending": 0,
+    "required": 3,
+    "stale_contract": 0
+  },
+  "covered": [
+    "acceptance",
+    "animation_input",
+    "production"
+  ],
+  "current_slice": null,
+  "evidence_status": "declared",
+  "gate_evidence": [
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "research/zeta-continuation/evidence/animation-acceptance.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "animation_input",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "research/zeta-continuation/evidence/presentation-manifest.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "production",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "research/zeta-continuation/evidence/presentation-acceptance.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "verification",
+      "satisfied": true,
+      "slice_id": "acceptance",
+      "status": "declared"
+    }
+  ],
+  "goal": "Explain the accepted continuation animation using After Effects, a presenter and bubbles, separating observations, elementary results and the missing global RH argument",
+  "layers": [
+    "acceptance@narrated-ae-accepted-20261115",
+    "animation_input@accepted-animation-input-20261115",
+    "production@narrated-ae-production-20261115"
+  ],
+  "manifest": "graph.riemann.continuation.presentation.warp-map.json",
+  "pending": [],
+  "ready_slices": [],
+  "root": "\\\\?\\C:\\src\\graph\\warps",
+  "schema": "warp-progress-v1",
+  "slices": [
+    {
+      "contract_hash": "contract:graph.riemann.continuation.presentation.animation_input:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "animation_input",
+      "slice_uuid": "01a1de9a-875d-7605-bcb1-9b3bc3d913a9",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.continuation.presentation.production:v1",
+      "depends_on": [
+        "animation_input"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "production",
+      "slice_uuid": "01a1de9a-875d-7605-bcb1-9b3c3ebf19cf",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.continuation.presentation.acceptance:v1",
+      "depends_on": [
+        "production"
+      ],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "acceptance",
+      "slice_uuid": "01a1de9a-875d-7605-bcb1-9b3d9e9b6ba5",
+      "state": "complete"
+    }
+  ],
+  "stale_contract": [],
+  "state": "complete",
+  "warnings": [],
+  "warp_id": "graph.riemann.continuation.presentation"
+}

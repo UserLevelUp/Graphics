@@ -1,0 +1,100 @@
+{
+  "blocked": [],
+  "bubble_uuid": "01a1de9a-873a-75b2-a647-840a3f6bc5d0",
+  "completed_slices": [
+    "animation",
+    "presentation"
+  ],
+  "conflicts": [],
+  "contract_status": "declared-gates-satisfied",
+  "counts": {
+    "blocked": 0,
+    "conflicting": 0,
+    "covered": 2,
+    "pending": 0,
+    "required": 2,
+    "stale_contract": 0
+  },
+  "covered": [
+    "animation",
+    "presentation"
+  ],
+  "current_slice": null,
+  "evidence_status": "declared",
+  "gate_evidence": [
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "research/zeta-continuation/evidence/animation-acceptance.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "verification",
+      "satisfied": true,
+      "slice_id": "animation",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "research/zeta-continuation/evidence/presentation-acceptance.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "verification",
+      "satisfied": true,
+      "slice_id": "presentation",
+      "status": "declared"
+    }
+  ],
+  "goal": "Coordinate separately accepted root-continuation animation and presenter explanation, retaining the open Riemann proof obligation",
+  "layers": [
+    "animation@accepted-animation-20261115",
+    "presentation@accepted-presentation-20261115"
+  ],
+  "manifest": "graph.riemann.continuation.warp-map.json",
+  "pending": [],
+  "ready_slices": [],
+  "root": "\\\\?\\C:\\src\\graph\\warps",
+  "schema": "warp-progress-v1",
+  "slices": [
+    {
+      "contract_hash": "contract:graph.riemann.continuation.animation:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "animation",
+      "slice_uuid": "01a1de9a-8743-700f-b410-727046b09a88",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.continuation.presentation:v1",
+      "depends_on": [
+        "animation"
+      ],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "presentation",
+      "slice_uuid": "01a1de9a-8743-700f-b410-727130fa9229",
+      "state": "complete"
+    }
+  ],
+  "stale_contract": [],
+  "state": "complete",
+  "warnings": [],
+  "warp_id": "graph.riemann.continuation"
+}

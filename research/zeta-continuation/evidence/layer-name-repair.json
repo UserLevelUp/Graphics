@@ -6,5 +6,16 @@
   "sha256BeforeAndAfter": "54a60edd278c959f59cabcdc6fe7a7c4ee533b4875ed9aca0f38a858c2b41fe4",
   "contentUnchanged": true,
   "verified": "Live animation Warp returns complete, 6/6 slices, no conflicts or stale contracts.",
-  "history": "Earlier saved queries retain the original filenames as historical observations."
+  "history": "Earlier saved queries retain the original filenames as historical observations.",
+  "additionalParentPresentationRename": {
+    "from": "warps/graph.riemann.continuation.presentation.accepted-presentation-20261115.warp-layer.json",
+    "to": "warps/graph.riemann.continuation.parent-presentation.accepted-presentation-20261115.warp-layer.json",
+    "sha256BeforeAndAfter": "33e52da97e2a9e4cbdc2e851c11f6865c9eca61829db280e2bb0cb2139cd8327",
+    "contentUnchanged": true
+  },
+  "finalLiveEvidence": [
+    "animation-final-live-gates.json",
+    "presentation-final-live-gates.json",
+    "coordination-live-gates.json"
+  ]
 }

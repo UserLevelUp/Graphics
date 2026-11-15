@@ -1,0 +1,31 @@
+{
+  "traceId": "graph.riemann.continuation.presentation.acceptance",
+  "status": "accepted",
+  "scope": "A narrated explanation of the separately accepted finite continuation experiment, with an editable After Effects project; no mathematical novelty or RH proof claim.",
+  "sourceCheckpoint": "bfeb8e3abc29e5d0be1c7aa06a6d2e789d484c7e",
+  "manifest": "research/zeta-continuation/evidence/presentation-manifest.json",
+  "manifestSha256": "c3d301f0d949e4d35955485a429e4ce69cd22643a471e7582af5668291b86a88",
+  "acceptedInput": "research/zeta-continuation/evidence/animation-acceptance.json",
+  "requiredEvidence": {
+    "contentAndScientificScope": "evidence/presentation-content-audit.json; eight checks passed, primary-source reports attributed, no proof replay claimed",
+    "voiceSourceAndTiming": "evidence/voice-production.json; nine prompts match final narration, clips fit scenes without truncation",
+    "nativeBuild": "output presentation/build-status.txt; After Effects 27.0x78, nine scenes, 281 narration words",
+    "renderAndDecode": "evidence/presentation-render.log and presentation-decode.log; 3312 frames, full video/audio decode passed",
+    "mediaAndVisualReview": "evidence/presentation-qa.json; readable reviewed previews, correct quadrant colors and path semantics, audible signal in all scenes",
+    "integrity": "presentation-manifest.json; 15 source/evidence files and 27 output files verified"
+  },
+  "presentation": {
+    "durationSeconds": 138,
+    "frameSize": [1920, 1080],
+    "framesPerSecond": 24,
+    "scientificGraphics": "Computed paths and phase frames exported by the native graph tool; editable labels and explanation composed in After Effects.",
+    "animatedParameter": "a from 0 to 1 in zeta(s)-a; numerical step size is a separate solver control."
+  },
+  "limitations": [
+    "Still-frame layout review and full-stream decoding do not constitute inspection of every frame or independent speech transcription.",
+    "Recent analytic and Lean results were attributed to primary reports; proofs were not independently replayed.",
+    "Two numerical exits and one endpoint do not establish certified continuation or an advance on RH.",
+    "Raw renderer logs retain their original trailing whitespace."
+  ],
+  "globalRiemannHypothesisStatus": "open"
+}

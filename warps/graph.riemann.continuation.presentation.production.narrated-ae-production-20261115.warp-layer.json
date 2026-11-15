@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.continuation.presentation",
+  "slice_id": "production",
+  "contract_hash": "contract:graph.riemann.continuation.presentation.production:v1",
+  "attempt_id": "narrated-ae-production-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:c3d301f0d949e4d35955485a429e4ce69cd22643a471e7582af5668291b86a88",
+  "evidence": {
+    "review": [
+      "research/zeta-continuation/evidence/presentation-manifest.json"
+    ]
+  },
+  "reason": null
+}

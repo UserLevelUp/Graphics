@@ -137,3 +137,17 @@
 - lane.separator.src: _
 - evidence.docs.tree_cmd: recur tree "**" -d docs/ --sep .
 - evidence.src.tree_cmd: recur tree "**" -d src/ --sep _
+
+### graph-continuation-all-accepted-20261115
+- date: unix:1794738817
+- lane.state.docs.current: none
+- lane.state.src.current: none
+- lane.state.tests.passed: none
+- lane.state.tests.failed: none
+- lane.git.branch: graph/riemann-continuation
+- lane.git.head: bfeb8e3 Add reviewed narrated continuation presentation and sources
+- lane.git.worktree: dirty=11
+- lane.separator.docs: .
+- lane.separator.src: _
+- evidence.docs.tree_cmd: recur tree "**" -d docs/ --sep .
+- evidence.src.tree_cmd: recur tree "**" -d src/ --sep _

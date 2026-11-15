@@ -1,0 +1,94 @@
+{
+  "blocked": [],
+  "bubble_uuid": "01a1dd6c-34a2-7675-82d9-27f00274a9fb",
+  "completed_slices": [
+    "slice-0"
+  ],
+  "conflicts": [],
+  "contract_status": "unresolved",
+  "counts": {
+    "blocked": 0,
+    "conflicting": 0,
+    "covered": 1,
+    "pending": 1,
+    "required": 2,
+    "stale_contract": 0
+  },
+  "covered": [
+    "slice-0"
+  ],
+  "current_slice": "slice-final",
+  "evidence_status": "declared",
+  "gate_evidence": [
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "warps/graph.riemann.baseline.complete.md",
+          "status": "declared"
+        }
+      ],
+      "gate": "baseline",
+      "satisfied": true,
+      "slice_id": "slice-0",
+      "status": "declared"
+    },
+    {
+      "evidence": [],
+      "gate": "acceptance",
+      "satisfied": false,
+      "slice_id": "slice-final",
+      "status": "absent"
+    }
+  ],
+  "goal": "Prove the Riemann Hypothesis through global exclusion of zeta derivative zeros in the left half of the critical strip",
+  "layers": [
+    "slice-0@local-origins-v1"
+  ],
+  "manifest": "graph.riemann.warp-map.json",
+  "pending": [
+    "slice-final"
+  ],
+  "ready_slices": [
+    "slice-final"
+  ],
+  "root": "\\\\?\\C:\\src\\graph\\warps",
+  "schema": "warp-progress-v1",
+  "slices": [
+    {
+      "contract_hash": "contract:graph.riemann.slice-0:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "baseline"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "slice-0",
+      "slice_uuid": "01a1dd6c-34a2-759d-a5e9-e84fbcb4b22b",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.slice-final:v1",
+      "depends_on": [
+        "slice-0"
+      ],
+      "evidence_gates": [
+        "acceptance"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": true,
+      "slice_id": "slice-final",
+      "slice_uuid": "01a1dd6c-34a2-776d-9026-bff9496a0fe4",
+      "state": "pending"
+    }
+  ],
+  "stale_contract": [],
+  "state": "incomplete",
+  "warnings": [],
+  "warp_id": "graph.riemann"
+}
