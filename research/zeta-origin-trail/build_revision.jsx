@@ -190,7 +190,7 @@
         }
         var frame=rect(circle,"Current brush outline",-48,-48,96,96,null,C.ink,2,0);local(frame,brush,[0,0]);
         local(ellipse(circle,"Current brush center",0,0,10,10,C.ink,C.bg,2),brush,[0,0]);
-        text(circle,"History label","ACCUMULATED RENDER HISTORY",1000,575,22,C.muted,380,80);
+        text(circle,"History label","PAINT HISTORY",1090,585,24,C.muted,180,50);
         text(circle,"Circle note","Direction changes the trailing colors. New marks overwrite earlier colors.",550,920,29,C.ink,1230,65);
         var cv=app.project.importFile(new ImportOptions(new File(CONFIG.output+"/assets/voice/circle.mp3")));
         if(cv.duration>11.7)throw Error("Circle narration exceeds available scene duration");

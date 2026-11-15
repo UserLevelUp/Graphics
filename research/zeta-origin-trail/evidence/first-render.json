@@ -1,0 +1,28 @@
+{
+  "traceId": "graph.riemann.origin_trail.render.first",
+  "status": "superseded_for_label_clearance",
+  "finding": "The long center label crosses the paint near the inside edges of the completed circle. Brush geometry, persistence and direction are correct.",
+  "correction": "Shorten to PAINT HISTORY in a180pixel text box inside the clear center.",
+  "retained": [
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\origin-trail\\first-render\\origin-trail-scene.mp4",
+      "sha256": "84b040fe4d07352d7d6ad7b42261906dd7e1480034d040acf132824c3b734e14"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\origin-trail\\first-render\\circle-brush-scene.mp4",
+      "sha256": "026bf5aeff0ebda614922e7337b5df5f3c893042abe10f7c392d6edfaa9abab4"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\origin-trail\\first-render\\repository-card.mp4",
+      "sha256": "ca13b3eedcda6f43b6580fb1d6891a321fafd8c60d3b2c822e8a58e9ea35e26c"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\origin-trail\\first-render\\presentation-with-trail.mp4",
+      "sha256": "ebee3239cb7d12f1c176661f9d35a90615f1951aab82444044355cbe135af307"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\origin-trail\\first-render\\presentation-with-trail.aep",
+      "sha256": "3110078b9bcf92b7f0d2bd957f8587958820ec7bdb6f4c2df1658df29c7c147d"
+    }
+  ]
+}
