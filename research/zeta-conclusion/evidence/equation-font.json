@@ -1,0 +1,11 @@
+{
+  "traceId": "graph.riemann.conclusion.production.font",
+  "fontPostScriptName": "CambriaMath",
+  "fontFile": "C:/Windows/Fonts/cambria.ttc",
+  "fontFileSha256": "84e70ccc1664482f4a960442c7a166c91a1b2cf98ff88c33cb73f79403f66d7b",
+  "status": "all_formula_characters_present_in_cmap",
+  "formulaCharacterCount": 84,
+  "missing": [],
+  "criticalSymbols": "∃ ∈ ⇔ ⇒",
+  "limit": "Font cmap coverage is a preflight check; native rendered stills must also pass."
+}

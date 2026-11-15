@@ -1,0 +1,27 @@
+{
+  "traceId": "graph.riemann.conclusion.production.first_render",
+  "status": "rejected_missing_glyphs",
+  "files": [
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\conclusion-ae\\first-render\\formal-conclusion.mp4",
+      "sha256": "61639c27005d62bcd87b49cd3dc614e7dbcb3e4522a6ab7bdbc81ebc6530078b",
+      "size": 19142017
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\conclusion-ae\\first-render\\presentation-with-conclusion.mp4",
+      "sha256": "68693f3c3528e9bfac418a415adf8fa841c375faecd6cc1c74978f73a54cdc2b",
+      "size": 11545406
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\conclusion-ae\\first-render\\presentation-with-conclusion.aep",
+      "sha256": "550d74c94a1eb594cea815e6416f49864e7f6e4f8bee64088f40b18feb0b7bd2",
+      "size": 3658293
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\conclusion-ae\\first-render\\build-status.txt",
+      "sha256": "7e1aa68ce6d94d5daa52b612eb19330a4a44c358b769228e71e95f0194bc73b5",
+      "size": 290
+    }
+  ],
+  "reason": "Native SegoeUI equation text omitted existence, membership, equivalence and implication glyphs. Retained as failed render evidence; superseded by corrected render."
+}

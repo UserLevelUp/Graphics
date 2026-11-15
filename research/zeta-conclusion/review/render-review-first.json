@@ -1,0 +1,107 @@
+{
+  "schema": "graph-riemann-conclusion-render-review-v1",
+  "traceId": "graph.riemann.conclusion.review.render",
+  "status": "needs_revision",
+  "reviewedAtUtc": "2026-11-15T11:19:58.066480+00:00",
+  "reviewer": "local_quadrant_math independent rendered-still inspection",
+  "scope": "Seven decoded still frames from the native ending MP4 only. This is not a full-video, motion, audio, source-prefix, or mathematical-proof review.",
+  "input": {
+    "video": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/riemann-conclusion/formal-conclusion.mp4",
+    "sha256": "61639c27005d62bcd87b49cd3dc614e7dbcb3e4522a6ab7bdbc81ebc6530078b"
+  },
+  "stills": [
+    {
+      "requestedSeconds": 10,
+      "path": "C:/src/graph/research/zeta-conclusion/evidence/first-render-stills/ending-10.png",
+      "sha256": "5633fb4181ec39951b35f47912ac3f79390515035664101c30917907b8962a9d",
+      "originalWorkingPath": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/work/conclusion-qa/ending-10.png"
+    },
+    {
+      "requestedSeconds": 29.5,
+      "path": "C:/src/graph/research/zeta-conclusion/evidence/first-render-stills/ending-29-5.png",
+      "sha256": "ceb62b39ea53d634da0057b6ac75b3a60c104d3c76d793977d6630b6588fdb5e",
+      "originalWorkingPath": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/work/conclusion-qa/ending-29-5.png"
+    },
+    {
+      "requestedSeconds": 48.5,
+      "path": "C:/src/graph/research/zeta-conclusion/evidence/first-render-stills/ending-48-5.png",
+      "sha256": "faaa34cf0b956fa89f25496fe56dea49b759bc818a011669f620ca05a2e09162",
+      "originalWorkingPath": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/work/conclusion-qa/ending-48-5.png"
+    },
+    {
+      "requestedSeconds": 68,
+      "path": "C:/src/graph/research/zeta-conclusion/evidence/first-render-stills/ending-68.png",
+      "sha256": "d3fd285f22fa3d7477914b7f681204da8105f46b1ba96ab23f18ee9f34df042a",
+      "originalWorkingPath": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/work/conclusion-qa/ending-68.png"
+    },
+    {
+      "requestedSeconds": 90,
+      "path": "C:/src/graph/research/zeta-conclusion/evidence/first-render-stills/ending-90.png",
+      "sha256": "a4c355a3e067cc5e37f98bb8ba5ede21adad08f1aedbe644d7e61962f4ba8be6",
+      "originalWorkingPath": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/work/conclusion-qa/ending-90.png"
+    },
+    {
+      "requestedSeconds": 108,
+      "path": "C:/src/graph/research/zeta-conclusion/evidence/first-render-stills/ending-108.png",
+      "sha256": "98cfebda5b2969a21daac075a390a5a29c34392ccedee8996d3ee20bf8369e9d",
+      "originalWorkingPath": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/work/conclusion-qa/ending-108.png"
+    },
+    {
+      "requestedSeconds": 113.95,
+      "path": "C:/src/graph/research/zeta-conclusion/evidence/first-render-stills/ending-113-95.png",
+      "sha256": "80fec12240be2890937fc65c9d83306e8499f42e5efd53a9ad6972d7f49f321b",
+      "originalWorkingPath": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/work/conclusion-qa/ending-113-95.png"
+    }
+  ],
+  "checks": [
+    {
+      "id": "formulas-and-bullets-layout",
+      "status": "passed",
+      "observation": "At10s,48.5s and90s, four equation lines and three bullets remain readable within the main panel. Source credits and speech bubbles are visible without overlap or clipping."
+    },
+    {
+      "id": "numerical-results-card",
+      "status": "passed",
+      "observation": "At29.5s, both exit targets and the Z3 endpoint are legible, and first-detected/non-certified limitations are visible."
+    },
+    {
+      "id": "math-glyph-coverage",
+      "status": "failed",
+      "observation": "At48.5s, the existence symbol and membership symbol are blank. At68s, the equivalence symbol is blank. At90s, the implication symbol is blank. Greek letters, prime marks, subscripts, inequalities, square root, and infinity are otherwise visibly present."
+    },
+    {
+      "id": "repository-final-card",
+      "status": "passed",
+      "observation": "At108s and the near-final requested timestamp113.95s, the repository card is fully visible: github.com/UserLevelUp/Graphics; branch graph/riemann-continuation; fetch/push remote https://github.com/UserLevelUp/Graphics.git; public visibility; checkpoint02e89b0544e6."
+    }
+  ],
+  "blockingFindings": [
+    {
+      "id": "missing-logical-glyphs",
+      "severity": "blocker",
+      "characters": [
+        "∃",
+        "∈",
+        "⇔",
+        "⇒"
+      ],
+      "affectedSeconds": [
+        48.5,
+        68,
+        90
+      ],
+      "effect": "The rendered formulas omit essential existence, membership, equivalence and implication relations, so the viewer does not see the reviewed mathematical statements.",
+      "requestedCorrection": "Use a verified math-capable font for equation layers, or equivalent plain-language tokens. Preserve the approved source semantics and re-inspect the affected rendered frames."
+    }
+  ],
+  "nonblockingNotes": [
+    "Line wrapping inside speech bubbles is uneven in places but remains readable and unclipped.",
+    "The still check does not determine whether narration fits, whether the authorized prefix audio replacement succeeded, or whether every transition frame is correct."
+  ],
+  "openBlockerCount": 1,
+  "preservation": {
+    "originalReviewSha256": "5a876feefeb25576f0c8d3757bc57426811c044578213026f5c6ac5340d6db00",
+    "reason": "Preserve the first render failure before a font fix and corrected rendering. Image bytes and recorded input-video hash are unchanged.",
+    "sourceReviewAtPreservation": "C:/src/graph/research/zeta-conclusion/review/render-review.json"
+  }
+}

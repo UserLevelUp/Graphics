@@ -53,6 +53,16 @@ for s in scenes:
     rms=float(np.sqrt(np.mean(seg.astype(float)**2)));peak=float(np.max(np.abs(seg)))
     assert rms>.001 and peak<1.05,(s['id'],rms,peak)
     audio.append(dict(id=s['id'],rms=rms,peak=peak))
+def read_audio(path):
+    return np.frombuffer(subprocess.check_output([ff,'-v','error','-i',str(path),'-vn','-ac','1','-ar','16000','-f','f32le','-']),dtype='<f4')
+source_audio=read_audio(original);public_audio=read_audio(out/'assets/public-prefix.wav')
+outside=[]
+for lo,hi in [(0.1,13.9),(28.1,137.9)]:
+    a0=source_audio[int(lo*16000):int(hi*16000)];a1=public_audio[int(lo*16000):int(hi*16000)]
+    err=float(np.max(np.abs(a0-a1)));assert err<.001,(lo,hi,err)
+    outside.append(dict(start=lo,end=hi,maxAbsoluteSampleDifference=err))
+changed=float(np.sqrt(np.mean((source_audio[14*16000:28*16000]-public_audio[14*16000:28*16000])**2)))
+assert changed>.005,changed
 def stamp(sec):
     ms=round(sec*1000);h,ms=divmod(ms,3600000);m,ms=divmod(ms,60000);s,ms=divmod(ms,1000)
     return f'{h:02}:{m:02}:{s:02},{ms:03}'
@@ -79,5 +89,6 @@ sources+='\n\n'.join(s['title']+'\n'+s['url']+'\n'+s['use'] for s in story['sour
 sources+='\n\nPRIME-DISTRIBUTION BRIDGE\n'+json.dumps(prime.get('sources',[]),ensure_ascii=False,indent=2)
 (out/'sources.txt').write_text(sources+'\n',encoding='utf-8')
 report=dict(traceId='graph.riemann.conclusion.media.verify',status='technical_pass_visual_review_pending',videoSeconds=252,frames=frames,frameSize=[1920,1080],framesPerSecond=24,fullDecodePassed=True,originalFileUnchanged=True,originalCopiedExactly=True,authorizedPrefixAudioReplacement=[14,28],publicAudienceTranscriptChecked=True,prefixReencodingComparisons=prefix,endingAudio=audio,previewFrames=shots,lastFrame=str(last),videoSha256=hashlib.sha256(video.read_bytes()).hexdigest(),aepSha256=hashlib.sha256((out/'presentation-with-conclusion.aep').read_bytes()).hexdigest(),limitations=['Combined video is re-encoded; original source file is unchanged. Derived prefix replaces narration only at14–28seconds. Visual prefix comparisons sample five timestamps, not every frame.','Narration source prompts, duration, decoding and signal presence are checked; no independent speech transcription.'])
+report['prefixAudioEditCheck']=dict(outsideReplacementComparisons=outside,replacementRmsDifference=changed,edgeGuardSeconds=.1)
 (base/'evidence/media-qa.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
 print(json.dumps({k:v for k,v in report.items() if k not in ('previewFrames','endingAudio')},indent=2))

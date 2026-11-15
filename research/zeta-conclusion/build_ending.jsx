@@ -53,10 +53,10 @@
             poly(c,name+" tip",[[x2,y2],[x2-r*Math.cos(a-.5),y2-r*Math.sin(a-.5)],[x2-r*Math.cos(a+.5),y2-r*Math.sin(a+.5)]],null,0,true,color);
             return stem;
         }
-        function text(c,name,value,x,y,size,color,w,h) {
+        function text(c,name,value,x,y,size,color,w,h,font) {
             var l=w?c.layers.addBoxText([w,h||180]):c.layers.addText(value);l.name=name;
             var p=l.property("ADBE Text Properties").property("ADBE Text Document"),d=p.value;
-            d.text=value;d.font="SegoeUI";d.fontSize=size;d.fillColor=color||C.ink;d.applyStroke=false;
+            d.text=value;d.font=font||"SegoeUI";d.fontSize=size;d.fillColor=color||C.ink;d.applyStroke=false;
             d.autoLeading=false;d.leading=size*1.22;d.justification=ParagraphJustification.LEFT_JUSTIFY;p.setValue(d);
             var b=l.sourceRectAtTime(0,false);transform(l,"ADBE Anchor Point").setValue([b.left,b.top]);
             transform(l,"ADBE Position").setValue([x,y]);return l;
@@ -125,7 +125,7 @@
             text(c,"Claim status",scene.claimStatus.toUpperCase(),550,250,28,C.cyan,1220,80);
             var fs=scene.formulaLines.length>3?38:43;
             for(var j=0;j<scene.formulaLines.length;j++) {
-                var equation=text(c,"Equation "+(j+1),scene.formulaLines[j],550,330+j*65,fs,C.ink,1230,65);
+                var equation=text(c,"Equation "+(j+1),scene.formulaLines[j],550,330+j*65,fs,C.ink,1230,65,"CambriaMath");
                 var op=transform(equation,"ADBE Opacity");op.setValueAtTime(.3+j*.45,0);op.setValueAtTime(.65+j*.45,100);
             }
             var by=scene.formulaLines.length>3?625:585;
