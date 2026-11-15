@@ -66,3 +66,6 @@
 /research/prime-phase/*/review.md -text whitespace=cr-at-eol,-blank-at-eof
 /research/prime-phase/*/response.txt -text whitespace=cr-at-eol,-blank-at-eof
 /research/prime-phase/evidence/** -text whitespace=cr-at-eol,-blank-at-eof
+/research/zero-motion/evidence/** -text whitespace=cr-at-eol,-blank-at-eof
+# Exported path reports keep their accepted bytes, including sentence separators before CRLF.
+/research/zero-motion/evidence/*.path.txt -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol

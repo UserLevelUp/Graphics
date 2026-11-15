@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.zeros.motion",
+  "slice_id": "slice-0",
+  "contract_hash": "contract:graph.zeros.motion.slice-0:v1",
+  "attempt_id": "exact-polynomial-baseline-v1",
+  "result_state": "accepted",
+  "result_hash": "sha256:05f96824aa3372863c9032c75cbcfc2c9d16f35d2b3e5df2beff69e61d89e01a",
+  "evidence": {
+    "baseline": [
+      "warps/graph.zeros.motion.baseline.complete.md"
+    ]
+  },
+  "reason": null
+}

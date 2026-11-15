@@ -1,0 +1,18 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.zeros.motion",
+  "slice_id": "slice-final",
+  "contract_hash": "contract:graph.zeros.motion.slice-final:v1",
+  "attempt_id": "zero-motion-path-v1",
+  "result_state": "accepted",
+  "result_hash": "sha256:33fe09c18aa14f578066e1a3cc4a3339611bca1f062d92456ffdd68d58a9e7a7",
+  "evidence": {
+    "acceptance": [
+      "research/zero-motion/evidence/independent-validation.json",
+      "research/zero-motion/evidence/manifest.json",
+      "research/zero-motion/evidence/zero-path.png",
+      "warps/graph.zeros.motion.results.complete.md"
+    ]
+  },
+  "reason": null
+}

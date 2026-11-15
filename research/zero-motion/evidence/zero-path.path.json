@@ -1,0 +1,79 @@
+{
+  "start": {
+    "real": -1.6,
+    "imaginary": 0.7
+  },
+  "end": {
+    "real": 1.6,
+    "imaginary": 0.7
+  },
+  "lambda": 0.5,
+  "paletteDegrees": 0,
+  "zeroLength": false,
+  "startValue": {
+    "real": 1.0700000000000007,
+    "imaginary": -2.2399999999999998
+  },
+  "endValue": {
+    "real": 1.0700000000000007,
+    "imaginary": 2.2399999999999998
+  },
+  "firstOrderPhaseRadians": -2.944259634888437,
+  "continuousPhaseChangeRadians": -4.032855734483295,
+  "principalEndpointChangeRadians": 2.250329572696291,
+  "rawEndpointPhaseDifferenceRadians": 2.250329572696291,
+  "extraFullTurns": -1,
+  "closestRootDistance": 0.7,
+  "nearZeroGuard": 1.746424919657298E-07,
+  "zeros": [],
+  "boundaryEvents": [
+    {
+      "t": 0.11854513700832187,
+      "boundary": "real",
+      "kind": "crossing",
+      "point": {
+        "real": -1.22065556157337,
+        "imaginary": 0.7
+      }
+    },
+    {
+      "t": 0.5,
+      "boundary": "imaginary",
+      "kind": "crossing",
+      "point": {
+        "real": 0,
+        "imaginary": 0.7
+      }
+    },
+    {
+      "t": 0.8814548629916781,
+      "boundary": "real",
+      "kind": "crossing",
+      "point": {
+        "real": 1.2206555615733699,
+        "imaginary": 0.7
+      }
+    }
+  ],
+  "boundaryCoincidence": {
+    "real": false,
+    "imaginary": false
+  },
+  "boundaryMeaning": "real means Re(exp(-i*paletteAngle)*F)=0; imaginary means Im(exp(-i*paletteAngle)*F)=0.",
+  "integration": {
+    "allowed": true,
+    "converged": true,
+    "phaseRadians": -4.032855734483458,
+    "intervals": 2048,
+    "empiricalDifference": 2.390976305832737E-12,
+    "referenceDifference": 1.6253665080512292E-13,
+    "status": "Successive Simpson refinements agree with the factor-phase reference within empirical tolerances."
+  },
+  "tolerances": {
+    "coefficientRelative": 1E-12,
+    "parameter": 1E-10,
+    "geometric": 2.4818190804258195E-14,
+    "nearRootRelativeDistance": 1E-07,
+    "note": "Floating-point tolerances and Simpson refinement provide empirical checks, without certified error bounds."
+  }
+}

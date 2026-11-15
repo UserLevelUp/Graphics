@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "positiveControl": true,
+  "rejectedNegativeControls": [
+    "incorrect root",
+    "unsigned discriminant",
+    "wrong freeze sign",
+    "collision multiplicity",
+    "wrong heat direction",
+    "wrong factor phase",
+    "near-collision omitted",
+    "stale frame parameters"
+  ],
+  "note": "Validator self-test only; no renderer export was checked."
+}

@@ -1,0 +1,3 @@
+Path from <-1.6; 0.7> to <1.6; 0.7>; λ=0.5, palette=22.5°.
+Local derivative predicts -2.944260 rad. Integrated phase -4.032856 rad. Factor reference -4.032856 rad. Endpoint principal change 2.250330 rad. Additional full turns -1. Simpson used 2048 intervals with refinement difference 2.39E-012. Successive Simpson refinements agree with the factor-phase reference within empirical tolerances. 
+Interior boundary crossings 3, tangencies 0, zero encounters 0, unresolved events 0. Phase integration follows F′/F along the segment. Error checks are empirical.

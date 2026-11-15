@@ -1,0 +1,944 @@
+{
+  "analysis": {
+    "start": {
+      "real": -1.6,
+      "imaginary": 0.7
+    },
+    "end": {
+      "real": 1.6,
+      "imaginary": 0.7
+    },
+    "lambda": 0.5,
+    "paletteDegrees": 0,
+    "zeroLength": false,
+    "startValue": {
+      "real": 1.0700000000000007,
+      "imaginary": -2.2399999999999998
+    },
+    "endValue": {
+      "real": 1.0700000000000007,
+      "imaginary": 2.2399999999999998
+    },
+    "firstOrderPhaseRadians": -2.944259634888437,
+    "continuousPhaseChangeRadians": -4.032855734483295,
+    "principalEndpointChangeRadians": 2.250329572696291,
+    "rawEndpointPhaseDifferenceRadians": 2.250329572696291,
+    "extraFullTurns": -1,
+    "closestRootDistance": 0.7,
+    "nearZeroGuard": 1.746424919657298E-07,
+    "zeros": [],
+    "boundaryEvents": [
+      {
+        "t": 0.11854513700832187,
+        "boundary": "real",
+        "kind": "crossing",
+        "point": {
+          "real": -1.22065556157337,
+          "imaginary": 0.7
+        }
+      },
+      {
+        "t": 0.5,
+        "boundary": "imaginary",
+        "kind": "crossing",
+        "point": {
+          "real": 0,
+          "imaginary": 0.7
+        }
+      },
+      {
+        "t": 0.8814548629916781,
+        "boundary": "real",
+        "kind": "crossing",
+        "point": {
+          "real": 1.2206555615733699,
+          "imaginary": 0.7
+        }
+      }
+    ],
+    "boundaryCoincidence": {
+      "real": false,
+      "imaginary": false
+    },
+    "boundaryMeaning": "real means Re(exp(-i*paletteAngle)*F)=0; imaginary means Im(exp(-i*paletteAngle)*F)=0.",
+    "integration": {
+      "allowed": true,
+      "converged": true,
+      "phaseRadians": -4.032855734483458,
+      "intervals": 2048,
+      "empiricalDifference": 2.390976305832737E-12,
+      "referenceDifference": 1.6253665080512292E-13,
+      "status": "Successive Simpson refinements agree with the factor-phase reference within empirical tolerances."
+    },
+    "tolerances": {
+      "coefficientRelative": 1E-12,
+      "parameter": 1E-10,
+      "geometric": 2.4818190804258195E-14,
+      "nearRootRelativeDistance": 1E-07,
+      "note": "Floating-point tolerances and Simpson refinement provide empirical checks, without certified error bounds."
+    }
+  },
+  "verification": {
+    "status": "passed",
+    "traceId": "graph.zeros.motion.path.verify",
+    "cases": [
+      {
+        "name": "clear_path",
+        "analysis": {
+          "start": {
+            "real": -1.4,
+            "imaginary": 0.7
+          },
+          "end": {
+            "real": 1.1,
+            "imaginary": 0.7
+          },
+          "lambda": 0.5,
+          "paletteDegrees": 0,
+          "zeroLength": false,
+          "startValue": {
+            "real": 0.46999999999999975,
+            "imaginary": -1.9599999999999997
+          },
+          "endValue": {
+            "real": -0.2799999999999998,
+            "imaginary": 1.54
+          },
+          "firstOrderPhaseRadians": -2.9723076923076928,
+          "continuousPhaseChangeRadians": -3.1970911588355104,
+          "principalEndpointChangeRadians": 3.0860941483440762,
+          "rawEndpointPhaseDifferenceRadians": 3.0860941483440762,
+          "extraFullTurns": -1,
+          "closestRootDistance": 0.7,
+          "nearZeroGuard": 1.5652475842498526E-07,
+          "zeros": [],
+          "boundaryEvents": [
+            {
+              "t": 0.07173777537065183,
+              "boundary": "real",
+              "kind": "crossing",
+              "point": {
+                "real": -1.2206555615733703,
+                "imaginary": 0.7
+              }
+            },
+            {
+              "t": 0.5599999999999999,
+              "boundary": "imaginary",
+              "kind": "crossing",
+              "point": {
+                "real": 0,
+                "imaginary": 0.7
+              }
+            }
+          ],
+          "boundaryCoincidence": {
+            "real": false,
+            "imaginary": false
+          },
+          "boundaryMeaning": "real means Re(exp(-i*paletteAngle)*F)=0; imaginary means Im(exp(-i*paletteAngle)*F)=0.",
+          "integration": {
+            "allowed": true,
+            "converged": true,
+            "phaseRadians": -3.1970911588358155,
+            "intervals": 2048,
+            "empiricalDifference": 4.6207482284899015E-12,
+            "referenceDifference": 3.05089287166993E-13,
+            "status": "Successive Simpson refinements agree with the factor-phase reference within empirical tolerances."
+          },
+          "tolerances": {
+            "coefficientRelative": 1E-12,
+            "parameter": 1E-10,
+            "geometric": 2.2243506013095566E-14,
+            "nearRootRelativeDistance": 1E-07,
+            "note": "Floating-point tolerances and Simpson refinement provide empirical checks, without certified error bounds."
+          }
+        }
+      },
+      {
+        "name": "reversed_clear_path",
+        "analysis": {
+          "start": {
+            "real": 1.1,
+            "imaginary": 0.7
+          },
+          "end": {
+            "real": -1.4,
+            "imaginary": 0.7
+          },
+          "lambda": 0.5,
+          "paletteDegrees": 0,
+          "zeroLength": false,
+          "startValue": {
+            "real": -0.2799999999999998,
+            "imaginary": 1.54
+          },
+          "endValue": {
+            "real": 0.46999999999999975,
+            "imaginary": -1.9599999999999997
+          },
+          "firstOrderPhaseRadians": 3.857142857142857,
+          "continuousPhaseChangeRadians": 3.1970911588355104,
+          "principalEndpointChangeRadians": -3.0860941483440762,
+          "rawEndpointPhaseDifferenceRadians": -3.0860941483440762,
+          "extraFullTurns": 1,
+          "closestRootDistance": 0.7,
+          "nearZeroGuard": 1.5652475842498526E-07,
+          "zeros": [],
+          "boundaryEvents": [
+            {
+              "t": 0.44,
+              "boundary": "imaginary",
+              "kind": "crossing",
+              "point": {
+                "real": 0,
+                "imaginary": 0.7
+              }
+            },
+            {
+              "t": 0.9282622246293482,
+              "boundary": "real",
+              "kind": "crossing",
+              "point": {
+                "real": -1.2206555615733703,
+                "imaginary": 0.7
+              }
+            }
+          ],
+          "boundaryCoincidence": {
+            "real": false,
+            "imaginary": false
+          },
+          "boundaryMeaning": "real means Re(exp(-i*paletteAngle)*F)=0; imaginary means Im(exp(-i*paletteAngle)*F)=0.",
+          "integration": {
+            "allowed": true,
+            "converged": true,
+            "phaseRadians": 3.1970911588358177,
+            "intervals": 2048,
+            "empiricalDifference": 4.614975068761851E-12,
+            "referenceDifference": 3.0730973321624333E-13,
+            "status": "Successive Simpson refinements agree with the factor-phase reference within empirical tolerances."
+          },
+          "tolerances": {
+            "coefficientRelative": 1E-12,
+            "parameter": 1E-10,
+            "geometric": 2.2243506013095566E-14,
+            "nearRootRelativeDistance": 1E-07,
+            "note": "Floating-point tolerances and Simpson refinement provide empirical checks, without certified error bounds."
+          }
+        }
+      },
+      {
+        "name": "symmetric_one_turn",
+        "analysis": {
+          "start": {
+            "real": -1.6,
+            "imaginary": 0.7
+          },
+          "end": {
+            "real": 1.6,
+            "imaginary": 0.7
+          },
+          "lambda": 0.5,
+          "paletteDegrees": 0,
+          "zeroLength": false,
+          "startValue": {
+            "real": 1.0700000000000007,
+            "imaginary": -2.2399999999999998
+          },
+          "endValue": {
+            "real": 1.0700000000000007,
+            "imaginary": 2.2399999999999998
+          },
+          "firstOrderPhaseRadians": -2.944259634888437,
+          "continuousPhaseChangeRadians": -4.032855734483295,
+          "principalEndpointChangeRadians": 2.250329572696291,
+          "rawEndpointPhaseDifferenceRadians": 2.250329572696291,
+          "extraFullTurns": -1,
+          "closestRootDistance": 0.7,
+          "nearZeroGuard": 1.746424919657298E-07,
+          "zeros": [],
+          "boundaryEvents": [
+            {
+              "t": 0.11854513700832187,
+              "boundary": "real",
+              "kind": "crossing",
+              "point": {
+                "real": -1.22065556157337,
+                "imaginary": 0.7
+              }
+            },
+            {
+              "t": 0.5,
+              "boundary": "imaginary",
+              "kind": "crossing",
+              "point": {
+                "real": 0,
+                "imaginary": 0.7
+              }
+            },
+            {
+              "t": 0.8814548629916781,
+              "boundary": "real",
+              "kind": "crossing",
+              "point": {
+                "real": 1.2206555615733699,
+                "imaginary": 0.7
+              }
+            }
+          ],
+          "boundaryCoincidence": {
+            "real": false,
+            "imaginary": false
+          },
+          "boundaryMeaning": "real means Re(exp(-i*paletteAngle)*F)=0; imaginary means Im(exp(-i*paletteAngle)*F)=0.",
+          "integration": {
+            "allowed": true,
+            "converged": true,
+            "phaseRadians": -4.032855734483458,
+            "intervals": 2048,
+            "empiricalDifference": 2.390976305832737E-12,
+            "referenceDifference": 1.6253665080512292E-13,
+            "status": "Successive Simpson refinements agree with the factor-phase reference within empirical tolerances."
+          },
+          "tolerances": {
+            "coefficientRelative": 1E-12,
+            "parameter": 1E-10,
+            "geometric": 2.4818190804258195E-14,
+            "nearRootRelativeDistance": 1E-07,
+            "note": "Floating-point tolerances and Simpson refinement provide empirical checks, without certified error bounds."
+          }
+        }
+      },
+      {
+        "name": "simple_zero_crossing",
+        "analysis": {
+          "start": {
+            "real": 0,
+            "imaginary": 0
+          },
+          "end": {
+            "real": 2,
+            "imaginary": 0
+          },
+          "lambda": 0.5,
+          "paletteDegrees": 0,
+          "zeroLength": false,
+          "startValue": {
+            "real": -1,
+            "imaginary": 0
+          },
+          "endValue": {
+            "real": 3,
+            "imaginary": 0
+          },
+          "firstOrderPhaseRadians": -0,
+          "continuousPhaseChangeRadians": null,
+          "principalEndpointChangeRadians": -3.141592653589793,
+          "rawEndpointPhaseDifferenceRadians": -3.141592653589793,
+          "extraFullTurns": null,
+          "closestRootDistance": 0,
+          "nearZeroGuard": 2E-07,
+          "zeros": [
+            {
+              "t": 0.5,
+              "point": {
+                "real": 1,
+                "imaginary": 0
+              },
+              "multiplicity": 1
+            }
+          ],
+          "boundaryEvents": [
+            {
+              "t": 0.5,
+              "boundary": "real",
+              "kind": "zero",
+              "point": {
+                "real": 1,
+                "imaginary": 0
+              }
+            }
+          ],
+          "boundaryCoincidence": {
+            "real": false,
+            "imaginary": true
+          },
+          "boundaryMeaning": "real means Re(exp(-i*paletteAngle)*F)=0; imaginary means Im(exp(-i*paletteAngle)*F)=0.",
+          "integration": {
+            "allowed": false,
+            "converged": false,
+            "phaseRadians": null,
+            "intervals": 0,
+            "empiricalDifference": null,
+            "referenceDifference": null,
+            "status": "The segment meets a zero. Continuous phase transport is singular."
+          },
+          "tolerances": {
+            "coefficientRelative": 1E-12,
+            "parameter": 1E-10,
+            "geometric": 2.842170943040401E-14,
+            "nearRootRelativeDistance": 1E-07,
+            "note": "Floating-point tolerances and Simpson refinement provide empirical checks, without certified error bounds."
+          }
+        }
+      },
+      {
+        "name": "double_zero_crossing",
+        "analysis": {
+          "start": {
+            "real": -1,
+            "imaginary": 0
+          },
+          "end": {
+            "real": 1,
+            "imaginary": 0
+          },
+          "lambda": 0,
+          "paletteDegrees": 0,
+          "zeroLength": false,
+          "startValue": {
+            "real": 1,
+            "imaginary": -0
+          },
+          "endValue": {
+            "real": 1,
+            "imaginary": 0
+          },
+          "firstOrderPhaseRadians": 0,
+          "continuousPhaseChangeRadians": null,
+          "principalEndpointChangeRadians": 0,
+          "rawEndpointPhaseDifferenceRadians": 0,
+          "extraFullTurns": null,
+          "closestRootDistance": 0,
+          "nearZeroGuard": 1E-07,
+          "zeros": [
+            {
+              "t": 0.5,
+              "point": {
+                "real": 0,
+                "imaginary": 0
+              },
+              "multiplicity": 2
+            }
+          ],
+          "boundaryEvents": [
+            {
+              "t": 0.5,
+              "boundary": "real",
+              "kind": "zero",
+              "point": {
+                "real": 0,
+                "imaginary": 0
+              }
+            }
+          ],
+          "boundaryCoincidence": {
+            "real": false,
+            "imaginary": true
+          },
+          "boundaryMeaning": "real means Re(exp(-i*paletteAngle)*F)=0; imaginary means Im(exp(-i*paletteAngle)*F)=0.",
+          "integration": {
+            "allowed": false,
+            "converged": false,
+            "phaseRadians": null,
+            "intervals": 0,
+            "empiricalDifference": null,
+            "referenceDifference": null,
+            "status": "The segment meets a zero. Continuous phase transport is singular."
+          },
+          "tolerances": {
+            "coefficientRelative": 1E-12,
+            "parameter": 1E-10,
+            "geometric": 1.4210854715202004E-14,
+            "nearRootRelativeDistance": 1E-07,
+            "note": "Floating-point tolerances and Simpson refinement provide empirical checks, without certified error bounds."
+          }
+        }
+      },
+      {
+        "name": "tangent_boundary",
+        "analysis": {
+          "start": {
+            "real": -2,
+            "imaginary": 1
+          },
+          "end": {
+            "real": 0,
+            "imaginary": 1
+          },
+          "lambda": -1,
+          "paletteDegrees": 45,
+          "zeroLength": false,
+          "startValue": {
+            "real": 5,
+            "imaginary": -4
+          },
+          "endValue": {
+            "real": 1,
+            "imaginary": 0
+          },
+          "firstOrderPhaseRadians": -0.2926829268292684,
+          "continuousPhaseChangeRadians": 0.6747409422235526,
+          "principalEndpointChangeRadians": 0.6747409422235527,
+          "rawEndpointPhaseDifferenceRadians": 0.6747409422235526,
+          "extraFullTurns": 0,
+          "closestRootDistance": 0.41421356237309515,
+          "nearZeroGuard": 2.2360679774997896E-07,
+          "zeros": [],
+          "boundaryEvents": [
+            {
+              "t": 0.5,
+              "boundary": "real",
+              "kind": "tangency",
+              "point": {
+                "real": -1,
+                "imaginary": 1
+              }
+            }
+          ],
+          "boundaryCoincidence": {
+            "real": false,
+            "imaginary": false
+          },
+          "boundaryMeaning": "real means Re(exp(-i*paletteAngle)*F)=0; imaginary means Im(exp(-i*paletteAngle)*F)=0.",
+          "integration": {
+            "allowed": true,
+            "converged": true,
+            "phaseRadians": 0.6747409422231979,
+            "intervals": 512,
+            "empiricalDifference": 5.317302154139725E-12,
+            "referenceDifference": 3.547162563677375E-13,
+            "status": "Successive Simpson refinements agree with the factor-phase reference within empirical tolerances."
+          },
+          "tolerances": {
+            "coefficientRelative": 1E-12,
+            "parameter": 1E-10,
+            "geometric": 3.1776437161565096E-14,
+            "nearRootRelativeDistance": 1E-07,
+            "note": "Floating-point tolerances and Simpson refinement provide empirical checks, without certified error bounds."
+          }
+        }
+      },
+      {
+        "name": "coincident_boundary",
+        "analysis": {
+          "start": {
+            "real": 2,
+            "imaginary": 0
+          },
+          "end": {
+            "real": 3,
+            "imaginary": 0
+          },
+          "lambda": 0.5,
+          "paletteDegrees": 0,
+          "zeroLength": false,
+          "startValue": {
+            "real": 3,
+            "imaginary": 0
+          },
+          "endValue": {
+            "real": 8,
+            "imaginary": 0
+          },
+          "firstOrderPhaseRadians": 0,
+          "continuousPhaseChangeRadians": 0,
+          "principalEndpointChangeRadians": 0,
+          "rawEndpointPhaseDifferenceRadians": 0,
+          "extraFullTurns": 0,
+          "closestRootDistance": 1,
+          "nearZeroGuard": 3E-07,
+          "zeros": [],
+          "boundaryEvents": [],
+          "boundaryCoincidence": {
+            "real": false,
+            "imaginary": true
+          },
+          "boundaryMeaning": "real means Re(exp(-i*paletteAngle)*F)=0; imaginary means Im(exp(-i*paletteAngle)*F)=0.",
+          "integration": {
+            "allowed": true,
+            "converged": true,
+            "phaseRadians": 0,
+            "intervals": 64,
+            "empiricalDifference": 0,
+            "referenceDifference": 0,
+            "status": "Successive Simpson refinements agree with the factor-phase reference within empirical tolerances."
+          },
+          "tolerances": {
+            "coefficientRelative": 1E-12,
+            "parameter": 1E-10,
+            "geometric": 4.263256414560601E-14,
+            "nearRootRelativeDistance": 1E-07,
+            "note": "Floating-point tolerances and Simpson refinement provide empirical checks, without certified error bounds."
+          }
+        }
+      },
+      {
+        "name": "zero_length",
+        "analysis": {
+          "start": {
+            "real": 0.2,
+            "imaginary": 0.4
+          },
+          "end": {
+            "real": 0.2,
+            "imaginary": 0.4
+          },
+          "lambda": 0.5,
+          "paletteDegrees": 0,
+          "zeroLength": true,
+          "startValue": {
+            "real": -1.12,
+            "imaginary": 0.16000000000000003
+          },
+          "endValue": {
+            "real": -1.12,
+            "imaginary": 0.16000000000000003
+          },
+          "firstOrderPhaseRadians": -0,
+          "continuousPhaseChangeRadians": 0,
+          "principalEndpointChangeRadians": 0,
+          "rawEndpointPhaseDifferenceRadians": 0,
+          "extraFullTurns": 0,
+          "closestRootDistance": 0.894427190999916,
+          "nearZeroGuard": 1E-07,
+          "zeros": [],
+          "boundaryEvents": [],
+          "boundaryCoincidence": {
+            "real": false,
+            "imaginary": false
+          },
+          "boundaryMeaning": "real means Re(exp(-i*paletteAngle)*F)=0; imaginary means Im(exp(-i*paletteAngle)*F)=0.",
+          "integration": {
+            "allowed": true,
+            "converged": true,
+            "phaseRadians": 0,
+            "intervals": 0,
+            "empiricalDifference": 0,
+            "referenceDifference": 0,
+            "status": "Zero-length path."
+          },
+          "tolerances": {
+            "coefficientRelative": 1E-12,
+            "parameter": 1E-10,
+            "geometric": 1.4210854715202004E-14,
+            "nearRootRelativeDistance": 1E-07,
+            "note": "Floating-point tolerances and Simpson refinement provide empirical checks, without certified error bounds."
+          }
+        }
+      },
+      {
+        "name": "near_zero",
+        "analysis": {
+          "start": {
+            "real": 0,
+            "imaginary": 1E-09
+          },
+          "end": {
+            "real": 2,
+            "imaginary": 1E-09
+          },
+          "lambda": 0.5,
+          "paletteDegrees": 0,
+          "zeroLength": false,
+          "startValue": {
+            "real": -1,
+            "imaginary": 0
+          },
+          "endValue": {
+            "real": 3,
+            "imaginary": 4E-09
+          },
+          "firstOrderPhaseRadians": -4E-09,
+          "continuousPhaseChangeRadians": null,
+          "principalEndpointChangeRadians": -3.1415926522564597,
+          "rawEndpointPhaseDifferenceRadians": -3.1415926522564597,
+          "extraFullTurns": null,
+          "closestRootDistance": 1E-09,
+          "nearZeroGuard": 2E-07,
+          "zeros": [],
+          "boundaryEvents": [
+            {
+              "t": -0,
+              "boundary": "imaginary",
+              "kind": "endpoint",
+              "point": {
+                "real": 0,
+                "imaginary": 1E-09
+              }
+            },
+            {
+              "t": 0.5,
+              "boundary": "real",
+              "kind": "crossing",
+              "point": {
+                "real": 1,
+                "imaginary": 1E-09
+              }
+            }
+          ],
+          "boundaryCoincidence": {
+            "real": false,
+            "imaginary": false
+          },
+          "boundaryMeaning": "real means Re(exp(-i*paletteAngle)*F)=0; imaginary means Im(exp(-i*paletteAngle)*F)=0.",
+          "integration": {
+            "allowed": false,
+            "converged": false,
+            "phaseRadians": null,
+            "intervals": 0,
+            "empiricalDifference": null,
+            "referenceDifference": null,
+            "status": "The segment is within the empirical root-distance guard. Integration was skipped."
+          },
+          "tolerances": {
+            "coefficientRelative": 1E-12,
+            "parameter": 1E-10,
+            "geometric": 2.842170943040401E-14,
+            "nearRootRelativeDistance": 1E-07,
+            "note": "Floating-point tolerances and Simpson refinement provide empirical checks, without certified error bounds."
+          }
+        }
+      },
+      {
+        "name": "rotated_clear_path",
+        "analysis": {
+          "start": {
+            "real": -1.4,
+            "imaginary": 0.7
+          },
+          "end": {
+            "real": 1.1,
+            "imaginary": 0.7
+          },
+          "lambda": 0.5,
+          "paletteDegrees": 22.5,
+          "zeroLength": false,
+          "startValue": {
+            "real": 0.46999999999999975,
+            "imaginary": -1.9599999999999997
+          },
+          "endValue": {
+            "real": -0.2799999999999998,
+            "imaginary": 1.54
+          },
+          "firstOrderPhaseRadians": -2.9723076923076928,
+          "continuousPhaseChangeRadians": -3.1970911588355104,
+          "principalEndpointChangeRadians": 3.0860941483440762,
+          "rawEndpointPhaseDifferenceRadians": 3.0860941483440762,
+          "extraFullTurns": -1,
+          "closestRootDistance": 0.7,
+          "nearZeroGuard": 1.5652475842498526E-07,
+          "zeros": [],
+          "boundaryEvents": [
+            {
+              "t": 0.4021040953480772,
+              "boundary": "imaginary",
+              "kind": "crossing",
+              "point": {
+                "real": -0.39473976162980695,
+                "imaginary": 0.7
+              }
+            },
+            {
+              "t": 0.9458681012258622,
+              "boundary": "real",
+              "kind": "crossing",
+              "point": {
+                "real": 0.9646702530646554,
+                "imaginary": 0.7
+              }
+            }
+          ],
+          "boundaryCoincidence": {
+            "real": false,
+            "imaginary": false
+          },
+          "boundaryMeaning": "real means Re(exp(-i*paletteAngle)*F)=0; imaginary means Im(exp(-i*paletteAngle)*F)=0.",
+          "integration": {
+            "allowed": true,
+            "converged": true,
+            "phaseRadians": -3.1970911588358155,
+            "intervals": 2048,
+            "empiricalDifference": 4.6207482284899015E-12,
+            "referenceDifference": 3.05089287166993E-13,
+            "status": "Successive Simpson refinements agree with the factor-phase reference within empirical tolerances."
+          },
+          "tolerances": {
+            "coefficientRelative": 1E-12,
+            "parameter": 1E-10,
+            "geometric": 2.2243506013095566E-14,
+            "nearRootRelativeDistance": 1E-07,
+            "note": "Floating-point tolerances and Simpson refinement provide empirical checks, without certified error bounds."
+          }
+        }
+      },
+      {
+        "name": "extra_full_turn",
+        "analysis": {
+          "start": {
+            "real": -0.1,
+            "imaginary": 1
+          },
+          "end": {
+            "real": -0.1,
+            "imaginary": -1
+          },
+          "lambda": 0,
+          "paletteDegrees": 0,
+          "zeroLength": false,
+          "startValue": {
+            "real": -0.99,
+            "imaginary": -0.2
+          },
+          "endValue": {
+            "real": -0.99,
+            "imaginary": 0.2
+          },
+          "firstOrderPhaseRadians": 0.3960396039603961,
+          "continuousPhaseChangeRadians": 5.884510697214938,
+          "principalEndpointChangeRadians": -0.39867460996464854,
+          "rawEndpointPhaseDifferenceRadians": 5.884510697214938,
+          "extraFullTurns": 1,
+          "closestRootDistance": 0.1,
+          "nearZeroGuard": 1.0049875621120889E-07,
+          "zeros": [],
+          "boundaryEvents": [
+            {
+              "t": 0.44999999999999996,
+              "boundary": "real",
+              "kind": "crossing",
+              "point": {
+                "real": -0.1,
+                "imaginary": 0.10000000000000009
+              }
+            },
+            {
+              "t": 0.5,
+              "boundary": "imaginary",
+              "kind": "crossing",
+              "point": {
+                "real": -0.1,
+                "imaginary": 0
+              }
+            },
+            {
+              "t": 0.55,
+              "boundary": "real",
+              "kind": "crossing",
+              "point": {
+                "real": -0.1,
+                "imaginary": -0.10000000000000009
+              }
+            }
+          ],
+          "boundaryCoincidence": {
+            "real": false,
+            "imaginary": false
+          },
+          "boundaryMeaning": "real means Re(exp(-i*paletteAngle)*F)=0; imaginary means Im(exp(-i*paletteAngle)*F)=0.",
+          "integration": {
+            "allowed": true,
+            "converged": true,
+            "phaseRadians": 5.884510697214201,
+            "intervals": 1024,
+            "empiricalDifference": 1.1077361250499962E-11,
+            "referenceDifference": 7.371880883511039E-13,
+            "status": "Successive Simpson refinements agree with the factor-phase reference within empirical tolerances."
+          },
+          "tolerances": {
+            "coefficientRelative": 1E-12,
+            "parameter": 1E-10,
+            "geometric": 1.4281732235759946E-14,
+            "nearRootRelativeDistance": 1E-07,
+            "note": "Floating-point tolerances and Simpson refinement provide empirical checks, without certified error bounds."
+          }
+        }
+      },
+      {
+        "name": "endpoint_zero",
+        "analysis": {
+          "start": {
+            "real": 1,
+            "imaginary": 0
+          },
+          "end": {
+            "real": 1,
+            "imaginary": 1
+          },
+          "lambda": 0.5,
+          "paletteDegrees": 0,
+          "zeroLength": false,
+          "startValue": {
+            "real": 0,
+            "imaginary": 0
+          },
+          "endValue": {
+            "real": -1,
+            "imaginary": 2
+          },
+          "firstOrderPhaseRadians": null,
+          "continuousPhaseChangeRadians": null,
+          "principalEndpointChangeRadians": null,
+          "rawEndpointPhaseDifferenceRadians": null,
+          "extraFullTurns": null,
+          "closestRootDistance": 0,
+          "nearZeroGuard": 1.4142135623730952E-07,
+          "zeros": [
+            {
+              "t": 0,
+              "point": {
+                "real": 1,
+                "imaginary": 0
+              },
+              "multiplicity": 1
+            }
+          ],
+          "boundaryEvents": [
+            {
+              "t": 0,
+              "boundary": "real",
+              "kind": "endpoint",
+              "point": {
+                "real": 1,
+                "imaginary": 0
+              }
+            },
+            {
+              "t": -0,
+              "boundary": "imaginary",
+              "kind": "endpoint",
+              "point": {
+                "real": 1,
+                "imaginary": 0
+              }
+            }
+          ],
+          "boundaryCoincidence": {
+            "real": false,
+            "imaginary": false
+          },
+          "boundaryMeaning": "real means Re(exp(-i*paletteAngle)*F)=0; imaginary means Im(exp(-i*paletteAngle)*F)=0.",
+          "integration": {
+            "allowed": false,
+            "converged": false,
+            "phaseRadians": null,
+            "intervals": 0,
+            "empiricalDifference": null,
+            "referenceDifference": null,
+            "status": "The segment meets a zero. Continuous phase transport is singular."
+          },
+          "tolerances": {
+            "coefficientRelative": 1E-12,
+            "parameter": 1E-10,
+            "geometric": 2.0097183471152322E-14,
+            "nearRootRelativeDistance": 1E-07,
+            "note": "Floating-point tolerances and Simpson refinement provide empirical checks, without certified error bounds."
+          }
+        }
+      }
+    ],
+    "interpretation": "Polynomial roots, Taylor phase prediction, boundary equations, and logarithmic-derivative integration are established methods."
+  }
+}

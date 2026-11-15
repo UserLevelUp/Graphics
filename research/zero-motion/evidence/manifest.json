@@ -1,0 +1,202 @@
+{
+  "traceId": "graph.zeros.motion.results",
+  "status": "passed",
+  "dateLocal": "2026-11-14 America/Los_Angeles",
+  "inputs": [
+    {
+      "path": "Graphics/ZeroMotionExperiment.cs",
+      "sha256": "5504e393fb322ba496cb8965a2500fc60293fe25bc3253071dbf96fe023e657d"
+    },
+    {
+      "path": "Graphics/ZeroMotionPath.cs",
+      "sha256": "2aef35b959c14dd1a68f5f1644f8831647458fe85a0f11f28ffb909c59fd92fa"
+    },
+    {
+      "path": "Graphics/ZeroMotionForm.cs",
+      "sha256": "ba9d48d123e2213efac06cccaa31559e5b1a00f609b3966def2bef28518d2c58"
+    },
+    {
+      "path": "Graphics/Program.cs",
+      "sha256": "ad7fdc597d96f3d47cbbc1c9971417f660427a040f06378bb15c067a9d5da990"
+    },
+    {
+      "path": "Graphics/GraphForm.cs",
+      "sha256": "f1b0688aad64ff6755b53a099ec170eb08bc373cdc67265eb9104c3575276359"
+    },
+    {
+      "path": "Graphics/PrimePhaseForm.cs",
+      "sha256": "3409ab441ad0e1ba4638d2c5739b44bed59a8f2973445bbbf1b0f383ec0f0ef7"
+    },
+    {
+      "path": "research/zero-motion/verify_exports.py",
+      "sha256": "ddb80dd3e089036ad40fb69f54c639d152167741a2f3d476c8a55fd9f53f770f"
+    }
+  ],
+  "regression": [
+    {
+      "name": "prime",
+      "sha256": "afb1aad6e8186dffb21416bd96d7d25921b17541a48c38037132fc0d711831fc",
+      "byteIdentical": true
+    },
+    {
+      "name": "unwrap",
+      "sha256": "6652c5f2c73efc7313ed2d469764f6fada8094a37c2c463e8376bfa24859a8bd",
+      "byteIdentical": true
+    },
+    {
+      "name": "zeta-preview.png",
+      "sha256": "d171dcd84c055b5f341722ba1cf14d815530d31ae3ccd363cbcd42f2e0aef77c",
+      "byteIdentical": true
+    },
+    {
+      "name": "zeta-contours.png",
+      "sha256": "f22f53d14f9d0b2d1247b9fb26fabf28a0204021c2c3d680cb9bf4d2b5c86918",
+      "byteIdentical": true
+    },
+    {
+      "name": "zeta-origins.png",
+      "sha256": "60595fb4da963e07bbbfb6ef9df009b7430f677f5d95694b68fa3a114359dfe9",
+      "byteIdentical": true
+    }
+  ],
+  "ui": {
+    "layout": "verified",
+    "hover": "verified",
+    "crossPanelPointSelection": "verified",
+    "playbackStoppedAt": -1,
+    "collisionPreset": "verified",
+    "paletteDegrees": 22.5,
+    "examplePath": "verified",
+    "nativeSavePngAndSidecars": "verified"
+  },
+  "evidence": [
+    {
+      "path": "research/zero-motion/evidence/build.txt",
+      "sha256": "bd728b84cf484146f8f4e3f721c3005e0e0d012773983f79b99e837f19618710"
+    },
+    {
+      "path": "research/zero-motion/evidence/independent-validation.json",
+      "sha256": "fcdc91f0bb83a5a81015fa545128019e7e21bfb97927480bb476d064b7ac1e7c"
+    },
+    {
+      "path": "research/zero-motion/evidence/validator-self-test.json",
+      "sha256": "d3f39f110266e4082c6da579f1c65e8b50795fbc8d606a8f722361bed73591d3"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-after.png",
+      "sha256": "b8b61eb76cc83e5a5e8a0d4aa8ca26a9613c9f696ea0f5b8d7ce9297bd6e7edc"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-after.txt",
+      "sha256": "60b37ab0f026a60d4b4cd3264403ca2b0454db070c49c63e8205d538704f1e06"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-after.values.json",
+      "sha256": "efe4de007d4973caea03eef84601dd180a3805ac6444547ef29ae90cb1a4f48f"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-before.png",
+      "sha256": "5bfbf7a55eb5e4f988541c58ec5f2699a2600d0616fc80890c3734bbb9511914"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-before.txt",
+      "sha256": "864d78dde2ebaef03a41e55403aa9a765275c2e46bd5338dc554f3015f07c290"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-before.values.json",
+      "sha256": "fcbe68fcb95a83bedc0590a35f073f664a02e9aee2ba2b846d85f95569d5993d"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-collision.png",
+      "sha256": "5c4606e38f5f1e03bedeeee25d4a6dab698ead8e9587f90c6f463d1d636a2f22"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-collision.txt",
+      "sha256": "312d4c0760a5eee6c5ff3ced02d658d186f6ff4284e61f413c205743a47e0089"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-collision.values.json",
+      "sha256": "98cb8479b6d1ab4d5f2919c69a952b6612b2925ca5f6413eaf0442b8442b24cf"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-motion-rotated-ui.path.json",
+      "sha256": "5af966282925808f52a3320e1b621e1f4136235914f6d961ddbdaaa68d49484b"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-motion-rotated-ui.path.txt",
+      "sha256": "52ee33cb6ff972564dd19b52d7fafb7dd770b4c4b5a0f9940b3c723bf605d73d"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-motion-rotated-ui.png",
+      "sha256": "0a87c195c9dd082a90315b5023ca1541e6380ad7a8e7bf7b162e0cbca66f889b"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-motion-rotated-ui.txt",
+      "sha256": "864d78dde2ebaef03a41e55403aa9a765275c2e46bd5338dc554f3015f07c290"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-motion-rotated-ui.values.json",
+      "sha256": "5d8d1dc75edd6f4b014bc8f9d4639149dfcde6cf131a9041c3bc2aa56770e045"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-near-after.png",
+      "sha256": "1e215f69e6e8dfa23bad0c8ed0c4bc5a0db7c97ff2796d377099e682500089b2"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-near-after.txt",
+      "sha256": "63fb59459863223cc47f1a0d13ee82ff3f65e9f1ff558e11c05c55c813e55469"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-near-after.values.json",
+      "sha256": "f05ca823c9e2dcd8b37ac98db472a64e1c9f7ef71d29219fbec5df543901cb34"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-near-before.png",
+      "sha256": "297479afe98dbdcdeda0f0e89ce09793988bb288e9444b5173321885de216565"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-near-before.txt",
+      "sha256": "2cb06a745e14cb466389f96ae3900ac2a1f0e67ea07d9dd442ae917e85b5f562"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-near-before.values.json",
+      "sha256": "be6b62dd4f31ad0e8fe1fff4a0cc7c5340c1b9c38b5f3f3feb3e825748a65b5d"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-path.json",
+      "sha256": "a7e48955e7c10441b895f83f8e67024fa81460e6acfd890928a80266fc92ddbc"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-path.path.json",
+      "sha256": "6d2a91e9cfb2aa464bc8aff00439fc7cfffb48e3ea22ba0d5b2367bdd01578fb"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-path.path.txt",
+      "sha256": "1b5f9ec2fb5b00e6e260296ac3eeed8708797477bc573e123e4e8eb9b2bb632c"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-path.png",
+      "sha256": "4bd31e83389e66fcda22031c85e3fa7690bb4d193edcda73266cbb2b1b00719a"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-path.txt",
+      "sha256": "864d78dde2ebaef03a41e55403aa9a765275c2e46bd5338dc554f3015f07c290"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-path.values.json",
+      "sha256": "fcbe68fcb95a83bedc0590a35f073f664a02e9aee2ba2b846d85f95569d5993d"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-rotated.png",
+      "sha256": "4658ba742383616148e8a49bf6481c60a5b158f5f9e9c318b5d6ff165937db55"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-rotated.txt",
+      "sha256": "864d78dde2ebaef03a41e55403aa9a765275c2e46bd5338dc554f3015f07c290"
+    },
+    {
+      "path": "research/zero-motion/evidence/zero-rotated.values.json",
+      "sha256": "5d8d1dc75edd6f4b014bc8f9d4639149dfcde6cf131a9041c3bc2aa56770e045"
+    }
+  ]
+}

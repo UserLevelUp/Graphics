@@ -1,0 +1,1979 @@
+{
+  "status": "passed",
+  "exports": [
+    {
+      "status": "passed",
+      "snapshotsChecked": 7,
+      "snapshots": [
+        {
+          "lambda": -1.0,
+          "rootMagnitudeDecimal70": "1.414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 4.440892098500626e-16,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 1.1102230246251565e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.00701248023419778,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197528,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0000000000000004,
+            "maximumPhaseStep": 0.016362233585597824,
+            "minimumFunctionMagnitude": 6.000000000000002,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": -0.5,
+          "rootMagnitudeDecimal70": "1.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 0.0,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 0.9999999999999999,
+              "maximumPhaseStep": 0.007012480234197784,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197531,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.016362233585597828,
+            "minimumFunctionMagnitude": 3.0,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": -1e-06,
+          "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 1.1102230246251565e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.0070124802341977824,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.007012480234197529,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271870846210741,
+            "minimumFunctionMagnitude": 0.999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 0.0,
+          "rootMagnitudeDecimal70": "0.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 4.440892098500626e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 2,
+              "rawTurns": 2.0,
+              "maximumPhaseStep": 0.012271846303086646,
+              "minimumFunctionMagnitude": 0.062499999999999986,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271846303086646,
+            "minimumFunctionMagnitude": 0.9999999999999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 1e-06,
+          "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 2.220446049250313e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.0070124802341978085,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.0070124802341980375,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271870846211185,
+            "minimumFunctionMagnitude": 0.999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 0.5,
+          "rootMagnitudeDecimal70": "1.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 5.551115123125783e-17,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.00701248023419781,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234198038,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.01636223358559842,
+            "minimumFunctionMagnitude": 3.0,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 1.0,
+          "rootMagnitudeDecimal70": "1.414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 4.440892098500626e-16,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 2.220446049250313e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197808,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234198036,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.016362233585598417,
+            "minimumFunctionMagnitude": 6.000000000000002,
+            "samples": 1024
+          }
+        }
+      ],
+      "frame": {
+        "lambda": -0.5,
+        "rootMagnitudeDecimal70": "1.0",
+        "maximumRootError": 0.0,
+        "maximumRootResidual": 0.0,
+        "maximumValueError": 0.0,
+        "maximumPhaseAdditionError": 0.0,
+        "maximumHeatResidual": 0.0,
+        "isolatingContours": [
+          {
+            "winding": 1,
+            "rawTurns": 0.9999999999999999,
+            "maximumPhaseStep": 0.007012480234197784,
+            "minimumFunctionMagnitude": 0.5555555555555555,
+            "samples": 1024
+          },
+          {
+            "winding": 1,
+            "rawTurns": 1.0000000000000002,
+            "maximumPhaseStep": 0.007012480234197531,
+            "minimumFunctionMagnitude": 0.5555555555555555,
+            "samples": 1024
+          }
+        ],
+        "enclosingContour": {
+          "winding": 2,
+          "rawTurns": 2.0,
+          "maximumPhaseStep": 0.016362233585597828,
+          "minimumFunctionMagnitude": 3.0,
+          "samples": 1024
+        }
+      },
+      "limitations": [
+        "Independent numerical control checks; not interval certification.",
+        "At collision the root has multiplicity two; branch identities are naming conventions.",
+        "The discriminant is signed; separation is its absolute-value square root.",
+        "The affine-discriminant prediction is exact for this quadratic only.",
+        "No conclusion about primes, zeta zeros, or the Riemann Hypothesis."
+      ],
+      "source": "C:\\src\\graph\\research\\zero-motion\\evidence\\zero-after.values.json"
+    },
+    {
+      "status": "passed",
+      "snapshotsChecked": 7,
+      "snapshots": [
+        {
+          "lambda": -1.0,
+          "rootMagnitudeDecimal70": "1.414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 4.440892098500626e-16,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 1.1102230246251565e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.00701248023419778,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197528,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0000000000000004,
+            "maximumPhaseStep": 0.016362233585597824,
+            "minimumFunctionMagnitude": 6.000000000000002,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": -0.5,
+          "rootMagnitudeDecimal70": "1.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 0.0,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 0.9999999999999999,
+              "maximumPhaseStep": 0.007012480234197784,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197531,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.016362233585597828,
+            "minimumFunctionMagnitude": 3.0,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": -1e-06,
+          "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 1.1102230246251565e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.0070124802341977824,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.007012480234197529,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271870846210741,
+            "minimumFunctionMagnitude": 0.999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 0.0,
+          "rootMagnitudeDecimal70": "0.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 4.440892098500626e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 2,
+              "rawTurns": 2.0,
+              "maximumPhaseStep": 0.012271846303086646,
+              "minimumFunctionMagnitude": 0.062499999999999986,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271846303086646,
+            "minimumFunctionMagnitude": 0.9999999999999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 1e-06,
+          "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 2.220446049250313e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.0070124802341978085,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.0070124802341980375,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271870846211185,
+            "minimumFunctionMagnitude": 0.999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 0.5,
+          "rootMagnitudeDecimal70": "1.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 5.551115123125783e-17,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.00701248023419781,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234198038,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.01636223358559842,
+            "minimumFunctionMagnitude": 3.0,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 1.0,
+          "rootMagnitudeDecimal70": "1.414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 4.440892098500626e-16,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 2.220446049250313e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197808,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234198036,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.016362233585598417,
+            "minimumFunctionMagnitude": 6.000000000000002,
+            "samples": 1024
+          }
+        }
+      ],
+      "frame": {
+        "lambda": 0.5,
+        "rootMagnitudeDecimal70": "1.0",
+        "maximumRootError": 0.0,
+        "maximumRootResidual": 0.0,
+        "maximumValueError": 0.0,
+        "maximumPhaseAdditionError": 5.551115123125783e-17,
+        "maximumHeatResidual": 0.0,
+        "isolatingContours": [
+          {
+            "winding": 1,
+            "rawTurns": 1.0,
+            "maximumPhaseStep": 0.00701248023419781,
+            "minimumFunctionMagnitude": 0.5555555555555555,
+            "samples": 1024
+          },
+          {
+            "winding": 1,
+            "rawTurns": 1.0000000000000002,
+            "maximumPhaseStep": 0.007012480234198038,
+            "minimumFunctionMagnitude": 0.5555555555555555,
+            "samples": 1024
+          }
+        ],
+        "enclosingContour": {
+          "winding": 2,
+          "rawTurns": 2.0,
+          "maximumPhaseStep": 0.01636223358559842,
+          "minimumFunctionMagnitude": 3.0,
+          "samples": 1024
+        }
+      },
+      "limitations": [
+        "Independent numerical control checks; not interval certification.",
+        "At collision the root has multiplicity two; branch identities are naming conventions.",
+        "The discriminant is signed; separation is its absolute-value square root.",
+        "The affine-discriminant prediction is exact for this quadratic only.",
+        "No conclusion about primes, zeta zeros, or the Riemann Hypothesis."
+      ],
+      "source": "C:\\src\\graph\\research\\zero-motion\\evidence\\zero-before.values.json"
+    },
+    {
+      "status": "passed",
+      "snapshotsChecked": 7,
+      "snapshots": [
+        {
+          "lambda": -1.0,
+          "rootMagnitudeDecimal70": "1.414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 4.440892098500626e-16,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 1.1102230246251565e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.00701248023419778,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197528,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0000000000000004,
+            "maximumPhaseStep": 0.016362233585597824,
+            "minimumFunctionMagnitude": 6.000000000000002,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": -0.5,
+          "rootMagnitudeDecimal70": "1.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 0.0,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 0.9999999999999999,
+              "maximumPhaseStep": 0.007012480234197784,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197531,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.016362233585597828,
+            "minimumFunctionMagnitude": 3.0,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": -1e-06,
+          "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 1.1102230246251565e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.0070124802341977824,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.007012480234197529,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271870846210741,
+            "minimumFunctionMagnitude": 0.999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 0.0,
+          "rootMagnitudeDecimal70": "0.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 4.440892098500626e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 2,
+              "rawTurns": 2.0,
+              "maximumPhaseStep": 0.012271846303086646,
+              "minimumFunctionMagnitude": 0.062499999999999986,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271846303086646,
+            "minimumFunctionMagnitude": 0.9999999999999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 1e-06,
+          "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 2.220446049250313e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.0070124802341978085,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.0070124802341980375,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271870846211185,
+            "minimumFunctionMagnitude": 0.999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 0.5,
+          "rootMagnitudeDecimal70": "1.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 5.551115123125783e-17,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.00701248023419781,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234198038,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.01636223358559842,
+            "minimumFunctionMagnitude": 3.0,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 1.0,
+          "rootMagnitudeDecimal70": "1.414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 4.440892098500626e-16,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 2.220446049250313e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197808,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234198036,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.016362233585598417,
+            "minimumFunctionMagnitude": 6.000000000000002,
+            "samples": 1024
+          }
+        }
+      ],
+      "frame": {
+        "lambda": 0.0,
+        "rootMagnitudeDecimal70": "0.0",
+        "maximumRootError": 0.0,
+        "maximumRootResidual": 0.0,
+        "maximumValueError": 0.0,
+        "maximumPhaseAdditionError": 4.440892098500626e-16,
+        "maximumHeatResidual": 0.0,
+        "isolatingContours": [
+          {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271846303086646,
+            "minimumFunctionMagnitude": 0.062499999999999986,
+            "samples": 1024
+          }
+        ],
+        "enclosingContour": {
+          "winding": 2,
+          "rawTurns": 2.0,
+          "maximumPhaseStep": 0.012271846303086646,
+          "minimumFunctionMagnitude": 0.9999999999999998,
+          "samples": 1024
+        }
+      },
+      "limitations": [
+        "Independent numerical control checks; not interval certification.",
+        "At collision the root has multiplicity two; branch identities are naming conventions.",
+        "The discriminant is signed; separation is its absolute-value square root.",
+        "The affine-discriminant prediction is exact for this quadratic only.",
+        "No conclusion about primes, zeta zeros, or the Riemann Hypothesis."
+      ],
+      "source": "C:\\src\\graph\\research\\zero-motion\\evidence\\zero-collision.values.json"
+    },
+    {
+      "status": "passed",
+      "snapshotsChecked": 7,
+      "snapshots": [
+        {
+          "lambda": -1.0,
+          "rootMagnitudeDecimal70": "1.414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 4.440892098500626e-16,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 1.1102230246251565e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.00701248023419778,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197528,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0000000000000004,
+            "maximumPhaseStep": 0.016362233585597824,
+            "minimumFunctionMagnitude": 6.000000000000002,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": -0.5,
+          "rootMagnitudeDecimal70": "1.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 0.0,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 0.9999999999999999,
+              "maximumPhaseStep": 0.007012480234197784,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197531,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.016362233585597828,
+            "minimumFunctionMagnitude": 3.0,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": -1e-06,
+          "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 1.1102230246251565e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.0070124802341977824,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.007012480234197529,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271870846210741,
+            "minimumFunctionMagnitude": 0.999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 0.0,
+          "rootMagnitudeDecimal70": "0.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 4.440892098500626e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 2,
+              "rawTurns": 2.0,
+              "maximumPhaseStep": 0.012271846303086646,
+              "minimumFunctionMagnitude": 0.062499999999999986,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271846303086646,
+            "minimumFunctionMagnitude": 0.9999999999999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 1e-06,
+          "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 2.220446049250313e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.0070124802341978085,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.0070124802341980375,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271870846211185,
+            "minimumFunctionMagnitude": 0.999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 0.5,
+          "rootMagnitudeDecimal70": "1.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 5.551115123125783e-17,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.00701248023419781,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234198038,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.01636223358559842,
+            "minimumFunctionMagnitude": 3.0,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 1.0,
+          "rootMagnitudeDecimal70": "1.414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 4.440892098500626e-16,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 2.220446049250313e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197808,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234198036,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.016362233585598417,
+            "minimumFunctionMagnitude": 6.000000000000002,
+            "samples": 1024
+          }
+        }
+      ],
+      "frame": {
+        "lambda": -1e-06,
+        "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+        "maximumRootError": 0.0,
+        "maximumRootResidual": 0.0,
+        "maximumValueError": 0.0,
+        "maximumPhaseAdditionError": 1.1102230246251565e-16,
+        "maximumHeatResidual": 0.0,
+        "isolatingContours": [
+          {
+            "winding": 1,
+            "rawTurns": 1.0000000000000002,
+            "maximumPhaseStep": 0.0070124802341977824,
+            "minimumFunctionMagnitude": 1.1111111111111112e-06,
+            "samples": 1024
+          },
+          {
+            "winding": 1,
+            "rawTurns": 1.0,
+            "maximumPhaseStep": 0.007012480234197529,
+            "minimumFunctionMagnitude": 1.1111111111111112e-06,
+            "samples": 1024
+          }
+        ],
+        "enclosingContour": {
+          "winding": 2,
+          "rawTurns": 2.0,
+          "maximumPhaseStep": 0.012271870846210741,
+          "minimumFunctionMagnitude": 0.999998,
+          "samples": 1024
+        }
+      },
+      "limitations": [
+        "Independent numerical control checks; not interval certification.",
+        "At collision the root has multiplicity two; branch identities are naming conventions.",
+        "The discriminant is signed; separation is its absolute-value square root.",
+        "The affine-discriminant prediction is exact for this quadratic only.",
+        "No conclusion about primes, zeta zeros, or the Riemann Hypothesis."
+      ],
+      "source": "C:\\src\\graph\\research\\zero-motion\\evidence\\zero-near-after.values.json"
+    },
+    {
+      "status": "passed",
+      "snapshotsChecked": 7,
+      "snapshots": [
+        {
+          "lambda": -1.0,
+          "rootMagnitudeDecimal70": "1.414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 4.440892098500626e-16,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 1.1102230246251565e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.00701248023419778,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197528,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0000000000000004,
+            "maximumPhaseStep": 0.016362233585597824,
+            "minimumFunctionMagnitude": 6.000000000000002,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": -0.5,
+          "rootMagnitudeDecimal70": "1.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 0.0,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 0.9999999999999999,
+              "maximumPhaseStep": 0.007012480234197784,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197531,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.016362233585597828,
+            "minimumFunctionMagnitude": 3.0,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": -1e-06,
+          "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 1.1102230246251565e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.0070124802341977824,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.007012480234197529,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271870846210741,
+            "minimumFunctionMagnitude": 0.999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 0.0,
+          "rootMagnitudeDecimal70": "0.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 4.440892098500626e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 2,
+              "rawTurns": 2.0,
+              "maximumPhaseStep": 0.012271846303086646,
+              "minimumFunctionMagnitude": 0.062499999999999986,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271846303086646,
+            "minimumFunctionMagnitude": 0.9999999999999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 1e-06,
+          "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 2.220446049250313e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.0070124802341978085,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.0070124802341980375,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271870846211185,
+            "minimumFunctionMagnitude": 0.999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 0.5,
+          "rootMagnitudeDecimal70": "1.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 5.551115123125783e-17,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.00701248023419781,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234198038,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.01636223358559842,
+            "minimumFunctionMagnitude": 3.0,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 1.0,
+          "rootMagnitudeDecimal70": "1.414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 4.440892098500626e-16,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 2.220446049250313e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197808,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234198036,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.016362233585598417,
+            "minimumFunctionMagnitude": 6.000000000000002,
+            "samples": 1024
+          }
+        }
+      ],
+      "frame": {
+        "lambda": 1e-06,
+        "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+        "maximumRootError": 0.0,
+        "maximumRootResidual": 0.0,
+        "maximumValueError": 0.0,
+        "maximumPhaseAdditionError": 2.220446049250313e-16,
+        "maximumHeatResidual": 0.0,
+        "isolatingContours": [
+          {
+            "winding": 1,
+            "rawTurns": 1.0,
+            "maximumPhaseStep": 0.0070124802341978085,
+            "minimumFunctionMagnitude": 1.1111111111111112e-06,
+            "samples": 1024
+          },
+          {
+            "winding": 1,
+            "rawTurns": 1.0,
+            "maximumPhaseStep": 0.0070124802341980375,
+            "minimumFunctionMagnitude": 1.1111111111111112e-06,
+            "samples": 1024
+          }
+        ],
+        "enclosingContour": {
+          "winding": 2,
+          "rawTurns": 2.0,
+          "maximumPhaseStep": 0.012271870846211185,
+          "minimumFunctionMagnitude": 0.999998,
+          "samples": 1024
+        }
+      },
+      "limitations": [
+        "Independent numerical control checks; not interval certification.",
+        "At collision the root has multiplicity two; branch identities are naming conventions.",
+        "The discriminant is signed; separation is its absolute-value square root.",
+        "The affine-discriminant prediction is exact for this quadratic only.",
+        "No conclusion about primes, zeta zeros, or the Riemann Hypothesis."
+      ],
+      "source": "C:\\src\\graph\\research\\zero-motion\\evidence\\zero-near-before.values.json"
+    },
+    {
+      "status": "passed",
+      "snapshotsChecked": 7,
+      "snapshots": [
+        {
+          "lambda": -1.0,
+          "rootMagnitudeDecimal70": "1.414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 4.440892098500626e-16,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 1.1102230246251565e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.00701248023419778,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197528,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0000000000000004,
+            "maximumPhaseStep": 0.016362233585597824,
+            "minimumFunctionMagnitude": 6.000000000000002,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": -0.5,
+          "rootMagnitudeDecimal70": "1.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 0.0,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 0.9999999999999999,
+              "maximumPhaseStep": 0.007012480234197784,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197531,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.016362233585597828,
+            "minimumFunctionMagnitude": 3.0,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": -1e-06,
+          "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 1.1102230246251565e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.0070124802341977824,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.007012480234197529,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271870846210741,
+            "minimumFunctionMagnitude": 0.999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 0.0,
+          "rootMagnitudeDecimal70": "0.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 4.440892098500626e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 2,
+              "rawTurns": 2.0,
+              "maximumPhaseStep": 0.012271846303086646,
+              "minimumFunctionMagnitude": 0.062499999999999986,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271846303086646,
+            "minimumFunctionMagnitude": 0.9999999999999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 1e-06,
+          "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 2.220446049250313e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.0070124802341978085,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.0070124802341980375,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271870846211185,
+            "minimumFunctionMagnitude": 0.999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 0.5,
+          "rootMagnitudeDecimal70": "1.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 5.551115123125783e-17,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.00701248023419781,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234198038,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.01636223358559842,
+            "minimumFunctionMagnitude": 3.0,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 1.0,
+          "rootMagnitudeDecimal70": "1.414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 4.440892098500626e-16,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 2.220446049250313e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197808,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234198036,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.016362233585598417,
+            "minimumFunctionMagnitude": 6.000000000000002,
+            "samples": 1024
+          }
+        }
+      ],
+      "frame": {
+        "lambda": 0.5,
+        "rootMagnitudeDecimal70": "1.0",
+        "maximumRootError": 0.0,
+        "maximumRootResidual": 0.0,
+        "maximumValueError": 0.0,
+        "maximumPhaseAdditionError": 5.551115123125783e-17,
+        "maximumHeatResidual": 0.0,
+        "isolatingContours": [
+          {
+            "winding": 1,
+            "rawTurns": 1.0,
+            "maximumPhaseStep": 0.00701248023419781,
+            "minimumFunctionMagnitude": 0.5555555555555555,
+            "samples": 1024
+          },
+          {
+            "winding": 1,
+            "rawTurns": 1.0000000000000002,
+            "maximumPhaseStep": 0.007012480234198038,
+            "minimumFunctionMagnitude": 0.5555555555555555,
+            "samples": 1024
+          }
+        ],
+        "enclosingContour": {
+          "winding": 2,
+          "rawTurns": 2.0,
+          "maximumPhaseStep": 0.01636223358559842,
+          "minimumFunctionMagnitude": 3.0,
+          "samples": 1024
+        }
+      },
+      "limitations": [
+        "Independent numerical control checks; not interval certification.",
+        "At collision the root has multiplicity two; branch identities are naming conventions.",
+        "The discriminant is signed; separation is its absolute-value square root.",
+        "The affine-discriminant prediction is exact for this quadratic only.",
+        "No conclusion about primes, zeta zeros, or the Riemann Hypothesis."
+      ],
+      "source": "C:\\src\\graph\\research\\zero-motion\\evidence\\zero-path.values.json"
+    },
+    {
+      "status": "passed",
+      "snapshotsChecked": 7,
+      "snapshots": [
+        {
+          "lambda": -1.0,
+          "rootMagnitudeDecimal70": "1.414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 4.440892098500626e-16,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 1.1102230246251565e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.00701248023419778,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197528,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0000000000000004,
+            "maximumPhaseStep": 0.016362233585597824,
+            "minimumFunctionMagnitude": 6.000000000000002,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": -0.5,
+          "rootMagnitudeDecimal70": "1.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 0.0,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 0.9999999999999999,
+              "maximumPhaseStep": 0.007012480234197784,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197531,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.016362233585597828,
+            "minimumFunctionMagnitude": 3.0,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": -1e-06,
+          "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 1.1102230246251565e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.0070124802341977824,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.007012480234197529,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271870846210741,
+            "minimumFunctionMagnitude": 0.999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 0.0,
+          "rootMagnitudeDecimal70": "0.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 4.440892098500626e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 2,
+              "rawTurns": 2.0,
+              "maximumPhaseStep": 0.012271846303086646,
+              "minimumFunctionMagnitude": 0.062499999999999986,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271846303086646,
+            "minimumFunctionMagnitude": 0.9999999999999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 1e-06,
+          "rootMagnitudeDecimal70": "0.001414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 2.220446049250313e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.0070124802341978085,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.0070124802341980375,
+              "minimumFunctionMagnitude": 1.1111111111111112e-06,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.012271870846211185,
+            "minimumFunctionMagnitude": 0.999998,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 0.5,
+          "rootMagnitudeDecimal70": "1.0",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 0.0,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 5.551115123125783e-17,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0,
+              "maximumPhaseStep": 0.00701248023419781,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234198038,
+              "minimumFunctionMagnitude": 0.5555555555555555,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.01636223358559842,
+            "minimumFunctionMagnitude": 3.0,
+            "samples": 1024
+          }
+        },
+        {
+          "lambda": 1.0,
+          "rootMagnitudeDecimal70": "1.414213562373095048801688724209698078569671875376948073176679737990732",
+          "maximumRootError": 0.0,
+          "maximumRootResidual": 4.440892098500626e-16,
+          "maximumValueError": 0.0,
+          "maximumPhaseAdditionError": 2.220446049250313e-16,
+          "maximumHeatResidual": 0.0,
+          "isolatingContours": [
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234197808,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            },
+            {
+              "winding": 1,
+              "rawTurns": 1.0000000000000002,
+              "maximumPhaseStep": 0.007012480234198036,
+              "minimumFunctionMagnitude": 1.1111111111111112,
+              "samples": 1024
+            }
+          ],
+          "enclosingContour": {
+            "winding": 2,
+            "rawTurns": 2.0,
+            "maximumPhaseStep": 0.016362233585598417,
+            "minimumFunctionMagnitude": 6.000000000000002,
+            "samples": 1024
+          }
+        }
+      ],
+      "frame": {
+        "lambda": 0.5,
+        "rootMagnitudeDecimal70": "1.0",
+        "maximumRootError": 0.0,
+        "maximumRootResidual": 0.0,
+        "maximumValueError": 0.0,
+        "maximumPhaseAdditionError": 5.551115123125783e-17,
+        "maximumHeatResidual": 0.0,
+        "isolatingContours": [
+          {
+            "winding": 1,
+            "rawTurns": 1.0,
+            "maximumPhaseStep": 0.00701248023419781,
+            "minimumFunctionMagnitude": 0.5555555555555555,
+            "samples": 1024
+          },
+          {
+            "winding": 1,
+            "rawTurns": 1.0000000000000002,
+            "maximumPhaseStep": 0.007012480234198038,
+            "minimumFunctionMagnitude": 0.5555555555555555,
+            "samples": 1024
+          }
+        ],
+        "enclosingContour": {
+          "winding": 2,
+          "rawTurns": 2.0,
+          "maximumPhaseStep": 0.01636223358559842,
+          "minimumFunctionMagnitude": 3.0,
+          "samples": 1024
+        }
+      },
+      "limitations": [
+        "Independent numerical control checks; not interval certification.",
+        "At collision the root has multiplicity two; branch identities are naming conventions.",
+        "The discriminant is signed; separation is its absolute-value square root.",
+        "The affine-discriminant prediction is exact for this quadratic only.",
+        "No conclusion about primes, zeta zeros, or the Riemann Hypothesis."
+      ],
+      "source": "C:\\src\\graph\\research\\zero-motion\\evidence\\zero-rotated.values.json"
+    },
+    {
+      "status": "passed",
+      "kind": "phase-path",
+      "pathCasesChecked": 12,
+      "selectedPath": {
+        "name": "selected_path",
+        "zeroCount": 0,
+        "boundaryEventCount": 3,
+        "maximumBoundaryResidual": 8.881784197001252e-16,
+        "sampledContinuousPhaseRadians": -4.032855734483296,
+        "continuousPhaseReferenceError": 8.881784197001252e-16,
+        "numericalIntegrationError": 1.616484723854228e-13
+      },
+      "cases": [
+        {
+          "name": "clear_path",
+          "zeroCount": 0,
+          "boundaryEventCount": 2,
+          "maximumBoundaryResidual": 5.551115123125783e-17,
+          "sampledContinuousPhaseRadians": -3.19709115883551,
+          "continuousPhaseReferenceError": 4.440892098500626e-16,
+          "numericalIntegrationError": 3.055333763768431e-13
+        },
+        {
+          "name": "reversed_clear_path",
+          "zeroCount": 0,
+          "boundaryEventCount": 2,
+          "maximumBoundaryResidual": 8.326672684688674e-16,
+          "sampledContinuousPhaseRadians": 3.1970911588355087,
+          "continuousPhaseReferenceError": 1.7763568394002505e-15,
+          "numericalIntegrationError": 3.090860900556436e-13
+        },
+        {
+          "name": "symmetric_one_turn",
+          "zeroCount": 0,
+          "boundaryEventCount": 3,
+          "maximumBoundaryResidual": 8.881784197001252e-16,
+          "sampledContinuousPhaseRadians": -4.032855734483296,
+          "continuousPhaseReferenceError": 8.881784197001252e-16,
+          "numericalIntegrationError": 1.616484723854228e-13
+        },
+        {
+          "name": "simple_zero_crossing",
+          "zeroCount": 1,
+          "boundaryEventCount": 1,
+          "maximumBoundaryResidual": 0.0,
+          "sampledContinuousPhaseRadians": null,
+          "continuousPhaseReferenceError": null,
+          "numericalIntegrationError": null
+        },
+        {
+          "name": "double_zero_crossing",
+          "zeroCount": 1,
+          "boundaryEventCount": 1,
+          "maximumBoundaryResidual": 0.0,
+          "sampledContinuousPhaseRadians": null,
+          "continuousPhaseReferenceError": null,
+          "numericalIntegrationError": null
+        },
+        {
+          "name": "tangent_boundary",
+          "zeroCount": 0,
+          "boundaryEventCount": 1,
+          "maximumBoundaryResidual": 1.1102230246251565e-16,
+          "sampledContinuousPhaseRadians": 0.6747409422235524,
+          "continuousPhaseReferenceError": 2.220446049250313e-16,
+          "numericalIntegrationError": 3.544942117628125e-13
+        },
+        {
+          "name": "coincident_boundary",
+          "zeroCount": 0,
+          "boundaryEventCount": 0,
+          "maximumBoundaryResidual": 0.0,
+          "sampledContinuousPhaseRadians": 0.0,
+          "continuousPhaseReferenceError": 0.0,
+          "numericalIntegrationError": 0.0
+        },
+        {
+          "name": "zero_length",
+          "zeroCount": 0,
+          "boundaryEventCount": 0,
+          "maximumBoundaryResidual": 0.0,
+          "sampledContinuousPhaseRadians": 0.0,
+          "continuousPhaseReferenceError": 0.0,
+          "numericalIntegrationError": 0.0
+        },
+        {
+          "name": "near_zero",
+          "zeroCount": 0,
+          "boundaryEventCount": 2,
+          "maximumBoundaryResidual": 0.0,
+          "sampledContinuousPhaseRadians": null,
+          "continuousPhaseReferenceError": null,
+          "numericalIntegrationError": null
+        },
+        {
+          "name": "rotated_clear_path",
+          "zeroCount": 0,
+          "boundaryEventCount": 2,
+          "maximumBoundaryResidual": 4.440892098500626e-16,
+          "sampledContinuousPhaseRadians": -3.19709115883551,
+          "continuousPhaseReferenceError": 4.440892098500626e-16,
+          "numericalIntegrationError": 3.055333763768431e-13
+        },
+        {
+          "name": "extra_full_turn",
+          "zeroCount": 0,
+          "boundaryEventCount": 3,
+          "maximumBoundaryResidual": 0.0,
+          "sampledContinuousPhaseRadians": 5.884510697214936,
+          "continuousPhaseReferenceError": 1.7763568394002505e-15,
+          "numericalIntegrationError": 7.354117315117037e-13
+        },
+        {
+          "name": "endpoint_zero",
+          "zeroCount": 1,
+          "boundaryEventCount": 2,
+          "maximumBoundaryResidual": 0.0,
+          "sampledContinuousPhaseRadians": null,
+          "continuousPhaseReferenceError": null,
+          "numericalIntegrationError": null
+        }
+      ],
+      "rejectedNegativeControls": [
+        "lost full turn",
+        "wrapped phase substituted",
+        "wrong numerical integral",
+        "singular integration allowed",
+        "tangency called crossing",
+        "coincident boundary omitted",
+        "missing boundary crossing",
+        "endpoint-zero derivative invented"
+      ],
+      "limitations": [
+        "Numerical phase integration and tolerances are empirical, not certified bounds.",
+        "Boundary names identify the vanishing component, not the geometric axis.",
+        "No claim about primes, Riemann zeta, or the Riemann Hypothesis."
+      ],
+      "source": "C:\\src\\graph\\research\\zero-motion\\evidence\\zero-path.json"
+    }
+  ]
+}

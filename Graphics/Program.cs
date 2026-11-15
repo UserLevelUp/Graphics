@@ -14,6 +14,26 @@ namespace Graphics
         [STAThread]
         static void Main(string[] args)
         {
+            if (args.Length == 8 && args[0] == "--zero-path")
+            {
+                double Parse(int i) => double.Parse(args[i], System.Globalization.CultureInfo.InvariantCulture);
+                var start = new System.Numerics.Complex(Parse(3), Parse(4));
+                var end = new System.Numerics.Complex(Parse(5), Parse(6));
+                ZeroMotionForm.ExportFrame(System.IO.Path.ChangeExtension(args[1], ".png"), Parse(2), Parse(7), start, end);
+                System.IO.File.WriteAllText(args[1], System.Text.Json.JsonSerializer.Serialize(new
+                {
+                    analysis = ZeroMotionPath.Analyze(start, end, Parse(2), Parse(7)),
+                    verification = ZeroMotionPath.Verify()
+                }, new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));
+                return;
+            }
+            if ((args.Length == 2 || args.Length == 3 || args.Length == 4) && args[0] == "--zero-motion")
+            {
+                double lambda = args.Length >= 3 ? double.Parse(args[2], System.Globalization.CultureInfo.InvariantCulture) : 0.5;
+                double rotation = args.Length == 4 ? double.Parse(args[3], System.Globalization.CultureInfo.InvariantCulture) : 0;
+                ZeroMotionExperiment.Export(args[1], lambda, rotation);
+                return;
+            }
             if (args.Length == 2 && args[0] == "--prime-unwrap")
             {
                 using var image = PrimeUnwrap.Render(1.2, 13, out string report);
@@ -48,7 +68,8 @@ namespace Graphics
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(args.Length == 1 && args[0] == "--prime-lab" ? (Form)new PrimePhaseForm() : new GraphForm());
+            Application.Run(args.Length == 1 && args[0] == "--zero-lab" ? (Form)new ZeroMotionForm()
+                : args.Length == 1 && args[0] == "--prime-lab" ? (Form)new PrimePhaseForm() : new GraphForm());
         }
     }
 }

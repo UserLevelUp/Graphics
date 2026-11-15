@@ -1,0 +1,34 @@
+{
+  "bubble_uuid": "01a1ddd1-e625-7731-a3a2-836f7d028f2a",
+  "goal": "Calibrate color coordinates around exact moving polynomial zeros and their collision; test local phase composition without claiming an RH result",
+  "intelligence_baseline": "host-current",
+  "invariants": [],
+  "required_slices": [
+    {
+      "contract_hash": "contract:graph.zeros.motion.slice-0:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "baseline"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "slice-0",
+      "slice_uuid": "01a1ddd1-e625-73f7-87e5-b0f248e053a5"
+    },
+    {
+      "contract_hash": "contract:graph.zeros.motion.slice-final:v1",
+      "depends_on": [
+        "slice-0"
+      ],
+      "evidence_gates": [
+        "acceptance"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "slice-final",
+      "slice_uuid": "01a1ddd1-e625-7c11-be87-28c181924ee3"
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.zeros.motion"
+}

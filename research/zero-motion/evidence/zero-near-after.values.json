@@ -1,0 +1,979 @@
+{
+  "schemaVersion": 1,
+  "model": "F(z,lambda)=z^2-2*lambda",
+  "heatEquation": "dF/dlambda=-d2F/dz2",
+  "parameters": {
+    "lambda": -1E-06,
+    "paletteDegrees": 0
+  },
+  "frame": {
+    "lambda": -1E-06,
+    "roots": [
+      {
+        "id": "A",
+        "real": 0,
+        "imaginary": 0.001414213562373095,
+        "multiplicity": 1
+      },
+      {
+        "id": "B",
+        "real": -0,
+        "imaginary": -0.001414213562373095,
+        "multiplicity": 1
+      }
+    ],
+    "branches": {
+      "A": {
+        "real": 0,
+        "imaginary": 0.001414213562373095
+      },
+      "B": {
+        "real": -0,
+        "imaginary": -0.001414213562373095
+      }
+    },
+    "separation": 0.00282842712474619,
+    "discriminant": -8E-06,
+    "freezeDeltaLambda": 1E-06,
+    "decreasingPredictionApplicable": false,
+    "maximumRootResidual": 0,
+    "samples": [
+      {
+        "z": {
+          "real": -1.3,
+          "imaginary": 0.7
+        },
+        "value": {
+          "real": 1.2000020000000002,
+          "imaginary": -1.8199999999999998
+        },
+        "factorA": {
+          "real": -1.3,
+          "imaginary": 0.6985857864376268
+        },
+        "factorB": {
+          "real": -1.3,
+          "imaginary": 0.7014142135623731
+        },
+        "lambdaDerivative": {
+          "real": -2,
+          "imaginary": 0
+        },
+        "secondZDerivative": {
+          "real": 2,
+          "imaginary": 0
+        }
+      },
+      {
+        "z": {
+          "real": 0.23,
+          "imaginary": -0.42
+        },
+        "value": {
+          "real": -0.12349799999999997,
+          "imaginary": -0.1932
+        },
+        "factorA": {
+          "real": 0.23,
+          "imaginary": -0.4214142135623731
+        },
+        "factorB": {
+          "real": 0.23,
+          "imaginary": -0.4185857864376269
+        },
+        "lambdaDerivative": {
+          "real": -2,
+          "imaginary": 0
+        },
+        "secondZDerivative": {
+          "real": 2,
+          "imaginary": 0
+        }
+      },
+      {
+        "z": {
+          "real": 2,
+          "imaginary": 1.1
+        },
+        "value": {
+          "real": 2.790002,
+          "imaginary": 4.4
+        },
+        "factorA": {
+          "real": 2,
+          "imaginary": 1.098585786437627
+        },
+        "factorB": {
+          "real": 2,
+          "imaginary": 1.1014142135623732
+        },
+        "lambdaDerivative": {
+          "real": -2,
+          "imaginary": 0
+        },
+        "secondZDerivative": {
+          "real": 2,
+          "imaginary": 0
+        }
+      }
+    ]
+  },
+  "snapshots": [
+    {
+      "lambda": -1,
+      "roots": [
+        {
+          "id": "A",
+          "real": 0,
+          "imaginary": 1.4142135623730951,
+          "multiplicity": 1
+        },
+        {
+          "id": "B",
+          "real": -0,
+          "imaginary": -1.4142135623730951,
+          "multiplicity": 1
+        }
+      ],
+      "branches": {
+        "A": {
+          "real": 0,
+          "imaginary": 1.4142135623730951
+        },
+        "B": {
+          "real": -0,
+          "imaginary": -1.4142135623730951
+        }
+      },
+      "separation": 2.8284271247461903,
+      "discriminant": -8,
+      "freezeDeltaLambda": 1,
+      "decreasingPredictionApplicable": false,
+      "maximumRootResidual": 4.440892098500626E-16,
+      "samples": [
+        {
+          "z": {
+            "real": -1.3,
+            "imaginary": 0.7
+          },
+          "value": {
+            "real": 3.2,
+            "imaginary": -1.8199999999999998
+          },
+          "factorA": {
+            "real": -1.3,
+            "imaginary": -0.7142135623730952
+          },
+          "factorB": {
+            "real": -1.3,
+            "imaginary": 2.114213562373095
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        },
+        {
+          "z": {
+            "real": 0.23,
+            "imaginary": -0.42
+          },
+          "value": {
+            "real": 1.8765,
+            "imaginary": -0.1932
+          },
+          "factorA": {
+            "real": 0.23,
+            "imaginary": -1.834213562373095
+          },
+          "factorB": {
+            "real": 0.23,
+            "imaginary": 0.9942135623730952
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        },
+        {
+          "z": {
+            "real": 2,
+            "imaginary": 1.1
+          },
+          "value": {
+            "real": 4.79,
+            "imaginary": 4.4
+          },
+          "factorA": {
+            "real": 2,
+            "imaginary": -0.31421356237309506
+          },
+          "factorB": {
+            "real": 2,
+            "imaginary": 2.5142135623730955
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        }
+      ]
+    },
+    {
+      "lambda": -0.5,
+      "roots": [
+        {
+          "id": "A",
+          "real": 0,
+          "imaginary": 1,
+          "multiplicity": 1
+        },
+        {
+          "id": "B",
+          "real": -0,
+          "imaginary": -1,
+          "multiplicity": 1
+        }
+      ],
+      "branches": {
+        "A": {
+          "real": 0,
+          "imaginary": 1
+        },
+        "B": {
+          "real": -0,
+          "imaginary": -1
+        }
+      },
+      "separation": 2,
+      "discriminant": -4,
+      "freezeDeltaLambda": 0.5,
+      "decreasingPredictionApplicable": false,
+      "maximumRootResidual": 0,
+      "samples": [
+        {
+          "z": {
+            "real": -1.3,
+            "imaginary": 0.7
+          },
+          "value": {
+            "real": 2.2,
+            "imaginary": -1.8199999999999998
+          },
+          "factorA": {
+            "real": -1.3,
+            "imaginary": -0.30000000000000004
+          },
+          "factorB": {
+            "real": -1.3,
+            "imaginary": 1.7
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        },
+        {
+          "z": {
+            "real": 0.23,
+            "imaginary": -0.42
+          },
+          "value": {
+            "real": 0.8765000000000001,
+            "imaginary": -0.1932
+          },
+          "factorA": {
+            "real": 0.23,
+            "imaginary": -1.42
+          },
+          "factorB": {
+            "real": 0.23,
+            "imaginary": 0.5800000000000001
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        },
+        {
+          "z": {
+            "real": 2,
+            "imaginary": 1.1
+          },
+          "value": {
+            "real": 3.79,
+            "imaginary": 4.4
+          },
+          "factorA": {
+            "real": 2,
+            "imaginary": 0.10000000000000009
+          },
+          "factorB": {
+            "real": 2,
+            "imaginary": 2.1
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        }
+      ]
+    },
+    {
+      "lambda": -1E-06,
+      "roots": [
+        {
+          "id": "A",
+          "real": 0,
+          "imaginary": 0.001414213562373095,
+          "multiplicity": 1
+        },
+        {
+          "id": "B",
+          "real": -0,
+          "imaginary": -0.001414213562373095,
+          "multiplicity": 1
+        }
+      ],
+      "branches": {
+        "A": {
+          "real": 0,
+          "imaginary": 0.001414213562373095
+        },
+        "B": {
+          "real": -0,
+          "imaginary": -0.001414213562373095
+        }
+      },
+      "separation": 0.00282842712474619,
+      "discriminant": -8E-06,
+      "freezeDeltaLambda": 1E-06,
+      "decreasingPredictionApplicable": false,
+      "maximumRootResidual": 0,
+      "samples": [
+        {
+          "z": {
+            "real": -1.3,
+            "imaginary": 0.7
+          },
+          "value": {
+            "real": 1.2000020000000002,
+            "imaginary": -1.8199999999999998
+          },
+          "factorA": {
+            "real": -1.3,
+            "imaginary": 0.6985857864376268
+          },
+          "factorB": {
+            "real": -1.3,
+            "imaginary": 0.7014142135623731
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        },
+        {
+          "z": {
+            "real": 0.23,
+            "imaginary": -0.42
+          },
+          "value": {
+            "real": -0.12349799999999997,
+            "imaginary": -0.1932
+          },
+          "factorA": {
+            "real": 0.23,
+            "imaginary": -0.4214142135623731
+          },
+          "factorB": {
+            "real": 0.23,
+            "imaginary": -0.4185857864376269
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        },
+        {
+          "z": {
+            "real": 2,
+            "imaginary": 1.1
+          },
+          "value": {
+            "real": 2.790002,
+            "imaginary": 4.4
+          },
+          "factorA": {
+            "real": 2,
+            "imaginary": 1.098585786437627
+          },
+          "factorB": {
+            "real": 2,
+            "imaginary": 1.1014142135623732
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        }
+      ]
+    },
+    {
+      "lambda": 0,
+      "roots": [
+        {
+          "id": "A\u002BB",
+          "real": 0,
+          "imaginary": 0,
+          "multiplicity": 2
+        }
+      ],
+      "branches": {
+        "A": {
+          "real": 0,
+          "imaginary": 0
+        },
+        "B": {
+          "real": -0,
+          "imaginary": -0
+        }
+      },
+      "separation": 0,
+      "discriminant": 0,
+      "freezeDeltaLambda": -0,
+      "decreasingPredictionApplicable": false,
+      "maximumRootResidual": 0,
+      "samples": [
+        {
+          "z": {
+            "real": -1.3,
+            "imaginary": 0.7
+          },
+          "value": {
+            "real": 1.2000000000000002,
+            "imaginary": -1.8199999999999998
+          },
+          "factorA": {
+            "real": -1.3,
+            "imaginary": 0.7
+          },
+          "factorB": {
+            "real": -1.3,
+            "imaginary": 0.7
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        },
+        {
+          "z": {
+            "real": 0.23,
+            "imaginary": -0.42
+          },
+          "value": {
+            "real": -0.12349999999999997,
+            "imaginary": -0.1932
+          },
+          "factorA": {
+            "real": 0.23,
+            "imaginary": -0.42
+          },
+          "factorB": {
+            "real": 0.23,
+            "imaginary": -0.42
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        },
+        {
+          "z": {
+            "real": 2,
+            "imaginary": 1.1
+          },
+          "value": {
+            "real": 2.79,
+            "imaginary": 4.4
+          },
+          "factorA": {
+            "real": 2,
+            "imaginary": 1.1
+          },
+          "factorB": {
+            "real": 2,
+            "imaginary": 1.1
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        }
+      ]
+    },
+    {
+      "lambda": 1E-06,
+      "roots": [
+        {
+          "id": "A",
+          "real": 0.001414213562373095,
+          "imaginary": 0,
+          "multiplicity": 1
+        },
+        {
+          "id": "B",
+          "real": -0.001414213562373095,
+          "imaginary": -0,
+          "multiplicity": 1
+        }
+      ],
+      "branches": {
+        "A": {
+          "real": 0.001414213562373095,
+          "imaginary": 0
+        },
+        "B": {
+          "real": -0.001414213562373095,
+          "imaginary": -0
+        }
+      },
+      "separation": 0.00282842712474619,
+      "discriminant": 8E-06,
+      "freezeDeltaLambda": -1E-06,
+      "decreasingPredictionApplicable": true,
+      "maximumRootResidual": 0,
+      "samples": [
+        {
+          "z": {
+            "real": -1.3,
+            "imaginary": 0.7
+          },
+          "value": {
+            "real": 1.1999980000000001,
+            "imaginary": -1.8199999999999998
+          },
+          "factorA": {
+            "real": -1.3014142135623732,
+            "imaginary": 0.7
+          },
+          "factorB": {
+            "real": -1.298585786437627,
+            "imaginary": 0.7
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        },
+        {
+          "z": {
+            "real": 0.23,
+            "imaginary": -0.42
+          },
+          "value": {
+            "real": -0.12350199999999997,
+            "imaginary": -0.1932
+          },
+          "factorA": {
+            "real": 0.22858578643762692,
+            "imaginary": -0.42
+          },
+          "factorB": {
+            "real": 0.2314142135623731,
+            "imaginary": -0.42
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        },
+        {
+          "z": {
+            "real": 2,
+            "imaginary": 1.1
+          },
+          "value": {
+            "real": 2.789998,
+            "imaginary": 4.4
+          },
+          "factorA": {
+            "real": 1.9985857864376269,
+            "imaginary": 1.1
+          },
+          "factorB": {
+            "real": 2.001414213562373,
+            "imaginary": 1.1
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        }
+      ]
+    },
+    {
+      "lambda": 0.5,
+      "roots": [
+        {
+          "id": "A",
+          "real": 1,
+          "imaginary": 0,
+          "multiplicity": 1
+        },
+        {
+          "id": "B",
+          "real": -1,
+          "imaginary": -0,
+          "multiplicity": 1
+        }
+      ],
+      "branches": {
+        "A": {
+          "real": 1,
+          "imaginary": 0
+        },
+        "B": {
+          "real": -1,
+          "imaginary": -0
+        }
+      },
+      "separation": 2,
+      "discriminant": 4,
+      "freezeDeltaLambda": -0.5,
+      "decreasingPredictionApplicable": true,
+      "maximumRootResidual": 0,
+      "samples": [
+        {
+          "z": {
+            "real": -1.3,
+            "imaginary": 0.7
+          },
+          "value": {
+            "real": 0.20000000000000018,
+            "imaginary": -1.8199999999999998
+          },
+          "factorA": {
+            "real": -2.3,
+            "imaginary": 0.7
+          },
+          "factorB": {
+            "real": -0.30000000000000004,
+            "imaginary": 0.7
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        },
+        {
+          "z": {
+            "real": 0.23,
+            "imaginary": -0.42
+          },
+          "value": {
+            "real": -1.1235,
+            "imaginary": -0.1932
+          },
+          "factorA": {
+            "real": -0.77,
+            "imaginary": -0.42
+          },
+          "factorB": {
+            "real": 1.23,
+            "imaginary": -0.42
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        },
+        {
+          "z": {
+            "real": 2,
+            "imaginary": 1.1
+          },
+          "value": {
+            "real": 1.79,
+            "imaginary": 4.4
+          },
+          "factorA": {
+            "real": 1,
+            "imaginary": 1.1
+          },
+          "factorB": {
+            "real": 3,
+            "imaginary": 1.1
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        }
+      ]
+    },
+    {
+      "lambda": 1,
+      "roots": [
+        {
+          "id": "A",
+          "real": 1.4142135623730951,
+          "imaginary": 0,
+          "multiplicity": 1
+        },
+        {
+          "id": "B",
+          "real": -1.4142135623730951,
+          "imaginary": -0,
+          "multiplicity": 1
+        }
+      ],
+      "branches": {
+        "A": {
+          "real": 1.4142135623730951,
+          "imaginary": 0
+        },
+        "B": {
+          "real": -1.4142135623730951,
+          "imaginary": -0
+        }
+      },
+      "separation": 2.8284271247461903,
+      "discriminant": 8,
+      "freezeDeltaLambda": -1,
+      "decreasingPredictionApplicable": true,
+      "maximumRootResidual": 4.440892098500626E-16,
+      "samples": [
+        {
+          "z": {
+            "real": -1.3,
+            "imaginary": 0.7
+          },
+          "value": {
+            "real": -0.7999999999999998,
+            "imaginary": -1.8199999999999998
+          },
+          "factorA": {
+            "real": -2.714213562373095,
+            "imaginary": 0.7
+          },
+          "factorB": {
+            "real": 0.1142135623730951,
+            "imaginary": 0.7
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        },
+        {
+          "z": {
+            "real": 0.23,
+            "imaginary": -0.42
+          },
+          "value": {
+            "real": -2.1235,
+            "imaginary": -0.1932
+          },
+          "factorA": {
+            "real": -1.1842135623730952,
+            "imaginary": -0.42
+          },
+          "factorB": {
+            "real": 1.6442135623730951,
+            "imaginary": -0.42
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        },
+        {
+          "z": {
+            "real": 2,
+            "imaginary": 1.1
+          },
+          "value": {
+            "real": 0.79,
+            "imaginary": 4.4
+          },
+          "factorA": {
+            "real": 0.5857864376269049,
+            "imaginary": 1.1
+          },
+          "factorB": {
+            "real": 3.414213562373095,
+            "imaginary": 1.1
+          },
+          "lambdaDerivative": {
+            "real": -2,
+            "imaginary": 0
+          },
+          "secondZDerivative": {
+            "real": 2,
+            "imaginary": 0
+          }
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "status": "passed",
+    "traceId": "graph.zeros.motion.verify",
+    "pointChecks": 896,
+    "maximumRootResidual": 4.440892098500626E-16,
+    "maximumProductError": 1.2560739669470201E-15,
+    "maximumPhaseError": 1.5314274795707798E-15,
+    "maximumDiscriminantError": 1.7763568394002505E-15,
+    "windingCases": [
+      {
+        "lambda": -1,
+        "outerWindingForward": 1.9999999999999978,
+        "outerWindingReverse": -1.9999999999999978,
+        "rootAWinding": 1,
+        "rootBWinding": 1.0000000000000007,
+        "localRadius": 0.2
+      },
+      {
+        "lambda": -0.5,
+        "outerWindingForward": 1.9999999999999976,
+        "outerWindingReverse": -1.9999999999999976,
+        "rootAWinding": 1.0000000000000004,
+        "rootBWinding": 0.9999999999999996,
+        "localRadius": 0.2
+      },
+      {
+        "lambda": -1E-06,
+        "outerWindingForward": 2.000000000000002,
+        "outerWindingReverse": -2.000000000000002,
+        "rootAWinding": 1.0000000000000009,
+        "rootBWinding": 1.0000000000000002,
+        "localRadius": 0.0007071067811865475
+      },
+      {
+        "lambda": 0,
+        "outerWindingForward": 1.9999999999999998,
+        "outerWindingReverse": -1.9999999999999998,
+        "rootAWinding": 1.9999999999999998,
+        "rootBWinding": 1.9999999999999998,
+        "localRadius": 0.2
+      },
+      {
+        "lambda": 1E-06,
+        "outerWindingForward": 2.0000000000000013,
+        "outerWindingReverse": -2.0000000000000013,
+        "rootAWinding": 0.9999999999999996,
+        "rootBWinding": 1.0000000000000007,
+        "localRadius": 0.0007071067811865475
+      },
+      {
+        "lambda": 0.5,
+        "outerWindingForward": 1.9999999999999976,
+        "outerWindingReverse": -1.9999999999999976,
+        "rootAWinding": 1.0000000000000002,
+        "rootBWinding": 0.9999999999999999,
+        "localRadius": 0.2
+      },
+      {
+        "lambda": 1,
+        "outerWindingForward": 1.9999999999999978,
+        "outerWindingReverse": -1.9999999999999978,
+        "rootAWinding": 1.0000000000000002,
+        "rootBWinding": 0.9999999999999993,
+        "localRadius": 0.2
+      }
+    ],
+    "palette": {
+      "testedDegrees": [
+        0,
+        22.5,
+        90,
+        173
+      ],
+      "changedColors": 891,
+      "invariant": "Roots, discriminant, and parameter prediction are computed before color assignment."
+    },
+    "interpretation": "Exact polynomial identities checked numerically. This calibration makes no assertion about Riemann zeta zeros."
+  }
+}

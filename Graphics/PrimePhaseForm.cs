@@ -118,6 +118,9 @@ namespace Graphics
             toolbar.Controls.Add(renderButton);
             toolbar.Controls.Add(saveButton);
             toolbar.Controls.Add(unwrapButton);
+            var zeroMotion = new Button { Text = "Zero motion lab", AutoSize = true };
+            zeroMotion.Click += (sender, args) => { using var lab = new ZeroMotionForm(); lab.ShowDialog(this); };
+            toolbar.Controls.Add(zeroMotion);
 
             var layout = new TableLayoutPanel
             {

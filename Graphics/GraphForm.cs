@@ -50,6 +50,10 @@ namespace Graphics
             var primes = new Button { Text = "Prime color lab", AutoSize = true, Margin = Padding.Empty };
             primes.Click += (sender, args) => { using var lab = new PrimePhaseForm(); lab.ShowDialog(this); };
             zetaButtons.Controls.Add(primes);
+            primes.Margin = new Padding(0, 0, 0, spacing);
+            var zeros = new Button { Text = "Zero motion lab", AutoSize = true, Margin = Padding.Empty };
+            zeros.Click += (sender, args) => { using var lab = new ZeroMotionForm(); lab.ShowDialog(this); };
+            zetaButtons.Controls.Add(zeros);
             panel1.Controls.Add(zetaButtons);
         }
 
