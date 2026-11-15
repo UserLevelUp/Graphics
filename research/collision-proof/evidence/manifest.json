@@ -1,0 +1,64 @@
+{
+  "schema": "graph-exact-collision-evidence-v1",
+  "traceId": "graph.riemann.collision.verify",
+  "baselineCommit": "170993c",
+  "scope": "Exact finite quartic control; global RH gate remains open",
+  "verificationCommand": "python -B research/collision-proof/verify_exact.py",
+  "artifacts": [
+    {
+      "path": "research/collision-proof/exact-quartic-proof.md",
+      "sha256": "071e8d7d195bac4a9e146cfd074363f5d2e78cd51b1910810071684afeffe417",
+      "bytes": 10649
+    },
+    {
+      "path": "research/collision-proof/verify_exact.py",
+      "sha256": "f6a8d264d6b2d33d00602935d3b694743cbb954028d6f371179a7ca1566a42fc",
+      "bytes": 15420
+    },
+    {
+      "path": "research/collision-proof/render_control.py",
+      "sha256": "dccb104a4d5a43025f5b181041fcfc25a45956f3a79c03de6f0879ceaa6e6e63",
+      "bytes": 6866
+    },
+    {
+      "path": "research/collision-proof/evidence/exact-certificates.json",
+      "sha256": "f28a31706fed936d8b9b1a7a454db7a1f6d8d08e43addd2e6c6b766bba78616c",
+      "bytes": 9408
+    },
+    {
+      "path": "research/collision-proof/evidence/quartic-control.png",
+      "sha256": "51422d0865e68539733e262e3bbed5b052ca13c8c71ef91e43c6869ce942414f",
+      "bytes": 101532
+    },
+    {
+      "path": "research/collision-proof/evidence/plot-report.json",
+      "sha256": "a3524a9f268cba75f41793488ba2458c343963e39b29e1419b4e25d2a2b55e72",
+      "bytes": 273
+    },
+    {
+      "path": "warps/graph.riemann.collision.contract.complete.md",
+      "sha256": "0223aca25ee2a14742b808af5c911cb1275c0c7aaeefa0ef52ef1d93ccd5df80",
+      "bytes": 1956
+    },
+    {
+      "path": "warps/graph.riemann.collision.baseline.complete.md",
+      "sha256": "c0309fecc3a6e31bc8bd0defbe5721366298814603e2cd32c74120ae22f83d84",
+      "bytes": 1179
+    },
+    {
+      "path": "warps/graph.riemann.collision.results.complete.md",
+      "sha256": "32709930b3d83814a2af7f58fb2c8e5095f14228e941c04f2f05aa4002dbfd7b",
+      "bytes": 3517
+    },
+    {
+      "path": "warps/graph.riemann.collision.next.current.md",
+      "sha256": "344d8acf1d9f20569d82b27cf714c8d8db6af981ea0c4fec897d4b1ea8da554d",
+      "bytes": 2327
+    },
+    {
+      "path": "warps/graph.riemann.collision.warp-map.json",
+      "sha256": "104ed6d05881eb226c0776732ec131021a2c12c4d0602f5d9165613375a0fbd7",
+      "bytes": 1252
+    }
+  ]
+}

@@ -4,6 +4,7 @@ defines: graph.riemann
 consumer: graph.zeta.overwrite
 consumer: graph.zeta.contours
 consumer: graph.zeta.origins
+consumer: graph.riemann.collision
 
 The proof remains open. This parent tracks the attempt to derive a global statement from the user's local-origin quadrant geometry. The completed children record finite experiments.
 
@@ -26,3 +27,7 @@ A possible next bounded bubble would certify derivative counts within specified 
 Resume with recur warp show graph.riemann, recur trace-id graph.riemann --scope "**" --format full, and recur lang report warps/graph.zeta.origins.recur, all rooted at C:/src/graph.
 
 The completed graph.primes.phase experiment now includes local prime-contribution colors, shared-height prime/zeta overlays, and sampled factor-phase unwrapping. Its controlled comparisons did not show prime-height enrichment. See warps/graph.primes.phase.results.complete.md. These finite numerical findings supply no global zero exclusion; the RH proof remains open.
+
+The completed graph.riemann.collision child now proves an exact quartic heat-flow threshold and supplies rational counterexamples to unrestricted frozen local forecasts. It also derives a conservative finite-polynomial safe interval from adjacent-root dynamics. See warps/graph.riemann.collision.results.complete.md and graph.riemann.collision.next.current.md. These distinguish a valid bound from an exact prediction and identify the missing interaction control. They do not supply a global theorem for the Riemann deformation.
+
+For context, the de Bruijn-Newman deformation H_t has all zeros real exactly when t >= Lambda. RH is equivalent to Lambda <= 0; Rodgers and Tao proved Lambda >= 0. Thus an argument on this route still needs the complementary bound. Our quartic threshold is a different parameter for a different function. [Rodgers and Tao](https://arxiv.org/abs/1801.05914)

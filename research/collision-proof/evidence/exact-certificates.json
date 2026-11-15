@@ -1,0 +1,409 @@
+{
+  "identities": [
+    {
+      "name": "backward heat: P_tau + P_zz = 0",
+      "passed": true,
+      "residualTerms": []
+    },
+    {
+      "name": "tau=0: P=(z^2-1)(z^2-9)",
+      "passed": true,
+      "residualTerms": []
+    },
+    {
+      "name": "tau=-2/3: P=(z^2-1)^2",
+      "passed": true,
+      "residualTerms": []
+    },
+    {
+      "name": "w-discriminant: B^2-4C=96(tau+1)(tau+2/3)",
+      "passed": true,
+      "residualTerms": []
+    },
+    {
+      "name": "C=12(tau+5/6)^2+2/3",
+      "passed": true,
+      "residualTerms": []
+    },
+    {
+      "name": "P_tau(c+u)-Q=4*c*u^3+u^4-24*c*tau*u-12*tau*u^2+12*tau^2",
+      "passed": true,
+      "residualTerms": []
+    },
+    {
+      "name": "Res_z(P,Pz)=16*C*(B^2-4C)^2",
+      "passed": true,
+      "residualTerms": []
+    }
+  ],
+  "polynomialTerms": [
+    {
+      "zPower": 4,
+      "tauPower": 0,
+      "coefficient": "1"
+    },
+    {
+      "zPower": 2,
+      "tauPower": 1,
+      "coefficient": "-12"
+    },
+    {
+      "zPower": 2,
+      "tauPower": 0,
+      "coefficient": "-10"
+    },
+    {
+      "zPower": 0,
+      "tauPower": 2,
+      "coefficient": "12"
+    },
+    {
+      "zPower": 0,
+      "tauPower": 1,
+      "coefficient": "20"
+    },
+    {
+      "zPower": 0,
+      "tauPower": 0,
+      "coefficient": "9"
+    }
+  ],
+  "initialRootMotion": {
+    "tau": "0",
+    "rootVelocityFormula": "Pzz/Pz = 2*sum_other(1/(r-other))",
+    "gapDerivativeFormula": "g'=4/g-2*g*S",
+    "roots": [
+      {
+        "root": "-3",
+        "PzzOverPz": "-11/6",
+        "twiceOtherRootReciprocalSum": "-11/6"
+      },
+      {
+        "root": "-1",
+        "PzzOverPz": "-1/2",
+        "twiceOtherRootReciprocalSum": "-1/2"
+      },
+      {
+        "root": "1",
+        "PzzOverPz": "1/2",
+        "twiceOtherRootReciprocalSum": "1/2"
+      },
+      {
+        "root": "3",
+        "PzzOverPz": "11/6",
+        "twiceOtherRootReciprocalSum": "11/6"
+      }
+    ],
+    "adjacentGaps": [
+      {
+        "leftRoot": "-3",
+        "rightRoot": "-1",
+        "gap": "2",
+        "externalRootSumS": "1/6",
+        "velocityDifference": "4/3",
+        "fourOverGapMinusTwoGapS": "4/3"
+      },
+      {
+        "leftRoot": "-1",
+        "rightRoot": "1",
+        "gap": "2",
+        "externalRootSumS": "1/4",
+        "velocityDifference": "1",
+        "fourOverGapMinusTwoGapS": "1"
+      },
+      {
+        "leftRoot": "1",
+        "rightRoot": "3",
+        "gap": "2",
+        "externalRootSumS": "1/6",
+        "velocityDifference": "4/3",
+        "fourOverGapMinusTwoGapS": "4/3"
+      }
+    ],
+    "minimumInitialGap": "2",
+    "negativeMinimumGapSquaredOverEight": "-1/2",
+    "scope": "Exact identities at tau=0 only; the sufficient finite-gap interval requires the separate human proof."
+  },
+  "omittedRemainderTerms": [
+    {
+      "centerPower": 1,
+      "uPower": 3,
+      "tauPower": 0,
+      "coefficient": "4"
+    },
+    {
+      "centerPower": 1,
+      "uPower": 1,
+      "tauPower": 1,
+      "coefficient": "-24"
+    },
+    {
+      "centerPower": 0,
+      "uPower": 4,
+      "tauPower": 0,
+      "coefficient": "1"
+    },
+    {
+      "centerPower": 0,
+      "uPower": 2,
+      "tauPower": 1,
+      "coefficient": "-12"
+    },
+    {
+      "centerPower": 0,
+      "uPower": 0,
+      "tauPower": 2,
+      "coefficient": "12"
+    }
+  ],
+  "resultantTerms": [
+    {
+      "zPower": 0,
+      "tauPower": 6,
+      "coefficient": "1769472"
+    },
+    {
+      "zPower": 0,
+      "tauPower": 5,
+      "coefficient": "8847360"
+    },
+    {
+      "zPower": 0,
+      "tauPower": 4,
+      "coefficient": "18432000"
+    },
+    {
+      "zPower": 0,
+      "tauPower": 3,
+      "coefficient": "20480000"
+    },
+    {
+      "zPower": 0,
+      "tauPower": 2,
+      "coefficient": "12795904"
+    },
+    {
+      "zPower": 0,
+      "tauPower": 1,
+      "coefficient": "4259840"
+    },
+    {
+      "zPower": 0,
+      "tauPower": 0,
+      "coefficient": "589824"
+    }
+  ],
+  "specializedGcds": [
+    {
+      "tau": "0",
+      "monicGcdTerms": [
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "quotientTerms": [
+        {
+          "zPower": 4,
+          "tauPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "-10"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "9"
+        }
+      ]
+    },
+    {
+      "tau": "-2/3",
+      "monicGcdTerms": [
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "-1"
+        }
+      ],
+      "quotientTerms": [
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "-1"
+        }
+      ]
+    },
+    {
+      "tau": "-1",
+      "monicGcdTerms": [
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "quotientTerms": [
+        {
+          "zPower": 2,
+          "tauPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "zPower": 0,
+          "tauPower": 0,
+          "coefficient": "1"
+        }
+      ]
+    }
+  ],
+  "frozenLocalQuadraticPredictors": [
+    {
+      "center": "0",
+      "P": "9",
+      "Pz": "0",
+      "Pzz": "-20",
+      "localDiscriminant": "360",
+      "prediction": "-9/20",
+      "frozenCollisionLocation": "0",
+      "frozenValueAtPrediction": "0",
+      "frozenDerivativeAtPrediction": "0",
+      "actualPolynomialValueAtPrediction": "243/100",
+      "actualCollisionParameter": "-2/3",
+      "equalsActual": false,
+      "predictionMinusActual": "13/60"
+    },
+    {
+      "center": "2",
+      "P": "-15",
+      "Pz": "-8",
+      "Pzz": "28",
+      "localDiscriminant": "904",
+      "prediction": "-113/196",
+      "frozenCollisionLocation": "16/7",
+      "frozenValueAtPrediction": "0",
+      "frozenDerivativeAtPrediction": "0",
+      "actualPolynomialValueAtPrediction": "121523/9604",
+      "actualCollisionParameter": "-2/3",
+      "equalsActual": false,
+      "predictionMinusActual": "53/588"
+    },
+    {
+      "center": "-2",
+      "P": "-15",
+      "Pz": "8",
+      "Pzz": "28",
+      "localDiscriminant": "904",
+      "prediction": "-113/196",
+      "frozenCollisionLocation": "-16/7",
+      "frozenValueAtPrediction": "0",
+      "frozenDerivativeAtPrediction": "0",
+      "actualPolynomialValueAtPrediction": "121523/9604",
+      "actualCollisionParameter": "-2/3",
+      "equalsActual": false,
+      "predictionMinusActual": "53/588"
+    }
+  ],
+  "equalSpacingGapBaseline": {
+    "gap": "2",
+    "prediction": "-1/2",
+    "equalsActual": false,
+    "predictionMinusActual": "1/6"
+  },
+  "counterexamples": [
+    {
+      "candidate": "c(center) <= -2/3 for every admissible real center",
+      "refuted": true,
+      "witness": {
+        "center": "0",
+        "P": "9",
+        "Pz": "0",
+        "Pzz": "-20",
+        "localDiscriminant": "360",
+        "prediction": "-9/20",
+        "frozenCollisionLocation": "0",
+        "frozenValueAtPrediction": "0",
+        "frozenDerivativeAtPrediction": "0",
+        "actualPolynomialValueAtPrediction": "243/100"
+      },
+      "difference": "13/60"
+    },
+    {
+      "candidate": "c(center) >= -2/3 for every admissible real center",
+      "refuted": true,
+      "witness": {
+        "center": "4/3",
+        "P": "-455/81",
+        "Pz": "-464/27",
+        "Pzz": "4/3",
+        "localDiscriminant": "226216/729",
+        "prediction": "-28277/324",
+        "frozenCollisionLocation": "128/9",
+        "frozenValueAtPrediction": "0",
+        "frozenDerivativeAtPrediction": "0",
+        "actualPolynomialValueAtPrediction": "8933335723/26244"
+      },
+      "difference": "-28061/324"
+    },
+    {
+      "candidate": "the frozen prediction is always a negative parameter increment",
+      "refuted": true,
+      "witness": {
+        "center": "4",
+        "P": "105",
+        "Pz": "176",
+        "Pzz": "172",
+        "localDiscriminant": "-5144",
+        "prediction": "643/7396",
+        "frozenCollisionLocation": "128/43",
+        "frozenValueAtPrediction": "0",
+        "frozenDerivativeAtPrediction": "0",
+        "actualPolynomialValueAtPrediction": "-116342437/13675204"
+      }
+    }
+  ],
+  "humanSignArgumentInputs": {
+    "constantTermStrictLowerBound": "2/3",
+    "wDiscriminantRoots": [
+      "-1",
+      "-2/3"
+    ],
+    "wRootSum": "10+12*tau",
+    "sumAtMinusOne": "-2",
+    "sumAtMinusTwoThirds": "2"
+  },
+  "status": "passed",
+  "arithmetic": "exact Python Fraction; no floating-point arithmetic",
+  "traceId": "graph.riemann.collision.verify",
+  "rejectedNegativeControls": [
+    "heat sign reversed",
+    "constant coefficient corrupted",
+    "threshold shifted by 1/100",
+    "non-univariate division terms cancel"
+  ],
+  "limitations": [
+    "Finite algebraic identities and counterexamples are checked exactly.",
+    "The iff characterization of all-real roots still uses a separate human sign-case argument.",
+    "This is not a proof-assistant formalization or a result about Riemann zeta.",
+    "Counterexamples to bounds concern unrestricted centers; no stronger hypothesis is presumed."
+  ]
+}

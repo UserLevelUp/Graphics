@@ -1,0 +1,18 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.collision",
+  "slice_id": "slice-final",
+  "contract_hash": "contract:graph.riemann.collision.slice-final:v1",
+  "attempt_id": "exact-quartic-proof-v1",
+  "result_state": "accepted",
+  "result_hash": "sha256:3673c9013502baff3c83c45c5436966dc5790855b3a5bac410a3710234c3462c",
+  "evidence": {
+    "acceptance": [
+      "research/collision-proof/evidence/exact-certificates.json",
+      "research/collision-proof/evidence/manifest.json",
+      "research/collision-proof/exact-quartic-proof.md",
+      "warps/graph.riemann.collision.results.complete.md"
+    ]
+  },
+  "reason": null
+}

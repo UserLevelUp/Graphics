@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.collision",
+  "slice_id": "slice-0",
+  "contract_hash": "contract:graph.riemann.collision.slice-0:v1",
+  "attempt_id": "exact-quartic-baseline-v1",
+  "result_state": "accepted",
+  "result_hash": "sha256:c0309fecc3a6e31bc8bd0defbe5721366298814603e2cd32c74120ae22f83d84",
+  "evidence": {
+    "baseline": [
+      "warps/graph.riemann.collision.baseline.complete.md"
+    ]
+  },
+  "reason": null
+}

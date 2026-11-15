@@ -69,3 +69,8 @@
 /research/zero-motion/evidence/** -text whitespace=cr-at-eol,-blank-at-eof
 # Exported path reports keep their accepted bytes, including sentence separators before CRLF.
 /research/zero-motion/evidence/*.path.txt -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+# Keep the exact collision manifest reproducible across Windows checkouts.
+/research/collision-proof/*.py text eol=lf
+/research/collision-proof/*.md text eol=lf
+/research/collision-proof/evidence/*.json text eol=lf
+/warps/graph.riemann.collision* text eol=lf

@@ -1,0 +1,38 @@
+{
+  "bubble_uuid": "01a1de07-d687-7889-9837-8ca0b35cdb75",
+  "goal": "Resolve the exact quartic collision-control obligation and expose limits of local forecasts; the global RH proof remains open",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "Completion certifies only the specified quartic proof and forecast audit.",
+    "The parent graph.riemann global proof stays open.",
+    "Declared evidence gates are artifact records, not a mathematical proof kernel."
+  ],
+  "required_slices": [
+    {
+      "contract_hash": "contract:graph.riemann.collision.slice-0:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "baseline"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "slice-0",
+      "slice_uuid": "01a1de07-d687-7029-b4dd-acfdab1b6b67"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.collision.slice-final:v1",
+      "depends_on": [
+        "slice-0"
+      ],
+      "evidence_gates": [
+        "acceptance"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "slice-final",
+      "slice_uuid": "01a1de07-d687-7012-88f7-3a0ed3d5a7bc"
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.riemann.collision"
+}

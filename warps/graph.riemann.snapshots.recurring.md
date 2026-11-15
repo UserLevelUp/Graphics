@@ -53,3 +53,17 @@
 - lane.separator.src: _
 - evidence.docs.tree_cmd: recur tree "**" -d docs/ --sep .
 - evidence.src.tree_cmd: recur tree "**" -d src/ --sep _
+
+### graph-exact-collision-2026-11-14
+- date: unix:1794726712
+- lane.state.docs.current: none
+- lane.state.src.current: none
+- lane.state.tests.passed: none
+- lane.state.tests.failed: none
+- lane.git.branch: graph/riemann-local-origins
+- lane.git.head: 170993c Add zero-motion color coordinates and point-to-point phase probe
+- lane.git.worktree: dirty=8
+- lane.separator.docs: .
+- lane.separator.src: _
+- evidence.docs.tree_cmd: recur tree "**" -d docs/ --sep .
+- evidence.src.tree_cmd: recur tree "**" -d src/ --sep _

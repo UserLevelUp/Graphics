@@ -1,0 +1,10 @@
+{
+  "output": "C:\\src\\graph\\research\\collision-proof\\evidence\\quartic-control.png",
+  "pixels": [
+    1720,
+    1260
+  ],
+  "parameter_samples": 1803,
+  "max_float_residual_for_plot_only": 2.850324143377492e-14,
+  "proof": "exact-quartic-proof.md; verify_exact.py"
+}
