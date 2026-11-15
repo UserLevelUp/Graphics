@@ -1,0 +1,9 @@
+{
+  "traceId": "graph.riemann.origin_trail.source",
+  "sourceCheckpoint": "e8ccef1bf324953357d8855bce0d650ff878a654",
+  "branch": "graph/riemann-continuation",
+  "pushed": true,
+  "commands": {
+    "git remote -v": "origin\thttps://github.com/UserLevelUp/Graphics.git (fetch)\norigin\thttps://github.com/UserLevelUp/Graphics.git (push)"
+  }
+}

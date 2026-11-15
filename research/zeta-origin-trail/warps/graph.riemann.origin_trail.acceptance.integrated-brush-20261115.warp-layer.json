@@ -1,0 +1,16 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.origin_trail",
+  "slice_id": "acceptance",
+  "contract_hash": "contract:graph.riemann.origin_trail.acceptance:v1",
+  "attempt_id": "integrated-brush-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:84f2d663ce942767cb9ad772fe3100130400cbf62ae90a011fdd112ae87d7adf",
+  "evidence": {
+    "verification": [
+      "evidence/acceptance.json",
+      "evidence/delivery-manifest.json"
+    ]
+  },
+  "reason": null
+}

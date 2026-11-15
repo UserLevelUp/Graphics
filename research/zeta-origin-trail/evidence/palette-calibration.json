@@ -1,0 +1,110 @@
+{
+  "traceId": "graph.riemann.origin_trail.palette",
+  "reason": "Raw AE shape RGB values differ from delivered Rec709 video colors. Compare against the accepted rendered palette and separately measure imported PNG rendering.",
+  "samples": [
+    {
+      "label": "accepted_original",
+      "time": 14.5,
+      "rgbByTL_BL_TR_BR": [
+        [
+          131.0,
+          102.0,
+          41.0
+        ],
+        [
+          97.0,
+          50.0,
+          130.0
+        ],
+        [
+          33.0,
+          124.0,
+          94.0
+        ],
+        [
+          42.0,
+          76.0,
+          133.0
+        ]
+      ]
+    },
+    {
+      "label": "new_native_origin",
+      "time": 0.5,
+      "rgbByTL_BL_TR_BR": [
+        [
+          131.0,
+          102.0,
+          41.0
+        ],
+        [
+          97.0,
+          50.0,
+          130.0
+        ],
+        [
+          33.0,
+          124.0,
+          94.0
+        ],
+        [
+          42.0,
+          76.0,
+          133.0
+        ]
+      ]
+    },
+    {
+      "label": "new_combined_origin",
+      "time": 14.5,
+      "rgbByTL_BL_TR_BR": [
+        [
+          131.0,
+          102.0,
+          41.0
+        ],
+        [
+          97.0,
+          50.0,
+          130.0
+        ],
+        [
+          33.0,
+          124.0,
+          94.0
+        ],
+        [
+          42.0,
+          76.0,
+          133.0
+        ]
+      ]
+    },
+    {
+      "label": "new_native_circle",
+      "time": 0.5,
+      "rgbByTL_BL_TR_BR": [
+        [
+          131.0,
+          102.0,
+          41.0
+        ],
+        [
+          97.0,
+          50.0,
+          130.0
+        ],
+        [
+          33.0,
+          124.0,
+          94.0
+        ],
+        [
+          42.0,
+          76.0,
+          133.0
+        ]
+      ]
+    }
+  ]
+}

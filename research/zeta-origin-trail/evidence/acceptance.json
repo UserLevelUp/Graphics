@@ -1,0 +1,65 @@
+{
+  "traceId": "graph.riemann.origin_trail.acceptance",
+  "status": "accepted",
+  "acceptedAtUtc": "2026-11-15T11:54:55.461433+00:00",
+  "goal": "Retain colors behind the moving four-color brush and follow it with a circle demonstration.",
+  "durationSeconds": 264,
+  "frames": 6336,
+  "sourceCheckpoint": "e8ccef1bf324953357d8855bce0d650ff878a654",
+  "reviewedChanges": [
+    "Yellow and purple remain anchored at the original left edge during the rightward stroke.",
+    "A subsequent12second scene draws a clockwise circle with fixed brush orientation and opaque later-mark overwrite.",
+    "Center label clears the painted trail and current brush outline.",
+    "Final source card uses the new pushed checkpoint; remaining research narration and content are retained."
+  ],
+  "checks": {
+    "technicalPassed": 75,
+    "circleGeneratorPassed": 41,
+    "nativeReviewedStills": 10,
+    "sourceFilesSealed": 47,
+    "mediaFilesSealed": 413,
+    "priorAcceptedVideoAndProjectUnchanged": true
+  },
+  "evidence": [
+    {
+      "path": "evidence/delivery-manifest.json",
+      "sha256": "50c154f930e4070d1bfa7cb68037dfcb227e7db6c9ab5f00c950ae454c23096d"
+    },
+    {
+      "path": "evidence/media-qa.json",
+      "sha256": "bd618c908f9f3a0650b6263f3d54fdd1843c427289902c96696b4aa149b6f332"
+    },
+    {
+      "path": "evidence/render-review.json",
+      "sha256": "ec4386783233393e710640dddc1d9ec69a737a6bdd83823563ac4473c69f5be6"
+    },
+    {
+      "path": "evidence/source-checkpoint.json",
+      "sha256": "e112365d56127b4dd9ce04388a05051df1a5f31c70fd75ca9c9618d724fe80a2"
+    },
+    {
+      "path": "evidence/circle-geometry.json",
+      "sha256": "62b021ab9ccdd628722d4217bcfdfaf65c787727c3bbbf5bbbc6e0bd212088ee"
+    }
+  ],
+  "deliverables": {
+    "video": {
+      "path": "presentation-with-trail.mp4",
+      "sha256": "4e58f88f38bf084991a0e939d3752fd1292b8dd52bea395529bfaadaed1b87db"
+    },
+    "preview": {
+      "path": "brush-demonstration.mp4",
+      "sha256": "744db276beac264635c485c1a9fca262308d6cf8c069b3372e25ceb276912d74"
+    },
+    "project": {
+      "path": "presentation-with-trail.aep",
+      "sha256": "e48fb6d0e334962067ce1d13d7a87f1fb2f86ce31a9a97fafcab9d96be8ad2e0"
+    }
+  },
+  "limits": [
+    "Sampled visual inspection and full technical decode; no independent speech transcription or full-motion visual review claimed.",
+    "This revision explains compositing history; no new RH result or prime-prediction method claimed.",
+    "Brush phase rotation remains deferred."
+  ],
+  "globalRiemannHypothesisStatus": "open"
+}

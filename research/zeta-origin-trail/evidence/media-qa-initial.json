@@ -1,0 +1,404 @@
+{
+  "traceId": "graph.riemann.origin_trail.media.verify",
+  "status": "failed",
+  "startedAtUtc": "2026-11-15T11:51:18.041896+00:00",
+  "contractSha256": "7cac36b51e2f364be3d673a4a7a69c5b744ac39cc420b78d5f954d667b50c04e",
+  "checks": [
+    {
+      "id": "contract_timing",
+      "passed": true,
+      "detail": "264s; revised14-28s; inserted28-40s"
+    },
+    {
+      "id": "protected_sources_before",
+      "passed": true,
+      "detail": {
+        "videoSha256": "98e9ece7d8cac4e4974b72d6c6ed9b63752f4b8744e60677879124e19d7a56dd",
+        "projectSha256": "a9d0a1a424b739b91b61cda36df5893f28bfc2bceee1f48da22349a59436973e"
+      }
+    },
+    {
+      "id": "original_media_contract",
+      "passed": true,
+      "detail": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-conclusion\\presentation-with-conclusion.mp4",
+        "seconds": 252.0,
+        "frames": 6048,
+        "size": [
+          1920,
+          1080
+        ],
+        "fps": 24.0,
+        "fullVideoAndAudioDecodePassed": true
+      }
+    },
+    {
+      "id": "revised_media_contract",
+      "passed": true,
+      "detail": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\presentation-with-trail.mp4",
+        "seconds": 264.0,
+        "frames": 6336,
+        "size": [
+          1920,
+          1080
+        ],
+        "fps": 24.0,
+        "fullVideoAndAudioDecodePassed": true
+      }
+    },
+    {
+      "id": "unchanged_pixels_7",
+      "passed": true,
+      "detail": {
+        "originalSeconds": 7,
+        "revisedSeconds": 7,
+        "rgbRmse": 0.3688382662721788
+      }
+    },
+    {
+      "id": "unchanged_pixels_13",
+      "passed": true,
+      "detail": {
+        "originalSeconds": 13,
+        "revisedSeconds": 13,
+        "rgbRmse": 0.15007714065822333
+      }
+    },
+    {
+      "id": "unchanged_pixels_28.5",
+      "passed": true,
+      "detail": {
+        "originalSeconds": 28.5,
+        "revisedSeconds": 40.5,
+        "rgbRmse": 0.25909882602221596
+      }
+    },
+    {
+      "id": "unchanged_pixels_35.5",
+      "passed": true,
+      "detail": {
+        "originalSeconds": 35.5,
+        "revisedSeconds": 47.5,
+        "rgbRmse": 0.3050458712047987
+      }
+    },
+    {
+      "id": "unchanged_pixels_60",
+      "passed": true,
+      "detail": {
+        "originalSeconds": 60,
+        "revisedSeconds": 72,
+        "rgbRmse": 0.2025112403525686
+      }
+    },
+    {
+      "id": "unchanged_pixels_84",
+      "passed": true,
+      "detail": {
+        "originalSeconds": 84,
+        "revisedSeconds": 96,
+        "rgbRmse": 0.4266097570071066
+      }
+    },
+    {
+      "id": "unchanged_pixels_115.5",
+      "passed": true,
+      "detail": {
+        "originalSeconds": 115.5,
+        "revisedSeconds": 127.5,
+        "rgbRmse": 0.27267535981795615
+      }
+    },
+    {
+      "id": "unchanged_pixels_130.5",
+      "passed": true,
+      "detail": {
+        "originalSeconds": 130.5,
+        "revisedSeconds": 142.5,
+        "rgbRmse": 0.3029051719761096
+      }
+    },
+    {
+      "id": "unchanged_pixels_148",
+      "passed": true,
+      "detail": {
+        "originalSeconds": 148,
+        "revisedSeconds": 160,
+        "rgbRmse": 0.2809494850835721
+      }
+    },
+    {
+      "id": "unchanged_pixels_167",
+      "passed": true,
+      "detail": {
+        "originalSeconds": 167,
+        "revisedSeconds": 179,
+        "rgbRmse": 0.2738331022744229
+      }
+    },
+    {
+      "id": "unchanged_pixels_186",
+      "passed": true,
+      "detail": {
+        "originalSeconds": 186,
+        "revisedSeconds": 198,
+        "rgbRmse": 0.29968261674960894
+      }
+    },
+    {
+      "id": "unchanged_pixels_206",
+      "passed": true,
+      "detail": {
+        "originalSeconds": 206,
+        "revisedSeconds": 218,
+        "rgbRmse": 0.2763342119749542
+      }
+    },
+    {
+      "id": "unchanged_pixels_228",
+      "passed": true,
+      "detail": {
+        "originalSeconds": 228,
+        "revisedSeconds": 240,
+        "rgbRmse": 0.14701242913776935
+      }
+    },
+    {
+      "id": "unchanged_pixels_239",
+      "passed": true,
+      "detail": {
+        "originalSeconds": 239,
+        "revisedSeconds": 251,
+        "rgbRmse": 0.15155232428400686
+      }
+    },
+    {
+      "id": "palette_contract",
+      "passed": true,
+      "detail": "Four contract RGB colors"
+    },
+    {
+      "id": "origin_0.5_left_top",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1260,
+          500
+        ],
+        "patchSize": 5,
+        "expectedRgb": [
+          136,
+          102,
+          39
+        ],
+        "medianRgb": [
+          131.0,
+          102.0,
+          41.0
+        ],
+        "rgbDistance": 5.385164807134504,
+        "passed": true
+      }
+    },
+    {
+      "id": "origin_0.5_left_bottom",
+      "passed": false,
+      "detail": {
+        "pixel": [
+          1260,
+          630
+        ],
+        "patchSize": 5,
+        "expectedRgb": [
+          101,
+          60,
+          133
+        ],
+        "medianRgb": [
+          97.0,
+          50.0,
+          130.0
+        ],
+        "rgbDistance": 11.180339887498949,
+        "passed": false
+      }
+    }
+  ],
+  "thresholds": {
+    "unchangedFrameRgbRmse": 3.0,
+    "paletteMedianRgbDistance": 8.0,
+    "audioCorrelationMin": 0.995,
+    "audioNormalizedRmseMax": 0.12,
+    "audioAbsoluteRmseMax": 0.01,
+    "audioMaxLagSecondsExclusive": 0.02
+  },
+  "limitations": [
+    "Technical verification is not final human visual review or mathematical certification.",
+    "Unchanged visual sections are sampled at listed times, not compared frame by frame.",
+    "PCM checks cover both preserved audio ranges, allowing only a reported fixed lag under20ms; AAC output is not expected to be byte-identical.",
+    "Audio correlation and signal presence do not perform speech transcription, ASR, or independent verification of spoken words.",
+    "Median color probes and palette coverage check specified rendering behavior, not all pixels or an analytic invariant.",
+    "The circle is a rendered brush demonstration, not new evidence about zeta zeros or RH."
+  ],
+  "protectedSourceHashes": {
+    "videoSha256": "98e9ece7d8cac4e4974b72d6c6ed9b63752f4b8744e60677879124e19d7a56dd",
+    "projectSha256": "a9d0a1a424b739b91b61cda36df5893f28bfc2bceee1f48da22349a59436973e"
+  },
+  "originalMedia": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-conclusion\\presentation-with-conclusion.mp4",
+    "seconds": 252.0,
+    "frames": 6048,
+    "size": [
+      1920,
+      1080
+    ],
+    "fps": 24.0,
+    "fullVideoAndAudioDecodePassed": true
+  },
+  "revisedMedia": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\presentation-with-trail.mp4",
+    "seconds": 264.0,
+    "frames": 6336,
+    "size": [
+      1920,
+      1080
+    ],
+    "fps": 24.0,
+    "fullVideoAndAudioDecodePassed": true
+  },
+  "previewFrames": [
+    {
+      "id": "origin",
+      "localSeconds": 0.5,
+      "videoSeconds": 14.5,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\preview\\origin-0.5s.png"
+    },
+    {
+      "id": "origin",
+      "localSeconds": 6,
+      "videoSeconds": 20,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\preview\\origin-6s.png"
+    },
+    {
+      "id": "origin",
+      "localSeconds": 12.5,
+      "videoSeconds": 26.5,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\preview\\origin-12.5s.png"
+    },
+    {
+      "id": "circle",
+      "localSeconds": 0.5,
+      "videoSeconds": 28.5,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\preview\\circle-0.5s.png"
+    },
+    {
+      "id": "circle",
+      "localSeconds": 3,
+      "videoSeconds": 31,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\preview\\circle-3s.png"
+    },
+    {
+      "id": "circle",
+      "localSeconds": 5,
+      "videoSeconds": 33,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\preview\\circle-5s.png"
+    },
+    {
+      "id": "circle",
+      "localSeconds": 7,
+      "videoSeconds": 35,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\preview\\circle-7s.png"
+    },
+    {
+      "id": "circle",
+      "localSeconds": 9.5,
+      "videoSeconds": 37.5,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\preview\\circle-9.5s.png"
+    },
+    {
+      "id": "last-frame",
+      "videoSeconds": 263.9583333333333,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\preview\\last-frame.png"
+    }
+  ],
+  "contactSheet": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\preview\\contact-sheet.png",
+  "unchangedSectionFrameComparisons": [
+    {
+      "originalSeconds": 7,
+      "revisedSeconds": 7,
+      "rgbRmse": 0.3688382662721788
+    },
+    {
+      "originalSeconds": 13,
+      "revisedSeconds": 13,
+      "rgbRmse": 0.15007714065822333
+    },
+    {
+      "originalSeconds": 28.5,
+      "revisedSeconds": 40.5,
+      "rgbRmse": 0.25909882602221596
+    },
+    {
+      "originalSeconds": 35.5,
+      "revisedSeconds": 47.5,
+      "rgbRmse": 0.3050458712047987
+    },
+    {
+      "originalSeconds": 60,
+      "revisedSeconds": 72,
+      "rgbRmse": 0.2025112403525686
+    },
+    {
+      "originalSeconds": 84,
+      "revisedSeconds": 96,
+      "rgbRmse": 0.4266097570071066
+    },
+    {
+      "originalSeconds": 115.5,
+      "revisedSeconds": 127.5,
+      "rgbRmse": 0.27267535981795615
+    },
+    {
+      "originalSeconds": 130.5,
+      "revisedSeconds": 142.5,
+      "rgbRmse": 0.3029051719761096
+    },
+    {
+      "originalSeconds": 148,
+      "revisedSeconds": 160,
+      "rgbRmse": 0.2809494850835721
+    },
+    {
+      "originalSeconds": 167,
+      "revisedSeconds": 179,
+      "rgbRmse": 0.2738331022744229
+    },
+    {
+      "originalSeconds": 186,
+      "revisedSeconds": 198,
+      "rgbRmse": 0.29968261674960894
+    },
+    {
+      "originalSeconds": 206,
+      "revisedSeconds": 218,
+      "rgbRmse": 0.2763342119749542
+    },
+    {
+      "originalSeconds": 228,
+      "revisedSeconds": 240,
+      "rgbRmse": 0.14701242913776935
+    },
+    {
+      "originalSeconds": 239,
+      "revisedSeconds": 251,
+      "rgbRmse": 0.15155232428400686
+    }
+  ],
+  "error": {
+    "type": "AssertionError",
+    "message": "origin_0.5_left_bottom: {'pixel': [1260, 630], 'patchSize': 5, 'expectedRgb': [101, 60, 133], 'medianRgb': [97.0, 50.0, 130.0], 'rgbDistance': 11.180339887498949, 'passed': False}"
+  },
+  "finishedAtUtc": "2026-11-15T11:51:24.538211+00:00",
+  "passedChecks": 20
+}

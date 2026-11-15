@@ -1,0 +1,120 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\marcn\Documents\Codex\2026-11-14\eu\outputs\riemann-conclusion\presentation-with-conclusion.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Duration: 00:04:12.00, start: 0.000000, bitrate: 366 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 190 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 171 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+Input #1, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\marcn\Documents\Codex\2026-11-14\eu\outputs\riemann-origin-trail\origin-trail-scene.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-11-15T11:48:53.000000Z
+  Duration: 00:00:14.00, start: 0.000000, bitrate: 1020 kb/s
+  Stream #1:0[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 819 kb/s, 24 fps, 24 tbr, 24k tbn (default)
+      Metadata:
+        creation_time   : 2026-11-15T11:48:53.000000Z
+        handler_name    : ?Mainconcept Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : AVC Coding
+  Stream #1:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 188 kb/s (default)
+      Metadata:
+        creation_time   : 2026-11-15T11:48:53.000000Z
+        handler_name    : #Mainconcept MP4 Sound Media Handler
+        vendor_id       : [0][0][0][0]
+Input #2, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\marcn\Documents\Codex\2026-11-14\eu\outputs\riemann-origin-trail\circle-brush-scene.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-11-15T11:49:02.000000Z
+  Duration: 00:00:12.00, start: 0.000000, bitrate: 1188 kb/s
+  Stream #2:0[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 986 kb/s, 24 fps, 24 tbr, 24k tbn (default)
+      Metadata:
+        creation_time   : 2026-11-15T11:49:02.000000Z
+        handler_name    : ?Mainconcept Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : AVC Coding
+  Stream #2:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 188 kb/s (default)
+      Metadata:
+        creation_time   : 2026-11-15T11:49:02.000000Z
+        handler_name    : #Mainconcept MP4 Sound Media Handler
+        vendor_id       : [0][0][0][0]
+Input #3, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\marcn\Documents\Codex\2026-11-14\eu\outputs\riemann-origin-trail\repository-card.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-11-15T11:49:12.000000Z
+  Duration: 00:00:12.00, start: 0.000000, bitrate: 1346 kb/s
+  Stream #3:0[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 1145 kb/s, 24 fps, 24 tbr, 24k tbn (default)
+      Metadata:
+        creation_time   : 2026-11-15T11:49:12.000000Z
+        handler_name    : ?Mainconcept Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : AVC Coding
+  Stream #3:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 188 kb/s (default)
+      Metadata:
+        creation_time   : 2026-11-15T11:49:12.000000Z
+        handler_name    : #Mainconcept MP4 Sound Media Handler
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 (h264) -> split:default
+  Stream #0:1 (aac) -> asplit:default
+  Stream #1:0 (h264) -> trim:default
+  Stream #2:0 (h264) -> trim:default
+  Stream #2:1 (aac) -> apad:default
+  Stream #3:0 (h264) -> trim:default
+  concat:out:v0 -> Stream #0:0 (libx264)
+  concat:out:a0 -> Stream #0:1 (aac)
+Press [q] to stop, [?] for help
+[libx264 @ 00000210a5a83680] using SAR=1/1
+[libx264 @ 00000210a5a83680] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 00000210a5a83680] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 00000210a5a83680] 264 - core 164 r3192 c24e06c - H.264/MPEG-4 AVC codec - Copyleft 2003-2024 - http://www.videolan.org/x264.html - options: cabac=1 ref=2 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=6 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=34 lookahead_threads=5 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc_lookahead=30 rc=crf mbtree=1 crf=18.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\Users\marcn\Documents\Codex\2026-11-14\eu\outputs\riemann-origin-trail\presentation-with-trail.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 24 fps, 12288 tbn
+      Metadata:
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s
+      Metadata:
+        encoder         : Lavc61.19.100 aac
+frame=  144 fps=0.0 q=23.0 size=     256KiB time=00:00:05.91 bitrate= 354.5kbits/s speed=11.6x    frame=  408 fps=398 q=23.0 size=     768KiB time=00:00:16.91 bitrate= 371.9kbits/s speed=16.5x    frame=  662 fps=429 q=23.0 size=    1024KiB time=00:00:27.50 bitrate= 305.1kbits/s speed=17.8x    frame=  954 fps=463 q=23.0 size=    1536KiB time=00:00:39.66 bitrate= 317.2kbits/s speed=19.2x    frame= 1239 fps=480 q=23.0 size=    2304KiB time=00:00:51.54 bitrate= 366.2kbits/s speed=  20x    frame= 1515 fps=489 q=23.0 size=    2816KiB time=00:01:03.04 bitrate= 365.9kbits/s speed=20.4x    frame= 1831 fps=507 q=23.0 size=    3328KiB time=00:01:16.20 bitrate= 357.7kbits/s speed=21.1x    frame= 2112 fps=513 q=23.0 size=    3840KiB time=00:01:27.91 bitrate= 357.8kbits/s speed=21.4x    frame= 2395 fps=517 q=23.0 size=    4608KiB time=00:01:39.70 bitrate= 378.6kbits/s speed=21.5x    frame= 2699 fps=524 q=23.0 size=    5120KiB time=00:01:52.37 bitrate= 373.2kbits/s speed=21.8x    frame= 2970 fps=524 q=23.0 size=    5632KiB time=00:02:03.66 bitrate= 373.1kbits/s speed=21.8x    frame= 3250 fps=525 q=23.0 size=    6144KiB time=00:02:15.33 bitrate= 371.9kbits/s speed=21.9x    frame= 3535 fps=527 q=23.0 size=    6656KiB time=00:02:27.20 bitrate= 370.4kbits/s speed=  22x    frame= 3829 fps=530 q=23.0 size=    7168KiB time=00:02:39.45 bitrate= 368.3kbits/s speed=22.1x    frame= 4141 fps=535 q=23.0 size=    7680KiB time=00:02:52.45 bitrate= 364.8kbits/s speed=22.3x    frame= 4443 fps=539 q=23.0 size=    8192KiB time=00:03:05.04 bitrate= 362.7kbits/s speed=22.5x    frame= 4732 fps=540 q=23.0 size=    8704KiB time=00:03:17.08 bitrate= 361.8kbits/s speed=22.5x    frame= 5014 fps=541 q=23.0 size=    9216KiB time=00:03:28.83 bitrate= 361.5kbits/s speed=22.5x    frame= 5292 fps=541 q=23.0 size=    9728KiB time=00:03:40.41 bitrate= 361.6kbits/s speed=22.5x    frame= 5595 fps=543 q=23.0 size=   10240KiB time=00:03:53.04 bitrate= 360.0kbits/s speed=22.6x    frame= 5887 fps=544 q=23.0 size=   10752KiB time=00:04:05.20 bitrate= 359.2kbits/s speed=22.7x    frame= 6205 fps=547 q=23.0 size=   11264KiB time=00:04:18.45 bitrate= 357.0kbits/s speed=22.8x    [mp4 @ 00000210a5ac5c40] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 00000210a5a521c0] video:6112KiB audio:5502KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.549594%
+frame= 6336 fps=552 q=-1.0 Lsize=   11794KiB time=00:04:23.91 bitrate= 366.1kbits/s speed=  23x    
+[libx264 @ 00000210a5a83680] frame I:32    Avg QP: 3.58  size: 63494
+[libx264 @ 00000210a5a83680] frame P:1640  Avg QP:13.74  size:  2044
+[libx264 @ 00000210a5a83680] frame B:4664  Avg QP:10.65  size:   187
+[libx264 @ 00000210a5a83680] consecutive B-frames:  0.8%  2.0%  3.2% 94.0%
+[libx264 @ 00000210a5a83680] mb I  I16..4: 87.7%  1.0% 11.4%
+[libx264 @ 00000210a5a83680] mb P  I16..4:  1.6%  0.2%  0.1%  P16..4:  2.0%  0.3%  0.1%  0.0%  0.0%    skip:95.7%
+[libx264 @ 00000210a5a83680] mb B  I16..4:  0.1%  0.0%  0.0%  B16..8:  0.2%  0.0%  0.0%  direct: 0.6%  skip:99.1%  L0:56.3% L1:36.8% BI: 6.8%
+[libx264 @ 00000210a5a83680] 8x8 transform intra:4.8% inter:20.4%
+[libx264 @ 00000210a5a83680] coded y,uvDC,uvAC intra: 4.8% 8.4% 6.5% inter: 0.2% 0.8% 0.2%
+[libx264 @ 00000210a5a83680] i16 v,h,dc,p: 85% 14%  1%  0%
+[libx264 @ 00000210a5a83680] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 20% 14% 64%  1%  0%  0%  0%  0%  0%
+[libx264 @ 00000210a5a83680] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 34% 21% 23%  3%  3%  4%  4%  4%  3%
+[libx264 @ 00000210a5a83680] i8c dc,h,v,p: 80% 14%  6%  0%
+[libx264 @ 00000210a5a83680] Weighted P-Frames: Y:5.0% UV:4.5%
+[libx264 @ 00000210a5a83680] ref P L0: 70.2% 29.8%
+[libx264 @ 00000210a5a83680] ref B L0: 85.6% 14.4%
+[libx264 @ 00000210a5a83680] ref B L1: 96.0%  4.0%
+[libx264 @ 00000210a5a83680] kb/s:189.64
+[aac @ 00000210a5e2e800] Qavg: 8833.213

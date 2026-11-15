@@ -1,0 +1,390 @@
+{
+  "schema": "graph-origin-trail-render-review-v1",
+  "traceId": "graph.riemann.origin_trail.review.render",
+  "status": "passed",
+  "reviewedAtUtc": "2026-11-15T11:51:08.250527+00:00",
+  "reviewer": "local_quadrant_math independent decoded-still inspection",
+  "scope": "Ten stills: origin at local 0.5, 6, 12.5 seconds; circle at 0.5, 3, 5, 7, 9.5, 11.5 seconds; repository exact final frame 287 of 288. Visual compositing only; audio, every transition frame and the assembled 264-second delivery were not reviewed.",
+  "inputs": [
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/riemann-origin-trail/origin-trail-scene.mp4",
+      "sha256": "682f03c42dfd0f2eb7b8153babebd6c2466a7636a8e3861ec0a8da3e3d6c7ebc"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/riemann-origin-trail/circle-brush-scene.mp4",
+      "sha256": "ba7e843e8d2c55819c2d412b86c58b0a5c8d3dce51fff9d3d20cd6266b9aa5df"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/riemann-origin-trail/repository-card.mp4",
+      "sha256": "d8cbba976a5d234bab60964322a360e74d5d4af560ab8efb697e32423fe5d77f"
+    }
+  ],
+  "stills": [
+    {
+      "path": "evidence/review-stills/final/circle-brush-scene-0-5.png",
+      "sha256": "b92a17d7d1ec81a84a761e7f360c0f15b8535709d0e10dc2f418243b7e74aa2a"
+    },
+    {
+      "path": "evidence/review-stills/final/circle-brush-scene-11-5.png",
+      "sha256": "20eb01c4436f6e2880ca9b11d880ae5f92f57f0739a88a09cea785744ef109c6"
+    },
+    {
+      "path": "evidence/review-stills/final/circle-brush-scene-3.png",
+      "sha256": "aa1c0e21ec0d7e9e269ab9d8bcbe5c4e0b666899d6a8401049ddd9e67e9b3bed"
+    },
+    {
+      "path": "evidence/review-stills/final/circle-brush-scene-5.png",
+      "sha256": "cf48af744dd91adaa97903ac5d675cd66560ae85357310c76a592679908f8812"
+    },
+    {
+      "path": "evidence/review-stills/final/circle-brush-scene-7.png",
+      "sha256": "7da83d0f6c3bbdcaf5e28265fa2cacaf722815641aaf0c9caf73033816233522"
+    },
+    {
+      "path": "evidence/review-stills/final/circle-brush-scene-9-5.png",
+      "sha256": "91380d808be375c46fa8329aa0b805b86a23a748df151ced6f23ea2c709b06c3"
+    },
+    {
+      "path": "evidence/review-stills/final/origin-trail-scene-0-5.png",
+      "sha256": "8237d77532235c33bf0ff5ff8a53fc2f58abf33ebe5c3a1a624dd45af9ec7a55"
+    },
+    {
+      "path": "evidence/review-stills/final/origin-trail-scene-12-5.png",
+      "sha256": "c1801b5c967805dc1e2236d3fb06ac9f54165446fd8b6c67d843717b90132bb8"
+    },
+    {
+      "path": "evidence/review-stills/final/origin-trail-scene-6.png",
+      "sha256": "7705a4b211ebb0ea95d4cd5adf0e65cf7567eedc24c90fffd44a6704839f1d43"
+    },
+    {
+      "path": "evidence/review-stills/final/repository-final.png",
+      "sha256": "a0df4075ec4908d771868925bb5f854387e4a282c05803fa02f8a16f90a599e3"
+    }
+  ],
+  "checks": [
+    {
+      "id": "persistent-horizontal-trail",
+      "status": "passed",
+      "observation": "Yellow/ochre and purple remain anchored at x=1240 while the origin advances. Later left colors overwrite previously green/blue pixels; the current green/blue tiles remain to the right."
+    },
+    {
+      "id": "circle-centers-direction-palette",
+      "status": "passed",
+      "observation": "Current centers match top (1165,390), right (1375,600), bottom (1165,810), left (955,600), then top again. The white marker and upright outline align with the painted brush. The four current quadrants retain yellow upper-left, green upper-right, purple lower-left and blue lower-right."
+    },
+    {
+      "id": "accumulated-history-and-hold",
+      "status": "passed",
+      "observation": "Earlier strokes persist, overlaps follow newer marks, and the completed loop remains visible at 9.5 and 11.5 seconds."
+    },
+    {
+      "id": "label-clearance",
+      "status": "passed",
+      "observation": "PAINT HISTORY remains fully inside the clear center, separated from the painted trail and current brush at all six sampled circle times. No overlap or clipping is visible."
+    },
+    {
+      "id": "repository-last-frame",
+      "status": "passed",
+      "observation": "Exact final frame 287 of 288 shows the public GitHub URL, graph/riemann-continuation branch, fetch/push remote and source checkpoint e8ccef1bf324 without clipping."
+    },
+    {
+      "id": "first-failure-evidence-preserved",
+      "status": "passed",
+      "observation": "The failed first review and all ten first-render stills remain byte-identical to their recorded hashes."
+    }
+  ],
+  "pixelObservations": {
+    "horizontal": [
+      {
+        "seconds": 0.5,
+        "anchoredYellowAt1250_500": [
+          131,
+          102,
+          41
+        ],
+        "anchoredPurpleAt1250_640": [
+          97,
+          50,
+          130
+        ],
+        "overwrittenAt1400_500": [
+          33,
+          124,
+          94
+        ],
+        "overwrittenAt1400_640": [
+          42,
+          76,
+          133
+        ]
+      },
+      {
+        "seconds": 6,
+        "anchoredYellowAt1250_500": [
+          131,
+          102,
+          41
+        ],
+        "anchoredPurpleAt1250_640": [
+          97,
+          50,
+          130
+        ],
+        "overwrittenAt1400_500": [
+          131,
+          102,
+          41
+        ],
+        "overwrittenAt1400_640": [
+          97,
+          50,
+          130
+        ]
+      },
+      {
+        "seconds": 12.5,
+        "anchoredYellowAt1250_500": [
+          131,
+          102,
+          41
+        ],
+        "anchoredPurpleAt1250_640": [
+          97,
+          50,
+          130
+        ],
+        "overwrittenAt1400_500": [
+          131,
+          102,
+          41
+        ],
+        "overwrittenAt1400_640": [
+          97,
+          50,
+          130
+        ]
+      }
+    ],
+    "circle": [
+      {
+        "seconds": 0.5,
+        "expectedCenter": [
+          1165,
+          390
+        ],
+        "centerPixel": [
+          239,
+          244,
+          252
+        ],
+        "quadrantPixels": [
+          [
+            131,
+            102,
+            41
+          ],
+          [
+            33,
+            124,
+            94
+          ],
+          [
+            97,
+            50,
+            130
+          ],
+          [
+            42,
+            76,
+            133
+          ]
+        ]
+      },
+      {
+        "seconds": 3,
+        "expectedCenter": [
+          1375,
+          600
+        ],
+        "centerPixel": [
+          239,
+          243,
+          255
+        ],
+        "quadrantPixels": [
+          [
+            131,
+            102,
+            41
+          ],
+          [
+            33,
+            124,
+            94
+          ],
+          [
+            97,
+            50,
+            130
+          ],
+          [
+            42,
+            76,
+            133
+          ]
+        ]
+      },
+      {
+        "seconds": 5,
+        "expectedCenter": [
+          1165,
+          810
+        ],
+        "centerPixel": [
+          239,
+          244,
+          254
+        ],
+        "quadrantPixels": [
+          [
+            131,
+            102,
+            41
+          ],
+          [
+            33,
+            124,
+            94
+          ],
+          [
+            97,
+            50,
+            130
+          ],
+          [
+            42,
+            76,
+            133
+          ]
+        ]
+      },
+      {
+        "seconds": 7,
+        "expectedCenter": [
+          955,
+          600
+        ],
+        "centerPixel": [
+          237,
+          244,
+          255
+        ],
+        "quadrantPixels": [
+          [
+            131,
+            102,
+            41
+          ],
+          [
+            33,
+            124,
+            94
+          ],
+          [
+            97,
+            50,
+            130
+          ],
+          [
+            42,
+            76,
+            133
+          ]
+        ]
+      },
+      {
+        "seconds": 9.5,
+        "expectedCenter": [
+          1165,
+          390
+        ],
+        "centerPixel": [
+          240,
+          243,
+          252
+        ],
+        "quadrantPixels": [
+          [
+            131,
+            102,
+            41
+          ],
+          [
+            33,
+            124,
+            94
+          ],
+          [
+            97,
+            50,
+            130
+          ],
+          [
+            42,
+            76,
+            133
+          ]
+        ]
+      },
+      {
+        "seconds": 11.5,
+        "expectedCenter": [
+          1165,
+          390
+        ],
+        "centerPixel": [
+          240,
+          243,
+          252
+        ],
+        "quadrantPixels": [
+          [
+            131,
+            102,
+            41
+          ],
+          [
+            33,
+            124,
+            94
+          ],
+          [
+            97,
+            50,
+            130
+          ],
+          [
+            42,
+            76,
+            133
+          ]
+        ]
+      }
+    ],
+    "meaning": "Direct decoded RGB samples; quadrant order is upper-left, upper-right, lower-left, lower-right."
+  },
+  "blockingFindings": [],
+  "openBlockerCount": 0,
+  "limitations": [
+    "Specified stills only; no audio or full-motion smoothness judgment.",
+    "These checks concern rendering history, not new mathematics or an RH result."
+  ],
+  "resolvedFindings": [
+    {
+      "id": "history-label-overlap",
+      "resolution": "Shortened centered PAINT HISTORY label now fits inside the clear center. Brush geometry and palette remain correct.",
+      "firstReview": "evidence/render-review-first.json",
+      "firstReviewSha256": "b1d86c10c1a2b2389f1c8eda5e6c5316b9513918f503a06e3519d846c7e50518"
+    }
+  ]
+}

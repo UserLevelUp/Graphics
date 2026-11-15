@@ -1,0 +1,118 @@
+{
+  "blocked": [],
+  "bubble_uuid": "01a1df02-1bed-7fe1-b632-3b448c4c706b",
+  "completed_slices": [
+    "acceptance",
+    "production"
+  ],
+  "conflicts": [],
+  "contract_status": "declared-gates-satisfied",
+  "counts": {
+    "blocked": 0,
+    "conflicting": 0,
+    "covered": 2,
+    "pending": 0,
+    "required": 2,
+    "stale_contract": 0
+  },
+  "covered": [
+    "acceptance",
+    "production"
+  ],
+  "current_slice": null,
+  "evidence_status": "declared",
+  "gate_evidence": [
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/delivery-manifest.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/media-qa.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/render-review.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "production",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/acceptance.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/delivery-manifest.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "verification",
+      "satisfied": true,
+      "slice_id": "acceptance",
+      "status": "declared"
+    }
+  ],
+  "goal": "Demonstrate a persistent four-color brush with a straight stroke and subsequent circular stroke",
+  "layers": [
+    "acceptance@integrated-brush-20261115",
+    "production@brush-render-20261115"
+  ],
+  "manifest": "graph.riemann.origin_trail.warp-map.json",
+  "pending": [],
+  "ready_slices": [],
+  "root": "\\\\?\\C:\\src\\graph\\research\\zeta-origin-trail\\warps",
+  "schema": "warp-progress-v1",
+  "slices": [
+    {
+      "contract_hash": "contract:graph.riemann.origin_trail.production:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "production",
+      "slice_uuid": "01a1df02-1bed-74a0-acd7-159af46eaf1a",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.origin_trail.acceptance:v1",
+      "depends_on": [
+        "production"
+      ],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "acceptance",
+      "slice_uuid": "01a1df02-1bed-7d20-ab0c-9d598c7ffd08",
+      "state": "complete"
+    }
+  ],
+  "stale_contract": [],
+  "state": "complete",
+  "warnings": [],
+  "warp_id": "graph.riemann.origin_trail"
+}
