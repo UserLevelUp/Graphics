@@ -1,0 +1,16 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.primes.phase",
+  "slice_id": "render",
+  "contract_hash": "contract:graph.primes.phase.render:v1",
+  "attempt_id": "prime-color-lab-v1",
+  "result_state": "accepted",
+  "result_hash": "sha256:19f01998dce8ef429e59847b2d86064b8dc2861155f02a91ab178644e889179c",
+  "evidence": {
+    "render": [
+      "research/prime-phase/evidence/render/prime-color-overlay.png",
+      "warps/graph.primes.phase.results.complete.md"
+    ]
+  },
+  "reason": null
+}

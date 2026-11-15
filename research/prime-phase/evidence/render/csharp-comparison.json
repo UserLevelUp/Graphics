@@ -1,0 +1,191 @@
+{
+  "status": "passed",
+  "cases_checked": 12,
+  "comparison_tolerance": "1E-12",
+  "source": "C:\\src\\graph\\research\\prime-phase\\evidence\\render\\prime-color-loom.values.json",
+  "reference": "C:\\src\\graph\\research\\prime-phase\\evidence\\render\\numeric-references.json",
+  "maximum_absolute_errors": {
+    "real": "1.995995897616693e-15",
+    "imaginary": "1.717124050715274e-16",
+    "logReal": "1.570044637272999e-14",
+    "logImaginary": "2.043596152025441e-16",
+    "referenceReal": "4.744959333540474e-16",
+    "referenceImaginary": "1.535195915191889e-16"
+  },
+  "notes": [
+    "C# binary t values differ slightly from the exact decimal reference ordinates.",
+    "Reference products use 70-digit Decimal arithmetic; zeta references use independent Euler-Maclaurin evaluation.",
+    "Log values here are computed on the branch shared by the accumulated Euler log at sigma=2.",
+    "These are numerical checks, without interval or directed-rounding certification."
+  ],
+  "cases": [
+    {
+      "t": "0",
+      "cutoff": 32,
+      "input_binary_t_difference": "0",
+      "absolute_field_errors": {
+        "real": "2.786689310516465e-16",
+        "imaginary": "0e-71",
+        "logReal": "7.984284042050853e-17",
+        "logImaginary": "0e-90",
+        "referenceReal": "4.744959333540474e-16",
+        "referenceImaginary": "0e-289"
+      },
+      "passed": true
+    },
+    {
+      "t": "0",
+      "cutoff": 128,
+      "input_binary_t_difference": "0",
+      "absolute_field_errors": {
+        "real": "2.916287045937898e-16",
+        "imaginary": "0e-73",
+        "logReal": "1.637625740205268e-16",
+        "logImaginary": "0e-96",
+        "referenceReal": "4.744959333540474e-16",
+        "referenceImaginary": "0e-289"
+      },
+      "passed": true
+    },
+    {
+      "t": "0",
+      "cutoff": 512,
+      "input_binary_t_difference": "0",
+      "absolute_field_errors": {
+        "real": "6.600843899296407e-16",
+        "imaginary": "0e-74",
+        "logReal": "5.483308821545946e-16",
+        "logImaginary": "0e-99",
+        "referenceReal": "4.744959333540474e-16",
+        "referenceImaginary": "0e-289"
+      },
+      "passed": true
+    },
+    {
+      "t": "0",
+      "cutoff": 2048,
+      "input_binary_t_difference": "0",
+      "absolute_field_errors": {
+        "real": "1.995995897616693e-15",
+        "imaginary": "0e-75",
+        "logReal": "1.801831213433873e-15",
+        "logImaginary": "0e-102",
+        "referenceReal": "4.744959333540474e-16",
+        "referenceImaginary": "0e-289"
+      },
+      "passed": true
+    },
+    {
+      "t": "14.134725141734694",
+      "cutoff": 32,
+      "input_binary_t_difference": "6.31168167688883841037750244140625E-16",
+      "absolute_field_errors": {
+        "real": "5.210791681965250e-17",
+        "imaginary": "1.486777469558067e-16",
+        "logReal": "8.998210827756713e-17",
+        "logImaginary": "1.837471271317208e-16",
+        "referenceReal": "4.613985149156895e-17",
+        "referenceImaginary": "1.535195915191889e-16"
+      },
+      "passed": true
+    },
+    {
+      "t": "14.134725141734694",
+      "cutoff": 128,
+      "input_binary_t_difference": "6.31168167688883841037750244140625E-16",
+      "absolute_field_errors": {
+        "real": "3.386162113503135e-16",
+        "imaginary": "1.717124050715274e-16",
+        "logReal": "4.045997568931956e-16",
+        "logImaginary": "2.043596152025441e-16",
+        "referenceReal": "4.613985149156895e-17",
+        "referenceImaginary": "1.535195915191889e-16"
+      },
+      "passed": true
+    },
+    {
+      "t": "14.134725141734694",
+      "cutoff": 512,
+      "input_binary_t_difference": "6.31168167688883841037750244140625E-16",
+      "absolute_field_errors": {
+        "real": "1.597556024825532e-16",
+        "imaginary": "1.568751402019711e-16",
+        "logReal": "4.449977116747177e-15",
+        "logImaginary": "1.781244388236304e-16",
+        "referenceReal": "4.613985149156895e-17",
+        "referenceImaginary": "1.535195915191889e-16"
+      },
+      "passed": true
+    },
+    {
+      "t": "14.134725141734694",
+      "cutoff": 2048,
+      "input_binary_t_difference": "6.31168167688883841037750244140625E-16",
+      "absolute_field_errors": {
+        "real": "1.702678071834110e-16",
+        "imaginary": "1.523740174203981e-16",
+        "logReal": "1.570044637272999e-14",
+        "logImaginary": "1.270250899208377e-16",
+        "referenceReal": "4.613985149156895e-17",
+        "referenceImaginary": "1.535195915191889e-16"
+      },
+      "passed": true
+    },
+    {
+      "t": "23.298320492762855",
+      "cutoff": 32,
+      "input_binary_t_difference": "-1.169601641595363616943359375E-16",
+      "absolute_field_errors": {
+        "real": "9.485643416831446e-17",
+        "imaginary": "7.095067342835842e-17",
+        "logReal": "6.422192011112083e-17",
+        "logImaginary": "7.711054792319491e-17",
+        "referenceReal": "3.032403067920356e-16",
+        "referenceImaginary": "9.836625794017679e-17"
+      },
+      "passed": true
+    },
+    {
+      "t": "23.298320492762855",
+      "cutoff": 128,
+      "input_binary_t_difference": "-1.169601641595363616943359375E-16",
+      "absolute_field_errors": {
+        "real": "3.196119811133479e-16",
+        "imaginary": "6.488623153924964e-17",
+        "logReal": "9.061811610542742e-17",
+        "logImaginary": "8.320671150662709e-17",
+        "referenceReal": "3.032403067920356e-16",
+        "referenceImaginary": "9.836625794017679e-17"
+      },
+      "passed": true
+    },
+    {
+      "t": "23.298320492762855",
+      "cutoff": 512,
+      "input_binary_t_difference": "-1.169601641595363616943359375E-16",
+      "absolute_field_errors": {
+        "real": "5.014325502332029e-16",
+        "imaginary": "6.781716194435099e-17",
+        "logReal": "3.967604741004772e-15",
+        "logImaginary": "8.196905606299170e-17",
+        "referenceReal": "3.032403067920356e-16",
+        "referenceImaginary": "9.836625794017679e-17"
+      },
+      "passed": true
+    },
+    {
+      "t": "23.298320492762855",
+      "cutoff": 2048,
+      "input_binary_t_difference": "-1.169601641595363616943359375E-16",
+      "absolute_field_errors": {
+        "real": "6.029302103346725e-16",
+        "imaginary": "1.001767864243113e-16",
+        "logReal": "1.536939556233206e-14",
+        "logImaginary": "5.131868614353362e-17",
+        "referenceReal": "3.032403067920356e-16",
+        "referenceImaginary": "9.836625794017679e-17"
+      },
+      "passed": true
+    }
+  ]
+}

@@ -24,3 +24,5 @@ An alternate established target is positivity of Re(xi'/xi) throughout Re(s)>1/2
 A possible next bounded bubble would certify derivative counts within specified rectangles using ball arithmetic and boundary enclosures. Extending a finite verified result to all heights would still require a mathematical argument.
 
 Resume with recur warp show graph.riemann, recur trace-id graph.riemann --scope "**" --format full, and recur lang report warps/graph.zeta.origins.recur, all rooted at C:/src/graph.
+
+The completed graph.primes.phase experiment now includes local prime-contribution colors, shared-height prime/zeta overlays, and sampled factor-phase unwrapping. Its controlled comparisons did not show prime-height enrichment. See warps/graph.primes.phase.results.complete.md. These finite numerical findings supply no global zero exclusion; the RH proof remains open.

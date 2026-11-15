@@ -1,0 +1,17 @@
+[
+  {
+    "file": "zeta-overwrite.png",
+    "sha256": "d171dcd84c055b5f341722ba1cf14d815530d31ae3ccd363cbcd42f2e0aef77c",
+    "byte_identical": true
+  },
+  {
+    "file": "zeta-contours.png",
+    "sha256": "f22f53d14f9d0b2d1247b9fb26fabf28a0204021c2c3d680cb9bf4d2b5c86918",
+    "byte_identical": true
+  },
+  {
+    "file": "zeta-origins.png",
+    "sha256": "60595fb4da963e07bbbfb6ef9df009b7430f677f5d95694b68fa3a114359dfe9",
+    "byte_identical": true
+  }
+]

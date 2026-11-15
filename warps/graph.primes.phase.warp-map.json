@@ -1,6 +1,6 @@
 {
   "bubble_uuid": "01a1dd76-a38c-7cb9-8fd9-a56cb643d859",
-  "current_slice": "render",
+  "current_slice": "acceptance",
   "goal": "Test compounding prime-factor phase and magnitude with explicit convergence bounds and independent helper reviews",
   "intelligence_baseline": "host-current",
   "invariants": [

@@ -1,0 +1,11 @@
+{
+  "trace_id": "graph.primes.phase.ui",
+  "status": "observed",
+  "observations": [
+    "Main form rendered at default sigma1.2, cutoff512, overlay enabled.",
+    "Changed axis control to22.5 and clicked Render: prime2/1152, composite9/2592.",
+    "Restored axis0 and clicked Render: prime0/1152, composite15/2592.",
+    "Opened Unwrap factors: 513 samples, max angle error3.553e-15, visible correct plot."
+  ],
+  "remaining": "No RH inference. Visual sampling and arithmetic are not interval-certified."
+}

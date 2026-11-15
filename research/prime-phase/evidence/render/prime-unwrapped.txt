@@ -1,0 +1,1 @@
+Unwrapped 513 samples. Max angle error 3.553E-015. The exact expression is direct. Numerical unwrapping uses previous samples and requires phase steps below π. Composite controls unwrap too; this is reconstruction from known inputs, not a primality test.

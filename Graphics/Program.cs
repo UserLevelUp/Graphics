@@ -14,6 +14,23 @@ namespace Graphics
         [STAThread]
         static void Main(string[] args)
         {
+            if (args.Length == 2 && args[0] == "--prime-unwrap")
+            {
+                using var image = PrimeUnwrap.Render(1.2, 13, out string report);
+                image.Save(args[1], System.Drawing.Imaging.ImageFormat.Png);
+                System.IO.File.WriteAllText(System.IO.Path.ChangeExtension(args[1], ".txt"), report);
+                System.IO.File.WriteAllText(System.IO.Path.ChangeExtension(args[1], ".json"),
+                    System.Text.Json.JsonSerializer.Serialize(PrimeUnwrap.Verify(), new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));
+                return;
+            }
+            if ((args.Length == 2 || args.Length == 7 || args.Length == 8) && args[0] == "--prime-phase")
+            {
+                if (args.Length == 2) PrimePhaseExperiment.Export(args[1]);
+                else PrimePhaseExperiment.Export(args[1], double.Parse(args[2], System.Globalization.CultureInfo.InvariantCulture),
+                    int.Parse(args[3]), double.Parse(args[4], System.Globalization.CultureInfo.InvariantCulture), int.Parse(args[5]), bool.Parse(args[6]),
+                    args.Length == 8 && bool.Parse(args[7]));
+                return;
+            }
             if (args.Length == 2 && (args[0] == "--zeta-preview" || args[0] == "--zeta-contours" || args[0] == "--zeta-origins"))
             {
                 string report;
@@ -31,7 +48,7 @@ namespace Graphics
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GraphForm());
+            Application.Run(args.Length == 1 && args[0] == "--prime-lab" ? (Form)new PrimePhaseForm() : new GraphForm());
         }
     }
 }

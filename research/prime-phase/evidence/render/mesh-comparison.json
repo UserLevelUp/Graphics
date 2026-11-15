@@ -1,0 +1,25 @@
+{
+  "method": "independent NumPy complex exponentials/logs, prime enumeration by trial division",
+  "prime_count": 97,
+  "rows": [
+    241,
+    481,
+    961
+  ],
+  "marker_counts": [
+    141,
+    285,
+    563
+  ],
+  "marker_rates": [
+    0.006031569491380417,
+    0.00610840817026384,
+    0.006039670875484086
+  ],
+  "midpoint_differences_against_preceding_coarse_row": 155,
+  "rotation_marker_differences": 425,
+  "rotation_marker_difference_fraction": 0.009109029727586428,
+  "reverse_order_marker_count": 5757,
+  "reverse_order_marker_rate": 0.12338984503932958,
+  "matches_csharp": true
+}

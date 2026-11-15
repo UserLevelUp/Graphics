@@ -1,0 +1,265 @@
+{
+  "status": "passed",
+  "traceId": "graph.primes.phase.acceptance",
+  "cases": [
+    {
+      "sigma": 2,
+      "t": 0,
+      "cutoff": 32,
+      "real": 1.634771605590006,
+      "imaginary": 0,
+      "logReal": 0.4915031038209136,
+      "logImaginary": 0,
+      "referenceReal": 1.644934066848226,
+      "referenceImaginary": 0,
+      "observedError": 0.010162461258220068,
+      "logTailBound": 0.03127872242647059,
+      "productBound": 0.05194166704641225,
+      "methodError": 4.440892098500626E-16
+    },
+    {
+      "sigma": 2,
+      "t": 0,
+      "cutoff": 128,
+      "real": 1.6427731713813853,
+      "imaginary": 0,
+      "logReal": 0.4963857719353729,
+      "logImaginary": 0,
+      "referenceReal": 1.644934066848226,
+      "referenceImaginary": 0,
+      "observedError": 0.0021608954668406177,
+      "logTailBound": 0.007812969501201923,
+      "productBound": 0.012885207004705142,
+      "methodError": 1.1102230246251565E-15
+    },
+    {
+      "sigma": 2,
+      "t": 0,
+      "cutoff": 512,
+      "real": 1.6444975323122384,
+      "imaginary": 0,
+      "logReal": 0.49743488607560743,
+      "logImaginary": 0,
+      "referenceReal": 1.644934066848226,
+      "referenceImaginary": 0,
+      "observedError": 0.0004365345359875761,
+      "logTailBound": 0.001953132421590011,
+      "productBound": 0.0032150601446389346,
+      "methodError": 8.881784197001252E-16
+    },
+    {
+      "sigma": 2,
+      "t": 0,
+      "cutoff": 2048,
+      "real": 1.6448405634110337,
+      "imaginary": 0,
+      "logReal": 0.4976434575815187,
+      "logImaginary": 0,
+      "referenceReal": 1.644934066848226,
+      "referenceImaginary": 0,
+      "observedError": 9.350343719227716E-05,
+      "logTailBound": 0.0004882813663017459,
+      "productBound": 0.0008033411099371805,
+      "methodError": 5.551115123125783E-15
+    },
+    {
+      "sigma": 2,
+      "t": 14.134725141734695,
+      "cutoff": 32,
+      "real": 0.6896009699623898,
+      "imaginary": 0.04820164395712181,
+      "logReal": -0.3692052446351658,
+      "logImaginary": 0.0697843761339233,
+      "referenceReal": 0.6891868146891637,
+      "referenceImaginary": 0.04752404474926045,
+      "observedError": 0.0007941443677540029,
+      "logTailBound": 0.03127872242647059,
+      "productBound": 0.021964180181646514,
+      "methodError": 1.1188630228279524E-16
+    },
+    {
+      "sigma": 2,
+      "t": 14.134725141734695,
+      "cutoff": 128,
+      "real": 0.6891789444964086,
+      "imaginary": 0.04757560312521677,
+      "logReal": -0.3698772560939528,
+      "logImaginary": 0.06892294908892982,
+      "referenceReal": 0.6891868146891637,
+      "referenceImaginary": 0.04752404474926045,
+      "observedError": 5.215559476465724E-05,
+      "logTailBound": 0.007812969501201923,
+      "productBound": 0.005418488388829559,
+      "methodError": 1.1188630228279524E-16
+    },
+    {
+      "sigma": 2,
+      "t": 14.134725141734695,
+      "cutoff": 512,
+      "real": 0.6891974771140188,
+      "imaginary": 0.047538069530208595,
+      "logReal": -0.369854233221802,
+      "logImaginary": 0.06886689982784142,
+      "referenceReal": 0.6891868146891637,
+      "referenceImaginary": 0.04752404474926045,
+      "observedError": 1.7617655474981846E-05,
+      "logTailBound": 0.001953132421590011,
+      "productBound": 0.0013506108150630259,
+      "methodError": 2.892212220335341E-15
+    },
+    {
+      "sigma": 2,
+      "t": 14.134725141734695,
+      "cutoff": 2048,
+      "real": 0.6891894775430957,
+      "imaginary": 0.04752607862101813,
+      "logReal": -0.3698669796729103,
+      "logImaginary": 0.0688503804551161,
+      "referenceReal": 0.6891868146891637,
+      "referenceImaginary": 0.04752404474926045,
+      "observedError": 3.350735052193708E-06,
+      "logTailBound": 0.0004882813663017459,
+      "productBound": 0.0003373999361717368,
+      "methodError": 1.068025614563851E-14
+    },
+    {
+      "sigma": 2,
+      "t": 23.298320492762855,
+      "cutoff": 32,
+      "real": 0.9381827172672794,
+      "imaginary": 0.02772505077657169,
+      "logReal": -0.06337408855751801,
+      "logImaginary": 0.02954326871720591,
+      "referenceReal": 0.9382777197042943,
+      "referenceImaginary": 0.027448561914843864,
+      "observedError": 0.0002923551841481782,
+      "logTailBound": 0.03127872242647059,
+      "productBound": 0.029821932387359664,
+      "methodError": 4.442111658486589E-16
+    },
+    {
+      "sigma": 2,
+      "t": 23.298320492762855,
+      "cutoff": 128,
+      "real": 0.9382814791744117,
+      "imaginary": 0.02751451305563381,
+      "logReal": -0.0632755160120814,
+      "logImaginary": 0.02931596859265999,
+      "referenceReal": 0.9382777197042943,
+      "referenceImaginary": 0.027448561914843864,
+      "observedError": 6.605820605389877E-05,
+      "logTailBound": 0.007812969501201923,
+      "productBound": 0.0073626404234108525,
+      "methodError": 4.442111658486589E-16
+    },
+    {
+      "sigma": 2,
+      "t": 23.298320492762855,
+      "cutoff": 512,
+      "real": 0.9382847924683964,
+      "imaginary": 0.027446913565272915,
+      "logReal": -0.06327409610237114,
+      "logImaginary": 0.02924388106611179,
+      "referenceReal": 0.9382777197042943,
+      "referenceImaginary": 0.027448561914843864,
+      "observedError": 7.262303240114794E-06,
+      "logTailBound": 0.001953132421590011,
+      "productBound": 0.0018351699313236022,
+      "methodError": 4.2200470783297276E-15
+    },
+    {
+      "sigma": 2,
+      "t": 23.298320492762855,
+      "cutoff": 2048,
+      "real": 0.9382805935742173,
+      "imaginary": 0.02744894057085806,
+      "logReal": -0.06327850421731565,
+      "logImaginary": 0.029246170353998062,
+      "referenceReal": 0.9382777197042943,
+      "referenceImaginary": 0.027448561914843864,
+      "observedError": 2.8987081108009237E-06,
+      "logTailBound": 0.0004882813663017459,
+      "productBound": 0.00045845285243649995,
+      "methodError": 1.499554574975069E-14
+    }
+  ],
+  "overlays": {
+    "baseline": {
+      "PrimeFlips": 0,
+      "PrimeComparisons": 1152,
+      "CompositeFlips": 15,
+      "CompositeComparisons": 2592,
+      "PrimeDensity": 0,
+      "CompositeDensity": 0.005787037037037037
+    },
+    "rotated22_5Degrees": {
+      "PrimeFlips": 2,
+      "PrimeComparisons": 1152,
+      "CompositeFlips": 9,
+      "CompositeComparisons": 2592,
+      "PrimeDensity": 0.001736111111111111,
+      "CompositeDensity": 0.003472222222222222
+    },
+    "reverseOrder": {
+      "PrimeFlips": 152,
+      "PrimeComparisons": 1152,
+      "CompositeFlips": 368,
+      "CompositeComparisons": 2592,
+      "PrimeDensity": 0.13194444444444445,
+      "CompositeDensity": 0.1419753086419753
+    },
+    "heights": "Integer t from 2 through 40, x \u003E= 1, valid consecutive quadrant comparisons only."
+  },
+  "latticeChecks": 970,
+  "refinement": {
+    "coarseRate": 0.006031569491380417,
+    "fineRate": 0.00610840817026384,
+    "finerRate": 0.006039670875484086,
+    "newMidpointFeatures": 155,
+    "rows": [
+      241,
+      481,
+      961
+    ],
+    "note": "Midpoint markers compared with the preceding coarse row; this is not a count of hidden crossings. Finite sampling does not certify every crossing."
+  },
+  "controls": {
+    "rotatedMarkerDifferenceFraction": 0.009109029727586428,
+    "reverseEndpointError": 6.217248937900877E-15,
+    "reverseOrderFlipRate": 0.12338984503932958
+  },
+  "limitation": "Numerical spot checks, empirical 1e-12 allowance; no directed-rounding certification or RH conclusion.",
+  "renderParameters": {
+    "sigma": 1.2,
+    "cutoff": 512,
+    "basisDegrees": 0,
+    "selectedPrime": 13,
+    "reverse": false,
+    "overlay": true,
+    "rows": 481,
+    "heightMax": 40
+  },
+  "verificationParameters": {
+    "mesh": {
+      "sigma": 1.2,
+      "cutoff": 512,
+      "basisDegrees": 0,
+      "reverse": false,
+      "rows": 481
+    },
+    "referenceCases": {
+      "sigma": 2,
+      "cutoffs": [
+        32,
+        128,
+        512,
+        2048
+      ],
+      "heights": [
+        0,
+        14.134725141734695,
+        23.298320492762855
+      ]
+    }
+  }
+}

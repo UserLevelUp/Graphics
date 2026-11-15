@@ -46,6 +46,10 @@ namespace Graphics
             var origins = new Button { Text = "Local origins", AutoSize = true, Margin = Padding.Empty };
             origins.Click += (sender, args) => ShowZetaExperiment(2);
             zetaButtons.Controls.Add(origins);
+            origins.Margin = new Padding(0, 0, 0, spacing);
+            var primes = new Button { Text = "Prime color lab", AutoSize = true, Margin = Padding.Empty };
+            primes.Click += (sender, args) => { using var lab = new PrimePhaseForm(); lab.ShowDialog(this); };
+            zetaButtons.Controls.Add(primes);
             panel1.Controls.Add(zetaButtons);
         }
 

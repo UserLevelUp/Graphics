@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "traceId": "graph.primes.phase.unwrap",
+  "maximumAngleError": 3.552713678800501E-15,
+  "maximumRecoveredLabelRelativeError": 4.460493878238981E-16,
+  "coarseOneStepError": 18.84955592153876,
+  "samples": 513,
+  "endTime": 8,
+  "condition": "Adjacent true phase changes must be below pi for this unwrap algorithm.",
+  "interpretation": "The straight slope recovers the supplied integer label; composites behave the same way. This does not discover or classify primes."
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.primes.phase",
+  "slice_id": "acceptance",
+  "contract_hash": "contract:graph.primes.phase.acceptance:v1",
+  "attempt_id": "prime-color-lab-v1",
+  "result_state": "accepted",
+  "result_hash": "sha256:256ef1d0ac6f0eb71f0baeb5a0eb977a482665aa1d92a5d34e7f63c016ac36db",
+  "evidence": {
+    "verification": [
+      "research/prime-phase/evidence/render/csharp-comparison.json",
+      "research/prime-phase/evidence/render/prime-color-overlay.values.json",
+      "research/prime-phase/evidence/render/prime-unwrapped.json",
+      "warps/graph.primes.phase.results.complete.md"
+    ]
+  },
+  "reason": null
+}
