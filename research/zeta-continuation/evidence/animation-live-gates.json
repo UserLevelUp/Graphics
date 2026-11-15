@@ -1,0 +1,229 @@
+{
+  "blocked": [],
+  "bubble_uuid": "01a1de9a-874a-7b43-b37b-6bf272c31632",
+  "completed_slices": [
+    "acceptance",
+    "carbon",
+    "codex",
+    "copilot",
+    "implementation",
+    "verification"
+  ],
+  "conflicts": [],
+  "contract_status": "declared-gates-satisfied",
+  "counts": {
+    "blocked": 0,
+    "conflicting": 0,
+    "covered": 6,
+    "pending": 0,
+    "required": 6,
+    "stale_contract": 0
+  },
+  "covered": [
+    "acceptance",
+    "carbon",
+    "codex",
+    "copilot",
+    "implementation",
+    "verification"
+  ],
+  "current_slice": null,
+  "evidence_status": "declared",
+  "gate_evidence": [
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "research/zeta-continuation/animation/carbon/review.md",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "carbon",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "research/zeta-continuation/animation/codex/review.md",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "codex",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "research/zeta-continuation/animation/copilot/review.md",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "copilot",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "research/zeta-continuation/evidence/animation-manifest.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "implementation",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "research/zeta-continuation/evidence/animation-manifest.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "verification",
+      "satisfied": true,
+      "slice_id": "verification",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "research/zeta-continuation/evidence/animation-acceptance.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "verification",
+      "satisfied": true,
+      "slice_id": "acceptance",
+      "status": "declared"
+    }
+  ],
+  "goal": "Compute, independently validate and animate three zeta a-point paths with honest boundary-exit and uncertainty reporting",
+  "layers": [
+    "acceptance@native-ae-acceptance-20261115",
+    "carbon@scope-watch-carbon-20261115",
+    "codex@scope-watch-codex-20261115",
+    "copilot@scope-watch-copilot-20261115",
+    "implementation@native-ae-implementation-20261115",
+    "verification@native-ae-verification-20261115"
+  ],
+  "manifest": "graph.riemann.continuation.animation.warp-map.json",
+  "pending": [],
+  "ready_slices": [],
+  "root": "\\\\?\\C:\\src\\graph\\warps",
+  "schema": "warp-progress-v1",
+  "slices": [
+    {
+      "contract_hash": "contract:graph.riemann.continuation.animation.carbon:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "carbon",
+      "slice_uuid": "01a1de9e-eade-7376-a7d2-aaf39c2497ca",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.continuation.animation.codex:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "codex",
+      "slice_uuid": "01a1de9e-eade-7376-a7d2-aaf48455ca87",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.continuation.animation.copilot:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "copilot",
+      "slice_uuid": "01a1de9e-eade-7376-a7d2-aaf5be5b6d50",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.continuation.animation.implementation:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "implementation",
+      "slice_uuid": "01a1de9a-8751-7194-84c0-0b13f221c17c",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.continuation.animation.verification:v1",
+      "depends_on": [
+        "implementation",
+        "carbon",
+        "codex",
+        "copilot"
+      ],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "verification",
+      "slice_uuid": "01a1de9a-8751-7194-84c0-0b146226b478",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.continuation.animation.acceptance:v1",
+      "depends_on": [
+        "verification"
+      ],
+      "evidence_gates": [
+        "verification"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "acceptance",
+      "slice_uuid": "01a1de9a-8751-7194-84c0-0b1527e51cb5",
+      "state": "complete"
+    }
+  ],
+  "stale_contract": [],
+  "state": "complete",
+  "warnings": [],
+  "warp_id": "graph.riemann.continuation.animation"
+}

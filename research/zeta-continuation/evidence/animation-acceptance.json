@@ -1,0 +1,25 @@
+{
+  "traceId": "graph.riemann.continuation.animation.acceptance",
+  "status": "accepted",
+  "scope": "A finite, numerically checked scientific animation; no global RH or certified-continuation claim.",
+  "sourceCheckpoint": "ec38d941db409accb4ea2d82e12875ea4dd631f0",
+  "manifest": "research/zeta-continuation/evidence/animation-manifest.json",
+  "manifestSha256": "16be61078f0a027b1c94bc4ee534506ebb260323c5b2b477123b937d2ff209ae",
+  "requiredEvidence": {
+    "scopeReviews": "animation/evidence/dispatch-final.json; carbon/codex/copilot reviews, exact steering ACKs and protocol tests",
+    "nativeBuildAndSource": "evidence/native/build.txt and source-review.json",
+    "reference": "evidence/numerical-report.json and reference-trajectories.json",
+    "nativeAgreement": "evidence/native-validation.json",
+    "nativeUiAndCompatibility": "evidence/native/ui-review.json and legacy-smoke.json",
+    "editableProjectAndRenderedVideo": "evidence/animation-qa.json and output hashes in animation-manifest.json",
+    "failuresRetained": "evidence/runtime-notes.json and animation-qa.json"
+  },
+  "outcomes": [
+    "Z1 exits the right edge near a=.85444799297.",
+    "Z2 exits the right edge near a=.91722451939.",
+    "Z3 reaches a=1 at approximately1.407788040653+23.327987754559i."
+  ],
+  "interpretation": "Numerical counterevidence to the fixed-window confinement conjecture. Subsequent out-of-window behavior and re-entry are untested.",
+  "presentationMayProceed": true,
+  "globalRiemannHypothesisStatus": "open"
+}

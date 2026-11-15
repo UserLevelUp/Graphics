@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.continuation.animation",
+  "slice_id": "verification",
+  "contract_hash": "contract:graph.riemann.continuation.animation.verification:v1",
+  "attempt_id": "native-ae-verification-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:16be61078f0a027b1c94bc4ee534506ebb260323c5b2b477123b937d2ff209ae",
+  "evidence": {
+    "verification": [
+      "research/zeta-continuation/evidence/animation-manifest.json"
+    ]
+  },
+  "reason": null
+}

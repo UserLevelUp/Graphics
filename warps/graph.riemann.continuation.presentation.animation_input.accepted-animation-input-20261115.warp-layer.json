@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.continuation.presentation",
+  "slice_id": "animation_input",
+  "contract_hash": "contract:graph.riemann.continuation.presentation.animation_input:v1",
+  "attempt_id": "accepted-animation-input-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:e131e6f4aa10c18723867c531a330697b56bdbdb54c434067c82a131f48c505f",
+  "evidence": {
+    "review": [
+      "research/zeta-continuation/evidence/animation-acceptance.json"
+    ]
+  },
+  "reason": null
+}
