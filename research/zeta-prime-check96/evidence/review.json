@@ -1,21 +1,21 @@
 {
-  "schema": "graph-zeta-prime-review-v1",
+  "schema": "graph-zeta-prime-review-v2",
   "traceId": "graph.primes.zeta_check96.review",
   "status": "passed",
   "reviewer": "prime_formula_review independent agent",
-  "reviewedAtUtc": "2026-11-15T14:04:24.992737+00:00",
+  "reviewedAtUtc": "2026-11-15T14:09:37.028094+00:00",
   "inputs": [
     {
       "path": "research/zeta-prime-check96/check_phase.py",
-      "sha256": "54682a7f6206c31a43c73258bb5cb70665153e75583b155061395adf37e99980"
+      "sha256": "daa82cb57f152c58147d7249a936f9ee8be0a06d1b73e52048b0626da1d7a0e3"
     },
     {
       "path": "research/zeta-prime-check96/plot_phase.py",
-      "sha256": "b85f43d3e75386d175211edc7b9c2e02ae90520feffa5be038c213b2f5ff3220"
+      "sha256": "918ffeb1cb144adcb08168dbf53bdaecd872a8df16a214a8c96c44aa6ec0a0b5"
     },
     {
       "path": "research/zeta-prime-check96/README.md",
-      "sha256": "695860daa17e5a479cad8944d2bb22a5a131fe9aefca73331b6680d1489ae7b6"
+      "sha256": "ae4c793adae39613131fd77d96661affe9a9adc0d42e1077f5d935bf9ef2a987"
     },
     {
       "path": "research/zeta-prime-check96/requirements.txt",
@@ -23,7 +23,7 @@
     },
     {
       "path": "research/zeta-prime-check96/evidence/comparison.json",
-      "sha256": "8966d9314c1f3da6885adca2d128a049646af4a8a49faf13f6a94086c4f3d350"
+      "sha256": "e3fb31fcc8561a321ef8101d83a91b5ba5cde60163756f0b1bc05e545aa7d93f"
     },
     {
       "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/zeta-prime-96-97/zeta-phase-96-97.png",
@@ -32,77 +32,92 @@
     {
       "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/zeta-prime-96-97/zeta-shift-96-97.png",
       "sha256": "bb272d46087ee10984f4c902ad99f70881b29dfdc63b4e519d413ddd4c62f511"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/zeta-prime-96-97/zeta-both-shifts-96-97.png",
+      "sha256": "94147582a8402efe5e2245201da6c29dc811d1dd811634fce4977541e68b7ed0"
     }
   ],
-  "scope": "Read-only mathematical/source review, separate same-library90digit numerical recomputation and visual inspection of two static PNGs. Only this review file was written.",
+  "supersedes": {
+    "path": "evidence/review-plus-one-superseded.json",
+    "sha256": "70188b04dcfd2eeca48bd5976e97a4a52378c5ed43050c2b6c833a04e00aa8d3",
+    "reason": "Expanded requested comparison adds the minus input shift and three-phase tuple diagnostics."
+  },
+  "scope": "Mathematical/source review, separate same-library90digit recomputation, evaluator-route instrumentation and inspection of three static PNGs. Only this final review file was written.",
   "checks": [
     {
-      "id": "fixed_mapping",
+      "id": "requested_mapping",
       "status": "passed",
-      "detail": "Input s=1/2+i*n, secondary zeta(s+1)=zeta(3/2+i*n), zero target and unrotated half-open phase sectors are explicit. The superseded output translation is not used."
+      "detail": "The primary line is s=1/2+i*n; both requested input shifts s+1=3/2+i*n and s-1=-1/2+i*n use zero output target and unrotated half-open phase sectors. Superseded output-translation results are not accepted as these shifts."
     },
     {
       "id": "exact_labels",
       "status": "passed",
-      "detail": "Independently tested every proper divisor for every n=0..100; matched all 101 labels and reviewed the small-factor proof for 96/97."
+      "detail": "Independently checked every proper divisor for every integer0..100, matched all101 labels, and inspected the small-factor proof for96/97."
     },
     {
       "id": "independent_90_digit_values",
       "status": "passed",
-      "detail": "Recomputed 202 zeta values, both vertical lines at all 101 integer heights, in a separate 90-digit run of the same mpmath library. Reported 35-digit values and phases agree to the declared tolerance."
+      "detail": "Recomputed303 zeta values across all three lines in a separate90digit run of the same library. All rounded values, phases and sectors match the accepted report."
     },
     {
-      "id": "all_sector_and_pair_members",
+      "id": "all_partitions",
       "status": "passed",
-      "detail": "Independently reproduced every prime/composite member list in four original sectors and six occupied sector pairs."
+      "detail": "Independently reproduced every member of the four primary sectors, six plus-pair cells, nine minus-pair cells and all occupied triple cells."
     },
     {
-      "id": "pair_filter_result",
+      "id": "candidate_rules",
       "status": "passed",
-      "detail": "Pair(I,I) contains 7 primes and 28 composites. Relative to original sector I, five composite matches and three prime matches are removed; 18 of 25 primes are missed."
+      "detail": "Matching97 retains10primes/33composites originally;7/28 with plus;7/22 with minus;6/18 with both. Missed-prime counts15,18,18,19 agree. Composite95 survives minus;99 survives plus."
     },
     {
-      "id": "finite_classifier_limit",
+      "id": "retrospective_classifier_bounds",
       "status": "passed",
-      "detail": "Enumerated all 64 binary assignments of the six occupied sector pairs; the minimum error count is 25 among integers2..100. Every occupied pair contains both classes."
+      "detail": "Minimum errors for arbitrary binary assignments of the finite sector partitions are25 original,25 plus-pair,24 minus-pair and23 triple. The note correctly avoids claiming all minus/triple cells are mixed and identifies these minima as in-sample fitting, not generalization."
     },
     {
-      "id": "method_routing_corrected",
+      "id": "method_route_correction",
       "status": "passed",
-      "detail": "Inspected mpmath1.3.0 source and instrumented all16 accepted method-comparison cases. Default calls reach libmp.mpc_zeta (Borwein coefficients); explicit Euler-Maclaurin calls reach _hurwitz. Explicit borwein was correctly replaced because its spelling does not activate the fast path."
+      "detail": "Reinstrumented16 comparison cases at80digits, sigmas0.5 and1.5 only. Defaults reach libmp.mpc_zeta (Borwein coefficients); explicit Euler-Maclaurin reaches _hurwitz. The incorrectly named explicit borwein comparison was superseded."
     },
     {
-      "id": "hardy_and_real_axis_scope",
+      "id": "reflection_scope",
       "status": "passed",
-      "detail": "Confirmed the HardyZ reality relation numerically on the critical line. Direct positive real zeta96/zeta97 have phase0. Neither gives an integer-height primality criterion."
+      "detail": "Verified zeta(s-1)=chi(s-1)*conjugate(zeta(s+1)) numerically for all101 inputs. The documented gamma-ratio factor agrees with the classical functional equation. Minus-line reflection is correctly identified as consistency, not an independent algorithm or independent arithmetic information."
+    },
+    {
+      "id": "hardy_and_real_axis",
+      "status": "passed",
+      "detail": "HardyZ reality holds numerically on the primary line. Direct real zeta96/zeta97 are positive and have phase0. These facts supply no integer-height prime criterion."
     },
     {
       "id": "formal_equation_scope",
       "status": "passed",
-      "detail": "The integer-remainder indicator, prime-count inversion and next-prime search are exact classical identities without a supplied prior-prime list. They are not efficient shortcuts. The vonMangoldt identity and prime-power caveat are correct and coefficient extraction is explicitly future work."
+      "detail": "The integer-remainder indicator, counting inversion and next-prime identities are correct established search/count constructions. The vonMangoldt identity and prime-power distinction are correct; coefficient extraction and speed benefits are explicitly not implemented or established."
     },
     {
-      "id": "plot_visual_review",
+      "id": "static_visual_review",
       "status": "passed",
-      "detail": "Inspected both full PNGs. Requested95..99 labels, phase tables, sector colors and bar counts agree with the report; mathematical glyphs and scope labels are readable. No clipping or material overlap observed."
+      "detail": "Viewed the new three-shift PNG and previously viewed the byte-identical primary and plus-shift PNGs. Numeric tables,95..99 labels, colors, bar counts and scope footers agree; no material clipping or overlap observed."
     },
     {
       "id": "claim_limits",
       "status": "passed",
-      "detail": "README and figure state numerical validation rather than interval certification, separate exact labels from zeta evaluations, and make no new prime algorithm, speedup, novelty or RH claim."
+      "detail": "README and diagrams separate exact divisibility labels from numerical zeta features, state the chosen height mapping, and make no new primality algorithm, speedup, novelty, interval certificate or RH claim."
     },
     {
       "id": "hash_binding",
       "status": "passed",
-      "detail": "Verified all sourceInput and libraryImplementationInput fingerprints in comparison.json, and bound current core, report, README, plot source, requirements and inspected PNGs."
+      "detail": "Verified source and mpmath implementation fingerprints from comparison.json and bound current scripts,README,requirements,report and three inspected PNGs."
     }
   ],
   "independentPrecisionDigits": 90,
   "numericValidation": {
-    "zetaValuesRecomputed": 202,
-    "maximumDifferenceFromRoundedReport": "4.684106129888160552e-33",
+    "zetaValuesRecomputed": 303,
+    "maximumDifferenceFromRoundedReport": "4.7167593467083891813e-33",
     "reportComparisonAbsoluteTolerance": "1e-31",
     "maximumHardyImaginaryResidual": "1.8512472260797514736e-89",
+    "maximumReflectionRelativeResidual": "3.5702193472486559352e-91",
     "methodRoutes": [
       {
         "n": 49,
@@ -289,17 +304,21 @@
       "original": {
         "real": "0.66641831144925627046363209184549632",
         "imaginary": "-0.20366296564540797460234048645765641",
-        "phaseDegrees": "-16.993587102518830684424398445295786"
+        "phaseDegrees": "-16.993587102518830684424398445295786",
+        "quadrant": 4
       },
-      "secondary": {
+      "plus": {
         "real": "0.63493173854223588092856659135755219",
         "imaginary": "-0.060869963600754294487893527062730422",
-        "phaseDegrees": "-5.4761256732439643406994183387986096"
+        "phaseDegrees": "-5.4761256732439643406994183387986096",
+        "quadrant": 4
       },
-      "pair": [
-        4,
-        4
-      ]
+      "minus": {
+        "real": "4.3952493374934445928768729968215668",
+        "imaginary": "-2.3297600640871832645672056522076638",
+        "phaseDegrees": "-27.926418011088519157525306064230464",
+        "quadrant": 4
+      }
     },
     {
       "n": 91,
@@ -307,17 +326,21 @@
       "original": {
         "real": "4.0851065052670120113688435049966884",
         "imaginary": "-1.3992834116870390748354745525509825",
-        "phaseDegrees": "-18.908019561483795185350562611758486"
+        "phaseDegrees": "-18.908019561483795185350562611758486",
+        "quadrant": 4
       },
-      "secondary": {
+      "plus": {
         "real": "1.7630609659900440530635047353807236",
         "imaginary": "-0.20426142426990634649492469599672384",
-        "phaseDegrees": "-6.6086041889839629333824785912160891"
+        "phaseDegrees": "-6.6086041889839629333824785912160891",
+        "quadrant": 4
       },
-      "pair": [
-        4,
-        4
-      ]
+      "minus": {
+        "real": "22.058922656680734862554555950623307",
+        "imaginary": "-13.198137335799793280006811077471956",
+        "phaseDegrees": "-30.892626126594524828687561273748798",
+        "quadrant": 4
+      }
     },
     {
       "n": 95,
@@ -325,17 +348,21 @@
       "original": {
         "real": "0.34352978927376124454472304565505985",
         "imaginary": "0.21724540333483000135577203692211787",
-        "phaseDegrees": "32.30892269433511608544952728730579"
+        "phaseDegrees": "32.30892269433511608544952728730579",
+        "quadrant": 1
       },
-      "secondary": {
+      "plus": {
         "real": "0.58703588589913822958311521635984573",
         "imaginary": "-0.0062573760480701595844664435330720386",
-        "phaseDegrees": "-0.6107082539758434787020309777563201"
+        "phaseDegrees": "-0.6107082539758434787020309777563201",
+        "quadrant": 4
       },
-      "pair": [
-        1,
-        4
-      ]
+      "minus": {
+        "real": "3.6767569225348560457622017031830659",
+        "imaginary": "8.0791544724625402104011661453473288",
+        "phaseDegrees": "65.530107592514354205799251549426339",
+        "quadrant": 1
+      }
     },
     {
       "n": 96,
@@ -343,17 +370,21 @@
       "original": {
         "real": "-0.16619828126093060061095560719995274",
         "imaginary": "0.17000588210196301868210495072124099",
-        "phaseDegrees": "134.35113792275238922262814392733004"
+        "phaseDegrees": "134.35113792275238922262814392733004",
+        "quadrant": 2
       },
-      "secondary": {
+      "plus": {
         "real": "0.64657000066043932355664215503564092",
         "imaginary": "0.29782140118279730467451073921048674",
-        "phaseDegrees": "24.731620455146547536642550483221798"
+        "phaseDegrees": "24.731620455146547536642550483221798",
+        "quadrant": 1
       },
-      "pair": [
-        2,
-        1
-      ]
+      "minus": {
+        "real": "-4.7220389710616412900970369839123677",
+        "imaginary": "-9.7981319618970061064367590304539856",
+        "phaseDegrees": "-115.73093178964688656080356300368658",
+        "quadrant": 3
+      }
     },
     {
       "n": 97,
@@ -361,17 +392,21 @@
       "original": {
         "real": "1.3758497974564355982604633293590756",
         "imaginary": "2.0470891477803936708594010717655105",
-        "phaseDegrees": "56.094929537203763270917717909643223"
+        "phaseDegrees": "56.094929537203763270917717909643223",
+        "quadrant": 1
       },
-      "secondary": {
+      "plus": {
         "real": "1.0704471232783382004612486609474611",
         "imaginary": "0.4836653181343801523329359077072695",
-        "phaseDegrees": "24.31511088194930647973097177575193"
+        "phaseDegrees": "24.31511088194930647973097177575193",
+        "quadrant": 1
       },
-      "pair": [
-        1,
-        1
-      ]
+      "minus": {
+        "real": "0.5790799614391072496576236716207793",
+        "imaginary": "18.12518580355662348841750742489614",
+        "phaseDegrees": "88.170084646405261156005282645921363",
+        "quadrant": 1
+      }
     },
     {
       "n": 98,
@@ -379,17 +414,21 @@
       "original": {
         "real": "2.2777550343551788048883183336391845",
         "imaginary": "-0.94145750106469247942717887088255924",
-        "phaseDegrees": "-22.456625765846880506227522593604194"
+        "phaseDegrees": "-22.456625765846880506227522593604194",
+        "quadrant": 4
       },
-      "secondary": {
+      "plus": {
         "real": "1.2875922733300579963854322240609831",
         "imaginary": "0.10657354285200595085036323295336644",
-        "phaseDegrees": "4.7315654197898407245720622053490102"
+        "phaseDegrees": "4.7315654197898407245720622053490102",
+        "quadrant": 1
       },
-      "pair": [
-        4,
-        1
-      ]
+      "minus": {
+        "real": "13.126921644578127864077646533657791",
+        "imaginary": "-15.289767450603211469110728979190153",
+        "phaseDegrees": "-49.352494082255048331412377710594507",
+        "quadrant": 4
+      }
     },
     {
       "n": 99,
@@ -397,17 +436,21 @@
       "original": {
         "real": "0.11507381562464694794100619763145579",
         "imaginary": "0.57586130006938994757524512938274372",
-        "phaseDegrees": "78.699485915385421499212914986708006"
+        "phaseDegrees": "78.699485915385421499212914986708006",
+        "quadrant": 1
       },
-      "secondary": {
+      "plus": {
         "real": "1.1499053940500655867031837905970785",
         "imaginary": "0.077241957255082544200745156061373434",
-        "phaseDegrees": "3.8429246224857216594416597310904504"
+        "phaseDegrees": "3.8429246224857216594416597310904504",
+        "quadrant": 1
       },
-      "pair": [
-        1,
-        1
-      ]
+      "minus": {
+        "real": "-16.299989141810022493467609791888913",
+        "imaginary": "8.0045461147950401034702280727295715",
+        "phaseDegrees": "153.84541737172572038814022731507794",
+        "quadrant": 2
+      }
     }
   ],
   "independentSectorCounts": [
@@ -432,7 +475,7 @@
       "composites": 32
     }
   ],
-  "independentPairCounts": [
+  "independentPlusPairCounts": [
     {
       "pair": [
         1,
@@ -482,19 +525,219 @@
       "composites": 24
     }
   ],
-  "minimalFinitePairErrors": 25,
+  "independentMinusPairCounts": [
+    {
+      "pair": [
+        1,
+        1
+      ],
+      "primes": 7,
+      "composites": 22
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "primes": 2,
+      "composites": 11
+    },
+    {
+      "pair": [
+        1,
+        4
+      ],
+      "primes": 1,
+      "composites": 0
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "primes": 3,
+      "composites": 3
+    },
+    {
+      "pair": [
+        3,
+        2
+      ],
+      "primes": 0,
+      "composites": 3
+    },
+    {
+      "pair": [
+        3,
+        3
+      ],
+      "primes": 1,
+      "composites": 3
+    },
+    {
+      "pair": [
+        4,
+        1
+      ],
+      "primes": 1,
+      "composites": 3
+    },
+    {
+      "pair": [
+        4,
+        3
+      ],
+      "primes": 3,
+      "composites": 10
+    },
+    {
+      "pair": [
+        4,
+        4
+      ],
+      "primes": 7,
+      "composites": 19
+    }
+  ],
+  "independentTripleCounts": [
+    {
+      "triple": [
+        1,
+        1,
+        1
+      ],
+      "primes": 6,
+      "composites": 18
+    },
+    {
+      "triple": [
+        1,
+        1,
+        2
+      ],
+      "primes": 0,
+      "composites": 10
+    },
+    {
+      "triple": [
+        1,
+        1,
+        4
+      ],
+      "primes": 1,
+      "composites": 0
+    },
+    {
+      "triple": [
+        1,
+        4,
+        1
+      ],
+      "primes": 1,
+      "composites": 4
+    },
+    {
+      "triple": [
+        1,
+        4,
+        2
+      ],
+      "primes": 2,
+      "composites": 1
+    },
+    {
+      "triple": [
+        2,
+        1,
+        3
+      ],
+      "primes": 3,
+      "composites": 3
+    },
+    {
+      "triple": [
+        3,
+        4,
+        2
+      ],
+      "primes": 0,
+      "composites": 3
+    },
+    {
+      "triple": [
+        3,
+        4,
+        3
+      ],
+      "primes": 1,
+      "composites": 3
+    },
+    {
+      "triple": [
+        4,
+        1,
+        3
+      ],
+      "primes": 0,
+      "composites": 4
+    },
+    {
+      "triple": [
+        4,
+        1,
+        4
+      ],
+      "primes": 2,
+      "composites": 4
+    },
+    {
+      "triple": [
+        4,
+        4,
+        1
+      ],
+      "primes": 1,
+      "composites": 3
+    },
+    {
+      "triple": [
+        4,
+        4,
+        3
+      ],
+      "primes": 3,
+      "composites": 6
+    },
+    {
+      "triple": [
+        4,
+        4,
+        4
+      ],
+      "primes": 5,
+      "composites": 15
+    }
+  ],
+  "minimalFinitePartitionErrors": {
+    "original": 25,
+    "plusPair": 25,
+    "minusPair": 24,
+    "triple": 23
+  },
   "openBlockerCount": 0,
   "primarySources": [
     "https://dlmf.nist.gov/25.2.E1",
     "https://dlmf.nist.gov/25.10.E1",
     "https://dlmf.nist.gov/25.10.E2",
+    "https://dlmf.nist.gov/25.4.E2",
     "https://dlmf.nist.gov/27.4.E12",
     "https://annals.math.princeton.edu/2004/160-2/p12"
   ],
   "limitations": [
-    "No directed-rounding/interval certificate or independent-library comparison.",
-    "No zeta-zero certification, finite RH verification, global RH proof or new prime algorithm.",
-    "The finite mixed-sector result refutes perfect classifiers using only these fixed sectors/pairs on this range, not all richer phase-based methods.",
-    "PNG visual review covers these static figures only; no SVG, video or native-app rendering review is claimed."
+    "No interval certificate or independent-library evaluation.",
+    "The minus reflection check is analytic/numerical consistency, not a distinct independent evaluator.",
+    "No zeta-zero certification, finite/global RH result, validated new prime classifier, or measured speed advantage.",
+    "Finite partition failures do not rule out every richer future zeta-based method; in-sample24/23error fits do not demonstrate generalization.",
+    "StaticPNG inspection only; noSVG,video,native-app or full production pipeline review."
   ]
 }

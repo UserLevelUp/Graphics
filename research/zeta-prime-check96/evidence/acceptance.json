@@ -1,0 +1,102 @@
+{
+  "traceId": "graph.primes.zeta_check96.acceptance",
+  "status": "accepted",
+  "acceptedAtUtc": "2026-11-15T14:10:44.480654+00:00",
+  "sourceCheckpointBeforeMinus": "baea29d",
+  "mapping": {
+    "sigma": "0.5",
+    "secondarySigma": "1.5",
+    "secondaryFunction": "zeta(s+1)",
+    "minusSigma": "-0.5",
+    "minusFunction": "zeta(s-1)",
+    "height": "integer n",
+    "target": "0",
+    "basisRadians": "0",
+    "justification": "Explicit test interpretation; integer height is not a theorem mapping prime labels to zeros."
+  },
+  "strategies": [
+    {
+      "rule": "Original phase matches 97",
+      "truePositives": 10,
+      "falsePositives": 33,
+      "falseNegatives": 15,
+      "falsePositivesRemovedFromOriginal": 0,
+      "truePositivesLostFromOriginal": 0,
+      "selectedPrimeFraction": 0.23255813953488372
+    },
+    {
+      "rule": "Original and s+1 phases match 97",
+      "truePositives": 7,
+      "falsePositives": 28,
+      "falseNegatives": 18,
+      "falsePositivesRemovedFromOriginal": 5,
+      "truePositivesLostFromOriginal": 3,
+      "selectedPrimeFraction": 0.2
+    },
+    {
+      "rule": "Original and s-1 phases match 97",
+      "truePositives": 7,
+      "falsePositives": 22,
+      "falseNegatives": 18,
+      "falsePositivesRemovedFromOriginal": 11,
+      "truePositivesLostFromOriginal": 3,
+      "selectedPrimeFraction": 0.2413793103448276
+    },
+    {
+      "rule": "Original, s+1 and s-1 phases match 97",
+      "truePositives": 6,
+      "falsePositives": 18,
+      "falseNegatives": 19,
+      "falsePositivesRemovedFromOriginal": 15,
+      "truePositivesLostFromOriginal": 4,
+      "selectedPrimeFraction": 0.25
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/comparison.json",
+      "sha256": "e3fb31fcc8561a321ef8101d83a91b5ba5cde60163756f0b1bc05e545aa7d93f"
+    },
+    {
+      "path": "evidence/review.json",
+      "sha256": "1f6fdfe242ca2ae1579d39fe9b8ca4d789e4effbb9970f3b4053fe73e068d0ef"
+    }
+  ],
+  "source": [
+    {
+      "path": "check_phase.py",
+      "sha256": "daa82cb57f152c58147d7249a936f9ee8be0a06d1b73e52048b0626da1d7a0e3"
+    },
+    {
+      "path": "plot_phase.py",
+      "sha256": "918ffeb1cb144adcb08168dbf53bdaecd872a8df16a214a8c96c44aa6ec0a0b5"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ae4c793adae39613131fd77d96661affe9a9adc0d42e1077f5d935bf9ef2a987"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "da7307a6ad1353fe40658179b53ed0b92cb6c20130e1f57aec5ea82a122a5918"
+    }
+  ],
+  "figures": [
+    {
+      "path": "figures/zeta-both-shifts-96-97.png",
+      "sha256": "94147582a8402efe5e2245201da6c29dc811d1dd811634fce4977541e68b7ed0"
+    },
+    {
+      "path": "figures/zeta-phase-96-97.png",
+      "sha256": "63ac0633902504625c05dd037c28917ff3db7b0a2a0d861af6fdb350ed2932db"
+    },
+    {
+      "path": "figures/zeta-shift-96-97.png",
+      "sha256": "bb272d46087ee10984f4c902ad99f70881b29dfdc63b4e519d413ddd4c62f511"
+    }
+  ],
+  "scope": "Exact labels; numerically checked zeta phase at integer heights0..100 on real parts0.5,1.5,-0.5. Finite fixed color rules, not an efficient primality algorithm or RH certificate.",
+  "reviewedChecks": 13,
+  "openBlockers": 0,
+  "priorAcceptedPresentationUnmodified": true,
+  "priorReview": "evidence/review-plus-one-superseded.json"
+}

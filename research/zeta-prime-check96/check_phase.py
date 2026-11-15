@@ -53,6 +53,8 @@ def main():
     rows = []
     max_precision_difference = mp.mpf(0)
     max_shifted_difference = mp.mpf(0)
+    max_minus_difference = mp.mpf(0)
+    max_reflection_relative_residual = mp.mpf(0)
     max_hardy_residual = mp.mpf(0)
     for n in range(101):
         low, value = evaluate(n, 50), evaluate(n, 80)
@@ -64,6 +66,16 @@ def main():
         assert shifted_difference < mp.mpf('1e-45')
         max_shifted_difference = max(max_shifted_difference,shifted_difference)
         assert quadrant(shifted_low) == quadrant(shifted)
+        minus_low, minus = evaluate(n,50,sigma='-0.5'),evaluate(n,80,sigma='-0.5')
+        minus_difference=abs(minus-minus_low)
+        assert minus_difference < mp.mpf('1e-44')
+        max_minus_difference=max(max_minus_difference,minus_difference)
+        assert quadrant(minus_low)==quadrant(minus)
+        u=mp.mpc('-0.5',n)
+        chi=mp.power(mp.pi,u-mp.mpf('0.5'))*mp.gamma((1-u)/2)/mp.gamma(u/2)
+        reflection_error=abs(minus-chi*mp.conj(shifted))/max(1,abs(minus))
+        assert reflection_error < mp.mpf('1e-75')
+        max_reflection_relative_residual=max(max_reflection_relative_residual,reflection_error)
         max_precision_difference = max(max_precision_difference, difference)
         theta = mp.siegeltheta(n)
         hardy = mp.exp(1j * theta) * value
@@ -77,7 +89,10 @@ def main():
             hardyZ=mp.nstr(hardy.real, 35),
             shifted=dict(expression='zeta(3/2+i*n)',real=mp.nstr(shifted.real,35),
                 imaginary=mp.nstr(shifted.imag,35),phaseRadians=mp.nstr(mp.arg(shifted),35),
-                phaseDegrees=mp.nstr(mp.arg(shifted)*180/mp.pi,35),quadrant=quadrant(shifted))))
+                phaseDegrees=mp.nstr(mp.arg(shifted)*180/mp.pi,35),quadrant=quadrant(shifted)),
+            minus=dict(expression='zeta(-1/2+i*n)',real=mp.nstr(minus.real,35),
+                imaginary=mp.nstr(minus.imag,35),phaseRadians=mp.nstr(mp.arg(minus),35),
+                phaseDegrees=mp.nstr(mp.arg(minus)*180/mp.pi,35),quadrant=quadrant(minus))))
     numerical_seconds = time.perf_counter() - started
     # A second evaluation method, within the same library, for declared examples.
     method_checks = []
@@ -117,6 +132,31 @@ def main():
                 primeCount=len(primes),compositeCount=len(composites)))
     matches97 = next(r for r in pairs if (r['original'],r['shifted'])==(rows[97]['quadrant'],rows[97]['shifted']['quadrant']))
     primary_matches=by_quadrant[rows[97]['quadrant']-1]
+    minus_pairs=[]
+    for first in range(1,5):
+        for second in range(1,5):
+            members=[r for r in rows if r['n']>=2 and r['quadrant']==first and r['minus']['quadrant']==second]
+            if not members:continue
+            primes=[r['n'] for r in members if r['classification']=='prime']
+            composites=[r['n'] for r in members if r['classification']=='composite']
+            minus_pairs.append(dict(original=first,minus=second,primes=primes,composites=composites,
+                primeCount=len(primes),compositeCount=len(composites)))
+    minus_match=next(r for r in minus_pairs if (r['original'],r['minus'])==(rows[97]['quadrant'],rows[97]['minus']['quadrant']))
+    triples={}
+    for r in rows[2:]:
+        key=(r['quadrant'],r['shifted']['quadrant'],r['minus']['quadrant'])
+        entry=triples.setdefault(key,dict(quadrants=list(key),primes=[],composites=[]))
+        entry['primes' if r['classification']=='prime' else 'composites'].append(r['n'])
+    triple_match=triples[(rows[97]['quadrant'],rows[97]['shifted']['quadrant'],rows[97]['minus']['quadrant'])]
+    def selection(label,primes,composites):
+        return dict(rule=label,truePositives=len(primes),falsePositives=len(composites),falseNegatives=25-len(primes),
+            falsePositivesRemovedFromOriginal=len(primary_matches['composites'])-len(composites),
+            truePositivesLostFromOriginal=len(primary_matches['primes'])-len(primes),
+            selectedPrimeFraction=len(primes)/(len(primes)+len(composites)))
+    strategies=[selection('Original phase matches 97',primary_matches['primes'],primary_matches['composites']),
+        selection('Original and s+1 phases match 97',matches97['primes'],matches97['composites']),
+        selection('Original and s-1 phases match 97',minus_match['primes'],minus_match['composites']),
+        selection('Original, s+1 and s-1 phases match 97',triple_match['primes'],triple_match['composites'])]
     real_values = []
     for n in (96,97):
         value = mp.zeta(n)
@@ -128,11 +168,13 @@ def main():
     assert (count(96),count(97),p25,next97)==(24,25,97,101)
     report = dict(schema='graph-zeta-prime-check-v1',traceId='graph.primes.zeta_check96',
         status='passed',createdUtc=datetime.now(timezone.utc).isoformat(),
-        mapping=dict(sigma='0.5',secondarySigma='1.5',secondaryFunction='zeta(s+1)',height='integer n',target='0',basisRadians='0',
+        mapping=dict(sigma='0.5',secondarySigma='1.5',secondaryFunction='zeta(s+1)',minusSigma='-0.5',minusFunction='zeta(s-1)',height='integer n',target='0',basisRadians='0',
             justification='Explicit test interpretation; integer height is not a theorem mapping prime labels to zeros.'),
         method=dict(library='mpmath',version=mp.__version__,precisions=[50,80],
             comparisonMethods=['default libmp.mpc_zeta (Borwein)','explicit Euler-Maclaurin path'],
             methodRouting='Source-inspected mpmath 1.3.0: the explicit borwein setting does not select the fast path; use default versus the explicit Euler-Maclaurin path at these heights.',
+            methodComparisonSigmas=['0.5','1.5'],
+            minusChecks='50/80-digit agreement and functional-equation consistency; the reflection check is not an independent algorithm.',
             numericalSeconds=numerical_seconds,intervalCertified=False),
         sourceInputs=[dict(path=str(p.relative_to(REPO)).replace('\\','/'),sha256=digest(p)) for p in
             [old,REPO/'Graphics/PrimeUnwrap.cs',REPO/'Graphics/PrimePhaseExperiment.cs',
@@ -141,6 +183,11 @@ def main():
         libraryImplementationInputs=[dict(path=name,sha256=digest(Path(mp.__file__).parent/name)) for name in
             ('functions/zeta.py','libmp/gammazeta.py','ctx_mp.py')],
         rows=rows,quadrants=by_quadrant,methodChecks=method_checks,quadrantPairs=pairs,
+        minusQuadrantPairs=minus_pairs,quadrantTriples=list(triples.values()),strategyComparison=strategies,
+        minusShiftComparison=dict(pair=[minus_match['original'],minus_match['minus']],
+            unavoidableErrorsForAnyPairOnlyClassifier=sum(min(r['primeCount'],r['compositeCount']) for r in minus_pairs)),
+        tripleComparison=dict(triple=triple_match['quadrants'],
+            unavoidableErrorsForAnyTripleOnlyClassifier=sum(min(len(r['primes']),len(r['composites'])) for r in triples.values())),
         inputShiftComparison=dict(candidateRule='Same unrotated quadrant pair as n=97',
             pair=[matches97['original'],matches97['shifted']],
             truePositives=len(matches97['primes']),falsePositives=len(matches97['composites']),
@@ -152,6 +199,8 @@ def main():
             exhaustiveProperDivisorCrosscheck=True,quadrantsStableAcrossPrecisions=True,
             maximumPrecisionDifference=mp.nstr(max_precision_difference,20),
             maximumSecondaryPrecisionDifference=mp.nstr(max_shifted_difference,20),
+            maximumMinusPrecisionDifference=mp.nstr(max_minus_difference,20),
+            maximumReflectionRelativeResidual=mp.nstr(max_reflection_relative_residual,20),
             maximumHardyImaginaryResidual=mp.nstr(max_hardy_residual,20)),
         exactExamples=[dict(n=n,remainders=[dict(divisor=d,remainder=n%d) for d in (2,3,5,7)],
             allTrialDivisors=list(range(2,isqrt(n)+1)),indicator=prime_indicator(n)) for n in (96,97)],
@@ -165,9 +214,10 @@ def main():
                 'High-precision agreement is numerical evidence, not an interval-certified zero or RH proof.',
                 'No new prime formula, speedup, or zeta-based prime classifier is established.'])
     (args.output/'comparison.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
-    print(json.dumps(dict(status='passed',examples=[r for r in rows if r['n'] in (95,96,97,98,99)],
-        quadrantCounts=[{k:r[k] for k in ('quadrant','primeCount','compositeCount')} for r in by_quadrant],
-        unavoidableErrors=forced_errors,inputShiftComparison=report['inputShiftComparison'],
+    print(json.dumps(dict(status='passed',examples=[dict(n=r['n'],classification=r['classification'],
+        phase=float(r['phaseDegrees']),plusPhase=float(r['shifted']['phaseDegrees']),minusPhase=float(r['minus']['phaseDegrees']))
+        for r in rows if r['n'] in (95,96,97,98,99)],strategyComparison=strategies,
+        minusShiftComparison=report['minusShiftComparison'],tripleComparison=report['tripleComparison'],
         maximumPrecisionDifference=report['checks']['maximumPrecisionDifference']),indent=2))
 
 

@@ -1,0 +1,73 @@
+{
+  "blocked": [],
+  "bubble_uuid": "01a1df7f-9424-7735-9c62-b642f2fa8a59",
+  "completed_slices": [
+    "comparison"
+  ],
+  "conflicts": [],
+  "contract_status": "declared-gates-satisfied",
+  "counts": {
+    "blocked": 0,
+    "conflicting": 0,
+    "covered": 1,
+    "pending": 0,
+    "required": 1,
+    "stale_contract": 0
+  },
+  "covered": [
+    "comparison"
+  ],
+  "current_slice": null,
+  "evidence_status": "declared",
+  "gate_evidence": [
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/acceptance.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/review.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "comparison",
+      "status": "declared"
+    }
+  ],
+  "goal": "Test actual zeta phase at heights 96 and 97 against exact prime labels and composite controls",
+  "layers": [
+    "comparison@three-lines-reviewed-20261115"
+  ],
+  "manifest": "graph.primes.zeta_check96.warp-map.json",
+  "pending": [],
+  "ready_slices": [],
+  "root": "\\\\?\\C:\\src\\graph\\research\\zeta-prime-check96\\warps",
+  "schema": "warp-progress-v1",
+  "slices": [
+    {
+      "contract_hash": "contract:graph.primes.zeta_check96.comparison:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "comparison",
+      "slice_uuid": "01a1df7f-9424-7f4e-936b-0246fa1d9b72",
+      "state": "complete"
+    }
+  ],
+  "stale_contract": [],
+  "state": "complete",
+  "warnings": [],
+  "warp_id": "graph.primes.zeta_check96"
+}

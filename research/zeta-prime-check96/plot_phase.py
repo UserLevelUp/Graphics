@@ -65,6 +65,7 @@ def main():
     fig.savefig(a.output/'zeta-phase-96-97.svg')
     plt.close(fig)
     render_shift(data,a.output,palette)
+    render_all_shifts(data,a.output,palette)
 
 
 def render_shift(data,out,palette):
@@ -117,6 +118,49 @@ def render_shift(data,out,palette):
     fig.subplots_adjust(left=.075,right=.97,top=.86,bottom=.16)
     fig.savefig(out/'zeta-shift-96-97.png',dpi=150)
     fig.savefig(out/'zeta-shift-96-97.svg')
+    plt.close(fig)
+
+
+def render_all_shifts(data,out,palette):
+    fig=plt.figure(figsize=(14,10),facecolor='#f6f8fc')
+    grid=fig.add_gridspec(2,2,height_ratios=[1.06,1],hspace=.43,wspace=.26)
+    fig.suptitle('Testing both zeta input shifts',x=.06,ha='left',fontsize=24,fontweight='bold',y=.97)
+    fig.text(.06,.92,r'$s=\frac{1}{2}+in$  |  compare $\zeta(s)$, $\zeta(s+1)$ and $\zeta(s-1)$ with the same four-color rule.',fontsize=13,color='#42526c')
+    ax=fig.add_subplot(grid[0,0]);ax.set_title(r'New comparison: $\zeta(s-1)$',loc='left',pad=12,fontweight='bold')
+    ax.axhline(0,color='#9aa6b8',lw=.9);ax.axvline(0,color='#9aa6b8',lw=.9)
+    for n in (95,96,97,98,99):
+        r=data['rows'][n]['minus'];x,y=float(r['real']),float(r['imaginary'])
+        ax.plot(x,y,'o',ms=10,color=palette[r['quadrant']-1],markeredgecolor='white')
+        ax.annotate(str(n),(x,y),xytext=(9,7),textcoords='offset points',fontsize=13,fontweight='bold')
+    ax.set(xlim=(-20,19),ylim=(-19,23),xlabel='Real part of output',ylabel='Imaginary part of output')
+    ax.grid(alpha=.12)
+    ax=fig.add_subplot(grid[0,1]);ax.axis('off');ax.set_title('The three phases, in degrees',loc='left',pad=12,fontweight='bold')
+    table_rows=[]
+    for n in (95,96,97,98,99):
+        r=data['rows'][n]
+        table_rows.append([n,r['classification'],f"{float(r['phaseDegrees']):.2f}",f"{float(r['shifted']['phaseDegrees']):.2f}",f"{float(r['minus']['phaseDegrees']):.2f}"])
+    table=ax.table(cellText=table_rows,colLabels=['n','Exact class','Original','s + 1','s − 1'],cellLoc='left',colLoc='left',bbox=[0,.30,1,.70],colWidths=[.09,.29,.22,.2,.2])
+    table.auto_set_font_size(False);table.set_fontsize(12)
+    for (r,c),cell in table.get_celld().items():
+        cell.set_edgecolor('#d9e0ec');cell.set_linewidth(.7);cell.set_facecolor('#e6ebf5' if r==0 else 'white')
+        if r==0:cell.set_text_props(weight='bold')
+    ax.text(0,.18,'The s − 1 pair rejects composite 99,\nbut composite 95 still matches prime 97.',fontsize=13,fontweight='bold',va='top',linespacing=1.5)
+    ax=fig.add_subplot(grid[1,0]);strategies=data['strategyComparison'];x=np.arange(4);w=.25
+    for shift,key,label,color in [(-w,'truePositives','Primes kept','#9b62c4'),(0,'falsePositives','Composites kept','#697a93'),(w,'falseNegatives','Primes missed','#c28a46')]:
+        values=[r[key] for r in strategies];ax.bar(x+shift,values,w,label=label,color=color)
+        for i,value in enumerate(values):ax.text(i+shift,value+.7,str(value),ha='center',fontsize=10)
+    ax.set(xticks=x,xticklabels=['Original','With s+1','With s−1','All three'],ylim=(0,43),ylabel='Number of integers')
+    ax.set_title('Match 97’s color tuple: integers 2–100',loc='left',pad=12,fontweight='bold')
+    ax.legend(frameon=False,loc='upper right',fontsize=9)
+    ax=fig.add_subplot(grid[1,1]);ax.axis('off');ax.set_title('The tradeoff',loc='left',pad=12,fontweight='bold')
+    ax.text(0,.95,'Original + s − 1:\n7 primes kept, 22 composites kept.\n18 of the 25 primes are missed.',fontsize=14,va='top',linespacing=1.5)
+    ax.text(0,.55,'All three colors:\n6 primes kept, 18 composites kept.\n19 of the 25 primes are missed.',fontsize=14,va='top',linespacing=1.5)
+    ax.text(0,.16,'These filters shrink the set, but do not\nestablish primality or a fast nth-prime rule.',fontsize=12,fontweight='bold',va='top',linespacing=1.5)
+    fig.text(.06,.052,'Zeta evaluations receive no prior-prime list. Exact divisibility supplies the comparison labels only.',fontsize=11,color='#42526c')
+    fig.text(.06,.027,'50/80-digit numerical checks. Finite, unrotated quadrant rules; no interval or RH certificate. Trace: graph.primes.zeta_check96',fontsize=10,color='#42526c')
+    fig.subplots_adjust(left=.075,right=.97,top=.86,bottom=.145)
+    fig.savefig(out/'zeta-both-shifts-96-97.png',dpi=150)
+    fig.savefig(out/'zeta-both-shifts-96-97.svg')
     plt.close(fig)
 
 if __name__=='__main__':main()

@@ -1,6 +1,6 @@
 # 96, 97, and an actual zeta-phase test
 
-**Finding:** comparing the current four-sector phase of ζ(s) with ζ(s+1) removes five composite matches to 97, but also removes three prime matches on integers 2–100. The surviving color pair still contains seven primes and 28 composites. This paired rule is not a reliable prime test. This is useful counterevidence to a specific proposed shortcut, not evidence against every conceivable use of zeta.
+**Finding:** the requested ζ(s+1) and ζ(s−1) comparisons change the candidate set, but do not produce a reliable prime test. Matching 97's original and s−1 colors retains seven primes and 22 composites on integers 2–100. Matching all three colors retains six primes and 18 composites while missing 19 primes. These calculations use no supplied list of preceding primes. The missing ingredient is a reliable connection between these phase features and primality. This is useful counterevidence to specific proposed shortcuts, not evidence against every conceivable use of zeta.
 
 ## Exact calculation first
 
@@ -69,6 +69,32 @@ Every observed pair still contains both classes:
 
 Thus even an arbitrary binary assignment of these observed pairs cannot classify all 99 integers correctly: its minimum is still 25 errors. This does not rule out a future rule using finer phase, magnitude, derivatives, more locations, or another justified transformation. Such a rule needs a mathematical basis, testing on unseen inputs, and a speed comparison; fitting the known labels on 0–100 would not establish a new prime algorithm.
 
+## Try the other shift: ζ(s−1)
+
+For s_n = 1/2 + in, the alternate input is s_n−1 = −1/2 + in. The same exact integer labels and unrotated quadrant rule are retained.
+
+- ζ(−1/2 + 96i) ≈ −4.7220389711 − 9.7981319619i, phase −115.73093179°, quadrant III.
+- ζ(−1/2 + 97i) ≈ 0.5790799614 + 18.1251858036i, phase 88.17008465°, quadrant I.
+
+The original/minus pair is (II,III) for 96 and (I,I) for 97. Composite 99 changes to (I,II), so it is rejected by a pair matching 97. But composite 95 has pair (I,I) and remains a false positive. Relative to original sector I alone, the minus shift rejects 11 composites and also three primes.
+
+| Rule: match 97's indicated colors | Primes kept | Composites kept | Primes missed | Prime share of selected numbers |
+|---|---:|---:|---:|---:|
+| ζ(s) only | 10 | 33 | 15 | 23.3% |
+| ζ(s), ζ(s+1) | 7 | 28 | 18 | 20.0% |
+| ζ(s), ζ(s−1) | 7 | 22 | 18 | 24.1% |
+| All three | 6 | 18 | 19 | 25.0% |
+
+For comparison, 25 of the 99 integers in 2–100 are prime, or about 25.3%. Removing candidates is not by itself an improvement: the retained set must become more informative and avoid losing primes if completeness is required. The three-color rule does not improve that prime fraction in this finite check.
+
+Unlike the plus pair, two occupied minus-pair cells happen to contain only one class in this finite sample. Even an arbitrary binary assignment of minus pairs still makes at least 24 errors; an arbitrary assignment of three-color tuples makes at least 23. Those are best in-sample fits over known labels, not predictions on unseen inputs, and neither gives exact classification. The tested rule throughout the main comparison remains matching 97's tuple, not these retrospective fits.
+
+The shifts are analytically related. The [functional equation](https://dlmf.nist.gov/25.4.E2) gives
+
+ζ(s−1) = χ(s−1) conjugate(ζ(s+1)), for s = 1/2 + it,
+
+where χ(u) = π^(u−1/2) Γ((1−u)/2) / Γ(u/2). Thus the minus output is determined by the plus output and a known rotation/scale. Its quantized color can provide an additional partition, but it is not independent arithmetic evidence. The recorded functional-equation check is numerical consistency, not an independent proof or evaluator.
+
 ## Equations that do not need a list of preceding primes
 
 A classical exact indicator for an integer m ≥ 2 is
@@ -95,7 +121,7 @@ python check_phase.py --output evidence
 python plot_phase.py --data evidence/comparison.json --output figures
 ```
 
-The exact label checks cover 101 integers and agree with the previously accepted certificate and an exhaustive proper-divisor cross-check. Zeta values on both vertical lines are compared at 50 and 80 digits; the examples also compare the default Borwein fast path with the explicit Euler–Maclaurin path in the same library. Source inspection found that mpmath 1.3.0 does not route the explicit `method='borwein'` setting through its fast path, so the comparison uses the default call instead. The superseded requested-method report is retained as historical evidence, not the accepted method comparison. This is numerical validation, not interval certification or independent-library validation. Neither zeta zeros nor RH are proved by this experiment. Use a working copy when rerunning to preserve archived evidence.
+The exact label checks cover 101 integers and agree with the previously accepted certificate and an exhaustive proper-divisor cross-check. Zeta values on all three vertical lines are compared at 50 and 80 digits. At real parts 0.5 and 1.5, the examples also compare the default Borwein fast path with the explicit Euler–Maclaurin path in the same library. The minus line is checked for precision agreement and functional-equation consistency; that relation is not an independent algorithm. Source inspection found that mpmath 1.3.0 does not route the explicit `method='borwein'` setting through its fast path, so the comparison uses the default call instead. The superseded requested-method report is retained as historical evidence, not the accepted method comparison. The earlier plus-only review is preserved and corresponds to source checkpoint `baea29d`; the final review covers the expanded comparison. This is numerical validation, not interval certification or independent-library validation. Neither zeta zeros nor RH are proved by this experiment. Use a working copy when rerunning to preserve archived evidence.
 
 The figure uses the current continuation palette: I green, II yellow, III purple, IV blue. The phase is current function phase, with no accumulated brush overwrite. Previous accepted media and certificates remain unchanged.
 
