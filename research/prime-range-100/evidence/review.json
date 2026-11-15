@@ -1,0 +1,140 @@
+{
+  "schema": "finite-prime-certificate-review-v1",
+  "traceId": "graph.primes.range100.review",
+  "status": "passed",
+  "reviewedAtUtc": "2026-11-15T12:11:12.830975+00:00",
+  "reviewer": "finite_prime_review independent agent",
+  "scope": "Manual proof/verifier inspection and independent exhaustive integer-divisor audit of every certificate row. This review does not cover later proof-note, video, phase-map or zeta-contour additions.",
+  "inputs": [
+    {
+      "path": "research/prime-range-100/prime_certificate.py",
+      "sha256": "53cec2e6c3845bdc8e9fa49422ab68f1a0c1d323b4ae3fa9c80a6af0198e4067"
+    },
+    {
+      "path": "research/prime-range-100/check_certificate.py",
+      "sha256": "2b41327bec64a3b3a65693cf40e96fbf6d589172b168bd863ace7b4678902df4"
+    },
+    {
+      "path": "research/prime-range-100/certificate.json",
+      "sha256": "b3181458e61e746bf096396bbc4bb6c5bc8ce3bc1f3baf62514bee8db923cd84"
+    },
+    {
+      "path": "research/prime-range-100/evidence/validation.json",
+      "sha256": "e12be130f91a240bc13c814ceb1ad0ee5e943419d3dd6a8ac70bc964b5d71b5e"
+    }
+  ],
+  "counts": {
+    "integers": 101,
+    "prime": 25,
+    "composite": 74,
+    "neither": 2
+  },
+  "primes": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47,
+    53,
+    59,
+    61,
+    67,
+    71,
+    73,
+    79,
+    83,
+    89,
+    97
+  ],
+  "proof": {
+    "lemma": "If n is composite and n>=2, write n=ab with 2<=a<=b. Then a*a<=n. A prime divisor p of a satisfies p*p<=n. For n<=100, p<=10, so p is one of 2,3,5,7.",
+    "primeCertificateRule": "Every required trial prime p with p*p<=n has an exact nonzero remainder. The lemma excludes compositeness; n>=2 is checked separately.",
+    "compositeCertificateRule": "Exact integers d,q satisfy 1<d<n, 1<q<n and d*q=n.",
+    "boundaryRule": "0 and 1 are neither prime nor composite.1 has one positive divisor and is a unit; a visualization switch must not silently relabel it prime.",
+    "completeness": "The verifier enforces exactly 101 ordered records, with row n containing exactly integer n, for every n from 0 through 100 inclusive."
+  },
+  "checks": [
+    {
+      "id": "all_rows_independent_definition",
+      "status": "passed",
+      "detail": "Independently enumerated every proper integer divisor d=2..n-1, without calling generate(), and matched all 101 classifications."
+    },
+    {
+      "id": "prime_remainders",
+      "status": "passed",
+      "detail": "Every prime row has exactly the required divisors from 2,3,5,7 under the inclusive integer test p*p<=n, with the exact positive remainder."
+    },
+    {
+      "id": "composite_witnesses",
+      "status": "passed",
+      "detail": "All 74 factor pairs are nontrivial and multiply exactly to their row integer."
+    },
+    {
+      "id": "square_and_endpoint_cases",
+      "status": "passed",
+      "detail": "49=7*7 is composite; 97 is prime; 100=2*50 is composite; 0 and 1 are neither."
+    },
+    {
+      "id": "verifier_logic",
+      "status": "passed",
+      "detail": "Exact integer types exclude bools in row indices, factors and remainders; unsupported bounds, incomplete divisor coverage and false factors cannot verify."
+    },
+    {
+      "id": "validation_script_scope",
+      "status": "passed",
+      "detail": "The independent cross-check enumerates every proper divisor rather than reusing the four-prime generator. Its oracle prediction fixture is explicitly an evaluator test, not a predictor."
+    },
+    {
+      "id": "additional_adversarial_checks",
+      "status": "passed",
+      "detail": "Seven additional malformed cases were independently submitted to verify(); all raised ValueError."
+    }
+  ],
+  "additionalAdversarialChecks": [
+    {
+      "id": "reordered_rows",
+      "rejected": true
+    },
+    {
+      "id": "zero_as_composite",
+      "rejected": true
+    },
+    {
+      "id": "one_as_composite",
+      "rejected": true
+    },
+    {
+      "id": "100_called_prime",
+      "rejected": true
+    },
+    {
+      "id": "boolean_factor",
+      "rejected": true
+    },
+    {
+      "id": "wrong_upper_bound",
+      "rejected": true
+    },
+    {
+      "id": "prime97_missing_remainder",
+      "rejected": true
+    }
+  ],
+  "futureBrushTest": "Freeze a computable color-to-prime rule and all rendering parameters before testing. Evaluate on a held-out range without supplying prime labels to the predictor. Compare forward/reverse draw order and resolution changes, or explicitly fix a canonical rendering; primality itself cannot depend on paint order.",
+  "openBlockerCount": 0,
+  "limits": [
+    "Elementary finite classification, not new mathematics, a proof-assistant artifact, or a result about zeta zeros or RH.",
+    "The certificate provides ground truth; it does not establish that brush colors predict primes.",
+    "The computational audit trusts Python integer arithmetic and the inspected verifier. The short divisor lemma supplies the mathematical justification."
+  ]
+}

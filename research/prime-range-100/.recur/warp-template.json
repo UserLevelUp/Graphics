@@ -1,0 +1,47 @@
+{
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "{warp}",
+  "goal": "{goal}",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "Exact finite integer classification on 0 through 100; no RH theorem or novelty claim.",
+    "Keep oracle-derived labels separate from future brush predictions.",
+    "Preserve prior accepted media and evidence; add a worked proof example before the final source card."
+  ],
+  "required_slices": [
+    {
+      "slice_id": "certificate",
+      "contract_hash": "contract:{warp}.certificate:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "presentation",
+      "contract_hash": "contract:{warp}.presentation:v1",
+      "depends_on": [
+        "certificate"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    },
+    {
+      "slice_id": "acceptance",
+      "contract_hash": "contract:{warp}.acceptance:v1",
+      "depends_on": [
+        "presentation"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0
+    }
+  ]
+}

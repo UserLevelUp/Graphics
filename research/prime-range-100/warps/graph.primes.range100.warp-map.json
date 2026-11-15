@@ -1,0 +1,51 @@
+{
+  "bubble_uuid": "01a1df1e-57a3-70ac-9a22-4cf910667f98",
+  "goal": "Explain a finite prime certificate and the rigorous route from phase colors to zero counting",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "Exact finite integer classification on 0 through 100; no RH theorem or novelty claim.",
+    "Keep oracle-derived labels separate from future brush predictions.",
+    "Preserve prior accepted media and evidence; add a worked proof example before the final source card."
+  ],
+  "required_slices": [
+    {
+      "contract_hash": "contract:graph.primes.range100.certificate:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "certificate",
+      "slice_uuid": "01a1df1e-57a3-7152-8139-d77d711c5343"
+    },
+    {
+      "contract_hash": "contract:graph.primes.range100.presentation:v1",
+      "depends_on": [
+        "certificate"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "presentation",
+      "slice_uuid": "01a1df1e-57a3-74db-8265-3007c6a312de"
+    },
+    {
+      "contract_hash": "contract:graph.primes.range100.acceptance:v1",
+      "depends_on": [
+        "presentation"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "acceptance",
+      "slice_uuid": "01a1df1e-57a3-7478-bb4c-5b8f2bfd781c"
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.primes.range100"
+}

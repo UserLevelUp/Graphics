@@ -1,0 +1,71 @@
+{
+  "traceId": "graph.primes.range100.presentation",
+  "baselineVideo": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\presentation-with-trail.mp4",
+  "baselineVideoSha256": "4e58f88f38bf084991a0e939d3752fd1292b8dd52bea395529bfaadaed1b87db",
+  "baselineProject": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\presentation-with-trail.aep",
+  "baselineProjectSha256": "e48fb6d0e334962067ce1d13d7a87f1fb2f86ce31a9a97fafcab9d96be8ad2e0",
+  "baselineSeconds": 264,
+  "insertAtSeconds": 252,
+  "insertSeconds": 56,
+  "totalSeconds": 320,
+  "scenes": [
+    {
+      "id": "finite_prime",
+      "title": "A rigorous finite example",
+      "duration": 28,
+      "narration": "From zero through one hundred, every composite has a prime divisor no larger than ten. Testing two, three, five and seven therefore gives a complete classification: twenty-five primes. Each label has an exact divisibility certificate. Violet displays the proved answers; it is not a color-based prediction.",
+      "claimStatus": "PROVED FINITE CLASSIFICATION — CLASSICAL MATHEMATICS",
+      "formulas": [
+        "n = ab, 2 ≤ a ≤ b  ⇒  a ≤ √n ≤ 10",
+        "Test q ∈ {2, 3, 5, 7} when q² ≤ n",
+        "97 mod (2, 3, 5, 7) = (1, 1, 2, 6)",
+        "91 = 7 × 13"
+      ],
+      "bubbles": [
+        "A precise finite claim",
+        "Check every integer",
+        "Prove the list is complete"
+      ],
+      "domainLabel": "INTEGER DOMAIN: 2 ≤ n ≤ 100"
+    },
+    {
+      "id": "phase_proof",
+      "title": "From phase colors to a zero count",
+      "duration": 28,
+      "narration": "Phase colors can guide us toward candidate zeros. Here the model function is simply z. Around the unit circle, it never vanishes and its phase makes one full turn, proving one zero inside. For zeta, rigorous bounds and complete zero counts are still needed. Brush trails alone do not supply them.",
+      "claimStatus": "EXACT MODEL: f(z) = z • ZETA CERTIFICATION IS FUTURE WORK",
+      "formulas": [
+        "z(t) = exp(it), 0 ≤ t ≤ 2π",
+        "|f(z(t))| = 1 > 0",
+        "Δ arg f = 2π; P = 0  ⇒  N = 1"
+      ],
+      "bubbles": [
+        "Use the current phase map",
+        "Certify the entire contour",
+        "Count all enclosed zeros"
+      ],
+      "footer": "For ζ: certify the contour, count zeros and poles, then establish critical-line membership.",
+      "contourDirection": "counterclockwise in the complex plane",
+      "screenParameterization": "x=cx+r*cos(t), y=cy-r*sin(t), 0<=t<=2*pi"
+    }
+  ],
+  "sourceCardInterval": [
+    308,
+    320
+  ],
+  "sources": [
+    {
+      "title": "DLMF argument principle",
+      "url": "https://dlmf.nist.gov/1.10.E9"
+    },
+    {
+      "title": "Wegert phase plots",
+      "url": "https://arxiv.org/abs/1007.2295"
+    }
+  ],
+  "limits": [
+    "Prime classification is exact, elementary and finite.",
+    "Phase diagram uses f(z)=z, not a new zeta computation.",
+    "No RH proof, new verified zero height, or independent brush prime prediction claimed."
+  ]
+}

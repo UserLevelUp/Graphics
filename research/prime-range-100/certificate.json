@@ -1,0 +1,896 @@
+{
+  "schema": "finite-prime-certificate-v1",
+  "traceId": "graph.primes.range100.certificate",
+  "lower": 0,
+  "upper": 100,
+  "trialPrimes": [
+    2,
+    3,
+    5,
+    7
+  ],
+  "records": [
+    {
+      "n": 0,
+      "classification": "neither",
+      "reason": "zero"
+    },
+    {
+      "n": 1,
+      "classification": "neither",
+      "reason": "unit"
+    },
+    {
+      "n": 2,
+      "classification": "prime",
+      "remainders": []
+    },
+    {
+      "n": 3,
+      "classification": "prime",
+      "remainders": []
+    },
+    {
+      "n": 4,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 2
+    },
+    {
+      "n": 5,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 3
+    },
+    {
+      "n": 7,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 4
+    },
+    {
+      "n": 9,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 3
+    },
+    {
+      "n": 10,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 5
+    },
+    {
+      "n": 11,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 2
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 6
+    },
+    {
+      "n": 13,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 1
+        }
+      ]
+    },
+    {
+      "n": 14,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 7
+    },
+    {
+      "n": 15,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 5
+    },
+    {
+      "n": 16,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 8
+    },
+    {
+      "n": 17,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 2
+        }
+      ]
+    },
+    {
+      "n": 18,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 9
+    },
+    {
+      "n": 19,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 1
+        }
+      ]
+    },
+    {
+      "n": 20,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 10
+    },
+    {
+      "n": 21,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 7
+    },
+    {
+      "n": 22,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 11
+    },
+    {
+      "n": 23,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 2
+        }
+      ]
+    },
+    {
+      "n": 24,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 12
+    },
+    {
+      "n": 25,
+      "classification": "composite",
+      "divisor": 5,
+      "cofactor": 5
+    },
+    {
+      "n": 26,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 13
+    },
+    {
+      "n": 27,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 9
+    },
+    {
+      "n": 28,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 14
+    },
+    {
+      "n": 29,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 2
+        },
+        {
+          "divisor": 5,
+          "remainder": 4
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 15
+    },
+    {
+      "n": 31,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 1
+        },
+        {
+          "divisor": 5,
+          "remainder": 1
+        }
+      ]
+    },
+    {
+      "n": 32,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 16
+    },
+    {
+      "n": 33,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 11
+    },
+    {
+      "n": 34,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 17
+    },
+    {
+      "n": 35,
+      "classification": "composite",
+      "divisor": 5,
+      "cofactor": 7
+    },
+    {
+      "n": 36,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 18
+    },
+    {
+      "n": 37,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 1
+        },
+        {
+          "divisor": 5,
+          "remainder": 2
+        }
+      ]
+    },
+    {
+      "n": 38,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 19
+    },
+    {
+      "n": 39,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 13
+    },
+    {
+      "n": 40,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 20
+    },
+    {
+      "n": 41,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 2
+        },
+        {
+          "divisor": 5,
+          "remainder": 1
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 21
+    },
+    {
+      "n": 43,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 1
+        },
+        {
+          "divisor": 5,
+          "remainder": 3
+        }
+      ]
+    },
+    {
+      "n": 44,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 22
+    },
+    {
+      "n": 45,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 15
+    },
+    {
+      "n": 46,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 23
+    },
+    {
+      "n": 47,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 2
+        },
+        {
+          "divisor": 5,
+          "remainder": 2
+        }
+      ]
+    },
+    {
+      "n": 48,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 24
+    },
+    {
+      "n": 49,
+      "classification": "composite",
+      "divisor": 7,
+      "cofactor": 7
+    },
+    {
+      "n": 50,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 25
+    },
+    {
+      "n": 51,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 17
+    },
+    {
+      "n": 52,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 26
+    },
+    {
+      "n": 53,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 2
+        },
+        {
+          "divisor": 5,
+          "remainder": 3
+        },
+        {
+          "divisor": 7,
+          "remainder": 4
+        }
+      ]
+    },
+    {
+      "n": 54,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 27
+    },
+    {
+      "n": 55,
+      "classification": "composite",
+      "divisor": 5,
+      "cofactor": 11
+    },
+    {
+      "n": 56,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 28
+    },
+    {
+      "n": 57,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 19
+    },
+    {
+      "n": 58,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 29
+    },
+    {
+      "n": 59,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 2
+        },
+        {
+          "divisor": 5,
+          "remainder": 4
+        },
+        {
+          "divisor": 7,
+          "remainder": 3
+        }
+      ]
+    },
+    {
+      "n": 60,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 30
+    },
+    {
+      "n": 61,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 1
+        },
+        {
+          "divisor": 5,
+          "remainder": 1
+        },
+        {
+          "divisor": 7,
+          "remainder": 5
+        }
+      ]
+    },
+    {
+      "n": 62,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 31
+    },
+    {
+      "n": 63,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 21
+    },
+    {
+      "n": 64,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 32
+    },
+    {
+      "n": 65,
+      "classification": "composite",
+      "divisor": 5,
+      "cofactor": 13
+    },
+    {
+      "n": 66,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 33
+    },
+    {
+      "n": 67,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 1
+        },
+        {
+          "divisor": 5,
+          "remainder": 2
+        },
+        {
+          "divisor": 7,
+          "remainder": 4
+        }
+      ]
+    },
+    {
+      "n": 68,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 34
+    },
+    {
+      "n": 69,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 23
+    },
+    {
+      "n": 70,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 35
+    },
+    {
+      "n": 71,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 2
+        },
+        {
+          "divisor": 5,
+          "remainder": 1
+        },
+        {
+          "divisor": 7,
+          "remainder": 1
+        }
+      ]
+    },
+    {
+      "n": 72,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 36
+    },
+    {
+      "n": 73,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 1
+        },
+        {
+          "divisor": 5,
+          "remainder": 3
+        },
+        {
+          "divisor": 7,
+          "remainder": 3
+        }
+      ]
+    },
+    {
+      "n": 74,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 37
+    },
+    {
+      "n": 75,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 25
+    },
+    {
+      "n": 76,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 38
+    },
+    {
+      "n": 77,
+      "classification": "composite",
+      "divisor": 7,
+      "cofactor": 11
+    },
+    {
+      "n": 78,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 39
+    },
+    {
+      "n": 79,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 1
+        },
+        {
+          "divisor": 5,
+          "remainder": 4
+        },
+        {
+          "divisor": 7,
+          "remainder": 2
+        }
+      ]
+    },
+    {
+      "n": 80,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 40
+    },
+    {
+      "n": 81,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 27
+    },
+    {
+      "n": 82,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 41
+    },
+    {
+      "n": 83,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 2
+        },
+        {
+          "divisor": 5,
+          "remainder": 3
+        },
+        {
+          "divisor": 7,
+          "remainder": 6
+        }
+      ]
+    },
+    {
+      "n": 84,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 42
+    },
+    {
+      "n": 85,
+      "classification": "composite",
+      "divisor": 5,
+      "cofactor": 17
+    },
+    {
+      "n": 86,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 43
+    },
+    {
+      "n": 87,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 29
+    },
+    {
+      "n": 88,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 44
+    },
+    {
+      "n": 89,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 2
+        },
+        {
+          "divisor": 5,
+          "remainder": 4
+        },
+        {
+          "divisor": 7,
+          "remainder": 5
+        }
+      ]
+    },
+    {
+      "n": 90,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 45
+    },
+    {
+      "n": 91,
+      "classification": "composite",
+      "divisor": 7,
+      "cofactor": 13
+    },
+    {
+      "n": 92,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 46
+    },
+    {
+      "n": 93,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 31
+    },
+    {
+      "n": 94,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 47
+    },
+    {
+      "n": 95,
+      "classification": "composite",
+      "divisor": 5,
+      "cofactor": 19
+    },
+    {
+      "n": 96,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 48
+    },
+    {
+      "n": 97,
+      "classification": "prime",
+      "remainders": [
+        {
+          "divisor": 2,
+          "remainder": 1
+        },
+        {
+          "divisor": 3,
+          "remainder": 1
+        },
+        {
+          "divisor": 5,
+          "remainder": 2
+        },
+        {
+          "divisor": 7,
+          "remainder": 6
+        }
+      ]
+    },
+    {
+      "n": 98,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 49
+    },
+    {
+      "n": 99,
+      "classification": "composite",
+      "divisor": 3,
+      "cofactor": 33
+    },
+    {
+      "n": 100,
+      "classification": "composite",
+      "divisor": 2,
+      "cofactor": 50
+    }
+  ]
+}

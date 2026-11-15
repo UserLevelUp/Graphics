@@ -1,0 +1,78 @@
+{
+  "traceId": "graph.primes.range100.validation",
+  "status": "passed",
+  "certificateSha256": "b3181458e61e746bf096396bbc4bb6c5bc8ce3bc1f3baf62514bee8db923cd84",
+  "exhaustiveDefinitionCrosscheck": true,
+  "integersCovered": 101,
+  "summary": {
+    "status": "verified",
+    "interval": [
+      0,
+      100
+    ],
+    "counts": {
+      "prime": 25,
+      "composite": 74,
+      "neither": 2
+    },
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97
+    ],
+    "limit": "Finite integer classification only; not a new theorem, brush predictor, or result about zeta zeros."
+  },
+  "tamperChecks": [
+    {
+      "case": "missing_integer",
+      "rejected": true
+    },
+    {
+      "case": "one_called_prime",
+      "rejected": true
+    },
+    {
+      "case": "square49_called_prime",
+      "rejected": true
+    },
+    {
+      "case": "omit_square_boundary_divisor",
+      "rejected": true
+    },
+    {
+      "case": "false_factor_for97",
+      "rejected": true
+    },
+    {
+      "case": "incorrect_prime_remainder",
+      "rejected": true
+    }
+  ],
+  "evaluatorChecks": [
+    "Oracle fixture scores exactly; this is an evaluator test, not a proposed predictor.",
+    "Changing49 to prime yields exactly one false positive."
+  ],
+  "limits": "Replayable elementary certificate and independent finite cross-check; no proof assistant or new RH result."
+}

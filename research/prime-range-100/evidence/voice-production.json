@@ -1,0 +1,30 @@
+{
+  "traceId": "graph.primes.range100.voice",
+  "status": "passed",
+  "clips": [
+    {
+      "id": "finite_prime",
+      "taskId": "57ca4ab4-88fb-458a-b4ee-0072e53373a9",
+      "durationSeconds": 22.151837,
+      "narration": "From zero through one hundred, every composite has a prime divisor no larger than ten. Testing two, three, five and seven therefore gives a complete classification: twenty-five primes. Each label has an exact divisibility certificate. Violet displays the proved answers; it is not a color-based prediction.",
+      "sha256": "dc03c523d03a787efe65666bcae8979101b90d5f56e57e1d60d7ecfb31c57100",
+      "voice": "Serene",
+      "model": "eleven_multilingual_v2",
+      "speed": 1.03,
+      "decoded": true,
+      "truncated": false
+    },
+    {
+      "id": "phase_proof",
+      "taskId": "c61185af-95ba-4c54-b4ce-a9bac246c3b9",
+      "durationSeconds": 22.848435,
+      "narration": "Phase colors can guide us toward candidate zeros. Here the model function is simply z. Around the unit circle, it never vanishes and its phase makes one full turn, proving one zero inside. For zeta, rigorous bounds and complete zero counts are still needed. Brush trails alone do not supply them.",
+      "sha256": "621ad924533163d663d2d08d07f02e245716d29aa2cc7696fc4fd31ded3d8d88",
+      "voice": "Serene",
+      "model": "eleven_multilingual_v2",
+      "speed": 1.03,
+      "decoded": true,
+      "truncated": false
+    }
+  ]
+}
