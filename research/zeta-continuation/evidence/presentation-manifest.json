@@ -1,0 +1,222 @@
+{
+  "schema": "graph-continuation-manifest-v1",
+  "traceId": "graph.riemann.continuation.presentation.integrity",
+  "createdUtc": "2026-11-15T10:31:01.653413+00:00",
+  "baseline": "f24b64c97916eb12aae25f5844458c687365fb2f",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "871393288a51f0936fc56535d05e1e79943ff7c376d7c61553d010457083d85d",
+      "mode": "text-lf"
+    },
+    {
+      "path": ".recur/config.toml",
+      "sha256": "e8f14f67eae1c85d50fe92843da6c232172949b4d653001fdcfe163bcaa31436",
+      "mode": "text-lf"
+    },
+    {
+      "path": "Graphics/GraphForm.cs",
+      "sha256": "98b3aafc300fd28045bdcaa4f1474a04a1dd6a61ef6892e21e85a883dcb5e4ae",
+      "mode": "text-lf"
+    },
+    {
+      "path": "Graphics/Program.cs",
+      "sha256": "ffc2cb4ff76a370127e0aa4e6e325de9cee36746f5fbbe9d799e222bc0b2e7f5",
+      "mode": "text-lf"
+    },
+    {
+      "path": "Graphics/ZetaContinuationExperiment.cs",
+      "sha256": "64462cdc0d459000ad4b958dbe6fdf7fc6cf6ef028219164847dcbea588ddcb2",
+      "mode": "text-lf"
+    },
+    {
+      "path": "Graphics/ZetaContinuationForm.cs",
+      "sha256": "d4704b02356d862e6240f24b1fc635fa7434e58e2e104d24c72c6a57f61b39c4",
+      "mode": "text-lf"
+    },
+    {
+      "path": "Graphics/ZetaSwitchExperiment.cs",
+      "sha256": "2a2ffbee95ca4f7a6c6c4e3b9658eb62dc3aaaf44a6b4603959111490f6c3f75",
+      "mode": "text-lf"
+    },
+    {
+      "path": "research/zeta-continuation/build_presentation.jsx",
+      "sha256": "cb9680d743998333b724dd830a1a8761dba9fd0bf9cd1510d9fc20d1ffe1b261",
+      "mode": "text-lf"
+    },
+    {
+      "path": "research/zeta-continuation/evidence/animation-manifest.json",
+      "sha256": "16be61078f0a027b1c94bc4ee534506ebb260323c5b2b477123b937d2ff209ae",
+      "mode": "raw"
+    },
+    {
+      "path": "research/zeta-continuation/evidence/presentation-qa.json",
+      "sha256": "64ff7111d63d254a1a78cecd005ce6b74f4ad6c7be36f1ffef70bfdc623b4142",
+      "mode": "raw"
+    },
+    {
+      "path": "research/zeta-continuation/evidence/story-review.json",
+      "sha256": "faff5ad528fe34cb29c4a99d79cfd668ff55f8955628b9befc7b3630c1474ee9",
+      "mode": "raw"
+    },
+    {
+      "path": "research/zeta-continuation/math-scope.md",
+      "sha256": "31109cbc51db66d993de6395af1a041bea7eceee2547c9eb3e8d454cf71d6a05",
+      "mode": "text-lf"
+    },
+    {
+      "path": "research/zeta-continuation/prepare_media.py",
+      "sha256": "77737fa2447e1fbd640a74d7841e2932d2e9a57d1aac71fbe1f114eb90f51bce",
+      "mode": "text-lf"
+    },
+    {
+      "path": "research/zeta-continuation/seal_evidence.py",
+      "sha256": "f84d3357cc093752511b054eeabcdee34294a8979240b19e695412826fce1d26",
+      "mode": "text-lf"
+    },
+    {
+      "path": "research/zeta-continuation/storyboard.json",
+      "sha256": "64c68037d49e3b0e4e97f3d5408f46ca72b51b9b129dfbef46fda7a9163f489f",
+      "mode": "text-lf"
+    }
+  ],
+  "mediaRoot": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/riemann-continuation/presentation",
+  "media": [
+    {
+      "path": "assets/voice/combine.mp3",
+      "sha256": "3702f712de9e1ab39ea7093a74385626dd86967b1706685e5c6bc0dedf10bbb6",
+      "bytes": 208314
+    },
+    {
+      "path": "assets/voice/conjecture.mp3",
+      "sha256": "25b5a7e3e70b5357064b5b8b3a99be0f7579e985f481ccfc93b54a745d97c811",
+      "bytes": 185992
+    },
+    {
+      "path": "assets/voice/origin.mp3",
+      "sha256": "e76c21e9db26e810f71953ebd829218a82ed4c05a414b9944e12645cd9052cfd",
+      "bytes": 156854
+    },
+    {
+      "path": "assets/voice/prior_results.mp3",
+      "sha256": "d8d8ae46762effd1948c3b23558ad65241367f4b6c1e4b51963a1719265defbf",
+      "bytes": 228326
+    },
+    {
+      "path": "assets/voice/prior_work.mp3",
+      "sha256": "c07075ae08058111f4e556da62c765b01a136a93793caf2b4e9f562178bec3c3",
+      "bytes": 194256
+    },
+    {
+      "path": "assets/voice/results.mp3",
+      "sha256": "48aa1bbe6463773445d590f7a6dab0b803e026db551e063ca4b886e5b9652202",
+      "bytes": 183587
+    },
+    {
+      "path": "assets/voice/rh_gap.mp3",
+      "sha256": "acc81c8af23baa940e72d89890ea03f9b0a65f50a8e6aecd88608bf9d4236974",
+      "bytes": 185443
+    },
+    {
+      "path": "assets/voice/scope.mp3",
+      "sha256": "da16896069b62f79ab6ad489c39da96d603189407624c95da95d55a8222faaae",
+      "bytes": 174340
+    },
+    {
+      "path": "assets/voice/tracking.mp3",
+      "sha256": "5de4dccdcd141c08c4b2fd795f1dcb557ae474357fd003c28a7c702a38ee2ee3",
+      "bytes": 163355
+    },
+    {
+      "path": "build-status.txt",
+      "sha256": "8bd414c382be1149fb08b7398624972155b6298e55d6c0274a86398fe4735d6c",
+      "bytes": 1379
+    },
+    {
+      "path": "captions.srt",
+      "sha256": "e14c8f54fff9350396dcded5765bf69d0fc50d9ca692e82228fad332925c01c7",
+      "bytes": 2211
+    },
+    {
+      "path": "presentation.aep",
+      "sha256": "511c57e90aebfb3d8486bd042463b49dd806b71d8d45c1ee8e306dfa5f377f03",
+      "bytes": 6837915
+    },
+    {
+      "path": "presentation.aep Logs/AE 11-15-2026 2-19-26 AM.txt",
+      "sha256": "1141d41b32968d7f5c09468ef684b1ef819fabfc97d499bf9258d13134ce6fc9",
+      "bytes": 100964
+    },
+    {
+      "path": "presentation.aep Logs/AE 11-15-2026 2-23-13 AM.txt",
+      "sha256": "eedf005fee6d35dd27853ac37bf5fd3820f042b56ab02f1ff3cb95cd61933039",
+      "bytes": 99448
+    },
+    {
+      "path": "presentation.mp4",
+      "sha256": "f817d1192148f440fa5da413ff44d52726c5ba36b38544603655bda838c3bfd6",
+      "bytes": 23852932
+    },
+    {
+      "path": "preview/combine.png",
+      "sha256": "3bfb44cfdb7ed9aa6bf90eb1d418e5475b47a36e78797474723a6eeeecffdf98",
+      "bytes": 230565
+    },
+    {
+      "path": "preview/conjecture.png",
+      "sha256": "0079e6ceb097a62b53084cf17053b751cae008679a33407ac6c619b7566dd055",
+      "bytes": 218445
+    },
+    {
+      "path": "preview/contact-sheet.png",
+      "sha256": "536d4e3bd35b4ea0a6af3174b09876d9be35a1b9c47e92bcf3e4913597b9f02c",
+      "bytes": 517639
+    },
+    {
+      "path": "preview/origin.png",
+      "sha256": "4e4c6deebec4b6421cef439d15e5f500502535238eac7bc887c491c9b604ff3a",
+      "bytes": 149219
+    },
+    {
+      "path": "preview/prior_results.png",
+      "sha256": "34475dcdfcb7280d9af120b6c07264156918ddf461f3398f73d56dc22b8d0365",
+      "bytes": 317767
+    },
+    {
+      "path": "preview/prior_work.png",
+      "sha256": "9b830f6fa8e224784158c20aa1422a2b8122d9a665ef519026d57ce5d538148d",
+      "bytes": 266077
+    },
+    {
+      "path": "preview/results.png",
+      "sha256": "7c622a076302a3ff7ca36642040c1f64142ea7d8a893d16b86c691a3d44e9b43",
+      "bytes": 247290
+    },
+    {
+      "path": "preview/rh_gap.png",
+      "sha256": "944232aca45c710a2ba100a4dfaeb10623ece21076c602856e1f8f700b9b012f",
+      "bytes": 191460
+    },
+    {
+      "path": "preview/scope.png",
+      "sha256": "97a723d6ef431cd2f657cbfdd48081463f61682094546179a00bbf5487bbb6c1",
+      "bytes": 195366
+    },
+    {
+      "path": "preview/tracking.png",
+      "sha256": "d0e3e4b8ab58cf94fa13120d44286b1c20e23bde379c3e04ca78ec7b542ce41e",
+      "bytes": 224026
+    },
+    {
+      "path": "sources.txt",
+      "sha256": "c46535b84df19a770d6d9b37e4a447e974f973659141ab5e4e1d00ed54928a7a",
+      "bytes": 2394
+    },
+    {
+      "path": "transcript.txt",
+      "sha256": "314b62148bfc61190aed717eaae0496a645691c8e1a710e25e2da96ea1caae91",
+      "bytes": 2299
+    }
+  ],
+  "limit": "Byte integrity of a finite numerical experiment and its presentation; not a proof certificate."
+}

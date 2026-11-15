@@ -1,0 +1,165 @@
+{
+  "traceId": "graph.riemann.continuation.presentation.voice",
+  "status": "passed",
+  "narrationSource": "storyboard.json",
+  "processing": "Mild pitch-preserving tempo adjustment only where needed; no narration is truncated.",
+  "clips": [
+    {
+      "id": "scope",
+      "taskId": "c878bdbc-05bc-4a4c-9b4f-827aeb386926",
+      "voice": "Serene",
+      "sourceDurationSeconds": 14.907211,
+      "tempoFactor": 1.142315019157088,
+      "expectedOutputDurationSeconds": 13.05,
+      "sceneDurationSeconds": 14,
+      "sha256": "da16896069b62f79ab6ad489c39da96d603189407624c95da95d55a8222faaae",
+      "sourceSha256": "b2024b8f53fd9323487c49a3833c896767fd63e3f1cf2882a8b2192165e998c0",
+      "audioDecodePassed": true
+    },
+    {
+      "id": "origin",
+      "taskId": "47081731-5d87-4193-a55f-8653f21e8daf",
+      "voice": "Serene",
+      "sourceDurationSeconds": 12.027937,
+      "tempoFactor": 1,
+      "expectedOutputDurationSeconds": 12.027937,
+      "sceneDurationSeconds": 14,
+      "sha256": "e76c21e9db26e810f71953ebd829218a82ed4c05a414b9944e12645cd9052cfd",
+      "sourceSha256": "27c3fbd9e84a6f84ff918c70ca04a23f07ded564c0f4a569e22e7dd530cc4535",
+      "audioDecodePassed": true
+    },
+    {
+      "id": "prior_work",
+      "taskId": "f9b82a90-1fa9-4757-812a-f8cae76836fa",
+      "voice": "Serene",
+      "sourceDurationSeconds": 14.582132,
+      "tempoFactor": 1.0378741637010676,
+      "expectedOutputDurationSeconds": 14.05,
+      "sceneDurationSeconds": 15,
+      "sha256": "c07075ae08058111f4e556da62c765b01a136a93793caf2b4e9f562178bec3c3",
+      "sourceSha256": "79bb0881dbd8801613ddea39deb5155eed4c93d9e42cf84fdc996cae65bc6ce9",
+      "audioDecodePassed": true
+    },
+    {
+      "id": "prior_results",
+      "taskId": "728911ac-3ea4-488d-9195-679a78873c6c",
+      "voice": "Serene",
+      "sourceDurationSeconds": 16.857687,
+      "tempoFactor": 1,
+      "expectedOutputDurationSeconds": 16.857687,
+      "sceneDurationSeconds": 18,
+      "sha256": "d8d8ae46762effd1948c3b23558ad65241367f4b6c1e4b51963a1719265defbf",
+      "sourceSha256": "6101f954838a7cbc9df7ec0e077515dc42de01bd9c72c5514dc78668c55fb2b5",
+      "audioDecodePassed": true
+    },
+    {
+      "id": "tracking",
+      "taskId": "762aa101-5c09-4fd4-b3ba-897d29628d05",
+      "voice": "Serene",
+      "sourceDurationSeconds": 12.074376,
+      "tempoFactor": 1,
+      "expectedOutputDurationSeconds": 12.074376,
+      "sceneDurationSeconds": 15,
+      "sha256": "5de4dccdcd141c08c4b2fd795f1dcb557ae474357fd003c28a7c702a38ee2ee3",
+      "sourceSha256": "1cd724d2ce28b65746bf10b0abe538519cb7c1c15904dddd43b1244f583cae53",
+      "audioDecodePassed": true
+    },
+    {
+      "id": "results",
+      "taskId": "883e969b-1532-4c93-85dc-803c2e95cc02",
+      "voice": "Serene",
+      "sourceDurationSeconds": 13.978413,
+      "tempoFactor": 1,
+      "expectedOutputDurationSeconds": 13.978413,
+      "sceneDurationSeconds": 16,
+      "sha256": "48aa1bbe6463773445d590f7a6dab0b803e026db551e063ca4b886e5b9652202",
+      "sourceSha256": "8f876238d017ed3cd7e11a4f786152f4b6757eea41b40eaf969dcf144afa6bac",
+      "audioDecodePassed": true
+    },
+    {
+      "id": "combine",
+      "taskId": "b631bfb8-6560-4b55-ab6c-d57bc59b7596",
+      "voice": "Serene",
+      "sourceDurationSeconds": 17.740045,
+      "tempoFactor": 1.1787405315614616,
+      "expectedOutputDurationSeconds": 15.05,
+      "sceneDurationSeconds": 16,
+      "sha256": "3702f712de9e1ab39ea7093a74385626dd86967b1706685e5c6bc0dedf10bbb6",
+      "sourceSha256": "08519e468c9453cea0c0ef8b3bc7638c8a0d17ddea3ee83f496e7d512c4fb9a2",
+      "audioDecodePassed": true
+    },
+    {
+      "id": "conjecture",
+      "taskId": "399e60fb-1591-4bb6-80e0-954ef9db6dfe",
+      "voice": "Serene",
+      "sourceDurationSeconds": 15.650249,
+      "tempoFactor": 1.1138967259786476,
+      "expectedOutputDurationSeconds": 14.05,
+      "sceneDurationSeconds": 15,
+      "sha256": "25b5a7e3e70b5357064b5b8b3a99be0f7579e985f481ccfc93b54a745d97c811",
+      "sourceSha256": "4ba4094e2cee32983610565df1800c963c8c38fc0397767f2e9020bed8e75889",
+      "audioDecodePassed": true
+    },
+    {
+      "id": "rh_gap",
+      "taskId": "79d3a765-47d3-42d6-a925-a04bfeb60ed1",
+      "voice": "Serene",
+      "sourceDurationSeconds": 13.699773,
+      "tempoFactor": 1,
+      "expectedOutputDurationSeconds": 13.699773,
+      "sceneDurationSeconds": 15,
+      "sha256": "acc81c8af23baa940e72d89890ea03f9b0a65f50a8e6aecd88608bf9d4236974",
+      "sourceSha256": "a20204ed10839c625e5ba124aad4167e80a58c6b445c96e549cb7d73cdb203ce",
+      "audioDecodePassed": true
+    }
+  ],
+  "allPromptsMatchFinalNarration": true,
+  "model": "eleven_multilingual_v2",
+  "prompts": [
+    {
+      "id": "scope",
+      "text": "First, put one question inside a Warp: an isolated, reversible piece of work. It is a project boundary, not a mathematical force. We test the animation before building its explanation.",
+      "taskId": "c878bdbc-05bc-4a4c-9b4f-827aeb386926"
+    },
+    {
+      "id": "origin",
+      "text": "Your idea gave each point its own origin. Here we shift zeta's output origin smoothly from zero toward one. That turns two separate pictures into one changing equation.",
+      "taskId": "47081731-5d87-4193-a55f-8653f21e8daf"
+    },
+    {
+      "id": "prior_work",
+      "text": "Wegert's phase plots explain the color view. Lester's work places zeta's a-points in an established research area. We connect those ideas to our earlier two-state switch, using classical prediction and Newton correction.",
+      "taskId": "f9b82a90-1fa9-4757-812a-f8cae76836fa"
+    },
+    {
+      "id": "prior_results",
+      "text": "Platt and Trudgian provide rigorous finite checks. Lamzouri's preprint presents a proportion bound; OpenAI reports a zero-free region and formalization. These concern zeta zeros, not a certificate for our moving nonzero targets.",
+      "taskId": "728911ac-3ea4-488d-9195-679a78873c6c"
+    },
+    {
+      "id": "tracking",
+      "text": "We follow the same root as the target moves. Where zeta prime is nonzero, this formula gives its direction and speed. Smaller steps and corrections help the computation stay on track.",
+      "taskId": "762aa101-5c09-4fd4-b3ba-897d29628d05"
+    },
+    {
+      "id": "results",
+      "text": "Independent checks find two paths leaving the right edge before the target reaches one. The third reaches a finite one-point. Leaving our window means the view ended, not that the mathematical branch stopped.",
+      "taskId": "883e969b-1532-4c93-85dc-803c2e95cc02"
+    },
+    {
+      "id": "combine",
+      "text": "Color shows phase. Continuation follows a solution. Higher precision checks numerical stability. Analytic estimates would be needed for a certificate. These methods help separate tracked connections from artifacts of switching or coarse pixels.",
+      "taskId": "b631bfb8-6560-4b55-ab6c-d57bc59b7596"
+    },
+    {
+      "id": "conjecture",
+      "text": "Our conjecture required all three paths to remain inside the window. The computed exits give numerical counterevidence. A rigorous rejection would require certified continuation bounds. We keep the original window.",
+      "taskId": "399e60fb-1591-4bb6-80e0-954ef9db6dfe"
+    },
+    {
+      "id": "rh_gap",
+      "text": "One-points are not zeta zeros. Even three successful paths would not exclude an unseen zero off the critical line. A proof of Riemann needs a global constraint, beyond what these pictures establish.",
+      "taskId": "79d3a765-47d3-42d6-a925-a04bfeb60ed1"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "graph-continuation-presentation-content-audit-v1",
+  "traceId": "graph.riemann.continuation.presentation.content-audit",
+  "status": "passed",
+  "auditedAtUtc": "2026-11-15T10:22:40Z",
+  "scope": "Independent scientific content audit of final storyboard and After Effects builder source. No numerical runs, renderer execution, audio comparison, or Lean proof replay performed in this audit.",
+  "inputs": [
+    {"path": "research/zeta-continuation/storyboard.json", "sha256": "a0d74645ded08f117b5df49240a85173450ed772625638c7c29174099a9a4218"},
+    {"path": "research/zeta-continuation/build_presentation.jsx", "sha256": "e96fadb152f53e57a00460281af59a9e5b06b8177bac912401c7d0ad561e1b8a"}
+  ],
+  "referenceEvidence": [
+    "research/zeta-continuation/evidence/reference-trajectories.json",
+    "research/zeta-continuation/evidence/numerical-report.json",
+    "research/zeta-continuation/evidence/native-validation.json"
+  ],
+  "checks": [
+    {"name": "branch-results", "status": "passed", "detail": "Storyboard decimal endpoint strings and statuses agree with saved reference trajectories: Z1 exits near a=0.854447992969996, Z2 exits near a=0.917224519389317, Z3 completes at a=1 near 1.407788040653+23.327987754559i. Builder rounds these reference values for display."},
+    {"name": "endpoint-versus-confinement", "status": "passed", "detail": "Exit narration explicitly says leaving the window does not end the mathematical branch. The conjecture concerns remaining in the original rectangle for the entire interval, not merely a final endpoint. The outcome is called numerical counterevidence, not a certified rejection. Held exit markers are explicitly labeled as retaining their earlier target rather than being current-target roots."},
+    {"name": "zero-versus-nonzero-target", "status": "passed", "detail": "The family is F_a(s)=zeta(s)-a with fixed input axes and a moving output target. The final scene distinguishes one-points from zeta zeros and states the RH condition only for zeta(rho)=0 in the critical strip. Results about zeta zeros are not imported as guarantees for moving nonzero targets."},
+    {"name": "local-continuation-and-certification", "status": "passed", "detail": "The inverse derivative formula is accompanied by zeta prime nonzero. Prediction and correction are identified as classical methods. Higher precision, refinement, and reversal are numerical evidence; analytic bounds and a certified continuation tube are explicitly still needed. Independent values means a separate implementation, not a claimed unrelated algorithm family."},
+    {"name": "prior-work-credit", "status": "passed", "detail": "Wegert is credited for phase plots, Lester for existing a-point theory, and checkpoint f24b64c for the earlier two-state project. Four bins are identified as this project's palette choice. No new algorithm or new verified RH height is claimed."},
+    {"name": "recent-research-attribution", "status": "passed", "detail": "Primary pages checked on the audit date support the reported claims. Lamzouri is explicitly labeled a 2026 preprint with an asymptotic proportion, not a percentage of RH solved. OpenAI's half-plane is explicitly reported and its Lean formalization not replayed here. These are contextual source reports, not independently reproved results or premises of the numerical continuation."},
+    {"name": "global-scope", "status": "passed", "detail": "Three selected branches are not described as exhaustive. The presentation states that successful finite paths cannot exclude unseen off-line zeta zeros and leaves the global RH obligation separate."},
+    {"name": "final-visual-semantics-delta", "status": "passed", "detail": "Final JSX colors match ZetaContinuationExperiment.PhaseColors exactly; its quadrant block positions are NE green, NW amber, SW violet, SE blue, consistent with the native phase bins at zero rotation. The added solid-versus-dashed legend matches native traversed versus later precomputed path styling; held markers are explicitly not current-target roots. Final audited JSX hash is e96fadb152f53e57a00460281af59a9e5b06b8177bac912401c7d0ad561e1b8a."}
+  ],
+  "primarySourcesChecked": [
+    {"url": "https://arxiv.org/abs/1007.2295", "support": "Wegert's phase visualization of complex functions."},
+    {"url": "https://arxiv.org/abs/1402.0169", "support": "Lester studies solutions of zeta(s)=a for nonzero a; no distribution theorem from this source is used by the tracker."},
+    {"url": "https://arxiv.org/abs/2004.09765", "support": "Platt and Trudgian report rigorous interval-arithmetic verification through height 3 times 10^12."},
+    {"url": "https://arxiv.org/abs/2609.02882v2", "support": "The September 2026 preprint states more than 67.25 percent simple and on the critical line and describes earlier Claude/Anthropic work and named human verification. Attribution only; this audit does not assess the proof."},
+    {"url": "https://github.com/openai/math/blob/main/lean/docs/003.md", "support": "OpenAI describes a formalization with a zeta zero-free half-plane Re(s)>7/8. Attribution only; this audit does not replay or validate the formalization."}
+  ],
+  "issues": [],
+  "nonblockingNotes": [
+    {"location": "storyboard.json: results scene visuals", "detail": "Some preparatory visual directions still say reserved or when finalized. The finalization flag is false, resultSummary is populated, narration is finalized, and the builder uses accepted data, so this is stale production prose rather than a scientific content error."},
+    {"location": "build_presentation.jsx: priorResultsScene, Proportion context", "detail": "Builds on Claude / Anthropic's argument is broad historical shorthand. The primary abstract presents Lamzouri's proof as a replacement of the earlier matrix framework by a simpler Hilbert-space argument. The script does not claim that framework was implemented here."}
+  ],
+  "limitations": [
+    "This is source-content acceptance, not visual layout or final rendered-video acceptance.",
+    "Numerical trajectory data were compared with existing accepted artifacts; computations were not rerun.",
+    "Primary-source report attribution was checked, not the underlying recent mathematical proofs or their formalizations.",
+    "The accepted reference and native evaluations belong to the Euler-Maclaurin algorithm family; separate implementations and high precision do not establish rigorous continuation bounds."
+  ]
+}

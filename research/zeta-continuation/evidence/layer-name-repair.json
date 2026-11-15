@@ -1,0 +1,10 @@
+{
+  "traceId": "graph.riemann.continuation.coordination.layer.repair",
+  "reason": "Companion writer names parent acceptance after the slice; core prefix discovery mistakes it for a child-owned layer.",
+  "from": "warps/graph.riemann.continuation.animation.accepted-animation-20261115.warp-layer.json",
+  "to": "warps/graph.riemann.continuation.parent-animation.accepted-animation-20261115.warp-layer.json",
+  "sha256BeforeAndAfter": "54a60edd278c959f59cabcdc6fe7a7c4ee533b4875ed9aca0f38a858c2b41fe4",
+  "contentUnchanged": true,
+  "verified": "Live animation Warp returns complete, 6/6 slices, no conflicts or stale contracts.",
+  "history": "Earlier saved queries retain the original filenames as historical observations."
+}

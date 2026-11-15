@@ -1,0 +1,102 @@
+{
+  "schema": "graph-continuation-story-review-v1",
+  "traceId": "graph.riemann.continuation.presentation.review",
+  "checkedUtc": "2026-11-15T10:18:33.509024+00:00",
+  "status": "content_ready_native_presentation_QA_pending",
+  "checks": {
+    "nineScenes": true,
+    "duration138": true,
+    "wordBudget": true,
+    "continuousTiming": true,
+    "noPendingResultScenes": true,
+    "animationAcceptancePresent": true,
+    "numericalReferencePassed": true,
+    "nativeValidationPassed": true,
+    "recentSourcesAttributed": true,
+    "builderSyntax": true,
+    "productionGateEnabledAfterAcceptance": true
+  },
+  "sceneCount": 9,
+  "durationSeconds": 138,
+  "narrationWordCount": 281,
+  "narrationSha256": "de48e24becc7e0792068c57f599b5505fa045c16a79cb24357e51792f38603f8",
+  "sceneTiming": [
+    {
+      "id": "scope",
+      "start": 0,
+      "duration": 14,
+      "words": 30,
+      "estimatedSpeechSecondsAt140Wpm": 12.857
+    },
+    {
+      "id": "origin",
+      "start": 14,
+      "duration": 14,
+      "words": 28,
+      "estimatedSpeechSecondsAt140Wpm": 12.0
+    },
+    {
+      "id": "prior_work",
+      "start": 28,
+      "duration": 15,
+      "words": 32,
+      "estimatedSpeechSecondsAt140Wpm": 13.714
+    },
+    {
+      "id": "prior_results",
+      "start": 43,
+      "duration": 18,
+      "words": 32,
+      "estimatedSpeechSecondsAt140Wpm": 13.714
+    },
+    {
+      "id": "tracking",
+      "start": 61,
+      "duration": 15,
+      "words": 31,
+      "estimatedSpeechSecondsAt140Wpm": 13.286
+    },
+    {
+      "id": "results",
+      "start": 76,
+      "duration": 16,
+      "words": 33,
+      "estimatedSpeechSecondsAt140Wpm": 14.143
+    },
+    {
+      "id": "combine",
+      "start": 92,
+      "duration": 16,
+      "words": 33,
+      "estimatedSpeechSecondsAt140Wpm": 14.143
+    },
+    {
+      "id": "conjecture",
+      "start": 108,
+      "duration": 15,
+      "words": 30,
+      "estimatedSpeechSecondsAt140Wpm": 12.857
+    },
+    {
+      "id": "rh_gap",
+      "start": 123,
+      "duration": 15,
+      "words": 32,
+      "estimatedSpeechSecondsAt140Wpm": 13.714
+    }
+  ],
+  "builderSyntaxStderr": "",
+  "artifacts": {
+    "storyboard.json": "a0d74645ded08f117b5df49240a85173450ed772625638c7c29174099a9a4218",
+    "math-scope.md": "9a6deee7fe9c929d32714da032057b7d784b225e38a1281caca37eebd997644f",
+    "sources.txt": "c46535b84df19a770d6d9b37e4a447e974f973659141ab5e4e1d00ed54928a7a",
+    "build_presentation.jsx": "c1b3c13ee8b2bda684fd3f100343c8cbe2b950924e9c15f07372bad90fb0869f"
+  },
+  "limits": [
+    "Syntax validation does not execute or validate After Effects APIs.",
+    "No presentation was generated or rendered by this review; root owns AE/audio/visual acceptance.",
+    "Narration word counts estimate pacing; actual audio duration must be measured.",
+    "Prior analytic and Lean proofs were not independently replayed.",
+    "Numerical continuation is not interval-certified and supplies no RH proof."
+  ]
+}

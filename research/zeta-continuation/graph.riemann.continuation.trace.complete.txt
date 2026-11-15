@@ -1,0 +1,45 @@
+defines: graph.riemann.continuation.handoff
+consumer: graph.riemann.continuation
+consumer: graph.riemann.continuation.animation
+consumer: graph.riemann.continuation.presentation
+
+TRACE MAP
+
+graph.riemann.continuation
+  Coordinator: coordination.json; warps/graph.riemann.continuation.warp-map.json
+  Integrates separately accepted animation and presentation. Global RH remains open.
+
+graph.riemann.continuation.animation
+  Contract: animation/graph.riemann.continuation.animation.contract.current.md
+  Native model/UI: Graphics/ZetaContinuationExperiment.cs; Graphics/ZetaContinuationForm.cs
+  Independent implementation: track_roots.py; verify_native.py
+  Native media source: build_animation.jsx
+  Acceptance: evidence/animation-acceptance.json
+  Integrity: evidence/animation-manifest.json
+
+graph.riemann.continuation.animation.carbon
+  Antigravity CLI, Gemini Carbon; mathematical scope review
+  Run: 20261115T095212Z-d395f829
+graph.riemann.continuation.animation.codex
+  Codex CLI; circularity and RH scope review
+  Run: 20261115T095212Z-c6dfdd61
+graph.riemann.continuation.animation.copilot
+  Copilot CLI; numerical and rendering risk review
+  Run: 20261115T095212Z-d20c018e
+  All three: initial checkpoint, coordinator steering, exact ACK, final review.
+  Durable run transcripts: animation/PROVIDER/runs/RUN/
+  Watch dispatch and raw receipts: animation/evidence/
+  Produced means protocol success; acceptance is a separate Warp layer.
+
+graph.riemann.continuation.presentation
+  Story: storyboard.json; mathematical scope: math-scope.md
+  Prior work: sources.txt; prior-work-audit.json
+  Native media source: build_presentation.jsx
+  Voice provenance: evidence/voice-production.json
+  Content review: evidence/presentation-content-audit.json
+  Render review: evidence/presentation-qa.json
+  Acceptance: evidence/presentation-acceptance.json
+
+Use recur trace-id graph.riemann.continuation --scope '**' --context 0 -d C:/src/graph
+Use recur warp show graph.riemann.continuation -d C:/src/graph --json
+Trace occurrences are navigation and provenance, not proof of execution or mathematical truth.

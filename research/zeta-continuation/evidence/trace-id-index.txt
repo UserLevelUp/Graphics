@@ -1,0 +1,309 @@
+graph.riemann.continuation (30 files, 71 occurrences)
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/assignment.txt
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/turn-01/prompt.txt
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/turn-02/prompt.txt
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/assignment.txt
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-01/prompt.txt
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-01/stderr.txt
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-02/prompt.txt
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-02/stderr.txt
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/assignment.txt
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/turn-01/prompt.txt
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/turn-02/prompt.txt
+  research/zeta-continuation/animation/evidence/dispatch-final.json
+  research/zeta-continuation/animation/evidence/dispatch-preview.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-2ffb778dfae54384.1.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-2ffb778dfae54384.1.prompt.txt
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-a113d2745d706ce3.1.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-a113d2745d706ce3.1.prompt.txt
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-cd7f00510a10f0e4.1.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-cd7f00510a10f0e4.1.prompt.txt
+  research/zeta-continuation/animation/evidence/watch-coordinator.jsonl
+  research/zeta-continuation/animation/graph.riemann.continuation.animation.contract.current.md
+  research/zeta-continuation/coordination.json
+  research/zeta-continuation/evidence/trace-query-all.txt
+  research/zeta-continuation/evidence/trace-query.txt
+  research/zeta-continuation/graph.riemann.continuation.trace.complete.txt
+  research/zeta-continuation/math-scope.md
+  research/zeta-continuation/seal_evidence.py
+  research/zeta-continuation/storyboard.json
+  warps/graph.riemann.continuation.animation.accepted-animation-20261115.warp-layer.json
+  warps/graph.riemann.continuation.warp-map.json
+graph.riemann.continuation.animation (48 files, 399 occurrences)
+  Graphics/Program.cs
+  Graphics/ZetaContinuationExperiment.cs
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/assignment.txt
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/turn-01/prompt.txt
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/turn-02/prompt.txt
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/assignment.txt
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-01/prompt.txt
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-01/stderr.txt
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-02/prompt.txt
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-02/stderr.txt
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/assignment.txt
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/turn-01/prompt.txt
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/turn-02/prompt.txt
+  research/zeta-continuation/animation/evidence/carbon-gate-preview.json
+  research/zeta-continuation/animation/evidence/codex-gate-preview.json
+  research/zeta-continuation/animation/evidence/copilot-gate-preview.json
+  research/zeta-continuation/animation/evidence/dispatch-final.json
+  research/zeta-continuation/animation/evidence/dispatch-preview.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-2ffb778dfae54384.1.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-2ffb778dfae54384.1.prompt.txt
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-a113d2745d706ce3.1.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-a113d2745d706ce3.1.prompt.txt
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-cd7f00510a10f0e4.1.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-cd7f00510a10f0e4.1.prompt.txt
+  research/zeta-continuation/animation/evidence/watch-coordinator.jsonl
+  research/zeta-continuation/animation/graph.riemann.continuation.animation.contract.current.md
+  research/zeta-continuation/animation/run-review.py
+  research/zeta-continuation/animation/verify-review.py
+  research/zeta-continuation/coordination.json
+  research/zeta-continuation/evidence/animation-live-gates.json
+  research/zeta-continuation/evidence/native/a0.values.json
+  research/zeta-continuation/evidence/native/a05.values.json
+  research/zeta-continuation/evidence/native/a1.values.json
+  research/zeta-continuation/evidence/native/native-ui.values.json
+  research/zeta-continuation/evidence/trace-query-all.txt
+  research/zeta-continuation/graph.riemann.continuation.trace.complete.txt
+  research/zeta-continuation/math-scope.md
+  research/zeta-continuation/storyboard.json
+  research/zeta-continuation/track_roots.py
+  warps/graph.riemann.continuation.animation.acceptance.native-ae-acceptance-20261115.warp-layer.json
+  warps/graph.riemann.continuation.animation.accepted-animation-20261115.warp-layer.json
+  warps/graph.riemann.continuation.animation.carbon.scope-watch-carbon-20261115.warp-layer.json
+  warps/graph.riemann.continuation.animation.codex.scope-watch-codex-20261115.warp-layer.json
+  warps/graph.riemann.continuation.animation.copilot.scope-watch-copilot-20261115.warp-layer.json
+  warps/graph.riemann.continuation.animation.implementation.native-ae-implementation-20261115.warp-layer.json
+  warps/graph.riemann.continuation.animation.verification.native-ae-verification-20261115.warp-layer.json
+  warps/graph.riemann.continuation.animation.warp-map.json
+  warps/graph.riemann.continuation.warp-map.json
+graph.riemann.continuation.animation.acceptance (4 files, 4 occurrences)
+  research/zeta-continuation/evidence/animation-acceptance.json
+  research/zeta-continuation/evidence/animation-live-gates.json
+  warps/graph.riemann.continuation.animation.acceptance.native-ae-acceptance-20261115.warp-layer.json
+  warps/graph.riemann.continuation.animation.warp-map.json
+graph.riemann.continuation.animation.accepted-animation-20261115.warp-layer.json (2 files, 3 occurrences)
+  research/zeta-continuation/evidence/trace-query-all.txt
+  research/zeta-continuation/evidence/trace-query.txt
+graph.riemann.continuation.animation.aftereffects (1 files, 1 occurrences)
+  research/zeta-continuation/build_animation.jsx
+graph.riemann.continuation.animation.carbon (12 files, 16 occurrences)
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/assignment.txt
+  research/zeta-continuation/animation/evidence/carbon-gate-preview.json
+  research/zeta-continuation/animation/evidence/dispatch-final.json
+  research/zeta-continuation/animation/evidence/dispatch-preview.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-cd7f00510a10f0e4.1.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-cd7f00510a10f0e4.1.prompt.txt
+  research/zeta-continuation/animation/evidence/watch-coordinator.jsonl
+  research/zeta-continuation/evidence/animation-live-gates.json
+  research/zeta-continuation/evidence/trace-query-all.txt
+  research/zeta-continuation/graph.riemann.continuation.trace.complete.txt
+  warps/graph.riemann.continuation.animation.carbon.scope-watch-carbon-20261115.warp-layer.json
+  warps/graph.riemann.continuation.animation.warp-map.json
+graph.riemann.continuation.animation.carbon.20261115T095212Z-d395f829.progress.md (3 files, 3 occurrences)
+  research/zeta-continuation/evidence/animation-manifest.json
+  research/zeta-continuation/evidence/native/git-workstate.json
+  research/zeta-continuation/evidence/trace-query.txt
+graph.riemann.continuation.animation.carbon.progress (15 files, 33 occurrences)
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/events.jsonl
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/status.json
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/turn-02/drain-1.stdout.json
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/turn-02/received-traces.json
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-01/drain-1.stdout.json
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-01/received-traces.json
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-02/drain-1.stdout.json
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-02/received-traces.json
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/turn-01/drain-1.stdout.json
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/turn-01/received-traces.json
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/turn-02/drain-1.stdout.json
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/turn-02/received-traces.json
+  research/zeta-continuation/animation/events/graph.riemann.continuation.animation.carbon.20261115T095212Z-d395f829.progress.md
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-cd7f00510a10f0e4.1.agent.stdout.txt
+  research/zeta-continuation/evidence/trace-query.txt
+graph.riemann.continuation.animation.carbon.response (3 files, 3 occurrences)
+  research/zeta-continuation/animation/carbon/review.md
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/review.md
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-cd7f00510a10f0e4.1.agent.stdout.txt
+graph.riemann.continuation.animation.carbon.scope-watch-carbon-20261115.warp-layer.json (2 files, 2 occurrences)
+  research/zeta-continuation/animation/evidence/carbon-gate-preview.json
+  research/zeta-continuation/evidence/native/git-workstate.json
+graph.riemann.continuation.animation.codex (11 files, 15 occurrences)
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/assignment.txt
+  research/zeta-continuation/animation/evidence/codex-gate-preview.json
+  research/zeta-continuation/animation/evidence/dispatch-final.json
+  research/zeta-continuation/animation/evidence/dispatch-preview.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-2ffb778dfae54384.1.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-2ffb778dfae54384.1.prompt.txt
+  research/zeta-continuation/animation/evidence/watch-coordinator.jsonl
+  research/zeta-continuation/evidence/animation-live-gates.json
+  research/zeta-continuation/graph.riemann.continuation.trace.complete.txt
+  warps/graph.riemann.continuation.animation.codex.scope-watch-codex-20261115.warp-layer.json
+  warps/graph.riemann.continuation.animation.warp-map.json
+graph.riemann.continuation.animation.codex.20261115T095212Z-c6dfdd61.progress.md (3 files, 3 occurrences)
+  research/zeta-continuation/evidence/animation-manifest.json
+  research/zeta-continuation/evidence/native/git-workstate.json
+  research/zeta-continuation/evidence/trace-query.txt
+graph.riemann.continuation.animation.codex.progress (11 files, 29 occurrences)
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/turn-02/drain-1.stdout.json
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/turn-02/received-traces.json
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/events.jsonl
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/status.json
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-02/drain-1.stdout.json
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-02/received-traces.json
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/turn-02/drain-1.stdout.json
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/turn-02/received-traces.json
+  research/zeta-continuation/animation/events/graph.riemann.continuation.animation.codex.20261115T095212Z-c6dfdd61.progress.md
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-2ffb778dfae54384.1.agent.stdout.txt
+  research/zeta-continuation/evidence/trace-query.txt
+graph.riemann.continuation.animation.codex.response (3 files, 3 occurrences)
+  research/zeta-continuation/animation/codex/review.md
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/review.md
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-2ffb778dfae54384.1.agent.stdout.txt
+graph.riemann.continuation.animation.codex.scope-watch-codex-20261115.warp-layer.json (2 files, 2 occurrences)
+  research/zeta-continuation/animation/evidence/codex-gate-preview.json
+  research/zeta-continuation/evidence/native/git-workstate.json
+graph.riemann.continuation.animation.contract.current.md (20 files, 100 occurrences)
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/assignment.txt
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/assignment.txt
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/assignment.txt
+  research/zeta-continuation/animation/evidence/dispatch-final.json
+  research/zeta-continuation/animation/evidence/dispatch-preview.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-2ffb778dfae54384.1.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-2ffb778dfae54384.1.prompt.txt
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-a113d2745d706ce3.1.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-a113d2745d706ce3.1.prompt.txt
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-cd7f00510a10f0e4.1.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-cd7f00510a10f0e4.1.prompt.txt
+  research/zeta-continuation/animation/evidence/watch-coordinator.jsonl
+  research/zeta-continuation/animation/run-review.py
+  research/zeta-continuation/coordination.json
+  research/zeta-continuation/evidence/animation-manifest.json
+  research/zeta-continuation/evidence/native/git-workstate.json
+  research/zeta-continuation/evidence/native/source-review.json
+  research/zeta-continuation/evidence/trace-query-all.txt
+  research/zeta-continuation/evidence/trace-query.txt
+  research/zeta-continuation/graph.riemann.continuation.trace.complete.txt
+graph.riemann.continuation.animation.copilot (11 files, 15 occurrences)
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/assignment.txt
+  research/zeta-continuation/animation/evidence/copilot-gate-preview.json
+  research/zeta-continuation/animation/evidence/dispatch-final.json
+  research/zeta-continuation/animation/evidence/dispatch-preview.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-a113d2745d706ce3.1.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-a113d2745d706ce3.1.prompt.txt
+  research/zeta-continuation/animation/evidence/watch-coordinator.jsonl
+  research/zeta-continuation/evidence/animation-live-gates.json
+  research/zeta-continuation/graph.riemann.continuation.trace.complete.txt
+  warps/graph.riemann.continuation.animation.copilot.scope-watch-copilot-20261115.warp-layer.json
+  warps/graph.riemann.continuation.animation.warp-map.json
+graph.riemann.continuation.animation.copilot.20261115T095212Z-d20c018e.progress.md (3 files, 3 occurrences)
+  research/zeta-continuation/evidence/animation-manifest.json
+  research/zeta-continuation/evidence/native/git-workstate.json
+  research/zeta-continuation/evidence/trace-query.txt
+graph.riemann.continuation.animation.copilot.progress (11 files, 29 occurrences)
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/turn-02/drain-1.stdout.json
+  research/zeta-continuation/animation/carbon/runs/20261115T095212Z-d395f829/turn-02/received-traces.json
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-02/drain-1.stdout.json
+  research/zeta-continuation/animation/codex/runs/20261115T095212Z-c6dfdd61/turn-02/received-traces.json
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/events.jsonl
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/status.json
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/turn-02/drain-1.stdout.json
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/turn-02/received-traces.json
+  research/zeta-continuation/animation/events/graph.riemann.continuation.animation.copilot.20261115T095212Z-d20c018e.progress.md
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-a113d2745d706ce3.1.agent.stdout.txt
+  research/zeta-continuation/evidence/trace-query.txt
+graph.riemann.continuation.animation.copilot.response (3 files, 3 occurrences)
+  research/zeta-continuation/animation/copilot/review.md
+  research/zeta-continuation/animation/copilot/runs/20261115T095212Z-d20c018e/review.md
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-a113d2745d706ce3.1.agent.stdout.txt
+graph.riemann.continuation.animation.copilot.scope-watch-copilot-20261115.warp-layer.json (2 files, 2 occurrences)
+  research/zeta-continuation/animation/evidence/copilot-gate-preview.json
+  research/zeta-continuation/evidence/native/git-workstate.json
+graph.riemann.continuation.animation.export (1 files, 1 occurrences)
+  Graphics/Program.cs
+graph.riemann.continuation.animation.implementation (3 files, 3 occurrences)
+  research/zeta-continuation/evidence/animation-live-gates.json
+  warps/graph.riemann.continuation.animation.implementation.native-ae-implementation-20261115.warp-layer.json
+  warps/graph.riemann.continuation.animation.warp-map.json
+graph.riemann.continuation.animation.integrity (1 files, 1 occurrences)
+  research/zeta-continuation/evidence/animation-manifest.json
+graph.riemann.continuation.animation.legacy-smoke (1 files, 1 occurrences)
+  research/zeta-continuation/evidence/native/legacy-smoke.json
+graph.riemann.continuation.animation.media.verify (1 files, 1 occurrences)
+  research/zeta-continuation/evidence/animation-qa.json
+graph.riemann.continuation.animation.model (2 files, 2 occurrences)
+  Graphics/ZetaContinuationExperiment.cs
+  Graphics/ZetaContinuationForm.cs
+graph.riemann.continuation.animation.native_verify (2 files, 3 occurrences)
+  research/zeta-continuation/evidence/native-validation.json
+  research/zeta-continuation/verify_native.py
+graph.riemann.continuation.animation.render (1 files, 2 occurrences)
+  Graphics/ZetaContinuationExperiment.cs
+graph.riemann.continuation.animation.source-review (1 files, 1 occurrences)
+  research/zeta-continuation/evidence/native/source-review.json
+graph.riemann.continuation.animation.ui (1 files, 1 occurrences)
+  Graphics/ZetaContinuationForm.cs
+graph.riemann.continuation.animation.ui.verify (1 files, 1 occurrences)
+  research/zeta-continuation/evidence/native/ui-review.json
+graph.riemann.continuation.animation.verification (3 files, 3 occurrences)
+  research/zeta-continuation/evidence/animation-live-gates.json
+  warps/graph.riemann.continuation.animation.verification.native-ae-verification-20261115.warp-layer.json
+  warps/graph.riemann.continuation.animation.warp-map.json
+graph.riemann.continuation.animation.verify (6 files, 8 occurrences)
+  Graphics/ZetaContinuationExperiment.cs
+  research/zeta-continuation/evidence/numerical-report.json
+  research/zeta-continuation/evidence/reference-trajectories.json
+  research/zeta-continuation/evidence/runtime-notes.json
+  research/zeta-continuation/track_roots.py
+  research/zeta-continuation/verify_native.py
+graph.riemann.continuation.animation.warp-map.json (8 files, 14 occurrences)
+  research/zeta-continuation/animation/evidence/dispatch-final.json
+  research/zeta-continuation/animation/evidence/dispatch-preview.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-2ffb778dfae54384.1.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-a113d2745d706ce3.1.json
+  research/zeta-continuation/animation/evidence/dispatch-raw/fnv1a64-cd7f00510a10f0e4.1.json
+  research/zeta-continuation/animation/evidence/watch-coordinator.jsonl
+  research/zeta-continuation/evidence/animation-live-gates.json
+  research/zeta-continuation/evidence/native/git-workstate.json
+graph.riemann.continuation.handoff (1 files, 1 occurrences)
+  research/zeta-continuation/graph.riemann.continuation.trace.complete.txt
+graph.riemann.continuation.presentation (7 files, 8 occurrences)
+  research/zeta-continuation/coordination.json
+  research/zeta-continuation/graph.riemann.continuation.trace.complete.txt
+  research/zeta-continuation/math-scope.md
+  research/zeta-continuation/storyboard.json
+  warps/graph.riemann.continuation.presentation.animation_input.accepted-animation-input-20261115.warp-layer.json
+  warps/graph.riemann.continuation.presentation.warp-map.json
+  warps/graph.riemann.continuation.warp-map.json
+graph.riemann.continuation.presentation.acceptance (1 files, 1 occurrences)
+  warps/graph.riemann.continuation.presentation.warp-map.json
+graph.riemann.continuation.presentation.aftereffects (1 files, 1 occurrences)
+  research/zeta-continuation/build_presentation.jsx
+graph.riemann.continuation.presentation.animation_input (2 files, 2 occurrences)
+  warps/graph.riemann.continuation.presentation.animation_input.accepted-animation-input-20261115.warp-layer.json
+  warps/graph.riemann.continuation.presentation.warp-map.json
+graph.riemann.continuation.presentation.content-audit (1 files, 1 occurrences)
+  research/zeta-continuation/evidence/presentation-content-audit.json
+graph.riemann.continuation.presentation.math (1 files, 1 occurrences)
+  research/zeta-continuation/math-scope.md
+graph.riemann.continuation.presentation.media.verify (1 files, 1 occurrences)
+  research/zeta-continuation/evidence/presentation-qa.json
+graph.riemann.continuation.presentation.production (1 files, 1 occurrences)
+  warps/graph.riemann.continuation.presentation.warp-map.json
+graph.riemann.continuation.presentation.review (1 files, 1 occurrences)
+  research/zeta-continuation/evidence/story-review.json
+graph.riemann.continuation.presentation.voice (1 files, 1 occurrences)
+  research/zeta-continuation/evidence/voice-production.json
+graph.riemann.continuation.presentation.warp-map.json (1 files, 1 occurrences)
+  research/zeta-continuation/evidence/native/git-workstate.json
+graph.riemann.continuation.prior-work (1 files, 1 occurrences)
+  research/zeta-continuation/prior-work-audit.json
+graph.riemann.continuation.trace.complete.txt (1 files, 3 occurrences)
+  research/zeta-continuation/evidence/trace-query-all.txt
+graph.riemann.continuation.warp-map.json (4 files, 5 occurrences)
+  research/zeta-continuation/evidence/native/git-workstate.json
+  research/zeta-continuation/evidence/trace-query-all.txt
+  research/zeta-continuation/evidence/trace-query.txt
+  research/zeta-continuation/graph.riemann.continuation.trace.complete.txt
+graph.riemann.continuation.workstate (1 files, 1 occurrences)
+  research/zeta-continuation/evidence/native/git-workstate.json

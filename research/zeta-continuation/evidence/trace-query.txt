@@ -1,0 +1,7 @@
+trace-id 'graph.riemann.continuation' -> 6 role sites in 6 files
+C:/src/graph\research\zeta-continuation\animation\events\graph.riemann.continuation.animation.carbon.20261115T095212Z-d395f829.progress.md:1:[produce] publish: graph.riemann.continuation.animation.carbon.progress
+C:/src/graph\research\zeta-continuation\animation\events\graph.riemann.continuation.animation.codex.20261115T095212Z-c6dfdd61.progress.md:1:[produce] publish: graph.riemann.continuation.animation.codex.progress
+C:/src/graph\research\zeta-continuation\animation\events\graph.riemann.continuation.animation.copilot.20261115T095212Z-d20c018e.progress.md:1:[produce] publish: graph.riemann.continuation.animation.copilot.progress
+C:/src/graph\research\zeta-continuation\animation\graph.riemann.continuation.animation.contract.current.md:4:[consume] consumer: graph.riemann.continuation
+C:/src/graph\warps\graph.riemann.continuation.animation.accepted-animation-20261115.warp-layer.json:3:[define]   "warp_id": "graph.riemann.continuation",
+C:/src/graph\warps\graph.riemann.continuation.warp-map.json:38:[define]   "warp_id": "graph.riemann.continuation"

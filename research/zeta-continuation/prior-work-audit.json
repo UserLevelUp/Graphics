@@ -1,0 +1,96 @@
+{
+  "schema": "graph-zeta-continuation-prior-work-v1",
+  "traceId": "graph.riemann.continuation.prior-work",
+  "checkedUtc": "2026-11-15T10:13:40Z",
+  "scope": "Primary-source literature audit. Statements below distinguish published results, recent reported formalization/preprints, and our proposed finite experiment. No independent replay of the cited analytic or Lean proofs was performed.",
+  "establishedResults": [
+    {
+      "id": "speiser-criterion",
+      "authors": [
+        "Norman Levinson",
+        "Hugh L. Montgomery"
+      ],
+      "title": "Zeros of the derivatives of the Riemann zeta-function",
+      "year": 1974,
+      "venue": "Acta Mathematica 133",
+      "sourceUrl": "https://archive.ymsc.tsinghua.edu.cn/pacm_download/117/6174-11511_2006_Article_BF02392141.pdf",
+      "sourceLocation": "Corollary to Theorem 1, first page",
+      "status": "Published theorem, reproducing Speiser's equivalence",
+      "statement": "RH is equivalent to the absence of zeros of zeta' in 0 < Re(s) < 1/2.",
+      "experimentMapping": "The denominator of ds/da=1/zeta'(s) exposes precisely the local inverse obstruction at derivative zeros.",
+      "limitation": "Our three branches with real a in [0,1] cannot exclude every derivative zero. General critical values zeta(s) need not be real or in this interval."
+    },
+    {
+      "id": "platt-trudgian-finite-verification",
+      "authors": [
+        "Dave Platt",
+        "Tim Trudgian"
+      ],
+      "title": "The Riemann hypothesis is true up to 3*10^12",
+      "year": 2021,
+      "preprintYear": 2020,
+      "sourceUrl": "https://arxiv.org/abs/2004.09765",
+      "publicationDoi": "https://doi.org/10.1112/blms.12460",
+      "status": "Published rigorous computational result",
+      "statement": "Rigorous interval arithmetic verifies that every zeta zero beta+i*gamma with 0 < gamma <= 3*10^12 has beta=1/2.",
+      "experimentMapping": "This is a model for a complete finite-range certificate, rather than a display of selected accurate roots.",
+      "limitation": "Our height-10-to-30 computations are already inside this established range. Reproducing them supplies tool validation, not new RH progress. This audit does not claim this is the latest verification record."
+    },
+    {
+      "id": "lester-a-points",
+      "authors": [
+        "S. J. Lester"
+      ],
+      "title": "a-Points of the Riemann zeta-function on the critical line",
+      "year": 2014,
+      "sourceUrl": "https://arxiv.org/abs/1402.0169",
+      "publicationDoi": "https://doi.org/10.1093/imrn/rnt356",
+      "status": "Published a-point theorem",
+      "unconditionalStatement": "For each fixed nonzero complex a, asymptotically at most one-half of the nontrivial solutions of zeta(s)=a lie on Re(s)=1/2.",
+      "separateConditionalStatement": "The zero-percent conclusion requires an additional spacing condition on the ordinates of zeta zeros.",
+      "experimentMapping": "Off-line motion for nonzero target a belongs to established a-point theory; it neither contradicts RH nor makes our observed zeta=1 point novel."
+    }
+  ],
+  "recentAiWork": [
+    {
+      "id": "openai-quasi-riemann",
+      "provider": "OpenAI",
+      "sourceUrl": "https://github.com/openai/math/blob/main/lean/docs/003.md",
+      "sourceLocation": "Scope section",
+      "status": "OpenAI-reported result and Lean formalization; not independently proof-audited or executed in this audit",
+      "reportedScope": "The document reports a fixed zero-free half-plane Re(s)>7/8 for zeta and every Dirichlet L-function, and finite-order Hecke L-functions over Q(sqrt(-3)); relevant poles at s=1 are excluded. The paper's later applications are outside that formalization's scope.",
+      "experimentMapping": "A verified imported zero-free theorem could serve as a mathematical exclusion overlay for zeros (target a=0). It does not exclude nonzero a-points and must not be applied to the a>0 moving branches.",
+      "caution": "Comparator challenge files are specifications, so a placeholder in one comparator does not by itself assess the separate proof implementation. No claim about all zeros being on Re(s)=1/2 follows from a 7/8 bound."
+    },
+    {
+      "id": "lamzouri-claude-followup",
+      "provider": "Anthropic/Claude, as credited in the primary paper",
+      "authors": [
+        "Youness Lamzouri"
+      ],
+      "title": "A new proof that more than 2/3 of the zeros of the Riemann zeta function are simple and on the critical line",
+      "sourceUrl": "https://arxiv.org/abs/2609.02882",
+      "fullTextUrl": "https://arxiv.org/html/2609.02882v2",
+      "versionDate": "2026-09-08",
+      "sourceLocation": "Theorem 1.1 and introduction",
+      "status": "Recent primary preprint with a separate human proof; journal acceptance and full proof validation were not established in this audit",
+      "statement": "The paper proves an unconditional asymptotic lower proportion C0=3/2-cot(1/sqrt(2))/sqrt(2)=0.6725007... for zeros that are both simple and on the critical line.",
+      "attribution": "Lamzouri credits an earlier Claude-generated argument, verified by Levent Alpoge and Ralph Furman, and supplies a different proof.",
+      "experimentMapping": "Simplicity supplies nonzero zeta' at starting zeros, supporting local inverse branches. A proportion theorem does not certify all zeros or guarantee continuation of our selected branches to a=1.",
+      "caution": "This is not an OpenAI result. This audit does not claim the entire analytic theorem has been formally verified."
+    }
+  ],
+  "proposedBoundedCertificate": {
+    "status": "Our proposed next engineering/mathematical validation step, not a claim from the cited papers",
+    "objective": "Certify the three specific continuation paths in the existing finite viewport, including two boundary exits and the surviving a=1 endpoint.",
+    "obligations": [
+      "Implement interval enclosures for zeta and zeta' with a rigorously bounded Euler-Maclaurin remainder.",
+      "Construct overlapping parameter slabs and complex boxes; validate existence and uniqueness of the local root for each slab using interval Newton or a suitable parameterized contraction certificate.",
+      "Exclude zero from the derivative enclosure throughout each certified tube.",
+      "Prove overlaps identify the same branch from a certified initial root, without reseeding.",
+      "Certify boundary crossing brackets separately from solver failure and retain explicit failure records if an obligation cannot be established."
+    ],
+    "optionalSpeiserFacingExperiment": "Certify the zero count of zeta' in a specified closed box inside 0<Re(s)<1/2 using boundary enclosures and the argument principle; boundary nonvanishing must be proved.",
+    "limitation": "A successful finite certificate validates only its stated tubes or box. It does not prove RH, supply a new all-height theorem, or turn phase-color patterns into a proof."
+  }
+}

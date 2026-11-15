@@ -1,0 +1,162 @@
+{
+  "traceId": "graph.riemann.continuation.presentation.media.verify",
+  "status": "passed",
+  "durationSeconds": 138,
+  "frameSize": [
+    1920,
+    1080
+  ],
+  "framesPerSecond": 24,
+  "expectedFrames": 3312,
+  "fullVideoAudioDecodePassed": true,
+  "allScenesHaveNonSilentAudio": true,
+  "audioScenes": [
+    {
+      "id": "scope",
+      "rms": 0.09257573477568605,
+      "peak": 0.9718371629714966
+    },
+    {
+      "id": "origin",
+      "rms": 0.08757609956553992,
+      "peak": 0.6674013733863831
+    },
+    {
+      "id": "prior_work",
+      "rms": 0.08907617678726765,
+      "peak": 0.6611909866333008
+    },
+    {
+      "id": "prior_results",
+      "rms": 0.08552626452769807,
+      "peak": 0.5897558927536011
+    },
+    {
+      "id": "tracking",
+      "rms": 0.08911458879050621,
+      "peak": 0.9547579288482666
+    },
+    {
+      "id": "results",
+      "rms": 0.09026604756985997,
+      "peak": 0.7399531602859497
+    },
+    {
+      "id": "combine",
+      "rms": 0.08213639849353194,
+      "peak": 0.6525636315345764
+    },
+    {
+      "id": "conjecture",
+      "rms": 0.09490498164999224,
+      "peak": 0.7668448090553284
+    },
+    {
+      "id": "rh_gap",
+      "rms": 0.07923960797993976,
+      "peak": 0.702406644821167
+    }
+  ],
+  "inspectedFrameCandidates": [
+    {
+      "id": "scope",
+      "time": 7.0,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-continuation\\presentation\\preview\\scope.png"
+    },
+    {
+      "id": "origin",
+      "time": 21.0,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-continuation\\presentation\\preview\\origin.png"
+    },
+    {
+      "id": "prior_work",
+      "time": 35.5,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-continuation\\presentation\\preview\\prior_work.png"
+    },
+    {
+      "id": "prior_results",
+      "time": 52.0,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-continuation\\presentation\\preview\\prior_results.png"
+    },
+    {
+      "id": "tracking",
+      "time": 68.5,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-continuation\\presentation\\preview\\tracking.png"
+    },
+    {
+      "id": "results",
+      "time": 84.0,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-continuation\\presentation\\preview\\results.png"
+    },
+    {
+      "id": "combine",
+      "time": 100.0,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-continuation\\presentation\\preview\\combine.png"
+    },
+    {
+      "id": "conjecture",
+      "time": 115.5,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-continuation\\presentation\\preview\\conjecture.png"
+    },
+    {
+      "id": "rh_gap",
+      "time": 130.5,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-continuation\\presentation\\preview\\rh_gap.png"
+    }
+  ],
+  "videoSha256": "f817d1192148f440fa5da413ff44d52726c5ba36b38544603655bda838c3bfd6",
+  "aepSha256": "511c57e90aebfb3d8486bd042463b49dd806b71d8d45c1ee8e306dfa5f377f03",
+  "voicePromptsMatchStory": true,
+  "limitations": [
+    "Generated narration was checked for source-text agreement, duration, decoding and signal presence; this is not an independent speech transcription.",
+    "Source research claims are attributed; recent proof and Lean artifacts were not independently replayed."
+  ],
+  "reviewedUtc": "2026-11-15T10:31:01.402460+00:00",
+  "decodedAudioDurationSeconds": 138.0053125,
+  "durationNote": "3312 video frames at 24 fps; decoded AAC includes approximately 5.3 ms padding.",
+  "visualReview": {
+    "reviewers": [
+      "coordinator",
+      "local_quadrant_math independent agent"
+    ],
+    "scope": "Final nine-scene contact sheet plus full-size origin and results frames. Previous full-size prior-results and results reviews retained; not every-frame inspection.",
+    "checks": [
+      "Readable titles, equations, sources, bubbles and presenter; no observed clipping or collisions.",
+      "Quadrants match native palette: NE green, NW amber, SW violet, SE blue.",
+      "Input axes stay fixed while the output target moves.",
+      "Solid versus dashed path legend and earlier-target held-marker note are visible.",
+      "Finite numerical counterevidence, recent-source attribution and open global RH obligation remain explicit."
+    ],
+    "issues": []
+  },
+  "evidenceBindings": [
+    {
+      "path": "research/zeta-continuation/evidence/presentation-content-audit.json",
+      "sha256": "18d3325d657dece6d348bbe88fec52c3e16f610cef84d3043f11ec63fe118554"
+    },
+    {
+      "path": "research/zeta-continuation/evidence/voice-production.json",
+      "sha256": "3f728f7b473fed68d659226a0fbd4ffe3de6512162c65a536bbf619371b564a1"
+    },
+    {
+      "path": "research/zeta-continuation/evidence/story-review.json",
+      "sha256": "faff5ad528fe34cb29c4a99d79cfd668ff55f8955628b9befc7b3630c1474ee9"
+    },
+    {
+      "path": "research/zeta-continuation/evidence/presentation-render.log",
+      "sha256": "e3fd959e73b242fa3d3aa84f89bdf0c1bf302f274bb46ec810cd0de1eaaeb7dd"
+    },
+    {
+      "path": "research/zeta-continuation/evidence/presentation-probe.log",
+      "sha256": "5b98ed5bdbf7eed5a2f30573f0edfa7e698e61e3de63ea85879cd5c9e00b1aed"
+    },
+    {
+      "path": "research/zeta-continuation/evidence/presentation-decode.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/zeta-continuation/prior-work-audit.json",
+      "sha256": "5b435acb67aad11866be6d6d7cd214e98ea7be538327048bab1cb866968f7666"
+    }
+  ]
+}

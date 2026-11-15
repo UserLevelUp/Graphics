@@ -1,0 +1,501 @@
+{
+  "schema": "graph-continuation-storyboard-v1",
+  "traceId": "graph.riemann.continuation.presentation",
+  "coordinatorTrace": "graph.riemann.continuation",
+  "scientificAnimationTrace": "graph.riemann.continuation.animation",
+  "title": "Following the moving origin: a testable zeta experiment",
+  "status": "narration_final_animation_accepted",
+  "durationSeconds": 138,
+  "narrationWordCount": 281,
+  "voice": {
+    "style": "clear, curious, measured; original narrator without an imitation of any real person",
+    "targetWordsPerMinute": 140,
+    "oneClipPerScene": true,
+    "allowSilenceAtSceneEnd": true,
+    "maxTotalNarrationWords": 310,
+    "timingRule": "Fit each narration clip inside its assigned scene, targeting at least 0.7 seconds of end silence. Rephrase or modestly adjust delivery if a real clip exceeds its scene; word-count estimates are not measured audio durations."
+  },
+  "productionGate": {
+    "dependsOn": "graph.riemann.continuation.animation",
+    "requiredState": "accepted",
+    "readyForProduction": true,
+    "resultSceneMustBeFinalized": false,
+    "pendingReason": null,
+    "acceptanceArtifact": "research/zeta-continuation/evidence/animation-acceptance.json",
+    "acceptanceArtifactSha256": "e131e6f4aa10c18723867c531a330697b56bdbdb54c434067c82a131f48c505f"
+  },
+  "presenter": {
+    "name": "Compass",
+    "originalDesign": true,
+    "construction": "Native vector shapes: rounded midnight-blue body, small ivory circular face, two simple charcoal eyes, teal triangular pointer hand, amber circular wrist accent. No recognizable real-person or branded-character likeness.",
+    "behavior": "Points to one concept at a time, turns toward the plot during measured results, uses restrained gestures and speech bubbles.",
+    "placement": "Small lower-left presenter within x=80..300, y=720..1000; the main scientific visual occupies the center and right. Never obscure axes, labels, or status text."
+  },
+  "visualStyle": {
+    "format": "1920x1080 native After Effects vector composition",
+    "background": "deep blue-black",
+    "accentColors": {
+      "tracking": "cyan",
+      "comparison": "amber",
+      "phase": "four explicit phase quadrants",
+      "unresolved": "muted violet"
+    },
+    "text": "high-contrast large type; short speech bubbles; mathematical labels retained separately from narration",
+    "trajectoryLegend": [
+      "solid: traversed numerical samples",
+      "dashed: precomputed later samples",
+      "exit marker: last in-view state, labeled with its own target"
+    ],
+    "layout": {
+      "canvas": [
+        1920,
+        1080
+      ],
+      "safeMarginPixels": 70,
+      "titleBox": [
+        80,
+        55,
+        1760,
+        100
+      ],
+      "mainVisualBox": [
+        500,
+        190,
+        1330,
+        690
+      ],
+      "presenterBox": [
+        80,
+        720,
+        220,
+        280
+      ],
+      "bubbleBox": [
+        70,
+        440,
+        390,
+        230
+      ],
+      "formulaBox": [
+        510,
+        155,
+        1310,
+        115
+      ],
+      "statusFooterBox": [
+        500,
+        915,
+        1330,
+        90
+      ],
+      "titleFontPixels": 56,
+      "bubbleFontPixels": 34,
+      "formulaFontPixels": 42,
+      "minimumScientificLabelPixels": 28,
+      "notes": "Keep the presenter small and lower-left. Use at most two short bubble messages per scene, one at a time. Break long formulas across lines. These are design targets; inspect the actual rendered frames before acceptance."
+    }
+  },
+  "scenes": [
+    {
+      "id": "scope",
+      "title": "One question inside a work bubble",
+      "durationSeconds": 14,
+      "narration": "First, put one question inside a Warp: an isolated, reversible piece of work. It is a project boundary, not a mathematical force. We test the animation before building its explanation.",
+      "bubbles": [
+        "Warp = a bounded work scope",
+        "Test the animation, then explain it"
+      ],
+      "formulas": [],
+      "visuals": [
+        "Three nested-outline cards labeled Coordinator, Scientific animation, and Presentation. Present the animation and presentation as separate linked scopes, not physical universes.",
+        "Original geometric presenter points from a question card to a check card. An arrow from accepted animation to presentation establishes the production order."
+      ],
+      "evidenceStatus": "scope_definition",
+      "dataBindings": [],
+      "startSeconds": 0,
+      "narrationWordCount": 30
+    },
+    {
+      "id": "origin",
+      "title": "Move the output origin",
+      "durationSeconds": 14,
+      "narration": "Your idea gave each point its own origin. Here we shift zeta's output origin smoothly from zero toward one. That turns two separate pictures into one changing equation.",
+      "bubbles": [
+        "Move the output origin",
+        "Target a: 0 → 1"
+      ],
+      "formulas": [
+        "F_a(s) = ζ(s) − a",
+        "ζ(s) = a"
+      ],
+      "visuals": [
+        "Side-by-side input plane s and output plane w=ζ(s). A labeled target a travels on the output real axis from 0 to 1.",
+        "Draw four phase sectors around the moving output origin. Keep the input axes fixed; do not animate a translation of s."
+      ],
+      "evidenceStatus": "exact_definition",
+      "dataBindings": [],
+      "startSeconds": 14,
+      "narrationWordCount": 28
+    },
+    {
+      "id": "prior_work",
+      "title": "Where the pieces came from",
+      "durationSeconds": 15,
+      "narration": "Wegert's phase plots explain the color view. Lester's work places zeta's a-points in an established research area. We connect those ideas to our earlier two-state switch, using classical prediction and Newton correction.",
+      "bubbles": [
+        "Established ideas, combined here",
+        "Four colors: our display choice"
+      ],
+      "formulas": [
+        "Earlier: ζ(s) or ζ(s) − 1",
+        "Now: ζ(s) − a, with 0 ≤ a ≤ 1"
+      ],
+      "visuals": [
+        "Four source cards: earlier switch checkpoint f24b64c; Wegert phase plots (2010), arXiv:1007.2295; Lester a-points (2014), arXiv:1402.0169; classical derivative prediction and Newton correction.",
+        "Our four-bin palette is a quantization choice; we do not claim Wegert used it. We use the a-point research subject, not Lester's distribution theorems."
+      ],
+      "evidenceStatus": "established_sources_with_precise_reuse",
+      "dataBindings": [],
+      "startSeconds": 28,
+      "narrationWordCount": 32
+    },
+    {
+      "id": "prior_results",
+      "title": "Partial results we can learn from",
+      "durationSeconds": 18,
+      "narration": "Platt and Trudgian provide rigorous finite checks. Lamzouri's preprint presents a proportion bound; OpenAI reports a zero-free region and formalization. These concern zeta zeros, not a certificate for our moving nonzero targets.",
+      "bubbles": [
+        "Different kinds of partial results",
+        "No percentage of RH solved"
+      ],
+      "formulas": [
+        "Verified height: 3 × 10¹²",
+        "Preprint: >67.25% simple and on line",
+        "OpenAI reports: zero-free Re(s) > 7/8"
+      ],
+      "visuals": [
+        "Three readable source cards distinguish Platt–Trudgian interval verification, Lamzouri's September 2026 preprint and its Claude/Anthropic background, and OpenAI's reported zero-free region/Lean formalization.",
+        "Label the preprint as a preprint and the Lean work as reported, not replayed here. Do not show a progress bar for RH, adopt these claims as assumptions, or imply they govern ζ(s)=a for nonzero a."
+      ],
+      "evidenceStatus": "primary_source_reports_not_independently_reproved",
+      "dataBindings": [],
+      "startSeconds": 43,
+      "narrationWordCount": 32
+    },
+    {
+      "id": "tracking",
+      "title": "Follow one solution continuously",
+      "durationSeconds": 15,
+      "narration": "We follow the same root as the target moves. Where zeta prime is nonzero, this formula gives its direction and speed. Smaller steps and corrections help the computation stay on track.",
+      "bubbles": [
+        "Track identity; do not jump branches",
+        "Valid locally when ζ′(s) ≠ 0"
+      ],
+      "formulas": [
+        "ζ′(s(a)) · s′(a) = 1",
+        "ds/da = 1 / ζ′(s)"
+      ],
+      "visuals": [
+        "Use scientific-animation assets for three labeled starting zeros. Show one short tangent prediction arrow followed by a small correction.",
+        "A small target slider advances smoothly. Distinguish the numerical predictor from the accepted corrected sample."
+      ],
+      "evidenceStatus": "local_theorem_with_hypotheses",
+      "dataBindings": [
+        "accepted_animation.trajectory_samples"
+      ],
+      "startSeconds": 61,
+      "narrationWordCount": 31
+    },
+    {
+      "id": "results",
+      "title": "What happened in the chosen window?",
+      "durationSeconds": 16,
+      "narration": "Independent checks find two paths leaving the right edge before the target reaches one. The third reaches a finite one-point. Leaving our window means the view ended, not that the mathematical branch stopped.",
+      "bubbles": [
+        "Two window exits",
+        "One finite 1-point"
+      ],
+      "formulas": [
+        "Z1 exits near a = 0.854448; Z2 near a = 0.917225",
+        "s₃(1) ≈ 1.407788 + 23.327988 i"
+      ],
+      "visuals": [
+        "Reserved data scene: three branch summary rows with endpoint, exit target, and diagnostic state blank until the independent reference artifact is accepted.",
+        "When finalized, show actual reference paths. Any frozen exit marker must say exited at a=... and must not appear to follow the current target."
+      ],
+      "evidenceStatus": "independently_checked_finite_numerical_result",
+      "finalizationRequired": false,
+      "dataBindings": [
+        "reference.trajectories[*].status",
+        "reference.trajectories[*].exit",
+        "reference.trajectories[*].endpoint",
+        "numericalReport.coarseFineComparisons",
+        "numericalReport.reverseComparisons"
+      ],
+      "data": {
+        "branches": [
+          {
+            "id": "Z1",
+            "status": "exited",
+            "exitA": 0.854447992969996,
+            "exitADecimal": "0.854447992969995946578561851930710187991158122144952358212321996688842773",
+            "endpoint": {
+              "real": 3.0,
+              "imaginary": 13.838676524192683
+            },
+            "endpointDecimal": {
+              "real": "2.99999999999999999999999634112331713997557257730247477843256904851544544",
+              "imaginary": "13.8386765241926833638705727359192869034379454547243756265493872621975633"
+            },
+            "maximumSampledResidual": "6.60606520754174943305223325289737974337059366282994704878409498866168805e-61",
+            "minimumSampledDerivativeMagnitude": "0.108060917812447780743387131579815391441186117909532344972142149467768198",
+            "exitBracketWidthA": "5.14572515456987455984005919162882491946220397949218749999164045871893592e-25"
+          },
+          {
+            "id": "Z2",
+            "status": "exited",
+            "exitA": 0.9172245193893167,
+            "exitADecimal": "0.91722451938931672697920266801308031290318467654287815093994140625",
+            "endpoint": {
+              "real": 3.0,
+              "imaginary": 22.209064104699262
+            },
+            "endpointDecimal": {
+              "real": "2.99999999999999999999999671668151276071935670412650673094711721461457714",
+              "imaginary": "22.2090641046992617145756135797295949408513385901846410821782122985770834"
+            },
+            "maximumSampledResidual": "9.86170036041030575369269043564733546044915137102647748118018101164995023e-61",
+            "minimumSampledDerivativeMagnitude": "0.0459297717661977219330432500714924873521292149845975266656260414794209734",
+            "exitBracketWidthA": "6.74460487459782598307356238365173339843750000000000000000064108654130819e-25"
+          },
+          {
+            "id": "Z3",
+            "status": "completed",
+            "exitA": null,
+            "exitADecimal": null,
+            "endpoint": {
+              "real": 1.4077880406528867,
+              "imaginary": 23.327987754559103
+            },
+            "endpointDecimal": {
+              "real": "1.40778804065288669385419974236805666338030480226676766497379469599269619",
+              "imaginary": "23.3279877545591044950394126864606589268898708975940066763539925119626187"
+            },
+            "maximumSampledResidual": "8.80988505514264057764056721988930121776983551540519228904060398323646135e-61",
+            "minimumSampledDerivativeMagnitude": "0.100413318171208041382958963917009217789729962407019181893864260877604413",
+            "exitBracketWidthA": null
+          }
+        ]
+      },
+      "finalizationRule": "Finalized from passed reference and accepted animation.",
+      "startSeconds": 76,
+      "narrationWordCount": 33
+    },
+    {
+      "id": "combine",
+      "title": "Give each method a specific job",
+      "durationSeconds": 16,
+      "narration": "Color shows phase. Continuation follows a solution. Higher precision checks numerical stability. Analytic estimates would be needed for a certificate. These methods help separate tracked connections from artifacts of switching or coarse pixels.",
+      "bubbles": [
+        "Color + tracking + independent numerics",
+        "A certificate needs analytic bounds"
+      ],
+      "formulas": [
+        "Residual: |ζ(s_j) − a|",
+        "Sample agreement ≠ a rigorous enclosure"
+      ],
+      "visuals": [
+        "Four aligned cards feed one evidence ledger: phase view, labeled trajectory, independent high-precision comparison, and an explicitly future analytic certificate.",
+        "Show a false line across the old selector jump fading out, beside the actual continuous path. Do not show a certificate check mark unless a certified artifact exists."
+      ],
+      "evidenceStatus": "method_scope",
+      "dataBindings": [
+        "reference.validation",
+        "accepted_animation.validation"
+      ],
+      "startSeconds": 92,
+      "narrationWordCount": 33
+    },
+    {
+      "id": "conjecture",
+      "title": "A claim the experiment can reject",
+      "durationSeconds": 15,
+      "narration": "Our conjecture required all three paths to remain inside the window. The computed exits give numerical counterevidence. A rigorous rejection would require certified continuation bounds. We keep the original window.",
+      "bubbles": [
+        "Confinement fails numerically",
+        "Keep the original window"
+      ],
+      "formulas": [
+        "For all a ∈ [0,1]: s_j(a) ∈ R and ζ′(s_j(a)) ≠ 0"
+      ],
+      "visuals": [
+        "Show the original conjecture on a card with separate in-window, noncritical, and endpoint clauses.",
+        "Reserve the outcome stamp until final reference data arrives. If an exit occurs, highlight the failed in-window clause; do not imply a failure of RH or of ζ itself."
+      ],
+      "evidenceStatus": "numerical_counterevidence_not_interval_certified",
+      "finalizationRequired": false,
+      "dataBindings": [
+        "numericalReport.observedOutcome"
+      ],
+      "finalizationRule": "Original rectangle preserved; numerical counterevidence is not a certified theorem.",
+      "startSeconds": 108,
+      "narrationWordCount": 30
+    },
+    {
+      "id": "rh_gap",
+      "title": "The missing global constraint",
+      "durationSeconds": 15,
+      "narration": "One-points are not zeta zeros. Even three successful paths would not exclude an unseen zero off the critical line. A proof of Riemann needs a global constraint, beyond what these pictures establish.",
+      "bubbles": [
+        "A 1-point is not a zeta zero",
+        "Needed: a proved global exclusion"
+      ],
+      "formulas": [
+        "RH target: ζ(ρ) = 0 and 0 < Re ρ < 1 ⇒ Re ρ = 1/2",
+        "Three finite paths do not prove this universal statement"
+      ],
+      "visuals": [
+        "Zoom from the finite window to a symbolic unbounded critical strip. Keep the tested window small and visibly bounded.",
+        "Presenter sets a checked experiment card beside an open global-proof card. Do not show a victory check, solved badge, or percentage of RH completed."
+      ],
+      "evidenceStatus": "scope_limitation",
+      "dataBindings": [],
+      "startSeconds": 123,
+      "narrationWordCount": 32
+    }
+  ],
+  "sources": [
+    {
+      "title": "Elias Wegert, Phase Plots of Complex Functions: a Journey in Illustration",
+      "year": 2010,
+      "url": "https://arxiv.org/abs/1007.2295",
+      "reuse": "Phase-coloring foundation. Our four-quadrant palette is a quantization choice, not a claimed reproduction of Wegert's palette."
+    },
+    {
+      "title": "Stephen J. Lester, a-Points of the Riemann zeta-function on the critical line",
+      "year": 2014,
+      "url": "https://arxiv.org/abs/1402.0169",
+      "reuse": "Established research on nonzero zeta a-points. We do not implement its distribution theorems."
+    },
+    {
+      "title": "Platt and Trudgian, The Riemann hypothesis is true up to 3·10^12",
+      "year": 2020,
+      "url": "https://arxiv.org/abs/2004.09765",
+      "reuse": "Rigorous interval verification through height 3·10^12. Our height-10-to-30 animation adds no new verified RH height."
+    },
+    {
+      "title": "Lamzouri, A new proof that more than 2/3 of the zeros are simple and on the critical line",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2609.02882v2",
+      "reuse": "September 2026 preprint states >67.25% simple and on line. It describes earlier Claude/Anthropic work verified by Alpöge and Furman. We have not independently checked these proofs; this is not a journal-acceptance or percent-RH-solved claim."
+    },
+    {
+      "title": "OpenAI math repository, The quasi-Riemann hypothesis: formalization scope",
+      "url": "https://github.com/openai/math/blob/main/lean/docs/003.md",
+      "reuse": "OpenAI reports a zero-free half-plane Re(s)>7/8 and Lean formalization. We did not replay that formalization or verify its new proof. It is not an assumption in this experiment."
+    },
+    {
+      "title": "NIST DLMF 25.10(i), Riemann zeta zeros",
+      "url": "https://dlmf.nist.gov/25.10.i",
+      "reuse": "RH concerns all nontrivial zeta zeros and the input critical line."
+    },
+    {
+      "title": "mpmath zeta-function documentation",
+      "url": "https://mpmath.org/doc/current/functions/zeta.html",
+      "reuse": "Zeta values, derivatives, Euler–Maclaurin evaluation and zero seeds; reference environment pins mpmath 1.3.0."
+    },
+    {
+      "title": "Earlier tested two-state zeta laboratory",
+      "commit": "f24b64c",
+      "artifacts": [
+        "Graphics/ZetaSwitchExperiment.cs",
+        "research/zeta-switch/math-audit.md",
+        "research/zeta-switch/evidence/review-audit.json"
+      ],
+      "reuse": "Two fixed output origins lead to ζ−a. Its discontinuous selector is not a continuation algorithm."
+    }
+  ],
+  "guardrails": [
+    "Do not narrate preliminary measurements as accepted results.",
+    "A boundary exit is a limitation of the chosen window, not an end of the mathematical branch.",
+    "Low sampled derivative or solver failure is not proof of a critical encounter.",
+    "One-points off the critical line do not contradict RH.",
+    "No novelty, partial RH proof, or likely breakthrough is claimed.",
+    "Warp describes the reversible work scope only."
+  ],
+  "delivery": {
+    "application": "Adobe After Effects 27.0x78",
+    "nativeVectorComposition": true,
+    "frameSize": [
+      1920,
+      1080
+    ],
+    "plannedVideo": "H.264, approximately 15 Mbps",
+    "actualRenderVerified": false
+  },
+  "referenceCheckDate": "2026-11-15",
+  "resultSummary": {
+    "status": "independent_and_native_numerical_checks_passed",
+    "branches": [
+      {
+        "id": "Z1",
+        "status": "exited",
+        "exitA": 0.854447992969996,
+        "exitADecimal": "0.854447992969995946578561851930710187991158122144952358212321996688842773",
+        "endpoint": {
+          "real": 3.0,
+          "imaginary": 13.838676524192683
+        },
+        "endpointDecimal": {
+          "real": "2.99999999999999999999999634112331713997557257730247477843256904851544544",
+          "imaginary": "13.8386765241926833638705727359192869034379454547243756265493872621975633"
+        },
+        "maximumSampledResidual": "6.60606520754174943305223325289737974337059366282994704878409498866168805e-61",
+        "minimumSampledDerivativeMagnitude": "0.108060917812447780743387131579815391441186117909532344972142149467768198",
+        "exitBracketWidthA": "5.14572515456987455984005919162882491946220397949218749999164045871893592e-25"
+      },
+      {
+        "id": "Z2",
+        "status": "exited",
+        "exitA": 0.9172245193893167,
+        "exitADecimal": "0.91722451938931672697920266801308031290318467654287815093994140625",
+        "endpoint": {
+          "real": 3.0,
+          "imaginary": 22.209064104699262
+        },
+        "endpointDecimal": {
+          "real": "2.99999999999999999999999671668151276071935670412650673094711721461457714",
+          "imaginary": "22.2090641046992617145756135797295949408513385901846410821782122985770834"
+        },
+        "maximumSampledResidual": "9.86170036041030575369269043564733546044915137102647748118018101164995023e-61",
+        "minimumSampledDerivativeMagnitude": "0.0459297717661977219330432500714924873521292149845975266656260414794209734",
+        "exitBracketWidthA": "6.74460487459782598307356238365173339843750000000000000000064108654130819e-25"
+      },
+      {
+        "id": "Z3",
+        "status": "completed",
+        "exitA": null,
+        "exitADecimal": null,
+        "endpoint": {
+          "real": 1.4077880406528867,
+          "imaginary": 23.327987754559103
+        },
+        "endpointDecimal": {
+          "real": "1.40778804065288669385419974236805666338030480226676766497379469599269619",
+          "imaginary": "23.3279877545591044950394126864606589268898708975940066763539925119626187"
+        },
+        "maximumSampledResidual": "8.80988505514264057764056721988930121776983551540519228904060398323646135e-61",
+        "minimumSampledDerivativeMagnitude": "0.100413318171208041382958963917009217789729962407019181893864260877604413",
+        "exitBracketWidthA": null
+      }
+    ],
+    "referenceArtifact": "research/zeta-continuation/evidence/reference-trajectories.json",
+    "reportArtifact": "research/zeta-continuation/evidence/numerical-report.json",
+    "nativeValidationArtifact": "research/zeta-continuation/evidence/native-validation.json",
+    "certifiedContinuation": false,
+    "criticalEncounterProved": false,
+    "conjectureAssessment": "Numerical counterevidence to all three branches remaining in the original rectangle; not interval-certified.",
+    "interpretation": "Two first-detected right-boundary exits and one finite target-one endpoint; an exit does not end the mathematical branch."
+  },
+  "narrationSha256": "de48e24becc7e0792068c57f599b5505fa045c16a79cb24357e51792f38603f8"
+}
