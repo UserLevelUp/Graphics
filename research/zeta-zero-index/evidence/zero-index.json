@@ -1,0 +1,3316 @@
+{
+  "schema": "graph-zeta-zero-index-v1",
+  "traceId": "graph.riemann.zero_index.analysis",
+  "status": "passed",
+  "createdUtc": "2026-11-15T22:14:43.931618+00:00",
+  "source": {
+    "path": "zero_index_analysis.py",
+    "sha256": "5f5e9dd4f7391bc127bcb45d279555e89c603118ad7b15358fb9bad34f6203a4"
+  },
+  "runtime": {
+    "python": "3.11.5 (main, Jan 23 2026, 07:39:48) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Program Files\\KiCad\\10.0\\bin\\python.exe",
+    "mpmath": "1.3.0",
+    "recovery": "Existing Python3.11 used after Python3.14 access violations in a superseded integer-height mpmath study. No runtime or application installation changed."
+  },
+  "definition": {
+    "trajectory": "zeta(s(a))=a, real a; start s(0)=rho_j.",
+    "derivative": "ds/da=1/zeta_prime(s)",
+    "slope": "dt/dsigma=-Im(zeta_prime(s))/Re(zeta_prime(s))",
+    "slopeConvention": "sigma horizontal, t increasing upward; Cartesian slope dt/dsigma.",
+    "indexMeaning": "j is the ordered positive-height nontrivial zero index, not height t=j.",
+    "startTarget": 0,
+    "indices": [
+      1,
+      100
+    ]
+  },
+  "selectedIndices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47,
+    53,
+    59,
+    61,
+    67,
+    71,
+    73,
+    79,
+    83,
+    89,
+    97
+  ],
+  "controlIndices": [
+    1,
+    4,
+    6,
+    8,
+    9,
+    10
+  ],
+  "rows": [
+    {
+      "zeroIndex": 1,
+      "height": "14.1347251417346937904572519835624702707842571157",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "neither",
+      "isPrimeIndex": false,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "14.1347251417346937904572519835624702707842571157"
+      },
+      "zeroResidual": "3.95374447428156490911208227343145761056470296151e-51",
+      "startDerivative": {
+        "real": "0.783296511867030928649657209239065074796139179743",
+        "imag": "0.124699829748171089409928491508905372843250837878"
+      },
+      "dsDa": {
+        "real": "1.24509964645257552674208431426827130160364388026",
+        "imag": "-0.198218313984399676274569406466267138704018723703"
+      },
+      "slope": "-0.159198755335884350353230556411380988228162105166",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "0.793160433356506116013897565274352114145892905054",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "3.95116989195672436698389356712286307344037137198e-51"
+      }
+    },
+    {
+      "zeroIndex": 2,
+      "height": "21.0220396387715549926284795938969027773343405249",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "21.0220396387715549926284795938969027773343405249"
+      },
+      "zeroResidual": "2.07765150686813156279077230191244275458989389303e-51",
+      "startDerivative": {
+        "real": "1.10929556346267156565222589412963157936976669966",
+        "imag": "-0.248729788516497458220829957961646103204591423"
+      },
+      "dsDa": {
+        "real": "0.858320067798666464648869337176091449135008968376",
+        "imag": "0.192455262578188543730525765961464525115702934321"
+      },
+      "slope": "0.224223188759618039166251403463899222678611584817",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.13683910682797482213611450662018479213534377694",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "2.31048587830157462725865847043808416536288948393e-51"
+      }
+    },
+    {
+      "zeroIndex": 3,
+      "height": "25.0108575801456887632137909925628218186595496726",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "25.0108575801456887632137909925628218186595496726"
+      },
+      "zeroResidual": "2.36757047432364434953176654669208569518142512573e-50",
+      "startDerivative": {
+        "real": "1.29579560500883517344426576845690517186370699934",
+        "imag": "0.450036709437867143568575171092745573614933145095"
+      },
+      "dsDa": {
+        "real": "0.688659821905458307985507571283130076772353669201",
+        "imag": "-0.239175220979613463505895662298611398875207294859"
+      },
+      "slope": "-0.347305321686747533623064139963282973942978828197",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.37172128721612993730691528882667086485983471591",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "2.60568779361808717123198456137175389604182460327e-50"
+      }
+    },
+    {
+      "zeroIndex": 4,
+      "height": "30.4248761258595132103118975305840913201815600237",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "30.4248761258595132103118975305840913201815600237"
+      },
+      "zeroResidual": "6.76218855850678731013776786457785434896320478435e-51",
+      "startDerivative": {
+        "real": "1.12013084524449343703787165229074797607701472013",
+        "imag": "-0.667509469349492282551883386086101967335191900319"
+      },
+      "dsDa": {
+        "real": "0.65879896382738038034197975223680645030088504411",
+        "imag": "0.392592123160775776519542485566604073942204758576"
+      },
+      "slope": "0.595920978503001151008133346931035964322139756974",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.30394095040357716442720416075102552609637911326",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.04980194984872780306423128979580349880764493452e-50"
+      }
+    },
+    {
+      "zeroIndex": 5,
+      "height": "32.9350615877391896906623689640749034888127156035",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "32.9350615877391896906623689640749034888127156035"
+      },
+      "zeroResidual": "2.38705630470520045530578449575267246345099334119e-50",
+      "startDerivative": {
+        "real": "1.16057006749356257037876786852867990203921458214",
+        "imag": "0.750554150342263821613807178837652960327787517415"
+      },
+      "dsDa": {
+        "real": "0.607547381590588510440745015622540409093182172317",
+        "imag": "-0.39290795235413101275695142125323866129689512799"
+      },
+      "slope": "-0.646711621611270775052246157634657718166606502501",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.38211953685562593725945851250083083792757923541",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "3.98709063823497164645609253646032594571496985104e-50"
+      }
+    },
+    {
+      "zeroIndex": 6,
+      "height": "37.5861781588256712572177634807053328214055973508",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "37.5861781588256712572177634807053328214055973508"
+      },
+      "zeroResidual": "4.09598173955017927696132848440946782655030518357e-50",
+      "startDerivative": {
+        "real": "1.85346624998295542544059666058751969830388523851",
+        "imag": "-0.561004420495760690984962341684302083927860492499"
+      },
+      "dsDa": {
+        "real": "0.494249350140285083058267316393847341508708545356",
+        "imag": "0.149598661566352663039440860403802029815617528339"
+      },
+      "slope": "0.302678519504155911972058161303178670648177950182",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.93650796529259432082613932822845939639555689098",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "4.15442585590820150118012165160995818591798242168e-50"
+      }
+    },
+    {
+      "zeroIndex": 7,
+      "height": "40.9187190121474951873981269146332543957261659628",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "40.9187190121474951873981269146332543957261659628"
+      },
+      "zeroResidual": "2.63422527188602635829759667446622082486361289108e-50",
+      "startDerivative": {
+        "real": "1.45951733467199078523479190298937820787052896989",
+        "imag": "-0.302868935446092561091801174045617813044001428918"
+      },
+      "dsDa": {
+        "real": "0.656872004464450590315774388299888901958133029327",
+        "imag": "0.136309531918783200310399100589184537138592063097"
+      },
+      "slope": "0.207513078639904446951969302054432091046330603764",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.49061076148882050733669609618851706974102148204",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "3.43686375097631254312668722811202251422034411609e-50"
+      }
+    },
+    {
+      "zeroIndex": 8,
+      "height": "43.3270732809149995194961221654068057826456683718",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "43.3270732809149995194961221654068057826456683718"
+      },
+      "zeroResidual": "1.85988847994849431479664250089422819506689264542e-50",
+      "startDerivative": {
+        "real": "1.46408757414579939095750188891917719636584288508",
+        "imag": "1.10372579262141035758266251402754109013991098788"
+      },
+      "dsDa": {
+        "real": "0.435511828865244553962626333393761912127198927758",
+        "imag": "-0.328317545342696535822856633835236519949046680468"
+      },
+      "slope": "-0.753865965473658995041108029750703155601268597974",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.83351112624545918564071637270307362125834304114",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "3.0295947828185741153484130930946254093325538605e-50"
+      }
+    },
+    {
+      "zeroIndex": 9,
+      "height": "48.0051508811671597279424727494275160416868440011",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "48.0051508811671597279424727494275160416868440011"
+      },
+      "zeroResidual": "6.49237833966389928063185285689084702695928890568e-50",
+      "startDerivative": {
+        "real": "1.03392979847194648887639382416186068225572193428",
+        "imag": "-1.178860415987819176705385171977572117842266125"
+      },
+      "dsDa": {
+        "real": "0.42051500759969096454590574902045831309818064745",
+        "imag": "0.479460498692207083505499576709001858671324288125"
+      },
+      "slope": "1.14017452416021557908679054113495424025934935033",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.56803147562515911226239636512967570933883340282",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.94528295669427094630628262070596702162702185335e-49"
+      }
+    },
+    {
+      "zeroIndex": 10,
+      "height": "49.7738324776723021819167846785637240577231782997",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "49.7738324776723021819167846785637240577231782997"
+      },
+      "zeroResidual": "4.67478114275932864361587882677174863936616784116e-50",
+      "startDerivative": {
+        "real": "1.26089364678424344577294730913403365521766193751",
+        "imag": "0.650781025236231337515553023094729746844900437003"
+      },
+      "dsDa": {
+        "real": "0.626260668091756335210910261052680584570624466099",
+        "imag": "-0.323229925604993830306053756880511572640757324375"
+      },
+      "slope": "-0.516126817591610152052176523953242062755395328461",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.41893225042931096280390760921152864166798661395",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "8.63710698852979779788924243113497511969526465715e-50"
+      }
+    },
+    {
+      "zeroIndex": 11,
+      "height": "52.9703214777144606441472966088809900638250178888",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "52.9703214777144606441472966088809900638250178888"
+      },
+      "zeroResidual": "6.54579057398534073815372000811810567690488042433e-50",
+      "startDerivative": {
+        "real": "2.34497063266744507318389774804788360067780202295",
+        "imag": "0.624018192393267539292608201353341181485827779403"
+      },
+      "dsDa": {
+        "real": "0.398243333223784942521916038832462715920858020026",
+        "imag": "-0.105976203483746952117903090667478298343224201872"
+      },
+      "slope": "-0.266109171560684297646837595446524202521420027271",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.42657906784644433033544767764493162255191731163",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "6.13848483854311479590254742589195505727341447835e-50"
+      }
+    },
+    {
+      "zeroIndex": 12,
+      "height": "56.4462476970633948043677594767061275527822644717",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "56.4462476970633948043677594767061275527822644717"
+      },
+      "zeroResidual": "3.46020470723750441358777978783758515494001287763e-51",
+      "startDerivative": {
+        "real": "2.21680853789142933319987190753117956022128643845",
+        "imag": "-0.832391575947241292597783500603442844770124890468"
+      },
+      "dsDa": {
+        "real": "0.395356294634995162633032929212101696100276549333",
+        "imag": "0.148452716383395258970375684479531561021904671364"
+      },
+      "slope": "0.375490964474086032678460493215841784276724886428",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "2.36793492929520101931930358456234112674702514839",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "3.46458867011604732580982333385394899967848343835e-51"
+      }
+    },
+    {
+      "zeroIndex": 13,
+      "height": "59.3470440026023530796536486749922190310987728065",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "59.3470440026023530796536486749922190310987728065"
+      },
+      "zeroResidual": "5.20754352655705590252422282458977450035387376342e-50",
+      "startDerivative": {
+        "real": "1.26015151261487028671220404961899996155525638227",
+        "imag": "-0.590881578746292114650302609452901377576976611027"
+      },
+      "dsDa": {
+        "real": "0.650527402766969192091062888645890031419097491126",
+        "imag": "0.305030510154335787770349157874243382347892276531"
+      },
+      "slope": "0.46889724991892969149100724404357176957022506947",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.39180561676092405278510613073491336657948003208",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.02036096393910753125458998936201132335832825056e-49"
+      }
+    },
+    {
+      "zeroIndex": 14,
+      "height": "60.8317785246098098442599018245240038029100904512",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "60.8317785246098098442599018245240038029100904512"
+      },
+      "zeroResidual": "2.71113845667694903007552345065203064953474319772e-50",
+      "startDerivative": {
+        "real": "0.855936503982157910841812682868156526383243492546",
+        "imag": "1.41547835276601339193976963897622880015844521119"
+      },
+      "dsDa": {
+        "real": "0.312818706183996081235619016609558863020654122754",
+        "imag": "-0.517314198989868372396509737917325170683363313374"
+      },
+      "slope": "-1.65371887538461520220074549458873080142531057029",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.65414819952699077289229503170182914238999416802",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.38410307782565373963763480779336363685518639315e-49"
+      }
+    },
+    {
+      "zeroIndex": 15,
+      "height": "65.1125440480816066608750542531837050293481492952",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "65.1125440480816066608750542531837050293481492952"
+      },
+      "zeroResidual": "1.1295912006888873425875906028710260775103049005e-49",
+      "startDerivative": {
+        "real": "1.6515820757305586406876431228338009196428752965",
+        "imag": "-1.58310121727212044535081902908990755578321245185"
+      },
+      "dsDa": {
+        "real": "0.315552784775004496305294207200979203962988385877",
+        "imag": "0.302468769207213562622107197088461675439002849953"
+      },
+      "slope": "0.958536206305008207008266287908380072301355454257",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "2.28777901402275526739540433759825290051226960246",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "2.21374037348559793828732250400122267594913844156e-49"
+      }
+    },
+    {
+      "zeroIndex": 16,
+      "height": "67.0798105294941737144788288965222167701071449517",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "67.0798105294941737144788288965222167701071449517"
+      },
+      "zeroResidual": "3.86187591681483745752862811114367970833719750314e-51",
+      "startDerivative": {
+        "real": "1.78007607549082739220312831917727975407121916554",
+        "imag": "0.111737234202597350274192420654246704894606162665"
+      },
+      "dsDa": {
+        "real": "0.559568927410743909279406791503074562362831074881",
+        "imag": "-0.0351247259347330482277404203093689857614491236015"
+      },
+      "slope": "-0.0627710443059505770233082157065286731984306426478",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.7835795592128969877194660693785299267383820108",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "5.20703816368567797048112976077255027127236413337e-51"
+      }
+    },
+    {
+      "zeroIndex": 17,
+      "height": "69.5464017111739792529268575265547384430124742096",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "69.5464017111739792529268575265547384430124742096"
+      },
+      "zeroResidual": "6.24705383921975106283336112903616962996493916914e-50",
+      "startDerivative": {
+        "real": "2.11201794220059005784356033789496215638645957485",
+        "imag": "0.565098289987510214564089685543376374250383528385"
+      },
+      "dsDa": {
+        "real": "0.441848837440897801396474635523512062499806167221",
+        "imag": "-0.118222491145440501244515700772849770570563175602"
+      },
+      "slope": "-0.267563205167998376674127936376512934830845102844",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.18631101756452372170476516715105666967134762595",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "7.34159958177767581068746689137950251803199075549e-50"
+      }
+    },
+    {
+      "zeroIndex": 18,
+      "height": "72.0671576744819075825221079698261683904809066215",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "72.0671576744819075825221079698261683904809066215"
+      },
+      "zeroResidual": "9.95674172622206319326278321118541786216303234476e-50",
+      "startDerivative": {
+        "real": "2.78442039783222080489430054675873517338693055102",
+        "imag": "1.01757791078938291674031724392179128049694177997"
+      },
+      "dsDa": {
+        "real": "0.316826820780951617191292935174279379918905056506",
+        "imag": "-0.115785667503125876906722718286227326677853896687"
+      },
+      "slope": "-0.365454121648299501905361816816199675510414428377",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.96453398637806615304161850343601047144913708827",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "9.2395849235527344278942110923138270487583793258e-50"
+      }
+    },
+    {
+      "zeroIndex": 19,
+      "height": "75.7046906990839331683269167620303459228119035307",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "75.7046906990839331683269167620303459228119035307"
+      },
+      "zeroResidual": "9.0690675234550496155822080752449365753760177955e-50",
+      "startDerivative": {
+        "real": "0.975756974226868577472670256396183513960821334901",
+        "imag": "-1.48819281939130251434428252220169662667235298047"
+      },
+      "dsDa": {
+        "real": "0.308118906608499777996829273679662115181617556276",
+        "imag": "0.469932940727160715205478040243425130235407075049"
+      },
+      "slope": "1.52516749426306425201452278949035226622576165639",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.77955599530900061372262458944235303024974474537",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "4.20404354413623937191638614446632147869391190227e-49"
+      }
+    },
+    {
+      "zeroIndex": 20,
+      "height": "77.1448400688748053726826648563046370157960324492",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "77.1448400688748053726826648563046370157960324492"
+      },
+      "zeroResidual": "1.02762527129826617416118510904952977969255519489e-49",
+      "startDerivative": {
+        "real": "1.36812118170056652974308169570090476294420581866",
+        "imag": "0.502667718581876953027724648871571620119713780435"
+      },
+      "dsDa": {
+        "real": "0.643994352410874552157746537045072433296184979199",
+        "imag": "-0.236612937681157409419351965718211140333622917491"
+      },
+      "slope": "-0.3674146159750731690025494989236417815714000007",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.45754259050021026210012708339303912593732319951",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "2.01077186329495936517483271809261948004426017659e-49"
+      }
+    },
+    {
+      "zeroIndex": 21,
+      "height": "79.3373750202493679227635928771162281906132467431",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "79.3373750202493679227635928771162281906132467431"
+      },
+      "zeroResidual": "9.97776802321426552139299019621516186717099652195e-50",
+      "startDerivative": {
+        "real": "1.96736764082021826953247373682647479750198199638",
+        "imag": "1.75724449650986005865483871210266347637864027814"
+      },
+      "dsDa": {
+        "real": "0.282730986763468743108440437413807810705807413694",
+        "imag": "-0.252534127416965359459847032862838326949122326901"
+      },
+      "slope": "-0.893195791192969176035066221232867880426548627946",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.63788620957400339167475322560759381325921479042",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.71484571316920251541870550820962366701219966182e-49"
+      }
+    },
+    {
+      "zeroIndex": 22,
+      "height": "82.9103808540860301831648374947706094975088805938",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "82.9103808540860301831648374947706094975088805938"
+      },
+      "zeroResidual": "1.23188094706349053828643524397405880668367170541e-50",
+      "startDerivative": {
+        "real": "2.01039191929462722599273140797208651916337466842",
+        "imag": "-1.69079538293161935507851004269313022444168464727"
+      },
+      "dsDa": {
+        "real": "0.291341526669721780391660352279766014782629318742",
+        "imag": "0.245026307269604285296864081401580028616759018831"
+      },
+      "slope": "0.841027745239275249750812770339677888790336783075",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "2.6268735592159772396017991330599370379384697258",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "2.06750344635106646989316616174956123392421187202e-50"
+      }
+    },
+    {
+      "zeroIndex": 23,
+      "height": "84.7354929805170501057353112068277414171066279342",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "84.7354929805170501057353112068277414171066279342"
+      },
+      "zeroResidual": "4.69724793136346118684832812766851906710149757201e-51",
+      "startDerivative": {
+        "real": "2.15519310618320970650237321714741412205371762043",
+        "imag": "0.168613187806930950926621789556864653745240161005"
+      },
+      "dsDa": {
+        "real": "0.461172782366103770561424079257360051464313647802",
+        "imag": "-0.0360802067997755117377880122051609171179899009072"
+      },
+      "slope": "-0.078235767979761438062553791448187549289082648435",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.16177883513601992086483601914806884533607616409",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "3.45446742203777785015454074512015982844640014577e-77",
+        "slope50vs75Error": "5.51247018983493371451028825169386493957108310292e-51"
+      }
+    },
+    {
+      "zeroIndex": 24,
+      "height": "87.4252746131252294065316678509192132521718864013",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "87.4252746131252294065316678509192132521718864013"
+      },
+      "zeroResidual": "1.2405957658967653589755991071855531542534636982e-49",
+      "startDerivative": {
+        "real": "1.71982088312273272953989159842835878693787946695",
+        "imag": "-0.532740946434640348435771829991522111293118784034"
+      },
+      "dsDa": {
+        "real": "0.530547442091755050126231032603865665364615921526",
+        "imag": "0.164345222925327504294833137840857249780716780368"
+      },
+      "slope": "0.309765366651046764542493086434758238457650963987",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.80044349703986341137976433225113344522071094958",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.9838046382465771699114512264809336963389610976e-49"
+      }
+    },
+    {
+      "zeroIndex": 25,
+      "height": "88.8091112076344654236823480795093783954448934098",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "88.8091112076344654236823480795093783954448934098"
+      },
+      "zeroResidual": "1.74837443873535722305278659218734825914493166897e-49",
+      "startDerivative": {
+        "real": "1.15019136183959193290011592720428705746713040297",
+        "imag": "1.84771246779888508246895784492563937465867518283"
+      },
+      "dsDa": {
+        "real": "0.242811029332886166051869424486328468662928627841",
+        "imag": "-0.390061150780945898415097452069346801810470538693"
+      },
+      "slope": "-1.60643917968892804656307455571279314736632477799",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.17646078129376386897257807971948775323271276276",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "7.61817304722656406149426805506584346815287585019e-49"
+      }
+    },
+    {
+      "zeroIndex": 26,
+      "height": "92.4918992705584842962597252418106848787217940277",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "92.4918992705584842962597252418106848787217940277"
+      },
+      "zeroResidual": "4.4651124549868793757508811631439349841360747843e-50",
+      "startDerivative": {
+        "real": "2.17985014757685793159255030958567093426377270109",
+        "imag": "-2.06852108511380173251078045579767840310196137227"
+      },
+      "dsDa": {
+        "real": "0.241386837540453980648026685279405644790710428444",
+        "imag": "0.229058756023394886853756248267562498595919025401"
+      },
+      "slope": "0.948928112059991536912665558271989691862017404121",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "3.00508338410953733300968358061342791241104795819",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "7.61818102161367947767963810988920231177229185677e-50"
+      }
+    },
+    {
+      "zeroIndex": 27,
+      "height": "94.6513440405198869665979258152081539377280270157",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "94.6513440405198869665979258152081539377280270157"
+      },
+      "zeroResidual": "5.8577262119542544109308161516842906339384643832e-50",
+      "startDerivative": {
+        "real": "1.27362844322013382880926991712055321806670260727",
+        "imag": "-0.752662877737377420000298306468371251653417156124"
+      },
+      "dsDa": {
+        "real": "0.581929319563526771502791518431718502101094447584",
+        "imag": "0.343896682453985279727844233419120779648254062272"
+      },
+      "slope": "0.590959539058666605167793612867212643949612218948",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.47940218294527739642035917700054971218963512418",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.45206135593577913763673696662385415238581082296e-49"
+      }
+    },
+    {
+      "zeroIndex": 28,
+      "height": "95.870634228245309758741029219246781695256461225",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "95.870634228245309758741029219246781695256461225"
+      },
+      "zeroResidual": "4.16645749826848779413790142691290217617703719602e-50",
+      "startDerivative": {
+        "real": "0.984583925164456589143578762179296754009545680116",
+        "imag": "1.37794742374200376774775231872640025315618981487"
+      },
+      "dsDa": {
+        "real": "0.343282525685359509099422194898010631566200343589",
+        "imag": "-0.480431642030697609335413269836749551784882036093"
+      },
+      "slope": "-1.39952256839034118876236565437005392074844047004",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.69355974452910091065806349347611529865330754633",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.98923512885182262356120510529770937625209555334e-49"
+      }
+    },
+    {
+      "zeroIndex": 29,
+      "height": "98.8311942181936922333244201386223278206580390634",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "98.8311942181936922333244201386223278206580390634"
+      },
+      "zeroResidual": "2.01796996526014417442341998748578637405818799932e-50",
+      "startDerivative": {
+        "real": "3.51356243707126092649400618070129788333445708178",
+        "imag": "0.124487414212388586486556571473674085761999471512"
+      },
+      "dsDa": {
+        "real": "0.284254590202622244640117220270880129567465697509",
+        "imag": "-0.0100712936075850130555412168787449115877246965557"
+      },
+      "slope": "-0.035430539926922543367679221632552493757322477876",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "3.51576707355527539162458989526201994024896765377",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.57897885394553996389465304555030557170254072482e-50"
+      }
+    },
+    {
+      "zeroIndex": 30,
+      "height": "101.317851005731391228785447940292308906332866384",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "101.317851005731391228785447940292308906332866384"
+      },
+      "zeroResidual": "1.70392752977954481772474266370163186611390074028e-49",
+      "startDerivative": {
+        "real": "3.04491049754499565355816132133550100937673462738",
+        "imag": "-0.824814916610981565818133250618890933751893252523"
+      },
+      "dsDa": {
+        "real": "0.305965817701857991264179307364480682461417367297",
+        "imag": "0.082880981433458210397745594426052545472321390136"
+      },
+      "slope": "0.270883140005593219212741299537987509447203642459",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "3.15464729957624477638810144609640897986400409428",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.61516352106414660077267656493530505293181307425e-49"
+      }
+    },
+    {
+      "zeroIndex": 31,
+      "height": "103.725538040478339416398408108695280834481173069",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "103.725538040478339416398408108695280834481173069"
+      },
+      "zeroResidual": "5.46856173652657359728243273565424672415971705888e-50",
+      "startDerivative": {
+        "real": "1.91818604353880260597108260725740970008140159031",
+        "imag": "-1.00908286918866669667717884133645119744515158139"
+      },
+      "dsDa": {
+        "real": "0.408325731067841705994208750840103741326895316804",
+        "imag": "0.214804242611080516280693012869787451930750035747"
+      },
+      "slope": "0.526061000489316801224259552301906578999396212069",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "2.16741457375304112604254217471552451942084193072",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "8.9970201413793365686610812529165599689232418315e-50"
+      }
+    },
+    {
+      "zeroIndex": 32,
+      "height": "105.446623052326094493670832414111808997282753929",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "105.446623052326094493670832414111808997282753929"
+      },
+      "zeroResidual": "1.28201876573081702686566467814375810771341363653e-49",
+      "startDerivative": {
+        "real": "1.82114826275406337973088098886711106493187863744",
+        "imag": "0.44058627788052815230700674866082185274293630859"
+      },
+      "dsDa": {
+        "real": "0.518742610435146764185416715857208455906340488171",
+        "imag": "-0.125498225808380953646444987281218227639254513447"
+      },
+      "slope": "-0.241927736962087771699903071929560077517045805785",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.87368547605748415857587161795084223060826764834",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "2.04286569352045744050541044850568859518562385905e-49"
+      }
+    },
+    {
+      "zeroIndex": 33,
+      "height": "107.168611184276407515123351963086191213476707881",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "107.168611184276407515123351963086191213476707881"
+      },
+      "zeroResidual": "1.27679916945742442739053380562999291277321618181e-49",
+      "startDerivative": {
+        "real": "1.75015370683945824460532120041915752529692804869",
+        "imag": "2.41500544032005740171109328686873361743071486885"
+      },
+      "dsDa": {
+        "real": "0.196750623039118362335526528534141372433363257965",
+        "imag": "-0.271492625572810659267023996517279900106915287958"
+      },
+      "slope": "-1.37988191030445651356080203748598449269543960727",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.9824971541209172937467506964195622031853084243",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "3.51309267014714624447667037798435922956074663211e-49"
+      }
+    },
+    {
+      "zeroIndex": 34,
+      "height": "111.02953554316967452465645030994435041534596839",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "111.02953554316967452465645030994435041534596839"
+      },
+      "zeroResidual": "1.01014953880110877570944025693718729904748445414e-49",
+      "startDerivative": {
+        "real": "0.231297775273495763146476740096028162555963497194",
+        "imag": "-1.57394141239030850731863742606655068050105247562"
+      },
+      "dsDa": {
+        "real": "0.0913934993455746334253830622112036313901039113594",
+        "imag": "0.621916978116952557149679891128270598271117719157"
+      },
+      "slope": "6.80482728607837699966056099312443322243111707267",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.59084575948885369571928246070503234616163432276",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "8.62493163804366748345390859908176138956277310229e-48"
+      }
+    },
+    {
+      "zeroIndex": 35,
+      "height": "111.874659176992637085612078716770594960311749873",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "111.874659176992637085612078716770594960311749873"
+      },
+      "zeroResidual": "9.37643963538490304460484732376628966409856866461e-50",
+      "startDerivative": {
+        "real": "1.19351557883738382928677256532146843557389275625",
+        "imag": "0.654409658019566606801454355807380098856386094683"
+      },
+      "dsDa": {
+        "real": "0.64419243648640411570791132319672826787085998062",
+        "imag": "-0.353213447343947336418386135091810789320555427058"
+      },
+      "slope": "-0.548304244723000589725957027079151405470416422676",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.36115077689314841446790324177414937088955667501",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "2.57372834880669826123968277280709072884513467802e-49"
+      }
+    },
+    {
+      "zeroIndex": 36,
+      "height": "114.320220915452712765890937276191079809917657724",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "114.320220915452712765890937276191079809917657724"
+      },
+      "zeroResidual": "1.06598066020872951360019346826968336690925167508e-49",
+      "startDerivative": {
+        "real": "2.53120364420837134137371599035472655349315774623",
+        "imag": "0.276661973554610318156324839047235733428821047581"
+      },
+      "dsDa": {
+        "real": "0.390404946939423975163985680046974853176913451701",
+        "imag": "-0.042671478983084320721743838730301285475682983835"
+      },
+      "slope": "-0.109300559118440971255143368994053783459287359929",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.54627840898533152375051319903195953981370676006",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.22926456628484841704635053675589340233509035529e-49"
+      }
+    },
+    {
+      "zeroIndex": 37,
+      "height": "116.226680320857554382160804312064755127329851232",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "116.226680320857554382160804312064755127329851232"
+      },
+      "zeroResidual": "4.3351919163277144397176710577414058451203045471e-50",
+      "startDerivative": {
+        "real": "2.77067940680153780263562232789033781543615260999",
+        "imag": "1.43231769057958012232400249885643388854529207429"
+      },
+      "dsDa": {
+        "real": "0.28480909921762973214876697257411834821601553221",
+        "imag": "-0.14723360279288574584852123585725910440416875748"
+      },
+      "slope": "-0.516955403452123837737282964728168090380216165537",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "3.1190059862112068775416988916477443786266093413",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "5.12257700741745949045047956898837236784811216994e-50"
+      }
+    },
+    {
+      "zeroIndex": 38,
+      "height": "118.790782865976217322979139702699824347306210593",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "118.790782865976217322979139702699824347306210593"
+      },
+      "zeroResidual": "2.83453775705970404136134049963670744773456056715e-49",
+      "startDerivative": {
+        "real": "3.85176223825316618843536584376252133383134062262",
+        "imag": "-0.526776603804798129747904609507428783271635381817"
+      },
+      "dsDa": {
+        "real": "0.254854629013695757142959303715142274393052040317",
+        "imag": "0.0348545542615453684083525255127147326460698268785"
+      },
+      "slope": "0.13676249239197575071821122854425861815058087905",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "3.88761699892738377152989419605929374706155085103",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "2.1853595266452029884764036243695583299542508083e-49"
+      }
+    },
+    {
+      "zeroIndex": 39,
+      "height": "121.370125002420645918945532970499922723001310632",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "121.370125002420645918945532970499922723001310632"
+      },
+      "zeroResidual": "7.25818794159710636734935954058137592937873636706e-50",
+      "startDerivative": {
+        "real": "1.60022422190411227009647977112493335067151590467",
+        "imag": "-1.64500147161614252039549879931442027708468616271"
+      },
+      "dsDa": {
+        "real": "0.303835384491786922604562783137208862047369665257",
+        "imag": "0.312337263601297547325952045416877683538970991121"
+      },
+      "slope": "1.02798185972885077807983415300784421538727665256",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "2.29493952033335643069621547564247504796499657317",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.91317353509555000763865166921721733251124966771e-49"
+      }
+    },
+    {
+      "zeroIndex": 40,
+      "height": "122.946829293552588200817460330770016496214389874",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "122.946829293552588200817460330770016496214389874"
+      },
+      "zeroResidual": "3.81312509342301349429247773832288920395456885043e-50",
+      "startDerivative": {
+        "real": "1.55913850848594972064876518130078351394576775002",
+        "imag": "0.00470204224217882309074757682329060218629376017399"
+      },
+      "dsDa": {
+        "real": "0.641374002130079821080787859614814703636827453454",
+        "imag": "-0.00193425255975460538613212222479686542639088200882"
+      },
+      "slope": "-0.00301579507951791176869702907932931849416120526225",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.55914559866775724516875093609552110457879724707",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "1.07952106938680557817329398285004994638950004555e-78",
+        "slope50vs75Error": "7.27305400339675587709363338539782636267977408149e-50"
+      }
+    },
+    {
+      "zeroIndex": 41,
+      "height": "124.256818554345767184732007966129924441573538775",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "124.256818554345767184732007966129924441573538775"
+      },
+      "zeroResidual": "1.04774947471485182582989690326097460042142346731e-49",
+      "startDerivative": {
+        "real": "0.853724768591766497589702027870604141591086115563",
+        "imag": "2.15283888326750315075037376598796830513509001442"
+      },
+      "dsDa": {
+        "real": "0.15917125408630003471717476566105343576983947976",
+        "imag": "-0.401382362913844300256441617248813349426859244766"
+      },
+      "slope": "-2.52170132865964219925520447037885648890755007288",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.31593636307553479237519800641037734816379451832",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "1.38178696881511114006181629804806393137856005831e-76",
+        "slope50vs75Error": "9.92303028480173724139995170548010617790283864108e-49"
+      }
+    },
+    {
+      "zeroIndex": 42,
+      "height": "127.516683879596495124279323766906076268088309882",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "127.516683879596495124279323766906076268088309882"
+      },
+      "zeroResidual": "4.04089434673531132708532907757627161579131568003e-50",
+      "startDerivative": {
+        "real": "3.35589030991094345093684019885669375570644908533",
+        "imag": "-2.06134296665919649955467506737656112990541118102"
+      },
+      "dsDa": {
+        "real": "0.21635363220096316866093710347088883620410170763",
+        "imag": "0.132894402636318944538359938004969306647072471603"
+      },
+      "slope": "0.614246228659928741519024465772048843504331516176",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "3.93841777854375238085753843279748396089225589139",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "4.26202557557934884536403338107320428939106960392e-50"
+      }
+    },
+    {
+      "zeroIndex": 43,
+      "height": "129.578704199956050985768033906179973608640953265",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "129.578704199956050985768033906179973608640953265"
+      },
+      "zeroResidual": "3.73762091653108297760026924263702091014397158855e-50",
+      "startDerivative": {
+        "real": "2.03266468222803426423694930910161477019543464639",
+        "imag": "-1.16719502343194192154946661017997788051049664667"
+      },
+      "dsDa": {
+        "real": "0.369974300833219243814509482978891524616786012526",
+        "imag": "0.212446335347799692375955027385574422964248739388"
+      },
+      "slope": "0.574219168383720791177859376395073600911364981084",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "2.3439432444283899438929521146530660926032775276",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "6.31359546255564167253617409967621766166242739014e-50"
+      }
+    },
+    {
+      "zeroIndex": 44,
+      "height": "131.087688530932656723566372461501349059203547503",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "131.087688530932656723566372461501349059203547503"
+      },
+      "zeroResidual": "1.81812346539540532821479677099568937297366110878e-49",
+      "startDerivative": {
+        "real": "2.19254709479093399957158619280408185292042515573",
+        "imag": "0.757296943765677028146030153687821864515811555546"
+      },
+      "dsDa": {
+        "real": "0.407478964788680194718103764962834943842791246731",
+        "imag": "-0.140741594749048579758868292935410094635292687954"
+      },
+      "slope": "-0.345395976015688540279997269169276809759617514548",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.31964683172094107389265460148765004010547926334",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "2.66675026832242876346211318435668211235303923848e-49"
+      }
+    },
+    {
+      "zeroIndex": 45,
+      "height": "133.497737202997586450130492042640607664974174944",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "133.497737202997586450130492042640607664974174944"
+      },
+      "zeroResidual": "3.22350321799281453663937301911348207870230481743e-49",
+      "startDerivative": {
+        "real": "2.24467443586542027705619359590766966202477409837",
+        "imag": "-0.449641455338601471418703787595613442187126599279"
+      },
+      "dsDa": {
+        "real": "0.428312434838210628957795976269838553924036385095",
+        "imag": "0.0857973091612379887951099883356402045792826688196"
+      },
+      "slope": "0.200314775343019845567447902656838593332056735449",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "2.28926642429114359958914114437550205278645012947",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "4.47881275080815700866622276148302209623300947248e-49"
+      }
+    },
+    {
+      "zeroIndex": 46,
+      "height": "134.756509753373871331326064157169736178396068614",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "134.756509753373871331326064157169736178396068614"
+      },
+      "zeroResidual": "2.49009099820236767982140584046055737780428653438e-49",
+      "startDerivative": {
+        "real": "1.48083085512790586577378291084141396672767676317",
+        "imag": "2.39700409919932503827014135432754283788382598911"
+      },
+      "dsDa": {
+        "real": "0.186538132900539665702826125738710017256316868527",
+        "imag": "-0.301947158698932732415062964856622117675030048311"
+      },
+      "slope": "-1.61868865096836820363918978140843142799171904142",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.81753237303091383641317055352523837461966339046",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "9.84629862102861923666382149900033057801665790521e-49"
+      }
+    },
+    {
+      "zeroIndex": 47,
+      "height": "138.116042054533443200191555190282447859835274624",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "138.116042054533443200191555190282447859835274624"
+      },
+      "zeroResidual": "1.05022896781926200180840577769095716685052287097e-49",
+      "startDerivative": {
+        "real": "1.67723153642901450638243277772245050014158875279",
+        "imag": "-2.67790008829942728546010862476290839567098115906"
+      },
+      "dsDa": {
+        "real": "0.167987658447459176802316946762129274791882242439",
+        "imag": "0.26821232228166140589768981839715652726422821008"
+      },
+      "slope": "1.59661920858042731424665158476369181056876624092",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "3.15978709879417557372747180891487076282074448094",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "3.62850150857485778760745089628980658220446494896e-49"
+      }
+    },
+    {
+      "zeroIndex": 48,
+      "height": "139.736208952121388950450046523382460846790052565",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "139.736208952121388950450046523382460846790052565"
+      },
+      "zeroResidual": "9.43114995775956196225560256143062801822890617668e-50",
+      "startDerivative": {
+        "real": "1.67450834286548934581698887068532664176517758504",
+        "imag": "-0.664393386290380722876763052574377741118056154362"
+      },
+      "dsDa": {
+        "real": "0.515964138016869194319337728024963925006638253362",
+        "imag": "0.204718693891250402654783829758654841505451560967"
+      },
+      "slope": "0.396769230276537601939526383821115388932617806739",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.80149847684435367196176343520606140151521623768",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.88320372819888967943814687932378667822702641595e-49"
+      }
+    },
+    {
+      "zeroIndex": 49,
+      "height": "141.12370740402112376194035381847535509030066088",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "141.12370740402112376194035381847535509030066088"
+      },
+      "zeroResidual": "2.33770896441016952595585931237792928485775331041e-49",
+      "startDerivative": {
+        "real": "1.65588376695133815009419252671230438254479939437",
+        "imag": "1.15367611928938874773894335768547385977757336244"
+      },
+      "dsDa": {
+        "real": "0.406559400670293688893742289819082687766487077596",
+        "imag": "-0.283255311143893751855654600660708644634558597111"
+      },
+      "slope": "-0.696713224874129768623524014727535096030948783735",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.01814757584067114479089074972433379969080643111",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "5.35463500151105541218963966418261347425328401545e-49"
+      }
+    },
+    {
+      "zeroIndex": 50,
+      "height": "143.11184580762063273940512386891392996623310243",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "143.11184580762063273940512386891392996623310243"
+      },
+      "zeroResidual": "5.67971437012532918664336179556191968977134178803e-49",
+      "startDerivative": {
+        "real": "2.98549070431852450975549389468160008918151489574",
+        "imag": "2.26881665198302303031217280015237561080665182703"
+      },
+      "dsDa": {
+        "real": "0.21232898472605711029889740397660303569842930433",
+        "imag": "-0.161358913477203229838491708080460944745989639394"
+      },
+      "slope": "-0.759947652391337366192108424020539441972868832457",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "3.74975782496520345387724082778177626457524658958",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "7.47458971650246512325747418887633822981523806803e-49"
+      }
+    },
+    {
+      "zeroIndex": 51,
+      "height": "146.000982486765518547402507596424682428975741233",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "146.000982486765518547402507596424682428975741233"
+      },
+      "zeroResidual": "4.20120079313552617680894262690606985742927833479e-49",
+      "startDerivative": {
+        "real": "2.40197726307817280034331586379875189511936247999",
+        "imag": "-2.18622766797894515556697520136790276051530394029"
+      },
+      "dsDa": {
+        "real": "0.227695292287799052016489303059802161158810021513",
+        "imag": "0.207243322207891535123130515146021998908153968822"
+      },
+      "slope": "0.910178335817075536673943718876346467867646648908",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "3.2479356811028703934986435154214840632793792932",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "7.4347690236260393649239913046793686028340676845e-49"
+      }
+    },
+    {
+      "zeroIndex": 52,
+      "height": "147.42276534255960204952118501043150616877277525",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "147.42276534255960204952118501043150616877277525"
+      },
+      "zeroResidual": "1.8161552431038838658552914656222937512529639634e-49",
+      "startDerivative": {
+        "real": "2.77964464362507257416083674664413424087670761959",
+        "imag": "0.458441852770147596889892629148449070366303734441"
+      },
+      "dsDa": {
+        "real": "0.350231459083161017116504304322089960829578644361",
+        "imag": "-0.0577630523271065392295685447176089621230628277387"
+      },
+      "slope": "-0.164928223404942445275869636288525819854394425396",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.81719599552549456618043756399489083543108913993",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "2.08955512349084984104612290775416897438674093006e-49"
+      }
+    },
+    {
+      "zeroIndex": 53,
+      "height": "150.05352042078488035143246723695937062303732156",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "150.05352042078488035143246723695937062303732156"
+      },
+      "zeroResidual": "1.5523399056505803457274423226710405847961917921e-49",
+      "startDerivative": {
+        "real": "1.06049740336130402907650511275726756571491507989",
+        "imag": "-1.22485805638130492867739484422232931111457467944"
+      },
+      "dsDa": {
+        "real": "0.404009476447664439637395083024492824668940428796",
+        "imag": "0.466624680562957945048851326681224313138144083897"
+      },
+      "slope": "1.15498449359616619223367686181806055610316233827",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.62016418946298660057772168750665229345036016408",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "7.10718383486598291023692840946618830620021201507e-49"
+      }
+    },
+    {
+      "zeroIndex": 54,
+      "height": "150.925257612241466761852524678305627602426770473",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "150.925257612241466761852524678305627602426770473"
+      },
+      "zeroResidual": "2.08614410813915656864399897038416631565910300072e-49",
+      "startDerivative": {
+        "real": "0.983428873229618156049188519459132756418313837957",
+        "imag": "1.239466924682257442027746252866718289859289361"
+      },
+      "dsDa": {
+        "real": "0.392835626261233827484256189772733732624386962095",
+        "imag": "-0.495111318003730803852364367676143381362980229858"
+      },
+      "slope": "-1.26035238380972128696607723894154159917000513738",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.58221699083373808284132433121852901791074844967",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.08497186580074701626305819361210028277995035437e-48"
+      }
+    },
+    {
+      "zeroIndex": 55,
+      "height": "153.024693811198896198256544255185446508590434904",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "153.024693811198896198256544255185446508590434904"
+      },
+      "zeroResidual": "3.56609834209254022043943955973144392216677016958e-49",
+      "startDerivative": {
+        "real": "3.25140855012216532700607500700048833993557472051",
+        "imag": "2.72445452162401327744364032476465671877269560088"
+      },
+      "dsDa": {
+        "real": "0.180690926747683808677267205674123174710680178624",
+        "imag": "-0.151406445792751544026151839219649515523240748018"
+      },
+      "slope": "-0.83793053983377364835817707604711313638437291343",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "4.24197006121036317583206147034304279422714734993",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "4.55876335558455483987807702894831818174748906034e-49"
+      }
+    },
+    {
+      "zeroIndex": 56,
+      "height": "156.112909294237867569750189310169194746535308501",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "156.112909294237867569750189310169194746535308501"
+      },
+      "zeroResidual": "3.48084969041619971507129794626776197334616598769e-49",
+      "startDerivative": {
+        "real": "1.38668494611245730637530689367654760007061895475",
+        "imag": "-2.7677973117886193188028655401070340485608940694"
+      },
+      "dsDa": {
+        "real": "0.144693577140136638230959782447183802637811507094",
+        "imag": "0.288805683630080381979366213957167644924523297438"
+      },
+      "slope": "1.99598136516018443233438215632653624487732394541",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "3.09573853852666572466274799519260194007672755875",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.80046127363911815188677866189528341082955704154e-48"
+      }
+    },
+    {
+      "zeroIndex": 57,
+      "height": "157.597591817594059887530503158498765730723899519",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "157.597591817594059887530503158498765730723899519"
+      },
+      "zeroResidual": "1.88889346719201695976314378523318975618625620809e-49",
+      "startDerivative": {
+        "real": "1.63553326262456998722093576062547955492282720482",
+        "imag": "-0.602936056713069032962974559675766184885973997103"
+      },
+      "dsDa": {
+        "real": "0.538269789623273837276584022647940459922700187966",
+        "imag": "0.198432078282792668155515289063839048568736001169"
+      },
+      "slope": "0.368647994199473859393014026581327610048353739896",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.74312963993963335359534173583461531756365367145",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "3.96436049613969515332775812787083822998477323857e-49"
+      }
+    },
+    {
+      "zeroIndex": 58,
+      "height": "158.849988171420498724174994775540271414335083049",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "158.849988171420498724174994775540271414335083049"
+      },
+      "zeroResidual": "2.79883717135458645261673812845489227413537287548e-49",
+      "startDerivative": {
+        "real": "1.53596362255124779168708049466288764074818752682",
+        "imag": "1.48403906818466379796500238427206159743213419099"
+      },
+      "dsDa": {
+        "real": "0.336719214515483127494292337661418525071335789802",
+        "imag": "-0.325336135578143708668587145942139691591064966083"
+      },
+      "slope": "-0.96619415095239241669456828009906526155667494689",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.1357799993677151201591959005995794216006857158",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "8.19012307963111414812240421722752705433263464791e-49"
+      }
+    },
+    {
+      "zeroIndex": 59,
+      "height": "161.188964137596027519437344129369554364915790327",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "161.188964137596027519437344129369554364915790327"
+      },
+      "zeroResidual": "1.1646928165730492863499959120773624572051570653e-49",
+      "startDerivative": {
+        "real": "3.56327068879384441908198052220912661246728194268",
+        "imag": "0.442999870942040196280198344251530185174851050146"
+      },
+      "dsDa": {
+        "real": "0.276369354971939960750490572634325361262608613882",
+        "imag": "-0.0343593286274714632035130444892962680141245157363"
+      },
+      "slope": "-0.124323945507489417537291964910129008847747110269",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "3.59070284029074490512577739807666156109947086649",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.06662144831953706393435000546132913392456398295e-49"
+      }
+    },
+    {
+      "zeroIndex": 60,
+      "height": "163.030709687181987243311039000687994896964461416",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "163.030709687181987243311039000687994896964461416"
+      },
+      "zeroResidual": "5.59290635288024234723235736131989706829127386634e-49",
+      "startDerivative": {
+        "real": "3.96306328418196314376334760510499181130414286362",
+        "imag": "1.10571619919804708000046344102980780909180798527"
+      },
+      "dsDa": {
+        "real": "0.234106283607249042331112925686561897575284662826",
+        "imag": "-0.0653169257104152295610175615690955542658563646947"
+      },
+      "slope": "-0.279005435924115910169414309356541527041768259553",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "4.1144232776417283552717847429647001041104431532",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "4.7710271682406061297636696078254981620510636166e-49"
+      }
+    },
+    {
+      "zeroIndex": 61,
+      "height": "165.537069187900418830038919354874797328367251745",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "165.537069187900418830038919354874797328367251745"
+      },
+      "zeroResidual": "5.18639204801065773631161450306988245670064147651e-49",
+      "startDerivative": {
+        "real": "2.64712802884179854843203385240758022842655351295",
+        "imag": "-2.12462494148884723748663038324310539640809903151"
+      },
+      "dsDa": {
+        "real": "0.229759133626944961961399920437347519863497182321",
+        "imag": "0.18440815121898654898121243720312224806190227334"
+      },
+      "slope": "0.802615105253687792895241080351441360867376516119",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "3.39430669549414072906541169487610412157452079111",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "8.21372609313622466334101580678349818904701485316e-49"
+      }
+    },
+    {
+      "zeroIndex": 62,
+      "height": "167.184439978174513440957756246210378736460769243",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "167.184439978174513440957756246210378736460769243"
+      },
+      "zeroResidual": "3.95359558890732014090700057744425954898658086442e-49",
+      "startDerivative": {
+        "real": "2.38949604476515989284198257717852653348488501356",
+        "imag": "-0.567964035556839375536895179299846044306953362273"
+      },
+      "dsDa": {
+        "real": "0.396118586328707471969092142703853588924177075383",
+        "imag": "0.0941542093543972126466588017245900683234200559743"
+      },
+      "slope": "0.237691975595071129132688120999528604253118682691",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "2.45606891060376270400153460564008252560142500759",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "5.58014813839703875422679105775635449558417064278e-49"
+      }
+    },
+    {
+      "zeroIndex": 63,
+      "height": "169.09451541556882148950587118143183479666764858",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "169.09451541556882148950587118143183479666764858"
+      },
+      "zeroResidual": "1.67786987156072371079719805540664607132118525001e-49",
+      "startDerivative": {
+        "real": "1.49531236935544403824008433100842606132156642115",
+        "imag": "-0.351524445428345767180458711521257673517549120475"
+      },
+      "dsDa": {
+        "real": "0.633733543862826485777915838323781887205769165652",
+        "imag": "0.148980799678495791617660289261420191512790505193"
+      },
+      "slope": "0.235084289164190320499608737408756464036739735325",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.53607568748453861341627920806883186038863159426",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "3.7959683346260062391318827282201929643238935501e-49"
+      }
+    },
+    {
+      "zeroIndex": 64,
+      "height": "169.911976479411698966699843595821792288394437125",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "169.911976479411698966699843595821792288394437125"
+      },
+      "zeroResidual": "1.42369179947495371052345925904968575446053681538e-49",
+      "startDerivative": {
+        "real": "0.0135745821748884322755676658149499538554196862338",
+        "imag": "1.97889090994790738849600798839386704039335981292"
+      },
+      "dsDa": {
+        "real": "0.00346626952047607037179001272882552485226082321691",
+        "imag": "-0.505309788332837858633756966494813958975437665301"
+      },
+      "slope": "-145.779139604653918960964468245837352936346347153",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.97893746812669139174133286306752595076119893063",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "4.31808427754722231269317593140019978555800018222e-78",
+        "slope50vs75Error": "5.0412761499569820418768090446728557165754878876e-45"
+      }
+    },
+    {
+      "zeroIndex": 65,
+      "height": "173.411536519591552959846118649345595254156066063",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "173.411536519591552959846118649345595254156066063"
+      },
+      "zeroResidual": "2.37723350229398364693552544067016463807488835077e-50",
+      "startDerivative": {
+        "real": "1.63681020530521657295451044870900808343962924797",
+        "imag": "-3.07833081491792223671292112134445980510492915736"
+      },
+      "dsDa": {
+        "real": "0.134658501241299994395945541198528383010725617914",
+        "imag": "0.253250751075602396111306666750905571293008455212"
+      },
+      "slope": "1.88068891856884824969295257359405714401376745868",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "3.4864406282431577407646487574416560998708342114",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.01477929293440409185118243833394772696353198807e-49"
+      }
+    },
+    {
+      "zeroIndex": 66,
+      "height": "174.754191523365725813378762455866917938755717621",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "174.754191523365725813378762455866917938755717621"
+      },
+      "zeroResidual": "1.58333878921518804306028210890146241307838863946e-49",
+      "startDerivative": {
+        "real": "2.32082621096851108856735995446715125360990167051",
+        "imag": "-0.399385696754877769652230983214248882823812550202"
+      },
+      "dsDa": {
+        "real": "0.418487858540084801178568154446490184455972195988",
+        "imag": "0.0720166224323791983166518489361670690606439351821"
+      },
+      "slope": "0.172087722409946801786548137028741855258085094774",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "2.35494017679660710365615671211613935600529038624",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "2.30200610279072272540570992351308040670587346166e-49"
+      }
+    },
+    {
+      "zeroIndex": 67,
+      "height": "176.441434297710418888892641057860933528118497109",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "176.441434297710418888892641057860933528118497109"
+      },
+      "zeroResidual": "2.8035579829577064117599024859899000839024886758e-50",
+      "startDerivative": {
+        "real": "2.62429608789906965984132953583674371195472396535",
+        "imag": "0.427951622228901236933549484381479190040006427767"
+      },
+      "dsDa": {
+        "real": "0.371183756617484298656831492030958037696860551119",
+        "imag": "-0.0605300185150370789820879814524053012842905531339"
+      },
+      "slope": "-0.163072918563661800525782377813197309842811926998",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.65896080225540552168820049207188577174735863224",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "3.62030749810934161414228113950067252181298746243e-50"
+      }
+    },
+    {
+      "zeroIndex": 68,
+      "height": "178.377407776099977285830935414184426183132361461",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "178.377407776099977285830935414184426183132361461"
+      },
+      "zeroResidual": "3.19581896388403645223595258362155264844051594107e-49",
+      "startDerivative": {
+        "real": "2.81374814297941951370670583397526727411134068082",
+        "imag": "0.196178081863103694986677461175885461408007648604"
+      },
+      "dsDa": {
+        "real": "0.35367858460886656194516587895187442321436460137",
+        "imag": "-0.0246589185665905434438907440496908490210731080277"
+      },
+      "slope": "-0.0697212656906011479292423646416390855908981008429",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.82057874414518313297579363492577619017502703116",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "3.80958914857487260102191447910969678469381184469e-49"
+      }
+    },
+    {
+      "zeroIndex": 69,
+      "height": "179.916484020256996139340036612051237453687607553",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "179.916484020256996139340036612051237453687607553"
+      },
+      "zeroResidual": "1.06532160949646146645735790267103365493598204289e-49",
+      "startDerivative": {
+        "real": "2.82690429504959797127060670571946791584588695825",
+        "imag": "2.0741486790753344045013562083258088207343060792"
+      },
+      "dsDa": {
+        "real": "0.229951498577790835010381855043438079799141604424",
+        "imag": "-0.168719400179817675228984083674811930477926257471"
+      },
+      "slope": "-0.733717332669355017310508333026395799710780719859",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "3.50620601737545065966997636167884849638935587827",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.55004302484723044317185330975335056893578807833e-49"
+      }
+    },
+    {
+      "zeroIndex": 70,
+      "height": "182.207078484366461915407037226987798690797457778",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "182.207078484366461915407037226987798690797457778"
+      },
+      "zeroResidual": "3.71201893573061416228163837164758565555223372263e-49",
+      "startDerivative": {
+        "real": "4.99664043118419777680921702769134875338932860347",
+        "imag": "-0.373941621692381294766427916936402789709298068826"
+      },
+      "dsDa": {
+        "real": "0.199019799538535464485578038548431046616649436732",
+        "imag": "0.0148943650465348206113121604239300659001911625303"
+      },
+      "slope": "0.0748386094301681779930939429578634624022784377451",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "5.01061352879849773469859714725490650577328030143",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "6.90893484407555570030908149024031965689280029155e-77",
+        "slope50vs75Error": "2.50936192542128449552966951010282924716547799796e-49"
+      }
+    },
+    {
+      "zeroIndex": 71,
+      "height": "184.874467848387508800960646617234258413351022912",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "184.874467848387508800960646617234258413351022912"
+      },
+      "zeroResidual": "2.33519937042781719280664417224462700782662449955e-49",
+      "startDerivative": {
+        "real": "0.204188843035680936637313723140596289455775115052",
+        "imag": "-1.4803208726149486478285870081793476600262093796"
+      },
+      "dsDa": {
+        "real": "0.0914397285779039100203420745535102712486748643799",
+        "imag": "0.662916429652639220537859025252234332835240196376"
+      },
+      "slope": "7.24976375107953516730992131080628806026299862711",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.49433696652386036357375828332615202047304718914",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "3.45446742203777785015454074512015982844640014577e-77",
+        "slope50vs75Error": "2.83025746804899487958901189972438209191281662048e-47"
+      }
+    },
+    {
+      "zeroIndex": 72,
+      "height": "185.59878367770747146652770426839264661293471765",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "185.59878367770747146652770426839264661293471765"
+      },
+      "zeroResidual": "9.62393421165106687940220219175694102620221116805e-50",
+      "startDerivative": {
+        "real": "1.092444370132474411399257091988756629304823885",
+        "imag": "0.572093427068097344501968772539061388996362623622"
+      },
+      "dsDa": {
+        "real": "0.718370478214731026624284902195373317360068878287",
+        "imag": "-0.376197671957041502879884038371206997700768008795"
+      },
+      "slope": "-0.523681976592293558062370858476291349501893559723",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.23317703154440042676307405398514557883754713004",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "2.76357393763022228012363259609612786275712011662e-76",
+        "slope50vs75Error": "3.37310494565854181024446043022945529287119802707e-49"
+      }
+    },
+    {
+      "zeroIndex": 73,
+      "height": "187.228922583501851991641540586131243016810734604",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "187.228922583501851991641540586131243016810734604"
+      },
+      "zeroResidual": "3.6478654589728873589362427022682735575208414553e-49",
+      "startDerivative": {
+        "real": "1.84830859755516972990700215607519880586150588819",
+        "imag": "2.1506031940211900847017275946999691663675379651"
+      },
+      "dsDa": {
+        "real": "0.229850855738931104394271840161758208783836410717",
+        "imag": "-0.267443426468124861251418452538870636371955205732"
+      },
+      "slope": "-1.16355201553781509922980183487725802982782513799",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.83572543980028202979211329732485588908235398437",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.02633210037908446408650424392785852074423242705e-48"
+      }
+    },
+    {
+      "zeroIndex": 74,
+      "height": "189.416158656016937084852289099845324491357103023",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "189.416158656016937084852289099845324491357103023"
+      },
+      "zeroResidual": "6.4069590871221538644662602012872794694852364791e-49",
+      "startDerivative": {
+        "real": "4.84494448488647089515531964877104647826011464407",
+        "imag": "1.4133629123070572784221729049026704482435807377"
+      },
+      "dsDa": {
+        "real": "0.190213534158638535403256058886122935806932352146",
+        "imag": "-0.0554889236475886861067472490582146370558712398009"
+      },
+      "slope": "-0.291719113958057228037756234315409599342886664532",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "5.04688832683237774121980767914984267492064247955",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "4.69388909360481225030817601440585884368256061974e-49"
+      }
+    },
+    {
+      "zeroIndex": 75,
+      "height": "192.026656360713786547283631425583430105839920298",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "192.026656360713786547283631425583430105839920298"
+      },
+      "zeroResidual": "3.78670653103132163413552092380836797727873834539e-49",
+      "startDerivative": {
+        "real": "1.42756675727225583391133267611121600183988924178",
+        "imag": "-2.3733999688030158190786894255985515561525904136"
+      },
+      "dsDa": {
+        "real": "0.186099797651150361025172527910765740613704973039",
+        "imag": "0.309400069516505174211694940564207015264663912836"
+      },
+      "slope": "1.66254919898669025990071433296705513045491983324",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "2.76965237139663075589525236137132093037744091317",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.76060622491395997249487660026565094427345486358e-48"
+      }
+    },
+    {
+      "zeroIndex": 76,
+      "height": "193.079726603845704047402205794376054604020615811",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "193.079726603845704047402205794376054604020615811"
+      },
+      "zeroResidual": "5.62078963192845892441884855195919653752947737964e-50",
+      "startDerivative": {
+        "real": "2.2765151982773594573030235984356013010099471868",
+        "imag": "0.729845360514452572772069486320843780120872251653"
+      },
+      "dsDa": {
+        "real": "0.398326727284863481240808575858276241548462554984",
+        "imag": "-0.127702601809005667502992772234485994109298572417"
+      },
+      "slope": "-0.320597622658845869096970752818770484861962418565",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.39064754789414252761374196605068009368495676671",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "8.84908947153141839721909425377405141621340095176e-50"
+      }
+    },
+    {
+      "zeroIndex": 77,
+      "height": "195.265396679529235321463187814862250926905052452",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "195.265396679529235321463187814862250926905052452"
+      },
+      "zeroResidual": "7.93091859144328730160447815513989793236192318451e-50",
+      "startDerivative": {
+        "real": "2.72490609382241882391765622165370834825127280736",
+        "imag": "-0.835544969293718331281402689096043836222448382944"
+      },
+      "dsDa": {
+        "real": "0.335445364616981606075772934113900626904819180582",
+        "imag": "0.102858475568766434970977754007063731156919867605"
+      },
+      "slope": "0.306632573940058319083796831792692511113237927823",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "2.85013133309021278991483559298182214380367181169",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.0437708929178814180972835451593224776557906092e-49"
+      }
+    },
+    {
+      "zeroIndex": 78,
+      "height": "196.876481840958316948622263914696207735746028692",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "196.876481840958316948622263914696207735746028692"
+      },
+      "zeroResidual": "3.10046468682352776920130968468232015075684598755e-49",
+      "startDerivative": {
+        "real": "2.17532446326956547496372492575426704773508047903",
+        "imag": "0.158022612202594941927765184435005248423560837838"
+      },
+      "dsDa": {
+        "real": "0.457288408131883557326023528429871099823703304679",
+        "imag": "-0.0332189105593724605190147088356096415473004205376"
+      },
+      "slope": "-0.0726432377655897455130955261426836324549175902852",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.18105654820464359757908223901845804447114910279",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "4.92351517464113632222303337860816724323860369889e-49"
+      }
+    },
+    {
+      "zeroIndex": 79,
+      "height": "198.015309676251912424919918702208867155062695439",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "198.015309676251912424919918702208867155062695439"
+      },
+      "zeroResidual": "1.58656281996407424490041012552422154239115995056e-49",
+      "startDerivative": {
+        "real": "0.992744063625978523689815226591201679216569991991",
+        "imag": "2.9978032280082931763208541637295334543832688586"
+      },
+      "dsDa": {
+        "real": "0.0995495117397109004160101156802584345527744955367",
+        "imag": "-0.30061106238192506387494722312753764564259643067"
+      },
+      "slope": "-3.01971408124957682449005722793468669424477483756",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "3.15790515527644742163301166386501741229378006925",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.75830580226649965617561545289231458877960206348e-48"
+      }
+    },
+    {
+      "zeroIndex": 80,
+      "height": "201.264751943703788733016133427548173222402863639",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "201.264751943703788733016133427548173222402863639"
+      },
+      "zeroResidual": "1.39899076463940746075170124030790403914735233274e-49",
+      "startDerivative": {
+        "real": "1.14109554242828594245438631463258863196677831669",
+        "imag": "-3.18433989572340669851976326112983065521099960726"
+      },
+      "dsDa": {
+        "real": "0.0997276362664518995852803906474541468794623627437",
+        "imag": "0.278299825966950776853958539423306239238735679496"
+      },
+      "slope": "2.79059883885536417669089227846378476491742975981",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "3.38262022823217043000226209728797669900523361795",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.26166601574671686960281617036656875673037550746e-48"
+      }
+    },
+    {
+      "zeroIndex": 81,
+      "height": "202.493594514140534277686660637864315821020244899",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "202.493594514140534277686660637864315821020244899"
+      },
+      "zeroResidual": "4.67897828413154141713982278199501362711420618953e-50",
+      "startDerivative": {
+        "real": "2.18071290780741507790740151093328547451145384357",
+        "imag": "-0.48084393200486647214890730226325813996317568914"
+      },
+      "dsDa": {
+        "real": "0.43730408980411892336251560639603364729013879604",
+        "imag": "0.0964248972298887141725849783326803737549292791887"
+      },
+      "slope": "0.220498503165337873628314616274191111731552058578",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "2.23309643168936443138782206853460456052907155153",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "7.64732108790524973142945113401186940836019298727e-50"
+      }
+    },
+    {
+      "zeroIndex": 82,
+      "height": "204.189671803104554330716438386313685136534529229",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "204.189671803104554330716438386313685136534529229"
+      },
+      "zeroResidual": "1.58610163473181453332835044672582744427209459469e-49",
+      "startDerivative": {
+        "real": "2.07572436178719569909486683452420569270151923273",
+        "imag": "-0.0499702214000952991393547036952623163409807254758"
+      },
+      "dsDa": {
+        "real": "0.481480496342765955534892867243081662798801113779",
+        "imag": "0.0115909835838513904389695953598530306890251203312"
+      },
+      "slope": "0.0240736305455657947603027131467347223325563307201",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "2.07632575699085220464975921418839257727167800715",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "1.72723371101888892507727037256007991422320007289e-77",
+        "slope50vs75Error": "2.66184127532550086775704571659723054311449286189e-49"
+      }
+    },
+    {
+      "zeroIndex": 83,
+      "height": "205.394697202163286025212379390693090923722914772",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "205.394697202163286025212379390693090923722914772"
+      },
+      "zeroResidual": "2.89290184416261297313703490446304323055186613937e-49",
+      "startDerivative": {
+        "real": "1.46963087966580927222497739605010438140206955326",
+        "imag": "2.38365160386196151371880390786945491615222264563"
+      },
+      "dsDa": {
+        "real": "0.187414434036192816404924582374817301722401190931",
+        "imag": "-0.303974775202626626520999306081232101725935934668"
+      },
+      "slope": "-1.62193897586310821154572559205264098022438397143",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.80028746579007525131620999854503626049215910568",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.30599265579133378132950128214953584955684503498e-48"
+      }
+    },
+    {
+      "zeroIndex": 84,
+      "height": "207.906258887806209861501967907753644268659403769",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "207.906258887806209861501967907753644268659403769"
+      },
+      "zeroResidual": "9.5199830389594838959129508840960561515847491983e-50",
+      "startDerivative": {
+        "real": "4.40148734822339753915557212896725090878099047749",
+        "imag": "-1.0154183743043043267742153869403681780751629363"
+      },
+      "dsDa": {
+        "real": "0.215715138179450007077574376040873398131871136567",
+        "imag": "0.0497652492427175919451073328239415744824780061776"
+      },
+      "slope": "0.230698919244687729119220925547528263325990955544",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "4.51709700487441738024512317892726693916718905065",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "7.82221404521809785486501842681108089603026605328e-50"
+      }
+    },
+    {
+      "zeroIndex": 85,
+      "height": "209.576509716856259852835644289886752175390783181",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "209.576509716856259852835644289886752175390783181"
+      },
+      "zeroResidual": "6.59608215239549147947535040210404050406963806546e-49",
+      "startDerivative": {
+        "real": "4.11774796816642235254745582151400309478916954661",
+        "imag": "-0.0443237089562269426385500093181111894396937239248"
+      },
+      "dsDa": {
+        "real": "0.242823056691766459605330209245816596926551778638",
+        "imag": "0.00261376329388604849792615851899393142740243314177"
+      },
+      "slope": "0.0107640655277801503198852079493323903373214289503",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "4.11798651291068897116282387043775681156483754891",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "2.59085056652833338761590555884011987133480010933e-77",
+        "slope50vs75Error": "5.61826034191630102140908542410308332360160318021e-49"
+      }
+    },
+    {
+      "zeroIndex": 86,
+      "height": "211.690862595365307563907486730719294253394030983",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "211.690862595365307563907486730719294253394030983"
+      },
+      "zeroResidual": "4.01234589245189946156375054709388684615949552399e-49",
+      "startDerivative": {
+        "real": "2.76507029347508183275166741303522468336400884703",
+        "imag": "-1.82039918608080889978029701408634545734355579891"
+      },
+      "dsDa": {
+        "real": "0.252299706957747246538096958842161412050298305554",
+        "imag": "0.166102895205998011800279479549843583395109548943"
+      },
+      "slope": "0.658355482092634153060795559623889023466372580208",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "3.31050855980498057992163548407324354530386277493",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "6.11278084360714946876623724689176910761438164695e-49"
+      }
+    },
+    {
+      "zeroIndex": 87,
+      "height": "213.347919359712666190639122021072608821897183277",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "213.347919359712666190639122021072608821897183277"
+      },
+      "zeroResidual": "1.71227589847618795893535889747144815140580735886e-49",
+      "startDerivative": {
+        "real": "1.95301149831556268320109075070932063930915070852",
+        "imag": "-0.730682884506724762100418185188389282632681439644"
+      },
+      "dsDa": {
+        "real": "0.449159038640796850113388513310714792638075196942",
+        "imag": "0.168044490387990700511217635261774992905570370683"
+      },
+      "slope": "0.374131378712785673709376232141070959589493104067",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "2.08522214410452364607630094250481449055487629942",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "2.76357393763022228012363259609612786275712011662e-76",
+        "slope50vs75Error": "3.30224686118442152537439725945628965525139922609e-49"
+      }
+    },
+    {
+      "zeroIndex": 88,
+      "height": "214.547044783491423222944201072590691045599888053",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "214.547044783491423222944201072590691045599888053"
+      },
+      "zeroResidual": "6.83675439658951721149434171021312423978187784925e-50",
+      "startDerivative": {
+        "real": "1.7339203455869399941197979889365516183949810509",
+        "imag": "1.36923980029440202876965891452065226327729689767"
+      },
+      "dsDa": {
+        "real": "0.3552171082973652624213846273738754299487645465",
+        "imag": "-0.280507350677402892474905017090347572689216469092"
+      },
+      "slope": "-0.789678605351913136925489354712949262595074205642",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.20936583560771740508134790266400720540641880671",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.786949892154474733170872793902256075834764587e-49"
+      }
+    },
+    {
+      "zeroIndex": 89,
+      "height": "216.169538508263700265869563354498128575453714274",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "216.169538508263700265869563354498128575453714274"
+      },
+      "zeroResidual": "4.832687903351658338938522708610062902040943076e-49",
+      "startDerivative": {
+        "real": "2.59392346622696572348674433652017611815072086388",
+        "imag": "3.57204019576564463307958647250247441808950730431"
+      },
+      "dsDa": {
+        "real": "0.133104240102920672220751370805842939303061583343",
+        "imag": "-0.183295190496137945660300030396270058159314542027"
+      },
+      "slope": "-1.37708002655969444418153866859568453116591868823",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "4.4145113103047296896264323917272268830134974788",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.1244141020619581278886054993973709003624326977e-48"
+      }
+    },
+    {
+      "zeroIndex": 90,
+      "height": "219.067596349021378985677256590437241245149182927",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "219.067596349021378985677256590437241245149182927"
+      },
+      "zeroResidual": "3.1896961324865052303755202394983701490206605104e-50",
+      "startDerivative": {
+        "real": "2.0458060423389850858246453205173271329227577277",
+        "imag": "-3.58549162163851929558093585636484926356339562044"
+      },
+      "dsDa": {
+        "real": "0.120051483762660248817436782975010152338479661101",
+        "imag": "0.21040293179707385366949984245576113383375206959"
+      },
+      "slope": "1.75260584211551177625011350448554267924626634706",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "4.12808339689385636414648515480566913789613647843",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.10374895371582217204101915552167362133179073895e-49"
+      }
+    },
+    {
+      "zeroIndex": 91,
+      "height": "220.714918839314003369115592633906339656761145078",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "220.714918839314003369115592633906339656761145078"
+      },
+      "zeroResidual": "4.11614509139433789554018109521818300513962342162e-50",
+      "startDerivative": {
+        "real": "0.986240892781184035259231523771087138605267135778",
+        "imag": "-1.09812018672898300212756662293362580529903374092"
+      },
+      "dsDa": {
+        "real": "0.452707467376768909471957050343616018868194920861",
+        "imag": "0.504062660804391745106799977002893156081032510007"
+      },
+      "slope": "1.11344012884347260391030716821164446187595276248",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.47598748067032175637665472174143891642251862301",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "2.23314478855006293332837511048620168359591311421e-49"
+      }
+    },
+    {
+      "zeroIndex": 92,
+      "height": "221.430705554693338732097475119276077950222331077",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "221.430705554693338732097475119276077950222331077"
+      },
+      "zeroResidual": "2.44678042227817041821893617478807668413676390657e-49",
+      "startDerivative": {
+        "real": "0.835973373544058893896073652146811419840330657117",
+        "imag": "1.38659700256709548099693512298361940012400538426"
+      },
+      "dsDa": {
+        "real": "0.318890903434562002464382786381533811578829923407",
+        "imag": "-0.528932122531259785158899094989374658053428769716"
+      },
+      "slope": "-1.65866168283410845011018065662911136561097250966",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.61910553355940588561460942461391490661689573512",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "2.01937263591521382426469816817887738852917092883e-48"
+      }
+    },
+    {
+      "zeroIndex": 93,
+      "height": "224.00700025460433521172887552850489535608598995",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "224.00700025460433521172887552850489535608598995"
+      },
+      "zeroResidual": "2.03651827908037424417679496349319378618472531627e-49",
+      "startDerivative": {
+        "real": "2.41075539752980584771235297934143927993857485563",
+        "imag": "-1.09484888043718433175650112547112409556458342991"
+      },
+      "dsDa": {
+        "real": "0.343880967636758644139291099843259688301085518143",
+        "imag": "0.156174157198420590183586032444038674232187467577"
+      },
+      "slope": "0.454151790579428932979584148895328050142395788209",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "2.64772273052025751099415420574875655263919526157",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "3.31546804768002616282995773930707709913137447457e-49"
+      }
+    },
+    {
+      "zeroIndex": 94,
+      "height": "224.983324669582287503782523680528656772090054486",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "224.983324669582287503782523680528656772090054486"
+      },
+      "zeroResidual": "4.80689584879088266316319231716819626390874767462e-49",
+      "startDerivative": {
+        "real": "1.63287835693795914135871271259480566291344830992",
+        "imag": "2.38083583419161616004690369405373774158702688449"
+      },
+      "dsDa": {
+        "real": "0.195913954773263444694101486266872619311899846804",
+        "imag": "-0.285654446922223172760814685340688251077422947577"
+      },
+      "slope": "-1.45806074535537217647126075482197392014832327578",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "2.88698302695518074894015354568282421777049408069",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.86108659473092149231880456222305825265367503368e-48"
+      }
+    },
+    {
+      "zeroIndex": 95,
+      "height": "227.421444279679291310461436160659639963969148322",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "227.421444279679291310461436160659639963969148322"
+      },
+      "zeroResidual": "5.10929286441799389808028080862001716979141983428e-49",
+      "startDerivative": {
+        "real": "4.97561132698729733089690623117798572406582162326",
+        "imag": "-1.30940771108314289243056266926302701812202113537"
+      },
+      "dsDa": {
+        "real": "0.187962792863556604186433497076261537119112712399",
+        "imag": "0.0494652645067613617404686240958742109173950645638"
+      },
+      "slope": "0.263165192180712670201356815502196956088356101517",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "5.14502251026060033217629533498866076986744921963",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "3.81518026161823987751445899720887702317246556076e-49"
+      }
+    },
+    {
+      "zeroIndex": 96,
+      "height": "229.337413305525348107760083306055740082752341388",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "229.337413305525348107760083306055740082752341388"
+      },
+      "zeroResidual": "2.44393702620578151474641349391260265410966808108e-49",
+      "startDerivative": {
+        "real": "3.15270126985119423337098607996167108472528878617",
+        "imag": "-1.96736705696721558339170734181375006895128877051"
+      },
+      "dsDa": {
+        "real": "0.228290219405867825543170614946254031422194749608",
+        "imag": "0.142458995840135792789034973411822538552748107762"
+      },
+      "slope": "0.624025839612794721540998822046171416221280122391",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "3.71618869727590338998353968501182522870744276472",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "3.29142310878971396774458622096441478251743757992e-49"
+      }
+    },
+    {
+      "zeroIndex": 97,
+      "height": "231.250188700499164773806186770010372606708495843",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "prime",
+      "isPrimeIndex": true,
+      "selected": true,
+      "rho": {
+        "real": "0.5",
+        "imag": "231.250188700499164773806186770010372606708495843"
+      },
+      "zeroResidual": "7.98354547941150970380691553687574581366803964988e-50",
+      "startDerivative": {
+        "real": "0.964139033234959903533922021387468506945748125567",
+        "imag": "-1.12151618128038595715289374050018394091020897544"
+      },
+      "dsDa": {
+        "real": "0.440776954079570594949415378775229864242194578448",
+        "imag": "0.512725311698121200484695093813933965715116049944"
+      },
+      "slope": "1.16323076093847283307230177813268572985123616752",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "1.47897350222408739889710040308001649619606899179",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "4.57302732906167417874522495960955364127576852459e-49"
+      }
+    },
+    {
+      "zeroIndex": 98,
+      "height": "231.987235253180248603771668539197862205419833995",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "231.987235253180248603771668539197862205419833995"
+      },
+      "zeroResidual": "5.9580898983231320966225780040600665912515086499e-50",
+      "startDerivative": {
+        "real": "0.85147170944784473372217287692519453601906697722",
+        "imag": "1.19456158033701678041684594825835278101496273696"
+      },
+      "dsDa": {
+        "real": "0.395668704731092645862357298220199360335468400194",
+        "imag": "-0.555098458315162386556934827084215856541879631335"
+      },
+      "slope": "-1.40293748703836103039014393217494191677379605643",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "1.46696334010339396698356243651961298961723932653",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "4.357446861791574660453407546613198297281039564e-49"
+      }
+    },
+    {
+      "zeroIndex": 99,
+      "height": "233.693404178908300640704494732569788179537227755",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "233.693404178908300640704494732569788179537227755"
+      },
+      "zeroResidual": "2.96853709158327069634623038632764181184870594591e-49",
+      "startDerivative": {
+        "real": "2.29168685121596087452326542407576626739408691516",
+        "imag": "3.66009157254666410814593540830638118565134952134"
+      },
+      "dsDa": {
+        "real": "0.122891178246309725740254175222994699502163028664",
+        "imag": "-0.19627156546322619046046496069544374220850077874"
+      },
+      "slope": "-1.59711680092968747722738497662239976730913362148",
+      "slopeSign": "negative",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "negative",
+      "derivativeMagnitude": "4.31834446790239721934179897891595265455728195421",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "8.83266867131627564106915976276641612294550248586e-49"
+      }
+    },
+    {
+      "zeroIndex": 100,
+      "height": "236.524229665816205802475507955662978689529495212",
+      "sigma": "0.5",
+      "classificationPrimeIndex": "composite",
+      "isPrimeIndex": false,
+      "selected": false,
+      "rho": {
+        "real": "0.5",
+        "imag": "236.524229665816205802475507955662978689529495212"
+      },
+      "zeroResidual": "4.73003391067473609640080435718817347910225507985e-49",
+      "startDerivative": {
+        "real": "2.24558489653549433174954350889813223111838823375",
+        "imag": "-3.30417462926310558637859097673033784977332457586"
+      },
+      "dsDa": {
+        "real": "0.140698855299705620927042889670287403220425077167",
+        "imag": "0.207025612242444970906788626167192458190396805416"
+      },
+      "slope": "1.47140935725067070271549320966718499310094141709",
+      "slopeSign": "positive",
+      "sigmaDirectionForIncreasingA": "positive",
+      "heightDirectionForIncreasingA": "positive",
+      "derivativeMagnitude": "3.99502459419392160898168503785734953213889888942",
+      "verticalSlope": false,
+      "precisionCheck": {
+        "derivativeVsDiffError": "0.0",
+        "slope50vs75Error": "1.36123178287291855485222127401948471239316967499e-48"
+      }
+    }
+  ],
+  "summary": {
+    "prime": {
+      "count": 25,
+      "negativeIndices": [
+        3,
+        5,
+        11,
+        17,
+        23,
+        29,
+        37,
+        41,
+        59,
+        67,
+        73,
+        79,
+        83,
+        89
+      ],
+      "positiveIndices": [
+        2,
+        7,
+        13,
+        19,
+        31,
+        43,
+        47,
+        53,
+        61,
+        71,
+        97
+      ],
+      "verticalIndices": []
+    },
+    "composite": {
+      "count": 74,
+      "negativeIndices": [
+        8,
+        10,
+        14,
+        16,
+        18,
+        20,
+        21,
+        25,
+        28,
+        32,
+        33,
+        35,
+        36,
+        40,
+        44,
+        46,
+        49,
+        50,
+        52,
+        54,
+        55,
+        58,
+        60,
+        64,
+        68,
+        69,
+        72,
+        74,
+        76,
+        78,
+        88,
+        92,
+        94,
+        98,
+        99
+      ],
+      "positiveIndices": [
+        4,
+        6,
+        9,
+        12,
+        15,
+        22,
+        24,
+        26,
+        27,
+        30,
+        34,
+        38,
+        39,
+        42,
+        45,
+        48,
+        51,
+        56,
+        57,
+        62,
+        63,
+        65,
+        66,
+        70,
+        75,
+        77,
+        80,
+        81,
+        82,
+        84,
+        85,
+        86,
+        87,
+        90,
+        91,
+        93,
+        95,
+        96,
+        100
+      ],
+      "verticalIndices": []
+    },
+    "neither": {
+      "count": 1,
+      "negativeIndices": [
+        1
+      ],
+      "positiveIndices": [],
+      "verticalIndices": []
+    }
+  },
+  "validation": {
+    "primaryDps": 50,
+    "checkDps": 75,
+    "zeroResidualLimit": "1e-40",
+    "derivativeComparison": "mp.zeta(s,derivative=1) vs mp.diff(mp.zeta,s) at75dps",
+    "maxDerivativeDifference": "2.76357393763022228012363259609612786275712011662e-76",
+    "maxSlopePrecisionDifference": "5.0412761499569820418768090446728557165754878876e-45",
+    "maxZeroPrecisionDifference": "1.66502391765522480381414490263628985577453331309e-49"
+  },
+  "guards": {
+    "lowDerivativeMagnitude": "1e-18",
+    "verticalIfAbsRealDerivativeBelow": "1e-25"
+  },
+  "limits": [
+    "Numerical precision agreement is not an interval certificate.",
+    "The prime/composite label describes the zero index only.",
+    "Starting slopes do not determine the full path; trajectories can bend.",
+    "Phase of zeta(s)-a is undefined on the trajectory itself; the inverse derivative is used there.",
+    "No prime predictor or new RH result follows from this comparison."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.zero_index",
+  "slice_id": "animation",
+  "contract_hash": "contract:graph.riemann.zero_index.animation:v1",
+  "attempt_id": "zero-index-animation-reviewed-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:2f87fcaaa536c00e3bedd205cea07641673e72a16f3c3a3b823edd7781eddf3f",
+  "evidence": {
+    "review": [
+      "evidence/acceptance.json"
+    ]
+  },
+  "reason": null
+}

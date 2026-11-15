@@ -1,0 +1,2119 @@
+{
+  "schema": "graph-zeta-zero-index-independent-visual-review-v1",
+  "traceId": "graph.riemann.zero_index.independent_visual_review",
+  "status": "passed",
+  "reviewedAtUtc": "2026-11-15T22:27:55.214468+00:00",
+  "scope": "Filesystem source review and saved PNG inspection only; no browser or computer UI.",
+  "coverage": {
+    "visuallyInspectedFrames": 8,
+    "backgroundPixelChecks": 112,
+    "sceneManifestEntries": 33
+  },
+  "findings": [
+    "The seven preview frames and summary have readable labels without observed clipping or overlap.",
+    "The axes increase sigma rightward and height upward; local panels use the same scales and label their relative height.",
+    "The initial tangent uses dt/dsigma=-Im(zeta prime)/Re(zeta prime), with the screen y direction correctly reversed.",
+    "Zero indices 2 and 7 are positive-slope prime-index counterexamples; composite index 8 is negative. Zero 3 and zero 97 match their checked signs.",
+    "Index, actual zero height, and integer primality are explicitly distinguished. Pink marks the selected path independently of primality.",
+    "The background is the phase of zeta(s)-a at the current target. Neutral masking below 1e-10 avoids assigning a reliable phase to near-zero sampled values.",
+    "The moving point is display interpolation between checked samples, as the footer discloses. The initial tangent is not asserted to equal the entire curved path.",
+    "The old intro marks held viewport exits as boxes and explicitly says they are not current roots after exit.",
+    "The summary correctly tests slope sign, reproduces 14/11 prime-index and 35/39 composite-index counts, and states that the critical-line seeds do not prove RH.",
+    "The original-start preview now shows target a=0 and the unadvanced starting roots."
+  ],
+  "blockers": [],
+  "correctionsObserved": [
+    "Summary narrowed from starting slope to the sign of the starting slope.",
+    "Control captions refer to the integer rather than prime number 8.",
+    "The original-start preview now uses progress zero."
+  ],
+  "inputs": [
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\animate.py",
+      "sha256": "df4c9cc22febe0ac7d1078008b2540759961543ef9e6b0a794e81c90edf5bbda"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\zeta-zero-index\\animation.json",
+      "sha256": "63bf59f44d3d0d28703196ea78f4b44532e8830bf7820dc9e4af574a820cd41f"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\evidence\\zero-index.json",
+      "sha256": "c8710419108605bb58a8e4c25ae2a3f0376793e354eb3a2e064e24ad083200d2"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\evidence\\paths.json",
+      "sha256": "53f6dc4a477bc5cd7796ac0b4e06b3bde74f9717073d7ee0c180e8ecc2afe534"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\evidence\\independent-math-grid-review.json",
+      "sha256": "2ced5d1e1f65e4204ccbbd1a1704cf38a1c0799d9d10d66bdeb9749f0b969c3f"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\proof-notes.md",
+      "sha256": "9522c0b886c039bc2c51e8227dc9a6870e092c12e04de0d30185891fc49a9153"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\grids.json",
+      "sha256": "67f1f96bae93617b39284ed71ac795a2bc31b9b04acd812e8093355d52e4af72"
+    }
+  ],
+  "frames": [
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\zeta-zero-index\\preview\\original-start.png",
+      "sha256": "a19a6ebda6f39db5f87af64d4a5c5211f8821404ad477fdc2a69072bb624b3b8"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\zeta-zero-index\\preview\\original-end.png",
+      "sha256": "1b58449a510b03b739377887763e538fb1be58154a13e8e57482e604397bf9e9"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\zeta-zero-index\\preview\\Zero-2.png",
+      "sha256": "99f4823ca8d3ad48fd29a5f3a95e9be9cc8ed928ee5d345a33022d0c69e1591a"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\zeta-zero-index\\preview\\Zero-3.png",
+      "sha256": "043c03a7153ea0bb238181d1a6d36e0065702da0a2237a52f5de858366b43c1a"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\zeta-zero-index\\preview\\Zero-7.png",
+      "sha256": "bafff2f2b79503757b3c95d5486cc4df9424cb597613f5fef37985f5502df996"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\zeta-zero-index\\preview\\Zero-8.png",
+      "sha256": "c7fae59ddba5735fe83833a3481ad9bd6b25c36e87dd2f3fe31682b6d2189d18"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\zeta-zero-index\\preview\\Zero-97.png",
+      "sha256": "0a233eccc72d63163c6e8978dbf92c3e1dcaf903b214152c75004190903ca9d3"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\zeta-zero-index\\slope-summary.png",
+      "sha256": "b5ccb08c327e8f2e997d9b8745ed66f3d2b96ff09c604a61fbf4a0002e7fb403"
+    }
+  ],
+  "backgroundSamples": [
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        125,
+        210
+      ],
+      "binaryNode": [
+        23,
+        281
+      ],
+      "targetA": 0,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        380,
+        210
+      ],
+      "binaryNode": [
+        154,
+        281
+      ],
+      "targetA": 0,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        580,
+        210
+      ],
+      "binaryNode": [
+        256,
+        281
+      ],
+      "targetA": 0,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        780,
+        210
+      ],
+      "binaryNode": [
+        359,
+        281
+      ],
+      "targetA": 0,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        125,
+        290
+      ],
+      "binaryNode": [
+        23,
+        226
+      ],
+      "targetA": 0,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        380,
+        290
+      ],
+      "binaryNode": [
+        154,
+        226
+      ],
+      "targetA": 0,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        580,
+        290
+      ],
+      "binaryNode": [
+        256,
+        226
+      ],
+      "targetA": 0,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        780,
+        290
+      ],
+      "binaryNode": [
+        359,
+        226
+      ],
+      "targetA": 0,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        125,
+        455
+      ],
+      "binaryNode": [
+        23,
+        113
+      ],
+      "targetA": 0,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        380,
+        455
+      ],
+      "binaryNode": [
+        154,
+        113
+      ],
+      "targetA": 0,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        580,
+        455
+      ],
+      "binaryNode": [
+        256,
+        113
+      ],
+      "targetA": 0,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        780,
+        455
+      ],
+      "binaryNode": [
+        359,
+        113
+      ],
+      "targetA": 0,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        125,
+        575
+      ],
+      "binaryNode": [
+        23,
+        30
+      ],
+      "targetA": 0,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        380,
+        575
+      ],
+      "binaryNode": [
+        154,
+        30
+      ],
+      "targetA": 0,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        580,
+        575
+      ],
+      "binaryNode": [
+        256,
+        30
+      ],
+      "targetA": 0,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "original-start.png",
+      "pixel": [
+        780,
+        575
+      ],
+      "binaryNode": [
+        359,
+        30
+      ],
+      "targetA": 0,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        125,
+        210
+      ],
+      "binaryNode": [
+        23,
+        281
+      ],
+      "targetA": 1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        380,
+        210
+      ],
+      "binaryNode": [
+        154,
+        281
+      ],
+      "targetA": 1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        580,
+        210
+      ],
+      "binaryNode": [
+        256,
+        281
+      ],
+      "targetA": 1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        780,
+        210
+      ],
+      "binaryNode": [
+        359,
+        281
+      ],
+      "targetA": 1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        125,
+        290
+      ],
+      "binaryNode": [
+        23,
+        226
+      ],
+      "targetA": 1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        380,
+        290
+      ],
+      "binaryNode": [
+        154,
+        226
+      ],
+      "targetA": 1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        580,
+        290
+      ],
+      "binaryNode": [
+        256,
+        226
+      ],
+      "targetA": 1,
+      "quadrant": 2,
+      "rgb": [
+        136,
+        102,
+        39
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        780,
+        290
+      ],
+      "binaryNode": [
+        359,
+        226
+      ],
+      "targetA": 1,
+      "quadrant": 2,
+      "rgb": [
+        136,
+        102,
+        39
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        125,
+        455
+      ],
+      "binaryNode": [
+        23,
+        113
+      ],
+      "targetA": 1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        380,
+        455
+      ],
+      "binaryNode": [
+        154,
+        113
+      ],
+      "targetA": 1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        580,
+        455
+      ],
+      "binaryNode": [
+        256,
+        113
+      ],
+      "targetA": 1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        780,
+        455
+      ],
+      "binaryNode": [
+        359,
+        113
+      ],
+      "targetA": 1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        125,
+        575
+      ],
+      "binaryNode": [
+        23,
+        30
+      ],
+      "targetA": 1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        380,
+        575
+      ],
+      "binaryNode": [
+        154,
+        30
+      ],
+      "targetA": 1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        580,
+        575
+      ],
+      "binaryNode": [
+        256,
+        30
+      ],
+      "targetA": 1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "original-end.png",
+      "pixel": [
+        780,
+        575
+      ],
+      "binaryNode": [
+        359,
+        30
+      ],
+      "targetA": 1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        125,
+        210
+      ],
+      "binaryNode": [
+        18,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 2,
+      "rgb": [
+        136,
+        102,
+        39
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        380,
+        210
+      ],
+      "binaryNode": [
+        123,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        580,
+        210
+      ],
+      "binaryNode": [
+        205,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        780,
+        210
+      ],
+      "binaryNode": [
+        287,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        125,
+        290
+      ],
+      "binaryNode": [
+        18,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 2,
+      "rgb": [
+        136,
+        102,
+        39
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        380,
+        290
+      ],
+      "binaryNode": [
+        123,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        580,
+        290
+      ],
+      "binaryNode": [
+        205,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        780,
+        290
+      ],
+      "binaryNode": [
+        287,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        125,
+        455
+      ],
+      "binaryNode": [
+        18,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        380,
+        455
+      ],
+      "binaryNode": [
+        123,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        580,
+        455
+      ],
+      "binaryNode": [
+        205,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        780,
+        455
+      ],
+      "binaryNode": [
+        287,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        125,
+        575
+      ],
+      "binaryNode": [
+        18,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        380,
+        575
+      ],
+      "binaryNode": [
+        123,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        580,
+        575
+      ],
+      "binaryNode": [
+        205,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-2.png",
+      "pixel": [
+        780,
+        575
+      ],
+      "binaryNode": [
+        287,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        125,
+        210
+      ],
+      "binaryNode": [
+        18,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 2,
+      "rgb": [
+        136,
+        102,
+        39
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        380,
+        210
+      ],
+      "binaryNode": [
+        123,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 2,
+      "rgb": [
+        136,
+        102,
+        39
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        580,
+        210
+      ],
+      "binaryNode": [
+        205,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        780,
+        210
+      ],
+      "binaryNode": [
+        287,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        125,
+        290
+      ],
+      "binaryNode": [
+        18,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 2,
+      "rgb": [
+        136,
+        102,
+        39
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        380,
+        290
+      ],
+      "binaryNode": [
+        123,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 2,
+      "rgb": [
+        136,
+        102,
+        39
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        580,
+        290
+      ],
+      "binaryNode": [
+        205,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        780,
+        290
+      ],
+      "binaryNode": [
+        287,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        125,
+        455
+      ],
+      "binaryNode": [
+        18,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        380,
+        455
+      ],
+      "binaryNode": [
+        123,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        580,
+        455
+      ],
+      "binaryNode": [
+        205,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        780,
+        455
+      ],
+      "binaryNode": [
+        287,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        125,
+        575
+      ],
+      "binaryNode": [
+        18,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        380,
+        575
+      ],
+      "binaryNode": [
+        123,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        580,
+        575
+      ],
+      "binaryNode": [
+        205,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-3.png",
+      "pixel": [
+        780,
+        575
+      ],
+      "binaryNode": [
+        287,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        125,
+        210
+      ],
+      "binaryNode": [
+        18,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 2,
+      "rgb": [
+        136,
+        102,
+        39
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        380,
+        210
+      ],
+      "binaryNode": [
+        123,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        580,
+        210
+      ],
+      "binaryNode": [
+        205,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        780,
+        210
+      ],
+      "binaryNode": [
+        287,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        125,
+        290
+      ],
+      "binaryNode": [
+        18,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 2,
+      "rgb": [
+        136,
+        102,
+        39
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        380,
+        290
+      ],
+      "binaryNode": [
+        123,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        580,
+        290
+      ],
+      "binaryNode": [
+        205,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        780,
+        290
+      ],
+      "binaryNode": [
+        287,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        125,
+        455
+      ],
+      "binaryNode": [
+        18,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        380,
+        455
+      ],
+      "binaryNode": [
+        123,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        580,
+        455
+      ],
+      "binaryNode": [
+        205,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        780,
+        455
+      ],
+      "binaryNode": [
+        287,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        125,
+        575
+      ],
+      "binaryNode": [
+        18,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        380,
+        575
+      ],
+      "binaryNode": [
+        123,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        580,
+        575
+      ],
+      "binaryNode": [
+        205,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-7.png",
+      "pixel": [
+        780,
+        575
+      ],
+      "binaryNode": [
+        287,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        125,
+        210
+      ],
+      "binaryNode": [
+        18,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 2,
+      "rgb": [
+        136,
+        102,
+        39
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        380,
+        210
+      ],
+      "binaryNode": [
+        123,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 2,
+      "rgb": [
+        136,
+        102,
+        39
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        580,
+        210
+      ],
+      "binaryNode": [
+        205,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        780,
+        210
+      ],
+      "binaryNode": [
+        287,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        125,
+        290
+      ],
+      "binaryNode": [
+        18,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 2,
+      "rgb": [
+        136,
+        102,
+        39
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        380,
+        290
+      ],
+      "binaryNode": [
+        123,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 2,
+      "rgb": [
+        136,
+        102,
+        39
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        580,
+        290
+      ],
+      "binaryNode": [
+        205,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        780,
+        290
+      ],
+      "binaryNode": [
+        287,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        125,
+        455
+      ],
+      "binaryNode": [
+        18,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        380,
+        455
+      ],
+      "binaryNode": [
+        123,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        580,
+        455
+      ],
+      "binaryNode": [
+        205,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        780,
+        455
+      ],
+      "binaryNode": [
+        287,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        125,
+        575
+      ],
+      "binaryNode": [
+        18,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        380,
+        575
+      ],
+      "binaryNode": [
+        123,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        580,
+        575
+      ],
+      "binaryNode": [
+        205,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-8.png",
+      "pixel": [
+        780,
+        575
+      ],
+      "binaryNode": [
+        287,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        125,
+        210
+      ],
+      "binaryNode": [
+        18,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        380,
+        210
+      ],
+      "binaryNode": [
+        123,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        580,
+        210
+      ],
+      "binaryNode": [
+        205,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        780,
+        210
+      ],
+      "binaryNode": [
+        287,
+        264
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        125,
+        290
+      ],
+      "binaryNode": [
+        18,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        380,
+        290
+      ],
+      "binaryNode": [
+        123,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 1,
+      "rgb": [
+        27,
+        115,
+        94
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        580,
+        290
+      ],
+      "binaryNode": [
+        205,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        780,
+        290
+      ],
+      "binaryNode": [
+        287,
+        212
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        125,
+        455
+      ],
+      "binaryNode": [
+        18,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        380,
+        455
+      ],
+      "binaryNode": [
+        123,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        580,
+        455
+      ],
+      "binaryNode": [
+        205,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        780,
+        455
+      ],
+      "binaryNode": [
+        287,
+        106
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        125,
+        575
+      ],
+      "binaryNode": [
+        18,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        380,
+        575
+      ],
+      "binaryNode": [
+        123,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 3,
+      "rgb": [
+        101,
+        60,
+        133
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        580,
+        575
+      ],
+      "binaryNode": [
+        205,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    },
+    {
+      "frame": "Zero-97.png",
+      "pixel": [
+        780,
+        575
+      ],
+      "binaryNode": [
+        287,
+        28
+      ],
+      "targetA": 0.1,
+      "quadrant": 4,
+      "rgb": [
+        39,
+        77,
+        136
+      ]
+    }
+  ],
+  "limitations": [
+    "Eight saved frames were visually inspected; this review does not claim playback or every-frame visual inspection of the encoded movie.",
+    "Selected raw-pixel checks establish sampled palette/phase/axis consistency, not correctness of every rendered pixel.",
+    "The per-scene two-second pacing is suitable for a quick comparison; detailed reading may require pausing.",
+    "The 1e-10 neutral threshold is a display precaution, not an interval error enclosure or proof that other phase colors are certified.",
+    "No claim of a primality test, prime-generation rule, novelty, or RH proof is supported by this finite comparison."
+  ]
+}

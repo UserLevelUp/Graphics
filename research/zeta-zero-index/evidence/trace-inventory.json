@@ -1,0 +1,176 @@
+{
+  "complete": false,
+  "coverage": {
+    "bytes_read": 1289342,
+    "complete": false,
+    "entries": 39,
+    "files_read": 20,
+    "max_bytes": 33554432,
+    "max_entries": 50000,
+    "omissions": {
+      "file_byte_limit": 1
+    }
+  },
+  "ids": [
+    {
+      "file_count": 7,
+      "files": [
+        "README.md",
+        "animate.py",
+        "evidence/warp-progress.json",
+        "graph.riemann.zero_index.complete.md",
+        "warps/graph.riemann.zero_index.animation.zero-index-animation-reviewed-20261115.warp-layer.json",
+        "warps/graph.riemann.zero_index.math.zero-index-math-reviewed-20261115.warp-layer.json",
+        "warps/graph.riemann.zero_index.warp-map.json"
+      ],
+      "id": "graph.riemann.zero_index",
+      "namespace": "graph.riemann",
+      "occurrences": 7
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/acceptance.json"
+      ],
+      "id": "graph.riemann.zero_index.acceptance",
+      "namespace": "graph.riemann.zero_index",
+      "occurrences": 1
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "evidence/zero-index.json",
+        "zero_index_analysis.py"
+      ],
+      "id": "graph.riemann.zero_index.analysis",
+      "namespace": "graph.riemann.zero_index",
+      "occurrences": 3
+    },
+    {
+      "file_count": 5,
+      "files": [
+        "animate.py",
+        "evidence/animation.json",
+        "evidence/warp-progress.json",
+        "warps/graph.riemann.zero_index.animation.zero-index-animation-reviewed-20261115.warp-layer.json",
+        "warps/graph.riemann.zero_index.warp-map.json"
+      ],
+      "id": "graph.riemann.zero_index.animation",
+      "namespace": "graph.riemann.zero_index",
+      "occurrences": 6
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "README.md"
+      ],
+      "id": "graph.riemann.zero_index.documentation",
+      "namespace": "graph.riemann.zero_index",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/native-grids.json"
+      ],
+      "id": "graph.riemann.zero_index.grid",
+      "namespace": "graph.riemann.zero_index",
+      "occurrences": 32
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/native-grids.json"
+      ],
+      "id": "graph.riemann.zero_index.grid.export",
+      "namespace": "graph.riemann.zero_index.grid",
+      "occurrences": 1
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "evidence/independent-math-grid-review.json",
+        "verify_math_and_grids.py"
+      ],
+      "id": "graph.riemann.zero_index.independent_math_grid_review",
+      "namespace": "graph.riemann.zero_index",
+      "occurrences": 3
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/independent-visual-review.json"
+      ],
+      "id": "graph.riemann.zero_index.independent_visual_review",
+      "namespace": "graph.riemann.zero_index",
+      "occurrences": 1
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "evidence/warp-progress.json",
+        "warps/graph.riemann.zero_index.math.zero-index-math-reviewed-20261115.warp-layer.json",
+        "warps/graph.riemann.zero_index.warp-map.json"
+      ],
+      "id": "graph.riemann.zero_index.math",
+      "namespace": "graph.riemann.zero_index",
+      "occurrences": 3
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "evidence/media-review.json",
+        "verify_video.py"
+      ],
+      "id": "graph.riemann.zero_index.media_review",
+      "namespace": "graph.riemann.zero_index",
+      "occurrences": 3
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "evidence/paths.json",
+        "zero_index_analysis.py"
+      ],
+      "id": "graph.riemann.zero_index.paths",
+      "namespace": "graph.riemann.zero_index",
+      "occurrences": 2
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "proof-notes.md"
+      ],
+      "id": "graph.riemann.zero_index.proof",
+      "namespace": "graph.riemann.zero_index",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/warp-progress.json"
+      ],
+      "id": "graph.riemann.zero_index.warp-map.json",
+      "namespace": "graph.riemann.zero_index.warp-map",
+      "occurrences": 1
+    }
+  ],
+  "output": {
+    "complete": true,
+    "max_output_bytes": 32768,
+    "max_results": 200,
+    "omissions": {},
+    "returned_bytes": 2856
+  },
+  "provenance": "token-occurrences",
+  "request": {
+    "context": null,
+    "ignore_case": false,
+    "pattern": "graph.riemann.zero_index.**",
+    "root": "research/zeta-zero-index",
+    "scope": "**",
+    "selectors": [],
+    "separator": "."
+  },
+  "schema": "recur-trace-id-inventory-v1"
+}

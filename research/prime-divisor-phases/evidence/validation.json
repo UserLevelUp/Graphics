@@ -1,0 +1,20 @@
+{
+  "traceId": "graph.primes.divisor_phases.validation",
+  "status": "passed",
+  "sourceSha256": "6afeba0878bebc85d98762792619aa5ad143f4e3431b3421369ba72c6053038e",
+  "analysisSha256": "892180e047366932b20d98986197b4b3a8e1e41b51aa2f9cc6cbe364997111b4",
+  "coverage": {
+    "integerDomain": [
+      0,
+      100
+    ],
+    "primePairs": 625,
+    "oddPrimePairs": 576,
+    "oddCompositePairs": 600,
+    "paletteOffsets": 13,
+    "oddDivisorResidueEnumerations": 49,
+    "maxFloatWaveError": 1.5765166949677223e-14,
+    "finiteDomainRejections": 5
+  },
+  "note": "Exact Fraction/integer predicates decide. Floating cosine evaluations are a separately bounded finite numerical check, not a certified global error bound."
+}

@@ -1,0 +1,146 @@
+{
+  "schema": "graph-independent-review-v1",
+  "traceId": "graph.primes.divisor_phases.review",
+  "status": "passed",
+  "reviewedAtUtc": "2026-11-15T22:05:33.071277+00:00",
+  "reviewer": "Independent divisor_phase_review agent",
+  "blockers": [],
+  "checks": [
+    {
+      "id": "divisibility_formula",
+      "status": "passed",
+      "observation": "Reviewed the finite roots-of-unity geometric sum and balanced cosine formula. Their integer values are exactly the divisor indicator; no Wilson remainder or prime label enters these phases."
+    },
+    {
+      "id": "finite_domain",
+      "status": "passed",
+      "observation": "Reviewed the 0..100 classifier guard and special cases0/1/2/3/5/7. Independent sieve confirms25primes,74composites and2neither. The121 counterexample correctly excludes any global finite-product claim."
+    },
+    {
+      "id": "candidate_channels",
+      "status": "passed",
+      "observation": "Independently checked all404number/divisor channels using exact rational interval comparisons, including0-degree and45-degree colors, remainders and divisibility."
+    },
+    {
+      "id": "independent_cohorts",
+      "status": "passed",
+      "observation": "Independent sieve reproduced all25prime labels,24oddprime labels and25oddcomposite controls. Labels choose comparison cohorts and outlines, not phase colors."
+    },
+    {
+      "id": "pair_records",
+      "status": "passed",
+      "observation": "Independently checked1801orderedpair records across625fullprime,576oddprime and600control matrices. Verified raw/local colors, exact residues, half residues, alias lists and counts."
+    },
+    {
+      "id": "origin_identity",
+      "status": "passed",
+      "observation": "Verified z_p(q-p)=z_p(q); translating by one period changes no raw phase. No new arithmetic information is claimed from that translation."
+    },
+    {
+      "id": "half_step_identity",
+      "status": "passed",
+      "observation": "Reviewed H_p(q)^2=z_p(q) before palette offset and verified exact modular doubling for all applicable odd pairs. The same identity holds for the composite controls."
+    },
+    {
+      "id": "joint_signature",
+      "status": "passed",
+      "observation": "Proved the joint zero-color set [0,1/16) union [15/16,1) at shared45degrees. Independently enumerated2450nonzero residues over49oddmoduli3..99; single and joint isolation thresholds agree with the report."
+    },
+    {
+      "id": "alias_counts",
+      "status": "passed",
+      "observation": "On the same576oddprime cells, raw/half/joint nonzero aliases are104/110/43;600control cells yield114/156/74 with45exactdivisibilities. Cohort sizes and denominators are explicit."
+    },
+    {
+      "id": "palette_offsets",
+      "status": "passed",
+      "observation": "Independently checked13offset cases, including exact rational admissible-interval endpoints. The color rule follows the zero-residue quadrant rather than a fixed quadrant label."
+    },
+    {
+      "id": "scope_of_claims",
+      "status": "passed",
+      "observation": "Proof distinguishes arithmetic from coarse color information; notes common alignment, nonprime controls, no optimality over arbitrary independent rotations, no speedup or RH result, and no statistical significance beyond the enumerated sets."
+    },
+    {
+      "id": "overview_visual",
+      "status": "passed",
+      "observation": "Inspected the final0..100figure. Labels and legend are clear; the overlapping side text was corrected. Independent pixel sampling verified all404divisor-color cells."
+    },
+    {
+      "id": "pair_visual",
+      "status": "passed",
+      "observation": "Inspected the finalthree-panel pairfigure. Axis labels, legends and footer no longer overlap. Independent pixel sampling verified all1728matrixcells, including24truezero diagonals and43joint aliases."
+    },
+    {
+      "id": "render_source",
+      "status": "passed",
+      "observation": "Reviewed matplotlib rendering source, which consumes recorded phase/quadrant arrays and labels known-prime outlines explicitly as comparison data. PNG and SVG exports are hash-bound."
+    },
+    {
+      "id": "html_static",
+      "status": "passed",
+      "observation": "Reviewed explorer template source. Its bounded integer inputs feed modular-residue quadrant bins; trial division supplies separately labeled comparison results. It distinguishes color aliases from exact zero residues and has no external script or network request."
+    },
+    {
+      "id": "evidence_binding",
+      "status": "passed",
+      "observation": "Verified the producer validation source and analysis SHA256 values against current bytes. This review binds current sources, proof, template, data and figures."
+    }
+  ],
+  "independentCoverage": {
+    "candidateChannels": 404,
+    "pairRecords": 1801,
+    "rotationCases": 13,
+    "nonzeroModulusResidues": 2450,
+    "overviewColorCells": 404,
+    "matrixColorCells": 1728
+  },
+  "inputs": [
+    {
+      "path": "C:\\src\\graph\\research\\prime-divisor-phases\\analyze.py",
+      "sha256": "6afeba0878bebc85d98762792619aa5ad143f4e3431b3421369ba72c6053038e"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\prime-divisor-phases\\render.py",
+      "sha256": "f5479181721b00e8e2551d1a7321d077a55f6d5e930769a09cbeb4a8058c3d37"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\prime-divisor-phases\\proof-and-findings.md",
+      "sha256": "da80ba003631b592529a4df9c664ac6d808791277af3162867a59a01dca7713b"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\prime-divisor-phases\\explorer.template.html",
+      "sha256": "d1917757090c59bf6264e50ed75bad4eba2a66063d8276c0e80870f345334034"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\prime-divisor-phases\\evidence\\analysis.json",
+      "sha256": "892180e047366932b20d98986197b4b3a8e1e41b51aa2f9cc6cbe364997111b4"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\prime-divisor-phases\\evidence\\validation.json",
+      "sha256": "0d7dc66f462632bf69cde61dfb1b61dab8ee4e4cae53e924ea41cc52ded43266"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\prime-divisor-phases\\divisor-phases-0-100.png",
+      "sha256": "e9110758848ea774035b9dfc7cea195477a955706aac48917bd0bfed96a6ab22"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\prime-divisor-phases\\divisor-phases-0-100.svg",
+      "sha256": "67e81c9e5f9001b4d6fcbc342715b90e057830a5a0b61c5ba09275083259c81c"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\prime-divisor-phases\\prime-pair-half-step.png",
+      "sha256": "7ca0f876de908f6c337a2bd825e2b265b377743b069b0f13342754af38897821"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\prime-divisor-phases\\prime-pair-half-step.svg",
+      "sha256": "9f2293112d536cb733e551010e18e54b957990bfdf3462d73aaf6ef5715c9e0b"
+    }
+  ],
+  "limitations": [
+    "Generated explorer HTML and browser interaction are outside this review; root integration must check them separately.",
+    "JavaScript received static review only. Reviewer-side Node execution did not complete; no JavaScript runtime check is claimed.",
+    "Finite numerical cosine checks are not certified interval bounds or a global numerical proof.",
+    "No Lean replay, new number-theory theorem, speedup, statistical significance, or RH result is claimed."
+  ]
+}

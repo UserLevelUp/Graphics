@@ -1,0 +1,17 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.primes.divisor_phases",
+  "slice_id": "analysis",
+  "contract_hash": "contract:graph.primes.divisor_phases.analysis:v1",
+  "attempt_id": "analysis-reviewed-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:892180e047366932b20d98986197b4b3a8e1e41b51aa2f9cc6cbe364997111b4",
+  "evidence": {
+    "review": [
+      "evidence/acceptance.json",
+      "evidence/review.json",
+      "evidence/validation.json"
+    ]
+  },
+  "reason": null
+}

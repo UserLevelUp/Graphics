@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.zero_index",
+  "slice_id": "math",
+  "contract_hash": "contract:graph.riemann.zero_index.math:v1",
+  "attempt_id": "zero-index-math-reviewed-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:2ced5d1e1f65e4204ccbbd1a1704cf38a1c0799d9d10d66bdeb9749f0b969c3f",
+  "evidence": {
+    "review": [
+      "evidence/independent-math-grid-review.json"
+    ]
+  },
+  "reason": null
+}

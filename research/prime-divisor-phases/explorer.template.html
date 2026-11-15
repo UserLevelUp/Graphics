@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prime divisor phases · 0–100</title>
+<style>
+:root{color-scheme:dark;--bg:#0d121e;--panel:#182031;--line:#344258;--ink:#eef4fc;--muted:#afbed4;--q1:#b075e4;--q2:#f4c155;--q3:#38d1ba;--q4:#ee6b92}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Segoe UI,sans-serif}main{max-width:1440px;margin:auto;padding:32px 28px 48px}h1{font-size:clamp(28px,4vw,43px);line-height:1.15;margin:0 0 14px;letter-spacing:-.035em}h2{font-size:21px;margin:0 0 10px}h3{font-size:17px;margin:0 0 8px}p{margin:0 0 12px}.eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--q3);margin-bottom:12px}.lead{max-width:900px;color:var(--muted);font-size:18px}.lead strong{color:var(--ink)}.panel{background:var(--panel);border:1px solid #29364b;border-radius:15px;padding:22px;min-width:0}.stack{display:grid;gap:20px}.columns{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;margin-top:20px}.toolbar{display:flex;gap:22px;align-items:end;flex-wrap:wrap;margin:24px 0 20px}.control{display:flex;flex-direction:column;gap:6px}.control label{font-size:13px;color:var(--muted)}input,select,button{font:inherit}input[type=number],select{background:#0e1626;color:var(--ink);border:1px solid #455570;border-radius:7px;padding:8px 10px}input[type=number]{width:104px}select{max-width:100%}input[type=range]{width:230px;accent-color:var(--q3)}button{background:#26364e;color:var(--ink);border:1px solid #455570;border-radius:7px;padding:7px 12px;cursor:pointer}button:hover{background:#344968}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--q3);outline-offset:3px}.examples{display:flex;gap:7px;flex-wrap:wrap}.muted{color:var(--muted)}.small{font-size:13px}.mono{font-family:Consolas,ui-monospace,monospace}.formula{font-family:Cambria,Georgia,serif;font-size:21px;margin:12px 0;color:#fff}.legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:13px;color:var(--muted);margin-top:15px}.swatch{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}.q1{background:var(--q1)}.q2{background:var(--q2)}.q3{background:var(--q3)}.q4{background:var(--q4)}.metric-row{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 4px}.metric{flex:1;min-width:140px;background:#101928;border-radius:9px;padding:13px 15px}.metric b{display:block;font-size:25px}.metric span{font-size:12px;color:var(--muted)}.phase-circles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.phase-card{background:#111a29;border-radius:11px;padding:10px 6px;text-align:center}.phase-card svg{width:100%;max-width:185px;display:block;margin:auto}.phase-card h3{font-size:15px;margin:3px 0}.phase-card p{font-size:12px;margin:0}.notice{border-left:3px solid var(--q3);padding:7px 0 7px 13px;color:var(--muted);font-size:14px}.warning{border-left-color:var(--q2)}.grid{display:grid;grid-template-columns:repeat(11,minmax(0,1fr));gap:6px;margin:15px 0}.tile{min-width:0;padding:4px 0;border:2px solid transparent;border-radius:5px;color:#101725;font-size:14px;font-weight:700;line-height:1.3;position:relative}.tile:hover{filter:brightness(1.12)}.tile.prime{border-color:#fff}.tile.selected{outline:3px solid #fff;outline-offset:1px;z-index:1}.tile.neither:after{content:"·";position:absolute;top:-2px;right:4px;font-size:20px;color:#101725}.grid-note{display:flex;gap:15px;flex-wrap:wrap;color:var(--muted);font-size:12px}.outline-sample{display:inline-block;border:2px solid white;width:13px;height:13px;margin-right:5px;vertical-align:-2px}.divider{height:1px;background:var(--line);margin:18px 0}.result{font-size:25px;margin:9px 0 2px;font-weight:750}.result-sub{font-size:14px;color:var(--muted)}.matrix-panel{margin-top:20px}.matrix-head{display:flex;justify-content:space-between;align-items:start;gap:20px;flex-wrap:wrap}.matrix-scroll{overflow:auto;max-height:720px;margin:15px 0;border:1px solid var(--line);border-radius:8px;background:#101928;padding:8px}table{border-collapse:separate;border-spacing:3px;margin:auto;font-variant-numeric:tabular-nums}th{font-size:11px;color:var(--muted);min-width:25px;height:23px;font-weight:500}thead th{position:sticky;top:-8px;background:#101928;z-index:2}tbody th{position:sticky;left:-8px;background:#101928;z-index:1}th.active{color:white;font-weight:800}.matrix-cell{display:block;width:25px;height:25px;padding:0;border:0;border-radius:3px;color:#0c1422;font-size:16px;line-height:25px;font-weight:700}.matrix-cell.exact{box-shadow:inset 0 0 0 2px #fff}.matrix-cell:hover{filter:brightness(1.15);outline:2px solid white}.detail{background:#101928;border-radius:9px;padding:13px 15px;min-height:79px;font-size:14px}.detail b{color:white}.findings{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}.finding-num{color:var(--q3);font-size:12px;letter-spacing:.13em;margin-bottom:8px}.finding p{font-size:14px;color:var(--muted)}footer{margin-top:26px;font-size:12px;color:#92a5c2}.error{color:#ffc08b;display:none}.pill{display:inline-block;font-size:12px;border:1px solid #566782;padding:2px 8px;border-radius:20px;color:var(--muted);margin-left:8px}.retained{color:var(--q3)}.rejected{color:var(--q2)}
+@media(max-width:1050px){.columns{grid-template-columns:1fr}.findings{grid-template-columns:1fr}.phase-circles{gap:7px}.matrix-head .control{width:100%}.matrix-head select{width:100%}}
+@media(max-width:580px){main{padding:24px 14px 32px}.panel{padding:16px}.toolbar{gap:14px}.phase-circles{grid-template-columns:repeat(2,1fr)}.grid{gap:4px}.tile{font-size:12px;padding:5px 0}.metric{min-width:110px}.matrix-cell{width:22px;height:22px;line-height:22px}th{min-width:22px}.formula{font-size:18px}}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">A finite experiment · exact residues, visible phases</div>
+  <h1>What do four colors preserve?</h1>
+  <p class="lead">Compare periodic divisor phases for every integer from <strong>0 to 100</strong>, then compare primes with one another and with odd composites. Colors describe a phase relative to a reference number. <strong>No single color means “prime.”</strong></p>
+  <div class="panel toolbar" aria-label="Experiment controls">
+    <div class="control"><label for="candidate">Candidate n</label><input id="candidate" type="number" min="0" max="100" step="1" value="97"></div>
+    <div class="control"><label for="reference">Reference for the 0–100 grid</label><select id="reference"></select></div>
+    <div class="control"><label for="offset">Phase offset: <output id="offset-value" for="offset">45°</output></label><input id="offset" type="range" min="0" max="90" step="1" value="45"></div>
+    <div class="control"><label>Worked examples</label><div class="examples"><button type="button" data-example="4">4</button><button type="button" data-example="96">96</button><button type="button" data-example="97">97</button><button type="button" data-example="99">99</button></div></div>
+    <p id="error" class="error" role="alert"></p>
+  </div>
+
+  <section class="panel" aria-labelledby="phases-title">
+    <h2 id="phases-title">Four divisor clocks</h2>
+    <p class="muted small">For each divisor d, the point is z<sub>d</sub>(n) = exp(2πin/d). The phase offset moves this point relative to the fixed color boundaries. An exact divisor has residue zero; a matching color alone can be less precise.</p>
+    <div id="phase-circles" class="phase-circles"></div>
+    <div class="legend"><span><i class="swatch q1"></i>QI</span><span><i class="swatch q2"></i>QII</span><span><i class="swatch q3"></i>QIII</span><span><i class="swatch q4"></i>QIV</span><span>Hollow ring: zero-residue phase · solid dot: candidate phase</span></div>
+  </section>
+
+  <div class="columns">
+    <section class="panel" aria-labelledby="grid-title">
+      <h2 id="grid-title">All integers, one reference</h2>
+      <p id="grid-caption" class="muted small"></p>
+      <div id="number-grid" class="grid" aria-label="Integers from zero through one hundred"></div>
+      <div class="grid-note"><span><i class="outline-sample"></i>Prime by independent trial division</span><span>Dot: 0 or 1, neither prime nor composite</span></div>
+      <p class="notice" style="margin-top:16px">The outlines are comparison labels only. Tile colors are computed from n mod p and the phase offset, without reading those labels. Click a tile to inspect it.</p>
+    </section>
+    <section class="panel" aria-labelledby="selected-title">
+      <h2 id="selected-title">Selected candidate</h2>
+      <div id="candidate-result"></div>
+      <div class="divider"></div>
+      <h3>Does the coarse color filter agree?</h3>
+      <p class="small muted">For 8–100, reject a candidate if any divisor clock has the same quadrant as its zero-residue point. This uses the colors, not a hidden primality label.</p>
+      <div id="filter-result"></div>
+      <div id="metrics" class="metric-row"></div>
+      <p id="misses" class="small muted" style="margin-top:12px"></p>
+      <div class="divider"></div>
+      <h3>The half-step coordinates</h3>
+      <div id="half-info" class="small muted"></div>
+    </section>
+  </div>
+
+  <section class="panel matrix-panel" aria-labelledby="matrix-title">
+    <div class="matrix-head"><div><h2 id="matrix-title">Each number against each reference</h2><p class="small muted">Rows are references p; columns are targets q. Click a cell to select that comparison.</p></div>
+      <div class="control"><label for="matrix-mode">Comparison</label><select id="matrix-mode"><option value="prime-raw">Prime × prime · original phase</option><option value="prime-half">Odd prime × odd prime · half-relative phase</option><option value="control-raw">Odd prime × odd composite · original phase</option><option value="control-half">Odd prime × odd composite · half-relative phase</option></select></div>
+    </div>
+    <div id="matrix-formula" class="formula"></div>
+    <div id="matrix-stats" class="small muted"></div>
+    <div class="matrix-scroll"><table id="matrix" aria-label="Pairwise phase quadrants"></table></div>
+    <div class="legend"><span><i class="outline-sample"></i>Exact zero residue</span><span>× = nonzero residue sharing the zero-residue color</span><span>Blank cell = a different quadrant</span></div>
+    <div id="cell-detail" class="detail" aria-live="polite" style="margin-top:14px">Hover or focus a cell for its exact remainder and phase relationship.</div>
+  </section>
+
+  <div class="findings">
+    <section class="panel finding"><div class="finding-num">01 / RESOLUTION</div><h3>Placement of the boundaries matters</h3><p>At 45°, divisors 2, 3, 5 and 7 isolate zero residue in one quadrant. That is enough for 8–100. Small primes 2, 3, 5 and 7 require separate handling because they divide themselves.</p><p>Larger reference primes have more closely spaced phase points. For example, p = 97 and q = 11 can share the zero-residue color without being divisible.</p></section>
+    <section class="panel finding"><div class="finding-num">02 / PARITY</div><h3>The two half-units are shared</h3><p>Every odd integer has n/2 ending in .5, and k = (n−1)/2 is an integer. Odd primes and odd composites both obey this identity.</p><p>The half-relative phase rearranges the residues for an odd reference. Different colors after that transformation do not, by themselves, establish a prime-specific pattern.</p></section>
+    <section class="panel finding"><div class="finding-num">03 / INTERPRETATION</div><h3>Keep arithmetic and colors separate</h3><p>H<sub>p</sub>(q)² = z<sub>p</sub>(q) before the display offset. This is an algebraic phase identity, not a new primality theorem.</p><p>This experiment visualizes known divisibility relationships. It does not establish a new prime formula, computational speedup, or Riemann Hypothesis result.</p></section>
+  </div>
+  <footer>Trace: <span class="mono">graph.primes.divisor_phases</span> · Offline, no external scripts or network requests. Exact integer residues determine quadrant bins; trigonometry is used only to draw the points. Comparison labels use trial division.</footer>
+</main>
+<script id="analysis-data" type="application/json">__ANALYSIS_JSON__</script>
+<script>
+'use strict';
+(() => {
+  const PALETTE=['#b075e4','#f4c155','#38d1ba','#ee6b92'];
+  const ROMAN=['I','II','III','IV'];
+  const DIVISORS=[2,3,5,7];
+  const byId=id=>document.getElementById(id);
+  function trial(n){if(n<2)return{prime:false,kind:'neither',factor:null};for(let d=2;d*d<=n;d++)if(n%d===0)return{prime:false,kind:'composite',factor:d};return{prime:true,kind:'prime',factor:null};}
+  let embedded={};try{embedded=JSON.parse(byId('analysis-data').textContent);}catch(error){embedded={};}
+  const all=Array.from({length:101},(_,n)=>n);
+  const computedPrimes=all.filter(n=>trial(n).prime);
+  const validList=(list,fallback)=>Array.isArray(list)&&list.length&&list.every(n=>Number.isInteger(n)&&n>=0&&n<=100)?list:fallback;
+  const primes=validList(embedded.primes,computedPrimes);
+  const oddPrimes=validList(embedded.oddPrimes,computedPrimes.filter(n=>n%2===1));
+  const oddComposites=validList(embedded.oddComposites,all.filter(n=>n%2===1&&trial(n).kind==='composite'));
+  const state={candidate:97,reference:7,offset:45,mode:'prime-raw'};
+  const mod=(n,d)=>((n%d)+d)%d;
+  // All operands here are small integers: no floating angle decides a quadrant.
+  function quadrant(r,d,offset=state.offset){const period=360*d;const ticks=mod(360*r+offset*d,period);return Math.floor(4*ticks/period)+1;}
+  function phase(n,d){const residue=mod(n,d);return{residue,q:quadrant(residue,d),zeroQ:quadrant(0,d),degrees:mod(360*residue/d+state.offset,360)};}
+  function coarsePass(n){return DIVISORS.every(d=>quadrant(mod(n,d),d)!==quadrant(0,d));}
+  function point(angle,r=58,c=90){const a=angle*Math.PI/180;return[c+r*Math.cos(a),c-r*Math.sin(a)];}
+  function circle(d){const item=phase(state.candidate,d);let paths='';for(let j=0;j<4;j++){const a=point(90*j),b=point(90*(j+1));paths+=`<path d="M90 90 L${a[0]} ${a[1]} A58 58 0 0 0 ${b[0]} ${b[1]} Z" fill="${PALETTE[j]}" opacity=".28"/>`;}
+    const dot=point(item.degrees,49),zero=point(state.offset,49);return `<article class="phase-card"><h3>d = ${d}</h3><svg viewBox="0 0 180 172" role="img" aria-label="Divisor ${d}, residue ${item.residue}, quadrant ${ROMAN[item.q-1]}">${paths}<circle cx="90" cy="90" r="58" fill="none" stroke="#667c9a"/><path d="M24 90 H156 M90 24 V156" stroke="#667c9a"/><line x1="90" y1="90" x2="${dot[0]}" y2="${dot[1]}" stroke="${PALETTE[item.q-1]}" stroke-width="2.5"/><circle cx="${zero[0]}" cy="${zero[1]}" r="8" fill="none" stroke="#fff" stroke-width="1.5"/><circle cx="${dot[0]}" cy="${dot[1]}" r="4.5" fill="${PALETTE[item.q-1]}"/><text x="158" y="94" fill="#afbed4" font-size="10">Re</text><text x="94" y="21" fill="#afbed4" font-size="10">Im</text></svg><p>n mod d = <b>${item.residue}</b> · Q${ROMAN[item.q-1]}</p><p>${item.residue===0?'Exact divisor alignment':item.q===item.zeroQ?'Same color, nonzero remainder':'Different color from zero'}</p></article>`;}
+  function renderGrid(){byId('grid-caption').textContent=`Raw phase z${state.reference}(n): color from n mod ${state.reference}, with a ${state.offset}° offset. Matrix mode does not change this grid.`;byId('number-grid').innerHTML=all.map(n=>{const item=phase(n,state.reference),t=trial(n);return`<button type="button" class="tile${t.prime?' prime':''}${n<2?' neither':''}${n===state.candidate?' selected':''}" data-number="${n}" style="background:${PALETTE[item.q-1]}" aria-label="${n}, ${t.kind}, residue ${item.residue} modulo ${state.reference}, quadrant ${ROMAN[item.q-1]}" title="${n}: residue ${item.residue}, Q${ROMAN[item.q-1]}; comparison label ${t.kind}">${n}</button>`;}).join('');}
+  function renderCandidate(){const n=state.candidate,t=trial(n),k=(n-1)/2;byId('candidate-result').innerHTML=`<div class="result">${n} <span class="pill">${t.kind}</span></div><div class="result-sub">${n<2?'Neither prime nor composite.':t.factor?`Independent check: ${n} = ${t.factor} × ${n/t.factor}.`:'Independent check: no divisor from 2 through √n.'}</div>`;
+    const matching=DIVISORS.filter(d=>quadrant(mod(n,d),d)===quadrant(0,d));let result;
+    if(n<2)result='Outside the prime domain; neither.';else if(DIVISORS.includes(n))result='Small-prime exception: handled separately because it divides itself.';else result=matching.length?`Rejected by color match for d = ${matching.join(', ')}.`:'Retained: no zero-color match among 2, 3, 5 and 7.';
+    byId('filter-result').innerHTML=`<p class="small ${matching.length?'rejected':'retained'}">${result}</p>`;
+    const misses=[],falsePositives=[];let retainedPrimes=0;for(let v=8;v<=100;v++){const expected=trial(v).prime,pass=coarsePass(v);if(expected&&pass)retainedPrimes++;if(expected&&!pass)misses.push(v);if(!expected&&pass)falsePositives.push(v);}
+    byId('metrics').innerHTML=`<div class="metric"><b>${retainedPrimes} / 21</b><span>Primes retained, 8–100</span></div><div class="metric"><b>${misses.length}</b><span>Primes lost to coarse colors</span></div><div class="metric"><b>${falsePositives.length}</b><span>Composites incorrectly retained</span></div>`;
+    byId('misses').textContent=misses.length?`Lost primes: ${misses.join(', ')}. The divisibility relationships did not change; the binning did.`:'All prime candidates in 8–100 are retained at this offset. Divisibility is isolated adequately by these four clocks.';
+    byId('half-info').innerHTML=`<div class="formula">${n}/2 = ${n/2}; &nbsp; k = (${n}−1)/2 = ${k}</div><p>${n%2===1?'This is an odd integer: its two halves each end in .5, and k is an integer. The same property holds for odd composites.':'This is an even integer: k is a half-integer. The odd-coordinate interpretation does not apply.'}</p><p>For odd p and q, H<sub>p</sub>(q) = exp(2πi(k(q)−k(p))/p). Squaring H restores the original raw phase.</p>`;
+  }
+  function pair(p,q,half){const r=half?mod((q-p)/2,p):mod(q,p),color=quadrant(r,p),zeroQ=quadrant(0,p);return{p,q,r,color,zeroQ,half,exact:r===0,alias:r!==0&&color===zeroQ,angle:mod(360*r/p+state.offset,360)};}
+  function pairDetail(p,q,half){const a=pair(p,q,half);byId('cell-detail').innerHTML=`<b>Reference p = ${p}; target q = ${q}</b><br>${half?'Half-relative':'Raw'} residue = ${a.r}; displayed phase = ${a.angle.toFixed(3)}°; quadrant ${ROMAN[a.color-1]}. ${a.exact?'Exact zero-residue alignment.':a.alias?'This is a color alias: the remainder is nonzero, although it shares zero’s quadrant.':'The remainder is nonzero and its quadrant differs from zero’s.'}`;}
+  function renderMatrix(){const half=state.mode.endsWith('half'),control=state.mode.startsWith('control'),refs=(half||control)?oddPrimes:primes,targets=control?oddComposites:half?oddPrimes:primes;let zeroCount=0,aliasCount=0;let body='';for(const p of refs){let cells='';for(const q of targets){const a=pair(p,q,half);zeroCount+=a.exact?1:0;aliasCount+=a.alias?1:0;cells+=`<td><button type="button" class="matrix-cell${a.exact?' exact':''}" style="background:${PALETTE[a.color-1]}" data-p="${p}" data-q="${q}" data-half="${half?'1':'0'}" aria-label="Reference ${p}, target ${q}, ${half?'half-relative':'raw'} residue ${a.r}, quadrant ${ROMAN[a.color-1]}, ${a.exact?'exact zero':a.alias?'color alias':'nonzero'}" title="p=${p}, q=${q}: residue ${a.r}, Q${ROMAN[a.color-1]}${a.alias?', color alias':''}">${a.alias?'×':''}</button></td>`;}body+=`<tr><th scope="row" class="${p===state.reference?'active':''}">${p}</th>${cells}</tr>`;}
+    byId('matrix').innerHTML=`<thead><tr><th scope="col">p ↓ q →</th>${targets.map(q=>`<th scope="col" class="${q===state.candidate?'active':''}">${q}</th>`).join('')}</tr></thead><tbody>${body}</tbody>`;
+    byId('matrix-formula').innerHTML=half?'H<sub>p</sub>(q) = exp(2πi ((q−p)/2) / p), for odd p and q':'z<sub>p</sub>(q) = exp(2πiq/p) = z<sub>p</sub>(q−p)';
+    byId('matrix-stats').textContent=`${refs.length} references × ${targets.length} targets = ${refs.length*targets.length} cells · ${zeroCount} exact zero residues · ${aliasCount} nonzero residues sharing zero’s quadrant. ${control?'Odd composites are controls; the same parity identities apply.':'Prime labels select the comparison set; they do not determine its colors.'}`;
+    if(refs.includes(state.reference)&&targets.includes(state.candidate))pairDetail(state.reference,state.candidate,half);else byId('cell-detail').textContent='Hover or focus a cell for its exact remainder and phase relationship.';
+  }
+  function render(){byId('offset-value').textContent=state.offset+'°';byId('phase-circles').innerHTML=DIVISORS.map(circle).join('');renderGrid();renderCandidate();renderMatrix();}
+  byId('reference').innerHTML=primes.map(p=>`<option value="${p}">${p}</option>`).join('');byId('reference').value=String(state.reference);
+  byId('candidate').addEventListener('input',()=>{const n=Number(byId('candidate').value);if(byId('candidate').value.trim()===''||!Number.isInteger(n)||n<0||n>100){byId('error').textContent='Enter a whole number from 0 through 100.';byId('error').style.display='block';return;}byId('error').style.display='none';state.candidate=n;render();});
+  byId('reference').addEventListener('change',()=>{state.reference=Number(byId('reference').value);render();});
+  byId('offset').addEventListener('input',()=>{state.offset=Number(byId('offset').value);render();});
+  byId('matrix-mode').addEventListener('change',()=>{state.mode=byId('matrix-mode').value;render();});
+  document.querySelectorAll('[data-example]').forEach(button=>button.addEventListener('click',()=>{state.candidate=Number(button.dataset.example);byId('candidate').value=String(state.candidate);byId('error').style.display='none';render();}));
+  byId('number-grid').addEventListener('click',event=>{const button=event.target.closest('[data-number]');if(!button)return;state.candidate=Number(button.dataset.number);byId('candidate').value=String(state.candidate);byId('error').style.display='none';render();});
+  const showCell=event=>{const button=event.target.closest('[data-p]');if(button)pairDetail(Number(button.dataset.p),Number(button.dataset.q),button.dataset.half==='1');};
+  byId('matrix').addEventListener('mouseover',showCell);byId('matrix').addEventListener('focusin',showCell);
+  byId('matrix').addEventListener('click',event=>{const button=event.target.closest('[data-p]');if(!button)return;state.reference=Number(button.dataset.p);state.candidate=Number(button.dataset.q);byId('reference').value=String(state.reference);byId('candidate').value=String(state.candidate);byId('error').style.display='none';render();});
+  // Expose the bounded pure calculation for independent, non-visual verification.
+  window.phaseExplorer={quadrant:(r,d,a)=>quadrant(r,d,a),pair:(p,q,half,a)=>{const previous=state.offset;state.offset=a;try{return pair(p,q,half);}finally{state.offset=previous;}},state};
+  render();
+})();
+</script>
+</body>
+</html>

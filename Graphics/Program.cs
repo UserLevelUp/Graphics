@@ -14,6 +14,12 @@ namespace Graphics
         [STAThread]
         static void Main(string[] args)
         {
+            // publish: graph.riemann.zero_index.grid.export
+            if (args.Length == 3 && args[0] == "--zeta-zero-index-grids")
+            {
+                ZetaZeroIndexExperiment.Export(args[1], args[2]);
+                return;
+            }
             // publish: graph.primes.quadrant_phase.export
             if (args.Length >= 2 && args.Length <= 4 && args[0] == "--prime-quadrant-phase")
             {

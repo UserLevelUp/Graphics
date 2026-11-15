@@ -1,0 +1,3 @@
+* -text
+# Preserve the accepted Matplotlib SVG bytes, including path-data spacing.
+figures/*.svg -whitespace

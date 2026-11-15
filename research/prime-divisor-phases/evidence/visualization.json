@@ -1,0 +1,28 @@
+{
+  "traceId": "graph.primes.divisor_phases.visualization",
+  "status": "accepted_for_finite_analysis_and_static_figures",
+  "figures": [
+    {
+      "path": "figures/divisor-phases-0-100.png",
+      "sha256": "e9110758848ea774035b9dfc7cea195477a955706aac48917bd0bfed96a6ab22"
+    },
+    {
+      "path": "figures/divisor-phases-0-100.svg",
+      "sha256": "67e81c9e5f9001b4d6fcbc342715b90e057830a5a0b61c5ba09275083259c81c"
+    },
+    {
+      "path": "figures/prime-pair-half-step.png",
+      "sha256": "7ca0f876de908f6c337a2bd825e2b265b377743b069b0f13342754af38897821"
+    },
+    {
+      "path": "figures/prime-pair-half-step.svg",
+      "sha256": "9f2293112d536cb733e551010e18e54b957990bfdf3462d73aaf6ef5715c9e0b"
+    }
+  ],
+  "explorer": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\prime-divisor-phases\\explorer.html",
+    "sha256": "cea65fdcce55c8aa45afbdb3524fe581489ca818664294528275f3af5b29b7df",
+    "verification": "Static mathematics/source and DOM-stub checks only. User stopped Computer Use before browser testing; no browser success is claimed."
+  },
+  "reviewSha256": "cbe1adc24e478ea54676a37f7d327546c82cdbe46164b68fd7d19ea9f3624dbc"
+}

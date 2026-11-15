@@ -1,0 +1,13 @@
+{
+  "schema":"warp-bubble-map-v1","warp_id":"{warp}","goal":"{goal}",
+  "intelligence_baseline":"host-current",
+  "invariants":[
+    "Use raw residue phases, never Wilson or supplied prime labels to produce colors.",
+    "Keep exact divisibility separate from quadrant aliases and palette choices.",
+    "Compare half-step prime pairs against odd-composite controls; no novelty, speedup or RH result is inferred from a finite pattern."
+  ],
+  "required_slices":[
+    {"slice_id":"analysis","contract_hash":"contract:{warp}.analysis:v1","depends_on":[],"evidence_gates":["review"],"evidence_mode":"declared","intelligence_tick":0},
+    {"slice_id":"visualization","contract_hash":"contract:{warp}.visualization:v1","depends_on":["analysis"],"evidence_gates":["review"],"evidence_mode":"declared","intelligence_tick":0}
+  ]
+}

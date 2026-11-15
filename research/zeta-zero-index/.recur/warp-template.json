@@ -1,0 +1,14 @@
+{
+  "schema":"warp-bubble-map-v1","warp_id":"{warp}","goal":"{goal}",
+  "intelligence_baseline":"host-current",
+  "invariants":[
+    "Z_j denotes the jth known nontrivial zeta zero, never the jth prime or a candidate prime value.",
+    "Compare prime indices2..97 with nonprime index controls; all starts at sigma1/2 are chosen inputs, not an RH proof.",
+    "Actual paths solve zeta(s)=a. Derivative-based slopes are mathematical quantities; palette colors do not classify primes.",
+    "Preserve prior accepted video. Treat finite numerical agreement separately from rigorous error enclosures."
+  ],
+  "required_slices":[
+    {"slice_id":"math","contract_hash":"contract:{warp}.math:v1","depends_on":[],"evidence_gates":["review"],"evidence_mode":"declared","intelligence_tick":0},
+    {"slice_id":"animation","contract_hash":"contract:{warp}.animation:v1","depends_on":["math"],"evidence_gates":["review"],"evidence_mode":"declared","intelligence_tick":0}
+  ]
+}

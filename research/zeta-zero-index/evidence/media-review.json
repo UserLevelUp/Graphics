@@ -1,0 +1,1503 @@
+{
+  "traceId": "graph.riemann.zero_index.media_review",
+  "status": "passed",
+  "reviewedAtUtc": "2026-11-15T22:29:31.685670+00:00",
+  "video": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\zeta-zero-index\\zero-index-slope-tour.mp4",
+    "sha256": "2958432a4c6e9ea88c7326e8f27465a227e9e14334d91170e7315d07ef8d7e4c",
+    "bytes": 1733080,
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frames": 2016,
+    "durationSeconds": 84,
+    "codec": "h264",
+    "audioStreams": 0
+  },
+  "coverage": {
+    "fullDecode": true,
+    "sceneCount": 33,
+    "sceneBoundaryComparisons": 66,
+    "additionalMotionComparisons": 5,
+    "independentOrdinalTitleComparisons": 66,
+    "extractedFrames": 10,
+    "primeIndices": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97
+    ],
+    "controlIndices": [
+      1,
+      4,
+      6,
+      8,
+      9,
+      10
+    ]
+  },
+  "meanings": {
+    "index": "The ordinal of a known nontrivial zeta zero, not the value of an individual prime.",
+    "starts": "Known zeros on sigma=1/2 are supplied inputs, not a proof of RH.",
+    "slopeResult": "The sign of the starting slope does not separate prime indices from composite indices.",
+    "signCounts": {
+      "prime": {
+        "down": 14,
+        "up": 11
+      },
+      "composite": {
+        "down": 35,
+        "up": 39
+      },
+      "neither": {
+        "down": 1,
+        "up": 0
+      }
+    }
+  },
+  "tolerances": {
+    "fullFrameMeanAbsolute": 3.5,
+    "fullFramePercentile99": 35,
+    "fractionOver40": 0.01,
+    "independentTitleMeanAbsolute": 3.5,
+    "independentTitlePercentile99": 35
+  },
+  "maxObserved": {
+    "meanAbsolute": 1.7318561921296296,
+    "percentile99": 16.0,
+    "fractionOver40": 0.0017078993055555556
+  },
+  "scenes": [
+    {
+      "kind": "intro",
+      "index": null,
+      "startFrame": 0,
+      "endFrameExclusive": 288
+    },
+    {
+      "kind": "prime",
+      "index": 2,
+      "startFrame": 288,
+      "endFrameExclusive": 336
+    },
+    {
+      "kind": "prime",
+      "index": 3,
+      "startFrame": 336,
+      "endFrameExclusive": 384
+    },
+    {
+      "kind": "prime",
+      "index": 5,
+      "startFrame": 384,
+      "endFrameExclusive": 432
+    },
+    {
+      "kind": "prime",
+      "index": 7,
+      "startFrame": 432,
+      "endFrameExclusive": 480
+    },
+    {
+      "kind": "prime",
+      "index": 11,
+      "startFrame": 480,
+      "endFrameExclusive": 528
+    },
+    {
+      "kind": "prime",
+      "index": 13,
+      "startFrame": 528,
+      "endFrameExclusive": 576
+    },
+    {
+      "kind": "prime",
+      "index": 17,
+      "startFrame": 576,
+      "endFrameExclusive": 624
+    },
+    {
+      "kind": "prime",
+      "index": 19,
+      "startFrame": 624,
+      "endFrameExclusive": 672
+    },
+    {
+      "kind": "prime",
+      "index": 23,
+      "startFrame": 672,
+      "endFrameExclusive": 720
+    },
+    {
+      "kind": "prime",
+      "index": 29,
+      "startFrame": 720,
+      "endFrameExclusive": 768
+    },
+    {
+      "kind": "prime",
+      "index": 31,
+      "startFrame": 768,
+      "endFrameExclusive": 816
+    },
+    {
+      "kind": "prime",
+      "index": 37,
+      "startFrame": 816,
+      "endFrameExclusive": 864
+    },
+    {
+      "kind": "prime",
+      "index": 41,
+      "startFrame": 864,
+      "endFrameExclusive": 912
+    },
+    {
+      "kind": "prime",
+      "index": 43,
+      "startFrame": 912,
+      "endFrameExclusive": 960
+    },
+    {
+      "kind": "prime",
+      "index": 47,
+      "startFrame": 960,
+      "endFrameExclusive": 1008
+    },
+    {
+      "kind": "prime",
+      "index": 53,
+      "startFrame": 1008,
+      "endFrameExclusive": 1056
+    },
+    {
+      "kind": "prime",
+      "index": 59,
+      "startFrame": 1056,
+      "endFrameExclusive": 1104
+    },
+    {
+      "kind": "prime",
+      "index": 61,
+      "startFrame": 1104,
+      "endFrameExclusive": 1152
+    },
+    {
+      "kind": "prime",
+      "index": 67,
+      "startFrame": 1152,
+      "endFrameExclusive": 1200
+    },
+    {
+      "kind": "prime",
+      "index": 71,
+      "startFrame": 1200,
+      "endFrameExclusive": 1248
+    },
+    {
+      "kind": "prime",
+      "index": 73,
+      "startFrame": 1248,
+      "endFrameExclusive": 1296
+    },
+    {
+      "kind": "prime",
+      "index": 79,
+      "startFrame": 1296,
+      "endFrameExclusive": 1344
+    },
+    {
+      "kind": "prime",
+      "index": 83,
+      "startFrame": 1344,
+      "endFrameExclusive": 1392
+    },
+    {
+      "kind": "prime",
+      "index": 89,
+      "startFrame": 1392,
+      "endFrameExclusive": 1440
+    },
+    {
+      "kind": "prime",
+      "index": 97,
+      "startFrame": 1440,
+      "endFrameExclusive": 1488
+    },
+    {
+      "kind": "control",
+      "index": 1,
+      "startFrame": 1488,
+      "endFrameExclusive": 1536
+    },
+    {
+      "kind": "control",
+      "index": 4,
+      "startFrame": 1536,
+      "endFrameExclusive": 1584
+    },
+    {
+      "kind": "control",
+      "index": 6,
+      "startFrame": 1584,
+      "endFrameExclusive": 1632
+    },
+    {
+      "kind": "control",
+      "index": 8,
+      "startFrame": 1632,
+      "endFrameExclusive": 1680
+    },
+    {
+      "kind": "control",
+      "index": 9,
+      "startFrame": 1680,
+      "endFrameExclusive": 1728
+    },
+    {
+      "kind": "control",
+      "index": 10,
+      "startFrame": 1728,
+      "endFrameExclusive": 1776
+    },
+    {
+      "kind": "summary",
+      "index": null,
+      "startFrame": 1776,
+      "endFrameExclusive": 2016
+    }
+  ],
+  "frameComparisons": [
+    {
+      "frame": 0,
+      "kind": "intro",
+      "zeroIndex": null,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.4322620081018518,
+        "percentile99": 9.0,
+        "fractionOver40": 0.0010727719907407407
+      },
+      "independentTitle": null
+    },
+    {
+      "frame": 144,
+      "kind": "intro",
+      "zeroIndex": null,
+      "progress": 0.5017421602787456,
+      "fullFrame": {
+        "meanAbsolute": 1.4887619357638888,
+        "percentile99": 11.0,
+        "fractionOver40": 0.0009479890046296297
+      },
+      "independentTitle": null
+    },
+    {
+      "frame": 287,
+      "kind": "intro",
+      "zeroIndex": null,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.7318561921296296,
+        "percentile99": 16.0,
+        "fractionOver40": 0.0017078993055555556
+      },
+      "independentTitle": null
+    },
+    {
+      "frame": 288,
+      "kind": "prime",
+      "zeroIndex": 2,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3432002314814815,
+        "percentile99": 6.0,
+        "fractionOver40": 0.000660083912037037
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.4318769420527053,
+        "percentile99": 5.0,
+        "fractionOver40": 5.3369387319433575e-05
+      }
+    },
+    {
+      "frame": 312,
+      "kind": "prime",
+      "zeroIndex": 2,
+      "progress": 0.5106382978723404,
+      "fullFrame": {
+        "meanAbsolute": 1.3579322193287038,
+        "percentile99": 6.0,
+        "fractionOver40": 0.00047019675925925923
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.4233674897412179,
+        "percentile99": 5.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 335,
+      "kind": "prime",
+      "zeroIndex": 2,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.381277488425926,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0004445167824074074
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.4233674897412179,
+        "percentile99": 5.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 336,
+      "kind": "prime",
+      "zeroIndex": 3,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3540925202546297,
+        "percentile99": 6.0,
+        "fractionOver40": 0.000859375
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.4245771958537916,
+        "percentile99": 5.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 360,
+      "kind": "prime",
+      "zeroIndex": 3,
+      "progress": 0.5106382978723404,
+      "fullFrame": {
+        "meanAbsolute": 1.3739775028935186,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007761863425925926
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.4246661448326574,
+        "percentile99": 5.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 383,
+      "kind": "prime",
+      "zeroIndex": 3,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.396058304398148,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007722077546296296
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.4262019972010722,
+        "percentile99": 5.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 384,
+      "kind": "prime",
+      "zeroIndex": 5,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3461273871527777,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0008004195601851852
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.4237944448397732,
+        "percentile99": 5.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 431,
+      "kind": "prime",
+      "zeroIndex": 5,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.397498191550926,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007993344907407408
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.4229939040299817,
+        "percentile99": 5.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 432,
+      "kind": "prime",
+      "zeroIndex": 7,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.322353515625,
+        "percentile99": 6.0,
+        "fractionOver40": 0.00041015625
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.4206930904433217,
+        "percentile99": 5.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 479,
+      "kind": "prime",
+      "zeroIndex": 7,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3645457175925926,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0005222800925925926
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.4206930904433217,
+        "percentile99": 5.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 480,
+      "kind": "prime",
+      "zeroIndex": 11,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3347258391203705,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007425491898148148
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.422282312199056,
+        "percentile99": 5.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 527,
+      "kind": "prime",
+      "zeroIndex": 11,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.344739945023148,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007751012731481481
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3626627766313242,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 528,
+      "kind": "prime",
+      "zeroIndex": 13,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.325681785300926,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0004499421296296296
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3681123840698308,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 575,
+      "kind": "prime",
+      "zeroIndex": 13,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3530993200231483,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0004119646990740741
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3681123840698308,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 576,
+      "kind": "prime",
+      "zeroIndex": 17,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.328334056712963,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0008951822916666666
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3690848929054293,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 623,
+      "kind": "prime",
+      "zeroIndex": 17,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3519947193287036,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007602719907407407
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3690848929054293,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 624,
+      "kind": "prime",
+      "zeroIndex": 19,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.38009765625,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007269965277777778
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3685452691003108,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 671,
+      "kind": "prime",
+      "zeroIndex": 19,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3793793402777779,
+        "percentile99": 6.0,
+        "fractionOver40": 0.00032696759259259257
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3685452691003108,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 672,
+      "kind": "prime",
+      "zeroIndex": 23,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3406416377314814,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0010615596064814815
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3739177874238004,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 719,
+      "kind": "prime",
+      "zeroIndex": 23,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3526801215277777,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0008051215277777778
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3732951445717403,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 720,
+      "kind": "prime",
+      "zeroIndex": 29,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3171647135416666,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007371238425925926
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3743447425223558,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 767,
+      "kind": "prime",
+      "zeroIndex": 29,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3277557146990742,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007505063657407407
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3699565928983135,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 768,
+      "kind": "prime",
+      "zeroIndex": 31,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3362239583333333,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0003345630787037037
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3672169643492493,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 815,
+      "kind": "prime",
+      "zeroIndex": 31,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.35470703125,
+        "percentile99": 6.0,
+        "fractionOver40": 0.00037507233796296296
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3685215493726133,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 816,
+      "kind": "prime",
+      "zeroIndex": 37,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3219328703703703,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0009519675925925926
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3687528167176641,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 863,
+      "kind": "prime",
+      "zeroIndex": 37,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.335613064236111,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0008083767361111111
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3687528167176641,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 864,
+      "kind": "prime",
+      "zeroIndex": 41,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3553432436342592,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0011877893518518518
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3683733010745036,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 911,
+      "kind": "prime",
+      "zeroIndex": 41,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3779470486111112,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0008608217592592593
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3683733010745036,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 912,
+      "kind": "prime",
+      "zeroIndex": 43,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3687706163194444,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007559317129629629
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.373556061576413,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 959,
+      "kind": "prime",
+      "zeroIndex": 43,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.360625,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0003537326388888889
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.373556061576413,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 960,
+      "kind": "prime",
+      "zeroIndex": 47,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.384404296875,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0004738136574074074
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3731113166820845,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1007,
+      "kind": "prime",
+      "zeroIndex": 47,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.373472583912037,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0003172019675925926
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3680234350909652,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1008,
+      "kind": "prime",
+      "zeroIndex": 53,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3523426649305557,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0003128616898148148
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3739059275599517,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1055,
+      "kind": "prime",
+      "zeroIndex": 53,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3720131655092593,
+        "percentile99": 6.0,
+        "fractionOver40": 0.00033998842592592593
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3728919092008824,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1056,
+      "kind": "prime",
+      "zeroIndex": 59,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3266196469907408,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0009291811342592593
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3735975710998838,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1103,
+      "kind": "prime",
+      "zeroIndex": 59,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3314793113425927,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0008011429398148149
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3735975710998838,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1104,
+      "kind": "prime",
+      "zeroIndex": 61,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3624580439814815,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0005313223379629629
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3674838112858465,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1151,
+      "kind": "prime",
+      "zeroIndex": 61,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3719017650462964,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0005555555555555556
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3693339500462536,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1152,
+      "kind": "prime",
+      "zeroIndex": 67,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.324572482638889,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0009436487268518519
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3720972983230153,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1199,
+      "kind": "prime",
+      "zeroIndex": 67,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3357877604166666,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007490596064814815
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3720972983230153,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1200,
+      "kind": "prime",
+      "zeroIndex": 71,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.4185886863425925,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007975260416666667
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.361352261676036,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1247,
+      "kind": "prime",
+      "zeroIndex": 71,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.4138114872685186,
+        "percentile99": 6.0,
+        "fractionOver40": 0.00036530671296296295
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.361352261676036,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1248,
+      "kind": "prime",
+      "zeroIndex": 73,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3242173032407407,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0011552372685185185
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.370727484048483,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1295,
+      "kind": "prime",
+      "zeroIndex": 73,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3169712094907406,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007776331018518518
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3648865011029674,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1296,
+      "kind": "prime",
+      "zeroIndex": 79,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3211320891203704,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0009588396990740741
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3699743826940867,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1343,
+      "kind": "prime",
+      "zeroIndex": 79,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3460398582175925,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0008203125
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3699743826940867,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1344,
+      "kind": "prime",
+      "zeroIndex": 83,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.298682002314815,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007689525462962963
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3721625275741836,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1391,
+      "kind": "prime",
+      "zeroIndex": 83,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.331418185763889,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0008040364583333334
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.371984629616452,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1392,
+      "kind": "prime",
+      "zeroIndex": 89,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.2926667390046296,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007754629629629629
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.37344339286985,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1439,
+      "kind": "prime",
+      "zeroIndex": 89,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3101472077546297,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007530381944444444
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.37344339286985,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1440,
+      "kind": "prime",
+      "zeroIndex": 97,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3743706597222223,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007280815972222222
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3723641452596125,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1464,
+      "kind": "prime",
+      "zeroIndex": 97,
+      "progress": 0.5106382978723404,
+      "fullFrame": {
+        "meanAbsolute": 1.3692650462962963,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0005002170138888889
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3716703432244597,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1487,
+      "kind": "prime",
+      "zeroIndex": 97,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.36974609375,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0003298611111111111
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3716169738371404,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1488,
+      "kind": "control",
+      "zeroIndex": 1,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3441022858796297,
+        "percentile99": 6.0,
+        "fractionOver40": 0.000912181712962963
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.4080326857847671,
+        "percentile99": 5.0,
+        "fractionOver40": 6.522925116819659e-05
+      }
+    },
+    {
+      "frame": 1535,
+      "kind": "control",
+      "zeroIndex": 1,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.4123068576388889,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0008380353009259259
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.369588937119002,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1536,
+      "kind": "control",
+      "zeroIndex": 4,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3339438657407408,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0005204716435185185
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.375281671766408,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1583,
+      "kind": "control",
+      "zeroIndex": 4,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3606108940972221,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0004220920138888889
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.375281671766408,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1584,
+      "kind": "control",
+      "zeroIndex": 6,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3115972222222223,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0003533709490740741
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3737932588533883,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1631,
+      "kind": "control",
+      "zeroIndex": 6,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3405754484953705,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0004152199074074074
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3737932588533883,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1632,
+      "kind": "control",
+      "zeroIndex": 8,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3266995804398147,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0008391203703703704
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3749851751701891,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1656,
+      "kind": "control",
+      "zeroIndex": 8,
+      "progress": 0.5106382978723404,
+      "fullFrame": {
+        "meanAbsolute": 1.3472717737268518,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007978877314814815
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3749851751701891,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1679,
+      "kind": "control",
+      "zeroIndex": 8,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3658134403935185,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0008062065972222223
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3749851751701891,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1680,
+      "kind": "control",
+      "zeroIndex": 9,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3722312644675927,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0005942563657407408
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3758924547546194,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1727,
+      "kind": "control",
+      "zeroIndex": 9,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.375847439236111,
+        "percentile99": 6.0,
+        "fractionOver40": 0.000341796875
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.375590028226476,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1728,
+      "kind": "control",
+      "zeroIndex": 10,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.341800491898148,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0009993489583333334
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.4276844801821675,
+        "percentile99": 5.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1775,
+      "kind": "control",
+      "zeroIndex": 10,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.3768518518518518,
+        "percentile99": 6.0,
+        "fractionOver40": 0.0007996961805555556
+      },
+      "independentTitle": {
+        "meanAbsolute": 1.3727555207666216,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0
+      }
+    },
+    {
+      "frame": 1776,
+      "kind": "summary",
+      "zeroIndex": null,
+      "progress": 0.0,
+      "fullFrame": {
+        "meanAbsolute": 1.2424059606481481,
+        "percentile99": 4.0,
+        "fractionOver40": 0.0001294849537037037
+      },
+      "independentTitle": null
+    },
+    {
+      "frame": 2015,
+      "kind": "summary",
+      "zeroIndex": null,
+      "progress": 1.0,
+      "fullFrame": {
+        "meanAbsolute": 1.2391127748842592,
+        "percentile99": 4.0,
+        "fractionOver40": 9.006076388888889e-05
+      },
+      "independentTitle": null
+    }
+  ],
+  "decodedFrames": [
+    {
+      "frame": 0,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\media-decoded\\frame-0000.png",
+      "sha256": "c29da30df182e94ff2575837d6813008f195c13d905eb0ba44261f8347c5e263"
+    },
+    {
+      "frame": 287,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\media-decoded\\frame-0287.png",
+      "sha256": "882176dbca93b4e554d1e482ec5377d33904e7c91214472dc31a682775bea846"
+    },
+    {
+      "frame": 288,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\media-decoded\\frame-0288.png",
+      "sha256": "88f511426c07e85b999e5cacbebffc4035f503d4acaeff5af62e50fb7c92d7e6"
+    },
+    {
+      "frame": 335,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\media-decoded\\frame-0335.png",
+      "sha256": "2a8936a537dfd4522222b64246f04a3485b3cdc1d16f4fc17fd69b08105c64e1"
+    },
+    {
+      "frame": 1440,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\media-decoded\\frame-1440.png",
+      "sha256": "65e8ed6bc8a0bde927b13d892ff5325491f7e36a88571390584b3618b22f6f6a"
+    },
+    {
+      "frame": 1487,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\media-decoded\\frame-1487.png",
+      "sha256": "788013484b6521c222669019bbdc94a2566d096ba49583aafec18707e81c2ec6"
+    },
+    {
+      "frame": 1632,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\media-decoded\\frame-1632.png",
+      "sha256": "dac36a4e9a3229679ae31bbf5408c68a45c5c7a2e23cbc2f8ae908996aa473cf"
+    },
+    {
+      "frame": 1679,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\media-decoded\\frame-1679.png",
+      "sha256": "c2c2fc85bce97b7323e691584e1a795a3e4ab0d02b37ab7d1b6c40fba646ae58"
+    },
+    {
+      "frame": 1776,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\media-decoded\\frame-1776.png",
+      "sha256": "1de97579d2cc2e5eafd9a56a28c17bbd3685d770ebd4791a52d6cd16e029d3af"
+    },
+    {
+      "frame": 2015,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\media-decoded\\frame-2015.png",
+      "sha256": "b4a98f6bc47112a492ad02d6f4573dc3fc825c9a8a2bf01eab23d51af0fa5055"
+    }
+  ],
+  "streamDescriptions": [
+    "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 162 kb/s, 24 fps, 24 tbr, 12288 tbn (default)"
+  ],
+  "inputs": [
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\verify_video.py",
+      "sha256": "03eaf21aad5928965741a67a4570d76ad014a3a88fb35c96be25c56a24a8b761"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\zeta-zero-index\\animation.json",
+      "sha256": "63bf59f44d3d0d28703196ea78f4b44532e8830bf7820dc9e4af574a820cd41f"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\zeta-zero-index\\zero-index-slope-tour.mp4",
+      "sha256": "2958432a4c6e9ea88c7326e8f27465a227e9e14334d91170e7315d07ef8d7e4c"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\animate.py",
+      "sha256": "df4c9cc22febe0ac7d1078008b2540759961543ef9e6b0a794e81c90edf5bbda"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\evidence\\zero-index.json",
+      "sha256": "c8710419108605bb58a8e4c25ae2a3f0376793e354eb3a2e064e24ad083200d2"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\evidence\\paths.json",
+      "sha256": "53f6dc4a477bc5cd7796ac0b4e06b3bde74f9717073d7ee0c180e8ecc2afe534"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-continuation\\evidence\\native\\a1.values.json",
+      "sha256": "ae43b73200f6a7174bea749d09da701b135fc942f2adc76b1e255370a0c58234"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\grids.json",
+      "sha256": "67f1f96bae93617b39284ed71ac795a2bc31b9b04acd812e8093355d52e4af72"
+    }
+  ],
+  "limits": [
+    "Pixel comparisons verify the encoded video against the current checked renderer and independent ordinal titles.",
+    "This is technical media QA, not a new validation of the zeta continuation mathematics.",
+    "No UI or browser actions were performed; visual editorial review is separate."
+  ]
+}

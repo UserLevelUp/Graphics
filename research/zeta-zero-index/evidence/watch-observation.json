@@ -1,0 +1,26 @@
+{
+  "status": "stopped-owned-watcher",
+  "recordedBeforeStop": {
+    "id": "graph-zero-index-animation",
+    "path": ".recur/watch\\recur-watch.graph-zero-index-animation.status.current.md",
+    "state": "active",
+    "ack": "accepted",
+    "nak_reason": null,
+    "filter": "graph.riemann.zero_index.**",
+    "dir": "C:/src/graph/research/zeta-zero-index",
+    "mode": "poll",
+    "poll_framing": "3",
+    "format": "json",
+    "pid": "8748",
+    "started_at": "unix:1794780810",
+    "last_event_at": "unix:1794781824",
+    "events_seen": "4",
+    "filtered_out": "0"
+  },
+  "note": "Filesystem subscription observations are not test results or worker execution. The private status file can retain active after process termination.",
+  "processAbsentAfterStop": true,
+  "processId": 8748,
+  "traceId": "graph.riemann.zero_index.watch_observation",
+  "commandLine": "\"C:\\Users\\marcn\\.cargo\\bin\\recur-watch.exe\" --id graph-zero-index-animation --filter graph.riemann.zero_index.** -d C:/src/graph/research/zeta-zero-index --format json --poll-framing 3",
+  "executable": "C:\\Users\\marcn\\.cargo\\bin\\recur-watch.exe"
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "graph-explorer-validation-v1",
+  "traceId": "graph.primes.divisor_phases.explorer_validation",
+  "status": "incomplete",
+  "reason": "The user stopped Computer Use with the physical Escape key; UI work stopped immediately.",
+  "observedStates": [
+    "In-app browser unavailable",
+    "Browser provider inventory empty",
+    "Native Edge accessibility state unavailable",
+    "Screenshot attempt stopped by user"
+  ],
+  "pageOpened": false,
+  "browserBehaviorVerified": false,
+  "requestedChecksRemaining": [
+    "Default45degree state",
+    "Offset0 loses7primes",
+    "Half-mode odd-composite controls",
+    "Candidate99",
+    "Responsive layout"
+  ],
+  "server": {
+    "address": "127.0.0.1",
+    "port": 8871,
+    "documentRoot": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/prime-divisor-phases",
+    "pid": 29300,
+    "stopped": true
+  },
+  "inputs": [
+    {
+      "path": "C:/src/graph/research/prime-divisor-phases/explorer.template.html",
+      "sha256": "d1917757090c59bf6264e50ed75bad4eba2a66063d8276c0e80870f345334034"
+    },
+    {
+      "path": "C:/src/graph/research/prime-divisor-phases/build_explorer.py",
+      "sha256": "fdbffded7d9658ac642133fa52d97695bbaf0a1ec16f45295fb1366251d6d39e"
+    },
+    {
+      "path": "C:/src/graph/research/prime-divisor-phases/README.md",
+      "sha256": "8d978ef2a9c0fcbab3162d02db1d66fe70109d3e12a4a4b65e9def6af09a58e5"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/prime-divisor-phases/explorer.html",
+      "sha256": "cea65fdcce55c8aa45afbdb3524fe581489ca818664294528275f3af5b29b7df"
+    },
+    {
+      "path": "C:/src/graph/research/prime-divisor-phases/evidence/analysis.json",
+      "sha256": "892180e047366932b20d98986197b4b3a8e1e41b51aa2f9cc6cbe364997111b4"
+    }
+  ],
+  "limitations": [
+    "Prior review covers mathematical data, static source and scientific figures; it is not browser-interaction evidence.",
+    "No claim is made about browser load, control behavior or responsive rendering."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "bubble_uuid": "01a1e139-ae46-7d3a-837a-479ea3b569c2",
+  "goal": "Analyze divisor-phase quadrants and half-step prime-to-prime relationships on0..100 with odd-composite controls",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "Use raw residue phases, never Wilson or supplied prime labels to produce colors.",
+    "Keep exact divisibility separate from quadrant aliases and palette choices.",
+    "Compare half-step prime pairs against odd-composite controls; no novelty, speedup or RH result is inferred from a finite pattern."
+  ],
+  "required_slices": [
+    {
+      "contract_hash": "contract:graph.primes.divisor_phases.analysis:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "analysis",
+      "slice_uuid": "01a1e139-ae46-7438-898f-d7d264fa2304"
+    },
+    {
+      "contract_hash": "contract:graph.primes.divisor_phases.visualization:v1",
+      "depends_on": [
+        "analysis"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "visualization",
+      "slice_uuid": "01a1e139-ae46-776b-ac4e-ba87f46f1c57"
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.primes.divisor_phases"
+}

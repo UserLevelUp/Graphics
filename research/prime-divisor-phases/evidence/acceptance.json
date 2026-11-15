@@ -1,0 +1,35 @@
+{
+  "traceId": "graph.primes.divisor_phases.acceptance",
+  "status": "accepted",
+  "scope": "Finite arithmetic analysis, proof, scientific figures and statically checked offline explorer.",
+  "excluded": [
+    "Browser interaction/responsive layout verification was stopped by the user."
+  ],
+  "evidence": [
+    {
+      "path": "evidence/analysis.json",
+      "sha256": "892180e047366932b20d98986197b4b3a8e1e41b51aa2f9cc6cbe364997111b4"
+    },
+    {
+      "path": "evidence/validation.json",
+      "sha256": "0d7dc66f462632bf69cde61dfb1b61dab8ee4e4cae53e924ea41cc52ded43266"
+    },
+    {
+      "path": "evidence/review.json",
+      "sha256": "cbe1adc24e478ea54676a37f7d327546c82cdbe46164b68fd7d19ea9f3624dbc"
+    },
+    {
+      "path": "evidence/visualization.json",
+      "sha256": "c20f1cc24ef67fcc036e7ec0b0caaaee026185f75f047f15202e773ea936a2fd"
+    },
+    {
+      "path": "evidence/explorer-validation.json",
+      "sha256": "93e6c9b6f058e8c58f1690160da12d9e594c90a35110ebc01e2be61af456b8f3"
+    }
+  ],
+  "result": "Combined ordinary/half phase quadrants reduce color aliases but add no prime-specific arithmetic invariant.",
+  "limits": [
+    "Known finite divisibility sieve and phase quantization; no novelty, speedup or RH claim.",
+    "Negative-slope follow-up belongs to a separate zero-index continuation experiment."
+  ]
+}

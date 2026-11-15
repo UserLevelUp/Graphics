@@ -1,0 +1,100 @@
+{
+  "blocked": [],
+  "bubble_uuid": "01a1e145-cbb3-79a6-a4ac-b6325c7c4732",
+  "completed_slices": [
+    "animation",
+    "math"
+  ],
+  "conflicts": [],
+  "contract_status": "declared-gates-satisfied",
+  "counts": {
+    "blocked": 0,
+    "conflicting": 0,
+    "covered": 2,
+    "pending": 0,
+    "required": 2,
+    "stale_contract": 0
+  },
+  "covered": [
+    "animation",
+    "math"
+  ],
+  "current_slice": null,
+  "evidence_status": "declared",
+  "gate_evidence": [
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/independent-math-grid-review.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "math",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/acceptance.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "animation",
+      "status": "declared"
+    }
+  ],
+  "goal": "Animate known zeta-zero paths for every prime index below100 and test the negative-slope claim against nonprime indices",
+  "layers": [
+    "animation@zero-index-animation-reviewed-20261115",
+    "math@zero-index-math-reviewed-20261115"
+  ],
+  "manifest": "graph.riemann.zero_index.warp-map.json",
+  "pending": [],
+  "ready_slices": [],
+  "root": "\\\\?\\C:\\src\\graph\\research\\zeta-zero-index\\warps",
+  "schema": "warp-progress-v1",
+  "slices": [
+    {
+      "contract_hash": "contract:graph.riemann.zero_index.math:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "math",
+      "slice_uuid": "01a1e145-cbb3-7f7c-b2f2-6a3a8eaa351b",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.zero_index.animation:v1",
+      "depends_on": [
+        "math"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "animation",
+      "slice_uuid": "01a1e145-cbb3-7e8e-a4da-45b87a695e55",
+      "state": "complete"
+    }
+  ],
+  "stale_contract": [],
+  "state": "complete",
+  "warnings": [],
+  "warp_id": "graph.riemann.zero_index"
+}

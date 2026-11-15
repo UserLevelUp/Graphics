@@ -1,0 +1,3046 @@
+{
+  "schema": "graph-zeta-zero-index-independent-review-v1",
+  "traceId": "graph.riemann.zero_index.independent_math_grid_review",
+  "status": "passed",
+  "reviewedAtUtc": "2026-11-15T22:24:01.216053+00:00",
+  "runtime": {
+    "python": "3.11.5 (main, Jan 23 2026, 07:39:48) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Program Files\\KiCad\\10.0\\bin\\python.exe",
+    "mpmath": "1.3.0",
+    "mathDigits": 75,
+    "nativeReferenceDigits": 50
+  },
+  "coverage": {
+    "initialZeroIndices": 100,
+    "independentDerivativeChecks": 100,
+    "hardyPhaseChecks": 100,
+    "paths": 31,
+    "pathPoints": 651,
+    "independentHalfStepSolves": 31,
+    "nativeGrids": 32,
+    "finiteBinaryNodes": 3104000,
+    "highPrecisionAuditPoints": 160,
+    "highPrecisionInteriorBinaryNodes": 64
+  },
+  "startingSlopes": {
+    "summary": {
+      "neither": {
+        "count": 1,
+        "negativeIndices": [
+          1
+        ],
+        "positiveIndices": [],
+        "verticalIndices": []
+      },
+      "prime": {
+        "count": 25,
+        "negativeIndices": [
+          3,
+          5,
+          11,
+          17,
+          23,
+          29,
+          37,
+          41,
+          59,
+          67,
+          73,
+          79,
+          83,
+          89
+        ],
+        "positiveIndices": [
+          2,
+          7,
+          13,
+          19,
+          31,
+          43,
+          47,
+          53,
+          61,
+          71,
+          97
+        ],
+        "verticalIndices": []
+      },
+      "composite": {
+        "count": 74,
+        "negativeIndices": [
+          8,
+          10,
+          14,
+          16,
+          18,
+          20,
+          21,
+          25,
+          28,
+          32,
+          33,
+          35,
+          36,
+          40,
+          44,
+          46,
+          49,
+          50,
+          52,
+          54,
+          55,
+          58,
+          60,
+          64,
+          68,
+          69,
+          72,
+          74,
+          76,
+          78,
+          88,
+          92,
+          94,
+          98,
+          99
+        ],
+        "positiveIndices": [
+          4,
+          6,
+          9,
+          12,
+          15,
+          22,
+          24,
+          26,
+          27,
+          30,
+          34,
+          38,
+          39,
+          42,
+          45,
+          48,
+          51,
+          56,
+          57,
+          62,
+          63,
+          65,
+          66,
+          70,
+          75,
+          77,
+          80,
+          81,
+          82,
+          84,
+          85,
+          86,
+          87,
+          90,
+          91,
+          93,
+          95,
+          96,
+          100
+        ],
+        "verticalIndices": []
+      }
+    },
+    "historicalFirstThree": [
+      {
+        "zeroIndex": 1,
+        "slope": "-0.15919875533588435035323055641138099",
+        "difference": "4.4286272350524312038981212352440449e-74"
+      },
+      {
+        "zeroIndex": 2,
+        "slope": "0.22422318875961803916625140346389922",
+        "difference": "3.2648171605679038461810564582130631e-73"
+      },
+      {
+        "zeroIndex": 3,
+        "slope": "-0.34730532168674753362306413996328297",
+        "difference": "1.1770061400367116691046551226773409e-72"
+      }
+    ],
+    "maxZeroCoordinateDifference": "4.9576451988516579403652210830178531e-46",
+    "maxDerivativeDifference": "6.7920521014784769550268990029728095e-48",
+    "maxVelocityDifference": "3.3466434568080683017229943705791451e-48",
+    "maxSlopeDifference": "4.5608201299270502143391358833040935e-45",
+    "maxHardyPhaseSlopeDifference": "1.1956846937628707835713138565909682e-41",
+    "maxReevaluatedSavedSeedResidual": "1.9653905285547596071488065642548718e-45"
+  },
+  "continuation": {
+    "maxReevaluatedSavedPointResidual": "2.0855067376393936711582013500040175e-45",
+    "maxDerivativeDifference": "7.7724876306323368734705700402505e-45",
+    "maxVelocityDifference": "1.9637597669221036350629338286351318e-45",
+    "maxSlopeDifference": "4.2969849965553801295739358302196267e-41",
+    "maxStepDistance": "0.0070146801510262138755013914706811284",
+    "maxPredictorCorrection": "0.000048685430834597051242346998071791339",
+    "maxFullStartingSecantError": "0.0049877669392197245110828888455385595",
+    "maxHalfStartingSecantError": "0.0024823255441185867705933536341200602",
+    "outsideLocalViewport": [],
+    "stepComparisons": [
+      {
+        "zeroIndex": 1,
+        "fullSecantError": "0.0032977550783344240901403452958670911",
+        "halfSecantError": "0.0016460752600517750936833309653266393"
+      },
+      {
+        "zeroIndex": 2,
+        "fullSecantError": "0.0023531599189611884392091698518353259",
+        "halfSecantError": "0.0011745026067129308424430063524715635"
+      },
+      {
+        "zeroIndex": 3,
+        "fullSecantError": "0.0018737791181707044879736052969189757",
+        "halfSecantError": "0.00093528884449913647922633746815516172"
+      },
+      {
+        "zeroIndex": 4,
+        "fullSecantError": "0.0024239146816124766625088101704458892",
+        "halfSecantError": "0.0012094327709705705961339631615724273"
+      },
+      {
+        "zeroIndex": 5,
+        "fullSecantError": "0.0022872821065147614696963955380503425",
+        "halfSecantError": "0.0011412610904999165907108972336812646"
+      },
+      {
+        "zeroIndex": 6,
+        "fullSecantError": "0.0012036093371469982110904840218645011",
+        "halfSecantError": "0.00060086827965112717436920448353759895"
+      },
+      {
+        "zeroIndex": 7,
+        "fullSecantError": "0.0021327368465425314167150915499833068",
+        "halfSecantError": "0.0010641686935497557323335339079025239"
+      },
+      {
+        "zeroIndex": 8,
+        "fullSecantError": "0.0015071596481127804942014600052503168",
+        "halfSecantError": "0.00075222251616516044660087722021008236"
+      },
+      {
+        "zeroIndex": 9,
+        "fullSecantError": "0.0022711284835500101025482825491990051",
+        "halfSecantError": "0.0011329335733787655396729391022922994"
+      },
+      {
+        "zeroIndex": 10,
+        "fullSecantError": "0.00270711989371514097048971383425195",
+        "halfSecantError": "0.001350163668989464710990668565978731"
+      },
+      {
+        "zeroIndex": 11,
+        "fullSecantError": "0.00091170416954410758687653783303929753",
+        "halfSecantError": "0.00045517746702393895788882206605918315"
+      },
+      {
+        "zeroIndex": 13,
+        "fullSecantError": "0.0030683001730055009220707587450543853",
+        "halfSecantError": "0.0015298943066480393809662515208043232"
+      },
+      {
+        "zeroIndex": 17,
+        "fullSecantError": "0.0012659163077444759824748853954356481",
+        "halfSecantError": "0.00063181415754056342365458044238854734"
+      },
+      {
+        "zeroIndex": 19,
+        "fullSecantError": "0.0021962660478503145097013986157102002",
+        "halfSecantError": "0.0010954246234079728487976779551850131"
+      },
+      {
+        "zeroIndex": 23,
+        "fullSecantError": "0.0014061769263557471762535787982443768",
+        "halfSecantError": "0.00070169258477356163071026393498239"
+      },
+      {
+        "zeroIndex": 29,
+        "fullSecantError": "0.00055885341162557519405060688861989898",
+        "halfSecantError": "0.00027905414647029931784282295461507784"
+      },
+      {
+        "zeroIndex": 31,
+        "fullSecantError": "0.0015299796858410178268563441020980179",
+        "halfSecantError": "0.00076335187705276238772175018901694052"
+      },
+      {
+        "zeroIndex": 37,
+        "fullSecantError": "0.00076293986385618582813543646763130986",
+        "halfSecantError": "0.00038088007808012549393341842963874802"
+      },
+      {
+        "zeroIndex": 41,
+        "fullSecantError": "0.0015665721111490550855136197186998344",
+        "halfSecantError": "0.00078167013284730539312321124670642818"
+      },
+      {
+        "zeroIndex": 43,
+        "fullSecantError": "0.0014113782670366771474451429035472362",
+        "halfSecantError": "0.00070420618088236606221701860303905809"
+      },
+      {
+        "zeroIndex": 47,
+        "fullSecantError": "0.00082604361770071142792347142511850765",
+        "halfSecantError": "0.00041240191391373936374447286561638006"
+      },
+      {
+        "zeroIndex": 53,
+        "fullSecantError": "0.0035521234421357082230165051189658082",
+        "halfSecantError": "0.0017690224276472598892005677113866622"
+      },
+      {
+        "zeroIndex": 59,
+        "fullSecantError": "0.00063116655868452354725643139134851938",
+        "halfSecantError": "0.00031510856522821921622452129319457814"
+      },
+      {
+        "zeroIndex": 61,
+        "fullSecantError": "0.00073074578034799032842500311136488985",
+        "halfSecantError": "0.00036480549842633110078935317281711728"
+      },
+      {
+        "zeroIndex": 67,
+        "fullSecantError": "0.0011879297972871459835731076883839121",
+        "halfSecantError": "0.00059273086681994455588119534370264903"
+      },
+      {
+        "zeroIndex": 71,
+        "fullSecantError": "0.0049877669392197245110828888455385595",
+        "halfSecantError": "0.0024823255441185867705933536341200602"
+      },
+      {
+        "zeroIndex": 73,
+        "fullSecantError": "0.0011012762178768015866517700342175451",
+        "halfSecantError": "0.00054962452275955720683645342038385806"
+      },
+      {
+        "zeroIndex": 79,
+        "fullSecantError": "0.00097520068317412017040869983107123262",
+        "halfSecantError": "0.00048678037295774484409596570194250287"
+      },
+      {
+        "zeroIndex": 83,
+        "fullSecantError": "0.0012057614704146321635808689787143312",
+        "halfSecantError": "0.00060168037400552141036170369791267016"
+      },
+      {
+        "zeroIndex": 89,
+        "fullSecantError": "0.00047558793622436417668976819868971335",
+        "halfSecantError": "0.0002375070270924292942874042725435124"
+      },
+      {
+        "zeroIndex": 97,
+        "fullSecantError": "0.0048677696544591842930376293618714886",
+        "halfSecantError": "0.0024218338081437944299764188703204761"
+      }
+    ]
+  },
+  "native": {
+    "absoluteErrorLimit": "1e-10",
+    "scaledErrorLimit": "1e-10",
+    "max192TermAbsoluteError": "3.1346161660629147257265295601017563e-13",
+    "max192TermScaledError": "3.1346161660629147257265295601017563e-13",
+    "max256TermAbsoluteError": "2.9318534593567342056361311544072548e-13",
+    "max192vs256Difference": "1.1442538257839612639010863897414757e-13",
+    "max192vs256ScaledDifference": "1.1116523695446661797733213633559858e-13",
+    "maxBinaryInteriorAbsoluteError": "9.6834079351651033529700232296855474e-14",
+    "phaseSensitivityThreshold": "1e-10",
+    "auditPointsNearAnAxis": [
+      {
+        "grid": "Z1",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z2",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z3",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z4",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z5",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z6",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z7",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z8",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z9",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z10",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z11",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z13",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z17",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z19",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z23",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z29",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z31",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z37",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z41",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z43",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z47",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z53",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z59",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z61",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z67",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z71",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z73",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z79",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z83",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z89",
+        "label": "input-zero-height-on-critical-line"
+      },
+      {
+        "grid": "Z97",
+        "label": "input-zero-height-on-critical-line"
+      }
+    ],
+    "observedQuadrantDisagreements": [
+      {
+        "grid": "Z1",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 3,
+        "referenceQuadrant": 2
+      },
+      {
+        "grid": "Z2",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 2,
+        "referenceQuadrant": 1
+      },
+      {
+        "grid": "Z3",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 3,
+        "referenceQuadrant": 2
+      },
+      {
+        "grid": "Z5",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 3,
+        "referenceQuadrant": 2
+      },
+      {
+        "grid": "Z6",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 2,
+        "referenceQuadrant": 1
+      },
+      {
+        "grid": "Z7",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 3,
+        "referenceQuadrant": 1
+      },
+      {
+        "grid": "Z8",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 1,
+        "referenceQuadrant": 2
+      },
+      {
+        "grid": "Z9",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 2,
+        "referenceQuadrant": 1
+      },
+      {
+        "grid": "Z10",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 2,
+        "referenceQuadrant": 4
+      },
+      {
+        "grid": "Z13",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 2,
+        "referenceQuadrant": 3
+      },
+      {
+        "grid": "Z17",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 1,
+        "referenceQuadrant": 2
+      },
+      {
+        "grid": "Z23",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 3,
+        "referenceQuadrant": 2
+      },
+      {
+        "grid": "Z29",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 3,
+        "referenceQuadrant": 4
+      },
+      {
+        "grid": "Z31",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 3,
+        "referenceQuadrant": 1
+      },
+      {
+        "grid": "Z37",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 2,
+        "referenceQuadrant": 4
+      },
+      {
+        "grid": "Z47",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 2,
+        "referenceQuadrant": 3
+      },
+      {
+        "grid": "Z67",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 1,
+        "referenceQuadrant": 2
+      },
+      {
+        "grid": "Z71",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 4,
+        "referenceQuadrant": 3
+      },
+      {
+        "grid": "Z79",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 3,
+        "referenceQuadrant": 2
+      },
+      {
+        "grid": "Z83",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 1,
+        "referenceQuadrant": 4
+      },
+      {
+        "grid": "Z89",
+        "label": "input-zero-height-on-critical-line",
+        "nativeQuadrant": 3,
+        "referenceQuadrant": 2
+      }
+    ],
+    "auditSamples": [
+      {
+        "grid": "intro",
+        "label": "lower-left",
+        "sigma": 0.05,
+        "t": 10,
+        "nativeAbsoluteError": "6.1003891011743034727035510960156128e-14",
+        "nativeScaledError": "3.5152444481073105804165786873420245e-14",
+        "refinedAbsoluteError": "3.2550239453018424202365482305646773e-14"
+      },
+      {
+        "grid": "intro",
+        "label": "lower-right",
+        "sigma": 3,
+        "t": 10,
+        "nativeAbsoluteError": "6.7885367725337536806979131504529913e-17",
+        "nativeScaledError": "6.1676739107955536410198279650211498e-17",
+        "refinedAbsoluteError": "2.8987893537045742924328556950552575e-16"
+      },
+      {
+        "grid": "intro",
+        "label": "upper-left",
+        "sigma": 0.05,
+        "t": 30,
+        "nativeAbsoluteError": "1.7912734653605235011272971437402429e-13",
+        "nativeScaledError": "1.4172115433474184817460928095883172e-13",
+        "refinedAbsoluteError": "1.3169551999018417789289087996923844e-13"
+      },
+      {
+        "grid": "intro",
+        "label": "upper-right",
+        "sigma": 3,
+        "t": 30,
+        "nativeAbsoluteError": "1.0673013489060309561052600579041699e-16",
+        "nativeScaledError": "1.0673013489060309561052600579041699e-16",
+        "refinedAbsoluteError": "1.2724161709642925034981087829208272e-16"
+      },
+      {
+        "grid": "intro",
+        "label": "critical-line-mid-height",
+        "sigma": 0.5,
+        "t": 20,
+        "nativeAbsoluteError": "4.5437376785601802727099171122062634e-15",
+        "nativeScaledError": "3.9585030404217859534134351687338352e-15",
+        "refinedAbsoluteError": "5.4707266511580063814666515070919353e-15"
+      },
+      {
+        "grid": "Z1",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 13.784725141734695,
+        "nativeAbsoluteError": "1.4717319359951962331388100958206663e-14",
+        "nativeScaledError": "1.4717319359951962331388100958206663e-14",
+        "refinedAbsoluteError": "1.0083968106455115055939584869818051e-14"
+      },
+      {
+        "grid": "Z1",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 13.784725141734695,
+        "nativeAbsoluteError": "1.2659787002137256725317918302275211e-15",
+        "nativeScaledError": "1.2659787002137256725317918302275211e-15",
+        "refinedAbsoluteError": "1.0992092590075620437686732262329143e-15"
+      },
+      {
+        "grid": "Z1",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 14.484725141734694,
+        "nativeAbsoluteError": "9.2103828123322756906403506631692827e-15",
+        "nativeScaledError": "9.2103828123322756906403506631692827e-15",
+        "refinedAbsoluteError": "7.698427397696557097967729169133627e-15"
+      },
+      {
+        "grid": "Z1",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 14.484725141734694,
+        "nativeAbsoluteError": "1.4536661402843462217687539096339978e-15",
+        "nativeScaledError": "1.4536661402843462217687539096339978e-15",
+        "refinedAbsoluteError": "1.406118724622371181126272742720003e-15"
+      },
+      {
+        "grid": "Z1",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 14.134725141734695,
+        "nativeAbsoluteError": "4.7502524285544445574425493727204999e-15",
+        "nativeScaledError": "4.7502524285544445574425493727204999e-15",
+        "refinedAbsoluteError": "7.6914655870866133975236940752286718e-15"
+      },
+      {
+        "grid": "Z2",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 20.672039638771555,
+        "nativeAbsoluteError": "1.7228494054074980970742560471754981e-14",
+        "nativeScaledError": "1.7228494054074980970742560471754981e-14",
+        "refinedAbsoluteError": "1.0885627801582011377720751386657174e-14"
+      },
+      {
+        "grid": "Z2",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 20.672039638771555,
+        "nativeAbsoluteError": "2.4679647268799304925746255810507596e-15",
+        "nativeScaledError": "2.4679647268799304925746255810507596e-15",
+        "refinedAbsoluteError": "1.9359732374390990173818355123090553e-15"
+      },
+      {
+        "grid": "Z2",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 21.372039638771557,
+        "nativeAbsoluteError": "2.5762383681711179875470113052525075e-14",
+        "nativeScaledError": "2.5762383681711179875470113052525075e-14",
+        "refinedAbsoluteError": "4.1545076716542229498208005660605566e-14"
+      },
+      {
+        "grid": "Z2",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 21.372039638771557,
+        "nativeAbsoluteError": "3.0549792687144788256783276878714668e-15",
+        "nativeScaledError": "3.0549792687144788256783276878714668e-15",
+        "refinedAbsoluteError": "4.0943759005052286462717908016457084e-15"
+      },
+      {
+        "grid": "Z2",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 21.022039638771556,
+        "nativeAbsoluteError": "1.7673382329781391483006875604880275e-14",
+        "nativeScaledError": "1.7673382329781391483006875604880275e-14",
+        "refinedAbsoluteError": "1.789729605023085370580761836646451e-14"
+      },
+      {
+        "grid": "Z3",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 24.660857580145688,
+        "nativeAbsoluteError": "2.985231298649572572825572087005888e-14",
+        "nativeScaledError": "2.985231298649572572825572087005888e-14",
+        "refinedAbsoluteError": "3.1525182486601528218755047734983565e-14"
+      },
+      {
+        "grid": "Z3",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 24.660857580145688,
+        "nativeAbsoluteError": "2.781573479034948139578317326618963e-15",
+        "nativeScaledError": "2.781573479034948139578317326618963e-15",
+        "refinedAbsoluteError": "2.6379399596582233138794588750362926e-15"
+      },
+      {
+        "grid": "Z3",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 25.36085758014569,
+        "nativeAbsoluteError": "3.0822771796066925260175361967909448e-14",
+        "nativeScaledError": "3.0822771796066925260175361967909448e-14",
+        "refinedAbsoluteError": "3.8442773093078273972000945620593015e-14"
+      },
+      {
+        "grid": "Z3",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 25.36085758014569,
+        "nativeAbsoluteError": "3.2533202779873954673390614448355839e-15",
+        "nativeScaledError": "3.2533202779873954673390614448355839e-15",
+        "refinedAbsoluteError": "3.7747838458933915855562905660530672e-15"
+      },
+      {
+        "grid": "Z3",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 25.01085758014569,
+        "nativeAbsoluteError": "1.4897991687140840768835080575863021e-14",
+        "nativeScaledError": "1.4897991687140840768835080575863021e-14",
+        "refinedAbsoluteError": "1.3046724489572128840220669032254424e-14"
+      },
+      {
+        "grid": "Z4",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 30.07487612585951,
+        "nativeAbsoluteError": "9.8996000125207825074324714546925316e-15",
+        "nativeScaledError": "9.8996000125207825074324714546925316e-15",
+        "refinedAbsoluteError": "1.8291975154853604761354416829108318e-14"
+      },
+      {
+        "grid": "Z4",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 30.07487612585951,
+        "nativeAbsoluteError": "6.4993400877141197887237078770676901e-16",
+        "nativeScaledError": "6.4993400877141197887237078770676901e-16",
+        "refinedAbsoluteError": "1.3113927561032757708050629008324023e-15"
+      },
+      {
+        "grid": "Z4",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 30.774876125859514,
+        "nativeAbsoluteError": "2.6202272472041364573245481621019594e-14",
+        "nativeScaledError": "2.6202272472041364573245481621019594e-14",
+        "refinedAbsoluteError": "2.9544748512970088943181569485879887e-14"
+      },
+      {
+        "grid": "Z4",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 30.774876125859514,
+        "nativeAbsoluteError": "4.2418197245940673701357460904050624e-15",
+        "nativeScaledError": "4.2418197245940673701357460904050624e-15",
+        "refinedAbsoluteError": "4.3673359853005683034460922277473985e-15"
+      },
+      {
+        "grid": "Z4",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 30.424876125859512,
+        "nativeAbsoluteError": "7.6640029214324803559294583323950094e-15",
+        "nativeScaledError": "7.6640029214324803559294583323950094e-15",
+        "refinedAbsoluteError": "1.4253828552602601536812913609409588e-14"
+      },
+      {
+        "grid": "Z5",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 32.58506158773919,
+        "nativeAbsoluteError": "2.0403339164738696053694529817667383e-14",
+        "nativeScaledError": "2.0403339164738696053694529817667383e-14",
+        "refinedAbsoluteError": "2.4771972491917875758073470947320457e-14"
+      },
+      {
+        "grid": "Z5",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 32.58506158773919,
+        "nativeAbsoluteError": "3.2833530918080190604048755238761208e-15",
+        "nativeScaledError": "3.2833530918080190604048755238761208e-15",
+        "refinedAbsoluteError": "2.7854434715267430833974518743355378e-15"
+      },
+      {
+        "grid": "Z5",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 33.28506158773919,
+        "nativeAbsoluteError": "2.2131579056950562166454646915187899e-14",
+        "nativeScaledError": "2.2131579056950562166454646915187899e-14",
+        "refinedAbsoluteError": "1.7805088099559172797235480957589874e-14"
+      },
+      {
+        "grid": "Z5",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 33.28506158773919,
+        "nativeAbsoluteError": "2.041311883877137917544991272361972e-15",
+        "nativeScaledError": "2.041311883877137917544991272361972e-15",
+        "refinedAbsoluteError": "2.21771748176623037964168432144331e-15"
+      },
+      {
+        "grid": "Z5",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 32.93506158773919,
+        "nativeAbsoluteError": "1.673791742177010114156775726026543e-14",
+        "nativeScaledError": "1.673791742177010114156775726026543e-14",
+        "refinedAbsoluteError": "1.0886924866762076111994328456653436e-14"
+      },
+      {
+        "grid": "Z6",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 37.23617815882567,
+        "nativeAbsoluteError": "2.6769995517177302103550974183088088e-14",
+        "nativeScaledError": "2.6769995517177302103550974183088088e-14",
+        "refinedAbsoluteError": "2.560087160384983383702804984695969e-14"
+      },
+      {
+        "grid": "Z6",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 37.23617815882567,
+        "nativeAbsoluteError": "2.3028202297076991094988708914511125e-15",
+        "nativeScaledError": "2.3028202297076991094988708914511125e-15",
+        "refinedAbsoluteError": "1.5079485284661359376944609938751472e-15"
+      },
+      {
+        "grid": "Z6",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 37.936178158825676,
+        "nativeAbsoluteError": "3.1112015966308428894775164070268146e-14",
+        "nativeScaledError": "3.1112015966308428894775164070268146e-14",
+        "refinedAbsoluteError": "2.8225375372546409889185894166961266e-14"
+      },
+      {
+        "grid": "Z6",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 37.936178158825676,
+        "nativeAbsoluteError": "2.532529447505446890073287034290523e-15",
+        "nativeScaledError": "2.532529447505446890073287034290523e-15",
+        "refinedAbsoluteError": "2.4614423590930302837983493480948507e-15"
+      },
+      {
+        "grid": "Z6",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 37.586178158825675,
+        "nativeAbsoluteError": "2.068280816096080459624748452805604e-14",
+        "nativeScaledError": "2.068280816096080459624748452805604e-14",
+        "refinedAbsoluteError": "1.4601974999725928729974825659313202e-14"
+      },
+      {
+        "grid": "Z7",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 40.5687190121475,
+        "nativeAbsoluteError": "2.407535921573959213655376978501528e-14",
+        "nativeScaledError": "2.407535921573959213655376978501528e-14",
+        "refinedAbsoluteError": "1.2280029863466553809942893124414944e-14"
+      },
+      {
+        "grid": "Z7",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 40.5687190121475,
+        "nativeAbsoluteError": "4.9277964544005992854124085940536424e-15",
+        "nativeScaledError": "4.9277964544005992854124085940536424e-15",
+        "refinedAbsoluteError": "3.8901008883116488470744840071573902e-15"
+      },
+      {
+        "grid": "Z7",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 41.2687190121475,
+        "nativeAbsoluteError": "1.8219107761941100761652701245439557e-14",
+        "nativeScaledError": "1.8219107761941100761652701245439557e-14",
+        "refinedAbsoluteError": "2.1752473539869527811156885044145767e-14"
+      },
+      {
+        "grid": "Z7",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 41.2687190121475,
+        "nativeAbsoluteError": "3.2589747220858198894880303965634813e-15",
+        "nativeScaledError": "3.2589747220858198894880303965634813e-15",
+        "refinedAbsoluteError": "3.7343879908137520352310771679809873e-15"
+      },
+      {
+        "grid": "Z7",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 40.9187190121475,
+        "nativeAbsoluteError": "1.3296177157028943523966427834454867e-14",
+        "nativeScaledError": "1.3296177157028943523966427834454867e-14",
+        "refinedAbsoluteError": "1.5427806272589886829655301509995877e-14"
+      },
+      {
+        "grid": "Z8",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 42.977073280915,
+        "nativeAbsoluteError": "5.0263536569035467707709910591957055e-15",
+        "nativeScaledError": "5.0263536569035467707709910591957055e-15",
+        "refinedAbsoluteError": "1.1229592410302561521194154049191539e-14"
+      },
+      {
+        "grid": "Z8",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 42.977073280915,
+        "nativeAbsoluteError": "1.1570618688997498173374293176416873e-15",
+        "nativeScaledError": "1.1570618688997498173374293176416873e-15",
+        "refinedAbsoluteError": "1.4967945665959755289556344150442419e-15"
+      },
+      {
+        "grid": "Z8",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 43.677073280915,
+        "nativeAbsoluteError": "2.1607271243922691361014423702385828e-14",
+        "nativeScaledError": "2.1607271243922691361014423702385828e-14",
+        "refinedAbsoluteError": "3.1621043434541115873526893506376109e-14"
+      },
+      {
+        "grid": "Z8",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 43.677073280915,
+        "nativeAbsoluteError": "3.0091028532204697275309215386299883e-15",
+        "nativeScaledError": "3.0091028532204697275309215386299883e-15",
+        "refinedAbsoluteError": "3.6572954956064714425364246870823879e-15"
+      },
+      {
+        "grid": "Z8",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 43.327073280915,
+        "nativeAbsoluteError": "1.9090261021673554830801540684359869e-14",
+        "nativeScaledError": "1.9090261021673554830801540684359869e-14",
+        "refinedAbsoluteError": "3.0307189158957399094228430954681777e-14"
+      },
+      {
+        "grid": "Z9",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 47.65515088116716,
+        "nativeAbsoluteError": "3.5057625057089222965361234797421224e-14",
+        "nativeScaledError": "3.5057625057089222965361234797421224e-14",
+        "refinedAbsoluteError": "1.2849302826835509404749409485691953e-14"
+      },
+      {
+        "grid": "Z9",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 47.65515088116716,
+        "nativeAbsoluteError": "5.3241466936510291123106319331693767e-15",
+        "nativeScaledError": "5.3241466936510291123106319331693767e-15",
+        "refinedAbsoluteError": "4.4021044668889923878803678355873889e-15"
+      },
+      {
+        "grid": "Z9",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 48.35515088116716,
+        "nativeAbsoluteError": "4.6760020856111219418854116276627008e-14",
+        "nativeScaledError": "4.6760020856111219418854116276627008e-14",
+        "refinedAbsoluteError": "2.4714831493999107047020200845329544e-14"
+      },
+      {
+        "grid": "Z9",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 48.35515088116716,
+        "nativeAbsoluteError": "7.9830743487215289077337293253233439e-15",
+        "nativeScaledError": "7.9830743487215289077337293253233439e-15",
+        "refinedAbsoluteError": "6.5004239450847082038358840999354459e-15"
+      },
+      {
+        "grid": "Z9",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 48.00515088116716,
+        "nativeAbsoluteError": "2.3648848943722781677201312671904455e-14",
+        "nativeScaledError": "2.3648848943722781677201312671904455e-14",
+        "refinedAbsoluteError": "2.2753954975626970641638999310160301e-14"
+      },
+      {
+        "grid": "Z10",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 49.4238324776723,
+        "nativeAbsoluteError": "5.2487655824550201265590700617001512e-14",
+        "nativeScaledError": "5.2487655824550201265590700617001512e-14",
+        "refinedAbsoluteError": "7.017489424177893761969998859478987e-14"
+      },
+      {
+        "grid": "Z10",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 49.4238324776723,
+        "nativeAbsoluteError": "9.3759015240669316251826106859611683e-15",
+        "nativeScaledError": "9.3759015240669316251826106859611683e-15",
+        "refinedAbsoluteError": "1.0755921151622584156610379026712768e-14"
+      },
+      {
+        "grid": "Z10",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 50.1238324776723,
+        "nativeAbsoluteError": "2.371137247790756135009608925780234e-14",
+        "nativeScaledError": "2.371137247790756135009608925780234e-14",
+        "refinedAbsoluteError": "3.7378327994243461639010560121616525e-14"
+      },
+      {
+        "grid": "Z10",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 50.1238324776723,
+        "nativeAbsoluteError": "1.8532622173347979443198332824541463e-15",
+        "nativeScaledError": "1.8532622173347979443198332824541463e-15",
+        "refinedAbsoluteError": "2.3251829700037698237063305570145488e-15"
+      },
+      {
+        "grid": "Z10",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 49.7738324776723,
+        "nativeAbsoluteError": "1.3201295464278209278499301872434901e-14",
+        "nativeScaledError": "1.3201295464278209278499301872434901e-14",
+        "refinedAbsoluteError": "2.4116654629445031286913530827104044e-14"
+      },
+      {
+        "grid": "Z11",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 52.62032147771446,
+        "nativeAbsoluteError": "5.5896718876580287164251801278215465e-14",
+        "nativeScaledError": "5.5896718876580287164251801278215465e-14",
+        "refinedAbsoluteError": "4.2552943561918229939210085644836721e-14"
+      },
+      {
+        "grid": "Z11",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 52.62032147771446,
+        "nativeAbsoluteError": "8.6063903232981713773335450642367144e-15",
+        "nativeScaledError": "8.6063903232981713773335450642367144e-15",
+        "refinedAbsoluteError": "7.4238573070486223561507322025055126e-15"
+      },
+      {
+        "grid": "Z11",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 53.320321477714465,
+        "nativeAbsoluteError": "2.3226531809531877735015381677805232e-14",
+        "nativeScaledError": "2.3226531809531877735015381677805232e-14",
+        "refinedAbsoluteError": "1.6000321864847946604405123100401306e-14"
+      },
+      {
+        "grid": "Z11",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 53.320321477714465,
+        "nativeAbsoluteError": "3.1058677224479732940438029262103581e-15",
+        "nativeScaledError": "3.1058677224479732940438029262103581e-15",
+        "refinedAbsoluteError": "1.9386431127600543160780550568437254e-15"
+      },
+      {
+        "grid": "Z11",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 52.970321477714464,
+        "nativeAbsoluteError": "2.0770729420027962374759149176812508e-14",
+        "nativeScaledError": "2.0770729420027962374759149176812508e-14",
+        "refinedAbsoluteError": "2.5306851068749087146106452307544007e-14"
+      },
+      {
+        "grid": "Z13",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 58.99704400260235,
+        "nativeAbsoluteError": "4.7725435943654346932607885312078498e-14",
+        "nativeScaledError": "4.7725435943654346932607885312078498e-14",
+        "refinedAbsoluteError": "3.6197612656733247602506674467915178e-14"
+      },
+      {
+        "grid": "Z13",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 58.99704400260235,
+        "nativeAbsoluteError": "6.7372167948788719389848967045461084e-15",
+        "nativeScaledError": "6.7372167948788719389848967045461084e-15",
+        "refinedAbsoluteError": "6.0719650648820664652422396975003777e-15"
+      },
+      {
+        "grid": "Z13",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 59.697044002602354,
+        "nativeAbsoluteError": "3.907169377824525382719870976901697e-14",
+        "nativeScaledError": "3.907169377824525382719870976901697e-14",
+        "refinedAbsoluteError": "3.5140844446938125832608435435935552e-14"
+      },
+      {
+        "grid": "Z13",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 59.697044002602354,
+        "nativeAbsoluteError": "6.1500117249910783129798705386123996e-15",
+        "nativeScaledError": "6.1500117249910783129798705386123996e-15",
+        "refinedAbsoluteError": "5.1782187770554802656697395118329457e-15"
+      },
+      {
+        "grid": "Z13",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 59.34704400260235,
+        "nativeAbsoluteError": "1.7800631793120757518613153774320728e-14",
+        "nativeScaledError": "1.7800631793120757518613153774320728e-14",
+        "refinedAbsoluteError": "1.8280196015942125571935718967825298e-14"
+      },
+      {
+        "grid": "Z17",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 69.19640171117399,
+        "nativeAbsoluteError": "5.1648400043203568494802351124514183e-14",
+        "nativeScaledError": "5.1648400043203568494802351124514183e-14",
+        "refinedAbsoluteError": "6.4835462170470434797210445043046083e-14"
+      },
+      {
+        "grid": "Z17",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 69.19640171117399,
+        "nativeAbsoluteError": "5.4791335026012252239012001253483619e-15",
+        "nativeScaledError": "5.4791335026012252239012001253483619e-15",
+        "refinedAbsoluteError": "5.4423556393756171908189015591079014e-15"
+      },
+      {
+        "grid": "Z17",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 69.89640171117398,
+        "nativeAbsoluteError": "4.8828886872521259240429505027929995e-14",
+        "nativeScaledError": "4.8828886872521259240429505027929995e-14",
+        "refinedAbsoluteError": "4.5681513878149536444601499656505077e-14"
+      },
+      {
+        "grid": "Z17",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 69.89640171117398,
+        "nativeAbsoluteError": "2.5489906638041987352492470558870623e-15",
+        "nativeScaledError": "2.5489906638041987352492470558870623e-15",
+        "refinedAbsoluteError": "2.3989885923920983010591696672867639e-15"
+      },
+      {
+        "grid": "Z17",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 69.54640171117398,
+        "nativeAbsoluteError": "4.0200206348931836009076042892689885e-14",
+        "nativeScaledError": "4.0200206348931836009076042892689885e-14",
+        "refinedAbsoluteError": "3.7492853578614885490001028314139606e-14"
+      },
+      {
+        "grid": "Z19",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 75.35469069908393,
+        "nativeAbsoluteError": "1.4521357787652189469452747684893411e-14",
+        "nativeScaledError": "1.4521357787652189469452747684893411e-14",
+        "refinedAbsoluteError": "2.1103320221304468892885003922421658e-14"
+      },
+      {
+        "grid": "Z19",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 75.35469069908393,
+        "nativeAbsoluteError": "3.6998463548151383231933165710563059e-15",
+        "nativeScaledError": "3.6998463548151383231933165710563059e-15",
+        "refinedAbsoluteError": "4.4194359611758895047594635325787952e-15"
+      },
+      {
+        "grid": "Z19",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 76.05469069908392,
+        "nativeAbsoluteError": "2.3664285761778720073649017491214426e-14",
+        "nativeScaledError": "2.3664285761778720073649017491214426e-14",
+        "refinedAbsoluteError": "1.5570594716383731101058241591205757e-14"
+      },
+      {
+        "grid": "Z19",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 76.05469069908392,
+        "nativeAbsoluteError": "4.7884121376234783388491655312041418e-15",
+        "nativeScaledError": "4.7884121376234783388491655312041418e-15",
+        "refinedAbsoluteError": "3.6314787166002378423968571176723977e-15"
+      },
+      {
+        "grid": "Z19",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 75.70469069908393,
+        "nativeAbsoluteError": "2.4052517075034299120716508994329002e-14",
+        "nativeScaledError": "2.4052517075034299120716508994329002e-14",
+        "refinedAbsoluteError": "3.5813136529324912991498654979545812e-14"
+      },
+      {
+        "grid": "Z23",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 84.38549298051706,
+        "nativeAbsoluteError": "1.0179643669160302834836428177261985e-13",
+        "nativeScaledError": "1.0179643669160302834836428177261985e-13",
+        "refinedAbsoluteError": "1.0346869289776380036223266533960843e-13"
+      },
+      {
+        "grid": "Z23",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 84.38549298051706,
+        "nativeAbsoluteError": "1.3599280261310301621169435629685527e-14",
+        "nativeScaledError": "1.3599280261310301621169435629685527e-14",
+        "refinedAbsoluteError": "1.3665360224225753392543584950222782e-14"
+      },
+      {
+        "grid": "Z23",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 85.08549298051705,
+        "nativeAbsoluteError": "5.8075137320379050837733243558117262e-14",
+        "nativeScaledError": "5.8075137320379050837733243558117262e-14",
+        "refinedAbsoluteError": "5.8224494163550173348131372877040692e-14"
+      },
+      {
+        "grid": "Z23",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 85.08549298051705,
+        "nativeAbsoluteError": "4.9344165058914746877709580452515733e-15",
+        "nativeScaledError": "4.9344165058914746877709580452515733e-15",
+        "refinedAbsoluteError": "3.8477344431105568801923768940294027e-15"
+      },
+      {
+        "grid": "Z23",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 84.73549298051705,
+        "nativeAbsoluteError": "5.9794781199245466885518903666174446e-15",
+        "nativeScaledError": "5.9794781199245466885518903666174446e-15",
+        "refinedAbsoluteError": "1.0152085548469177074190824139956167e-14"
+      },
+      {
+        "grid": "Z29",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 98.48119421819369,
+        "nativeAbsoluteError": "2.9391027054226102364239269178730952e-14",
+        "nativeScaledError": "2.0492840042302661259697563754030789e-14",
+        "refinedAbsoluteError": "3.9216131214125037877691246606055659e-14"
+      },
+      {
+        "grid": "Z29",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 98.48119421819369,
+        "nativeAbsoluteError": "1.2396999060221143682574378814705201e-14",
+        "nativeScaledError": "1.1320557214415172319110043733788322e-14",
+        "refinedAbsoluteError": "1.2908128513740938080429297744082037e-14"
+      },
+      {
+        "grid": "Z29",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 99.18119421819368,
+        "nativeAbsoluteError": "9.0205873157833451719784973529073065e-14",
+        "nativeScaledError": "6.3675726876055025513476925903426571e-14",
+        "refinedAbsoluteError": "7.0774168920923404395546690609088619e-14"
+      },
+      {
+        "grid": "Z29",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 99.18119421819368,
+        "nativeAbsoluteError": "9.1149968166844939729448928730870659e-15",
+        "nativeScaledError": "8.4219571381600499192947897376865532e-15",
+        "refinedAbsoluteError": "7.7827957592414365754936626707739927e-15"
+      },
+      {
+        "grid": "Z29",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 98.83119421819369,
+        "nativeAbsoluteError": "2.6636700756908371580101060067604616e-14",
+        "nativeScaledError": "2.6636700756908371580101060067604616e-14",
+        "refinedAbsoluteError": "3.8215797977788463641549048341137321e-14"
+      },
+      {
+        "grid": "Z31",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 103.37553804047835,
+        "nativeAbsoluteError": "1.1668162080606837759712628278580827e-13",
+        "nativeScaledError": "1.1668162080606837759712628278580827e-13",
+        "refinedAbsoluteError": "1.8127242901229359367746346233685109e-13"
+      },
+      {
+        "grid": "Z31",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 103.37553804047835,
+        "nativeAbsoluteError": "2.0653586020369717543816460724055349e-14",
+        "nativeScaledError": "2.0653586020369717543816460724055349e-14",
+        "refinedAbsoluteError": "2.5074951188916634647195188110600653e-14"
+      },
+      {
+        "grid": "Z31",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 104.07553804047834,
+        "nativeAbsoluteError": "1.4295844173778826597872087977853033e-13",
+        "nativeScaledError": "1.4295844173778826597872087977853033e-13",
+        "refinedAbsoluteError": "1.1461202453246480373029333051667786e-13"
+      },
+      {
+        "grid": "Z31",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 104.07553804047834,
+        "nativeAbsoluteError": "2.1657853788953972650316634247765031e-14",
+        "nativeScaledError": "2.1657853788953972650316634247765031e-14",
+        "refinedAbsoluteError": "1.9768521106172125650025912905884293e-14"
+      },
+      {
+        "grid": "Z31",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 103.72553804047834,
+        "nativeAbsoluteError": "6.0394883080219256118349244098180951e-14",
+        "nativeScaledError": "6.0394883080219256118349244098180951e-14",
+        "refinedAbsoluteError": "6.1762563838643766350723613478075677e-14"
+      },
+      {
+        "grid": "Z37",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 115.87668032085756,
+        "nativeAbsoluteError": "7.9511450956580858201196170485731172e-14",
+        "nativeScaledError": "6.8768269429913858473957730408249255e-14",
+        "refinedAbsoluteError": "7.4563360492730625342367725176829509e-14"
+      },
+      {
+        "grid": "Z37",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 115.87668032085756,
+        "nativeAbsoluteError": "1.5618734821577728728594955665279293e-14",
+        "nativeScaledError": "1.5618734821577728728594955665279293e-14",
+        "refinedAbsoluteError": "1.5045372652046024976487790338697013e-14"
+      },
+      {
+        "grid": "Z37",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 116.57668032085755,
+        "nativeAbsoluteError": "1.1760619742924575244650462145332406e-14",
+        "nativeScaledError": "8.5285164793855704703115094852185873e-15",
+        "refinedAbsoluteError": "2.4282194386909650408477027418345905e-14"
+      },
+      {
+        "grid": "Z37",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 116.57668032085755,
+        "nativeAbsoluteError": "3.6935289335868267366121462382975805e-15",
+        "nativeScaledError": "3.6225505777692654309786176429383061e-15",
+        "refinedAbsoluteError": "3.6754102044538581090541750897599561e-15"
+      },
+      {
+        "grid": "Z37",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 116.22668032085755,
+        "nativeAbsoluteError": "3.422431140866971375344864901931582e-14",
+        "nativeScaledError": "3.422431140866971375344864901931582e-14",
+        "refinedAbsoluteError": "5.2454644911296862750068411098193654e-14"
+      },
+      {
+        "grid": "Z41",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 123.90681855434578,
+        "nativeAbsoluteError": "1.5334154584161228017415661739470498e-13",
+        "nativeScaledError": "1.5334154584161228017415661739470498e-13",
+        "refinedAbsoluteError": "1.6026047636103417066411714248478229e-13"
+      },
+      {
+        "grid": "Z41",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 123.90681855434578,
+        "nativeAbsoluteError": "2.9382114275175361741690275223776958e-14",
+        "nativeScaledError": "2.9382114275175361741690275223776958e-14",
+        "refinedAbsoluteError": "2.9928660710810733382137922527145008e-14"
+      },
+      {
+        "grid": "Z41",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 124.60681855434576,
+        "nativeAbsoluteError": "1.7379757200555227931260963707588106e-14",
+        "nativeScaledError": "1.4359079328646488863729189912153734e-14",
+        "refinedAbsoluteError": "1.4379647874392350719180672081928994e-14"
+      },
+      {
+        "grid": "Z41",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 124.60681855434576,
+        "nativeAbsoluteError": "8.7779312477258778005190814923886071e-15",
+        "nativeScaledError": "8.7779312477258778005190814923886071e-15",
+        "refinedAbsoluteError": "7.7574636103017441709746427103049152e-15"
+      },
+      {
+        "grid": "Z41",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 124.25681855434577,
+        "nativeAbsoluteError": "3.3797910338680285663794386169371508e-14",
+        "nativeScaledError": "3.3797910338680285663794386169371508e-14",
+        "refinedAbsoluteError": "3.9026373305015521934114307093345645e-14"
+      },
+      {
+        "grid": "Z43",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 129.22870419995607,
+        "nativeAbsoluteError": "1.952220839783101939952231549677775e-14",
+        "nativeScaledError": "1.8613650397168207730155969548448751e-14",
+        "refinedAbsoluteError": "5.1999265333015469882975243415839714e-14"
+      },
+      {
+        "grid": "Z43",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 129.22870419995607,
+        "nativeAbsoluteError": "1.0256718263067797634374038617773277e-14",
+        "nativeScaledError": "1.0256718263067797634374038617773277e-14",
+        "refinedAbsoluteError": "1.1999869705478589603751701087388696e-14"
+      },
+      {
+        "grid": "Z43",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 129.92870419995606,
+        "nativeAbsoluteError": "2.5564411364928491437291400248713054e-14",
+        "nativeScaledError": "2.5564411364928491437291400248713054e-14",
+        "refinedAbsoluteError": "5.5162077758434688873530978339609318e-14"
+      },
+      {
+        "grid": "Z43",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 129.92870419995606,
+        "nativeAbsoluteError": "1.952182553834918609735890448177992e-14",
+        "nativeScaledError": "1.952182553834918609735890448177992e-14",
+        "refinedAbsoluteError": "2.0753150211379531968194753870853747e-14"
+      },
+      {
+        "grid": "Z43",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 129.57870419995606,
+        "nativeAbsoluteError": "6.0105820727602272310149792958367276e-14",
+        "nativeScaledError": "6.0105820727602272310149792958367276e-14",
+        "refinedAbsoluteError": "6.8308169726409717480395849417861076e-14"
+      },
+      {
+        "grid": "Z47",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 137.76604205453344,
+        "nativeAbsoluteError": "3.9099202472488428564217808502972271e-14",
+        "nativeScaledError": "2.4998171658756573227760924460319487e-14",
+        "refinedAbsoluteError": "7.7901948880015197270637631046199729e-14"
+      },
+      {
+        "grid": "Z47",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 137.76604205453344,
+        "nativeAbsoluteError": "1.3984524913467406961398106242598878e-14",
+        "nativeScaledError": "1.2574111261678538596160601362392977e-14",
+        "refinedAbsoluteError": "1.6556681710997102097405145890280429e-14"
+      },
+      {
+        "grid": "Z47",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 138.46604205453343,
+        "nativeAbsoluteError": "7.6882028750530774391431724741783171e-14",
+        "nativeScaledError": "7.3273705364119896083691908558962811e-14",
+        "refinedAbsoluteError": "9.9596402768309368200236926364330592e-14"
+      },
+      {
+        "grid": "Z47",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 138.46604205453343,
+        "nativeAbsoluteError": "9.652484523312561204771016380700664e-15",
+        "nativeScaledError": "9.652484523312561204771016380700664e-15",
+        "refinedAbsoluteError": "1.0459305859936323775333601356974455e-14"
+      },
+      {
+        "grid": "Z47",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 138.11604205453344,
+        "nativeAbsoluteError": "6.8162909076959280300196743917904309e-14",
+        "nativeScaledError": "6.8162909076959280300196743917904309e-14",
+        "refinedAbsoluteError": "6.259436623310548168358514423822366e-14"
+      },
+      {
+        "grid": "Z53",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 149.70352042078488,
+        "nativeAbsoluteError": "5.4698837476503253836850813480408361e-14",
+        "nativeScaledError": "5.4698837476503253836850813480408361e-14",
+        "refinedAbsoluteError": "5.2162822322262094620426333637613691e-14"
+      },
+      {
+        "grid": "Z53",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 149.70352042078488,
+        "nativeAbsoluteError": "1.5279295495120173423001596027725127e-14",
+        "nativeScaledError": "1.5279295495120173423001596027725127e-14",
+        "refinedAbsoluteError": "1.5929262137950760561438783132647749e-14"
+      },
+      {
+        "grid": "Z53",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 150.40352042078487,
+        "nativeAbsoluteError": "1.8091936672767078507809030399825189e-13",
+        "nativeScaledError": "1.8091936672767078507809030399825189e-13",
+        "refinedAbsoluteError": "1.3346412940032933327681401813977832e-13"
+      },
+      {
+        "grid": "Z53",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 150.40352042078487,
+        "nativeAbsoluteError": "2.7768518573931200721053155304341548e-14",
+        "nativeScaledError": "2.7768518573931200721053155304341548e-14",
+        "refinedAbsoluteError": "2.4762358277804547537282604093572354e-14"
+      },
+      {
+        "grid": "Z53",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 150.05352042078488,
+        "nativeAbsoluteError": "7.7310538610159878933563815489855496e-14",
+        "nativeScaledError": "7.7310538610159878933563815489855496e-14",
+        "refinedAbsoluteError": "7.4104624546795541659819752925476567e-14"
+      },
+      {
+        "grid": "Z59",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 160.83896413759604,
+        "nativeAbsoluteError": "2.1521273370589089915654392195258454e-13",
+        "nativeScaledError": "1.4497929731281271310144163606676831e-13",
+        "refinedAbsoluteError": "2.3034060046560884050973906539785571e-13"
+      },
+      {
+        "grid": "Z59",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 160.83896413759604,
+        "nativeAbsoluteError": "2.7429154799678532395430919094771255e-14",
+        "nativeScaledError": "2.6784381008090300937336763272480454e-14",
+        "refinedAbsoluteError": "2.8092880655311875627428647112317454e-14"
+      },
+      {
+        "grid": "Z59",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 161.53896413759603,
+        "nativeAbsoluteError": "1.1476078747403640260178731341503148e-13",
+        "nativeScaledError": "7.9140316652072263925460623122230093e-14",
+        "refinedAbsoluteError": "1.4772582388635114430656338536821803e-13"
+      },
+      {
+        "grid": "Z59",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 161.53896413759603,
+        "nativeAbsoluteError": "1.3071624735894899996982131518362943e-14",
+        "nativeScaledError": "1.2981942090536852767450765179386206e-14",
+        "refinedAbsoluteError": "1.0502126903516791058716242219867957e-14"
+      },
+      {
+        "grid": "Z59",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 161.18896413759603,
+        "nativeAbsoluteError": "8.353799887593501178934978089964626e-14",
+        "nativeScaledError": "8.353799887593501178934978089964626e-14",
+        "refinedAbsoluteError": "1.1631613371762953713332621179501449e-13"
+      },
+      {
+        "grid": "Z61",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 165.18706918790042,
+        "nativeAbsoluteError": "8.3206021576478826322666774312304755e-14",
+        "nativeScaledError": "5.2593746551478971170549472968987778e-14",
+        "refinedAbsoluteError": "1.7427010631209825506420111928606299e-13"
+      },
+      {
+        "grid": "Z61",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 165.18706918790042,
+        "nativeAbsoluteError": "3.4930495683520910641760802963408866e-14",
+        "nativeScaledError": "3.2230082118495693493786691491644866e-14",
+        "refinedAbsoluteError": "4.0632845575689897268859604035484541e-14"
+      },
+      {
+        "grid": "Z61",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 165.8870691879004,
+        "nativeAbsoluteError": "5.909956438267299635649016961951513e-14",
+        "nativeScaledError": "4.882811403847854720746117760484155e-14",
+        "refinedAbsoluteError": "6.8352057646445414982422357324806511e-14"
+      },
+      {
+        "grid": "Z61",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 165.8870691879004,
+        "nativeAbsoluteError": "1.4350804210417778018391137281880446e-14",
+        "nativeScaledError": "1.4350804210417778018391137281880446e-14",
+        "refinedAbsoluteError": "1.42523311867132068462519927802501e-14"
+      },
+      {
+        "grid": "Z61",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 165.5370691879004,
+        "nativeAbsoluteError": "6.2191643024887087701925835839745419e-14",
+        "nativeScaledError": "6.2191643024887087701925835839745419e-14",
+        "refinedAbsoluteError": "1.2877162445871181014662885959023483e-13"
+      },
+      {
+        "grid": "Z67",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 176.09143429771044,
+        "nativeAbsoluteError": "1.2283837482986116344850515322141262e-13",
+        "nativeScaledError": "1.1933853081685361381151275305196648e-13",
+        "refinedAbsoluteError": "7.2048385657730887335371698912851249e-14"
+      },
+      {
+        "grid": "Z67",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 176.09143429771044,
+        "nativeAbsoluteError": "2.9482446987108873139637500865823037e-14",
+        "nativeScaledError": "2.9482446987108873139637500865823037e-14",
+        "refinedAbsoluteError": "2.2306117358569875549257869874822727e-14"
+      },
+      {
+        "grid": "Z67",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 176.79143429771042,
+        "nativeAbsoluteError": "2.1249114438809845638153890820783317e-13",
+        "nativeScaledError": "1.8782129869835414653424812563554626e-13",
+        "refinedAbsoluteError": "2.9318534593567342056361311544072548e-13"
+      },
+      {
+        "grid": "Z67",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 176.79143429771042,
+        "nativeAbsoluteError": "4.2212127240627705062119917259896705e-14",
+        "nativeScaledError": "4.2212127240627705062119917259896705e-14",
+        "refinedAbsoluteError": "4.7696059205741103178440187549110832e-14"
+      },
+      {
+        "grid": "Z67",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 176.44143429771043,
+        "nativeAbsoluteError": "8.8663846953372269363050817047028208e-14",
+        "nativeScaledError": "8.8663846953372269363050817047028208e-14",
+        "refinedAbsoluteError": "8.0864333986789938476420445305578244e-14"
+      },
+      {
+        "grid": "Z71",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 184.5244678483875,
+        "nativeAbsoluteError": "5.6398960244547961944519252833340256e-14",
+        "nativeScaledError": "5.6398960244547961944519252833340256e-14",
+        "refinedAbsoluteError": "8.8675633785325303775949725162741021e-14"
+      },
+      {
+        "grid": "Z71",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 184.5244678483875,
+        "nativeAbsoluteError": "7.7177886105833355649523407786782448e-15",
+        "nativeScaledError": "7.7177886105833355649523407786782448e-15",
+        "refinedAbsoluteError": "1.1308684198260780987343698587609336e-14"
+      },
+      {
+        "grid": "Z71",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 185.2244678483875,
+        "nativeAbsoluteError": "8.1469517691120720116303540694307747e-14",
+        "nativeScaledError": "8.1469517691120720116303540694307747e-14",
+        "refinedAbsoluteError": "1.0663477529868757563456133095139198e-13"
+      },
+      {
+        "grid": "Z71",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 185.2244678483875,
+        "nativeAbsoluteError": "1.6372413975988789120476459100107822e-14",
+        "nativeScaledError": "1.6372413975988789120476459100107822e-14",
+        "refinedAbsoluteError": "1.6566475616162256087541570848478397e-14"
+      },
+      {
+        "grid": "Z71",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 184.8744678483875,
+        "nativeAbsoluteError": "9.1030166964915674462954370851934901e-14",
+        "nativeScaledError": "9.1030166964915674462954370851934901e-14",
+        "refinedAbsoluteError": "9.4389716189789900565465884656029109e-14"
+      },
+      {
+        "grid": "Z73",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 186.87892258350186,
+        "nativeAbsoluteError": "1.5750108036905276265366113473292066e-13",
+        "nativeScaledError": "1.5750108036905276265366113473292066e-13",
+        "refinedAbsoluteError": "1.7507013097277831910119507513048066e-13"
+      },
+      {
+        "grid": "Z73",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 186.87892258350186,
+        "nativeAbsoluteError": "4.5782562216426311450481546543194642e-14",
+        "nativeScaledError": "4.5782562216426311450481546543194642e-14",
+        "refinedAbsoluteError": "4.8286021810061822934742063317742659e-14"
+      },
+      {
+        "grid": "Z73",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 187.57892258350185,
+        "nativeAbsoluteError": "2.7135434798517149936255001753195365e-13",
+        "nativeScaledError": "1.9827174198949069953149850186073875e-13",
+        "refinedAbsoluteError": "2.1657336567414570967959769877114646e-13"
+      },
+      {
+        "grid": "Z73",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 187.57892258350185,
+        "nativeAbsoluteError": "5.4038603905520635406596799196752754e-14",
+        "nativeScaledError": "5.4038603905520635406596799196752754e-14",
+        "refinedAbsoluteError": "4.9879058746422000268277450469850675e-14"
+      },
+      {
+        "grid": "Z73",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 187.22892258350186,
+        "nativeAbsoluteError": "9.2121768031883293462511226633809927e-14",
+        "nativeScaledError": "9.2121768031883293462511226633809927e-14",
+        "refinedAbsoluteError": "7.9998308299882531146194843194183846e-14"
+      },
+      {
+        "grid": "Z79",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 197.66530967625192,
+        "nativeAbsoluteError": "1.2690466809845460780703813366894375e-13",
+        "nativeScaledError": "1.2690466809845460780703813366894375e-13",
+        "refinedAbsoluteError": "1.2434292427771573953786269292209027e-13"
+      },
+      {
+        "grid": "Z79",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 197.66530967625192,
+        "nativeAbsoluteError": "2.1477197921291087033744089356270389e-14",
+        "nativeScaledError": "2.1477197921291087033744089356270389e-14",
+        "refinedAbsoluteError": "2.1667465716917819502747803065362486e-14"
+      },
+      {
+        "grid": "Z79",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 198.3653096762519,
+        "nativeAbsoluteError": "9.4534150749769926062802820065670172e-14",
+        "nativeScaledError": "5.4276158061725439239435476106368915e-14",
+        "refinedAbsoluteError": "1.3790106372022723722993590415707327e-13"
+      },
+      {
+        "grid": "Z79",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 198.3653096762519,
+        "nativeAbsoluteError": "2.20098730812050857425015329889328e-14",
+        "nativeScaledError": "1.9094476194912164734600398691969031e-14",
+        "refinedAbsoluteError": "2.514748610837848615298432866667418e-14"
+      },
+      {
+        "grid": "Z79",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 198.01530967625192,
+        "nativeAbsoluteError": "9.6761136802864596341001474302455572e-14",
+        "nativeScaledError": "9.6761136802864596341001474302455572e-14",
+        "refinedAbsoluteError": "1.1152287286800125103848689769925484e-13"
+      },
+      {
+        "grid": "Z83",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 205.0446972021633,
+        "nativeAbsoluteError": "1.7601925548524766122007816839876167e-13",
+        "nativeScaledError": "1.7601925548524766122007816839876167e-13",
+        "refinedAbsoluteError": "2.0473847484865456629136696907046112e-13"
+      },
+      {
+        "grid": "Z83",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 205.0446972021633,
+        "nativeAbsoluteError": "1.5952433528999003097907184931910178e-14",
+        "nativeScaledError": "1.5952433528999003097907184931910178e-14",
+        "refinedAbsoluteError": "1.497269251864087466811913653626053e-14"
+      },
+      {
+        "grid": "Z83",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 205.74469720216328,
+        "nativeAbsoluteError": "1.4973501043175036087145075104535417e-13",
+        "nativeScaledError": "1.0281200247742859033759673028500951e-13",
+        "refinedAbsoluteError": "1.8651566836432383658777452388692297e-13"
+      },
+      {
+        "grid": "Z83",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 205.74469720216328,
+        "nativeAbsoluteError": "3.1440115073684432153169320981441033e-14",
+        "nativeScaledError": "3.1440115073684432153169320981441033e-14",
+        "refinedAbsoluteError": "3.3352731878641169299175866823924365e-14"
+      },
+      {
+        "grid": "Z83",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 205.3946972021633,
+        "nativeAbsoluteError": "1.1183357014084077091212254370348116e-13",
+        "nativeScaledError": "1.1183357014084077091212254370348116e-13",
+        "refinedAbsoluteError": "1.435850639038191088114532243411575e-13"
+      },
+      {
+        "grid": "Z89",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 215.81953850826372,
+        "nativeAbsoluteError": "2.1118033768081445483333157929714912e-13",
+        "nativeScaledError": "1.4057294586607015766125214876730111e-13",
+        "refinedAbsoluteError": "1.9496911583896981899719240866635629e-13"
+      },
+      {
+        "grid": "Z89",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 215.81953850826372,
+        "nativeAbsoluteError": "2.7557482115356266782081019097826014e-14",
+        "nativeScaledError": "2.7557482115356266782081019097826014e-14",
+        "refinedAbsoluteError": "2.6399563082914388410658133170320946e-14"
+      },
+      {
+        "grid": "Z89",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 216.5195385082637,
+        "nativeAbsoluteError": "9.9939565636725145658051234591023301e-14",
+        "nativeScaledError": "4.5401365887763476786685596683626784e-14",
+        "refinedAbsoluteError": "7.5889330164106593973234338628406539e-14"
+      },
+      {
+        "grid": "Z89",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 216.5195385082637,
+        "nativeAbsoluteError": "2.5909656354997651860468100588783158e-14",
+        "nativeScaledError": "1.8362242398401721078791334967651459e-14",
+        "refinedAbsoluteError": "2.433701251436782668781684480695639e-14"
+      },
+      {
+        "grid": "Z89",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 216.1695385082637,
+        "nativeAbsoluteError": "5.7797284366416233908902087942680915e-14",
+        "nativeScaledError": "5.7797284366416233908902087942680915e-14",
+        "refinedAbsoluteError": "6.6156147738819508119169575657613607e-14"
+      },
+      {
+        "grid": "Z97",
+        "label": "lower-left",
+        "sigma": 0.4,
+        "t": 230.90018870049917,
+        "nativeAbsoluteError": "1.0945342610090599785559313500853886e-13",
+        "nativeScaledError": "1.0945342610090599785559313500853886e-13",
+        "refinedAbsoluteError": "5.8391678839541003177196664158441739e-14"
+      },
+      {
+        "grid": "Z97",
+        "label": "lower-right",
+        "sigma": 0.9,
+        "t": 230.90018870049917,
+        "nativeAbsoluteError": "2.5148883996304304556992251752400396e-14",
+        "nativeScaledError": "2.5148883996304304556992251752400396e-14",
+        "refinedAbsoluteError": "2.1552843796116231732242487475280124e-14"
+      },
+      {
+        "grid": "Z97",
+        "label": "upper-left",
+        "sigma": 0.4,
+        "t": 231.60018870049916,
+        "nativeAbsoluteError": "3.1346161660629147257265295601017563e-13",
+        "nativeScaledError": "3.1346161660629147257265295601017563e-13",
+        "refinedAbsoluteError": "2.5558974253854147992271971215413212e-13"
+      },
+      {
+        "grid": "Z97",
+        "label": "upper-right",
+        "sigma": 0.9,
+        "t": 231.60018870049916,
+        "nativeAbsoluteError": "5.014666214958398890412469961323792e-14",
+        "nativeScaledError": "5.014666214958398890412469961323792e-14",
+        "refinedAbsoluteError": "4.5757459128491420916057050219869324e-14"
+      },
+      {
+        "grid": "Z97",
+        "label": "input-zero-height-on-critical-line",
+        "sigma": 0.5,
+        "t": 231.25018870049917,
+        "nativeAbsoluteError": "9.2558073667820822582218389981748006e-14",
+        "nativeScaledError": "9.2558073667820822582218389981748006e-14",
+        "refinedAbsoluteError": "1.1714561687177037799832564556693224e-13"
+      }
+    ],
+    "binaryNodeSamples": [
+      {
+        "grid": "intro",
+        "x": 133,
+        "y": 80,
+        "byteOffset": 514128,
+        "sigma": 1.0333333333333334,
+        "t": 15.015673981191224,
+        "absoluteError": "1.5233025019002840795769218482079365e-15",
+        "scaledError": "1.5233025019002840795769218482079365e-15"
+      },
+      {
+        "grid": "intro",
+        "x": 266,
+        "y": 240,
+        "byteOffset": 1540256,
+        "sigma": 2.0166666666666666,
+        "t": 25.047021943573668,
+        "absoluteError": "2.0004806392188766091323692790788236e-16",
+        "scaledError": "2.0004806392188766091323692790788236e-16"
+      },
+      {
+        "grid": "Z1",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 13.960310426015631,
+        "absoluteError": "8.202408346440015081343930275634201e-15",
+        "scaledError": "8.202408346440015081343930275634201e-15"
+      },
+      {
+        "grid": "Z1",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 14.311480994577504,
+        "absoluteError": "1.4372316529141070748803255791376436e-15",
+        "scaledError": "1.4372316529141070748803255791376436e-15"
+      },
+      {
+        "grid": "Z2",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 20.847624923052493,
+        "absoluteError": "1.3546252032339041740026573172078643e-14",
+        "scaledError": "1.3546252032339041740026573172078643e-14"
+      },
+      {
+        "grid": "Z2",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 21.198795491614366,
+        "absoluteError": "3.3183962924941450641675918132005737e-15",
+        "scaledError": "3.3183962924941450641675918132005737e-15"
+      },
+      {
+        "grid": "Z3",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 24.836442864426626,
+        "absoluteError": "1.0464906420572310057178915145618073e-14",
+        "scaledError": "1.0464906420572310057178915145618073e-14"
+      },
+      {
+        "grid": "Z3",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 25.1876134329885,
+        "absoluteError": "9.2900814858577094877625972767324807e-15",
+        "scaledError": "9.2900814858577094877625972767324807e-15"
+      },
+      {
+        "grid": "Z4",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 30.25046141014045,
+        "absoluteError": "1.2726234312755971093252391638010894e-14",
+        "scaledError": "1.2726234312755971093252391638010894e-14"
+      },
+      {
+        "grid": "Z4",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 30.601631978702322,
+        "absoluteError": "1.4861178692480756505910412672873771e-15",
+        "scaledError": "1.4861178692480756505910412672873771e-15"
+      },
+      {
+        "grid": "Z5",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 32.760646872020125,
+        "absoluteError": "9.7671680812408117813311366469259608e-15",
+        "scaledError": "9.7671680812408117813311366469259608e-15"
+      },
+      {
+        "grid": "Z5",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 33.111817440582,
+        "absoluteError": "6.1954925758633389503173539227363415e-15",
+        "scaledError": "6.1954925758633389503173539227363415e-15"
+      },
+      {
+        "grid": "Z6",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 37.41176344310661,
+        "absoluteError": "1.6814834397225173225123240801004441e-14",
+        "scaledError": "1.6814834397225173225123240801004441e-14"
+      },
+      {
+        "grid": "Z6",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 37.762934011668484,
+        "absoluteError": "8.5582451831389036443425473715118462e-15",
+        "scaledError": "8.5582451831389036443425473715118462e-15"
+      },
+      {
+        "grid": "Z7",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 40.74430429642843,
+        "absoluteError": "2.303058258919337616933657874052905e-14",
+        "scaledError": "2.303058258919337616933657874052905e-14"
+      },
+      {
+        "grid": "Z7",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 41.09547486499031,
+        "absoluteError": "8.3350090424928874886932026537724989e-16",
+        "scaledError": "8.3350090424928874886932026537724989e-16"
+      },
+      {
+        "grid": "Z8",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 43.152658565195935,
+        "absoluteError": "4.5947855057490943403632326448528442e-15",
+        "scaledError": "4.5947855057490943403632326448528442e-15"
+      },
+      {
+        "grid": "Z8",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 43.50382913375781,
+        "absoluteError": "5.5448622320943432323624447873044982e-15",
+        "scaledError": "5.5448622320943432323624447873044982e-15"
+      },
+      {
+        "grid": "Z9",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 47.830736165448094,
+        "absoluteError": "2.0027516643773134294801390440037862e-14",
+        "scaledError": "2.0027516643773134294801390440037862e-14"
+      },
+      {
+        "grid": "Z9",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 48.18190673400997,
+        "absoluteError": "1.5254478783220417792757401440390507e-14",
+        "scaledError": "1.5254478783220417792757401440390507e-14"
+      },
+      {
+        "grid": "Z10",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 49.599417761953234,
+        "absoluteError": "1.8442114250074484732349927839294732e-14",
+        "scaledError": "1.8442114250074484732349927839294732e-14"
+      },
+      {
+        "grid": "Z10",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 49.95058833051511,
+        "absoluteError": "3.1608135589702753682501365091434587e-15",
+        "scaledError": "3.1608135589702753682501365091434587e-15"
+      },
+      {
+        "grid": "Z11",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 52.7959067619954,
+        "absoluteError": "1.5340078155514941441541173122397569e-14",
+        "scaledError": "1.5340078155514941441541173122397569e-14"
+      },
+      {
+        "grid": "Z11",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 53.14707733055727,
+        "absoluteError": "4.2110689594873901615856120387160249e-15",
+        "scaledError": "4.2110689594873901615856120387160249e-15"
+      },
+      {
+        "grid": "Z13",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 59.172629286883286,
+        "absoluteError": "1.1076714982507640450379602723734115e-14",
+        "scaledError": "1.1076714982507640450379602723734115e-14"
+      },
+      {
+        "grid": "Z13",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 59.52379985544516,
+        "absoluteError": "5.023229131866346808435661791846618e-15",
+        "scaledError": "5.023229131866346808435661791846618e-15"
+      },
+      {
+        "grid": "Z17",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 69.37198699545492,
+        "absoluteError": "2.298198748148949700824668862595376e-14",
+        "scaledError": "2.298198748148949700824668862595376e-14"
+      },
+      {
+        "grid": "Z17",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 69.72315756401679,
+        "absoluteError": "5.7841008369726684384424235502201506e-15",
+        "scaledError": "5.7841008369726684384424235502201506e-15"
+      },
+      {
+        "grid": "Z19",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 75.53027598336486,
+        "absoluteError": "7.0432764854933744096193348828967296e-15",
+        "scaledError": "7.0432764854933744096193348828967296e-15"
+      },
+      {
+        "grid": "Z19",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 75.88144655192673,
+        "absoluteError": "9.8197720307501762510197471594561753e-15",
+        "scaledError": "9.8197720307501762510197471594561753e-15"
+      },
+      {
+        "grid": "Z23",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 84.56107826479798,
+        "absoluteError": "3.7785117414835793308911236993506496e-14",
+        "scaledError": "3.7785117414835793308911236993506496e-14"
+      },
+      {
+        "grid": "Z23",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 84.91224883335985,
+        "absoluteError": "2.131282197903932339006846207837524e-14",
+        "scaledError": "2.131282197903932339006846207837524e-14"
+      },
+      {
+        "grid": "Z29",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 98.65677950247462,
+        "absoluteError": "3.2234359047324138327894158417551459e-14",
+        "scaledError": "3.2234359047324138327894158417551459e-14"
+      },
+      {
+        "grid": "Z29",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 99.00795007103649,
+        "absoluteError": "3.0112061285299011665277024642576805e-14",
+        "scaledError": "3.0112061285299011665277024642576805e-14"
+      },
+      {
+        "grid": "Z31",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 103.55112332475927,
+        "absoluteError": "3.7402278950598169650924771348669461e-14",
+        "scaledError": "3.7402278950598169650924771348669461e-14"
+      },
+      {
+        "grid": "Z31",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 103.90229389332114,
+        "absoluteError": "2.3938078172546169618735309828680836e-14",
+        "scaledError": "2.3938078172546169618735309828680836e-14"
+      },
+      {
+        "grid": "Z37",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 116.05226560513849,
+        "absoluteError": "3.0624211326895222717896686113948058e-14",
+        "scaledError": "3.0624211326895222717896686113948058e-14"
+      },
+      {
+        "grid": "Z37",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 116.40343617370036,
+        "absoluteError": "1.952976058025037500036962049929545e-14",
+        "scaledError": "1.952976058025037500036962049929545e-14"
+      },
+      {
+        "grid": "Z41",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 124.0824038386267,
+        "absoluteError": "4.1537251467029931644147357765230071e-14",
+        "scaledError": "4.1537251467029931644147357765230071e-14"
+      },
+      {
+        "grid": "Z41",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 124.43357440718857,
+        "absoluteError": "1.6031159639200704988378711241756521e-14",
+        "scaledError": "1.6031159639200704988378711241756521e-14"
+      },
+      {
+        "grid": "Z43",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 129.404289484237,
+        "absoluteError": "2.0982746087284085237232941301889487e-14",
+        "scaledError": "2.0982746087284085237232941301889487e-14"
+      },
+      {
+        "grid": "Z43",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 129.75546005279887,
+        "absoluteError": "2.4367325811542715610086340815237875e-14",
+        "scaledError": "2.4367325811542715610086340815237875e-14"
+      },
+      {
+        "grid": "Z47",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 137.94162733881438,
+        "absoluteError": "3.0200220339754664257096188863219724e-14",
+        "scaledError": "3.0200220339754664257096188863219724e-14"
+      },
+      {
+        "grid": "Z47",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 138.29279790737624,
+        "absoluteError": "1.0810574928787236590269512025092401e-14",
+        "scaledError": "1.0810574928787236590269512025092401e-14"
+      },
+      {
+        "grid": "Z53",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 149.87910570506583,
+        "absoluteError": "1.1820433775805545488065930130460909e-14",
+        "scaledError": "1.1820433775805545488065930130460909e-14"
+      },
+      {
+        "grid": "Z53",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 150.23027627362768,
+        "absoluteError": "3.0650615131868142034351063333798395e-14",
+        "scaledError": "3.0650615131868142034351063333798395e-14"
+      },
+      {
+        "grid": "Z59",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 161.01454942187698,
+        "absoluteError": "9.3928837918583542946249358043719301e-14",
+        "scaledError": "9.3928837918583542946249358043719301e-14"
+      },
+      {
+        "grid": "Z59",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 161.36571999043883,
+        "absoluteError": "3.8998077388387817591162279358058122e-14",
+        "scaledError": "3.8998077388387817591162279358058122e-14"
+      },
+      {
+        "grid": "Z61",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 165.36265447218136,
+        "absoluteError": "4.4875175230938833736963140385632074e-14",
+        "scaledError": "4.4875175230938833736963140385632074e-14"
+      },
+      {
+        "grid": "Z61",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 165.71382504074322,
+        "absoluteError": "3.217078276507431309603690692326324e-14",
+        "scaledError": "3.217078276507431309603690692326324e-14"
+      },
+      {
+        "grid": "Z67",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 176.26701958199138,
+        "absoluteError": "9.6834079351651033529700232296855474e-14",
+        "scaledError": "9.6834079351651033529700232296855474e-14"
+      },
+      {
+        "grid": "Z67",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 176.61819015055323,
+        "absoluteError": "6.2793099157778440160323203229827842e-14",
+        "scaledError": "6.2793099157778440160323203229827842e-14"
+      },
+      {
+        "grid": "Z71",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 184.70005313266844,
+        "absoluteError": "4.0147903870676145475950079330515805e-14",
+        "scaledError": "4.0147903870676145475950079330515805e-14"
+      },
+      {
+        "grid": "Z71",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 185.0512237012303,
+        "absoluteError": "1.6002711588686867816469947347398404e-14",
+        "scaledError": "1.6002711588686867816469947347398404e-14"
+      },
+      {
+        "grid": "Z73",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 187.0545078677828,
+        "absoluteError": "5.2459179395097314903136879324716579e-14",
+        "scaledError": "5.2459179395097314903136879324716579e-14"
+      },
+      {
+        "grid": "Z73",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 187.40567843634466,
+        "absoluteError": "7.932548010864162320184895525506175e-14",
+        "scaledError": "7.932548010864162320184895525506175e-14"
+      },
+      {
+        "grid": "Z79",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 197.84089496053286,
+        "absoluteError": "6.4023852430057554766678626344356737e-14",
+        "scaledError": "6.4023852430057554766678626344356737e-14"
+      },
+      {
+        "grid": "Z79",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 198.19206552909472,
+        "absoluteError": "1.2604575658270117309571832323137384e-14",
+        "scaledError": "1.2604575658270117309571832323137384e-14"
+      },
+      {
+        "grid": "Z83",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 205.22028248644423,
+        "absoluteError": "5.1923134120560745649880578523517182e-14",
+        "scaledError": "5.1923134120560745649880578523517182e-14"
+      },
+      {
+        "grid": "Z83",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 205.5714530550061,
+        "absoluteError": "5.691935407036986695001950641839266e-15",
+        "scaledError": "5.691935407036986695001950641839266e-15"
+      },
+      {
+        "grid": "Z89",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 215.99512379254466,
+        "absoluteError": "5.6467337152146099262411537447221093e-14",
+        "scaledError": "5.6467337152146099262411537447221093e-14"
+      },
+      {
+        "grid": "Z89",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 216.34629436110652,
+        "absoluteError": "2.6717853115998967586546127626947646e-14",
+        "scaledError": "2.6717853115998967586546127626947646e-14"
+      },
+      {
+        "grid": "Z97",
+        "x": 106,
+        "y": 75,
+        "byteOffset": 385696,
+        "sigma": 0.5661442006269592,
+        "t": 231.0757739847801,
+        "absoluteError": "8.9061506193026093147552370727865121e-14",
+        "scaledError": "8.9061506193026093147552370727865121e-14"
+      },
+      {
+        "grid": "Z97",
+        "x": 213,
+        "y": 225,
+        "byteOffset": 1155408,
+        "sigma": 0.7338557993730408,
+        "t": 231.42694455334197,
+        "absoluteError": "4.4236365924952849373307489868392459e-14",
+        "scaledError": "4.4236365924952849373307489868392459e-14"
+      }
+    ]
+  },
+  "inputs": [
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\zero_index_analysis.py",
+      "sha256": "5f5e9dd4f7391bc127bcb45d279555e89c603118ad7b15358fb9bad34f6203a4"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\proof-notes.md",
+      "sha256": "9522c0b886c039bc2c51e8227dc9a6870e092c12e04de0d30185891fc49a9153"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\verify_math_and_grids.py",
+      "sha256": "2980bc0e17e9cdaeed5f174fcbd7c0fa070b2f2774bd5f4bbc5490c2954f198a"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\evidence\\zero-index.json",
+      "sha256": "c8710419108605bb58a8e4c25ae2a3f0376793e354eb3a2e064e24ad083200d2"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\evidence\\paths.json",
+      "sha256": "53f6dc4a477bc5cd7796ac0b4e06b3bde74f9717073d7ee0c180e8ecc2afe534"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-continuation\\evidence\\reference-trajectories.json",
+      "sha256": "ec5fc8f06b90c6f79d094f3fa9d1a8053103b3a7fc34e78ff1264158ebde253e"
+    },
+    {
+      "path": "C:\\src\\graph\\Graphics\\ZetaZeroIndexExperiment.cs",
+      "sha256": "e6d61aa21c267858d173765d7f98d5ee83d75e5dc809e5b84e10a1645862324d"
+    },
+    {
+      "path": "C:\\src\\graph\\Graphics\\ZetaSwitchExperiment.cs",
+      "sha256": "2a2ffbee95ca4f7a6c6c4e3b9658eb62dc3aaaf44a6b4603959111490f6c3f75"
+    },
+    {
+      "path": "C:\\src\\graph\\Graphics\\Program.cs",
+      "sha256": "d9f7d7f042b2bdb78a83642df218ca834d5066bd2457e7ca479b7cb168238e07"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\grids.json",
+      "sha256": "67f1f96bae93617b39284ed71ac795a2bc31b9b04acd812e8093355d52e4af72"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\bin\\Graphics.exe",
+      "sha256": "c929ad7d3d3be2450d411baae91d4dc1f926b0ba3a0f8b55f6f666d73f1d49a4"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\bin\\Graphics.dll",
+      "sha256": "7c27f6499db8e510e8c071581e528ff6457c3319047c60228d562f471b7e1eb4"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\bin\\Graphics.runtimeconfig.json",
+      "sha256": "4c0cb85109ab4197bae60ba53d9a703f79b151540dbd5b1eec71aabc141fe4ca"
+    }
+  ],
+  "grids": [
+    {
+      "grid": "intro",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\intro.f64le",
+      "binarySha256": "f27d45d0402073f5abb2fc6ff7179e008ba5a1d375aca7c5963a62444bbd98e2",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\intro-a0.png",
+      "textureSha256": "6aba19170c1064cad0e5dbe2c4e87a1ac09d3fd50723076cf4253f0fe1588408",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\intro.grid.json",
+      "metadataSha256": "1a33921c86e5beb85fec03b92e9fb65fac7025a7e85467d25f5506e29fdbc535"
+    },
+    {
+      "grid": "Z1",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z1.f64le",
+      "binarySha256": "f299aa55d1a4cb5d1dcccf8a26e3d191c97245ba8041cdae89f3a2e2f54a3689",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z1-a0.png",
+      "textureSha256": "2afa1082c894077add0aed601c8c5e09fe15f0992d354259d10a1d258ceddf7d",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z1.grid.json",
+      "metadataSha256": "99614d4758c20b842545999f0ce3d0529deb5fd2eef0d520532990b605ffc843"
+    },
+    {
+      "grid": "Z2",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z2.f64le",
+      "binarySha256": "a30da1df3cf11262d6ce047fff3093017cca6e442cb0f82f9678cc20d372a58a",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z2-a0.png",
+      "textureSha256": "673a4f121772a005cea7e45ccfbebf279e01739eea47c65881dcbed62f8adbbb",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z2.grid.json",
+      "metadataSha256": "73f297936ed2f894c1c4077f4ceba1f72cba695766dfdc62e30c12d9f278daa6"
+    },
+    {
+      "grid": "Z3",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z3.f64le",
+      "binarySha256": "986fa42d6d9d5739566bb6acf0d60f909da669897753b8f9bac750961c3caf67",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z3-a0.png",
+      "textureSha256": "17e402300bbacb9a9ba781b2d2531ccdc41c0a908d5d4b03cf5d04e3b444d6c2",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z3.grid.json",
+      "metadataSha256": "8444ff849fd704f2f9434bdf20e642ecceab2d5589e0f243177bb6f9d272636c"
+    },
+    {
+      "grid": "Z4",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z4.f64le",
+      "binarySha256": "4977412cee948ecd5029ab2373c0e2acc619bcff1f607a000b7a8b3a26847c36",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z4-a0.png",
+      "textureSha256": "0336113aedd28f54353375c626d0d4408d65bc87aacd2cb8abfe8c00a595933d",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z4.grid.json",
+      "metadataSha256": "92d9a8ec17b892072e9679c3583507acadd144f4bda1637d241eee397e90b934"
+    },
+    {
+      "grid": "Z5",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z5.f64le",
+      "binarySha256": "362b528a65225f13b2c213b64a703ec3062d04e724aab3c0136de4daf327bba5",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z5-a0.png",
+      "textureSha256": "69bdd757c898e69b20988a2535bb547c55653e7a3fdd181f811568d767bb8e27",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z5.grid.json",
+      "metadataSha256": "b9feb2207d2da8e0a4f602a96262a701c5c8334809e826a133931284590bed7a"
+    },
+    {
+      "grid": "Z6",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z6.f64le",
+      "binarySha256": "e82e597083b2d99a47e894769adc71385227c3ec45761378bca391a81ab06a9a",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z6-a0.png",
+      "textureSha256": "92a34df21b4e492eb427d531d7512ca95c999fe8b2997e9f66330c3013c25fdf",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z6.grid.json",
+      "metadataSha256": "5e42f3879209be8de4339570e00336c1d1d8d009265e621b3f77446c2e3b4339"
+    },
+    {
+      "grid": "Z7",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z7.f64le",
+      "binarySha256": "ca314ac3b45cce1b8e933b3e2e89b9f011b7dc57dd97e288ebe5f1d125a7d36a",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z7-a0.png",
+      "textureSha256": "a3576cdec465de131c934524f4a1b4e2878934692db35d6bd3d97c4ec43d57a7",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z7.grid.json",
+      "metadataSha256": "b835bed9cf727ec3e1045e91629a0f1cb35c4ce500b1412982dc8bc3f6cce300"
+    },
+    {
+      "grid": "Z8",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z8.f64le",
+      "binarySha256": "185d4010e08844f1076d036669d35ae0d9da04c6f1f8a3a0ae76691551038965",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z8-a0.png",
+      "textureSha256": "e5a4fc17aeb7c7bcd1719bff865e8176d68b264c67e49d2267c0a0046854687c",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z8.grid.json",
+      "metadataSha256": "deed0c071419a82518efa568a234e237006dd648771354a54d5fa68499ba7541"
+    },
+    {
+      "grid": "Z9",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z9.f64le",
+      "binarySha256": "382620f2e760a75b01d53bedb986aae2f27a6a1c3df6cc5e4865b6286b7e08ef",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z9-a0.png",
+      "textureSha256": "79a80ca2384e4f0410a10f7303e22d902f89f9cb34e4be63a7a3e5c67fb7bea7",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z9.grid.json",
+      "metadataSha256": "4dd07c3cde716a238758ef2e89a27a5a923d14ade76071d01dcfbc18bc74884e"
+    },
+    {
+      "grid": "Z10",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z10.f64le",
+      "binarySha256": "e2d75cee88b67305c673e327bb47ad2cdfd09de1ff628cca71051f615e80f9fc",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z10-a0.png",
+      "textureSha256": "2b129c678e497fb1d5c6b23b5c3db224f80a1e03cb6a36231fb88377f1fafe1a",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z10.grid.json",
+      "metadataSha256": "cb94e5f49b3f3fa8c707ccd932762d56278ad9f032c25161b2d3f69901f559da"
+    },
+    {
+      "grid": "Z11",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z11.f64le",
+      "binarySha256": "c4a79b0fa3f63c3fb5e0e11a46647a3f44faec21d4b8c8bb34f4895064f36732",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z11-a0.png",
+      "textureSha256": "703ee5cf51a3be17f15a9113ae874fee0bf89c9bb44576a1371b107facc55556",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z11.grid.json",
+      "metadataSha256": "d82ac4abc1e42bc7681cd0e1d11ecd7d9880fb48170466947b38cc65051141ea"
+    },
+    {
+      "grid": "Z13",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z13.f64le",
+      "binarySha256": "c66615570ed23468d3e76ddf7a6d8a63d7cc788687f6bacf92243e20da65d2ca",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z13-a0.png",
+      "textureSha256": "866385499d16434a9bd118adb14b8e444b635a2de20258b2fe82795ceff4d61f",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z13.grid.json",
+      "metadataSha256": "13440fca7e34663029d551adbc9bfa55a0aaf8ed2d91624b6a03c7c738b57fed"
+    },
+    {
+      "grid": "Z17",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z17.f64le",
+      "binarySha256": "6a85a35fd5ee3c7c8263e41e636e7d5451acdfbdcc1e847aab0e16676271f0a3",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z17-a0.png",
+      "textureSha256": "4dbb9a2d20b137e95c7be29ba2b2b0b00c8909a461410a54e0d63d41bacd9568",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z17.grid.json",
+      "metadataSha256": "0aa67966097f8394d31c8625d352e0b9eb88bbbb4a7ae44e9eeeb442fecc47fc"
+    },
+    {
+      "grid": "Z19",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z19.f64le",
+      "binarySha256": "2a5c0963c265944b89a11dc61ccbbe9bdb12af5c538e7b1d33366579a16ed5a0",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z19-a0.png",
+      "textureSha256": "cf9222398d5d2b48b016e2078cac9300be0281bcf5bdb3fa8f100d64e321899a",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z19.grid.json",
+      "metadataSha256": "936817c4687d5e86702a4d84077162d10c24f35cfe50f56719f03fa56f5c2e14"
+    },
+    {
+      "grid": "Z23",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z23.f64le",
+      "binarySha256": "494620e7c3d9dc962bc2cf857c70d985e1c97af1eb59ea3d255cb7519caf9de2",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z23-a0.png",
+      "textureSha256": "4f978d789e81ad41968a68e6f004dc6f3dacdc9d3d6ba8102be4719d41c22efb",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z23.grid.json",
+      "metadataSha256": "bd2f6de8ac4a0e1c58370b9529ee4783d2dcae3cf941fc5b7dcc1d6999b68961"
+    },
+    {
+      "grid": "Z29",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z29.f64le",
+      "binarySha256": "cf5537c1655d03ea986707919788b3e1ad1827f2e66dc40ee16814d667f55d4a",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z29-a0.png",
+      "textureSha256": "24e1a2bd2702cd28c52d8b1bac4b2879bbda3f4d13f074f67882f24169660e78",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z29.grid.json",
+      "metadataSha256": "5c4daade0f983e47d2b4fa34202e71cc62720c4314a238df6bb5508c3595c72c"
+    },
+    {
+      "grid": "Z31",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z31.f64le",
+      "binarySha256": "9c8fbf7fda23aa8e954080195edc5b4cfa9f5cbde710e9e9f81da37b82239ecf",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z31-a0.png",
+      "textureSha256": "36e2ca1609e52a6d0b3fc3889fa6d33102e9ea3b4bbbf13a3b994a2312eba241",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z31.grid.json",
+      "metadataSha256": "7a2807204d15ac8bc51af7a82e6348b8a32b44f7690d3b8b95a37438cd0441cb"
+    },
+    {
+      "grid": "Z37",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z37.f64le",
+      "binarySha256": "a11f473df5f7c66ebbc132dfec47a359faed8677fc0ec4aaee6fed245026b68f",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z37-a0.png",
+      "textureSha256": "d65e89d9dcec75e0b9ee56a73367c89188424ca578e26ce9350b4bb3b5505d80",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z37.grid.json",
+      "metadataSha256": "a56e2628d6e7ff0f1dc2d426ae227e32732a4ad5f828ea658bd7b983a995824d"
+    },
+    {
+      "grid": "Z41",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z41.f64le",
+      "binarySha256": "08a2c2245126d21c4abad251ff06c20315e23b32a418a0503e29817d0201809f",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z41-a0.png",
+      "textureSha256": "c5e67a2ba075bcc881456030624ff3d9c89b3d6091315888c0c08e54462ecbca",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z41.grid.json",
+      "metadataSha256": "a6d159d61ade11fef3eea9c87303f82494e7d2762a012553eff4305ba3f2cfc2"
+    },
+    {
+      "grid": "Z43",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z43.f64le",
+      "binarySha256": "e1113398b58c7c5ae513360a92a137cbd418720252b1a2383fd1801dfeee81cb",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z43-a0.png",
+      "textureSha256": "0b3ce374a12f4cd600b86ec9f9bbc28e4cfc0feb81e89bc502343bd72fb3ce9f",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z43.grid.json",
+      "metadataSha256": "3f69626df853009f571041f80dd91e4c97172457e3b5c399cb12538d2ebcad24"
+    },
+    {
+      "grid": "Z47",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z47.f64le",
+      "binarySha256": "f06671311a0b77d029439dd1991a03f70db87704427bd3d804fb292631e4907f",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z47-a0.png",
+      "textureSha256": "cfec48082e2e75865e787cbdec28fb021a03a378080666a0eb1a25a9ad0ea66d",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z47.grid.json",
+      "metadataSha256": "2ff862a4859f3d22c0013369b8ef9340f1108e01a534012cb68ed5dd1cb1dcc3"
+    },
+    {
+      "grid": "Z53",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z53.f64le",
+      "binarySha256": "88ba56c2d51cf9ac942641b7ddfec188a18956e948bc8d597f912c399afd22a8",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z53-a0.png",
+      "textureSha256": "eb03262a43f500f782892895724628c3581b1d0f8436deeb6761fb88da6d9365",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z53.grid.json",
+      "metadataSha256": "6950b9e347465f660aaa6a9cd1c9c952c39e5567de5807d847d243a7359db010"
+    },
+    {
+      "grid": "Z59",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z59.f64le",
+      "binarySha256": "5447d844ce6f490b8ce45b568173c7cbaeb448de1f0b64ad9f94fdc929e50ee2",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z59-a0.png",
+      "textureSha256": "4a51b76daa3c248fc9d2036cdd6ba86ab317804f89126b70a6ffafc048a926da",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z59.grid.json",
+      "metadataSha256": "984b14bc119a519d7434b4e385e0d4961709fcefc9497d0d01feca03e4670409"
+    },
+    {
+      "grid": "Z61",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z61.f64le",
+      "binarySha256": "6f148fef19acfa1985f38113401b4e9feeebb318c47e0c84e778389d1e64844a",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z61-a0.png",
+      "textureSha256": "4bea43af0e1a01d2e07efda2b3952bc84006e92b5886b65d7c50be16561cd64a",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z61.grid.json",
+      "metadataSha256": "1864d60c2485f588e0a46bccda38313ae363d6f3b7e42b6c0ac46402d179ba93"
+    },
+    {
+      "grid": "Z67",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z67.f64le",
+      "binarySha256": "e2a1fbfbc68f1d0224a1d2406b31399bd51c6667699d32a4153075e3c10cf50f",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z67-a0.png",
+      "textureSha256": "d4b569c6015ecbaedfbf99a17da49e60eb2baa7314a65b8219001630ddbf3279",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z67.grid.json",
+      "metadataSha256": "1a1904572054137dbd86f2cf76569b5758f0429b4894bf40238a2d10e01af722"
+    },
+    {
+      "grid": "Z71",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z71.f64le",
+      "binarySha256": "f019d4c3663435143ddd12c35a6401db0f949717b23e0a6cd4e4a8f5b6f378aa",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z71-a0.png",
+      "textureSha256": "2f4d1b4fd60119b5a3c50ebc1eafde86c19aecd9affc8b19b8a004b0a85e684e",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z71.grid.json",
+      "metadataSha256": "160e78a2457fdd9b42b5239230d7ec9bde4fdb1b952957d8f877636b37269351"
+    },
+    {
+      "grid": "Z73",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z73.f64le",
+      "binarySha256": "06da32a78fd2d00cead0ca4d3eee5ea3726afd2cdb3c533e16759e49d5567c40",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z73-a0.png",
+      "textureSha256": "9ffcd34e44faa95bc5f687ffd7b766da2a18e81a0121c49b3b57bdb4152bc1d0",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z73.grid.json",
+      "metadataSha256": "3d0264803800fad558e5b99cfe8d84f9d115041c4af25b8b96b070a289348095"
+    },
+    {
+      "grid": "Z79",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z79.f64le",
+      "binarySha256": "feb7cbd34b6a9e4483d4b04a0afff8677b03b3f4e52b472bce2014660d81b47f",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z79-a0.png",
+      "textureSha256": "4439d6ba3ca084f0898ca9c36317a291acf107b76680dc93f5b663afb0454196",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z79.grid.json",
+      "metadataSha256": "302df0b7e1a3ef06432b2521b5a72ed976023b05bba5aa3a77014dfb81e2b1c3"
+    },
+    {
+      "grid": "Z83",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z83.f64le",
+      "binarySha256": "5dfc86334fbed2cc74da14f7d64d72b05c35071abe1ccd20929e7b9ab319917c",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z83-a0.png",
+      "textureSha256": "8de5eeb5d30b4c5d968e32f9e97c52c7ad1dfca4cc09c44ae21777f7adcfaff1",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z83.grid.json",
+      "metadataSha256": "c2a4e5fb8a64a568f60726a1c028830166df1b7932837da206ef00577a9f7d66"
+    },
+    {
+      "grid": "Z89",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z89.f64le",
+      "binarySha256": "1e213c9c57fccf226f775fb1c95f731f8939c7bd622dfa439d298e1117751d36",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z89-a0.png",
+      "textureSha256": "043d7af14edaff02b6daa86623d527db43278cf3284d5ab0013179182911c3bb",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z89.grid.json",
+      "metadataSha256": "85d177dfca62fc2aa093c16608aa246358daa5a3e30ad5e88aa1232acfc44951"
+    },
+    {
+      "grid": "Z97",
+      "binary": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z97.f64le",
+      "binarySha256": "dab9c3e9383784b2053631ce9337acecc70687655f365bd5cab3f9566a40810d",
+      "texture": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z97-a0.png",
+      "textureSha256": "7e16f1fe0812893f815e67cf0c6d9dbd6e02b3fadc439f2ea4d5d26076a546d9",
+      "metadata": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\Z97.grid.json",
+      "metadataSha256": "1ccfe157f1f072bc7c27729edde523edf1c3e490d35178456d480fd221dbfd10"
+    }
+  ],
+  "elapsedSeconds": 17.00117699999828,
+  "limitations": [
+    "Finite numerical comparisons, not interval bounds, a certified branch tube, or an RH proof.",
+    "The label prime describes the zero ordinal j; it does not classify the noninteger zero height.",
+    "The a=0 seeds lie at sigma=0.5; paths at positive a are zeros of zeta(s)-a, not counterexamples to RH.",
+    "Saved coordinates have 48 significant digits; their recomputed residuals need not equal the producer residuals at 50 digits.",
+    "Every binary node is scanned for finiteness. Layout metadata, lengths, and selected coordinates are checked; high-precision accuracy is checked at 224 points, not every grid node.",
+    "192/256agreement does not constitute an error enclosure. Colors near zeros or axes remain sensitive.",
+    "PNG dimensions/hashes and declared orientation are checked; this review does not verify every rendered pixel or movie frame."
+  ]
+}

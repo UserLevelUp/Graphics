@@ -1,0 +1,307 @@
+{
+  "traceId": "graph.riemann.zero_index.animation",
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "durationSeconds": 84.0,
+  "frames": 2016,
+  "primeIndices": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47,
+    53,
+    59,
+    61,
+    67,
+    71,
+    73,
+    79,
+    83,
+    89,
+    97
+  ],
+  "controlIndices": [
+    1,
+    4,
+    6,
+    8,
+    9,
+    10
+  ],
+  "scenes": [
+    {
+      "kind": "intro",
+      "seconds": 12,
+      "index": null,
+      "startFrame": 0,
+      "endFrameExclusive": 288
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 2,
+      "startFrame": 288,
+      "endFrameExclusive": 336
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 3,
+      "startFrame": 336,
+      "endFrameExclusive": 384
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 5,
+      "startFrame": 384,
+      "endFrameExclusive": 432
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 7,
+      "startFrame": 432,
+      "endFrameExclusive": 480
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 11,
+      "startFrame": 480,
+      "endFrameExclusive": 528
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 13,
+      "startFrame": 528,
+      "endFrameExclusive": 576
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 17,
+      "startFrame": 576,
+      "endFrameExclusive": 624
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 19,
+      "startFrame": 624,
+      "endFrameExclusive": 672
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 23,
+      "startFrame": 672,
+      "endFrameExclusive": 720
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 29,
+      "startFrame": 720,
+      "endFrameExclusive": 768
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 31,
+      "startFrame": 768,
+      "endFrameExclusive": 816
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 37,
+      "startFrame": 816,
+      "endFrameExclusive": 864
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 41,
+      "startFrame": 864,
+      "endFrameExclusive": 912
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 43,
+      "startFrame": 912,
+      "endFrameExclusive": 960
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 47,
+      "startFrame": 960,
+      "endFrameExclusive": 1008
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 53,
+      "startFrame": 1008,
+      "endFrameExclusive": 1056
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 59,
+      "startFrame": 1056,
+      "endFrameExclusive": 1104
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 61,
+      "startFrame": 1104,
+      "endFrameExclusive": 1152
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 67,
+      "startFrame": 1152,
+      "endFrameExclusive": 1200
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 71,
+      "startFrame": 1200,
+      "endFrameExclusive": 1248
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 73,
+      "startFrame": 1248,
+      "endFrameExclusive": 1296
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 79,
+      "startFrame": 1296,
+      "endFrameExclusive": 1344
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 83,
+      "startFrame": 1344,
+      "endFrameExclusive": 1392
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 89,
+      "startFrame": 1392,
+      "endFrameExclusive": 1440
+    },
+    {
+      "kind": "prime",
+      "seconds": 2,
+      "index": 97,
+      "startFrame": 1440,
+      "endFrameExclusive": 1488
+    },
+    {
+      "kind": "control",
+      "seconds": 2,
+      "index": 1,
+      "startFrame": 1488,
+      "endFrameExclusive": 1536
+    },
+    {
+      "kind": "control",
+      "seconds": 2,
+      "index": 4,
+      "startFrame": 1536,
+      "endFrameExclusive": 1584
+    },
+    {
+      "kind": "control",
+      "seconds": 2,
+      "index": 6,
+      "startFrame": 1584,
+      "endFrameExclusive": 1632
+    },
+    {
+      "kind": "control",
+      "seconds": 2,
+      "index": 8,
+      "startFrame": 1632,
+      "endFrameExclusive": 1680
+    },
+    {
+      "kind": "control",
+      "seconds": 2,
+      "index": 9,
+      "startFrame": 1680,
+      "endFrameExclusive": 1728
+    },
+    {
+      "kind": "control",
+      "seconds": 2,
+      "index": 10,
+      "startFrame": 1728,
+      "endFrameExclusive": 1776
+    },
+    {
+      "kind": "summary",
+      "seconds": 10,
+      "index": null,
+      "startFrame": 1776,
+      "endFrameExclusive": 2016
+    }
+  ],
+  "audio": "Silent; explanations and labels appear on screen.",
+  "meaning": "Z_j is zero index j. Prime-index selection tests the screenshot interpretation; curves are not individual primes.",
+  "interpolation": "Linear display interpolation between checked solution samples. Background uses the current target a.",
+  "neutralThreshold": 1e-10,
+  "inputs": [
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\animate.py",
+      "sha256": "df4c9cc22febe0ac7d1078008b2540759961543ef9e6b0a794e81c90edf5bbda"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\evidence\\zero-index.json",
+      "sha256": "c8710419108605bb58a8e4c25ae2a3f0376793e354eb3a2e064e24ad083200d2"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-zero-index\\evidence\\paths.json",
+      "sha256": "53f6dc4a477bc5cd7796ac0b4e06b3bde74f9717073d7ee0c180e8ecc2afe534"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\zeta-continuation\\evidence\\native\\a1.values.json",
+      "sha256": "ae43b73200f6a7174bea749d09da701b135fc942f2adc76b1e255370a0c58234"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\work\\zeta-zero-index\\grids\\grids.json",
+      "sha256": "67f1f96bae93617b39284ed71ac795a2bc31b9b04acd812e8093355d52e4af72"
+    }
+  ],
+  "video": {
+    "path": "zero-index-slope-tour.mp4",
+    "sha256": "2958432a4c6e9ea88c7326e8f27465a227e9e14334d91170e7315d07ef8d7e4c",
+    "bytes": 1733080
+  }
+}

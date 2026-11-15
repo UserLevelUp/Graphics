@@ -1,0 +1,130 @@
+{
+  "blocked": [],
+  "bubble_uuid": "01a1e139-ae46-7d3a-837a-479ea3b569c2",
+  "completed_slices": [
+    "analysis",
+    "visualization"
+  ],
+  "conflicts": [],
+  "contract_status": "declared-gates-satisfied",
+  "counts": {
+    "blocked": 0,
+    "conflicting": 0,
+    "covered": 2,
+    "pending": 0,
+    "required": 2,
+    "stale_contract": 0
+  },
+  "covered": [
+    "analysis",
+    "visualization"
+  ],
+  "current_slice": null,
+  "evidence_status": "declared",
+  "gate_evidence": [
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/acceptance.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/review.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/validation.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "analysis",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/acceptance.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/explorer-validation.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/review.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/visualization.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "visualization",
+      "status": "declared"
+    }
+  ],
+  "goal": "Analyze divisor-phase quadrants and half-step prime-to-prime relationships on0..100 with odd-composite controls",
+  "layers": [
+    "analysis@analysis-reviewed-20261115",
+    "visualization@static-visuals-reviewed-20261115"
+  ],
+  "manifest": "graph.primes.divisor_phases.warp-map.json",
+  "pending": [],
+  "ready_slices": [],
+  "root": "\\\\?\\C:\\src\\graph\\research\\prime-divisor-phases\\warps",
+  "schema": "warp-progress-v1",
+  "slices": [
+    {
+      "contract_hash": "contract:graph.primes.divisor_phases.analysis:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "analysis",
+      "slice_uuid": "01a1e139-ae46-7438-898f-d7d264fa2304",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.primes.divisor_phases.visualization:v1",
+      "depends_on": [
+        "analysis"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "visualization",
+      "slice_uuid": "01a1e139-ae46-776b-ac4e-ba87f46f1c57",
+      "state": "complete"
+    }
+  ],
+  "stale_contract": [],
+  "state": "complete",
+  "warnings": [],
+  "warp_id": "graph.primes.divisor_phases"
+}

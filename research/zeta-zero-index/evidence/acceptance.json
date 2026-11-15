@@ -1,0 +1,70 @@
+{
+  "schema": "graph-zeta-zero-index-acceptance-v1",
+  "traceId": "graph.riemann.zero_index.acceptance",
+  "status": "accepted",
+  "reviewedAtUtc": "2026-11-15T22:29:42.945627+00:00",
+  "scope": "Numerical zero-index slope comparison, native backgrounds, independent source/PNG review, and encoded 84-second movie.",
+  "result": "Slope sign does not distinguish prime from composite zero indices among indices 1..100.",
+  "evidence": [
+    {
+      "path": "evidence/independent-math-grid-review.json",
+      "sha256": "2ced5d1e1f65e4204ccbbd1a1704cf38a1c0799d9d10d66bdeb9749f0b969c3f"
+    },
+    {
+      "path": "evidence/independent-visual-review.json",
+      "sha256": "80b8b86b178b08c3dc6bf8333a58cbdb1a675100ef97028a7ff3859fb8c42000"
+    },
+    {
+      "path": "evidence/media-review.json",
+      "sha256": "ed82e8baa8776a8e59c192b17ef06589acec9dc92fbb75767be167e4b924ef52"
+    },
+    {
+      "path": "evidence/zero-index.json",
+      "sha256": "c8710419108605bb58a8e4c25ae2a3f0376793e354eb3a2e064e24ad083200d2"
+    },
+    {
+      "path": "evidence/paths.json",
+      "sha256": "53f6dc4a477bc5cd7796ac0b4e06b3bde74f9717073d7ee0c180e8ecc2afe534"
+    },
+    {
+      "path": "evidence/animation.json",
+      "sha256": "63bf59f44d3d0d28703196ea78f4b44532e8830bf7820dc9e4af574a820cd41f"
+    },
+    {
+      "path": "evidence/native-grids.json",
+      "sha256": "67f1f96bae93617b39284ed71ac795a2bc31b9b04acd812e8093355d52e4af72"
+    },
+    {
+      "path": "evidence/build.txt",
+      "sha256": "f9cfc16cb800bf77b47b0484f5a1f88138a0dde68a6c30cc9823027d9666f0ab"
+    },
+    {
+      "path": "animate.py",
+      "sha256": "df4c9cc22febe0ac7d1078008b2540759961543ef9e6b0a794e81c90edf5bbda"
+    },
+    {
+      "path": "README.md",
+      "sha256": "0e32820d048bddd64235d1275b55001f43d41ca52f8cfca6e3b04468b46e2b4c"
+    },
+    {
+      "path": "proof-notes.md",
+      "sha256": "9522c0b886c039bc2c51e8227dc9a6870e092c12e04de0d30185891fc49a9153"
+    },
+    {
+      "path": "media/zero-index-slope-tour.mp4",
+      "sha256": "2958432a4c6e9ea88c7326e8f27465a227e9e14334d91170e7315d07ef8d7e4c"
+    }
+  ],
+  "preservedPresentation": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\presentation-with-finite-proof.mp4",
+    "sha256": "4dbd34ae6816c32301c017fd386202fa5e93c4e65cf5a8a225edceef3402e12e"
+  },
+  "limitations": [
+    "The loop labels are zero indices, not individual prime values.",
+    "All starting zeros were chosen on the critical line; this is not an RH proof.",
+    "Finite high-precision comparisons are not rigorous interval enclosures.",
+    "Dots interpolate saved roots; the intermediate interpolants are not separately solved roots.",
+    "Native background accuracy is sampled; near-zero phase colors are unstable and masked in the movie.",
+    "Silent onscreen presentation; no voiceover."
+  ]
+}
