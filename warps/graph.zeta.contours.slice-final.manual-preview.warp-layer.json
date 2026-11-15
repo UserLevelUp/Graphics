@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.zeta.contours",
+  "slice_id": "slice-final",
+  "contract_hash": "contract:graph.zeta.contours.slice-final:v1",
+  "attempt_id": "manual-preview",
+  "result_state": "accepted",
+  "result_hash": "sha256:782450deb4d718d2049be646c9e444efe54adbabc9a0cce59f00729b6ec6447b",
+  "evidence": {
+    "acceptance": [
+      "warps/graph.zeta.contours.results.complete.md"
+    ]
+  },
+  "reason": null
+}

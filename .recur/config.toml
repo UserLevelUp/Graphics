@@ -1,0 +1,68 @@
+# Warp output alternatives: docs/warps or .recur/warps
+[warp]
+
+[warp.creation]
+directory = "warps"
+template = ".recur/warp-template.json"
+
+[warp.removal]
+require_confirmation = true
+require_committed_snapshot = true
+require_preservation_ref = true
+require_pushed_ref = false
+
+[warp.intelligence]
+default_tick = 0
+baseline = "host-current"
+
+[warp.dispatch]
+enabled = false
+default_host = "codex"
+max_parallel = 2
+timeout_seconds = 900
+max_attempts = 3
+failure_threshold = 2
+easy_success_threshold = 3
+easy_seconds = 30
+[warp.dispatch.retry]
+delay_seconds = 5
+max_delay_seconds = 60
+auth_required_markers = ["AUTH_REQUIRED", "UNAUTHENTICATED", "LOGIN_REQUIRED", "INVALID_GRANT", "Please set an Auth method"]
+provider_blocked_markers = ["UNSUPPORTED_CLIENT", "MODEL_NOT_FOUND", "UNSUPPORTED_MODEL"]
+transient_markers = ["RATE_LIMIT_EXCEEDED", "RESOURCE_EXHAUSTED", "SERVICE_UNAVAILABLE", "ECONNRESET", "ETIMEDOUT"]
+[warp.dispatch.hosts.codex]
+enabled = true
+program = "codex"
+args = ["exec", "--json", "--sandbox", "workspace-write", "-c", 'model_reasoning_effort="{reasoning}"', "-"]
+prompt_stdin = true
+reasoning_levels = ["low", "medium", "high", "xhigh", "max"]
+baseline_index = 1
+max_parallel = 2
+[warp.dispatch.hosts.copilot]
+enabled = true
+program = "copilot"
+args = ["--silent", "--reasoning-effort", "{reasoning}", "-p", "{prompt}"]
+prompt_stdin = false
+reasoning_levels = ["low", "medium", "high", "xhigh", "max"]
+baseline_index = 1
+max_parallel = 1
+[warp.dispatch.hosts.gemini]
+enabled = false
+program = "gemini"
+args = []
+prompt_stdin = true
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+[warp.dispatch.hosts.antigravity]
+enabled = false
+program = "antigravity"
+args = []
+prompt_stdin = true
+reasoning_levels = []
+baseline_index = 0
+max_parallel = 1
+
+[watch]
+[watch.dispatch]
+poll_seconds = 2

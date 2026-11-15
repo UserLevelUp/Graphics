@@ -1,0 +1,13 @@
+### graph-local-origins-2026-11-14
+- date: unix:1794716303
+- lane.state.docs.current: none
+- lane.state.src.current: none
+- lane.state.tests.passed: none
+- lane.state.tests.failed: none
+- lane.git.branch: graph/riemann-local-origins
+- lane.git.head: 692ba9f Merge pull request #22 from UserLevelUp/useQueueBasedApproach
+- lane.git.worktree: dirty=7
+- lane.separator.docs: .
+- lane.separator.src: .
+- evidence.docs.tree_cmd: recur tree "**" -d docs/ --sep .
+- evidence.src.tree_cmd: recur tree "**" -d src/ --sep .

@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann",
+  "slice_id": "slice-0",
+  "contract_hash": "contract:graph.riemann.slice-0:v1",
+  "attempt_id": "local-origins-v1",
+  "result_state": "accepted",
+  "result_hash": "sha256:c00223983bd6eb5a291ebbd3a9275ddeb3cb02c44a8a2444d6b2ab36342be141",
+  "evidence": {
+    "baseline": [
+      "warps/graph.riemann.baseline.complete.md"
+    ]
+  },
+  "reason": null
+}

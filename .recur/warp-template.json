@@ -1,0 +1,29 @@
+{
+  "current_slice": "slice-0",
+  "goal": "{goal}",
+  "invariants": [],
+  "required_slices": [
+    {
+      "contract_hash": "contract:{warp}.slice-0:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "baseline"
+      ],
+      "evidence_mode": "declared",
+      "slice_id": "slice-0"
+    },
+    {
+      "contract_hash": "contract:{warp}.slice-final:v1",
+      "depends_on": [
+        "slice-0"
+      ],
+      "evidence_gates": [
+        "acceptance"
+      ],
+      "evidence_mode": "declared",
+      "slice_id": "slice-final"
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "{warp}"
+}

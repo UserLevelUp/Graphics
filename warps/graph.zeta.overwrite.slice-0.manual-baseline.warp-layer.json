@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.zeta.overwrite",
+  "slice_id": "slice-0",
+  "contract_hash": "contract:graph.zeta.overwrite.slice-0:v1",
+  "attempt_id": "manual-baseline",
+  "result_state": "accepted",
+  "result_hash": "sha256:c78180509629d9ecea3433ed4e64003bdb90d27134739855a5bdae7183722207",
+  "evidence": {
+    "baseline": [
+      "warps/graph.zeta.overwrite.baseline.complete.md"
+    ]
+  },
+  "reason": null
+}

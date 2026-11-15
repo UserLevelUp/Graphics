@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.zeta.contours",
+  "slice_id": "slice-0",
+  "contract_hash": "contract:graph.zeta.contours.slice-0:v1",
+  "attempt_id": "manual-baseline",
+  "result_state": "accepted",
+  "result_hash": "sha256:adda24dae2e8c1aedc7a7280cc07890260db224858a3444e6129282a81a88151",
+  "evidence": {
+    "baseline": [
+      "warps/graph.zeta.contours.baseline.complete.md"
+    ]
+  },
+  "reason": null
+}

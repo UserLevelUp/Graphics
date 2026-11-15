@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.zeta.origins",
+  "slice_id": "slice-final",
+  "contract_hash": "contract:graph.zeta.origins.slice-final:v1",
+  "attempt_id": "local-origins-v1",
+  "result_state": "accepted",
+  "result_hash": "sha256:73abf7979746f158b7d1060d4b25de2f88ac4c10c9661c00c7972c3e18cdc8e1",
+  "evidence": {
+    "acceptance": [
+      "warps/graph.zeta.origins.results.complete.md"
+    ]
+  },
+  "reason": null
+}

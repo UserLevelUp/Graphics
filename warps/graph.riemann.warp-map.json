@@ -1,0 +1,38 @@
+{
+  "bubble_uuid": "01a1dd6c-34a2-7675-82d9-27f00274a9fb",
+  "current_slice": "slice-final",
+  "goal": "Prove the Riemann Hypothesis through global exclusion of zeta derivative zeros in the left half of the critical strip",
+  "intelligence_baseline": "host-current",
+  "invariants": [
+    "Global proof completion requires a valid all-heights mathematical argument.",
+    "Finite experiments are supporting observations with their stated numerical limits."
+  ],
+  "required_slices": [
+    {
+      "contract_hash": "contract:graph.riemann.slice-0:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "baseline"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "slice-0",
+      "slice_uuid": "01a1dd6c-34a2-759d-a5e9-e84fbcb4b22b"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.slice-final:v1",
+      "depends_on": [
+        "slice-0"
+      ],
+      "evidence_gates": [
+        "acceptance"
+      ],
+      "evidence_mode": "declared",
+      "intelligence_tick": 0,
+      "slice_id": "slice-final",
+      "slice_uuid": "01a1dd6c-34a2-776d-9026-bff9496a0fe4"
+    }
+  ],
+  "schema": "warp-bubble-map-v1",
+  "warp_id": "graph.riemann"
+}

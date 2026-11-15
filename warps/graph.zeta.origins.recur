@@ -1,0 +1,42 @@
+# defines: graph.zeta.origins.contract
+# consumer: graph.zeta.origins
+# Bindings identify existing C# methods. They are descriptive and are never executed by this file.
+# Numeric accuracy and the mathematical claim are outside the static check.
+
+recur 0.1 class LocalOrigins
+
+header {
+  scope sample {
+    i(a) := (centers_ref: Text, radii_ref: Text, evaluator_ref: Text)
+    o(b) := (counts_ref: Text, refinement_ref: Text)
+    f : i(a) -> o(b) ~ "Measure locally centered winding with refinement and reverse-orientation checks" by Graphics.ZetaOrigins.Winding
+  }
+  scope render {
+    i(b) := sample.o(b)
+    o(c) := (image_ref: Text, observations_ref: Text)
+    f : i(b) -> o(c) ~ "Present the checked samples and record numerical limitations" by Graphics.ZetaOrigins.Render
+  }
+}
+
+body {
+  sample sync : i(a) -> f(a) -> o(b)
+  render sync : i(b) -> f(b) -> o(c)
+  share sample.o(b) -> render.i(b)
+}
+
+footer {
+  event sample {
+    consume graph.zeta.origins
+    trigger graph.zeta.origins.samples.run
+    produce graph.zeta.origins.samples
+    state graph.zeta.origins.results.complete
+  }
+  warp sample : E0(graph.zeta.origins.samples.todo.current) -> dE(sample.f) -> Ef(graph.zeta.origins.results.complete)
+  event render {
+    consume graph.zeta.origins.samples
+    trigger graph.zeta.origins.render.run
+    produce graph.zeta.origins
+    state graph.zeta.origins.results.complete
+  }
+  warp render : E0(graph.zeta.origins.render.todo.current) -> dE(render.f) -> Ef(graph.zeta.origins.results.complete)
+}

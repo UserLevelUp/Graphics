@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +22,64 @@ namespace Graphics
         public GraphForm()
         {
             InitializeComponent();
+            int spacing = Math.Max(6, btnGraph.Height / 3);
+            var zetaButtons = new FlowLayoutPanel
+            {
+                AutoSize = true,
+                AutoSizeMode = AutoSizeMode.GrowAndShrink,
+                FlowDirection = FlowDirection.TopDown,
+                WrapContents = false,
+                Location = new Point(btnGraph.Left, txtZoom.Bottom + spacing)
+            };
+            var experiment = new Button
+            {
+                Text = "Zeta experiment",
+                AutoSize = true,
+                Margin = new Padding(0, 0, 0, spacing)
+            };
+            experiment.Click += (sender, args) => ShowZetaExperiment(0);
+            zetaButtons.Controls.Add(experiment);
+            var contours = new Button { Text = "Zeta contours", AutoSize = true, Margin = Padding.Empty };
+            contours.Click += (sender, args) => ShowZetaExperiment(1);
+            zetaButtons.Controls.Add(contours);
+            contours.Margin = new Padding(0, 0, 0, spacing);
+            var origins = new Button { Text = "Local origins", AutoSize = true, Margin = Padding.Empty };
+            origins.Click += (sender, args) => ShowZetaExperiment(2);
+            zetaButtons.Controls.Add(origins);
+            panel1.Controls.Add(zetaButtons);
+        }
+
+        private void ShowZetaExperiment(int mode)
+        {
+            using var preview = new Form
+            {
+                Text = mode == 2 ? "Local origins" : mode == 1 ? "Zeta contours" : "Zeta experiment",
+                StartPosition = FormStartPosition.CenterParent,
+                ClientSize = mode == 2 ? new Size(888, 448) : mode == 1 ? new Size(856, 448) : new Size(996, 370)
+            };
+            var picture = new PictureBox { Dock = DockStyle.Fill, SizeMode = PictureBoxSizeMode.Zoom };
+            preview.Controls.Add(picture);
+            preview.Shown += async (sender, args) =>
+            {
+                try
+                {
+                    using var image = await Task.Run(() => mode switch
+                    {
+                        2 => ZetaOrigins.Render(out _),
+                        1 => ZetaContours.Render(out _),
+                        _ => ZetaExperiment.Render(out _)
+                    });
+                    if (!preview.IsDisposed)
+                        picture.Image = new Bitmap(image);
+                }
+                catch (Exception error)
+                {
+                    if (!preview.IsDisposed)
+                        MessageBox.Show(preview, error.Message, "Zeta experiment");
+                }
+            };
+            preview.ShowDialog(this);
+            picture.Image?.Dispose();
         }
 
         private void Form1_Load(object sender, EventArgs e)
