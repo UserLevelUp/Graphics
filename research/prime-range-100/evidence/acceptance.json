@@ -1,0 +1,81 @@
+{
+  "traceId": "graph.primes.range100.acceptance",
+  "status": "accepted",
+  "acceptedAtUtc": "2026-11-15T12:27:41.424062+00:00",
+  "goal": "Publish an exact finite prime certificate and an honest model of phase-color zero counting in the continuing presentation.",
+  "durationSeconds": 320,
+  "frames": 7680,
+  "sourceCheckpoint": "a9b86965aef1b8d73fbb31e0133b9746df5ea387",
+  "provedClaims": [
+    "Exactly 25 primes, 74 composites, and 0/1 neither in the integer interval 0 through 100.",
+    "For f(z)=z, the positively oriented unit circle has nonzero boundary values and winding one, counting one simple interior zero."
+  ],
+  "checks": {
+    "integersCovered": 101,
+    "technicalPassed": 150,
+    "nativeReviewedStills": 7,
+    "sourceFilesSealed": 35,
+    "mediaFilesSealed": 385,
+    "priorAcceptedVideoAndProjectUnchanged": true
+  },
+  "evidence": [
+    {
+      "path": "evidence/delivery-manifest.json",
+      "sha256": "3a809a974f547a890b0611772cffcfce945485ebfc5fdb8afe7ee808217a528c"
+    },
+    {
+      "path": "evidence/validation.json",
+      "sha256": "e12be130f91a240bc13c814ceb1ad0ee5e943419d3dd6a8ac70bc964b5d71b5e"
+    },
+    {
+      "path": "evidence/review.json",
+      "sha256": "d600a1e8050a4360dbe51e2f87211ff3ebb14a6dea6fb4704866b1789dea2800"
+    },
+    {
+      "path": "evidence/content-review.json",
+      "sha256": "c48c369a89684c3b76c2354ace32b8b3e19c6908a9f715056523892a7650e3be"
+    },
+    {
+      "path": "evidence/media-qa.json",
+      "sha256": "efd239ee9860f2970764544a01fc4d84765db4cc16f03b7e107f66c7a74f1376"
+    },
+    {
+      "path": "evidence/render-review.json",
+      "sha256": "b4eda5caa2f29c43bea777d40ae1e4fa74a357f61a1d0a2b2dae677fb6f8aa6e"
+    },
+    {
+      "path": "evidence/source-checkpoint.json",
+      "sha256": "36249cddbb593c52898004cdec369e93165b930326854cbd3ca33f80ee940ab3"
+    },
+    {
+      "path": "evidence/voice-production.json",
+      "sha256": "a6a6c659d10bdc5074f319f0037152da101c791e3eaf6459c57cfa253301454b"
+    }
+  ],
+  "deliverables": {
+    "video": {
+      "path": "presentation-with-finite-proof.mp4",
+      "sha256": "4dbd34ae6816c32301c017fd386202fa5e93c4e65cf5a8a225edceef3402e12e"
+    },
+    "preview": {
+      "path": "proof-demonstration.mp4",
+      "sha256": "dff9a3e6717e57d74a0b59b7c891553b06476a1ff9420a98be7e96c597c0d789"
+    },
+    "project": {
+      "path": "presentation-with-finite-proof.aep",
+      "sha256": "eca610e5451a43fbe74f810739db3c160fc2afb17c9e3f859e58dde785bc5425"
+    },
+    "certificate": {
+      "path": "certificate.json",
+      "sha256": "b3181458e61e746bf096396bbc4bb6c5bc8ce3bc1f3baf62514bee8db923cd84"
+    }
+  },
+  "limits": [
+    "Established finite mathematics; no novelty or new prime-prediction algorithm claimed.",
+    "Phase colors guide candidate searches; four sampled colors or accumulated brush paint alone do not certify continuous winding.",
+    "No zeta zeros are certified by this deliverable, and no finite or global RH verification is claimed.",
+    "Technical decode and sampled visual review; no independent speech transcription or every-frame visual inspection.",
+    "Warp gates use declared evidence references; acceptance also checks the hash-bound reports directly."
+  ],
+  "globalRiemannHypothesisStatus": "open"
+}

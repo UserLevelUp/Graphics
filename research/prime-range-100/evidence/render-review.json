@@ -1,0 +1,219 @@
+{
+  "schema": "finite-prime-native-render-review-v1",
+  "traceId": "graph.primes.range100.presentation.render.review",
+  "status": "passed",
+  "reviewedAtUtc": "2026-11-15T12:22:42.590105+00:00",
+  "reviewer": "finite_prime_review independent agent",
+  "scope": "Independent visual inspection of seven decoded stills from three native clips; phase motion direction is checked at five sampled positions. No audio, uninterrupted playback, every-frame, or assembled 320-second video review is claimed. Mathematical conclusions remain those of the separately hash-bound core and content reviews.",
+  "inputs": [
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/riemann-finite-proof/finite-prime-scene.mp4",
+      "sha256": "01f253335a265fe7ad15006588e3aae069606b0019db17db3095d61d58cfe915"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/riemann-finite-proof/phase-proof-scene.mp4",
+      "sha256": "1b5f42a89551a340582a490822263e658f3cc704271439024e5e2ef2b2f0da7d"
+    },
+    {
+      "path": "C:/Users/marcn/Documents/Codex/2026-11-14/eu/outputs/riemann-finite-proof/updated-repository-card.mp4",
+      "sha256": "567e8196ce47fddea8f5c055b53be57c32eceba7b7f5fda9b88db4c3e68ea642"
+    },
+    {
+      "path": "research/prime-range-100/build_presentation.jsx",
+      "sha256": "4aa0e2ccfaae282fd23d4ba3edde2dfe3c8b91dc3728d64b45a81dea1b5868a9"
+    },
+    {
+      "path": "research/prime-range-100/presentation.json",
+      "sha256": "87ec687eb127616d2bb0704e916bb80db1154240227d2eff2a0436da236cd323"
+    },
+    {
+      "path": "research/prime-range-100/evidence/review.json",
+      "sha256": "d600a1e8050a4360dbe51e2f87211ff3ebb14a6dea6fb4704866b1789dea2800"
+    },
+    {
+      "path": "research/prime-range-100/evidence/content-review.json",
+      "sha256": "c48c369a89684c3b76c2354ace32b8b3e19c6908a9f715056523892a7650e3be"
+    }
+  ],
+  "samples": [
+    {
+      "clip": "finite-prime-scene.mp4",
+      "localTimeSeconds": 10,
+      "path": "research/prime-range-100/evidence/review-stills/finite-prime-scene-10.png",
+      "sha256": "76ebb6d7482d28f12b09322bbbb5dc249bec768c266cc05a3733a31799175f78"
+    },
+    {
+      "clip": "phase-proof-scene.mp4",
+      "localTimeSeconds": 2,
+      "path": "research/prime-range-100/evidence/review-stills/phase-proof-scene-2.png",
+      "sha256": "c3720578f997090b61f66f35e68d8faf192298a15ce0e3b9c9a17aee1bab6658"
+    },
+    {
+      "clip": "phase-proof-scene.mp4",
+      "localTimeSeconds": 6,
+      "path": "research/prime-range-100/evidence/review-stills/phase-proof-scene-6.png",
+      "sha256": "0a2e78675481ed69c3d48ddaa29321f5d1eeb31e668c6886f19157c5ee91f130"
+    },
+    {
+      "clip": "phase-proof-scene.mp4",
+      "localTimeSeconds": 10,
+      "path": "research/prime-range-100/evidence/review-stills/phase-proof-scene-10.png",
+      "sha256": "45a7de496487987af2a06fc5193cfd8794494244fc407e4de5b3f940b5afa67c"
+    },
+    {
+      "clip": "phase-proof-scene.mp4",
+      "localTimeSeconds": 14,
+      "path": "research/prime-range-100/evidence/review-stills/phase-proof-scene-14.png",
+      "sha256": "2d6f74677edb669f69eb990731955009898ec51a6b2eefd4da59b9fbba581e1c"
+    },
+    {
+      "clip": "phase-proof-scene.mp4",
+      "localTimeSeconds": 18,
+      "path": "research/prime-range-100/evidence/review-stills/phase-proof-scene-18.png",
+      "sha256": "3473a0d6318a73d7c62b172dec600c3a62704b8ab3830e07d4dc4575744fbe61"
+    },
+    {
+      "clip": "updated-repository-card.mp4",
+      "frameIndexZeroBased": 287,
+      "localTimeSeconds": 11.958333333333334,
+      "path": "research/prime-range-100/evidence/review-stills/repository-final.png",
+      "sha256": "d332b463e706422b0e37534b34d9da9baa042d195b2e941825032ec0655a10a7"
+    }
+  ],
+  "contactSheet": {
+    "path": "research/prime-range-100/evidence/review-stills/phase-contact-sheet.png",
+    "sha256": "b87c3cec1a8e5ed1e54f40f5153ab71f76b161061cdc603d178783ecfda6e387"
+  },
+  "checks": [
+    {
+      "id": "finite_domain_and_labels",
+      "status": "passed",
+      "detail": "All 101 displayed integer labels from 0 through 100 were visually inspected. The card explicitly restricts the factor argument to 2 <= n <= 100; 0 and 1 have separate gray tiles."
+    },
+    {
+      "id": "finite_prime_color_reference",
+      "status": "passed",
+      "detail": "Visual inspection and one interior pixel per tile identify exactly the 25 certified primes as violet, with 74 composites and 0/1 neither. The footer says violet displays proved labels and is not a brush prediction."
+    },
+    {
+      "id": "finite_formulas_and_glyphs",
+      "status": "passed",
+      "detail": "The rendered square-root bound a <= sqrt(n) <= 10, q in {2,3,5,7}, inclusive q^2 <= n condition, 97 remainder tuple (1,1,2,6), and 91 = 7 x 13 are legible with correct inequality, root, membership and multiplication glyphs."
+    },
+    {
+      "id": "positive_contour_motion_samples",
+      "status": "passed",
+      "detail": "The five decoded phase stills show the marker at right, top, left, bottom, right at local 2,6,10,14,18 seconds, consistent with the labeled counterclockwise contour and positive phase change. This checks sampled positions, not every motion frame."
+    },
+    {
+      "id": "current_phase_map_not_paint_history",
+      "status": "passed",
+      "detail": "The same four fixed phase regions appear in all five phase stills; the moving contour marker does not leave a brush trail in these samples. The center has a black disk labeled 0 rather than a quadrant color; the proof note explicitly states phase is undefined there. The still does not itself spell out the word undefined."
+    },
+    {
+      "id": "model_formulas_and_scope",
+      "status": "passed",
+      "detail": "EXACT MODEL f(z)=z and CURRENT FUNCTION PHASE are clear. The displayed |f(z(t))| = 1 > 0, Delta arg f = 2 pi and P=0 implies N=1 agree with the reviewed model. The card labels exactly one simple zero at z=0, future zeta contour certification/pole accounting, and the all-height obligation for global RH."
+    },
+    {
+      "id": "repository_final_frame",
+      "status": "passed",
+      "detail": "Exact decoded frame 287 of the 12-second source clip visibly shows github.com/UserLevelUp/Graphics, graph/riemann-continuation, git remote -v output, source checkpoint a9b86965aef1, and trace graph.primes.range100."
+    },
+    {
+      "id": "layout_and_legibility",
+      "status": "passed",
+      "detail": "Inspected full-size finite, phase and repository frames plus a phase-crop contact sheet. Important text and mathematical symbols are readable, within the frame, and free from observed overlap or clipping."
+    }
+  ],
+  "pixelCrossChecks": {
+    "primeTileSampleRule": "One lower-right interior pixel per tile, RGB r > 1.6*g and b > 1.6*g, compared against the independently reviewed exact prime list. This is a color check, not OCR.",
+    "violetLabels": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97
+    ],
+    "violetCount": 25,
+    "staticPhaseSamples": {
+      "positionsXY": [
+        [
+          730,
+          440
+        ],
+        [
+          970,
+          440
+        ],
+        [
+          730,
+          760
+        ],
+        [
+          970,
+          760
+        ],
+        [
+          850,
+          600
+        ]
+      ],
+      "rgbValues": [
+        [
+          131,
+          102,
+          41
+        ],
+        [
+          33,
+          124,
+          94
+        ],
+        [
+          97,
+          50,
+          130
+        ],
+        [
+          42,
+          76,
+          133
+        ],
+        [
+          8,
+          11,
+          22
+        ]
+      ],
+      "identicalAcrossFiveStills": true
+    }
+  },
+  "sourceCheckpointShown": "a9b86965aef1",
+  "openBlockerCount": 0,
+  "exclusions": [
+    "No new zeta-zero calculation is validated by this model scene.",
+    "No RH proof, new prime formula, or brush prediction accuracy is claimed.",
+    "Repository public status and push success were not independently queried during this rendered review; the card text is checked against the supplied checkpoint scope."
+  ]
+}

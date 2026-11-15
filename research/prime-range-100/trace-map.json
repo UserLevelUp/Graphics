@@ -1,0 +1,11 @@
+{
+  "traceId": "graph.primes.range100",
+  "warpId": "graph.primes.range100",
+  "scope": "Finite prime classification and an exact phase-model illustration; no zeta-zero certification.",
+  "routes": [
+    {"traceId":"graph.primes.range100.certificate","evidence":["certificate.json","proof.md","evidence/validation.json","evidence/review.json"]},
+    {"traceId":"graph.primes.range100.presentation","evidence":["presentation.json","evidence/content-review.json","evidence/voice-production.json","evidence/media-qa.json","evidence/render-review.json"]},
+    {"traceId":"graph.primes.range100.acceptance","evidence":["evidence/delivery-manifest.json","evidence/acceptance.json","evidence/warp-progress.json"]}
+  ],
+  "limits": "Trace references identify evidence; they do not by themselves establish execution or mathematical truth."
+}

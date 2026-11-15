@@ -1,0 +1,16 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.primes.range100",
+  "slice_id": "acceptance",
+  "contract_hash": "contract:graph.primes.range100.acceptance:v1",
+  "attempt_id": "sealed-delivery-20261115",
+  "result_state": "accepted",
+  "result_hash": "sha256:2fa2149757e684ddcd5981f76dd89f6bc6346329798dc4ac8177c67c48b3c471",
+  "evidence": {
+    "review": [
+      "evidence/acceptance.json",
+      "evidence/delivery-manifest.json"
+    ]
+  },
+  "reason": null
+}

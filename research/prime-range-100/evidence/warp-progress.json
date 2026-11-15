@@ -1,0 +1,151 @@
+{
+  "blocked": [],
+  "bubble_uuid": "01a1df1e-57a3-70ac-9a22-4cf910667f98",
+  "completed_slices": [
+    "acceptance",
+    "certificate",
+    "presentation"
+  ],
+  "conflicts": [],
+  "contract_status": "declared-gates-satisfied",
+  "counts": {
+    "blocked": 0,
+    "conflicting": 0,
+    "covered": 3,
+    "pending": 0,
+    "required": 3,
+    "stale_contract": 0
+  },
+  "covered": [
+    "acceptance",
+    "certificate",
+    "presentation"
+  ],
+  "current_slice": null,
+  "evidence_status": "declared",
+  "gate_evidence": [
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/content-review.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/review.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "certificate",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/media-qa.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/render-review.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "presentation",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/acceptance.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/delivery-manifest.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "acceptance",
+      "status": "declared"
+    }
+  ],
+  "goal": "Explain a finite prime certificate and the rigorous route from phase colors to zero counting",
+  "layers": [
+    "acceptance@sealed-delivery-20261115",
+    "certificate@exact-integer-proof-20261115",
+    "presentation@native-reviewed-20261115"
+  ],
+  "manifest": "graph.primes.range100.warp-map.json",
+  "pending": [],
+  "ready_slices": [],
+  "root": "\\\\?\\C:\\src\\graph\\research\\prime-range-100\\warps",
+  "schema": "warp-progress-v1",
+  "slices": [
+    {
+      "contract_hash": "contract:graph.primes.range100.certificate:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "certificate",
+      "slice_uuid": "01a1df1e-57a3-7152-8139-d77d711c5343",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.primes.range100.presentation:v1",
+      "depends_on": [
+        "certificate"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "presentation",
+      "slice_uuid": "01a1df1e-57a3-74db-8265-3007c6a312de",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.primes.range100.acceptance:v1",
+      "depends_on": [
+        "presentation"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "acceptance",
+      "slice_uuid": "01a1df1e-57a3-7478-bb4c-5b8f2bfd781c",
+      "state": "complete"
+    }
+  ],
+  "stale_contract": [],
+  "state": "complete",
+  "warnings": [],
+  "warp_id": "graph.primes.range100"
+}

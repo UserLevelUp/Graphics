@@ -1,0 +1,7 @@
+{
+  "traceId": "graph.primes.range100.source",
+  "sourceCheckpoint": "a9b86965aef1b8d73fbb31e0133b9746df5ea387",
+  "pushed": true,
+  "branch": "graph/riemann-continuation",
+  "remoteVerification": "origin\thttps://github.com/UserLevelUp/Graphics.git (fetch)\norigin\thttps://github.com/UserLevelUp/Graphics.git (push)"
+}

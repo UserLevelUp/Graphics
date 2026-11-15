@@ -1,0 +1,3201 @@
+{
+  "traceId": "graph.primes.range100.media.verify",
+  "status": "passed",
+  "checks": [
+    {
+      "id": "timing_contract",
+      "passed": true,
+      "detail": "264 + 56 = 320 seconds"
+    },
+    {
+      "id": "baseline_hashes_before",
+      "passed": true,
+      "detail": {
+        "video": "4e58f88f38bf084991a0e939d3752fd1292b8dd52bea395529bfaadaed1b87db",
+        "project": "e48fb6d0e334962067ce1d13d7a87f1fb2f86ce31a9a97fafcab9d96be8ad2e0"
+      }
+    },
+    {
+      "id": "baseline_media",
+      "passed": true,
+      "detail": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\presentation-with-trail.mp4",
+        "seconds": 264.0,
+        "frames": 6336,
+        "size": [
+          1920,
+          1080
+        ],
+        "fps": 24.0,
+        "fullVideoAndAudioDecodePassed": true
+      }
+    },
+    {
+      "id": "revised_media",
+      "passed": true,
+      "detail": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\presentation-with-finite-proof.mp4",
+        "seconds": 320.0,
+        "frames": 7680,
+        "size": [
+          1920,
+          1080
+        ],
+        "fps": 24.0,
+        "fullVideoAndAudioDecodePassed": true
+      }
+    },
+    {
+      "id": "preserved_pixels_7",
+      "passed": true,
+      "detail": {
+        "seconds": 7,
+        "rgbRmse": 0.2730947844922572
+      }
+    },
+    {
+      "id": "preserved_pixels_14.5",
+      "passed": true,
+      "detail": {
+        "seconds": 14.5,
+        "rgbRmse": 0.23247195503230753
+      }
+    },
+    {
+      "id": "preserved_pixels_20",
+      "passed": true,
+      "detail": {
+        "seconds": 20,
+        "rgbRmse": 0.24184752704431062
+      }
+    },
+    {
+      "id": "preserved_pixels_28.5",
+      "passed": true,
+      "detail": {
+        "seconds": 28.5,
+        "rgbRmse": 0.2866410051678256
+      }
+    },
+    {
+      "id": "preserved_pixels_35",
+      "passed": true,
+      "detail": {
+        "seconds": 35,
+        "rgbRmse": 0.14368568520102218
+      }
+    },
+    {
+      "id": "preserved_pixels_40.5",
+      "passed": true,
+      "detail": {
+        "seconds": 40.5,
+        "rgbRmse": 0.18737135504488947
+      }
+    },
+    {
+      "id": "preserved_pixels_60",
+      "passed": true,
+      "detail": {
+        "seconds": 60,
+        "rgbRmse": 0.24063209799268703
+      }
+    },
+    {
+      "id": "preserved_pixels_96",
+      "passed": true,
+      "detail": {
+        "seconds": 96,
+        "rgbRmse": 0.36842661239964714
+      }
+    },
+    {
+      "id": "preserved_pixels_130",
+      "passed": true,
+      "detail": {
+        "seconds": 130,
+        "rgbRmse": 0.22460527790815052
+      }
+    },
+    {
+      "id": "preserved_pixels_148",
+      "passed": true,
+      "detail": {
+        "seconds": 148,
+        "rgbRmse": 0.12390466599423944
+      }
+    },
+    {
+      "id": "preserved_pixels_167",
+      "passed": true,
+      "detail": {
+        "seconds": 167,
+        "rgbRmse": 0.11029795038930824
+      }
+    },
+    {
+      "id": "preserved_pixels_186",
+      "passed": true,
+      "detail": {
+        "seconds": 186,
+        "rgbRmse": 0.1138211180474882
+      }
+    },
+    {
+      "id": "preserved_pixels_206",
+      "passed": true,
+      "detail": {
+        "seconds": 206,
+        "rgbRmse": 0.12370730755451284
+      }
+    },
+    {
+      "id": "preserved_pixels_228",
+      "passed": true,
+      "detail": {
+        "seconds": 228,
+        "rgbRmse": 0.018975834751777033
+      }
+    },
+    {
+      "id": "preserved_pixels_248",
+      "passed": true,
+      "detail": {
+        "seconds": 248,
+        "rgbRmse": 0.12904962837746622
+      }
+    },
+    {
+      "id": "preserved_pixels_251.5",
+      "passed": true,
+      "detail": {
+        "seconds": 251.5,
+        "rgbRmse": 0.09802577976197072
+      }
+    },
+    {
+      "id": "accepted_certificate_binding",
+      "passed": true,
+      "detail": "b3181458e61e746bf096396bbc4bb6c5bc8ce3bc1f3baf62514bee8db923cd84"
+    },
+    {
+      "id": "certificate_domain",
+      "passed": true,
+      "detail": "Each integer 0 through 100 once, in order"
+    },
+    {
+      "id": "tile_classes_visually_distinct",
+      "passed": true,
+      "detail": {
+        "composite/prime": 82.46817568007674,
+        "composite/neither": 28.337254630609507,
+        "neither/prime": 65.46754921333164
+      }
+    },
+    {
+      "id": "integer_0_neither",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          553,
+          428
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          48.0,
+          46.0,
+          54.0
+        ],
+        "medianRgb": [
+          48.0,
+          46.0,
+          54.0
+        ],
+        "rgbDistance": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_1_neither",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          610,
+          428
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          48.0,
+          46.0,
+          54.0
+        ],
+        "medianRgb": [
+          48.0,
+          46.0,
+          54.0
+        ],
+        "rgbDistance": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_2_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          667,
+          428
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "rgbDistance": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_3_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          724,
+          428
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          75.0,
+          32.0,
+          115.0
+        ],
+        "rgbDistance": 4.47213595499958,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_4_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          781,
+          428
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "rgbDistance": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_5_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          838,
+          428
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          75.0,
+          32.0,
+          113.0
+        ],
+        "rgbDistance": 2.8284271247461903,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_6_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          895,
+          428
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_7_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          952,
+          428
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          75.0,
+          31.0,
+          118.0
+        ],
+        "rgbDistance": 7.3484692283495345,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_8_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1009,
+          428
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          31.0,
+          45.0
+        ],
+        "rgbDistance": 2.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_9_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1066,
+          428
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_10_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1123,
+          428
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_11_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          553,
+          471
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          75.0,
+          32.0,
+          113.0
+        ],
+        "rgbDistance": 2.8284271247461903,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_12_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          610,
+          471
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_13_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          667,
+          471
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          75.0,
+          32.0,
+          115.0
+        ],
+        "rgbDistance": 4.47213595499958,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_14_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          724,
+          471
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_15_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          781,
+          471
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          44.0
+        ],
+        "rgbDistance": 3.1622776601683795,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_16_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          838,
+          471
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_17_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          895,
+          471
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          77.0,
+          31.0,
+          113.0
+        ],
+        "rgbDistance": 2.23606797749979,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_18_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          952,
+          471
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_19_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1009,
+          471
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          75.0,
+          32.0,
+          115.0
+        ],
+        "rgbDistance": 4.47213595499958,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_20_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1066,
+          471
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_21_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1123,
+          471
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_22_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          553,
+          514
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          31.0,
+          49.0
+        ],
+        "rgbDistance": 2.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_23_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          610,
+          514
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          76.0,
+          31.0,
+          114.0
+        ],
+        "rgbDistance": 3.3166247903554,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_24_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          667,
+          514
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          31.0,
+          48.0
+        ],
+        "rgbDistance": 1.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_25_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          724,
+          514
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_26_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          781,
+          514
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          44.0
+        ],
+        "rgbDistance": 3.1622776601683795,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_27_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          838,
+          514
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_28_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          895,
+          514
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_29_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          952,
+          514
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          74.0,
+          33.0,
+          113.0
+        ],
+        "rgbDistance": 3.7416573867739413,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_30_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1009,
+          514
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_31_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1066,
+          514
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          74.0,
+          32.0,
+          117.0
+        ],
+        "rgbDistance": 6.708203932499369,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_32_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1123,
+          514
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          24.0,
+          31.0,
+          45.0
+        ],
+        "rgbDistance": 2.23606797749979,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_33_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          553,
+          557
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_34_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          610,
+          557
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_35_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          667,
+          557
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_36_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          724,
+          557
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_37_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          781,
+          557
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          78.0,
+          30.0,
+          115.0
+        ],
+        "rgbDistance": 4.58257569495584,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_38_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          838,
+          557
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          31.0,
+          48.0
+        ],
+        "rgbDistance": 1.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_39_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          895,
+          557
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          26.0,
+          33.0,
+          47.0
+        ],
+        "rgbDistance": 2.23606797749979,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_40_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          952,
+          557
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_41_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1009,
+          557
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          74.0,
+          32.0,
+          113.0
+        ],
+        "rgbDistance": 3.605551275463989,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_42_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1066,
+          557
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_43_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1123,
+          557
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          75.0,
+          32.0,
+          115.0
+        ],
+        "rgbDistance": 4.47213595499958,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_44_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          553,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_45_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          610,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_46_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          667,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_47_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          724,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          75.0,
+          31.0,
+          117.0
+        ],
+        "rgbDistance": 6.4031242374328485,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_48_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          781,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          31.0,
+          48.0
+        ],
+        "rgbDistance": 1.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_49_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          838,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          31.0,
+          48.0
+        ],
+        "rgbDistance": 1.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_50_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          895,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_51_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          952,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_52_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1009,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_53_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1066,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          78.0,
+          30.0,
+          115.0
+        ],
+        "rgbDistance": 4.58257569495584,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_54_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1123,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_55_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          553,
+          643
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_56_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          610,
+          643
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_57_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          667,
+          643
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_58_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          724,
+          643
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_59_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          781,
+          643
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          77.0,
+          31.0,
+          113.0
+        ],
+        "rgbDistance": 2.23606797749979,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_60_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          838,
+          643
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_61_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          895,
+          643
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          75.0,
+          32.0,
+          115.0
+        ],
+        "rgbDistance": 4.47213595499958,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_62_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          952,
+          643
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          31.0,
+          48.0
+        ],
+        "rgbDistance": 1.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_63_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1009,
+          643
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_64_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1066,
+          643
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          24.0,
+          31.0,
+          45.0
+        ],
+        "rgbDistance": 2.23606797749979,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_65_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1123,
+          643
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_66_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          553,
+          686
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          45.0
+        ],
+        "rgbDistance": 2.23606797749979,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_67_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          610,
+          686
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          77.0,
+          34.0,
+          112.0
+        ],
+        "rgbDistance": 2.23606797749979,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_68_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          667,
+          686
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_69_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          724,
+          686
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          31.0,
+          48.0
+        ],
+        "rgbDistance": 1.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_70_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          781,
+          686
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_71_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          838,
+          686
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          75.0,
+          31.0,
+          117.0
+        ],
+        "rgbDistance": 6.4031242374328485,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_72_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          895,
+          686
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_73_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          952,
+          686
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          75.0,
+          32.0,
+          113.0
+        ],
+        "rgbDistance": 2.8284271247461903,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_74_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1009,
+          686
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          24.0,
+          31.0,
+          45.0
+        ],
+        "rgbDistance": 2.23606797749979,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_75_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1066,
+          686
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_76_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1123,
+          686
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_77_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          553,
+          729
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_78_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          610,
+          729
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_79_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          667,
+          729
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          75.0,
+          31.0,
+          117.0
+        ],
+        "rgbDistance": 6.4031242374328485,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_80_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          724,
+          729
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          31.0,
+          48.0
+        ],
+        "rgbDistance": 1.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_81_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          781,
+          729
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_82_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          838,
+          729
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_83_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          895,
+          729
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          75.0,
+          32.0,
+          115.0
+        ],
+        "rgbDistance": 4.47213595499958,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_84_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          952,
+          729
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          45.0
+        ],
+        "rgbDistance": 2.23606797749979,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_85_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1009,
+          729
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          24.0,
+          31.0,
+          45.0
+        ],
+        "rgbDistance": 2.23606797749979,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_86_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1066,
+          729
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_87_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1123,
+          729
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_88_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          553,
+          772
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_89_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          610,
+          772
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          77.0,
+          32.0,
+          115.0
+        ],
+        "rgbDistance": 4.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_90_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          667,
+          772
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_91_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          724,
+          772
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          31.0,
+          48.0
+        ],
+        "rgbDistance": 1.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_92_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          781,
+          772
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_93_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          838,
+          772
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_94_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          895,
+          772
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_95_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          952,
+          772
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          31.0,
+          50.0
+        ],
+        "rgbDistance": 3.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_96_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1009,
+          772
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          27.0,
+          31.0,
+          46.0
+        ],
+        "rgbDistance": 2.23606797749979,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_97_prime",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1066,
+          772
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          77.0,
+          32.0,
+          111.0
+        ],
+        "medianRgb": [
+          76.0,
+          32.0,
+          111.0
+        ],
+        "rgbDistance": 1.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_98_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          1123,
+          772
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_99_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          553,
+          815
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "integer_100_composite",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          610,
+          815
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          25.0,
+          31.0,
+          47.0
+        ],
+        "medianRgb": [
+          25.0,
+          32.0,
+          46.0
+        ],
+        "rgbDistance": 1.4142135623730951,
+        "passed": true
+      }
+    },
+    {
+      "id": "phase_2_cardinal_0",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          980,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "rgbDistance": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "id": "phase_2_cardinal_1",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          850,
+          470
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          221.0,
+          241.0,
+          237.0
+        ],
+        "rgbDistance": 155.41878908291622,
+        "passed": false
+      }
+    },
+    {
+      "id": "phase_2_cardinal_2",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          720,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          247.0,
+          236.0,
+          244.0
+        ],
+        "rgbDistance": 158.24348327814323,
+        "passed": false
+      }
+    },
+    {
+      "id": "phase_2_cardinal_3",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          850,
+          730
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          234.0,
+          239.0,
+          255.0
+        ],
+        "rgbDistance": 170.21750791267036,
+        "passed": false
+      }
+    },
+    {
+      "id": "phase_6_cardinal_0",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          980,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          226.0,
+          245.0,
+          254.0
+        ],
+        "rgbDistance": 171.86331778480246,
+        "passed": false
+      }
+    },
+    {
+      "id": "phase_6_cardinal_1",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          850,
+          470
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          249.0,
+          197.0,
+          95.0
+        ],
+        "rgbDistance": 5.916079783099616,
+        "passed": true
+      }
+    },
+    {
+      "id": "phase_6_cardinal_2",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          720,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          247.0,
+          236.0,
+          244.0
+        ],
+        "rgbDistance": 158.24348327814323,
+        "passed": false
+      }
+    },
+    {
+      "id": "phase_6_cardinal_3",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          850,
+          730
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          234.0,
+          239.0,
+          255.0
+        ],
+        "rgbDistance": 170.21750791267036,
+        "passed": false
+      }
+    },
+    {
+      "id": "phase_10_cardinal_0",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          980,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          226.0,
+          245.0,
+          254.0
+        ],
+        "rgbDistance": 171.86331778480246,
+        "passed": false
+      }
+    },
+    {
+      "id": "phase_10_cardinal_1",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          850,
+          470
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          226.0,
+          242.0,
+          242.0
+        ],
+        "rgbDistance": 159.63708842245902,
+        "passed": false
+      }
+    },
+    {
+      "id": "phase_10_cardinal_2",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          720,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          249.0,
+          198.0,
+          92.0
+        ],
+        "rgbDistance": 6.082762530298219,
+        "passed": true
+      }
+    },
+    {
+      "id": "phase_10_cardinal_3",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          850,
+          730
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          234.0,
+          239.0,
+          255.0
+        ],
+        "rgbDistance": 170.21750791267036,
+        "passed": false
+      }
+    },
+    {
+      "id": "phase_14_cardinal_0",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          980,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          227.0,
+          244.0,
+          252.0
+        ],
+        "rgbDistance": 169.54350474140847,
+        "passed": false
+      }
+    },
+    {
+      "id": "phase_14_cardinal_1",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          850,
+          470
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          224.0,
+          244.0,
+          235.0
+        ],
+        "rgbDistance": 154.042202009709,
+        "passed": false
+      }
+    },
+    {
+      "id": "phase_14_cardinal_2",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          720,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          245.0,
+          235.0,
+          235.0
+        ],
+        "rgbDistance": 149.35528112524176,
+        "passed": false
+      }
+    },
+    {
+      "id": "phase_14_cardinal_3",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          850,
+          730
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          248.0,
+          197.0,
+          91.0
+        ],
+        "rgbDistance": 5.0990195135927845,
+        "passed": true
+      }
+    },
+    {
+      "id": "phase_18_cardinal_0",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          980,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          250.0,
+          195.0,
+          93.0
+        ],
+        "rgbDistance": 3.7416573867739413,
+        "passed": true
+      }
+    },
+    {
+      "id": "phase_18_cardinal_1",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          850,
+          470
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          224.0,
+          244.0,
+          235.0
+        ],
+        "rgbDistance": 154.042202009709,
+        "passed": false
+      }
+    },
+    {
+      "id": "phase_18_cardinal_2",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          720,
+          600
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          245.0,
+          235.0,
+          235.0
+        ],
+        "rgbDistance": 149.35528112524176,
+        "passed": false
+      }
+    },
+    {
+      "id": "phase_18_cardinal_3",
+      "passed": true,
+      "detail": {
+        "pixel": [
+          850,
+          730
+        ],
+        "patchSize": 3,
+        "expectedRgb": [
+          248.0,
+          192.0,
+          92.0
+        ],
+        "medianRgb": [
+          230.0,
+          238.0,
+          255.0
+        ],
+        "rgbDistance": 170.3202865192517,
+        "passed": false
+      }
+    },
+    {
+      "id": "audio_durations",
+      "passed": true,
+      "detail": {
+        "baseline": 264.0,
+        "revised": 320.0
+      }
+    },
+    {
+      "id": "preserved_audio_0_252",
+      "passed": true,
+      "detail": {
+        "comparedSamples": 4032000,
+        "referenceRms": 0.08589752617670408,
+        "lagSamples": 0,
+        "lagSeconds": 0.0,
+        "unalignedRmse": 0.0015943263352425408,
+        "rmse": 0.0015943263352425408,
+        "normalizedRmse": 0.01856079454445257,
+        "correlation": 0.9998283072033473,
+        "passed": true,
+        "baselineRange": [
+          0,
+          252
+        ],
+        "revisedRange": [
+          0,
+          252
+        ]
+      }
+    },
+    {
+      "id": "preserved_audio_252_264",
+      "passed": true,
+      "detail": {
+        "comparedSamples": 192000,
+        "referenceRms": 0.0761464635028839,
+        "lagSamples": 0,
+        "lagSeconds": 0.0,
+        "unalignedRmse": 0.0011964144454389622,
+        "rmse": 0.0011964144454389622,
+        "normalizedRmse": 0.015712015902007718,
+        "correlation": 0.9998770830127611,
+        "passed": true,
+        "baselineRange": [
+          252,
+          264
+        ],
+        "revisedRange": [
+          308,
+          320
+        ]
+      }
+    },
+    {
+      "id": "finite_prime_audio_signal",
+      "passed": true,
+      "detail": {
+        "rms": 0.07350379468059198,
+        "peak": 0.8537789583206177
+      }
+    },
+    {
+      "id": "phase_model_audio_signal",
+      "passed": true,
+      "detail": {
+        "rms": 0.0739113624714553,
+        "peak": 0.7227724194526672
+      }
+    },
+    {
+      "id": "baseline_hashes_after",
+      "passed": true,
+      "detail": {
+        "video": "4e58f88f38bf084991a0e939d3752fd1292b8dd52bea395529bfaadaed1b87db",
+        "project": "e48fb6d0e334962067ce1d13d7a87f1fb2f86ce31a9a97fafcab9d96be8ad2e0"
+      }
+    }
+  ],
+  "startedAtUtc": "2026-11-15T12:20:20.730257+00:00",
+  "presentationSha256": "87ec687eb127616d2bb0704e916bb80db1154240227d2eff2a0436da236cd323",
+  "helperSha256": "f52cd12638ebe2c909578e4795a822a26cd47e0016e4ded0c9242f3d381266ca",
+  "thresholds": {
+    "pixelRmseExclusive": 3,
+    "paletteRgbDistanceExclusive": 8,
+    "audioCorrelationMin": 0.995,
+    "audioNormalizedRmseMax": 0.12,
+    "audioAbsoluteRmseMax": 0.01,
+    "audioFixedLagSecondsExclusive": 0.02
+  },
+  "limits": [
+    "Technical QA; final visual/content review remains separate.",
+    "101 indexed tile fills are checked; digit glyphs and prose are not OCR-verified.",
+    "Unchanged video is sampled; audio comparisons cover both complete preserved ranges.",
+    "Audio presence/correlation is not speech transcription or a narration-content certificate.",
+    "The exact mathematical certificate is accepted separately; animation is not an RH proof."
+  ],
+  "baselineMedia": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\presentation-with-trail.mp4",
+    "seconds": 264.0,
+    "frames": 6336,
+    "size": [
+      1920,
+      1080
+    ],
+    "fps": 24.0,
+    "fullVideoAndAudioDecodePassed": true
+  },
+  "revisedMedia": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\presentation-with-finite-proof.mp4",
+    "seconds": 320.0,
+    "frames": 7680,
+    "size": [
+      1920,
+      1080
+    ],
+    "fps": 24.0,
+    "fullVideoAndAudioDecodePassed": true
+  },
+  "previewFrames": [
+    {
+      "label": "prime-10s",
+      "seconds": 262,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\preview\\prime-10s.png"
+    },
+    {
+      "label": "phase-2s",
+      "seconds": 282,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\preview\\phase-2s.png"
+    },
+    {
+      "label": "phase-6s",
+      "seconds": 286,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\preview\\phase-6s.png"
+    },
+    {
+      "label": "phase-10s",
+      "seconds": 290,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\preview\\phase-10s.png"
+    },
+    {
+      "label": "phase-14s",
+      "seconds": 294,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\preview\\phase-14s.png"
+    },
+    {
+      "label": "phase-18s",
+      "seconds": 298,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\preview\\phase-18s.png"
+    },
+    {
+      "label": "final-card",
+      "seconds": 319,
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\preview\\final-card.png"
+    }
+  ],
+  "contactSheet": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\preview\\contact-sheet.png",
+  "tileCalibration": {
+    "referenceIntegers": {
+      "prime": 2,
+      "composite": 4,
+      "neither": 0
+    },
+    "measuredRgb": {
+      "prime": [
+        77.0,
+        32.0,
+        111.0
+      ],
+      "composite": [
+        25.0,
+        31.0,
+        47.0
+      ],
+      "neither": [
+        48.0,
+        46.0,
+        54.0
+      ]
+    }
+  },
+  "tileScope": "101 position-indexed classification fills; native number labels require visual review.",
+  "phaseMarkerCalibration": {
+    "timeSeconds": 282,
+    "pixel": [
+      980,
+      600
+    ],
+    "measuredRgb": [
+      248.0,
+      192.0,
+      92.0
+    ]
+  },
+  "videoSha256": "4dbd34ae6816c32301c017fd386202fa5e93c4e65cf5a8a225edceef3402e12e",
+  "projectSha256": "eca610e5451a43fbe74f810739db3c160fc2afb17c9e3f859e58dde785bc5425",
+  "scope": {
+    "preservedVisuals": [
+      0,
+      252
+    ],
+    "finitePrime": [
+      252,
+      280
+    ],
+    "phaseModel": [
+      280,
+      308
+    ],
+    "refreshedRepository": [
+      308,
+      320
+    ],
+    "preservedAudio": "old0-252->new0-252; old252-264->new308-320"
+  },
+  "finishedAtUtc": "2026-11-15T12:20:28.198957+00:00",
+  "passedChecks": 150,
+  "visualReview": {
+    "path": "evidence/render-review.json",
+    "sha256": "b4eda5caa2f29c43bea777d40ae1e4fa74a357f61a1d0a2b2dae677fb6f8aa6e",
+    "scope": "Independent visual inspection of seven decoded stills from three native clips; phase motion direction is checked at five sampled positions. No audio, uninterrupted playback, every-frame, or assembled 320-second video review is claimed. Mathematical conclusions remain those of the separately hash-bound core and content reviews."
+  },
+  "finalizedAtUtc": "2026-11-15T12:26:42.132927+00:00"
+}

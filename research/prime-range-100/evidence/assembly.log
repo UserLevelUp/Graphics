@@ -1,0 +1,185 @@
+{"argv": ["C:\\Users\\marcn\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe", "-hide_banner", "-y", "-i", "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-origin-trail\\presentation-with-trail.mp4", "-i", "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\finite-prime-scene.mp4", "-i", "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\phase-proof-scene.mp4", "-i", "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\updated-repository-card.mp4", "-filter_complex", "[0:v]fps=24,trim=end_frame=6048,setpts=PTS-STARTPTS,setsar=1[v0];[1:v]fps=24,trim=end_frame=672,setpts=PTS-STARTPTS,setsar=1[v1];[2:v]fps=24,trim=end_frame=672,setpts=PTS-STARTPTS,setsar=1[v2];[3:v]fps=24,trim=end_frame=288,setpts=PTS-STARTPTS,setsar=1[v3];[0:a]asplit=2[oldprefix][oldrepo];[oldprefix]atrim=end=252,asetpts=PTS-STARTPTS,aformat=sample_rates=48000:channel_layouts=stereo[a0];[1:a]apad,atrim=duration=28,asetpts=PTS-STARTPTS,aformat=sample_rates=48000:channel_layouts=stereo[a1];[2:a]apad,atrim=duration=28,asetpts=PTS-STARTPTS,aformat=sample_rates=48000:channel_layouts=stereo[a2];[oldrepo]atrim=start=252:end=264,asetpts=PTS-STARTPTS,aformat=sample_rates=48000:channel_layouts=stereo[a3];[v0][a0][v1][a1][v2][a2][v3][a3]concat=n=4:v=1:a=1[v][a]", "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "fast", "-crf", "18", "-pix_fmt", "yuv420p", "-r", "24", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-frames:v", "7680", "-t", "320", "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\presentation-with-finite-proof.mp4"]}
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\marcn\Documents\Codex\2026-11-14\eu\outputs\riemann-origin-trail\presentation-with-trail.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Duration: 00:04:24.00, start: 0.000000, bitrate: 365 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 189 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 170 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+Input #1, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\marcn\Documents\Codex\2026-11-14\eu\outputs\riemann-finite-proof\finite-prime-scene.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-11-15T12:18:30.000000Z
+  Duration: 00:00:28.00, start: 0.000000, bitrate: 1690 kb/s
+  Stream #1:0[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 1493 kb/s, 24 fps, 24 tbr, 24k tbn (default)
+      Metadata:
+        creation_time   : 2026-11-15T12:18:30.000000Z
+        handler_name    : ?Mainconcept Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : AVC Coding
+  Stream #1:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 189 kb/s (default)
+      Metadata:
+        creation_time   : 2026-11-15T12:18:30.000000Z
+        handler_name    : #Mainconcept MP4 Sound Media Handler
+        vendor_id       : [0][0][0][0]
+Input #2, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\marcn\Documents\Codex\2026-11-14\eu\outputs\riemann-finite-proof\phase-proof-scene.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-11-15T12:18:52.000000Z
+  Duration: 00:00:28.00, start: 0.000000, bitrate: 1272 kb/s
+  Stream #2:0[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 1075 kb/s, 24 fps, 24 tbr, 24k tbn (default)
+      Metadata:
+        creation_time   : 2026-11-15T12:18:52.000000Z
+        handler_name    : ?Mainconcept Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : AVC Coding
+  Stream #2:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 189 kb/s (default)
+      Metadata:
+        creation_time   : 2026-11-15T12:18:52.000000Z
+        handler_name    : #Mainconcept MP4 Sound Media Handler
+        vendor_id       : [0][0][0][0]
+Input #3, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\marcn\Documents\Codex\2026-11-14\eu\outputs\riemann-finite-proof\updated-repository-card.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-11-15T12:19:01.000000Z
+  Duration: 00:00:12.00, start: 0.000000, bitrate: 1348 kb/s
+  Stream #3:0[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 1147 kb/s, 24 fps, 24 tbr, 24k tbn (default)
+      Metadata:
+        creation_time   : 2026-11-15T12:19:01.000000Z
+        handler_name    : ?Mainconcept Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : AVC Coding
+  Stream #3:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 188 kb/s (default)
+      Metadata:
+        creation_time   : 2026-11-15T12:19:01.000000Z
+        handler_name    : #Mainconcept MP4 Sound Media Handler
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 (h264) -> fps:default
+  Stream #0:1 (aac) -> asplit:default
+  Stream #1:0 (h264) -> fps:default
+  Stream #1:1 (aac) -> apad:default
+  Stream #2:0 (h264) -> fps:default
+  Stream #2:1 (aac) -> apad:default
+  Stream #3:0 (h264) -> fps:default
+  concat -> Stream #0:0 (libx264)
+  concat -> Stream #0:1 (aac)
+Press [q] to stop, [?] for help
+[libx264 @ 000001e8b9eb0480] using SAR=1/1
+[libx264 @ 000001e8b9eb0480] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000001e8b9eb0480] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 000001e8b9eb0480] 264 - core 164 r3192 c24e06c - H.264/MPEG-4 AVC codec - Copyleft 2003-2024 - http://www.videolan.org/x264.html - options: cabac=1 ref=2 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=6 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=34 lookahead_threads=5 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc_lookahead=30 rc=crf mbtree=1 crf=18.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\Users\marcn\Documents\Codex\2026-11-14\eu\outputs\riemann-finite-proof\presentation-with-finite-proof.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 24 fps, 12288 tbn
+      Metadata:
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s
+      Metadata:
+        encoder         : Lavc61.19.100 aac
+frame=  132 fps=0.0 q=23.0 size=     256KiB time=00:00:05.41 bitrate= 387.2kbits/s speed=10.7x    frame=  417 fps=407 q=23.0 size=     768KiB time=00:00:17.29 bitrate= 363.9kbits/s speed=16.9x    frame=  705 fps=457 q=23.0 size=    1024KiB time=00:00:29.29 bitrate= 286.4kbits/s speed=  19x    frame=  996 fps=484 q=23.0 size=    1792KiB time=00:00:41.41 bitrate= 354.5kbits/s speed=20.1x    frame= 1283 fps=498 q=23.0 size=    2304KiB time=00:00:53.37 bitrate= 353.6kbits/s speed=20.7x    frame= 1590 fps=513 q=23.0 size=    2816KiB time=00:01:06.16 bitrate= 348.7kbits/s speed=21.3x    frame= 1905 fps=527 q=23.0 size=    3328KiB time=00:01:19.29 bitrate= 343.8kbits/s speed=21.9x    frame= 2181 fps=530 q=23.0 size=    3840KiB time=00:01:30.79 bitrate= 346.5kbits/s speed=22.1x    frame= 2474 fps=534 q=23.0 size=    4608KiB time=00:01:43.00 bitrate= 366.5kbits/s speed=22.2x    frame= 2782 fps=540 q=23.0 size=    5376KiB time=00:01:55.83 bitrate= 380.2kbits/s speed=22.5x    frame= 3068 fps=541 q=23.0 size=    5888KiB time=00:02:07.75 bitrate= 377.6kbits/s speed=22.5x    frame= 3360 fps=543 q=23.0 size=    6400KiB time=00:02:19.91 bitrate= 374.7kbits/s speed=22.6x    frame= 3654 fps=545 q=23.0 size=    6912KiB time=00:02:32.16 bitrate= 372.1kbits/s speed=22.7x    frame= 3999 fps=554 q=23.0 size=    7424KiB time=00:02:46.54 bitrate= 365.2kbits/s speed=23.1x    frame= 4318 fps=558 q=23.0 size=    7936KiB time=00:02:59.83 bitrate= 361.5kbits/s speed=23.2x    frame= 4632 fps=561 q=23.0 size=    8448KiB time=00:03:12.91 bitrate= 358.7kbits/s speed=23.4x    frame= 4915 fps=561 q=23.0 size=    8960KiB time=00:03:24.70 bitrate= 358.6kbits/s speed=23.4x    frame= 5209 fps=562 q=23.0 size=    9472KiB time=00:03:36.95 bitrate= 357.6kbits/s speed=23.4x    frame= 5504 fps=561 q=23.0 size=    9984KiB time=00:03:49.25 bitrate= 356.8kbits/s speed=23.4x    frame= 5797 fps=562 q=23.0 size=   10496KiB time=00:04:01.45 bitrate= 356.1kbits/s speed=23.4x    frame= 6085 fps=562 q=23.0 size=   11008KiB time=00:04:13.45 bitrate= 355.8kbits/s speed=23.4x    frame= 6360 fps=561 q=23.0 size=   11520KiB time=00:04:24.91 bitrate= 356.2kbits/s speed=23.4x    frame= 6644 fps=560 q=23.0 size=   12032KiB time=00:04:36.75 bitrate= 356.2kbits/s speed=23.3x    frame= 6944 fps=561 q=23.0 size=   12544KiB time=00:04:49.25 bitrate= 355.3kbits/s speed=23.4x    frame= 7244 fps=562 q=23.0 size=   13056KiB time=00:05:01.75 bitrate= 354.4kbits/s speed=23.4x    frame= 7555 fps=564 q=23.0 size=   13568KiB time=00:05:14.70 bitrate= 353.2kbits/s speed=23.5x    [mp4 @ 000001e8b9cf7f00] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001e8b9e9bf00] video:7253KiB audio:6579KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.575536%
+frame= 7680 fps=568 q=-1.0 Lsize=   14050KiB time=00:05:19.91 bitrate= 359.8kbits/s speed=23.6x    
+[libx264 @ 000001e8b9eb0480] frame I:38    Avg QP: 3.62  size: 67360
+[libx264 @ 000001e8b9eb0480] frame P:1977  Avg QP:13.54  size:  1957
+[libx264 @ 000001e8b9eb0480] frame B:5665  Avg QP:10.75  size:   176
+[libx264 @ 000001e8b9eb0480] consecutive B-frames:  0.9%  1.5%  2.7% 94.9%
+[libx264 @ 000001e8b9eb0480] mb I  I16..4: 87.0%  1.0% 12.1%
+[libx264 @ 000001e8b9eb0480] mb P  I16..4:  1.5%  0.2%  0.1%  P16..4:  2.0%  0.3%  0.1%  0.0%  0.0%    skip:95.8%
+[libx264 @ 000001e8b9eb0480] mb B  I16..4:  0.1%  0.0%  0.0%  B16..8:  0.2%  0.0%  0.0%  direct: 0.5%  skip:99.2%  L0:55.9% L1:37.4% BI: 6.7%
+[libx264 @ 000001e8b9eb0480] 8x8 transform intra:5.9% inter:20.7%
+[libx264 @ 000001e8b9eb0480] coded y,uvDC,uvAC intra: 5.0% 8.7% 6.6% inter: 0.2% 0.7% 0.1%
+[libx264 @ 000001e8b9eb0480] i16 v,h,dc,p: 85% 14%  1%  0%
+[libx264 @ 000001e8b9eb0480] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 22% 15% 61%  1%  0%  0%  0%  0%  0%
+[libx264 @ 000001e8b9eb0480] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35% 21% 23%  3%  3%  4%  4%  4%  3%
+[libx264 @ 000001e8b9eb0480] i8c dc,h,v,p: 80% 14%  6%  0%
+[libx264 @ 000001e8b9eb0480] Weighted P-Frames: Y:4.7% UV:4.1%
+[libx264 @ 000001e8b9eb0480] ref P L0: 70.9% 29.1%
+[libx264 @ 000001e8b9eb0480] ref B L0: 85.9% 14.1%
+[libx264 @ 000001e8b9eb0480] ref B L1: 95.8%  4.2%
+[libx264 @ 000001e8b9eb0480] kb/s:185.66
+[aac @ 000001e8ba740d00] Qavg: 9969.157
+{"argv": ["C:\\Users\\marcn\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe", "-hide_banner", "-y", "-i", "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\presentation-with-finite-proof.mp4", "-filter_complex", "[0:v]trim=start_frame=6048:end_frame=7392,setpts=PTS-STARTPTS[v];[0:a]atrim=start=252:end=308,asetpts=PTS-STARTPTS[a]", "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "fast", "-crf", "18", "-pix_fmt", "yuv420p", "-r", "24", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-frames:v", "1344", "-t", "56", "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-finite-proof\\proof-demonstration.mp4"]}
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\marcn\Documents\Codex\2026-11-14\eu\outputs\riemann-finite-proof\presentation-with-finite-proof.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Duration: 00:05:20.00, start: 0.000000, bitrate: 359 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 185 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 168 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 (h264) -> trim:default
+  Stream #0:1 (aac) -> atrim:default
+  setpts:default -> Stream #0:0 (libx264)
+  asetpts:default -> Stream #0:1 (aac)
+Press [q] to stop, [?] for help
+[libx264 @ 0000020ff6040440] using SAR=1/1
+[libx264 @ 0000020ff6040440] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0000020ff6040440] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0000020ff6040440] 264 - core 164 r3192 c24e06c - H.264/MPEG-4 AVC codec - Copyleft 2003-2024 - http://www.videolan.org/x264.html - options: cabac=1 ref=2 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=6 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=34 lookahead_threads=5 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc_lookahead=30 rc=crf mbtree=1 crf=18.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\Users\marcn\Documents\Codex\2026-11-14\eu\outputs\riemann-finite-proof\proof-demonstration.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 24 fps, 12288 tbn
+      Metadata:
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s
+      Metadata:
+        encoder         : Lavc61.19.100 aac
+frame=   71 fps= 46 q=23.0 size=     256KiB time=00:00:02.87 bitrate= 729.6kbits/s speed=1.86x    frame=  374 fps=182 q=23.0 size=     768KiB time=00:00:15.50 bitrate= 405.9kbits/s speed=7.54x    frame=  672 fps=261 q=23.0 size=    1024KiB time=00:00:27.91 bitrate= 300.5kbits/s speed=10.8x    frame=  971 fps=314 q=23.0 size=    1792KiB time=00:00:40.37 bitrate= 363.6kbits/s speed=  13x    frame= 1316 fps=366 q=-1.0 size=    2048KiB time=N/A bitrate=N/A speed=N/A    [mp4 @ 0000020ff6153140] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000020ff60ebd00] video:1226KiB audio:1061KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.720706%
+frame= 1344 fps=370 q=-1.0 Lsize=    2326KiB time=00:00:55.91 bitrate= 340.7kbits/s speed=15.4x    
+[libx264 @ 0000020ff6040440] frame I:7     Avg QP: 4.97  size: 74099
+[libx264 @ 0000020ff6040440] frame P:339   Avg QP:12.67  size:  1775
+[libx264 @ 0000020ff6040440] frame B:998   Avg QP:11.53  size:   134
+[libx264 @ 0000020ff6040440] consecutive B-frames:  0.7%  0.4%  0.9% 97.9%
+[libx264 @ 0000020ff6040440] mb I  I16..4: 84.0%  2.1% 13.8%
+[libx264 @ 0000020ff6040440] mb P  I16..4:  0.9%  0.2%  0.0%  P16..4:  2.1%  0.2%  0.1%  0.0%  0.0%    skip:96.4%
+[libx264 @ 0000020ff6040440] mb B  I16..4:  0.1%  0.0%  0.0%  B16..8:  0.1%  0.0%  0.0%  direct: 0.3%  skip:99.5%  L0:40.7% L1:50.6% BI: 8.7%
+[libx264 @ 0000020ff6040440] 8x8 transform intra:6.4% inter:23.4%
+[libx264 @ 0000020ff6040440] coded y,uvDC,uvAC intra: 6.1% 8.7% 6.3% inter: 0.2% 0.5% 0.1%
+[libx264 @ 0000020ff6040440] i16 v,h,dc,p: 87% 12%  2%  0%
+[libx264 @ 0000020ff6040440] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 31%  7% 61%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0000020ff6040440] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35% 22% 21%  3%  3%  4%  4%  4%  3%
+[libx264 @ 0000020ff6040440] i8c dc,h,v,p: 82% 12%  6%  0%
+[libx264 @ 0000020ff6040440] Weighted P-Frames: Y:2.7% UV:2.4%
+[libx264 @ 0000020ff6040440] ref P L0: 71.4% 28.6%
+[libx264 @ 0000020ff6040440] ref B L0: 83.1% 16.9%
+[libx264 @ 0000020ff6040440] ref B L1: 94.5%  5.5%
+[libx264 @ 0000020ff6040440] kb/s:179.21
+[aac @ 0000020ff61e2640] Qavg: 13858.909
