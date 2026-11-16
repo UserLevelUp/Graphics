@@ -1,0 +1,16 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.collision_guide",
+  "slice_id": "video",
+  "contract_hash": "contract:graph.riemann.collision_guide.video:v1",
+  "attempt_id": "video-reviewed-v1",
+  "result_state": "accepted",
+  "result_hash": "sha256:5a90a28ceb879ba42f9adc2489e9dc5cc6e244802a3453f74e2955fd2013bcfd",
+  "evidence": {
+    "review": [
+      "evidence/media-review.json",
+      "evidence/visual-review.json"
+    ]
+  },
+  "reason": null
+}

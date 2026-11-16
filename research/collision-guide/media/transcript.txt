@@ -1,0 +1,68 @@
+00:00:00,000  A question with a definite guarantee
+Start with a polynomial whose roots are distinct and real. As its coefficients follow a specified heat equation, those roots move and may collide. We can prove an interval during which no collision is possible. This is a guarantee about a finite mathematical system, with a checker that others can reuse.
+
+00:00:24,000  How the project reached this question
+The recorded path began with four-color coordinates, moving origins, and phase measurements. An exactly solved quartic then exposed a failed local collision forecast. The next task kept the exterior-root interactions that the simpler estimate had discarded. Bounding those interactions led to the constant-diameter certificate, followed by the stronger contracting-diameter formula. The colors helped frame an investigation; the equations and counterexamples determined what survived.
+
+00:00:59,125  What the review record does and does not prove
+The records separate a proposal, its review, and its proof. Both bound formulas were supplied in the review contract. During review, Carbon retracted an incorrect product inequality and used reciprocal terms to justify the diameter estimate. Eventness marks the finite result complete and the infinite-system obligation open. Trace IDs make this history inspectable; a matching ID or reviewer agreement is not mathematical proof.
+
+00:01:33,375  Fix the equation and the time direction
+The equation is P sub t equals minus P sub z z. We start at time zero and decrease t. For clarity, the animation uses positive elapsed duration u, equal to minus t. The polynomial evolution is a terminating derivative sum, so we can compute its coefficients exactly without Euler steps.
+
+00:01:59,083  Three measurements of the starting roots
+Sort the initial roots. Record their number n, the smallest adjacent gap m, and the diameter D zero, from the leftmost root to the rightmost. Our running example has roots minus three, minus one, one, and three. There are four roots, the minimum gap is two, and the diameter is six.
+
+00:02:23,083  An exactly solved moving-root example
+For these four roots, the evolving polynomial is shown here. Substituting w equals z squared reduces its root equation to a quadratic. That calculation proves the first collisions occur at elapsed duration two thirds. At that instant the polynomial becomes z squared minus one, squared: two double roots, at minus one and one.
+
+00:02:50,875  Begin with the two-root baseline
+An isolated pair with gap m has squared gap m squared minus eight u. Its collision duration is exactly m squared over eight. In a larger system, this gives a conservative first guarantee using the smallest starting gap. For the quartic that duration is one half. The other roots let us improve this guarantee.
+
+00:03:15,917  Every root contributes to the motion
+Differentiate the equation saying that P is zero at a moving root. Factoring the polynomial then expresses that root's velocity as a sum over all the other roots. This is established heat-flow mathematics. The important change from a local guess is that the interactions outside the nearest pair remain in the calculation.
+
+00:03:41,250  Track the gap, including exterior roots
+Take adjacent roots a and b, and square their separation to obtain y. Subtracting their velocities gives this exact identity. The quantity S sums the influence of every exterior root. Adjacency makes each denominator positive. In elapsed time u, the minus eight term contracts the gap, while the interaction term offsets part of that contraction.
+
+00:04:08,542  Turn the interactions into a usable bound
+As t decreases before a collision, the extreme roots move inward, so their diameter never exceeds its initial value. Each exterior-root denominator is therefore at most D zero squared. There are n minus two such terms. This gives a positive lower bound, kappa, for the interaction sum without solving every root trajectory.
+
+00:04:35,417  A formula for guaranteed collision-free time
+Solve the comparison equation starting from the smallest squared gap. Its value stays below every actual adjacent squared gap. The displayed duration T is where that lower bound reaches zero. Before T, every gap remains positive. For our example, T is about zero point five three zero zero two four, improving the one-half baseline.
+
+00:05:00,875  Why the argument does not assume its conclusion
+The velocity formulas initially apply only while roots are distinct and real. Suppose a first collision occurred before the guaranteed duration. The positive gap bound would forbid it. Roots cannot escape to infinity in finite time because the monic polynomial's coefficients stay bounded. Distinct real roots therefore continue throughout the claimed interval.
+
+00:05:26,750  Use the shrinking diameter for a stronger estimate
+We can retain more information. The extreme-root equations bound the rate at which the squared diameter shrinks in elapsed time. Writing d for its initial square, the diameter squared is at most d minus B u. This smaller denominator strengthens the lower bound on exterior interactions as time advances toward collision.
+
+00:05:50,750  The stronger duration still has a closed formula
+Integrating the time-dependent comparison gives the stronger duration shown here. Gap packing guarantees that eta lies strictly between zero and one, so the expression is defined. The proof shows this duration exceeds the constant-diameter guarantee. For our quartic it is about zero point five three nine seven one nine. It remains a lower bound on the collision duration.
+
+00:06:17,750  A guarantee ending is not a collision occurring
+Compare the three guaranteed durations with the exact quartic collision. The strongest certificate ends near zero point five four, but the actual collision is at two thirds. At duration zero point six, all four roots are still real and distinct. Being outside a certificate means that certificate is silent; it does not mean the polynomial has failed.
+
+00:06:44,833  Run the checker on an exact root list
+Run the practical wrapper with an exact rational root list and a chosen duration. It constructs the polynomial and computes a rigorous bound. The report separates an interval guarantee from an exact root count at the selected time. For seventeen over thirty-two, both checks succeed. The decision uses rational enclosures, not a rounded decimal displayed on screen.
+
+00:07:13,833  A concrete step beyond the simpler bound
+Choose elapsed duration seventeen over thirty-two, exactly zero point five three one two five. It is beyond the constant-diameter guarantee but below the certified lower enclosure of the stronger duration. At the corresponding negative t, an exact Sturm count independently finds four distinct real roots. The theorem covers the whole interval; this count checks one sample.
+
+00:07:41,875  Use it to bound a continuation interval
+A root-tracking program can restrict its search to a duration below the certified lower bound, leaving a margin. The exact roots cannot collide there. This does not bound Euler error, Newton convergence, or floating-point error. Restarting at a later polynomial is mathematically possible, but its new root gaps need certification; this checker does not implement interval-root input.
+
+00:08:10,500  Use the solved quartic to test local predictors
+The quartic also provides a benchmark with a known answer. A frozen quadratic approximation at the origin predicts a collision there at duration nine twentieths. The exact polynomial at that point is instead two hundred forty-three over one hundred, not zero. This reveals omitted higher-order terms and gives a concrete test for any proposed improved predictor.
+
+00:08:36,375  Know which changes preserve the guarantee
+Translate every root and the durations stay the same. Scale every root by a nonzero real factor a and the durations multiply by a squared. Repeated roots violate the starting assumptions. Degree two has its own exact pair formula. An arbitrary coefficient motion, or rounded measurements treated as exact roots, is a different problem.
+
+00:09:03,750  Where the connection to RH actually lies
+The Riemann entire function has a heat deformation called H sub t, with the same heat sign. Its zeros are all real exactly when t is at least a threshold, Lambda. RH is equivalent to Lambda being at most zero. Rodgers and Tao proved Lambda is at least zero. Thus RH is equivalent to Lambda equaling zero. Shared zero dynamics connect the questions.
+
+00:09:33,750  The missing step is control of the infinite system
+Our certificate uses finitely many roots and a finite diameter. The Riemann flow has infinitely many zeros, so an extension needs rigorous control of distant zeros and convergence of their interactions. Assuming every zero is real at time zero would assume RH. A uniform real-root interval below zero would contradict the known lower bound on Lambda. The open task is control toward zero from a known-real regime.
+
+00:10:07,542  What others can take from this result
+Use the proof as a finite-system guarantee, the checker for exact rational examples, and the quartic to benchmark numerical or local approximations. The saved suite covers twenty-five root configurations and one hundred rational-time checks; those tests support the implementation. The general statement comes from the proof. Novelty remains unestablished, and no transfer to infinitely many Riemann zeros has been proved.

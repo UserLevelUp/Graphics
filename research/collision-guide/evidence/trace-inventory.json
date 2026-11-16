@@ -1,0 +1,236 @@
+{
+  "complete": true,
+  "coverage": {
+    "bytes_read": 436042,
+    "complete": true,
+    "entries": 104,
+    "files_read": 35,
+    "max_bytes": 33554432,
+    "max_entries": 50000,
+    "omissions": {}
+  },
+  "ids": [
+    {
+      "file_count": 7,
+      "files": [
+        "README.md",
+        "assemble.py",
+        "evidence/warp-progress.json",
+        "graph.riemann.collision_guide.complete.md",
+        "warps/graph.riemann.collision_guide.explanation.explanation-reviewed-v1.warp-layer.json",
+        "warps/graph.riemann.collision_guide.video.video-reviewed-v1.warp-layer.json",
+        "warps/graph.riemann.collision_guide.warp-map.json"
+      ],
+      "id": "graph.riemann.collision_guide",
+      "namespace": "graph.riemann",
+      "occurrences": 8
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/acceptance.json"
+      ],
+      "id": "graph.riemann.collision_guide.acceptance",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 1
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "evidence/portable-example.json",
+        "evidence/use-example.json",
+        "use_certificate.py"
+      ],
+      "id": "graph.riemann.collision_guide.application",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 4
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "assemble.py",
+        "evidence/assembly-manifest.json"
+      ],
+      "id": "graph.riemann.collision_guide.assembly",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 3
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "evidence/delivery-manifest.json",
+        "package_delivery.py"
+      ],
+      "id": "graph.riemann.collision_guide.delivery",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 3
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "evidence/discovery-provenance.json",
+        "trace_discovery.py"
+      ],
+      "id": "graph.riemann.collision_guide.discovery",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 3
+    },
+    {
+      "file_count": 4,
+      "files": [
+        "assemble.py",
+        "evidence/warp-progress.json",
+        "warps/graph.riemann.collision_guide.explanation.explanation-reviewed-v1.warp-layer.json",
+        "warps/graph.riemann.collision_guide.warp-map.json"
+      ],
+      "id": "graph.riemann.collision_guide.explanation",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 4
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "evidence/explanation-review.json",
+        "package_delivery.py",
+        "verify_explanation.py"
+      ],
+      "id": "graph.riemann.collision_guide.explanation_review",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 4
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "evidence/focused-manifest.json",
+        "export_focused.py"
+      ],
+      "id": "graph.riemann.collision_guide.focused",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 3
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "guide.md"
+      ],
+      "id": "graph.riemann.collision_guide.guide",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 1
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "evidence/chapter-manifest.json",
+        "render_chapter.py"
+      ],
+      "id": "graph.riemann.collision_guide.media",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 3
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "evidence/voice-jobs.json",
+        "media/voice-manifest.json"
+      ],
+      "id": "graph.riemann.collision_guide.media.voice",
+      "namespace": "graph.riemann.collision_guide.media",
+      "occurrences": 2
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "evidence/media-review.json",
+        "package_delivery.py",
+        "verify_media.py"
+      ],
+      "id": "graph.riemann.collision_guide.media_review",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 4
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/published-files.json"
+      ],
+      "id": "graph.riemann.collision_guide.published_files",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "README.md"
+      ],
+      "id": "graph.riemann.collision_guide.readme",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 1
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "assemble.py",
+        "evidence/repository.json"
+      ],
+      "id": "graph.riemann.collision_guide.repository",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 2
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "script.json"
+      ],
+      "id": "graph.riemann.collision_guide.script",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 1
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "evidence/warp-progress.json",
+        "warps/graph.riemann.collision_guide.video.video-reviewed-v1.warp-layer.json",
+        "warps/graph.riemann.collision_guide.warp-map.json"
+      ],
+      "id": "graph.riemann.collision_guide.video",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 3
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/visual-review.json"
+      ],
+      "id": "graph.riemann.collision_guide.visual_review",
+      "namespace": "graph.riemann.collision_guide",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/warp-progress.json"
+      ],
+      "id": "graph.riemann.collision_guide.warp-map.json",
+      "namespace": "graph.riemann.collision_guide.warp-map",
+      "occurrences": 1
+    }
+  ],
+  "output": {
+    "complete": true,
+    "max_output_bytes": 32768,
+    "max_results": 200,
+    "omissions": {},
+    "returned_bytes": 4079
+  },
+  "provenance": "token-occurrences",
+  "request": {
+    "context": null,
+    "ignore_case": false,
+    "pattern": "graph.riemann.collision_guide.**",
+    "root": "research/collision-guide",
+    "scope": "**",
+    "selectors": [],
+    "separator": "."
+  },
+  "schema": "recur-trace-id-inventory-v1"
+}

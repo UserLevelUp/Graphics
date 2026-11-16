@@ -1,0 +1,63 @@
+{
+  "traceId": "graph.riemann.collision_guide.delivery",
+  "createdAtUtc": "2026-11-16T04:11:23.118326+00:00",
+  "portableExample": {
+    "status": "passed",
+    "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+    "workingDirectory": "work\\collision-guide\\toolkit",
+    "report": "portable-example.json"
+  },
+  "focusedDurationSeconds": 650.9166666666666,
+  "files": [
+    {
+      "path": "finite-root-collision-guide.mp4",
+      "sha256": "98676afc7ded9c54087503c299109b5551c6aa9e06c3f81c06f1965ab848379c",
+      "bytes": 28040841
+    },
+    {
+      "path": "presentation-with-collision-guide.mp4",
+      "sha256": "465c028a9aa5f3a8a6cb091448eab947b2e955397426e348430c0e07667bde97",
+      "bytes": 53792723
+    },
+    {
+      "path": "guide.md",
+      "sha256": "4d0289420a4cc92eb9a6c1ea14292f38b2fd0b3174c85c7848da2d9cc1b2dbf8",
+      "bytes": 21475
+    },
+    {
+      "path": "collision-certificate-toolkit.zip",
+      "sha256": "bb4898e7f48d3341b9e99cbd549aa49b7dfb58e71f59b490b42c892019197841",
+      "bytes": 68583
+    },
+    {
+      "path": "START_HERE.md",
+      "sha256": "be692c21cbf295818a1bbad2799ac1c0b6a66cdbcf451a4551c8429d25307a4a",
+      "bytes": 3321
+    },
+    {
+      "path": "explanation-review.json",
+      "sha256": "5b4252f4a3a825210c5f78a779e9b06e142984307321c93365b6ee15db7ebed0",
+      "bytes": 30159
+    },
+    {
+      "path": "media-review.json",
+      "sha256": "851e11c3b3b10f74cf1e2fcf8bb9599943cf6c9c64cb9693b20bbb942266809d",
+      "bytes": 95016
+    },
+    {
+      "path": "discovery-provenance.json",
+      "sha256": "eae1036566f42025f814d53bfbaa690dfae38e10239b6f94671b97911d39abdf",
+      "bytes": 7161
+    },
+    {
+      "path": "focused-captions.srt",
+      "sha256": "443958dc94e9de4e607e5c36242ff4d347235b4d8391437d8a5ee80279657a2c",
+      "bytes": 12291
+    },
+    {
+      "path": "presentation-captions.srt",
+      "sha256": "83d63f59af2ade951be1500057b85b3c6f4d8f3793f2452e852f66e7316099d3",
+      "bytes": 22168
+    }
+  ]
+}

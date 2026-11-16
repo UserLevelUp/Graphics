@@ -1,0 +1,66 @@
+{
+  "traceId": "graph.riemann.collision_guide.assembly",
+  "createdAtUtc": "2026-11-16T04:08:49.732569+00:00",
+  "video": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\presentation-with-collision-guide.mp4",
+    "sha256": "465c028a9aa5f3a8a6cb091448eab947b2e955397426e348430c0e07667bde97",
+    "bytes": 53792723,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "frames": 29811,
+    "durationSeconds": 1242.125
+  },
+  "chapter": {
+    "insertAtSeconds": 591.2083333333334,
+    "durationSeconds": 638.9166666666666,
+    "frames": 15334
+  },
+  "repositoryCard": {
+    "startSeconds": 1230.125,
+    "durationSeconds": 12,
+    "sourceCheckpoint": "320567890686779f10e7aaade9538eb90537beb5",
+    "imageSha256": "9ed24dced1a657514054a5c8b3160e63838df44e97da5bb5a1ca6fd1b7eae35e"
+  },
+  "captions": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\presentation-captions.srt",
+    "sha256": "83d63f59af2ade951be1500057b85b3c6f4d8f3793f2452e852f66e7316099d3",
+    "cues": 171,
+    "embedded": true
+  },
+  "preservedSource": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\presentation-with-lessons.mp4",
+    "sha256": "8d9887ea23fec8a85adc0e13fc6f0c91e455650de9d66bd456be403c5aa37bf3"
+  },
+  "inputs": [
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\presentation-with-lessons.mp4",
+      "sha256": "8d9887ea23fec8a85adc0e13fc6f0c91e455650de9d66bd456be403c5aa37bf3"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\chapter.mp4",
+      "sha256": "661ac7b1e690bc400cb072f691abe5b747e14063aad5e3b68f4e025e85b2a53a"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\captions.srt",
+      "sha256": "b7bcc284a4a84f1cfa33bf296951b08fa2d98c74d4720bead1b5e4913b75bb30"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\riemann-lessons\\presentation-captions.srt",
+      "sha256": "9d5c1ce4120bbed5e8b27affeb9996af59f33714286a1b3acd080f50f62cf3f4"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\assemble.py",
+      "sha256": "97d96ab02ba6896f1ab4b04539d55e5d0f8a72bd6dc69c43a1dd15ff744871f6"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\script.json",
+      "sha256": "36bdfec5403686c5692091f84f7884ccc0db4e1c187c89d7776ac2fc7f20bf8f"
+    }
+  ],
+  "limits": [
+    "The existing 591.208333-second body is re-encoded, not byte-copied, in this separate export.",
+    "The old export remains byte-identical. The new repository card replaces its final 12 seconds.",
+    "The displayed checkpoint identifies the source state before media export, not a self-referential final media commit."
+  ]
+}

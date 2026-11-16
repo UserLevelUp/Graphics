@@ -1,0 +1,415 @@
+1
+00:00:00,650 --> 00:00:04,629
+Start with a polynomial whose roots are distinct and real.
+
+2
+00:00:04,629 --> 00:00:10,200
+As its coefficients follow a specified heat equation, those roots move and may collide.
+
+3
+00:00:10,200 --> 00:00:14,577
+We can prove an interval during which no collision is possible.
+
+4
+00:00:14,577 --> 00:00:20,944
+This is a guarantee about a finite mathematical system, with a checker that others can reuse.
+
+5
+00:00:24,650 --> 00:00:30,957
+The recorded path began with four-color coordinates, moving origins, and phase measurements.
+
+6
+00:00:30,957 --> 00:00:36,738
+An exactly solved quartic then exposed a failed local collision forecast.
+
+7
+00:00:36,738 --> 00:00:43,571
+The next task kept the exterior-root interactions that the simpler estimate had discarded.
+
+8
+00:00:43,571 --> 00:00:50,929
+Bounding those interactions led to the constant-diameter certificate, followed by the stronger contracting-diameter formula.
+
+9
+00:00:50,929 --> 00:00:57,762
+The colors helped frame an investigation; the equations and counterexamples determined what survived.
+
+10
+00:00:59,775 --> 00:01:04,891
+The records separate a proposal, its review, and its proof.
+
+11
+00:01:04,891 --> 00:01:09,495
+Both bound formulas were supplied in the review contract.
+
+12
+00:01:09,495 --> 00:01:18,192
+During review, Carbon retracted an incorrect product inequality and used reciprocal terms to justify the diameter estimate.
+
+13
+00:01:18,192 --> 00:01:23,819
+Eventness marks the finite result complete and the infinite-system obligation open.
+
+14
+00:01:23,819 --> 00:01:32,004
+Trace IDs make this history inspectable; a matching ID or reviewer agreement is not mathematical proof.
+
+15
+00:01:34,025 --> 00:01:39,598
+The equation is P sub t equals minus P sub z z.
+
+16
+00:01:39,598 --> 00:01:43,313
+We start at time zero and decrease t.
+
+17
+00:01:43,313 --> 00:01:49,350
+For clarity, the animation uses positive elapsed duration u, equal to minus t.
+
+18
+00:01:49,350 --> 00:01:57,709
+The polynomial evolution is a terminating derivative sum, so we can compute its coefficients exactly without Euler steps.
+
+19
+00:01:59,733 --> 00:02:01,402
+Sort the initial roots.
+
+20
+00:02:01,402 --> 00:02:10,160
+Record their number n, the smallest adjacent gap m, and the diameter D zero, from the leftmost root to the rightmost.
+
+21
+00:02:10,160 --> 00:02:15,164
+Our running example has roots minus three, minus one, one, and three.
+
+22
+00:02:15,164 --> 00:02:21,003
+There are four roots, the minimum gap is two, and the diameter is six.
+
+23
+00:02:23,733 --> 00:02:28,596
+For these four roots, the evolving polynomial is shown here.
+
+24
+00:02:28,596 --> 00:02:34,432
+Substituting w equals z squared reduces its root equation to a quadratic.
+
+25
+00:02:34,432 --> 00:02:40,268
+That calculation proves the first collisions occur at elapsed duration two thirds.
+
+26
+00:02:40,268 --> 00:02:49,508
+At that instant the polynomial becomes z squared minus one, squared: two double roots, at minus one and one.
+
+27
+00:02:51,525 --> 00:02:57,497
+An isolated pair with gap m has squared gap m squared minus eight u.
+
+28
+00:02:57,497 --> 00:03:01,336
+Its collision duration is exactly m squared over eight.
+
+29
+00:03:01,336 --> 00:03:07,734
+In a larger system, this gives a conservative first guarantee using the smallest starting gap.
+
+30
+00:03:07,734 --> 00:03:11,147
+For the quartic that duration is one half.
+
+31
+00:03:11,147 --> 00:03:14,559
+The other roots let us improve this guarantee.
+
+32
+00:03:16,567 --> 00:03:21,947
+Differentiate the equation saying that P is zero at a moving root.
+
+33
+00:03:21,947 --> 00:03:29,120
+Factoring the polynomial then expresses that root's velocity as a sum over all the other roots.
+
+34
+00:03:29,120 --> 00:03:31,361
+This is established heat-flow mathematics.
+
+35
+00:03:31,361 --> 00:03:39,880
+The important change from a local guess is that the interactions outside the nearest pair remain in the calculation.
+
+36
+00:03:41,900 --> 00:03:47,871
+Take adjacent roots a and b, and square their separation to obtain y.
+
+37
+00:03:47,871 --> 00:03:51,087
+Subtracting their velocities gives this exact identity.
+
+38
+00:03:51,087 --> 00:03:55,680
+The quantity S sums the influence of every exterior root.
+
+39
+00:03:55,680 --> 00:03:57,977
+Adjacency makes each denominator positive.
+
+40
+00:03:57,977 --> 00:04:07,163
+In elapsed time u, the minus eight term contracts the gap, while the interaction term offsets part of that contraction.
+
+41
+00:04:09,192 --> 00:04:18,270
+As t decreases before a collision, the extreme roots move inward, so their diameter never exceeds its initial value.
+
+42
+00:04:18,270 --> 00:04:23,048
+Each exterior-root denominator is therefore at most D zero squared.
+
+43
+00:04:23,048 --> 00:04:26,392
+There are n minus two such terms.
+
+44
+00:04:26,392 --> 00:04:34,037
+This gives a positive lower bound, kappa, for the interaction sum without solving every root trajectory.
+
+45
+00:04:36,067 --> 00:04:40,410
+Solve the comparison equation starting from the smallest squared gap.
+
+46
+00:04:40,410 --> 00:04:44,318
+Its value stays below every actual adjacent squared gap.
+
+47
+00:04:44,318 --> 00:04:49,096
+The displayed duration T is where that lower bound reaches zero.
+
+48
+00:04:49,096 --> 00:04:51,701
+Before T, every gap remains positive.
+
+49
+00:04:51,701 --> 00:04:59,519
+For our example, T is about zero point five three zero zero two four, improving the one-half baseline.
+
+50
+00:05:01,525 --> 00:05:07,033
+The velocity formulas initially apply only while roots are distinct and real.
+
+51
+00:05:07,033 --> 00:05:11,165
+Suppose a first collision occurred before the guaranteed duration.
+
+52
+00:05:11,165 --> 00:05:14,378
+The positive gap bound would forbid it.
+
+53
+00:05:14,378 --> 00:05:21,264
+Roots cannot escape to infinity in finite time because the monic polynomial's coefficients stay bounded.
+
+54
+00:05:21,264 --> 00:05:25,395
+Distinct real roots therefore continue throughout the claimed interval.
+
+55
+00:05:27,400 --> 00:05:29,494
+We can retain more information.
+
+56
+00:05:29,494 --> 00:05:35,777
+The extreme-root equations bound the rate at which the squared diameter shrinks in elapsed time.
+
+57
+00:05:35,777 --> 00:05:42,479
+Writing d for its initial square, the diameter squared is at most d minus B u.
+
+58
+00:05:42,479 --> 00:05:48,762
+This smaller denominator strengthens the lower bound on exterior interactions as time advances toward collision.
+
+59
+00:05:51,400 --> 00:05:55,692
+Integrating the time-dependent comparison gives the stronger duration shown here.
+
+60
+00:05:55,692 --> 00:06:02,558
+Gap packing guarantees that eta lies strictly between zero and one, so the expression is defined.
+
+61
+00:06:02,558 --> 00:06:06,421
+The proof shows this duration exceeds the constant-diameter guarantee.
+
+62
+00:06:06,421 --> 00:06:12,429
+For our quartic it is about zero point five three nine seven one nine.
+
+63
+00:06:12,429 --> 00:06:16,292
+It remains a lower bound on the collision duration.
+
+64
+00:06:18,400 --> 00:06:22,800
+Compare the three guaranteed durations with the exact quartic collision.
+
+65
+00:06:22,800 --> 00:06:30,279
+The strongest certificate ends near zero point five four, but the actual collision is at two thirds.
+
+66
+00:06:30,279 --> 00:06:35,998
+At duration zero point six, all four roots are still real and distinct.
+
+67
+00:06:35,998 --> 00:06:43,478
+Being outside a certificate means that certificate is silent; it does not mean the polynomial has failed.
+
+68
+00:06:45,483 --> 00:06:52,110
+Run the practical wrapper with an exact rational root list and a chosen duration.
+
+69
+00:06:52,110 --> 00:06:56,371
+It constructs the polynomial and computes a rigorous bound.
+
+70
+00:06:56,371 --> 00:07:03,471
+The report separates an interval guarantee from an exact root count at the selected time.
+
+71
+00:07:03,471 --> 00:07:06,785
+For seventeen over thirty-two, both checks succeed.
+
+72
+00:07:06,785 --> 00:07:12,465
+The decision uses rational enclosures, not a rounded decimal displayed on screen.
+
+73
+00:07:14,483 --> 00:07:20,985
+Choose elapsed duration seventeen over thirty-two, exactly zero point five three one two five.
+
+74
+00:07:20,985 --> 00:07:28,415
+It is beyond the constant-diameter guarantee but below the certified lower enclosure of the stronger duration.
+
+75
+00:07:28,415 --> 00:07:35,381
+At the corresponding negative t, an exact Sturm count independently finds four distinct real roots.
+
+76
+00:07:35,381 --> 00:07:40,490
+The theorem covers the whole interval; this count checks one sample.
+
+77
+00:07:42,525 --> 00:07:50,928
+A root-tracking program can restrict its search to a duration below the certified lower bound, leaving a margin.
+
+78
+00:07:50,928 --> 00:07:53,729
+The exact roots cannot collide there.
+
+79
+00:07:53,729 --> 00:07:58,865
+This does not bound Euler error, Newton convergence, or floating-point error.
+
+80
+00:07:58,865 --> 00:08:09,135
+Restarting at a later polynomial is mathematically possible, but its new root gaps need certification; this checker does not implement interval-root input.
+
+81
+00:08:11,150 --> 00:08:15,413
+The quartic also provides a benchmark with a known answer.
+
+82
+00:08:15,413 --> 00:08:21,806
+A frozen quadratic approximation at the origin predicts a collision there at duration nine twentieths.
+
+83
+00:08:21,806 --> 00:08:28,626
+The exact polynomial at that point is instead two hundred forty-three over one hundred, not zero.
+
+84
+00:08:28,626 --> 00:08:35,020
+This reveals omitted higher-order terms and gives a concrete test for any proposed improved predictor.
+
+85
+00:08:37,025 --> 00:08:41,251
+Translate every root and the durations stay the same.
+
+86
+00:08:41,251 --> 00:08:48,764
+Scale every root by a nonzero real factor a and the durations multiply by a squared.
+
+87
+00:08:48,764 --> 00:08:51,581
+Repeated roots violate the starting assumptions.
+
+88
+00:08:51,581 --> 00:08:55,338
+Degree two has its own exact pair formula.
+
+89
+00:08:55,338 --> 00:09:02,381
+An arbitrary coefficient motion, or rounded measurements treated as exact roots, is a different problem.
+
+90
+00:09:04,400 --> 00:09:11,731
+The Riemann entire function has a heat deformation called H sub t, with the same heat sign.
+
+91
+00:09:11,731 --> 00:09:17,768
+Its zeros are all real exactly when t is at least a threshold, Lambda.
+
+92
+00:09:17,768 --> 00:09:21,649
+RH is equivalent to Lambda being at most zero.
+
+93
+00:09:21,649 --> 00:09:25,530
+Rodgers and Tao proved Lambda is at least zero.
+
+94
+00:09:25,530 --> 00:09:28,980
+Thus RH is equivalent to Lambda equaling zero.
+
+95
+00:09:28,980 --> 00:09:31,567
+Shared zero dynamics connect the questions.
+
+96
+00:09:34,400 --> 00:09:39,141
+Our certificate uses finitely many roots and a finite diameter.
+
+97
+00:09:39,141 --> 00:09:49,097
+The Riemann flow has infinitely many zeros, so an extension needs rigorous control of distant zeros and convergence of their interactions.
+
+98
+00:09:49,097 --> 00:09:54,312
+Assuming every zero is real at time zero would assume RH.
+
+99
+00:09:54,312 --> 00:10:00,950
+A uniform real-root interval below zero would contradict the known lower bound on Lambda.
+
+100
+00:10:00,950 --> 00:10:06,165
+The open task is control toward zero from a known-real regime.
+
+101
+00:10:08,192 --> 00:10:18,953
+Use the proof as a finite-system guarantee, the checker for exact rational examples, and the quartic to benchmark numerical or local approximations.
+
+102
+00:10:18,953 --> 00:10:27,269
+The saved suite covers twenty-five root configurations and one hundred rational-time checks; those tests support the implementation.
+
+103
+00:10:27,269 --> 00:10:30,693
+The general statement comes from the proof.
+
+104
+00:10:30,693 --> 00:10:37,542
+Novelty remains unestablished, and no transfer to infinitely many Riemann zeros has been proved.

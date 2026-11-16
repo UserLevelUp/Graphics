@@ -1,0 +1,37 @@
+{
+  "traceId": "graph.riemann.collision_guide.focused",
+  "video": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\finite-root-collision-guide.mp4",
+    "sha256": "98676afc7ded9c54087503c299109b5551c6aa9e06c3f81c06f1965ab848379c",
+    "bytes": 28040841,
+    "frames": 15622,
+    "fps": 24,
+    "width": 1920,
+    "height": 1080,
+    "durationSeconds": 650.9166666666666
+  },
+  "captions": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\focused-captions.srt",
+    "cues": 105,
+    "sha256": "443958dc94e9de4e607e5c36242ff4d347235b4d8391437d8a5ee80279657a2c"
+  },
+  "source": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\presentation-with-collision-guide.mp4",
+    "sha256": "465c028a9aa5f3a8a6cb091448eab947b2e955397426e348430c0e07667bde97",
+    "startFrame": 14189
+  },
+  "inputs": [
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\export_focused.py",
+      "sha256": "588d45929c408eded717a975e96e6abbfb4d39ad537252ff989b503490eb3809"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assembly-manifest.json",
+      "sha256": "e8b13b1656f954a6cd8e82c3669b10d8a18f75f8e07260308e558b3db7e07c6e"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\chapter-manifest.json",
+      "sha256": "c65d75d4f81c4cfe68454d83339316dbac9cf841724373a097dd904793905953"
+    }
+  ]
+}

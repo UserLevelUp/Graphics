@@ -1,0 +1,735 @@
+1
+00:00:00,150 --> 00:00:13,200
+First, put one question inside a Warp: an isolated, reversible
+piece of work. It is a project boundary, not a mathematical
+force. We test the animation before building its explanation.
+
+2
+00:00:14,150 --> 00:00:26,131
+This approach assigns four quadrant colors to sampled points.
+Greater resolution reveals finer boundaries. Here, zeta's output
+origin moves smoothly from zero to one.
+
+3
+00:00:28,150 --> 00:00:37,252
+The brush stays upright as it follows a circle. Changing direction changes the colors left behind, while new marks overwrite old ones.
+
+4
+00:00:40,150 --> 00:00:54,200
+Wegert's phase plots explain the color view. Lester's work
+places zeta's a-points in an established research area. We
+connect those ideas to our earlier two-state switch, using
+classical prediction and Newton correction.
+
+5
+00:00:55,150 --> 00:01:12,008
+Platt and Trudgian provide rigorous finite checks. Lamzouri's
+preprint presents a proportion bound; OpenAI reports a zero-free
+region and formalization. These concern zeta zeros, not a
+certificate for our moving nonzero targets.
+
+6
+00:01:13,150 --> 00:01:25,224
+We follow the same root as the target moves. Where zeta prime is
+nonzero, this formula gives its direction and speed. Smaller
+steps and corrections help the computation stay on track.
+
+7
+00:01:28,150 --> 00:01:42,128
+Independent checks find two paths leaving the right edge before
+the target reaches one. The third reaches a finite one-point.
+Leaving our window means the view ended, not that the
+mathematical branch stopped.
+
+8
+00:01:44,150 --> 00:01:59,200
+Color shows phase. Continuation follows a solution. Higher
+precision checks numerical stability. Analytic estimates would
+be needed for a certificate. These methods help separate tracked
+connections from artifacts of switching or coarse pixels.
+
+9
+00:02:00,150 --> 00:02:14,200
+Our conjecture required all three paths to remain inside the
+window. The computed exits give numerical counterevidence. A
+rigorous rejection would require certified continuation bounds.
+We keep the original window.
+
+10
+00:02:15,150 --> 00:02:28,850
+One-points are not zeta zeros. Even three successful paths would
+not exclude an unseen zero off the critical line. A proof of
+Riemann needs a global constraint, beyond what these pictures
+establish.
+
+11
+00:02:30,150 --> 00:02:45,382
+This approach colors each sampled point by its output quadrant
+relative to a chosen origin. Greater rendering resolution
+reveals finer boundaries. Colors indicate direction; at a zero,
+the phase is undefined.
+
+12
+00:02:50,150 --> 00:03:08,029
+Our finite computation found two paths leaving the original
+window and one reaching a one-point. Independent numerical
+checks support those observations. They do not certify every
+point between samples, and they do not show that the exiting
+branches disappear.
+
+13
+00:03:09,150 --> 00:03:27,200
+The next precise task is to certify those three paths: prove
+uniqueness in overlapping boxes, exclude a zero derivative, and
+certify the two boundary crossings. That would turn selected
+numerical observations into a bounded mathematical certificate.
+
+14
+00:03:28,150 --> 00:03:47,200
+Boseman and Pauli already studied this continuation family.
+Complex target paths offer broader exploration. Speiser links
+Riemann to excluding derivative zeros throughout an entire half-
+strip. Our three paths do not cover that obligation; a global
+proof is still missing.
+
+15
+00:03:48,150 --> 00:04:08,862
+There is a genuine bridge to primes: explicit formulas connect
+weighted prime counts with zeta zeros. Our proposed next
+experiment would reconstruct that count from finitely many zeros
+and certify the omitted error. A useful result would be a
+rigorously bounded approximation to prime distribution.
+
+16
+00:04:12,150 --> 00:04:34,302
+From zero through one hundred, every composite has a prime
+divisor no larger than ten. Testing two, three, five and seven
+therefore gives a complete classification: twenty-five primes.
+Each label has an exact divisibility certificate. Violet
+displays the proved answers; it is not a color-based prediction.
+
+17
+00:04:40,150 --> 00:05:02,998
+Phase colors can guide us toward candidate zeros. Here the model
+function is simply z. Around the unit circle, it never vanishes
+and its phase makes one full turn, proving one zero inside. For
+zeta, rigorous bounds and complete zero counts are still needed.
+Brush trails alone do not supply them.
+
+18
+00:05:08,650 --> 00:05:14,217
+This idea starts with a four-color quadrant brush at each point.
+
+19
+00:05:14,217 --> 00:05:18,772
+Its trail changes with direction, overlap, rotation, and resolution.
+
+20
+00:05:18,772 --> 00:05:21,302
+That makes the geometry visible.
+
+21
+00:05:21,302 --> 00:05:28,387
+But a surviving pixel color is not, by itself, an arithmetic certificate of primality.
+
+22
+00:05:30,400 --> 00:05:36,857
+Z three means the third zeta zero, not twenty-three or a prime label.
+
+23
+00:05:36,857 --> 00:05:45,798
+For the first hundred zero indices, negative starting slopes occurred at fourteen prime indices and thirty-five composite indices.
+
+24
+00:05:45,798 --> 00:05:48,281
+Eleven prime indices sloped upward.
+
+25
+00:05:48,281 --> 00:05:53,248
+Both signs mix the classes, so this proposed rule fails.
+
+26
+00:05:55,275 --> 00:05:59,900
+The proposed denominator, g of n, simplifies exactly to n.
+
+27
+00:05:59,900 --> 00:06:05,912
+Substituting it into zeta's series leaves the same function where that series converges.
+
+28
+00:06:05,912 --> 00:06:10,999
+The half inside g does not set s to one half.
+
+29
+00:06:10,999 --> 00:06:17,473
+And ninety-seven and composite ninety-nine both have a fractional half when divided by two.
+
+30
+00:06:19,483 --> 00:06:25,688
+Zeta at one half exists and is about minus one point four six.
+
+31
+00:06:25,688 --> 00:06:30,460
+The critical line instead uses one half plus i t.
+
+32
+00:06:30,460 --> 00:06:32,369
+Particular heights give zeros.
+
+33
+00:06:32,369 --> 00:06:36,664
+Putting ninety-seven into t gives a nonzero complex value.
+
+34
+00:06:36,664 --> 00:06:41,914
+Fixing the real part does not identify an integer as prime.
+
+35
+00:06:43,942 --> 00:06:50,839
+With integer n used as height, ninety-seven and composite ninety-nine both occupy quadrant one.
+
+36
+00:06:50,839 --> 00:06:57,244
+Comparing zeta at s, s plus one, and s minus one still fails.
+
+37
+00:06:57,244 --> 00:07:06,604
+Matching ninety-seven's three colors keeps six primes and eighteen composites, while missing nineteen primes between two and one hundred.
+
+38
+00:07:08,608 --> 00:07:12,665
+Removing the unit term gives zeta minus one.
+
+39
+00:07:12,665 --> 00:07:16,214
+Its zeros are where zeta equals one.
+
+40
+00:07:16,214 --> 00:07:20,271
+Multiplying the two functions combines both zero sets.
+
+41
+00:07:20,271 --> 00:07:27,370
+Every hypothetical off-line zeta zero survives, so the switch does not prove the hypothesis.
+
+42
+00:07:29,400 --> 00:07:33,949
+Reordering the same finite sum leaves its value unchanged.
+
+43
+00:07:33,949 --> 00:07:41,025
+For the tested coefficient reversal, subtracting the reverse makes opposite positions have opposite signs.
+
+44
+00:07:41,025 --> 00:07:45,574
+A nonzero, nonnegative composite indicator cannot have that symmetry.
+
+45
+00:07:45,574 --> 00:07:51,134
+Other definitions of a backward recurrence would need a separate derivation.
+
+46
+00:07:53,150 --> 00:07:59,133
+Finite subtraction leaves nonprimes but requires knowing the prime terms to remove.
+
+47
+00:07:59,133 --> 00:08:04,120
+At s equals minus one, the ordinary integer series diverges.
+
+48
+00:08:04,120 --> 00:08:12,098
+Zeta's continued value, minus one twelfth, is not an ordinary sum for subtracting infinitely many primes.
+
+49
+00:08:14,108 --> 00:08:21,013
+For real s greater than one, define A as the odd-number part of zeta.
+
+50
+00:08:21,013 --> 00:08:28,904
+Then A minus one minus log A cancels every odd-prime coefficient and leaves weighted odd composites.
+
+51
+00:08:28,904 --> 00:08:34,329
+The coefficient at ninety-seven is zero; at ninety-nine it is one.
+
+52
+00:08:34,329 --> 00:08:38,768
+Evaluating H at ninety-seven does not extract that coefficient.
+
+53
+00:08:40,775 --> 00:08:46,224
+Wilson's theorem tests a candidate without a list of previous primes.
+
+54
+00:08:46,224 --> 00:08:49,691
+Our encoding places primes in quadrant one.
+
+55
+00:08:49,691 --> 00:08:54,150
+The modular factorial supplies the answer; color displays it.
+
+56
+00:08:54,150 --> 00:08:56,131
+This is not instantaneous.
+
+57
+00:08:56,131 --> 00:09:01,580
+The separate four-divisor color test works only within its stated range.
+
+58
+00:09:03,608 --> 00:09:08,420
+Removing trivial factor pairs leaves an exact composite remainder.
+
+59
+00:09:08,420 --> 00:09:16,973
+For odd integers greater than one, D counts nontrivial pairs: zero for ninety-seven, two for ninety-nine.
+
+60
+00:09:16,973 --> 00:09:20,180
+The proof covers that entire domain.
+
+61
+00:09:20,180 --> 00:09:24,991
+The implementation was independently checked through one hundred thousand.
+
+62
+00:09:24,991 --> 00:09:27,664
+It still performs divisor counting.
+
+63
+00:09:29,692 --> 00:09:33,309
+The contribution is reproducible tests and counterexamples.
+
+64
+00:09:33,309 --> 00:09:39,511
+Phase plots can guide searches; rigorous bounds must certify the zero count.
+
+65
+00:09:39,511 --> 00:09:44,162
+Prime extraction also needs error bounds and cost comparisons.
+
+66
+00:09:44,162 --> 00:09:49,847
+These experiments establish no new prime algorithm or Riemann Hypothesis advance.
+
+67
+00:09:51,858 --> 00:09:55,837
+Start with a polynomial whose roots are distinct and real.
+
+68
+00:09:55,837 --> 00:10:01,408
+As its coefficients follow a specified heat equation, those roots move and may collide.
+
+69
+00:10:01,408 --> 00:10:05,785
+We can prove an interval during which no collision is possible.
+
+70
+00:10:05,785 --> 00:10:12,152
+This is a guarantee about a finite mathematical system, with a checker that others can reuse.
+
+71
+00:10:15,858 --> 00:10:22,165
+The recorded path began with four-color coordinates, moving origins, and phase measurements.
+
+72
+00:10:22,165 --> 00:10:27,946
+An exactly solved quartic then exposed a failed local collision forecast.
+
+73
+00:10:27,946 --> 00:10:34,779
+The next task kept the exterior-root interactions that the simpler estimate had discarded.
+
+74
+00:10:34,779 --> 00:10:42,137
+Bounding those interactions led to the constant-diameter certificate, followed by the stronger contracting-diameter formula.
+
+75
+00:10:42,137 --> 00:10:48,970
+The colors helped frame an investigation; the equations and counterexamples determined what survived.
+
+76
+00:10:50,983 --> 00:10:56,099
+The records separate a proposal, its review, and its proof.
+
+77
+00:10:56,099 --> 00:11:00,703
+Both bound formulas were supplied in the review contract.
+
+78
+00:11:00,703 --> 00:11:09,400
+During review, Carbon retracted an incorrect product inequality and used reciprocal terms to justify the diameter estimate.
+
+79
+00:11:09,400 --> 00:11:15,027
+Eventness marks the finite result complete and the infinite-system obligation open.
+
+80
+00:11:15,027 --> 00:11:23,212
+Trace IDs make this history inspectable; a matching ID or reviewer agreement is not mathematical proof.
+
+81
+00:11:25,233 --> 00:11:30,806
+The equation is P sub t equals minus P sub z z.
+
+82
+00:11:30,806 --> 00:11:34,521
+We start at time zero and decrease t.
+
+83
+00:11:34,521 --> 00:11:40,558
+For clarity, the animation uses positive elapsed duration u, equal to minus t.
+
+84
+00:11:40,558 --> 00:11:48,917
+The polynomial evolution is a terminating derivative sum, so we can compute its coefficients exactly without Euler steps.
+
+85
+00:11:50,941 --> 00:11:52,610
+Sort the initial roots.
+
+86
+00:11:52,610 --> 00:12:01,368
+Record their number n, the smallest adjacent gap m, and the diameter D zero, from the leftmost root to the rightmost.
+
+87
+00:12:01,368 --> 00:12:06,372
+Our running example has roots minus three, minus one, one, and three.
+
+88
+00:12:06,372 --> 00:12:12,211
+There are four roots, the minimum gap is two, and the diameter is six.
+
+89
+00:12:14,941 --> 00:12:19,804
+For these four roots, the evolving polynomial is shown here.
+
+90
+00:12:19,804 --> 00:12:25,640
+Substituting w equals z squared reduces its root equation to a quadratic.
+
+91
+00:12:25,640 --> 00:12:31,476
+That calculation proves the first collisions occur at elapsed duration two thirds.
+
+92
+00:12:31,476 --> 00:12:40,716
+At that instant the polynomial becomes z squared minus one, squared: two double roots, at minus one and one.
+
+93
+00:12:42,733 --> 00:12:48,705
+An isolated pair with gap m has squared gap m squared minus eight u.
+
+94
+00:12:48,705 --> 00:12:52,544
+Its collision duration is exactly m squared over eight.
+
+95
+00:12:52,544 --> 00:12:58,942
+In a larger system, this gives a conservative first guarantee using the smallest starting gap.
+
+96
+00:12:58,942 --> 00:13:02,355
+For the quartic that duration is one half.
+
+97
+00:13:02,355 --> 00:13:05,767
+The other roots let us improve this guarantee.
+
+98
+00:13:07,775 --> 00:13:13,155
+Differentiate the equation saying that P is zero at a moving root.
+
+99
+00:13:13,155 --> 00:13:20,328
+Factoring the polynomial then expresses that root's velocity as a sum over all the other roots.
+
+100
+00:13:20,328 --> 00:13:22,569
+This is established heat-flow mathematics.
+
+101
+00:13:22,569 --> 00:13:31,088
+The important change from a local guess is that the interactions outside the nearest pair remain in the calculation.
+
+102
+00:13:33,108 --> 00:13:39,079
+Take adjacent roots a and b, and square their separation to obtain y.
+
+103
+00:13:39,079 --> 00:13:42,295
+Subtracting their velocities gives this exact identity.
+
+104
+00:13:42,295 --> 00:13:46,888
+The quantity S sums the influence of every exterior root.
+
+105
+00:13:46,888 --> 00:13:49,185
+Adjacency makes each denominator positive.
+
+106
+00:13:49,185 --> 00:13:58,371
+In elapsed time u, the minus eight term contracts the gap, while the interaction term offsets part of that contraction.
+
+107
+00:14:00,400 --> 00:14:09,478
+As t decreases before a collision, the extreme roots move inward, so their diameter never exceeds its initial value.
+
+108
+00:14:09,478 --> 00:14:14,256
+Each exterior-root denominator is therefore at most D zero squared.
+
+109
+00:14:14,256 --> 00:14:17,600
+There are n minus two such terms.
+
+110
+00:14:17,600 --> 00:14:25,245
+This gives a positive lower bound, kappa, for the interaction sum without solving every root trajectory.
+
+111
+00:14:27,275 --> 00:14:31,618
+Solve the comparison equation starting from the smallest squared gap.
+
+112
+00:14:31,618 --> 00:14:35,526
+Its value stays below every actual adjacent squared gap.
+
+113
+00:14:35,526 --> 00:14:40,304
+The displayed duration T is where that lower bound reaches zero.
+
+114
+00:14:40,304 --> 00:14:42,909
+Before T, every gap remains positive.
+
+115
+00:14:42,909 --> 00:14:50,727
+For our example, T is about zero point five three zero zero two four, improving the one-half baseline.
+
+116
+00:14:52,733 --> 00:14:58,241
+The velocity formulas initially apply only while roots are distinct and real.
+
+117
+00:14:58,241 --> 00:15:02,373
+Suppose a first collision occurred before the guaranteed duration.
+
+118
+00:15:02,373 --> 00:15:05,586
+The positive gap bound would forbid it.
+
+119
+00:15:05,586 --> 00:15:12,472
+Roots cannot escape to infinity in finite time because the monic polynomial's coefficients stay bounded.
+
+120
+00:15:12,472 --> 00:15:16,603
+Distinct real roots therefore continue throughout the claimed interval.
+
+121
+00:15:18,608 --> 00:15:20,702
+We can retain more information.
+
+122
+00:15:20,702 --> 00:15:26,985
+The extreme-root equations bound the rate at which the squared diameter shrinks in elapsed time.
+
+123
+00:15:26,985 --> 00:15:33,687
+Writing d for its initial square, the diameter squared is at most d minus B u.
+
+124
+00:15:33,687 --> 00:15:39,970
+This smaller denominator strengthens the lower bound on exterior interactions as time advances toward collision.
+
+125
+00:15:42,608 --> 00:15:46,900
+Integrating the time-dependent comparison gives the stronger duration shown here.
+
+126
+00:15:46,900 --> 00:15:53,766
+Gap packing guarantees that eta lies strictly between zero and one, so the expression is defined.
+
+127
+00:15:53,766 --> 00:15:57,629
+The proof shows this duration exceeds the constant-diameter guarantee.
+
+128
+00:15:57,629 --> 00:16:03,637
+For our quartic it is about zero point five three nine seven one nine.
+
+129
+00:16:03,637 --> 00:16:07,500
+It remains a lower bound on the collision duration.
+
+130
+00:16:09,608 --> 00:16:14,008
+Compare the three guaranteed durations with the exact quartic collision.
+
+131
+00:16:14,008 --> 00:16:21,487
+The strongest certificate ends near zero point five four, but the actual collision is at two thirds.
+
+132
+00:16:21,487 --> 00:16:27,206
+At duration zero point six, all four roots are still real and distinct.
+
+133
+00:16:27,206 --> 00:16:34,686
+Being outside a certificate means that certificate is silent; it does not mean the polynomial has failed.
+
+134
+00:16:36,691 --> 00:16:43,318
+Run the practical wrapper with an exact rational root list and a chosen duration.
+
+135
+00:16:43,318 --> 00:16:47,579
+It constructs the polynomial and computes a rigorous bound.
+
+136
+00:16:47,579 --> 00:16:54,679
+The report separates an interval guarantee from an exact root count at the selected time.
+
+137
+00:16:54,679 --> 00:16:57,993
+For seventeen over thirty-two, both checks succeed.
+
+138
+00:16:57,993 --> 00:17:03,673
+The decision uses rational enclosures, not a rounded decimal displayed on screen.
+
+139
+00:17:05,691 --> 00:17:12,193
+Choose elapsed duration seventeen over thirty-two, exactly zero point five three one two five.
+
+140
+00:17:12,193 --> 00:17:19,623
+It is beyond the constant-diameter guarantee but below the certified lower enclosure of the stronger duration.
+
+141
+00:17:19,623 --> 00:17:26,589
+At the corresponding negative t, an exact Sturm count independently finds four distinct real roots.
+
+142
+00:17:26,589 --> 00:17:31,698
+The theorem covers the whole interval; this count checks one sample.
+
+143
+00:17:33,733 --> 00:17:42,136
+A root-tracking program can restrict its search to a duration below the certified lower bound, leaving a margin.
+
+144
+00:17:42,136 --> 00:17:44,937
+The exact roots cannot collide there.
+
+145
+00:17:44,937 --> 00:17:50,073
+This does not bound Euler error, Newton convergence, or floating-point error.
+
+146
+00:17:50,073 --> 00:18:00,343
+Restarting at a later polynomial is mathematically possible, but its new root gaps need certification; this checker does not implement interval-root input.
+
+147
+00:18:02,358 --> 00:18:06,621
+The quartic also provides a benchmark with a known answer.
+
+148
+00:18:06,621 --> 00:18:13,014
+A frozen quadratic approximation at the origin predicts a collision there at duration nine twentieths.
+
+149
+00:18:13,014 --> 00:18:19,834
+The exact polynomial at that point is instead two hundred forty-three over one hundred, not zero.
+
+150
+00:18:19,834 --> 00:18:26,228
+This reveals omitted higher-order terms and gives a concrete test for any proposed improved predictor.
+
+151
+00:18:28,233 --> 00:18:32,459
+Translate every root and the durations stay the same.
+
+152
+00:18:32,459 --> 00:18:39,972
+Scale every root by a nonzero real factor a and the durations multiply by a squared.
+
+153
+00:18:39,972 --> 00:18:42,789
+Repeated roots violate the starting assumptions.
+
+154
+00:18:42,789 --> 00:18:46,546
+Degree two has its own exact pair formula.
+
+155
+00:18:46,546 --> 00:18:53,589
+An arbitrary coefficient motion, or rounded measurements treated as exact roots, is a different problem.
+
+156
+00:18:55,608 --> 00:19:02,939
+The Riemann entire function has a heat deformation called H sub t, with the same heat sign.
+
+157
+00:19:02,939 --> 00:19:08,976
+Its zeros are all real exactly when t is at least a threshold, Lambda.
+
+158
+00:19:08,976 --> 00:19:12,857
+RH is equivalent to Lambda being at most zero.
+
+159
+00:19:12,857 --> 00:19:16,738
+Rodgers and Tao proved Lambda is at least zero.
+
+160
+00:19:16,738 --> 00:19:20,188
+Thus RH is equivalent to Lambda equaling zero.
+
+161
+00:19:20,188 --> 00:19:22,775
+Shared zero dynamics connect the questions.
+
+162
+00:19:25,608 --> 00:19:30,349
+Our certificate uses finitely many roots and a finite diameter.
+
+163
+00:19:30,349 --> 00:19:40,305
+The Riemann flow has infinitely many zeros, so an extension needs rigorous control of distant zeros and convergence of their interactions.
+
+164
+00:19:40,305 --> 00:19:45,520
+Assuming every zero is real at time zero would assume RH.
+
+165
+00:19:45,520 --> 00:19:52,158
+A uniform real-root interval below zero would contradict the known lower bound on Lambda.
+
+166
+00:19:52,158 --> 00:19:57,373
+The open task is control toward zero from a known-real regime.
+
+167
+00:19:59,400 --> 00:20:10,161
+Use the proof as a finite-system guarantee, the checker for exact rational examples, and the quartic to benchmark numerical or local approximations.
+
+168
+00:20:10,161 --> 00:20:18,477
+The saved suite covers twenty-five root configurations and one hundred rational-time checks; those tests support the implementation.
+
+169
+00:20:18,477 --> 00:20:21,901
+The general statement comes from the proof.
+
+170
+00:20:21,901 --> 00:20:28,750
+Novelty remains unestablished, and no transfer to infinitely many Riemann zeros has been proved.
+
+171
+00:20:30,275 --> 00:20:38,030
+The code and evidence are in the public Graphics project. Use
+this branch and source checkpoint to reproduce and extend the
+work.

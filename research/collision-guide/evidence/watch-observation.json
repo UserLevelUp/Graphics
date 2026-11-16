@@ -1,0 +1,33 @@
+{
+  "traceId": "graph.riemann.collision_guide.watch",
+  "observedAtUtc": "2026-11-16T04:13:11.6673577Z",
+  "beforeStop": {
+    "id": "graph.riemann.collision_guide.media",
+    "path": ".recur/watch\\recur-watch.graph.riemann.collision_guide.media.status.current.md",
+    "state": "active",
+    "ack": "accepted",
+    "nak_reason": null,
+    "filter": "graph.riemann.collision_guide.**",
+    "dir": "C:/src/graph/research/collision-guide",
+    "mode": "poll",
+    "poll_framing": "3",
+    "format": "oneline",
+    "pid": "25944",
+    "started_at": "unix:1794800997",
+    "last_event_at": "unix:1794802366",
+    "events_seen": "5",
+    "filtered_out": "0"
+  },
+  "processId": 25944,
+  "executable": "C:\\Users\\marcn\\.cargo\\bin\\recur-watch.exe",
+  "commandLine": "\"C:\\Users\\marcn\\.cargo\\bin\\recur-watch.exe\" --id graph.riemann.collision_guide.media --filter graph.riemann.collision_guide.** -d C:/src/graph/research/collision-guide --poll-framing 3 --json",
+  "stateAfterStop": "owned process stopped",
+  "role": "Observed matching filesystem events; internal collaboration agents performed delegated work",
+  "eventLog": [
+    "1794801702 modified\tC:/src/graph/research/collision-guide\\graph.riemann.collision_guide.current.md",
+    "1794801798 created\tC:/src/graph/research/collision-guide\\warps\\graph.riemann.collision_guide.explanation.explanation-reviewed-v1.warp-layer.json",
+    "1794802360 created\tC:/src/graph/research/collision-guide\\graph.riemann.collision_guide.complete.md",
+    "1794802360 deleted\tC:/src/graph/research/collision-guide\\graph.riemann.collision_guide.current.md",
+    "1794802366 created\tC:/src/graph/research/collision-guide\\warps\\graph.riemann.collision_guide.video.video-reviewed-v1.warp-layer.json"
+  ]
+}

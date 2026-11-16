@@ -1,0 +1,106 @@
+{
+  "blocked": [],
+  "bubble_uuid": "01a1e279-d45d-7651-8e9d-a80b603010f6",
+  "completed_slices": [
+    "explanation",
+    "video"
+  ],
+  "conflicts": [],
+  "contract_status": "declared-gates-satisfied",
+  "counts": {
+    "blocked": 0,
+    "conflicting": 0,
+    "covered": 2,
+    "pending": 0,
+    "required": 2,
+    "stale_contract": 0
+  },
+  "covered": [
+    "explanation",
+    "video"
+  ],
+  "current_slice": null,
+  "evidence_status": "declared",
+  "gate_evidence": [
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/explanation-review.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "explanation",
+      "status": "declared"
+    },
+    {
+      "evidence": [
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/media-review.json",
+          "status": "declared"
+        },
+        {
+          "method": "manual-reference; producer not rerun",
+          "reasons": [],
+          "reference": "evidence/visual-review.json",
+          "status": "declared"
+        }
+      ],
+      "gate": "review",
+      "satisfied": true,
+      "slice_id": "video",
+      "status": "declared"
+    }
+  ],
+  "goal": "Explain and demonstrate the finite-polynomial collision bound and how others can use its certificate",
+  "layers": [
+    "explanation@explanation-reviewed-v1",
+    "video@video-reviewed-v1"
+  ],
+  "manifest": "graph.riemann.collision_guide.warp-map.json",
+  "pending": [],
+  "ready_slices": [],
+  "root": "\\\\?\\C:\\src\\graph\\research\\collision-guide\\warps",
+  "schema": "warp-progress-v1",
+  "slices": [
+    {
+      "contract_hash": "contract:graph.riemann.collision_guide.explanation:v1",
+      "depends_on": [],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "explanation",
+      "slice_uuid": "01a1e279-d45d-758c-8d5c-7b600e2373ef",
+      "state": "complete"
+    },
+    {
+      "contract_hash": "contract:graph.riemann.collision_guide.video:v1",
+      "depends_on": [
+        "explanation"
+      ],
+      "evidence_gates": [
+        "review"
+      ],
+      "evidence_mode": "declared",
+      "gate_rules": {},
+      "intelligence_tick": 0,
+      "ready": false,
+      "slice_id": "video",
+      "slice_uuid": "01a1e279-d45d-7790-8f07-c2042855156d",
+      "state": "complete"
+    }
+  ],
+  "stale_contract": [],
+  "state": "complete",
+  "warnings": [],
+  "warp_id": "graph.riemann.collision_guide"
+}

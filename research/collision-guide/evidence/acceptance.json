@@ -1,0 +1,80 @@
+{
+  "schema": "graph-collision-guide-acceptance-v1",
+  "traceId": "graph.riemann.collision_guide.acceptance",
+  "status": "accepted",
+  "acceptedAtUtc": "2026-11-16T04:12:18.196744+00:00",
+  "result": "Twenty-three narrated scenes explain the finite theorem, recorded discovery, exact checker, practical uses and qualified RH connection; inserted into the full presentation and also exported separately.",
+  "fullVideo": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\presentation-with-collision-guide.mp4",
+    "sha256": "465c028a9aa5f3a8a6cb091448eab947b2e955397426e348430c0e07667bde97",
+    "bytes": 53792723,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "frames": 29811,
+    "durationSeconds": 1242.125
+  },
+  "focusedVideo": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\finite-root-collision-guide.mp4",
+    "sha256": "98676afc7ded9c54087503c299109b5551c6aa9e06c3f81c06f1965ab848379c",
+    "bytes": 28040841,
+    "frames": 15622,
+    "fps": 24,
+    "width": 1920,
+    "height": 1080,
+    "durationSeconds": 650.9166666666666
+  },
+  "chapter": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\chapter.mp4",
+    "sha256": "661ac7b1e690bc400cb072f691abe5b747e14063aad5e3b68f4e025e85b2a53a",
+    "bytes": 21484075,
+    "frames": 15334,
+    "durationSeconds": 638.9166666666666,
+    "scenes": 23
+  },
+  "sourceCheckpoint": "320567890686779f10e7aaade9538eb90537beb5",
+  "evidence": [
+    {
+      "path": "evidence/explanation-review.json",
+      "sha256": "5b4252f4a3a825210c5f78a779e9b06e142984307321c93365b6ee15db7ebed0"
+    },
+    {
+      "path": "evidence/media-review.json",
+      "sha256": "851e11c3b3b10f74cf1e2fcf8bb9599943cf6c9c64cb9693b20bbb942266809d"
+    },
+    {
+      "path": "evidence/visual-review.json",
+      "sha256": "3b31c49bd8afe2e9e0a44fe15695b7f22867843b0605b3325967aaf7728a53bc"
+    },
+    {
+      "path": "evidence/discovery-provenance.json",
+      "sha256": "eae1036566f42025f814d53bfbaa690dfae38e10239b6f94671b97911d39abdf"
+    },
+    {
+      "path": "evidence/assembly-manifest.json",
+      "sha256": "e8b13b1656f954a6cd8e82c3669b10d8a18f75f8e07260308e558b3db7e07c6e"
+    },
+    {
+      "path": "evidence/focused-manifest.json",
+      "sha256": "f1df88b7524614e2534ca4efe8898b7acbccf56e57b3984b09bca794c14b4efe"
+    },
+    {
+      "path": "evidence/chapter-manifest.json",
+      "sha256": "c65d75d4f81c4cfe68454d83339316dbac9cf841724373a097dd904793905953"
+    },
+    {
+      "path": "evidence/delivery-manifest.json",
+      "sha256": "12a89fc90c0adb74269c821cab7194d22bef85752afcebb0be928ebb281ec62b"
+    },
+    {
+      "path": "evidence/published-files.json",
+      "sha256": "f0b7be6c090243aa2224f39014355a648241e2528f83475b5db947f66ab039d1"
+    }
+  ],
+  "limitations": [
+    "Novelty is unestablished; no new prime-identification method or RH advance is claimed.",
+    "The general result is an analytic proof for finite polynomials, not a proof-assistant replay or an infinite-system theorem.",
+    "Exact arithmetic tests support their listed inputs; media validation is a separate check.",
+    "The chapter is native720p upscaled to1080p; sentence caption timing is estimated. Earlier exports remain unchanged."
+  ]
+}

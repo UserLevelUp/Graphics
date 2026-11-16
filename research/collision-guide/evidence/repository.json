@@ -1,0 +1,16 @@
+{
+  "traceId": "graph.riemann.collision_guide.repository",
+  "observedAtUtc": "2026-11-16T04:07:38.099002+00:00",
+  "branch": "graph/riemann-continuation",
+  "head": "320567890686779f10e7aaade9538eb90537beb5",
+  "remoteLines": [
+    "origin\thttps://github.com/UserLevelUp/Graphics.git (fetch)",
+    "origin\thttps://github.com/UserLevelUp/Graphics.git (push)"
+  ],
+  "worktreeAtExport": "",
+  "commands": [
+    "git branch --show-current",
+    "git rev-parse HEAD",
+    "git remote -v"
+  ]
+}

@@ -1,0 +1,661 @@
+{
+  "traceId": "graph.riemann.collision_guide.media",
+  "createdUtc": "2026-11-16T04:07:23.126967+00:00",
+  "status": "rendered",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "frames": 15334,
+  "durationSeconds": 638.9166666666666,
+  "resolutionNote": "Chapter is rendered natively at 1280x720; the combined 1080p export upscales this chapter only and preserves the existing 1920x1080 presentation size.",
+  "video": {
+    "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\chapter.mp4",
+    "sha256": "661ac7b1e690bc400cb072f691abe5b747e14063aad5e3b68f4e025e85b2a53a",
+    "bytes": 21484075
+  },
+  "scenes": [
+    {
+      "id": "promised_result",
+      "title": "A question with a definite guarantee",
+      "startFrame": 0,
+      "endFrameExclusive": 576,
+      "durationSeconds": 24.0,
+      "voiceSeconds": 20.29425,
+      "voiceStartSeconds": 0.65
+    },
+    {
+      "id": "discovery_path",
+      "title": "How the project reached this question",
+      "startFrame": 576,
+      "endFrameExclusive": 1419,
+      "durationSeconds": 35.125,
+      "voiceSeconds": 33.111666666666665,
+      "voiceStartSeconds": 24.65
+    },
+    {
+      "id": "discovery_audit",
+      "title": "What the review record does and does not prove",
+      "startFrame": 1419,
+      "endFrameExclusive": 2241,
+      "durationSeconds": 34.25,
+      "voiceSeconds": 32.2293125,
+      "voiceStartSeconds": 59.775
+    },
+    {
+      "id": "exact_flow",
+      "title": "Fix the equation and the time direction",
+      "startFrame": 2241,
+      "endFrameExclusive": 2858,
+      "durationSeconds": 25.708333333333332,
+      "voiceSeconds": 23.684354166666665,
+      "voiceStartSeconds": 94.025
+    },
+    {
+      "id": "read_inputs",
+      "title": "Three measurements of the starting roots",
+      "startFrame": 2858,
+      "endFrameExclusive": 3434,
+      "durationSeconds": 24.0,
+      "voiceSeconds": 21.269479166666667,
+      "voiceStartSeconds": 119.73333333333333
+    },
+    {
+      "id": "quartic_orbit",
+      "title": "An exactly solved moving-root example",
+      "startFrame": 3434,
+      "endFrameExclusive": 4101,
+      "durationSeconds": 27.791666666666668,
+      "voiceSeconds": 25.774166666666666,
+      "voiceStartSeconds": 143.73333333333335
+    },
+    {
+      "id": "isolated_baseline",
+      "title": "Begin with the two-root baseline",
+      "startFrame": 4101,
+      "endFrameExclusive": 4702,
+      "durationSeconds": 25.041666666666668,
+      "voiceSeconds": 23.034208333333332,
+      "voiceStartSeconds": 171.525
+    },
+    {
+      "id": "coupled_motion",
+      "title": "Every root contributes to the motion",
+      "startFrame": 4702,
+      "endFrameExclusive": 5310,
+      "durationSeconds": 25.333333333333332,
+      "voiceSeconds": 23.312854166666668,
+      "voiceStartSeconds": 196.56666666666666
+    },
+    {
+      "id": "adjacent_gap",
+      "title": "Track the gap, including exterior roots",
+      "startFrame": 5310,
+      "endFrameExclusive": 5965,
+      "durationSeconds": 27.291666666666668,
+      "voiceSeconds": 25.2633125,
+      "voiceStartSeconds": 221.9
+    },
+    {
+      "id": "diameter_lowerbound",
+      "title": "Turn the interactions into a usable bound",
+      "startFrame": 5965,
+      "endFrameExclusive": 6610,
+      "durationSeconds": 26.875,
+      "voiceSeconds": 24.845354166666667,
+      "voiceStartSeconds": 249.19166666666666
+    },
+    {
+      "id": "static_certificate",
+      "title": "A formula for guaranteed collision-free time",
+      "startFrame": 6610,
+      "endFrameExclusive": 7221,
+      "durationSeconds": 25.458333333333332,
+      "voiceSeconds": 23.452166666666667,
+      "voiceStartSeconds": 276.06666666666666
+    },
+    {
+      "id": "why_proof_closes",
+      "title": "Why the argument does not assume its conclusion",
+      "startFrame": 7221,
+      "endFrameExclusive": 7842,
+      "durationSeconds": 25.875,
+      "voiceSeconds": 23.870125,
+      "voiceStartSeconds": 301.525
+    },
+    {
+      "id": "contracting_diameter",
+      "title": "Use the shrinking diameter for a stronger estimate",
+      "startFrame": 7842,
+      "endFrameExclusive": 8418,
+      "durationSeconds": 24.0,
+      "voiceSeconds": 21.362375,
+      "voiceStartSeconds": 327.4
+    },
+    {
+      "id": "dynamic_certificate",
+      "title": "The stronger duration still has a closed formula",
+      "startFrame": 8418,
+      "endFrameExclusive": 9066,
+      "durationSeconds": 27.0,
+      "voiceSeconds": 24.891791666666666,
+      "voiceStartSeconds": 351.4
+    },
+    {
+      "id": "bound_vs_collision",
+      "title": "A guarantee ending is not a collision occurring",
+      "startFrame": 9066,
+      "endFrameExclusive": 9716,
+      "durationSeconds": 27.083333333333332,
+      "voiceSeconds": 25.0775625,
+      "voiceStartSeconds": 378.4
+    },
+    {
+      "id": "run_checker",
+      "title": "Run the checker on an exact root list",
+      "startFrame": 9716,
+      "endFrameExclusive": 10412,
+      "durationSeconds": 29.0,
+      "voiceSeconds": 26.981604166666667,
+      "voiceStartSeconds": 405.4833333333333
+    },
+    {
+      "id": "certified_rational_step",
+      "title": "A concrete step beyond the simpler bound",
+      "startFrame": 10412,
+      "endFrameExclusive": 11085,
+      "durationSeconds": 28.041666666666668,
+      "voiceSeconds": 26.006354166666668,
+      "voiceStartSeconds": 434.4833333333333
+    },
+    {
+      "id": "use_and_rebase",
+      "title": "Use it to bound a continuation interval",
+      "startFrame": 11085,
+      "endFrameExclusive": 11772,
+      "durationSeconds": 28.625,
+      "voiceSeconds": 26.610083333333332,
+      "voiceStartSeconds": 462.525
+    },
+    {
+      "id": "predictor_benchmark",
+      "title": "Use the solved quartic to test local predictors",
+      "startFrame": 11772,
+      "endFrameExclusive": 12393,
+      "durationSeconds": 25.875,
+      "voiceSeconds": 23.870125,
+      "voiceStartSeconds": 491.15
+    },
+    {
+      "id": "assumptions_scaling",
+      "title": "Know which changes preserve the guarantee",
+      "startFrame": 12393,
+      "endFrameExclusive": 13050,
+      "durationSeconds": 27.375,
+      "voiceSeconds": 25.356208333333335,
+      "voiceStartSeconds": 517.025
+    },
+    {
+      "id": "rh_connection",
+      "title": "Where the connection to RH actually lies",
+      "startFrame": 13050,
+      "endFrameExclusive": 13770,
+      "durationSeconds": 30.0,
+      "voiceSeconds": 27.167354166666666,
+      "voiceStartSeconds": 544.4
+    },
+    {
+      "id": "rh_open_obligation",
+      "title": "The missing step is control of the infinite system",
+      "startFrame": 13770,
+      "endFrameExclusive": 14581,
+      "durationSeconds": 33.791666666666664,
+      "voiceSeconds": 31.764916666666668,
+      "voiceStartSeconds": 574.4
+    },
+    {
+      "id": "reproducible_scope",
+      "title": "What others can take from this result",
+      "startFrame": 14581,
+      "endFrameExclusive": 15334,
+      "durationSeconds": 31.375,
+      "voiceSeconds": 29.350041666666666,
+      "voiceStartSeconds": 608.1916666666666
+    }
+  ],
+  "voiceClips": [
+    {
+      "id": "promised_result",
+      "voice": "Serene",
+      "taskId": "83c8120c-e165-40bd-9079-57102dc6a797",
+      "narration": "Start with a polynomial whose roots are distinct and real. As its coefficients follow a specified heat equation, those roots move and may collide. We can prove an interval during which no collision is possible. This is a guarantee about a finite mathematical system, with a checker that others can reuse.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\promised_result.mp3",
+        "sha256": "a1d91a5dde5163dd4823ff16dea4f093812aa950881bfa69ae81e24344f3fca7"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\promised_result.wav",
+        "sha256": "d842675941c0cd36c0651c91c2908a6bdbe7cfa3b85f8f78620d1bfdd351fd1f"
+      },
+      "durationSeconds": 20.29425,
+      "sceneSeconds": 24.0,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "discovery_path",
+      "voice": "Serene",
+      "taskId": "64213d2b-1c13-4442-9def-3be7b8da0975",
+      "narration": "The recorded path began with four-color coordinates, moving origins, and phase measurements. An exactly solved quartic then exposed a failed local collision forecast. The next task kept the exterior-root interactions that the simpler estimate had discarded. Bounding those interactions led to the constant-diameter certificate, followed by the stronger contracting-diameter formula. The colors helped frame an investigation; the equations and counterexamples determined what survived.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\discovery_path.mp3",
+        "sha256": "c4cd96d55aa25b501008040a88147ac86327e3a00c71d28f9906ff351b9e446c"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\discovery_path.wav",
+        "sha256": "e60796e084aa74f43def7126dd78066782b5cef043f8ecde5eae5fcba649c16e"
+      },
+      "durationSeconds": 33.111666666666665,
+      "sceneSeconds": 35.125,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "discovery_audit",
+      "voice": "Serene",
+      "taskId": "b0636b76-19cc-4b52-993d-997212b7c313",
+      "narration": "The records separate a proposal, its review, and its proof. Both bound formulas were supplied in the review contract. During review, Carbon retracted an incorrect product inequality and used reciprocal terms to justify the diameter estimate. Eventness marks the finite result complete and the infinite-system obligation open. Trace IDs make this history inspectable; a matching ID or reviewer agreement is not mathematical proof.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\discovery_audit.mp3",
+        "sha256": "61c785ca4f9b905a63a79e3d073424b9fefc98ed10d6e8f6377b77bffc96b555"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\discovery_audit.wav",
+        "sha256": "759446720ad6b406adffbe0b4fd4a0bce0b49832921769fb77aa52cd9fa92c94"
+      },
+      "durationSeconds": 32.2293125,
+      "sceneSeconds": 34.25,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "exact_flow",
+      "voice": "Serene",
+      "taskId": "81d8c415-bdfb-45ea-bdf2-9240113b8940",
+      "narration": "The equation is P sub t equals minus P sub z z. We start at time zero and decrease t. For clarity, the animation uses positive elapsed duration u, equal to minus t. The polynomial evolution is a terminating derivative sum, so we can compute its coefficients exactly without Euler steps.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\exact_flow.mp3",
+        "sha256": "3495648c6dc35920fec9802563b952828e27490d42b0481a00a1e6cbf9672e51"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\exact_flow.wav",
+        "sha256": "57f868aa2a0ead75f3ecb1fb3c3e6aec942eb174741544efbd38271a0128fb48"
+      },
+      "durationSeconds": 23.684354166666665,
+      "sceneSeconds": 25.708333333333332,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "read_inputs",
+      "voice": "Serene",
+      "taskId": "bb941f13-6fdd-4738-b05c-1ca8bc6bd12e",
+      "narration": "Sort the initial roots. Record their number n, the smallest adjacent gap m, and the diameter D zero, from the leftmost root to the rightmost. Our running example has roots minus three, minus one, one, and three. There are four roots, the minimum gap is two, and the diameter is six.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\read_inputs.mp3",
+        "sha256": "8a497772e1bfa2b69aa3be83ecffa804743e19764692e6011b0493ba7230e242"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\read_inputs.wav",
+        "sha256": "522278ff2cf92abd3dc30b6d22962866c0f586f13e4e6dd1afaf3b519e398a08"
+      },
+      "durationSeconds": 21.269479166666667,
+      "sceneSeconds": 24.0,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "quartic_orbit",
+      "voice": "Serene",
+      "taskId": "2f4cd786-6082-4622-8a3d-37f2b2cc16aa",
+      "narration": "For these four roots, the evolving polynomial is shown here. Substituting w equals z squared reduces its root equation to a quadratic. That calculation proves the first collisions occur at elapsed duration two thirds. At that instant the polynomial becomes z squared minus one, squared: two double roots, at minus one and one.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\quartic_orbit.mp3",
+        "sha256": "e79eae9dee4e1bd405be703c661cfcc5dff875614eff4d1d6d1dfa0bb9bc77ab"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\quartic_orbit.wav",
+        "sha256": "6518787281491817ed959210e10183c74f0f9963d4d653ab320c48abf7b7f5fc"
+      },
+      "durationSeconds": 25.774166666666666,
+      "sceneSeconds": 27.791666666666668,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "isolated_baseline",
+      "voice": "Serene",
+      "taskId": "d1c8cb68-afe4-4ef8-b6e2-428631861530",
+      "narration": "An isolated pair with gap m has squared gap m squared minus eight u. Its collision duration is exactly m squared over eight. In a larger system, this gives a conservative first guarantee using the smallest starting gap. For the quartic that duration is one half. The other roots let us improve this guarantee.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\isolated_baseline.mp3",
+        "sha256": "612aab294132a2e00027d7c4d69ce941cf51ac40dd3a9b89719efca48a144a34"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\isolated_baseline.wav",
+        "sha256": "39091d10b3db731481980f86a629d9544442cfc2f9c5b9e55aba7027be2850fc"
+      },
+      "durationSeconds": 23.034208333333332,
+      "sceneSeconds": 25.041666666666668,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "coupled_motion",
+      "voice": "Serene",
+      "taskId": "820fb373-4478-4adf-9f39-4845b8367e6b",
+      "narration": "Differentiate the equation saying that P is zero at a moving root. Factoring the polynomial then expresses that root's velocity as a sum over all the other roots. This is established heat-flow mathematics. The important change from a local guess is that the interactions outside the nearest pair remain in the calculation.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\coupled_motion.mp3",
+        "sha256": "d8442dfe74bea9e8fe8d6e4ce45b85d369c401730b0eca6e41a539a13b8541de"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\coupled_motion.wav",
+        "sha256": "4dd728c96a6602fd3783cf5eabdc6ba8f0309567027a221b9efd373e73e2182b"
+      },
+      "durationSeconds": 23.312854166666668,
+      "sceneSeconds": 25.333333333333332,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "adjacent_gap",
+      "voice": "Serene",
+      "taskId": "2753c8f6-e143-4227-a054-57938ed4b912",
+      "narration": "Take adjacent roots a and b, and square their separation to obtain y. Subtracting their velocities gives this exact identity. The quantity S sums the influence of every exterior root. Adjacency makes each denominator positive. In elapsed time u, the minus eight term contracts the gap, while the interaction term offsets part of that contraction.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\adjacent_gap.mp3",
+        "sha256": "4f7f702fb8e3436a931c4925c80614f225ea0a16ae026bc9988f8a2d54b04a17"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\adjacent_gap.wav",
+        "sha256": "76e29d4d9d4c9341d257659fe1b337c88f98d4a09529ad3b2cd34123326474e2"
+      },
+      "durationSeconds": 25.2633125,
+      "sceneSeconds": 27.291666666666668,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "diameter_lowerbound",
+      "voice": "Serene",
+      "taskId": "b8595a67-dde0-43d1-967d-37ae833345b5",
+      "narration": "As t decreases before a collision, the extreme roots move inward, so their diameter never exceeds its initial value. Each exterior-root denominator is therefore at most D zero squared. There are n minus two such terms. This gives a positive lower bound, kappa, for the interaction sum without solving every root trajectory.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\diameter_lowerbound.mp3",
+        "sha256": "368f356c8aa46ee1df35c99a43f129722e0a5c2142f4f8c01d2c5de1528925d5"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\diameter_lowerbound.wav",
+        "sha256": "f30d6d1856c8b2b53340c621bcc033116b39f36cd149e4639c65e3913e55e9cd"
+      },
+      "durationSeconds": 24.845354166666667,
+      "sceneSeconds": 26.875,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "static_certificate",
+      "voice": "Serene",
+      "taskId": "4b0bde62-d95a-4b52-a4ef-0c0e41eba860",
+      "narration": "Solve the comparison equation starting from the smallest squared gap. Its value stays below every actual adjacent squared gap. The displayed duration T is where that lower bound reaches zero. Before T, every gap remains positive. For our example, T is about zero point five three zero zero two four, improving the one-half baseline.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\static_certificate.mp3",
+        "sha256": "2494e65fb15c22e72f679d5e1656108e98f8fa620ed9c0d4125a832dd5711b6d"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\static_certificate.wav",
+        "sha256": "15ae44881aad7c90c213e197420e4de5e6bc3c85c3b177f5e94d6d6321beb32d"
+      },
+      "durationSeconds": 23.452166666666667,
+      "sceneSeconds": 25.458333333333332,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "why_proof_closes",
+      "voice": "Serene",
+      "taskId": "238c65e6-9480-4c29-81fc-3b823f4df287",
+      "narration": "The velocity formulas initially apply only while roots are distinct and real. Suppose a first collision occurred before the guaranteed duration. The positive gap bound would forbid it. Roots cannot escape to infinity in finite time because the monic polynomial's coefficients stay bounded. Distinct real roots therefore continue throughout the claimed interval.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\why_proof_closes.mp3",
+        "sha256": "b4e0e4c9a4b9c04e64b80fff4029c5d6a7aa68cb6908d175dcd8eeccafa49dcc"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\why_proof_closes.wav",
+        "sha256": "5160f7acd3b078b55e721c7163407c0bf956ac1d43be2fb55ab56c5a1520ac69"
+      },
+      "durationSeconds": 23.870125,
+      "sceneSeconds": 25.875,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "contracting_diameter",
+      "voice": "Serene",
+      "taskId": "2da83aa5-24e3-4ee6-b513-473c09cba098",
+      "narration": "We can retain more information. The extreme-root equations bound the rate at which the squared diameter shrinks in elapsed time. Writing d for its initial square, the diameter squared is at most d minus B u. This smaller denominator strengthens the lower bound on exterior interactions as time advances toward collision.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\contracting_diameter.mp3",
+        "sha256": "dfc88faee4842ff768d5b21362520692e31317406e48425e438d9bfe22b3d022"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\contracting_diameter.wav",
+        "sha256": "a86f387bdd573b82b8f79a17399f656f8c107c4693121f6983f44d17ce3455c6"
+      },
+      "durationSeconds": 21.362375,
+      "sceneSeconds": 24.0,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "dynamic_certificate",
+      "voice": "Serene",
+      "taskId": "c2ac0aa9-dff1-4f47-96ac-253b50cc8600",
+      "narration": "Integrating the time-dependent comparison gives the stronger duration shown here. Gap packing guarantees that eta lies strictly between zero and one, so the expression is defined. The proof shows this duration exceeds the constant-diameter guarantee. For our quartic it is about zero point five three nine seven one nine. It remains a lower bound on the collision duration.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\dynamic_certificate.mp3",
+        "sha256": "2ccfad839da510c56856b30a82105673f58a73ab00f2e836499e6958f6ce90d2"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\dynamic_certificate.wav",
+        "sha256": "8695210107ee7be536a82f127eb2feec3a73d010a14dcc98fc600c5d669acafd"
+      },
+      "durationSeconds": 24.891791666666666,
+      "sceneSeconds": 27.0,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "bound_vs_collision",
+      "voice": "Serene",
+      "taskId": "8fd57fc7-4abf-4d40-a3d2-3438216ac5ef",
+      "narration": "Compare the three guaranteed durations with the exact quartic collision. The strongest certificate ends near zero point five four, but the actual collision is at two thirds. At duration zero point six, all four roots are still real and distinct. Being outside a certificate means that certificate is silent; it does not mean the polynomial has failed.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\bound_vs_collision.mp3",
+        "sha256": "cc476806091e52edba4b8d98006681dd76b5bba55bbb74eb25e523e5390c1dd8"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\bound_vs_collision.wav",
+        "sha256": "cd6908d19bb7ee01a6dd428169942ea8eb41f5e56b0fafa6c38f4d06e743f9d1"
+      },
+      "durationSeconds": 25.0775625,
+      "sceneSeconds": 27.083333333333332,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "run_checker",
+      "voice": "Serene",
+      "taskId": "911ff42b-5620-468d-bbac-3b17a7c9833c",
+      "narration": "Run the practical wrapper with an exact rational root list and a chosen duration. It constructs the polynomial and computes a rigorous bound. The report separates an interval guarantee from an exact root count at the selected time. For seventeen over thirty-two, both checks succeed. The decision uses rational enclosures, not a rounded decimal displayed on screen.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\run_checker.mp3",
+        "sha256": "3ac1ced1738c3901894797e2faed66a820f528b15760c9d68c61010fafb2218a"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\run_checker.wav",
+        "sha256": "341d1f8fd1772829d6640512349ebe937a73f4d20a46346069632ba5cdf2d038"
+      },
+      "durationSeconds": 26.981604166666667,
+      "sceneSeconds": 29.0,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "certified_rational_step",
+      "voice": "Serene",
+      "taskId": "8c6428a1-a235-4c19-8c71-4d6d3ab27ffa",
+      "narration": "Choose elapsed duration seventeen over thirty-two, exactly zero point five three one two five. It is beyond the constant-diameter guarantee but below the certified lower enclosure of the stronger duration. At the corresponding negative t, an exact Sturm count independently finds four distinct real roots. The theorem covers the whole interval; this count checks one sample.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\certified_rational_step.mp3",
+        "sha256": "a3965ced802383d9d29ed22b7f056930fd4e5496e013e39d88f44ca8db8c53ee"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\certified_rational_step.wav",
+        "sha256": "1d11142c7445289ed498884872202a006e5f9f1fb9be04b60d2621982190f8b2"
+      },
+      "durationSeconds": 26.006354166666668,
+      "sceneSeconds": 28.041666666666668,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "use_and_rebase",
+      "voice": "Serene",
+      "taskId": "4c47980e-c7ec-4557-b640-3d2e99070e5c",
+      "narration": "A root-tracking program can restrict its search to a duration below the certified lower bound, leaving a margin. The exact roots cannot collide there. This does not bound Euler error, Newton convergence, or floating-point error. Restarting at a later polynomial is mathematically possible, but its new root gaps need certification; this checker does not implement interval-root input.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\use_and_rebase.mp3",
+        "sha256": "2f674d8c38999d29cd322a232da2e8ac20cf6fba838c7497f8bd20fbdfd71ab1"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\use_and_rebase.wav",
+        "sha256": "96d63b5dccede3252043b4f938633c043344daa888f9b7da955f54cbb7cc1024"
+      },
+      "durationSeconds": 26.610083333333332,
+      "sceneSeconds": 28.625,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "predictor_benchmark",
+      "voice": "Serene",
+      "taskId": "8c6e13f7-cc45-48a4-8544-543a8226d6f8",
+      "narration": "The quartic also provides a benchmark with a known answer. A frozen quadratic approximation at the origin predicts a collision there at duration nine twentieths. The exact polynomial at that point is instead two hundred forty-three over one hundred, not zero. This reveals omitted higher-order terms and gives a concrete test for any proposed improved predictor.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\predictor_benchmark.mp3",
+        "sha256": "2d580588fcc5648bea1644e291f55d4b21d520c5c62a9e8e2f26e397e849b387"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\predictor_benchmark.wav",
+        "sha256": "09ce84c9694fe13e12b97c82bd4daf5e194d5a30ed0d8d46c98549ca19f80318"
+      },
+      "durationSeconds": 23.870125,
+      "sceneSeconds": 25.875,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "assumptions_scaling",
+      "voice": "Serene",
+      "taskId": "048f5fec-4f9f-43af-99d1-1551ad5d6f40",
+      "narration": "Translate every root and the durations stay the same. Scale every root by a nonzero real factor a and the durations multiply by a squared. Repeated roots violate the starting assumptions. Degree two has its own exact pair formula. An arbitrary coefficient motion, or rounded measurements treated as exact roots, is a different problem.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\assumptions_scaling.mp3",
+        "sha256": "7c3e78d714182c36fd19428a87759dff3b4bf8428646ea1dec6fbda2c04f75f3"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\assumptions_scaling.wav",
+        "sha256": "417f651ef24f235f38c5d4ef3de33a2db90941568dff08196e52865880f5fb5f"
+      },
+      "durationSeconds": 25.356208333333335,
+      "sceneSeconds": 27.375,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "rh_connection",
+      "voice": "Serene",
+      "taskId": "eb98e7fa-6046-4731-bb18-65adfda29f9c",
+      "narration": "The Riemann entire function has a heat deformation called H sub t, with the same heat sign. Its zeros are all real exactly when t is at least a threshold, Lambda. RH is equivalent to Lambda being at most zero. Rodgers and Tao proved Lambda is at least zero. Thus RH is equivalent to Lambda equaling zero. Shared zero dynamics connect the questions.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\rh_connection.mp3",
+        "sha256": "8a3a5bd734ff1f3b38274c100290920c16d9f9e5d38f20740098eabd0ba172fd"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\rh_connection.wav",
+        "sha256": "bde4711ca8dd7545cc36175fcfc4815ff2d9544e9d46fcdb9c00e577027b2f4c"
+      },
+      "durationSeconds": 27.167354166666666,
+      "sceneSeconds": 30.0,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "rh_open_obligation",
+      "voice": "Serene",
+      "taskId": "dc69c8b0-0e7e-4caf-815c-61c406d2f114",
+      "narration": "Our certificate uses finitely many roots and a finite diameter. The Riemann flow has infinitely many zeros, so an extension needs rigorous control of distant zeros and convergence of their interactions. Assuming every zero is real at time zero would assume RH. A uniform real-root interval below zero would contradict the known lower bound on Lambda. The open task is control toward zero from a known-real regime.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\rh_open_obligation.mp3",
+        "sha256": "ab6ef43bad832f748330ac5b299735b30c764e9dbc2be6b3a99f3fc6f00d4193"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\rh_open_obligation.wav",
+        "sha256": "f332cc99d5e8b31e52163646ec8b4e64385d47d1da62f2307fbd0cfc12150289"
+      },
+      "durationSeconds": 31.764916666666668,
+      "sceneSeconds": 33.791666666666664,
+      "leadSeconds": 0.65,
+      "truncated": false
+    },
+    {
+      "id": "reproducible_scope",
+      "voice": "Serene",
+      "taskId": "2e688865-32cd-4a3d-8ecd-6b1724147099",
+      "narration": "Use the proof as a finite-system guarantee, the checker for exact rational examples, and the quartic to benchmark numerical or local approximations. The saved suite covers twenty-five root configurations and one hundred rational-time checks; those tests support the implementation. The general statement comes from the proof. Novelty remains unestablished, and no transfer to infinitely many Riemann zeros has been proved.",
+      "source": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\reproducible_scope.mp3",
+        "sha256": "b7a9fd0d2ce16ca58456c865ba42a7cab8045a23e3395af5b70e90f796b739a7"
+      },
+      "wav": {
+        "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\assets\\voice\\reproducible_scope.wav",
+        "sha256": "d6dfbf422f5330a22a6ab6c78a6605ca96017e0d32572864a9d134c36de1c3ff"
+      },
+      "durationSeconds": 29.350041666666666,
+      "sceneSeconds": 31.375,
+      "leadSeconds": 0.65,
+      "truncated": false
+    }
+  ],
+  "captions": {
+    "path": "captions.srt",
+    "sha256": "b7bcc284a4a84f1cfa33bf296951b08fa2d98c74d4720bead1b5e4913b75bb30",
+    "timing": "Sentence boundaries apportioned by word count within each complete narration clip; not forced-aligned."
+  },
+  "illustrations": "Quartic root positions and gap curves use explicit formulas. Interaction diagrams are schematic; the all-interval claim comes from the separate analytic proof.",
+  "inputs": [
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\script.json",
+      "sha256": "36bdfec5403686c5692091f84f7884ccc0db4e1c187c89d7776ac2fc7f20bf8f"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\render_chapter.py",
+      "sha256": "73cf0ef0b00735e58cee83e219ed67720008bad6b0c15c7623e7ef7740e90457"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\voice-inputs.json",
+      "sha256": "513c88462b1a09e91de016cf9d74884672a2947d86afe041a5787d5608c3b467"
+    }
+  ]
+}

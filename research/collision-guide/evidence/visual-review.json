@@ -1,0 +1,47 @@
+{
+  "traceId": "graph.riemann.collision_guide.visual_review",
+  "status": "passed",
+  "reviewedAtUtc": "2026-11-16T04:12:18.193435+00:00",
+  "observations": [
+    "Root inspected all 23 encoded scene midpoint images in the final contact sheet.",
+    "Root inspected encoded static-bound, dynamic-bound and wrapper scenes individually at full size, and the final encoded repository card.",
+    "The four new provenance and RH scenes were individually inspected at full-size preview resolution before voice production.",
+    "Formulas, root labels and command examples are legible, with no observed clipping or missing math glyphs.",
+    "The diagrams distinguish bound expiration from an actual collision, exact arithmetic from visual evidence, and finite roots from the infinite RH obligation.",
+    "The repository card matches the observed branch, remote and pre-export source checkpoint."
+  ],
+  "inputs": [
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\encoded-contact-sheet.png",
+      "sha256": "3ad6afa6ebdc00427f59e54a75b0b0d67bb7da4a4b6b093f47f1d275183cbe2b"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\review-frames\\repository-card.png",
+      "sha256": "efecb84040441986012e12b281774c2ebc078a4abb52f561b07ce42d1de97f12"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\review-frames\\11-static_certificate.png",
+      "sha256": "4db7955ce082c3e36e0d99a0d8e67a2a2b61656872e4a9a0eae2750b1c4a8b9a"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\review-frames\\14-dynamic_certificate.png",
+      "sha256": "c5b2c8fe981fd6aba531e81e1a5c3d6e0fe6e59211fe71cb3fab26544a41eb40"
+    },
+    {
+      "path": "C:\\Users\\marcn\\Documents\\Codex\\2026-11-14\\eu\\outputs\\collision-guide\\review-frames\\16-run_checker.png",
+      "sha256": "36b5630b83c6dcf5ba3785baac91e33429216ef93d166d90fa110167c986c74d"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\script.json",
+      "sha256": "36bdfec5403686c5692091f84f7884ccc0db4e1c187c89d7776ac2fc7f20bf8f"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\render_chapter.py",
+      "sha256": "73cf0ef0b00735e58cee83e219ed67720008bad6b0c15c7623e7ef7740e90457"
+    }
+  ],
+  "limits": [
+    "Editorial visual review is separate from analytic proof review and technical decoding checks.",
+    "Speech pronunciation was not independently transcribed. Clip placement and waveform consistency were checked."
+  ]
+}

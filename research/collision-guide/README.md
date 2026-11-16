@@ -5,6 +5,8 @@ consumer: graph.riemann.gap.proof
 
 This chapter explains the finite heat-flow certificate, its documented development, practical applications and its precise connection to the Riemann Hypothesis. Start with [the guide](guide.md), then inspect [the narrated script](script.json). The result bounds a collision-free interval for a specified finite polynomial; it is not a new prime test or an RH theorem. Novelty has not been established.
 
+Watch the [focused explanation with repository ending](media/finite-root-collision-guide.mp4) (10:50.917), or the [updated complete presentation](media/presentation-with-collision-guide.mp4) (20:42.125). Download the [portable checker and proof toolkit](media/collision-certificate-toolkit.zip). Media include narration and selectable English captions; the source chapter is 720p and the combined exports are 1080p. Caption sentence timing is approximate.
+
 From the Graphics repository root:
 
 ```powershell
@@ -20,3 +22,5 @@ The interval status is `certified`; the pointwise exact check finds four distinc
 Recur Warp: `graph.riemann.collision_guide`, with explanation and video gates. The watcher records matching filesystem events; internal collaboration workers carry out delegated tasks. Completion of this documentary lane does not close `graph.riemann.gap.next` or the parent RH investigation.
 
 The public repository is https://github.com/UserLevelUp/Graphics on branch `graph/riemann-continuation`. Media are exported separately; manifests bind their content hashes and the source checkpoint. The previous video remains unchanged.
+
+Final review passed all three video/audio decodes, 219 frame comparisons, all 23 narration clips and captions. The compact toolkit reproduced the exact worked example after copying. [Acceptance](evidence/acceptance.json) binds the mathematical, provenance, media and visual-review evidence; trace and Eventness metadata organize those observations rather than proving their claims automatically.
