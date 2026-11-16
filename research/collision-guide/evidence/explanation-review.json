@@ -1,0 +1,919 @@
+{
+  "schema": "graph-collision-guide-explanation-review-v1",
+  "traceId": "graph.riemann.collision_guide.explanation_review",
+  "status": "passed",
+  "reviewedAtUtc": "2026-11-16T04:02:40.550610+00:00",
+  "reviewedScriptSha256": "36bdfec5403686c5692091f84f7884ccc0db4e1c187c89d7776ac2fc7f20bf8f",
+  "reviewer": "Independent Codex subagent /root/collision_review; no producer polynomial or bound implementation imported",
+  "runtime": {
+    "python": "3.11.5 (main, Jan 23 2026, 07:39:48) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Program Files\\KiCad\\10.0\\bin\\python.exe"
+  },
+  "analyticalReview": [
+    "With P_t=-P_zz and t decreasing, u=-t increases and real roots attract. All displayed signs must respect this convention.",
+    "The exact root velocity and adjacent squared-gap identity follow by implicit differentiation and finite product differentiation while roots are simple and real.",
+    "Each exterior denominator for an adjacent pair is positive and bounded above by the current squared diameter; there are n-2 such roots.",
+    "Backward integration converts the upper t-derivative inequality to the stated lower gap bound. Positive lower bounds prevent a first collision inside the certified interval.",
+    "Finite degree and fixed nonzero leading coefficient bound roots on compact time intervals. Uniform positive gaps give bounded velocities and implicit-function continuation; no circular assumption of an already-global real-root interval is used.",
+    "The dynamic diameter inequality uses reciprocal distances and x(D-x)<=D^2/4. Packing guarantees eta<1 and keeps d-Bu positive until the proposed dynamic threshold.",
+    "The comparison ODE has strictly positive forcing before the static threshold, giving a strictly larger dynamic guarantee. Simplicity is claimed only before the threshold, with real roots and possible multiplicity at the endpoint.",
+    "The duration bounds concern the exact polynomial flow. They do not bound Euler/Newton time-stepping error, arbitrary polynomial paths, or uncertain input roots.",
+    "The known all-real initial state and finite global diameter are essential; the proof does not establish a transfer to the infinite Riemann entire function.",
+    "Polynomial heat-flow root dynamics have established prior work. Exact novelty of the project bounds has not been established."
+  ],
+  "discoveryReview": {
+    "sourceHashes": 14,
+    "savedTraceQueries": 3,
+    "gitMilestones": [
+      {
+        "commit": "170993c91c85b63815eb2e3090df69c0f36ea8dc",
+        "committedAt": "2026-11-14T22:31:46-08:00",
+        "subject": "Add zero-motion color coordinates and point-to-point phase probe"
+      },
+      {
+        "commit": "73518fc52eede0e6ab503f18a9232688cf145989",
+        "committedAt": "2026-11-14T23:13:18-08:00",
+        "subject": "Prove exact quartic collision control and audit local forecasts"
+      },
+      {
+        "commit": "cf512546b72ae1befeb7b06ef83cbc31d4ddf90b",
+        "committedAt": "2026-11-14T23:37:16-08:00",
+        "subject": "Add interaction bounds with Watch-reviewed finite-flow certificates"
+      }
+    ],
+    "manualReview": [
+      "The bound-review contract supplies both formulas; reviewer agreement is not an invention record.",
+      "The retained coordinator steering identifies the false product inequality, and the final Carbon review explicitly retracts it and derives the reciprocal estimate.",
+      "Completed finite-result records and current infinite-system obligations describe different scopes; matching trace IDs are not proof."
+    ]
+  },
+  "riemannConnectionReview": {
+    "primarySource": "https://arxiv.org/abs/1801.05914",
+    "established": [
+      "The integral defining H_t has partial_t H=-partial_xx H.",
+      "All zeros of H_t are real exactly for t>=Lambda; RH is equivalent to Lambda<=0.",
+      "Rodgers and Tao proved Lambda>=0, so RH is equivalent to Lambda=0."
+    ],
+    "inference": "Any all-real regime at a negative parameter would force Lambda<0 and contradict the established lower bound. A route toward RH needs justified infinite-system control down to zero from a known-real regime, without assuming all H_0 zeros real."
+  },
+  "numericalAndExactChecks": {
+    "producerCliCases": 25,
+    "independentlyRecomputedSturmSamples": 100,
+    "independentLogarithmExpansion": "80-term atanh series with exact rational tail bound",
+    "independentPowerEnclosure": "160 bisection steps checked by exact integer powers",
+    "rootVelocityAndAdjacentGapIdentities": "Exact rational checks on every initial configuration",
+    "cases": [
+      {
+        "name": "degree_3_uniform",
+        "degree": 3,
+        "rootList": [
+          "-1",
+          "0",
+          "1"
+        ],
+        "baseline": "1/8",
+        "constantLower": "0.133531392624522623146343620931349974589415673",
+        "dynamicLower": "0.138627079320159247251190987421855376992369854",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_3_clustered",
+        "degree": 3,
+        "rootList": [
+          "0",
+          "1/20",
+          "1"
+        ],
+        "baseline": "1/3200",
+        "constantLower": "0.000312695475413157304298496524489468736112466433",
+        "dynamicLower": "0.000312695966610311210819527705757950875410799237",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_3_uneven",
+        "degree": 3,
+        "rootList": [
+          "-9",
+          "-4",
+          "-1"
+        ],
+        "baseline": "9/8",
+        "constantLower": "1.16650833292940448905179982225487538085141117",
+        "dynamicLower": "1.17485330537137114572076079285793728255930488",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_3_translated_scaled",
+        "degree": 3,
+        "rootList": [
+          "5/6",
+          "7/3",
+          "23/6"
+        ],
+        "baseline": "9/32",
+        "constantLower": "0.300445633405175902079273147095537442826185265",
+        "dynamicLower": "0.311910928470358306315179721699174598232832171",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_4_uniform",
+        "degree": 4,
+        "rootList": [
+          "-3/2",
+          "-1/2",
+          "1/2",
+          "3/2"
+        ],
+        "baseline": "1/8",
+        "constantLower": "0.132505915113431386356143373154336918202040802",
+        "dynamicLower": "0.134929728361799795499340095948784286527619444",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_4_clustered",
+        "degree": 4,
+        "rootList": [
+          "0",
+          "1/20",
+          "1",
+          "3"
+        ],
+        "baseline": "1/3200",
+        "constantLower": "0.000312543410817004080185417607923164052800307863",
+        "dynamicLower": "0.000312543430934631087236208236475215452204477597",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_4_uneven",
+        "degree": 4,
+        "rootList": [
+          "-9",
+          "-4",
+          "-1",
+          "2"
+        ],
+        "baseline": "9/8",
+        "constantLower": "1.16903657381240399841278964064738554027796767",
+        "dynamicLower": "1.17658320481167287976585030656744219768405584",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_4_translated_scaled",
+        "degree": 4,
+        "rootList": [
+          "1/12",
+          "19/12",
+          "37/12",
+          "55/12"
+        ],
+        "baseline": "9/32",
+        "constantLower": "0.298138309005220619301322589597258065954591804",
+        "dynamicLower": "0.303591888814049539873515215884764644687143748",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_5_uniform",
+        "degree": 5,
+        "rootList": [
+          "-2",
+          "-1",
+          "0",
+          "1",
+          "2"
+        ],
+        "baseline": "1/8",
+        "constantLower": "0.131253430417670026537184766571961646510650344",
+        "dynamicLower": "0.132625837040680464806441988459960083149250432",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_5_clustered",
+        "degree": 5,
+        "rootList": [
+          "0",
+          "1/20",
+          "1",
+          "3",
+          "6"
+        ],
+        "baseline": "1/3200",
+        "constantLower": "0.000312516277172035648499644930765644106872591730",
+        "dynamicLower": "0.000312516279810479438867537720467499023649449551",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_5_uneven",
+        "degree": 5,
+        "rootList": [
+          "-9",
+          "-4",
+          "-1",
+          "2",
+          "6"
+        ],
+        "baseline": "9/8",
+        "constantLower": "1.16016381971414009620875221509459009182473139",
+        "dynamicLower": "1.16431944407869366768376828117193082642260449",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_5_translated_scaled",
+        "degree": 5,
+        "rootList": [
+          "-2/3",
+          "5/6",
+          "7/3",
+          "23/6",
+          "16/3"
+        ],
+        "baseline": "9/32",
+        "constantLower": "0.295320218439757559708665724786913704648963274",
+        "dynamicLower": "0.298408133341531045814494474034910187085813472",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_6_uniform",
+        "degree": 6,
+        "rootList": [
+          "-5/2",
+          "-3/2",
+          "-1/2",
+          "1/2",
+          "3/2",
+          "5/2"
+        ],
+        "baseline": "1/8",
+        "constantLower": "0.130283763967267278741821616628404938451284990",
+        "dynamicLower": "0.131159653840387443215025219788821270971948554",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_6_clustered",
+        "degree": 6,
+        "rootList": [
+          "0",
+          "1/20",
+          "1",
+          "3",
+          "6",
+          "10"
+        ],
+        "baseline": "1/3200",
+        "constantLower": "0.000312507812760426432682307943405908495124999034",
+        "dynamicLower": "0.000312507813346481142012722628103761414952014910",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_6_uneven",
+        "degree": 6,
+        "rootList": [
+          "-9",
+          "-4",
+          "-1",
+          "2",
+          "6",
+          "13"
+        ],
+        "baseline": "9/8",
+        "constantLower": "1.14645299587732142522655568226631759618062425",
+        "dynamicLower": "1.14782174472375901924261372840678773356013615",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_6_translated_scaled",
+        "degree": 6,
+        "rootList": [
+          "-17/12",
+          "1/12",
+          "19/12",
+          "37/12",
+          "55/12",
+          "73/12"
+        ],
+        "baseline": "9/32",
+        "constantLower": "0.293138468926351377169098637413911111515391228",
+        "dynamicLower": "0.295109221140871747233806744524847859686884247",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_7_uniform",
+        "degree": 7,
+        "rootList": [
+          "-3",
+          "-2",
+          "-1",
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "baseline": "1/8",
+        "constantLower": "0.129552299325160652469806715340545053318187508",
+        "dynamicLower": "0.130157944453828505590893620750137220555397778",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_7_clustered",
+        "degree": 7,
+        "rootList": [
+          "0",
+          "1/20",
+          "1",
+          "3",
+          "6",
+          "10",
+          "15"
+        ],
+        "baseline": "1/3200",
+        "constantLower": "0.000312504340358154966708165108449613926965959216",
+        "dynamicLower": "0.000312504340535000502128474980684252668700862979",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_7_uneven",
+        "degree": 7,
+        "rootList": [
+          "-9",
+          "-4",
+          "-1",
+          "2",
+          "6",
+          "13",
+          "23"
+        ],
+        "baseline": "9/8",
+        "constantLower": "1.13754370527130369353455112509147494169906658",
+        "dynamicLower": "1.13797962602041494376420391783330504114623344",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_7_translated_scaled",
+        "degree": 7,
+        "rootList": [
+          "-13/6",
+          "-2/3",
+          "5/6",
+          "7/3",
+          "23/6",
+          "16/3",
+          "41/6"
+        ],
+        "baseline": "9/32",
+        "constantLower": "0.291492673481611468057065109516226369965921893",
+        "dynamicLower": "0.292855375021114137579510646687808746249645001",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_8_uniform",
+        "degree": 8,
+        "rootList": [
+          "-7/2",
+          "-5/2",
+          "-3/2",
+          "-1/2",
+          "1/2",
+          "3/2",
+          "5/2",
+          "7/2"
+        ],
+        "baseline": "1/8",
+        "constantLower": "0.128990257477293703722887756136722994377423395",
+        "dynamicLower": "0.129433370771581354558027414135356772646941417",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_8_clustered",
+        "degree": 8,
+        "rootList": [
+          "0",
+          "1/20",
+          "1",
+          "3",
+          "6",
+          "10",
+          "15",
+          "21"
+        ],
+        "baseline": "1/3200",
+        "constantLower": "0.000312502657343053818820053700591121236855459056",
+        "dynamicLower": "0.000312502657408336073573387084700214338814484462",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_8_uneven",
+        "degree": 8,
+        "rootList": [
+          "-9",
+          "-4",
+          "-1",
+          "2",
+          "6",
+          "13",
+          "23",
+          "38"
+        ],
+        "baseline": "9/8",
+        "constantLower": "1.13193182470275874914651844814637386506788106",
+        "dynamicLower": "1.13205928937986996341563235234314843431920690",
+        "sampleCount": 4
+      },
+      {
+        "name": "degree_8_translated_scaled",
+        "degree": 8,
+        "rootList": [
+          "-35/12",
+          "-17/12",
+          "1/12",
+          "19/12",
+          "37/12",
+          "55/12",
+          "73/12",
+          "91/12"
+        ],
+        "baseline": "9/32",
+        "constantLower": "0.290228079323910833376497451307626737349202640",
+        "dynamicLower": "0.291225084236058047755561681804552738455618188",
+        "sampleCount": 4
+      },
+      {
+        "name": "quartic_reference",
+        "degree": 4,
+        "rootList": [
+          "-3",
+          "-1",
+          "1",
+          "3"
+        ],
+        "baseline": "1/2",
+        "constantLower": "0.530023660453725545424573492617347672808163207",
+        "dynamicLower": "0.539718913447199181997360383795137146110477775",
+        "sampleCount": 4
+      }
+    ],
+    "quarticBounds": {
+      "baseline": "1/2",
+      "constant": "0.530023660453725545424573492617347672808163207",
+      "dynamic": "0.539718913447199181997360383795137146110477775",
+      "exactCollision": "2/3",
+      "usefulTest": "constantUpper < 17/32 < dynamicLower < 3/5 < 2/3"
+    },
+    "quarticRootCounts": [
+      {
+        "elapsedU": "0",
+        "heatParameterT": "0",
+        "coefficientsDescending": [
+          "1",
+          "0",
+          "-10",
+          "0",
+          "9"
+        ],
+        "distinctRealRoots": 4,
+        "gcdDegreeWithDerivative": 0
+      },
+      {
+        "elapsedU": "17/32",
+        "heatParameterT": "-17/32",
+        "coefficientsDescending": [
+          "1",
+          "0",
+          "-29/8",
+          "0",
+          "451/256"
+        ],
+        "distinctRealRoots": 4,
+        "gcdDegreeWithDerivative": 0
+      },
+      {
+        "elapsedU": "3/5",
+        "heatParameterT": "-3/5",
+        "coefficientsDescending": [
+          "1",
+          "0",
+          "-14/5",
+          "0",
+          "33/25"
+        ],
+        "distinctRealRoots": 4,
+        "gcdDegreeWithDerivative": 0
+      },
+      {
+        "elapsedU": "2/3",
+        "heatParameterT": "-2/3",
+        "coefficientsDescending": [
+          "1",
+          "0",
+          "-2",
+          "0",
+          "1"
+        ],
+        "distinctRealRoots": 2,
+        "gcdDegreeWithDerivative": 2
+      },
+      {
+        "elapsedU": "7/10",
+        "heatParameterT": "-7/10",
+        "coefficientsDescending": [
+          "1",
+          "0",
+          "-8/5",
+          "0",
+          "22/25"
+        ],
+        "distinctRealRoots": 0,
+        "gcdDegreeWithDerivative": 0
+      },
+      {
+        "elapsedU": "1",
+        "heatParameterT": "-1",
+        "coefficientsDescending": [
+          "1",
+          "0",
+          "2",
+          "0",
+          "1"
+        ],
+        "distinctRealRoots": 0,
+        "gcdDegreeWithDerivative": 2
+      }
+    ],
+    "localPredictorControls": [
+      {
+        "center": "0",
+        "predictedT": "-9/20",
+        "predictedLocation": "0"
+      },
+      {
+        "center": "2",
+        "predictedT": "-113/196",
+        "predictedLocation": "16/7"
+      },
+      {
+        "center": "4/3",
+        "predictedT": "-28277/324",
+        "predictedLocation": "128/9"
+      },
+      {
+        "center": "4",
+        "predictedT": "643/7396",
+        "predictedLocation": "128/43"
+      }
+    ],
+    "translationAndScalingChecks": 2,
+    "applicationControls": {
+      "accepted": [
+        {
+          "roots": "-3,-1,1,3",
+          "elapsedU": "0",
+          "intervalStatus": "certified",
+          "independentPointCount": {
+            "distinctRealRoots": 4,
+            "gcdDegreeWithDerivative": 0
+          }
+        },
+        {
+          "roots": "-3,-1,1,3",
+          "elapsedU": "17/32",
+          "intervalStatus": "certified",
+          "independentPointCount": {
+            "distinctRealRoots": 4,
+            "gcdDegreeWithDerivative": 0
+          }
+        },
+        {
+          "roots": "-3,-1,1,3",
+          "elapsedU": "3/5",
+          "intervalStatus": "outside_available_guarantee",
+          "independentPointCount": {
+            "distinctRealRoots": 4,
+            "gcdDegreeWithDerivative": 0
+          }
+        },
+        {
+          "roots": "-3,-1,1,3",
+          "elapsedU": "2/3",
+          "intervalStatus": "outside_available_guarantee",
+          "independentPointCount": {
+            "distinctRealRoots": 2,
+            "gcdDegreeWithDerivative": 2
+          }
+        },
+        {
+          "roots": "-3,-1,1,3",
+          "elapsedU": "7/10",
+          "intervalStatus": "outside_available_guarantee",
+          "independentPointCount": {
+            "distinctRealRoots": 0,
+            "gcdDegreeWithDerivative": 0
+          }
+        },
+        {
+          "roots": "3,-1,-3,1",
+          "elapsedU": "17/32",
+          "intervalStatus": "certified",
+          "independentPointCount": {
+            "distinctRealRoots": 4,
+            "gcdDegreeWithDerivative": 0
+          }
+        },
+        {
+          "roots": "0,1/20,1,3,6",
+          "elapsedU": "1/10000",
+          "intervalStatus": "certified",
+          "independentPointCount": {
+            "distinctRealRoots": 5,
+            "gcdDegreeWithDerivative": 0
+          }
+        },
+        {
+          "roots": "0,0.05,1,3,6",
+          "elapsedU": "1/10000",
+          "intervalStatus": "certified",
+          "independentPointCount": {
+            "distinctRealRoots": 5,
+            "gcdDegreeWithDerivative": 0
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "roots": "0,1",
+          "elapsedU": "0",
+          "reason": "degree below three",
+          "diagnostic": "at least three distinct real roots are required"
+        },
+        {
+          "roots": "0,1,1",
+          "elapsedU": "0",
+          "reason": "duplicate roots",
+          "diagnostic": "duplicate roots are not admissible"
+        },
+        {
+          "roots": "0,1,2",
+          "elapsedU": "-1/10",
+          "reason": "negative elapsed duration",
+          "diagnostic": "elapsed duration u must be nonnegative; the flow parameter is t=-u"
+        },
+        {
+          "roots": "0,1,nan",
+          "elapsedU": "0",
+          "reason": "nonfinite root input",
+          "diagnostic": "Invalid literal for Fraction: 'nan'"
+        },
+        {
+          "roots": "0,1,2",
+          "elapsedU": "inf",
+          "reason": "nonfinite duration",
+          "diagnostic": "Invalid literal for Fraction: 'inf'"
+        },
+        {
+          "roots": "0,1/0,2",
+          "elapsedU": "0",
+          "reason": "zero denominator",
+          "diagnostic": "Fraction(1, 0)"
+        }
+      ],
+      "strictEnclosureBoundary": "Outside available guarantee at equality; independently four simple real roots.",
+      "recordedExampleMatchesFreshCli": true
+    }
+  },
+  "scenes": [
+    {
+      "id": "promised_result",
+      "title": "A question with a definite guarantee",
+      "narrationWords": 51
+    },
+    {
+      "id": "discovery_path",
+      "title": "How the project reached this question",
+      "narrationWords": 63
+    },
+    {
+      "id": "discovery_audit",
+      "title": "What the review record does and does not prove",
+      "narrationWords": 63
+    },
+    {
+      "id": "exact_flow",
+      "title": "Fix the equation and the time direction",
+      "narrationWords": 51
+    },
+    {
+      "id": "read_inputs",
+      "title": "Three measurements of the starting roots",
+      "narrationWords": 51
+    },
+    {
+      "id": "quartic_orbit",
+      "title": "An exactly solved moving-root example",
+      "narrationWords": 53
+    },
+    {
+      "id": "isolated_baseline",
+      "title": "Begin with the two-root baseline",
+      "narrationWords": 54
+    },
+    {
+      "id": "coupled_motion",
+      "title": "Every root contributes to the motion",
+      "narrationWords": 52
+    },
+    {
+      "id": "adjacent_gap",
+      "title": "Track the gap, including exterior roots",
+      "narrationWords": 55
+    },
+    {
+      "id": "diameter_lowerbound",
+      "title": "Turn the interactions into a usable bound",
+      "narrationWords": 52
+    },
+    {
+      "id": "static_certificate",
+      "title": "A formula for guaranteed collision-free time",
+      "narrationWords": 54
+    },
+    {
+      "id": "why_proof_closes",
+      "title": "Why the argument does not assume its conclusion",
+      "narrationWords": 52
+    },
+    {
+      "id": "contracting_diameter",
+      "title": "Use the shrinking diameter for a stronger estimate",
+      "narrationWords": 51
+    },
+    {
+      "id": "dynamic_certificate",
+      "title": "The stronger duration still has a closed formula",
+      "narrationWords": 58
+    },
+    {
+      "id": "bound_vs_collision",
+      "title": "A guarantee ending is not a collision occurring",
+      "narrationWords": 57
+    },
+    {
+      "id": "run_checker",
+      "title": "Run the checker on an exact root list",
+      "narrationWords": 57
+    },
+    {
+      "id": "certified_rational_step",
+      "title": "A concrete step beyond the simpler bound",
+      "narrationWords": 56
+    },
+    {
+      "id": "use_and_rebase",
+      "title": "Use it to bound a continuation interval",
+      "narrationWords": 57
+    },
+    {
+      "id": "predictor_benchmark",
+      "title": "Use the solved quartic to test local predictors",
+      "narrationWords": 56
+    },
+    {
+      "id": "assumptions_scaling",
+      "title": "Know which changes preserve the guarantee",
+      "narrationWords": 54
+    },
+    {
+      "id": "rh_connection",
+      "title": "Where the connection to RH actually lies",
+      "narrationWords": 63
+    },
+    {
+      "id": "rh_open_obligation",
+      "title": "The missing step is control of the infinite system",
+      "narrationWords": 67
+    },
+    {
+      "id": "reproducible_scope",
+      "title": "What others can take from this result",
+      "narrationWords": 60
+    }
+  ],
+  "priorWork": [
+    {
+      "url": "https://terrytao.wordpress.com/2017/10/17/heat-flow-and-zeroes-of-polynomials/",
+      "relationship": "Established root-motion formulation; its positive heat time corresponds to this guide elapsed u=-t."
+    },
+    {
+      "url": "https://arxiv.org/abs/1801.05914",
+      "relationship": "Established infinite-system research; no transfer theorem from these finite bounds is supplied."
+    }
+  ],
+  "limits": [
+    "The general proof is a reviewed analytic argument, not a proof-assistant replay.",
+    "Exact rational arithmetic validates the listed implementation cases and examples, not every possible input.",
+    "The scope and wording of the exact script hash were reviewed manually; numeric tests alone do not evaluate narrative meaning.",
+    "Encoded visuals, narration placement and captions require a separate media review."
+  ],
+  "inputs": [
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\evidence\\discovery-provenance.json",
+      "sha256": "eae1036566f42025f814d53bfbaa690dfae38e10239b6f94671b97911d39abdf"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\evidence\\discovery-trace-collision.json",
+      "sha256": "5a630b02d508a6e1b40ad82efd22108ef54b55cfe4bdaf85aab72dea49fe5ffe"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\evidence\\discovery-trace-gap.json",
+      "sha256": "5c7557cdbe604680a38cf797229cfa5332e1e42dc9e36cfb9de0722490a75902"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\evidence\\discovery-trace-motion.json",
+      "sha256": "a70b030b9b434981164b645184765a99bde63ec76d2fc380d2d3f9a8a7755671"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\evidence\\use-example.json",
+      "sha256": "d01a259a5506f9e2c38adc54f104a38f56e5433b863b0aab23739e82c7029cdf"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\guide.md",
+      "sha256": "c09fcc5e7a7bb3200e43256e26f9627e2e4ab42f22f3c065f7ff2ef89907f541"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\script.json",
+      "sha256": "36bdfec5403686c5692091f84f7884ccc0db4e1c187c89d7776ac2fc7f20bf8f"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\use_certificate.py",
+      "sha256": "0e56cb2304b093973d931ae43f835c9396c576854826bb2470f361a60a154033"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\collision-guide\\verify_explanation.py",
+      "sha256": "9e745f9bb52d4b9f46d0a654bad3a93b1e9d4095edbaf33bee90537e4374003c"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\collision-proof\\exact-quartic-proof.md",
+      "sha256": "071e8d7d195bac4a9e146cfd074363f5d2e78cd51b1910810071684afeffe417"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\gap-bound\\README.md",
+      "sha256": "66c642901ff581d8ba54dcf33875cc1967a569a6f8786ab3c6273e43eae3be56"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\gap-bound\\carbon\\review.md",
+      "sha256": "2b4371f82b290198fd6afb155d95f56af23def208943789593bd7f5829c2c5a8"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\gap-bound\\carbon\\runs\\20261115T072203Z-fe1b6967\\steering-after-01.json",
+      "sha256": "65ea9543afef3632bfafa1344f533c62594aeee00c6d832bf41fd7aa0f536bda"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\gap-bound\\codex\\review.md",
+      "sha256": "6f4070f81ff7de1041222ac1ca6eaa406d2cf6ca18cc31ba6f855eaef7869eaa"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\gap-bound\\codex\\runs\\20261115T072501Z-7f5a0c47\\steering-after-01.json",
+      "sha256": "b6ab9ccd6f0d366b257f76601d214f28fb58532177ef9794dc1f099ebda77ad0"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\gap-bound\\evidence\\certificates.json",
+      "sha256": "5d743d6fa41ed9fbe0b02d349aab44aadf4dc3119cd51760f7135f8c76c92634"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\gap-bound\\evidence\\review-audit.json",
+      "sha256": "a6391f4298eda924fefad512f07dc58e90334c5ea44b6e1489657e27e21dcfc7"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\gap-bound\\graph.riemann.gap.contract.current.md",
+      "sha256": "8aa1b867659a70bc71c7ffe0c3a0ec7adc064c300f2ccc6012eb9defa2305eee"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\gap-bound\\interaction-bound-proof.md",
+      "sha256": "22026bb25c0ea437e75e2f1e16bbf2b91d81d3c117a291e36056fea767c2c559"
+    },
+    {
+      "path": "C:\\src\\graph\\research\\gap-bound\\verify_bound.py",
+      "sha256": "a56bca6589b624bf52c172aa59351a623c37f593cb7011f77ec0bb971c465f56"
+    },
+    {
+      "path": "C:\\src\\graph\\warps\\graph.riemann.collision.baseline.complete.md",
+      "sha256": "c0309fecc3a6e31bc8bd0defbe5721366298814603e2cd32c74120ae22f83d84"
+    },
+    {
+      "path": "C:\\src\\graph\\warps\\graph.riemann.collision.next.current.md",
+      "sha256": "344d8acf1d9f20569d82b27cf714c8d8db6af981ea0c4fec897d4b1ea8da554d"
+    },
+    {
+      "path": "C:\\src\\graph\\warps\\graph.riemann.collision.results.complete.md",
+      "sha256": "32709930b3d83814a2af7f58fb2c8e5095f14228e941c04f2f05aa4002dbfd7b"
+    },
+    {
+      "path": "C:\\src\\graph\\warps\\graph.riemann.gap.next.current.md",
+      "sha256": "2383540075356524c5e75ce8f365267008b0e4a46275396e401cb3131b7d94b8"
+    },
+    {
+      "path": "C:\\src\\graph\\warps\\graph.riemann.gap.results.complete.md",
+      "sha256": "b6c69dc43b667eec614f6258e16154a480f5f30bd761c7c0b1ba584e9dd7540a"
+    },
+    {
+      "path": "C:\\src\\graph\\warps\\graph.zeros.motion.results.complete.md",
+      "sha256": "60496fa2663e528478c1e4fdecebd0b47e12e14af090793c0672c2b1bee858c9"
+    }
+  ]
+}

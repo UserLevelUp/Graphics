@@ -1,0 +1,15 @@
+{
+  "schema": "warp-slice-layer-v1",
+  "warp_id": "graph.riemann.collision_guide",
+  "slice_id": "explanation",
+  "contract_hash": "contract:graph.riemann.collision_guide.explanation:v1",
+  "attempt_id": "explanation-reviewed-v1",
+  "result_state": "accepted",
+  "result_hash": "sha256:5b4252f4a3a825210c5f78a779e9b06e142984307321c93365b6ee15db7ebed0",
+  "evidence": {
+    "review": [
+      "evidence/explanation-review.json"
+    ]
+  },
+  "reason": null
+}

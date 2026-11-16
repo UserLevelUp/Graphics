@@ -1,0 +1,15 @@
+{
+  "schema":"warp-bubble-map-v1", "warp_id":"{warp}", "goal":"{goal}",
+  "intelligence_baseline":"host-current",
+  "invariants":[
+    "Explain the finite-polynomial theorem, its hypotheses, derivation and practical use with explicit time convention u=-t.",
+    "Distinguish guaranteed no-collision time from exact collision time and numerical integration error.",
+    "Compare bounds only against the project's baseline; novelty and literature superiority are unestablished.",
+    "Preserve the previous presentation; add the detailed chapter before the final verified repository card and export a focused version.",
+    "Retain exact arithmetic evidence and separate mathematical proof from finite checks and media verification."
+  ],
+  "required_slices":[
+    {"slice_id":"explanation","contract_hash":"contract:{warp}.explanation:v1","depends_on":[],"evidence_gates":["review"],"evidence_mode":"declared","intelligence_tick":0},
+    {"slice_id":"video","contract_hash":"contract:{warp}.video:v1","depends_on":["explanation"],"evidence_gates":["review"],"evidence_mode":"declared","intelligence_tick":0}
+  ]
+}

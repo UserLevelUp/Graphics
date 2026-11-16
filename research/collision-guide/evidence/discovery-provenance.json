@@ -1,0 +1,180 @@
+{
+  "schema": "graph-collision-discovery-v1",
+  "traceId": "graph.riemann.collision_guide.discovery",
+  "observedAtUtc": "2026-11-16T03:59:11.193618+00:00",
+  "stages": [
+    {
+      "commit": "170993c",
+      "traceId": "graph.zeros.motion",
+      "claim": "Local-origin color and phase probes motivated examining root motion. The quadratic was an exact calibration, not a new inequality.",
+      "sources": [
+        "warps/graph.zeros.motion.results.complete.md"
+      ],
+      "git": {
+        "hash": "170993c91c85b63815eb2e3090df69c0f36ea8dc",
+        "committedAt": "2026-11-14T22:31:46-08:00",
+        "subject": "Add zero-motion color coordinates and point-to-point phase probe"
+      }
+    },
+    {
+      "commit": "73518fc",
+      "traceId": "graph.riemann.collision",
+      "claim": "An exact quartic exposed failure of frozen local collision forecasts. The surviving gap inequality supplied the baseline m^2/8; the next obligation explicitly retained the exterior interaction S.",
+      "sources": [
+        "warps/graph.riemann.collision.baseline.complete.md",
+        "warps/graph.riemann.collision.results.complete.md",
+        "warps/graph.riemann.collision.next.current.md",
+        "research/collision-proof/exact-quartic-proof.md"
+      ],
+      "git": {
+        "hash": "73518fc52eede0e6ab503f18a9232688cf145989",
+        "committedAt": "2026-11-14T23:13:18-08:00",
+        "subject": "Prove exact quartic collision control and audit local forecasts"
+      }
+    },
+    {
+      "commit": "cf51254",
+      "traceId": "graph.riemann.gap",
+      "claim": "Static and contracting diameter bounds strengthened the finite baseline. Both proposed formulas were supplied in the review contract before reviewer responses; those responses are audits, not invention records.",
+      "sources": [
+        "research/gap-bound/graph.riemann.gap.contract.current.md",
+        "research/gap-bound/interaction-bound-proof.md",
+        "warps/graph.riemann.gap.results.complete.md",
+        "warps/graph.riemann.gap.next.current.md"
+      ],
+      "git": {
+        "hash": "cf512546b72ae1befeb7b06ef83cbc31d4ddf90b",
+        "committedAt": "2026-11-14T23:37:16-08:00",
+        "subject": "Add interaction bounds with Watch-reviewed finite-flow certificates"
+      }
+    }
+  ],
+  "correction": {
+    "traceId": "graph.riemann.gap.review.audit",
+    "observation": "Carbon initially used a false product inequality. Coordinator steering identified the error, and the final review explicitly retracted it and used reciprocal distances with x(D-x) <= D^2/4.",
+    "implication": "Review needed checking and correction. Agreement, response timing and Eventness completion do not establish proof."
+  },
+  "eventness": {
+    "completedScope": "The finite-polynomial proof and recorded exact checks.",
+    "stillOpen": "Infinite-system transfer remains current in graph.riemann.gap.next, and graph.riemann remains open."
+  },
+  "limits": [
+    "This reconstructs the documented development, not private thought or historical priority.",
+    "The proposal predates the attached reviewer reports; exact origin before the recorded contract is not established here.",
+    "No claim of mathematical novelty, new prime algorithm or RH advance follows from these records."
+  ],
+  "queries": [
+    {
+      "argv": [
+        "C:\\Users\\marcn\\.cargo\\bin\\recur.exe",
+        "trace-id",
+        "graph.zeros.motion.**",
+        "--scope",
+        "**",
+        "-e",
+        "md,json,py",
+        "-d",
+        "C:\\src\\graph\\warps",
+        "--list-ids",
+        "--json"
+      ],
+      "returnCode": 0,
+      "report": "discovery-trace-motion.json",
+      "sha256": "a70b030b9b434981164b645184765a99bde63ec76d2fc380d2d3f9a8a7755671"
+    },
+    {
+      "argv": [
+        "C:\\Users\\marcn\\.cargo\\bin\\recur.exe",
+        "trace-id",
+        "graph.riemann.collision.**",
+        "--scope",
+        "**",
+        "-e",
+        "md,json,py",
+        "-d",
+        "C:\\src\\graph\\research\\collision-proof",
+        "--list-ids",
+        "--json"
+      ],
+      "returnCode": 0,
+      "report": "discovery-trace-collision.json",
+      "sha256": "5a630b02d508a6e1b40ad82efd22108ef54b55cfe4bdaf85aab72dea49fe5ffe"
+    },
+    {
+      "argv": [
+        "C:\\Users\\marcn\\.cargo\\bin\\recur.exe",
+        "trace-id",
+        "graph.riemann.gap.**",
+        "--scope",
+        "**",
+        "-e",
+        "md,json,py",
+        "-d",
+        "C:\\src\\graph\\research\\gap-bound",
+        "--list-ids",
+        "--json"
+      ],
+      "returnCode": 0,
+      "report": "discovery-trace-gap.json",
+      "sha256": "5c7557cdbe604680a38cf797229cfa5332e1e42dc9e36cfb9de0722490a75902"
+    }
+  ],
+  "sources": [
+    {
+      "path": "research/collision-proof/exact-quartic-proof.md",
+      "sha256": "071e8d7d195bac4a9e146cfd074363f5d2e78cd51b1910810071684afeffe417"
+    },
+    {
+      "path": "research/gap-bound/carbon/review.md",
+      "sha256": "2b4371f82b290198fd6afb155d95f56af23def208943789593bd7f5829c2c5a8"
+    },
+    {
+      "path": "research/gap-bound/carbon/runs/20261115T072203Z-fe1b6967/steering-after-01.json",
+      "sha256": "65ea9543afef3632bfafa1344f533c62594aeee00c6d832bf41fd7aa0f536bda"
+    },
+    {
+      "path": "research/gap-bound/codex/review.md",
+      "sha256": "6f4070f81ff7de1041222ac1ca6eaa406d2cf6ca18cc31ba6f855eaef7869eaa"
+    },
+    {
+      "path": "research/gap-bound/codex/runs/20261115T072501Z-7f5a0c47/steering-after-01.json",
+      "sha256": "b6ab9ccd6f0d366b257f76601d214f28fb58532177ef9794dc1f099ebda77ad0"
+    },
+    {
+      "path": "research/gap-bound/evidence/review-audit.json",
+      "sha256": "a6391f4298eda924fefad512f07dc58e90334c5ea44b6e1489657e27e21dcfc7"
+    },
+    {
+      "path": "research/gap-bound/graph.riemann.gap.contract.current.md",
+      "sha256": "8aa1b867659a70bc71c7ffe0c3a0ec7adc064c300f2ccc6012eb9defa2305eee"
+    },
+    {
+      "path": "research/gap-bound/interaction-bound-proof.md",
+      "sha256": "22026bb25c0ea437e75e2f1e16bbf2b91d81d3c117a291e36056fea767c2c559"
+    },
+    {
+      "path": "warps/graph.riemann.collision.baseline.complete.md",
+      "sha256": "c0309fecc3a6e31bc8bd0defbe5721366298814603e2cd32c74120ae22f83d84"
+    },
+    {
+      "path": "warps/graph.riemann.collision.next.current.md",
+      "sha256": "344d8acf1d9f20569d82b27cf714c8d8db6af981ea0c4fec897d4b1ea8da554d"
+    },
+    {
+      "path": "warps/graph.riemann.collision.results.complete.md",
+      "sha256": "32709930b3d83814a2af7f58fb2c8e5095f14228e941c04f2f05aa4002dbfd7b"
+    },
+    {
+      "path": "warps/graph.riemann.gap.next.current.md",
+      "sha256": "2383540075356524c5e75ce8f365267008b0e4a46275396e401cb3131b7d94b8"
+    },
+    {
+      "path": "warps/graph.riemann.gap.results.complete.md",
+      "sha256": "b6c69dc43b667eec614f6258e16154a480f5f30bd761c7c0b1ba584e9dd7540a"
+    },
+    {
+      "path": "warps/graph.zeros.motion.results.complete.md",
+      "sha256": "60496fa2663e528478c1e4fdecebd0b47e12e14af090793c0672c2b1bee858c9"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "complete": true,
+  "coverage": {
+    "bytes_read": 107553,
+    "complete": true,
+    "entries": 76,
+    "files_read": 75,
+    "max_bytes": 33554432,
+    "max_entries": 50000,
+    "omissions": {}
+  },
+  "ids": [
+    {
+      "file_count": 7,
+      "files": [
+        "graph.riemann.collision.contract.complete.md",
+        "graph.zeros.motion.baseline.complete.md",
+        "graph.zeros.motion.contract.complete.md",
+        "graph.zeros.motion.results.complete.md",
+        "graph.zeros.motion.slice-0.exact-polynomial-baseline-v1.warp-layer.json",
+        "graph.zeros.motion.slice-final.zero-motion-path-v1.warp-layer.json",
+        "graph.zeros.motion.warp-map.json"
+      ],
+      "id": "graph.zeros.motion",
+      "namespace": "graph.zeros",
+      "occurrences": 8
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "graph.zeros.motion.baseline.complete.md"
+      ],
+      "id": "graph.zeros.motion.baseline",
+      "namespace": "graph.zeros.motion",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "graph.zeros.motion.slice-0.exact-polynomial-baseline-v1.warp-layer.json"
+      ],
+      "id": "graph.zeros.motion.baseline.complete.md",
+      "namespace": "graph.zeros.motion.baseline.complete",
+      "occurrences": 1
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "graph.zeros.motion.contract.complete.md",
+        "graph.zeros.motion.results.complete.md"
+      ],
+      "id": "graph.zeros.motion.color",
+      "namespace": "graph.zeros.motion",
+      "occurrences": 2
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "graph.riemann.collision.baseline.complete.md",
+        "graph.zeros.motion.contract.complete.md",
+        "graph.zeros.motion.results.complete.md"
+      ],
+      "id": "graph.zeros.motion.model",
+      "namespace": "graph.zeros.motion",
+      "occurrences": 3
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "graph.zeros.motion.contract.complete.md",
+        "graph.zeros.motion.results.complete.md"
+      ],
+      "id": "graph.zeros.motion.path",
+      "namespace": "graph.zeros.motion",
+      "occurrences": 2
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "graph.zeros.motion.contract.complete.md",
+        "graph.zeros.motion.results.complete.md"
+      ],
+      "id": "graph.zeros.motion.path.verify",
+      "namespace": "graph.zeros.motion.path",
+      "occurrences": 2
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "graph.zeros.motion.results.complete.md"
+      ],
+      "id": "graph.zeros.motion.results",
+      "namespace": "graph.zeros.motion",
+      "occurrences": 1
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "graph.zeros.motion.contract.complete.md",
+        "graph.zeros.motion.slice-final.zero-motion-path-v1.warp-layer.json"
+      ],
+      "id": "graph.zeros.motion.results.complete.md",
+      "namespace": "graph.zeros.motion.results.complete",
+      "occurrences": 2
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "graph.zeros.motion.slice-0.exact-polynomial-baseline-v1.warp-layer.json",
+        "graph.zeros.motion.warp-map.json"
+      ],
+      "id": "graph.zeros.motion.slice-0",
+      "namespace": "graph.zeros.motion",
+      "occurrences": 2
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "graph.zeros.motion.slice-final.zero-motion-path-v1.warp-layer.json",
+        "graph.zeros.motion.warp-map.json"
+      ],
+      "id": "graph.zeros.motion.slice-final",
+      "namespace": "graph.zeros.motion",
+      "occurrences": 2
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "graph.zeros.motion.contract.complete.md",
+        "graph.zeros.motion.results.complete.md"
+      ],
+      "id": "graph.zeros.motion.ui",
+      "namespace": "graph.zeros.motion",
+      "occurrences": 2
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "graph.zeros.motion.contract.complete.md",
+        "graph.zeros.motion.results.complete.md"
+      ],
+      "id": "graph.zeros.motion.verify",
+      "namespace": "graph.zeros.motion",
+      "occurrences": 2
+    }
+  ],
+  "output": {
+    "complete": true,
+    "max_output_bytes": 32768,
+    "max_results": 200,
+    "omissions": {},
+    "returned_bytes": 2839
+  },
+  "provenance": "token-occurrences",
+  "request": {
+    "context": null,
+    "ignore_case": false,
+    "pattern": "graph.zeros.motion.**",
+    "root": "C:\\src\\graph\\warps",
+    "scope": "**",
+    "selectors": [],
+    "separator": "."
+  },
+  "schema": "recur-trace-id-inventory-v1"
+}

@@ -1,0 +1,108 @@
+{
+  "complete": true,
+  "coverage": {
+    "bytes_read": 44932,
+    "complete": true,
+    "entries": 8,
+    "files_read": 6,
+    "max_bytes": 33554432,
+    "max_entries": 50000,
+    "omissions": {}
+  },
+  "ids": [
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.collision.baseline.complete.md",
+      "namespace": "graph.riemann.collision.baseline.complete",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.collision.contract.complete.md",
+      "namespace": "graph.riemann.collision.contract.complete",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.collision.next.current.md",
+      "namespace": "graph.riemann.collision.next.current",
+      "occurrences": 1
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "exact-quartic-proof.md",
+        "render_control.py",
+        "verify_exact.py"
+      ],
+      "id": "graph.riemann.collision.proof",
+      "namespace": "graph.riemann.collision",
+      "occurrences": 3
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "render_control.py"
+      ],
+      "id": "graph.riemann.collision.render",
+      "namespace": "graph.riemann.collision",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.collision.results.complete.md",
+      "namespace": "graph.riemann.collision.results.complete",
+      "occurrences": 1
+    },
+    {
+      "file_count": 3,
+      "files": [
+        "evidence/exact-certificates.json",
+        "evidence/manifest.json",
+        "verify_exact.py"
+      ],
+      "id": "graph.riemann.collision.verify",
+      "namespace": "graph.riemann.collision",
+      "occurrences": 4
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.collision.warp-map.json",
+      "namespace": "graph.riemann.collision.warp-map",
+      "occurrences": 1
+    }
+  ],
+  "output": {
+    "complete": true,
+    "max_output_bytes": 32768,
+    "max_results": 200,
+    "omissions": {},
+    "returned_bytes": 1361
+  },
+  "provenance": "token-occurrences",
+  "request": {
+    "context": null,
+    "ignore_case": false,
+    "pattern": "graph.riemann.collision.**",
+    "root": "C:\\src\\graph\\research\\collision-proof",
+    "scope": "**",
+    "selectors": [],
+    "separator": "."
+  },
+  "schema": "recur-trace-id-inventory-v1"
+}

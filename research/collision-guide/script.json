@@ -1,0 +1,493 @@
+{
+  "schema": "graph-collision-guide-script-v1",
+  "traceId": "graph.riemann.collision_guide.script",
+  "title": "How long can real polynomial roots avoid a collision?",
+  "audience": "A self-contained mathematical explanation and practical guide for researchers, programmers and students",
+  "plannedDurationSeconds": 593,
+  "meaning": "A proved finite-polynomial guarantee and reproducible implementation. Novelty is unestablished; no Riemann Hypothesis or new prime-algorithm result is claimed.",
+  "scenes": [
+    {
+      "id": "promised_result",
+      "title": "A question with a definite guarantee",
+      "narration": "Start with a polynomial whose roots are distinct and real. As its coefficients follow a specified heat equation, those roots move and may collide. We can prove an interval during which no collision is possible. This is a guarantee about a finite mathematical system, with a checker that others can reuse.",
+      "durationSeconds": 24,
+      "screenLines": [
+        "Input: a finite polynomial with distinct real roots",
+        "Output: a guaranteed interval before any collision",
+        "Proof + exact-arithmetic checker + worked examples",
+        "Novelty of the bound has not been established"
+      ],
+      "status": "A PRECISE FINITE-POLYNOMIAL RESULT",
+      "evidencePaths": [
+        "research/gap-bound/interaction-bound-proof.md",
+        "research/gap-bound/verify_bound.py"
+      ],
+      "sourceURLs": []
+    },
+    {
+      "id": "discovery_path",
+      "title": "How the project reached this question",
+      "narration": "The recorded path began with four-color coordinates, moving origins, and phase measurements. An exactly solved quartic then exposed a failed local collision forecast. The next task kept the exterior-root interactions that the simpler estimate had discarded. Bounding those interactions led to the constant-diameter certificate, followed by the stronger contracting-diameter formula. The colors helped frame an investigation; the equations and counterexamples determined what survived.",
+      "durationSeconds": 30,
+      "screenLines": [
+        "170993c: phase coordinates and an exact quadratic",
+        "73518fc: quartic counterexample + gap baseline",
+        "Next obligation: retain and bound exterior interactions",
+        "cf51254: constant and contracting-diameter certificates"
+      ],
+      "status": "A RECORDED PATH FROM VISUAL EXPLORATION TO A FINITE THEOREM",
+      "evidencePaths": [
+        "warps/graph.zeros.motion.results.complete.md",
+        "warps/graph.riemann.collision.results.complete.md",
+        "warps/graph.riemann.collision.next.current.md",
+        "warps/graph.riemann.gap.results.complete.md",
+        "research/collision-guide/evidence/discovery-provenance.json"
+      ],
+      "sourceURLs": [],
+      "diagramData": {
+        "kind": "provenance_timeline",
+        "milestones": [
+          {
+            "commit": "170993c",
+            "date": "2026-11-14",
+            "time": "22:31:46 -08:00",
+            "traceId": "graph.zeros.motion",
+            "label": "Phase coordinates + exact quadratic"
+          },
+          {
+            "commit": "73518fc",
+            "date": "2026-11-14",
+            "time": "23:13:18 -08:00",
+            "traceId": "graph.riemann.collision",
+            "label": "Quartic counterexample + gap baseline"
+          },
+          {
+            "commit": "cf51254",
+            "date": "2026-11-14",
+            "time": "23:37:16 -08:00",
+            "traceId": "graph.riemann.gap",
+            "label": "Interaction-aware finite certificates"
+          }
+        ]
+      }
+    },
+    {
+      "id": "discovery_audit",
+      "title": "What the review record does and does not prove",
+      "narration": "The records separate a proposal, its review, and its proof. Both bound formulas were supplied in the review contract. During review, Carbon retracted an incorrect product inequality and used reciprocal terms to justify the diameter estimate. Eventness marks the finite result complete and the infinite-system obligation open. Trace IDs make this history inspectable; a matching ID or reviewer agreement is not mathematical proof.",
+      "durationSeconds": 30,
+      "screenLines": [
+        "The review contract already supplied both formulas",
+        "A product-inequality error was retracted and corrected",
+        "Finite result: complete; infinite-system transfer: open",
+        "Trace lineage records history; the derivation proves the claim"
+      ],
+      "status": "REVIEW CORRECTIONS ARE PRESERVED • NO INVENTOR ATTRIBUTION",
+      "evidencePaths": [
+        "research/gap-bound/graph.riemann.gap.contract.current.md",
+        "research/gap-bound/carbon/review.md",
+        "research/gap-bound/interaction-bound-proof.md",
+        "warps/graph.riemann.gap.results.complete.md",
+        "warps/graph.riemann.gap.next.current.md",
+        "research/collision-guide/evidence/discovery-provenance.json"
+      ],
+      "sourceURLs": [],
+      "diagramData": {
+        "kind": "provenance_audit",
+        "proposal": "graph.riemann.gap",
+        "proof": "graph.riemann.gap.proof",
+        "finiteResult": "graph.riemann.gap.results",
+        "openObligation": "graph.riemann.gap.next",
+        "correctedInequality": "D′ ≥ (8n−12)/D",
+        "basis": "Reciprocal terms, with derivative taken in t"
+      }
+    },
+    {
+      "id": "exact_flow",
+      "title": "Fix the equation and the time direction",
+      "narration": "The equation is P sub t equals minus P sub z z. We start at time zero and decrease t. For clarity, the animation uses positive elapsed duration u, equal to minus t. The polynomial evolution is a terminating derivative sum, so we can compute its coefficients exactly without Euler steps.",
+      "durationSeconds": 24,
+      "screenLines": [
+        "∂P/∂t = −∂²P/∂z²; start at t = 0",
+        "Elapsed duration u = −t: u increases as t decreases",
+        "P_t(z) = Σ [(-t)^j / j!] P₀^(2j)(z)",
+        "The sum stops at j = floor(n/2)"
+      ],
+      "status": "ALL DIAGRAMS USE THE SAME SIGN CONVENTION",
+      "evidencePaths": [
+        "research/gap-bound/interaction-bound-proof.md",
+        "research/gap-bound/verify_bound.py"
+      ],
+      "sourceURLs": [
+        "https://terrytao.wordpress.com/2017/10/17/heat-flow-and-zeroes-of-polynomials/"
+      ]
+    },
+    {
+      "id": "read_inputs",
+      "title": "Three measurements of the starting roots",
+      "narration": "Sort the initial roots. Record their number n, the smallest adjacent gap m, and the diameter D zero, from the leftmost root to the rightmost. Our running example has roots minus three, minus one, one, and three. There are four roots, the minimum gap is two, and the diameter is six.",
+      "durationSeconds": 24,
+      "screenLines": [
+        "r₁ < r₂ < ... < r_n; n ≥ 3",
+        "m = smallest adjacent gap; D₀ = r_n − r₁",
+        "Example roots: −3, −1, 1, 3",
+        "n = 4; m = 2; D₀ = 6"
+      ],
+      "status": "THE INITIAL ROOTS MUST BE DISTINCT AND REAL",
+      "evidencePaths": [
+        "research/gap-bound/interaction-bound-proof.md",
+        "research/gap-bound/evidence/certificates.json"
+      ],
+      "sourceURLs": []
+    },
+    {
+      "id": "quartic_orbit",
+      "title": "An exactly solved moving-root example",
+      "narration": "For these four roots, the evolving polynomial is shown here. Substituting w equals z squared reduces its root equation to a quadratic. That calculation proves the first collisions occur at elapsed duration two thirds. At that instant the polynomial becomes z squared minus one, squared: two double roots, at minus one and one.",
+      "durationSeconds": 25,
+      "screenLines": [
+        "P_t(z) = z⁴ − (10+12t)z² + 9+20t+12t²",
+        "All four roots are real exactly when t ≥ −2/3",
+        "At t = −2/3: P_t(z) = (z²−1)²",
+        "First collision: u = 2/3, at z = −1 and z = 1"
+      ],
+      "status": "EXACT ALGEBRA • NOT A COLLISION GUESSED FROM PIXELS",
+      "evidencePaths": [
+        "research/collision-proof/exact-quartic-proof.md",
+        "research/gap-bound/evidence/certificates.json"
+      ],
+      "sourceURLs": []
+    },
+    {
+      "id": "isolated_baseline",
+      "title": "Begin with the two-root baseline",
+      "narration": "An isolated pair with gap m has squared gap m squared minus eight u. Its collision duration is exactly m squared over eight. In a larger system, this gives a conservative first guarantee using the smallest starting gap. For the quartic that duration is one half. The other roots let us improve this guarantee.",
+      "durationSeconds": 24,
+      "screenLines": [
+        "Isolated pair: gap² = m² − 8u",
+        "Baseline duration T₀ = m² / 8",
+        "Quartic example: T₀ = 0.5",
+        "A lower bound on collision time, not the exact time"
+      ],
+      "status": "EXACT FOR TWO ROOTS • A BASELINE FOR MORE ROOTS",
+      "evidencePaths": [
+        "research/collision-proof/exact-quartic-proof.md",
+        "research/gap-bound/interaction-bound-proof.md"
+      ],
+      "sourceURLs": [
+        "https://terrytao.wordpress.com/2017/10/17/heat-flow-and-zeroes-of-polynomials/"
+      ]
+    },
+    {
+      "id": "coupled_motion",
+      "title": "Every root contributes to the motion",
+      "narration": "Differentiate the equation saying that P is zero at a moving root. Factoring the polynomial then expresses that root's velocity as a sum over all the other roots. This is established heat-flow mathematics. The important change from a local guess is that the interactions outside the nearest pair remain in the calculation.",
+      "durationSeconds": 24,
+      "screenLines": [
+        "P_t(r_i(t)) = 0",
+        "dr_i/dt = P_zz/P_z at the root",
+        "dr_i/dt = 2 Σ [1/(r_i−r_j)], j ≠ i",
+        "These derivatives are with respect to t, not u"
+      ],
+      "status": "ESTABLISHED ROOT DYNAMICS • VALID BEFORE COLLISION",
+      "evidencePaths": [
+        "research/gap-bound/interaction-bound-proof.md"
+      ],
+      "sourceURLs": [
+        "https://terrytao.wordpress.com/2017/10/17/heat-flow-and-zeroes-of-polynomials/"
+      ]
+    },
+    {
+      "id": "adjacent_gap",
+      "title": "Track the gap, including exterior roots",
+      "narration": "Take adjacent roots a and b, and square their separation to obtain y. Subtracting their velocities gives this exact identity. The quantity S sums the influence of every exterior root. Adjacency makes each denominator positive. In elapsed time u, the minus eight term contracts the gap, while the interaction term offsets part of that contraction.",
+      "durationSeconds": 25,
+      "screenLines": [
+        "g = b−a > 0; y = g²",
+        "S = Σ 1/[(b−r)(a−r)] over exterior roots",
+        "dy/dt = 8 − 4yS",
+        "Equivalently: dy/du = −8 + 4yS"
+      ],
+      "status": "ADJACENT PAIRS ARE ESSENTIAL TO THE SIGN",
+      "evidencePaths": [
+        "research/gap-bound/interaction-bound-proof.md"
+      ],
+      "sourceURLs": []
+    },
+    {
+      "id": "diameter_lowerbound",
+      "title": "Turn the interactions into a usable bound",
+      "narration": "As t decreases before a collision, the extreme roots move inward, so their diameter never exceeds its initial value. Each exterior-root denominator is therefore at most D zero squared. There are n minus two such terms. This gives a positive lower bound, kappa, for the interaction sum without solving every root trajectory.",
+      "durationSeconds": 24,
+      "screenLines": [
+        "D(t) ≤ D₀ for t ≤ 0 before collision",
+        "0 < (b−r)(a−r) ≤ D₀²",
+        "S ≥ κ, where κ = (n−2)/D₀²",
+        "Thus dy/du ≥ −8 + 4κy"
+      ],
+      "status": "FINITE DIAMETER CONTROLS ALL EXTERIOR INTERACTIONS",
+      "evidencePaths": [
+        "research/gap-bound/interaction-bound-proof.md"
+      ],
+      "sourceURLs": []
+    },
+    {
+      "id": "static_certificate",
+      "title": "A formula for guaranteed collision-free time",
+      "narration": "Solve the comparison equation starting from the smallest squared gap. Its value stays below every actual adjacent squared gap. The displayed duration T is where that lower bound reaches zero. Before T, every gap remains positive. For our example, T is about zero point five three zero zero two four, improving the one-half baseline.",
+      "durationSeconds": 25,
+      "screenLines": [
+        "C(u) = 2/κ + (m²−2/κ) exp(4κu)",
+        "T = −log(1−κm²/2)/(4κ)",
+        "0 ≤ u < T: every gap² ≥ C(u) > 0",
+        "Quartic: κ = 1/18; T ≈ 0.530024 > 0.5"
+      ],
+      "status": "THEOREM FOR EVERY ADMISSIBLE FINITE POLYNOMIAL",
+      "evidencePaths": [
+        "research/gap-bound/interaction-bound-proof.md",
+        "research/gap-bound/evidence/certificates.json"
+      ],
+      "sourceURLs": []
+    },
+    {
+      "id": "why_proof_closes",
+      "title": "Why the argument does not assume its conclusion",
+      "narration": "The velocity formulas initially apply only while roots are distinct and real. Suppose a first collision occurred before the guaranteed duration. The positive gap bound would forbid it. Roots cannot escape to infinity in finite time because the monic polynomial's coefficients stay bounded. Distinct real roots therefore continue throughout the claimed interval.",
+      "durationSeconds": 24,
+      "screenLines": [
+        "Start on the local interval of simple real roots",
+        "An earlier collision would require a zero gap",
+        "The bound keeps every gap strictly positive",
+        "Bounded coefficients prevent roots escaping to infinity"
+      ],
+      "status": "FIRST-COLLISION ARGUMENT • NO CIRCULAR ASSUMPTION",
+      "evidencePaths": [
+        "research/gap-bound/interaction-bound-proof.md"
+      ],
+      "sourceURLs": []
+    },
+    {
+      "id": "contracting_diameter",
+      "title": "Use the shrinking diameter for a stronger estimate",
+      "narration": "We can retain more information. The extreme-root equations bound the rate at which the squared diameter shrinks in elapsed time. Writing d for its initial square, the diameter squared is at most d minus B u. This smaller denominator strengthens the lower bound on exterior interactions as time advances toward collision.",
+      "durationSeconds": 24,
+      "screenLines": [
+        "d = D₀²; A = 4(n−2); B = 16n−24",
+        "D(−u)² ≤ d − Bu",
+        "dy/du ≥ −8 + [A/(d−Bu)] y",
+        "Use this estimate only while d−Bu > 0"
+      ],
+      "status": "A TIME-DEPENDENT COMPARISON EQUATION",
+      "evidencePaths": [
+        "research/gap-bound/interaction-bound-proof.md"
+      ],
+      "sourceURLs": []
+    },
+    {
+      "id": "dynamic_certificate",
+      "title": "The stronger duration still has a closed formula",
+      "narration": "Integrating the time-dependent comparison gives the stronger duration shown here. Gap packing guarantees that eta lies strictly between zero and one, so the expression is defined. The proof shows this duration exceeds the constant-diameter guarantee. For our quartic it is about zero point five three nine seven one nine. It remains a lower bound on the collision duration.",
+      "durationSeconds": 27,
+      "screenLines": [
+        "η = (A+B)m²/(8d), with 0 < η < 1",
+        "T_dyn = (d/B)[1−(1−η)^(B/(A+B))]",
+        "T_dyn > T > m²/8; T_dyn < d/B",
+        "Quartic: T_dyn ≈ 0.539719"
+      ],
+      "status": "STRONGER THAN OUR BASELINE • NOVELTY UNESTABLISHED",
+      "evidencePaths": [
+        "research/gap-bound/interaction-bound-proof.md",
+        "research/gap-bound/evidence/certificates.json"
+      ],
+      "sourceURLs": []
+    },
+    {
+      "id": "bound_vs_collision",
+      "title": "A guarantee ending is not a collision occurring",
+      "narration": "Compare the three guaranteed durations with the exact quartic collision. The strongest certificate ends near zero point five four, but the actual collision is at two thirds. At duration zero point six, all four roots are still real and distinct. Being outside a certificate means that certificate is silent; it does not mean the polynomial has failed.",
+      "durationSeconds": 25,
+      "screenLines": [
+        "T₀ = 0.5; T ≈ 0.530024; T_dyn ≈ 0.539719",
+        "Exact first collision: u = 2/3 ≈ 0.666667",
+        "u = 0.6: outside these bounds, still four real roots",
+        "Strict simplicity guarantee: 0 ≤ u < T_dyn"
+      ],
+      "status": "SUFFICIENT GUARANTEE • NOT AN EXACT COLLISION DETECTOR",
+      "evidencePaths": [
+        "research/gap-bound/interaction-bound-proof.md",
+        "research/collision-proof/exact-quartic-proof.md"
+      ],
+      "sourceURLs": []
+    },
+    {
+      "id": "run_checker",
+      "title": "Run the checker on an exact root list",
+      "narration": "Run the practical wrapper with an exact rational root list and a chosen duration. It constructs the polynomial and computes a rigorous bound. The report separates an interval guarantee from an exact root count at the selected time. For seventeen over thirty-two, both checks succeed. The decision uses rational enclosures, not a rounded decimal displayed on screen.",
+      "durationSeconds": 24,
+      "screenLines": [
+        "python -B research/collision-guide/use_certificate.py",
+        "--roots=-3,-1,1,3 --duration=17/32",
+        "guaranteedInterval.status: certified",
+        "exactPointCheck.status: all_roots_real_and_simple"
+      ],
+      "status": "COPYABLE COMMANDS AND REPORT FIELDS ARE IN THE GUIDE",
+      "evidencePaths": [
+        "research/collision-guide/use_certificate.py",
+        "research/collision-guide/evidence/use-example.json",
+        "research/gap-bound/verify_bound.py"
+      ],
+      "sourceURLs": []
+    },
+    {
+      "id": "certified_rational_step",
+      "title": "A concrete step beyond the simpler bound",
+      "narration": "Choose elapsed duration seventeen over thirty-two, exactly zero point five three one two five. It is beyond the constant-diameter guarantee but below the certified lower enclosure of the stronger duration. At the corresponding negative t, an exact Sturm count independently finds four distinct real roots. The theorem covers the whole interval; this count checks one sample.",
+      "durationSeconds": 25,
+      "screenLines": [
+        "u = 17/32 = 0.53125; t = −17/32",
+        "T < 17/32 < certified lower bound for T_dyn",
+        "Exact Sturm count: 4 distinct real roots",
+        "GCD degree with derivative: 0, so no repeated root"
+      ],
+      "status": "AN EXACT RATIONAL EXAMPLE INSIDE THE STRONGER GUARANTEE",
+      "evidencePaths": [
+        "research/gap-bound/evidence/certificates.json",
+        "research/gap-bound/verify_bound.py"
+      ],
+      "sourceURLs": []
+    },
+    {
+      "id": "use_and_rebase",
+      "title": "Use it to bound a continuation interval",
+      "narration": "A root-tracking program can restrict its search to a duration below the certified lower bound, leaving a margin. The exact roots cannot collide there. This does not bound Euler error, Newton convergence, or floating-point error. Restarting at a later polynomial is mathematically possible, but its new root gaps need certification; this checker does not implement interval-root input.",
+      "durationSeconds": 26,
+      "screenLines": [
+        "Choose 0 < u_step < a certified lower bound for T_dyn",
+        "The guarantee concerns the exact polynomial flow",
+        "Numerical error control remains a separate obligation",
+        "Rebasing requires verified roots or certified gap bounds"
+      ],
+      "status": "A BOUNDARY FOR COMPUTATION • NOT AN INTEGRATOR ERROR ESTIMATE",
+      "evidencePaths": [
+        "research/gap-bound/interaction-bound-proof.md",
+        "research/gap-bound/verify_bound.py"
+      ],
+      "sourceURLs": []
+    },
+    {
+      "id": "predictor_benchmark",
+      "title": "Use the solved quartic to test local predictors",
+      "narration": "The quartic also provides a benchmark with a known answer. A frozen quadratic approximation at the origin predicts a collision there at duration nine twentieths. The exact polynomial at that point is instead two hundred forty-three over one hundred, not zero. This reveals omitted higher-order terms and gives a concrete test for any proposed improved predictor.",
+      "durationSeconds": 25,
+      "screenLines": [
+        "Frozen local predictor: c = 0, u = 9/20 = 0.45",
+        "Exact value: P_(−9/20)(0) = 243/100 > 0",
+        "The actual collisions are at u = 2/3 and z = ±1",
+        "Benchmark a proposed predictor against the exact flow"
+      ],
+      "status": "EXACT COUNTEREXAMPLE TO THIS FROZEN LOCAL PREDICTION",
+      "evidencePaths": [
+        "research/collision-proof/exact-quartic-proof.md"
+      ],
+      "sourceURLs": []
+    },
+    {
+      "id": "assumptions_scaling",
+      "title": "Know which changes preserve the guarantee",
+      "narration": "Translate every root and the durations stay the same. Scale every root by a nonzero real factor a and the durations multiply by a squared. Repeated roots violate the starting assumptions. Degree two has its own exact pair formula. An arbitrary coefficient motion, or rounded measurements treated as exact roots, is a different problem.",
+      "durationSeconds": 24,
+      "screenLines": [
+        "Translation: same gaps and same guaranteed duration",
+        "Scale roots by a: durations scale by a²",
+        "Repeated roots are excluded; degree two is separate",
+        "The checker certifies the exact rational inputs supplied"
+      ],
+      "status": "TEST DOMAIN, UNITS, AND THE SPECIFIED HEAT EQUATION",
+      "evidencePaths": [
+        "research/gap-bound/interaction-bound-proof.md",
+        "research/gap-bound/verify_bound.py"
+      ],
+      "sourceURLs": []
+    },
+    {
+      "id": "rh_connection",
+      "title": "Where the connection to RH actually lies",
+      "narration": "The Riemann entire function has a heat deformation called H sub t, with the same heat sign. Its zeros are all real exactly when t is at least a threshold, Lambda. RH is equivalent to Lambda being at most zero. Rodgers and Tao proved Lambda is at least zero. Thus RH is equivalent to Lambda equaling zero. Shared zero dynamics connect the questions.",
+      "durationSeconds": 30,
+      "screenLines": [
+        "Riemann deformation: ∂H/∂t = −∂²H/∂x²",
+        "All zeros of H_t are real exactly when t ≥ Λ",
+        "RH: Λ ≤ 0; Rodgers–Tao theorem: Λ ≥ 0",
+        "Together: RH is equivalent to Λ = 0"
+      ],
+      "status": "AN ESTABLISHED CONNECTION • NOT AN RH ADVANCE BY THIS PROJECT",
+      "evidencePaths": [
+        "warps/graph.riemann.gap.next.current.md"
+      ],
+      "sourceURLs": [
+        "https://arxiv.org/abs/1801.05914"
+      ],
+      "diagramData": {
+        "kind": "rh_threshold",
+        "finiteGuarantee": "Finite polynomial; finitely many roots",
+        "riemannThreshold": "All zeros real exactly for t ≥ Λ",
+        "target": "Λ = 0",
+        "timeConvention": "∂tH = −∂xxH"
+      }
+    },
+    {
+      "id": "rh_open_obligation",
+      "title": "The missing step is control of the infinite system",
+      "narration": "Our certificate uses finitely many roots and a finite diameter. The Riemann flow has infinitely many zeros, so an extension needs rigorous control of distant zeros and convergence of their interactions. Assuming every zero is real at time zero would assume RH. A uniform real-root interval below zero would contradict the known lower bound on Lambda. The open task is control toward zero from a known-real regime.",
+      "durationSeconds": 33,
+      "screenLines": [
+        "Finite diameter + finite root list do not cover all zeros",
+        "Required: justified infinite interactions and distant-zero bounds",
+        "Assuming all H₀ zeros real would already assume RH",
+        "Seek control toward t = 0 from a known-real regime"
+      ],
+      "status": "NO RH ADVANCE, PRIME SHORTCUT, OR NOVELTY HAS BEEN ESTABLISHED",
+      "evidencePaths": [
+        "warps/graph.riemann.gap.next.current.md",
+        "research/gap-bound/interaction-bound-proof.md"
+      ],
+      "sourceURLs": [
+        "https://arxiv.org/abs/1801.05914"
+      ],
+      "diagramData": {
+        "kind": "infinite_obligation",
+        "finite": "Finite roots + finite diameter",
+        "missing": [
+          "Control omitted zeros",
+          "Justify convergent interactions",
+          "Cover every height",
+          "Do not assume RH"
+        ],
+        "direction": "Known-real regime → t = 0",
+        "forbiddenInference": "A real-root interval below t = 0 would force Λ < 0"
+      }
+    },
+    {
+      "id": "reproducible_scope",
+      "title": "What others can take from this result",
+      "narration": "Use the proof as a finite-system guarantee, the checker for exact rational examples, and the quartic to benchmark numerical or local approximations. The saved suite covers twenty-five root configurations and one hundred rational-time checks; those tests support the implementation. The general statement comes from the proof. Novelty remains unestablished, and no transfer to infinitely many Riemann zeros has been proved.",
+      "durationSeconds": 27,
+      "screenLines": [
+        "Reusable: proof, exact checker, and solved calibration",
+        "Recorded suite: 25 configurations, 100 rational samples",
+        "Finite diameter is essential; RH has infinitely many zeros",
+        "No claimed new prime algorithm or RH advance"
+      ],
+      "status": "PROVED FINITE RESULT • LIMITS AND REPRODUCTION ARE EXPLICIT",
+      "evidencePaths": [
+        "research/gap-bound/interaction-bound-proof.md",
+        "research/gap-bound/evidence/certificates.json",
+        "research/gap-bound/README.md"
+      ],
+      "sourceURLs": [
+        "https://terrytao.wordpress.com/2017/10/17/heat-flow-and-zeroes-of-polynomials/",
+        "https://arxiv.org/abs/1801.05914"
+      ]
+    }
+  ]
+}

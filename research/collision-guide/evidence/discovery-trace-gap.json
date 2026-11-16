@@ -1,0 +1,366 @@
+{
+  "complete": true,
+  "coverage": {
+    "bytes_read": 357792,
+    "complete": true,
+    "entries": 141,
+    "files_read": 59,
+    "max_bytes": 33554432,
+    "max_entries": 50000,
+    "omissions": {}
+  },
+  "ids": [
+    {
+      "file_count": 8,
+      "files": [
+        "README.md",
+        "evidence/dispatch-attempts.json",
+        "evidence/runner-used.py",
+        "graph.riemann.gap.contract.current.md",
+        "hydrogen/review.md",
+        "hydrogen/runs/20261115T072157Z-5cd91085/review.md",
+        "run-review.py",
+        "verify-review.py"
+      ],
+      "id": "graph.riemann.gap",
+      "namespace": "graph.riemann",
+      "occurrences": 23
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/dispatch-attempts.json"
+      ],
+      "id": "graph.riemann.gap.carbon",
+      "namespace": "graph.riemann.gap",
+      "occurrences": 4
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.gap.carbon.20261115T072157Z-9c82ee75.progress.md",
+      "namespace": "graph.riemann.gap.carbon.20261115T072157Z-9c82ee75.progress",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.gap.carbon.20261115T072157Z-9c82ee75.progress.tmp",
+      "namespace": "graph.riemann.gap.carbon.20261115T072157Z-9c82ee75.progress",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.gap.carbon.20261115T072203Z-fe1b6967.progress.md",
+      "namespace": "graph.riemann.gap.carbon.20261115T072203Z-fe1b6967.progress",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/dispatch-attempts.json"
+      ],
+      "id": "graph.riemann.gap.carbon.attempt.1.retry.execution_error",
+      "namespace": "graph.riemann.gap.carbon.attempt.1.retry",
+      "occurrences": 1
+    },
+    {
+      "file_count": 16,
+      "files": [
+        "carbon/runs/20261115T072157Z-9c82ee75/status.json",
+        "carbon/runs/20261115T072203Z-fe1b6967/status.json",
+        "carbon/runs/20261115T072203Z-fe1b6967/turn-01/drain-1.stdout.json",
+        "carbon/runs/20261115T072203Z-fe1b6967/turn-01/received-traces.json",
+        "carbon/runs/20261115T072203Z-fe1b6967/turn-02/drain-1.stdout.json",
+        "carbon/runs/20261115T072203Z-fe1b6967/turn-02/received-traces.json",
+        "codex/runs/20261115T072157Z-c61aa73b/turn-02/drain-1.stdout.json",
+        "codex/runs/20261115T072157Z-c61aa73b/turn-02/received-traces.json",
+        "codex/runs/20261115T072501Z-7f5a0c47/turn-02/drain-1.stdout.json",
+        "codex/runs/20261115T072501Z-7f5a0c47/turn-02/received-traces.json",
+        "events/graph.riemann.gap.carbon.20261115T072157Z-9c82ee75.progress.md",
+        "events/graph.riemann.gap.carbon.20261115T072203Z-fe1b6967.progress.md",
+        "hydrogen/runs/20261115T072157Z-5cd91085/turn-01/drain-1.stdout.json",
+        "hydrogen/runs/20261115T072157Z-5cd91085/turn-01/received-traces.json",
+        "hydrogen/runs/20261115T072157Z-5cd91085/turn-02/drain-1.stdout.json",
+        "hydrogen/runs/20261115T072157Z-5cd91085/turn-02/received-traces.json"
+      ],
+      "id": "graph.riemann.gap.carbon.progress",
+      "namespace": "graph.riemann.gap.carbon",
+      "occurrences": 24
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "carbon/review.md",
+        "carbon/runs/20261115T072203Z-fe1b6967/review.md"
+      ],
+      "id": "graph.riemann.gap.carbon.response",
+      "namespace": "graph.riemann.gap.carbon",
+      "occurrences": 2
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.gap.carbon.review.complete.md",
+      "namespace": "graph.riemann.gap.carbon.review.complete",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/dispatch-attempts.json"
+      ],
+      "id": "graph.riemann.gap.codex",
+      "namespace": "graph.riemann.gap",
+      "occurrences": 4
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.gap.codex.20261115T072157Z-c61aa73b.progress.md",
+      "namespace": "graph.riemann.gap.codex.20261115T072157Z-c61aa73b.progress",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.gap.codex.20261115T072501Z-7f5a0c47.progress.md",
+      "namespace": "graph.riemann.gap.codex.20261115T072501Z-7f5a0c47.progress",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/dispatch-attempts.json"
+      ],
+      "id": "graph.riemann.gap.codex.attempt.1.retry.execution_error",
+      "namespace": "graph.riemann.gap.codex.attempt.1.retry",
+      "occurrences": 1
+    },
+    {
+      "file_count": 18,
+      "files": [
+        "carbon/runs/20261115T072203Z-fe1b6967/turn-01/drain-1.stdout.json",
+        "carbon/runs/20261115T072203Z-fe1b6967/turn-01/received-traces.json",
+        "carbon/runs/20261115T072203Z-fe1b6967/turn-02/drain-1.stdout.json",
+        "carbon/runs/20261115T072203Z-fe1b6967/turn-02/received-traces.json",
+        "codex/runs/20261115T072157Z-c61aa73b/status.json",
+        "codex/runs/20261115T072157Z-c61aa73b/turn-02/drain-1.stdout.json",
+        "codex/runs/20261115T072157Z-c61aa73b/turn-02/received-traces.json",
+        "codex/runs/20261115T072501Z-7f5a0c47/status.json",
+        "codex/runs/20261115T072501Z-7f5a0c47/turn-01/drain-1.stdout.json",
+        "codex/runs/20261115T072501Z-7f5a0c47/turn-01/received-traces.json",
+        "codex/runs/20261115T072501Z-7f5a0c47/turn-02/drain-1.stdout.json",
+        "codex/runs/20261115T072501Z-7f5a0c47/turn-02/received-traces.json",
+        "events/graph.riemann.gap.codex.20261115T072157Z-c61aa73b.progress.md",
+        "events/graph.riemann.gap.codex.20261115T072501Z-7f5a0c47.progress.md",
+        "hydrogen/runs/20261115T072157Z-5cd91085/turn-01/drain-1.stdout.json",
+        "hydrogen/runs/20261115T072157Z-5cd91085/turn-01/received-traces.json",
+        "hydrogen/runs/20261115T072157Z-5cd91085/turn-02/drain-1.stdout.json",
+        "hydrogen/runs/20261115T072157Z-5cd91085/turn-02/received-traces.json"
+      ],
+      "id": "graph.riemann.gap.codex.progress",
+      "namespace": "graph.riemann.gap.codex",
+      "occurrences": 18
+    },
+    {
+      "file_count": 4,
+      "files": [
+        "codex/review.md",
+        "codex/runs/20261115T072157Z-c61aa73b/review.md",
+        "codex/runs/20261115T072501Z-7f5a0c47/review.md",
+        "test_review_runtime.py"
+      ],
+      "id": "graph.riemann.gap.codex.response",
+      "namespace": "graph.riemann.gap.codex",
+      "occurrences": 4
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.gap.codex.review.complete.md",
+      "namespace": "graph.riemann.gap.codex.review.complete",
+      "occurrences": 1
+    },
+    {
+      "file_count": 4,
+      "files": [
+        "evidence/dispatch-attempts.json",
+        "evidence/manifest.json",
+        "evidence/runner-used.py",
+        "run-review.py"
+      ],
+      "id": "graph.riemann.gap.contract.current.md",
+      "namespace": "graph.riemann.gap.contract.current",
+      "occurrences": 39
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/dispatch-attempts.json"
+      ],
+      "id": "graph.riemann.gap.hydrogen",
+      "namespace": "graph.riemann.gap",
+      "occurrences": 2
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.gap.hydrogen.20261115T072157Z-5cd91085.progress.md",
+      "namespace": "graph.riemann.gap.hydrogen.20261115T072157Z-5cd91085.progress",
+      "occurrences": 1
+    },
+    {
+      "file_count": 10,
+      "files": [
+        "carbon/runs/20261115T072203Z-fe1b6967/turn-01/drain-1.stdout.json",
+        "carbon/runs/20261115T072203Z-fe1b6967/turn-01/received-traces.json",
+        "carbon/runs/20261115T072203Z-fe1b6967/turn-02/drain-1.stdout.json",
+        "carbon/runs/20261115T072203Z-fe1b6967/turn-02/received-traces.json",
+        "codex/runs/20261115T072157Z-c61aa73b/turn-02/drain-1.stdout.json",
+        "codex/runs/20261115T072157Z-c61aa73b/turn-02/received-traces.json",
+        "events/graph.riemann.gap.hydrogen.20261115T072157Z-5cd91085.progress.md",
+        "hydrogen/runs/20261115T072157Z-5cd91085/status.json",
+        "hydrogen/runs/20261115T072157Z-5cd91085/turn-02/drain-1.stdout.json",
+        "hydrogen/runs/20261115T072157Z-5cd91085/turn-02/received-traces.json"
+      ],
+      "id": "graph.riemann.gap.hydrogen.progress",
+      "namespace": "graph.riemann.gap.hydrogen",
+      "occurrences": 10
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "hydrogen/review.md",
+        "hydrogen/runs/20261115T072157Z-5cd91085/review.md"
+      ],
+      "id": "graph.riemann.gap.hydrogen.response",
+      "namespace": "graph.riemann.gap.hydrogen",
+      "occurrences": 2
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.gap.hydrogen.review.complete.md",
+      "namespace": "graph.riemann.gap.hydrogen.review.complete",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "README.md"
+      ],
+      "id": "graph.riemann.gap.next.current.md",
+      "namespace": "graph.riemann.gap.next.current",
+      "occurrences": 1
+    },
+    {
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "interaction-bound-proof.md",
+        "render_bounds.py",
+        "verify_bound.py"
+      ],
+      "id": "graph.riemann.gap.proof",
+      "namespace": "graph.riemann.gap",
+      "occurrences": 4
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "render_bounds.py"
+      ],
+      "id": "graph.riemann.gap.render",
+      "namespace": "graph.riemann.gap",
+      "occurrences": 1
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "README.md",
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.gap.results.complete.md",
+      "namespace": "graph.riemann.gap.results.complete",
+      "occurrences": 2
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "evidence/review-audit.json"
+      ],
+      "id": "graph.riemann.gap.review.audit",
+      "namespace": "graph.riemann.gap.review",
+      "occurrences": 1
+    },
+    {
+      "file_count": 1,
+      "files": [
+        "README.md"
+      ],
+      "id": "graph.riemann.gap.tool",
+      "namespace": "graph.riemann.gap",
+      "occurrences": 1
+    },
+    {
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "evidence/certificates.json",
+        "evidence/manifest.json",
+        "verify_bound.py"
+      ],
+      "id": "graph.riemann.gap.verify",
+      "namespace": "graph.riemann.gap",
+      "occurrences": 5
+    },
+    {
+      "file_count": 2,
+      "files": [
+        "evidence/dispatch-attempts.json",
+        "evidence/manifest.json"
+      ],
+      "id": "graph.riemann.gap.warp-map.json",
+      "namespace": "graph.riemann.gap.warp-map",
+      "occurrences": 6
+    }
+  ],
+  "output": {
+    "complete": true,
+    "max_output_bytes": 32768,
+    "max_results": 200,
+    "omissions": {},
+    "returned_bytes": 8389
+  },
+  "provenance": "token-occurrences",
+  "request": {
+    "context": null,
+    "ignore_case": false,
+    "pattern": "graph.riemann.gap.**",
+    "root": "C:\\src\\graph\\research\\gap-bound",
+    "scope": "**",
+    "selectors": [],
+    "separator": "."
+  },
+  "schema": "recur-trace-id-inventory-v1"
+}
